@@ -1,5 +1,9 @@
 -added openvpn
 -apt update and apt upgrade
 -alias to connect to csj vpn
+-alias to print password for my csj vpn
+-installed seclists
 -pulled git repo
 -alias to go to git repo
+-installed then removed libre office
+-sudo apt autoremove
