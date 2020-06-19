@@ -1,11 +1,17 @@
-# VPN Log into the CSJ lab
-alias vpn='cd /home/kali/CSJ/vpnChristine && sudo openvpn --config CSJ-PfSense-01-UDP4-5050-Christine-config.ovpn' 
+#-- VPN --#
 # Print my pass for CSJ vpn
-alias vpnp='cat /home/kali/CSJ/vpnPassChristine'
+alias vp='cat /home/kali/CSJ/vpnPassChristine'
+# Print VPN password, then log into the CSJ lab
+alias v='vp; cd /home/kali/CSJ/vpnChristine && sudo openvpn --config CSJ-PfSense-01-UDP4-5050-Christine-config.ovpn' 
+
+#-- GIT REPO --"
 # Go to my PWK repo
 alias pwk='cd /home/kali/gitWorkspace/pwk'
+
+#-- OS COMMANDS --#
 # Print out bashrc aliases
 alias a='cat $HOME/.bash_aliases | grep "^alias " | cut -f1 -d" " --complement'
+# Reboot
 alias r='sudo shutdown -r now'
 # Shutdown
 alias s='sudo shutdown -h now'
