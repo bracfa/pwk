@@ -1,0 +1,109 @@
+HTTP/1.1 200 Partial Content
+Date: Fri, 19 Jun 2020 12:43:43 GMT
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Sun, 21 Jul 2019 08:26:02 GMT
+ETag: "282-24df-58e2cb5bd6a22"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-2223/2224
+Content-Length: 2224
+Keep-Alive: timeout=5, max=88
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Contact Us - MegaCorp One</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body class="myFadeIn">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="index.html">MegaCorp One</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="//www.megacorpone.com/index.html">HOME</a></li>
+                    <li><a href="https://www.megacorpone.com/about.html">ABOUT</a></li>
+                    <li class="active"><a href="/contact.html">CONTACT</a></li>
+                    <li><a href="http://support.megacorpone.com">SUPPORT</a></li>
+                    <!--<li><a href="https://www.offensive-security.com/offensive-security-solutions/virtual-penetration-testing-labs/">SUPPORT</a></li>-->
+                    <li><a href="http://www.megacorpone.com/jobs.html">CAREERS</a></li>
+                    <!--<li><a href="http://www.megacorpone.com/jobs2.html">CAREERS</a></li>-->
+                    <li><a href="http://intranet.megacorpone.com">LOG IN</a></li>
+                    <!--<li><a href="https://cp.megacorpone.net/">LOG IN</a></li>-->
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+    <div id="blue">
+        <div class="container">
+            <div class="row">
+                <h3>Contact.</h3>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /blue -->
+
+    <!-- *****************************************************************************************************************
+	 CONTACT WRAP
+	 ***************************************************************************************************************** -->
+
+    <div id="contactwrap" class="backAnimate"></div>
+
+    <!-- *****************************************************************************************************************
+	 CONTACT FORMS
+	 ***************************************************************************************************************** -->
+
+    <div class="container mtb">
+        <div class="row">
+            <div class="col-lg-8">
+                <h3>Just Get In Touch!</h3>
+                <div class="hline"></div>
+                <p>MegaCorp One</p>
+                <form role="form"

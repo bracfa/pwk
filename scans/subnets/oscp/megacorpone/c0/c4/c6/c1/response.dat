@@ -1,0 +1,25 @@
+HTTP/1.1 200 Partial Content
+Date: Fri, 19 Jun 2020 12:50:12 GMT
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Sun, 21 Aug 2016 15:21:43 GMT
+ETag: "245-170-53a967d3298ce"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-249/250
+Content-Length: 250
+Connection: close
+Content-Type: application/javascript
+
+(function($) {
+
+// prettyPhoto
+	jQuery(document).ready(function(){
+		jQuery('a[data-gal]').each(function() {
+			jQuery(this).attr('rel', jQuery(this).data('gal'));
+		});  	
+		jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
+	}); 
+
+		
+})(jQuery);
