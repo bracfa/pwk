@@ -28,7 +28,8 @@ Inspect the site manually:
 		Cannot find hidden directories unless explicitly
 		told the directory name. nmap --script http-sitemap-generator --script-args url=/ve -p 80 172.16.99.64
 		-what tool can find the 172.16.99.64/ii directory?
-	2. Inspect page content (Firefox debugger tool)
+	2. Inspect page content
+		-Firefox debugger tool and inspector tool
 	3. View Response Headers (Network tool)
 	4. Inspect Sitemaps (robots.txt, sitemap.xml)
 	5. Locate web server admin consoles (eg. myPhpAdmin, Manager)
