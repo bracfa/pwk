@@ -1,0 +1,13 @@
+HTTP/1.1 200 Partial Content
+Date: Fri, 19 Jun 2020 12:51:40 GMT
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Sun, 21 Aug 2016 15:21:43 GMT
+ETag: "23b-2fd5-53a967d32892e"
+Accept-Ranges: bytes
+Content-Length: 12245
+Content-Range: bytes 0-12244/12245
+Keep-Alive: timeout=5, max=35
+Connection: Keep-Alive
+Content-Type: image/jpeg
+
+ÿØÿáìExif

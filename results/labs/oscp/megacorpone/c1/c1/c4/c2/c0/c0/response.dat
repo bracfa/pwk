@@ -1,0 +1,12 @@
+HTTP/1.1 200 Partial Content
+Date: Fri, 19 Jun 2020 12:52:04 GMT
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Sun, 21 Aug 2016 15:21:43 GMT
+ETag: "21b-3c75f-53a967d324aae"
+Accept-Ranges: bytes
+Content-Length: 247647
+Content-Range: bytes 0-247646/247647
+Connection: close
+Content-Type: image/jpeg
+
+ÿØÿá1—Exif

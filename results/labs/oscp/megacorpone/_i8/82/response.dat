@@ -1,0 +1,28 @@
+HTTP/1.1 200 Partial Content
+Date: Fri, 19 Jun 2020 12:52:12 GMT
+Server: Apache/2.2.22 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-500/501
+Content-Length: 501
+Keep-Alive: timeout=5, max=17
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /assets/img/clients</title>
+ </head>
+ <body>
+<h1>Index of /assets/img/clients</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/assets/img/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="client01.png">client01.png</a></td><td align="right">21-Aug-2016 11:21  </td><td align="right">8.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="client02.png">client02.png</a></td><td align="right">21-Aug-2016 11:21  </td><td align="right">4.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="client03.png">client03.png</a></td><td align="right">21-Aug-2016 11:21  </td><td align="right">4.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="client04.png">client04.png</a></td><td align="right">21-Aug-2016 11:21  </td><td align="right">6.0K</td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.22 (Ubuntu) Server at www.megacorpone.com Port 443</address>
+</body></html>

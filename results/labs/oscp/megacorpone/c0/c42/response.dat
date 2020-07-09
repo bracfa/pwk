@@ -1,0 +1,254 @@
+HTTP/1.1 200 Partial Content
+Date: Fri, 19 Jun 2020 12:43:43 GMT
+Server: Apache/2.2.22 (Ubuntu)
+Last-Modified: Sun, 21 Jul 2019 08:26:04 GMT
+ETag: "2e6-360a-58e2cb5d900da"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-2376/2377
+Content-Length: 2377
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Created by Artisteer v4.0.0.58833 -->
+    <meta charset="utf-8">
+    <title>MegaCorp One - Jobs</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+    <meta name="description" content="Description">
+    <meta name="keywords" content="Keywords">
+
+    <style>
+        .art-content .art-postcontent-0 .layout-item-0 { padding-left: 10px;  }
+        .ie7 .post .layout-cell {border:none !important; padding:0 !important; }
+        .ie6 .post .layout-cell {border:none !important; padding:0 !important; }
+    </style>
+</head>
+
+<body>
+    <div id="art-main">
+        <header class="art-header clearfix">
+
+            <div class="art-shapes">
+                <h1 class="art-headline" data-left="1.09%">
+                    <a href="#">MegaCorp One</a>
+                </h1>
+                <h2 class="art-slogan" data-left="1.09%">Your world, our way.</h2>
+
+                <div class="art-object0" data-left="99.8%"></div>
+                <div class="art-textblock art-object554312304" data-left="0%">
+                    <div class="art-object554312304-text"></div>
+                </div>
+            </div>
+
+            <nav class="art-nav clearfix">
+                <div class="art-nav-inner">
+                    <ul class="art-hmenu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="jobs.html" class="active">Jobs</a></li>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+        </header>
+        <div class="art-sheet clearfix">
+            <div class="art-layout-wrapper clearfix">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-sidebar1 clearfix">
+                            <div class="art-block clearfix">
+                                <div class="art-blockheader">
+                                    <h3 class="t">Services</h3>
+                                </div>
+                                <div class="art-blockcontent">
+                                    <p>Immune Systems Supplements <a href="#"><img width="8" height="6" alt="" src="images/5.png"></a></p>
+                                    <p>Cell Regeneration <a href="#"><img width="8" height="6" alt="" src="images/5.png"></a></p>
+                                    <p>Memory Transmission <a href="#"><img width="8" height="6" alt="" src="images/5.png"></a></p>
+                                    <p>Micromachine Cyberisation Repair <a href="#"><img width="8" height="6" alt="" src="images/5.png"></a></p>
+                                    <p>Nanoprobe Based Entity Assimilation <a href="#"><img width="8" height="6" alt="" src="images/5.png"></a></p>
+                                    <p>Nanobot Smoke <a href="#"><img width="8" height="6" alt="" src="images/5.png"></a></p>
+                                    <p>Perlin VanHook Chemical Dispersal <a href="#"><img width="8" height="6" alt="" src="images/5.png"></a></p>
+                                    <p>Nanomite Based Weaponry Systems <a href="#"><img width="8" height="6" alt="" src="images/5.png"></a></p>
+                                    <br>
+                                    <p><a href="#" class="art-button">Learn more</a></p>
+                                </div>
+                            </div>
+                            <div class="art-block clearfix">
+                                <div class="art-blockheader">
+                                    <h3 class="t">Connection</h3>
+                                </div>
+                                <div class="art-blockcontent">
+                                    <p style="text-align: center;"><img width="50" height="50" alt="" src="images/1305276470_social_facebook_box_white.png">&nbsp;<img width="50" height="50" alt="" src="images/1305276480_social_twitter_box_white.png">&nbsp;<img width="50" height="50"
+                                            alt="" src="images/linkedin.png">&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="art-block clearfix">
+                                <div class="art-blockheader">
+                                    <h3 class="t">News</h3>
+                                </div>
+                                <div class="art-blockcontent">
+                                    <p style="border-bottom: 1px solid #374865"><a href="#">MegaCorp One acquires new round of funding.</a><br>
+                                        <br></p>
+                                    <p style="border-bottom: 1px solid #374865"><a href="#">Lawsuit against MegaCorp One is dropped when plaintiffs go missing.</a><br>
+                                        <br></p>
+                                    <p><a href="#">MegaCorp One CEO Joe Sheer nominated for Nobel Physics, Medicine, and Literature prizes.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="art-layout-cell art-content clearfix">
+                            <article class="art-post art-article">
+                                <h2 class="art-postheader">Career Opportunities</h2>
+
+                                <div class="art-postcontent art-postcontent-0 clearfix">
+                                    <div class="art-content-layout">
+                                        <div class="art-content-layout-row">
+
+                                            <table border="0" style="width:600px; margin:0 auto; padding:15px; border:none;">
+                                                <tr>
+                                                    <td colspan="2"><img src="http://www.megacorpone.com/images/careers.png" alt="" style="display:block; margin:0 auto;" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="2">
+                                                        <h3>Job Position / IT</h3>
+                                                    </th>
+                                                </tr>
+
+                                                <TR>
+                                                    <TD>Title:</td>
+                                                    <td>Citrix Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Description:</td>
+                                                    <td>Maintain, secure, and expand the MegaCorp One Citrix installation. Applicant must be well versed with remote work conditions and understand endpoint security solutions.<br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HR Representative:</td>
+                                                    <td>hr@megacorpone.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <hr />
+                                                    </td>
+                                                </tr>
+
+                                                <TR>
+                                                    <TD>Title:</td>
+                                                    <td>Firewall Administrator</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Description:</td>
+                                                    <td>Position is responsible for the administration of the Firepass firewall. Applicant must have at least 3 years experience with firewall administration and 5 years networking experience.<br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HR Representative:</td>
+                                                    <td>hr@megacorpone.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <hr />
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <th colspan="2">
+                                                        <h3>Job Position / Various</h3>
+                                                    </th>
+                                                </tr>
+
+                                                <TR>
+                                                    <TD>Title:</td>
+                                                    <td>Sales Representative</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Description:</td>
+                                                    <td>MegaCorp One is involved in selling various substances. Representatives must have demonstrable experience in all manner of sales situations. Contact us for details.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HR Representative:</td>
+                                                    <td>hr@megacorpone.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <hr />
+                                                    </td>
+                                                </tr>
+
+                                                <TR>
+                                                    <TD>Title:</td>
+                                                    <td>Compliance Enforcement Representative</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Description:</td>
+                                                    <td>At times, MegaCorp One encounters various individuals that do not understand the MegaCorp One way. Employees must have experience in making offers others can't refuse.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>HR Representative:</td>
+                                                    <td>hr@megacorpone.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <hr />
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="art-footer clearfix">
+            <div class="art-footer-inner">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell layout-item-0" style="width: 50%">
+                            <p style="float: left; padding-left: 20px; text-align: left;"><a href="#">Home</a>&nbsp;&nbsp; | &nbsp;<a href="#">Contact</a> &nbsp; | &nbsp; <a href="#">Support</a> &nbsp; | &nbsp;&nbsp;<a href="#">TOS</a></p>
+                        </div>
+                        <div class="art-layout-cell layout-item-0" style="width: 50%"><br>
+                            <p style="padding-right: 20px; text-align: left;">MegaCorp One &copy;2019. All rights reserved<br>
+                            </p>
+                            <br>
+                            <br>
+                            <p><br></p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="art-page-footer">
+
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

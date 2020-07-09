@@ -1,0 +1,32 @@
+HTTP/1.1 200 Partial Content
+Date: Fri, 19 Jun 2020 12:51:37 GMT
+Server: Apache/2.2.22 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-579/580
+Content-Length: 580
+Keep-Alive: timeout=5, max=64
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /assets/js</title>
+ </head>
+ <body>
+<h1>Index of /assets/js</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/assets/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="bootstrap.min.js">bootstrap.min.js</a></td><td align="right">21-Aug-2016 11:21  </td><td align="right"> 28K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="custom.js">custom.js</a></td><td align="right">21-Aug-2016 11:21  </td><td align="right">368 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.hoverdir.js">jquery.hoverdir.js</a></td><td align="right">21-Aug-2016 11:21  </td><td align="right">5.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.hoverex.min.js">jquery.hoverex.min.js</a></td><td align="right">21-Aug-2016 11:21  </td><td align="right">3.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.isotope.min.js">jquery.isotope.min.js</a></td><td align="right">21-Aug-2016 11:21  </td><td align="right"> 16K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.prettyPhoto.js">jquery.prettyPhoto.js</a></td><td align="right">21-Aug-2016 11:21  </td><td align="right"> 22K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="retina-1.1.0.js">retina-1.1.0.js</a></td><td align="right">21-Aug-2016 11:21  </td><td align="right">3.9K</td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.22 (Ubuntu) Server at www.megacorpone.com Port 443</address>
+</body></html>
+~
