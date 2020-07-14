@@ -1,1 +1,0 @@
-var res = {'data':'HTTP/1.1 200 Partial Content\x0aDate: Fri, 19 Jun 2020 12:51:46 GMT\x0aServer: Apache/2.2.22 (Ubuntu)\x0aLast-Modified: Sun, 21 Aug 2016 15:21:43 GMT\x0aETag: \x22232-9951-53a967d32892e\x22\x0aAccept-Ranges: bytes\x0aContent-Length: 39249\x0aContent-Range: bytes 0-39248/39249\x0aConnection: close\x0aContent-Type: image/jpeg\x0a\x0a\xff\xd8\xff\xe1\x0euExif'}
