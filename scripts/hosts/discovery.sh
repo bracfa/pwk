@@ -19,21 +19,30 @@ IP=$(echo "$SNET" | awk -F "/" '{print $1}')
 MSK=$(echo "$SNET" | awk -F "/" '{print $2}')
 # How to represent the IP address and submask in filename
 IP_FN="$IP""m""$MSK"
+
+
 #-- HOST DISCOVERY --#
 
 #-LIST SCAN-#
 #-list each host in network, without sending packets.
 #-nmap still does reverser-DNS to learn their names.
-#sudo nmap -sL "$SNET" -oA <PATH/FILENAME> # List of possible targets 
 echo "$PASS" | sudo -S nmap -sL "$SNET" -oA "$OFD""nmap_sL__$IP_FN"
 
-#-DEFAULT SCAN-#
-echo "$PASS" | sudo -S nmap "$SNET" -oA "$OFD""nmap__$IP_FN"
+#-NETWORK SWEEP-#
+echo "$PASS" | sudo -S nmap -sn "$SNET" -oA "$OFD""nmap_sn__$IP_FN"
 
+#-DEFAULT SCAN-#
+#-the default nmap scan uses -PE -PS443 -PA80 -PP
+echo "$PASS" | sudo -S nmap "$SNET" -oA "$OFD""nmap__$IP_FN"
+#-the default nmap scan for port 80 only
+echo "$PASS" | sudo -S nmap -p 80 "$SNET" -oA "$OFD""nmap_p_80__$IP_FN"
+
+#-SCAN TOP TCP PORTS-#
+#-this uses a TCP connect scan for top 20 TCP ports
+echo "$PASS" | sudo -S nmap -sT -A --top-ports=20 "$SNET" -oA "$OFD""nmap_sT_A_topPorts__$IP_FN"
 
 #-NO PING-#
 #-skips discovery stage. Performs each scan as if each target is up.
-#-the default nmap scan uses -PE -PS443 -PA80 -PP
 echo "$PASS" | sudo -S nmap -Pn "$SNET" -oA "$OFD""nmap_Pn__$IP_FN"
 
 #-ICMP PING TYPES-#
