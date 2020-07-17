@@ -1,0 +1,2 @@
+# Nmap 7.80 scan initiated Fri Jul 17 15:56:25 2020 as: nmap -sn -PM -oA /home/kali/gitWorkspace/pwk/outputFiles/hosts/nmap_sn_PM__172.16.99.0m24 172.16.99.0/24
+# Nmap done at Fri Jul 17 15:57:18 2020 -- 256 IP addresses (0 hosts up) scanned in 52.13 seconds

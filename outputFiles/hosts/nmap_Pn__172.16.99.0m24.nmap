@@ -1,0 +1,1174 @@
+# Nmap 7.80 scan initiated Fri Jul 17 15:53:14 2020 as: nmap -Pn -oA /home/kali/gitWorkspace/pwk/outputFiles/hosts/nmap_Pn__172.16.99.0m24 172.16.99.0/24
+Nmap scan report for 172.16.99.0
+Host is up.
+All 1000 scanned ports on 172.16.99.0 are filtered
+
+Nmap scan report for 172.16.99.1
+Host is up (0.029s latency).
+Not shown: 998 filtered ports
+PORT   STATE SERVICE
+53/tcp open  domain
+80/tcp open  http
+
+Nmap scan report for 172.16.99.2
+Host is up (0.044s latency).
+All 1000 scanned ports on 172.16.99.2 are filtered
+
+Nmap scan report for 172.16.99.3
+Host is up (0.034s latency).
+All 1000 scanned ports on 172.16.99.3 are filtered
+
+Nmap scan report for 172.16.99.4
+Host is up (0.044s latency).
+All 1000 scanned ports on 172.16.99.4 are filtered
+
+Nmap scan report for 172.16.99.5
+Host is up (0.039s latency).
+All 1000 scanned ports on 172.16.99.5 are filtered
+
+Nmap scan report for 172.16.99.6
+Host is up (0.042s latency).
+All 1000 scanned ports on 172.16.99.6 are filtered
+
+Nmap scan report for 172.16.99.7
+Host is up (0.040s latency).
+All 1000 scanned ports on 172.16.99.7 are filtered
+
+Nmap scan report for 172.16.99.8
+Host is up (0.030s latency).
+All 1000 scanned ports on 172.16.99.8 are filtered
+
+Nmap scan report for 172.16.99.9
+Host is up (0.031s latency).
+All 1000 scanned ports on 172.16.99.9 are filtered
+
+Nmap scan report for 172.16.99.10
+Host is up (0.033s latency).
+All 1000 scanned ports on 172.16.99.10 are filtered
+
+Nmap scan report for 172.16.99.11
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.11 are filtered
+
+Nmap scan report for 172.16.99.12
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.12 are filtered
+
+Nmap scan report for 172.16.99.13
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.13 are filtered
+
+Nmap scan report for 172.16.99.14
+Host is up (0.028s latency).
+All 1000 scanned ports on 172.16.99.14 are filtered
+
+Nmap scan report for 172.16.99.15
+Host is up (0.029s latency).
+All 1000 scanned ports on 172.16.99.15 are filtered
+
+Nmap scan report for 172.16.99.16
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.16 are filtered
+
+Nmap scan report for 172.16.99.17
+Host is up (0.029s latency).
+All 1000 scanned ports on 172.16.99.17 are filtered
+
+Nmap scan report for 172.16.99.18
+Host is up (0.039s latency).
+All 1000 scanned ports on 172.16.99.18 are filtered
+
+Nmap scan report for 172.16.99.19
+Host is up (0.032s latency).
+All 1000 scanned ports on 172.16.99.19 are filtered
+
+Nmap scan report for 172.16.99.20
+Host is up (0.035s latency).
+All 1000 scanned ports on 172.16.99.20 are filtered
+
+Nmap scan report for 172.16.99.21
+Host is up (0.028s latency).
+All 1000 scanned ports on 172.16.99.21 are filtered
+
+Nmap scan report for 172.16.99.22
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.22 are filtered
+
+Nmap scan report for 172.16.99.23
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.23 are filtered
+
+Nmap scan report for 172.16.99.24
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.24 are filtered
+
+Nmap scan report for 172.16.99.25
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.25 are filtered
+
+Nmap scan report for 172.16.99.26
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.16.99.26 are filtered
+
+Nmap scan report for 172.16.99.27
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.27 are filtered
+
+Nmap scan report for 172.16.99.28
+Host is up (0.028s latency).
+All 1000 scanned ports on 172.16.99.28 are filtered
+
+Nmap scan report for 172.16.99.29
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.16.99.29 are filtered
+
+Nmap scan report for 172.16.99.30
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.16.99.30 are filtered
+
+Nmap scan report for 172.16.99.31
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.31 are filtered
+
+Nmap scan report for 172.16.99.32
+Host is up (0.029s latency).
+All 1000 scanned ports on 172.16.99.32 are filtered
+
+Nmap scan report for 172.16.99.33
+Host is up (0.039s latency).
+All 1000 scanned ports on 172.16.99.33 are filtered
+
+Nmap scan report for 172.16.99.34
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.34 are filtered
+
+Nmap scan report for 172.16.99.35
+Host is up (0.028s latency).
+All 1000 scanned ports on 172.16.99.35 are filtered
+
+Nmap scan report for 172.16.99.36
+Host is up (0.031s latency).
+All 1000 scanned ports on 172.16.99.36 are filtered
+
+Nmap scan report for 172.16.99.37
+Host is up (0.030s latency).
+All 1000 scanned ports on 172.16.99.37 are filtered
+
+Nmap scan report for 172.16.99.38
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.16.99.38 are filtered
+
+Nmap scan report for 172.16.99.39
+Host is up (0.028s latency).
+All 1000 scanned ports on 172.16.99.39 are filtered
+
+Nmap scan report for 172.16.99.40
+Host is up (0.039s latency).
+Not shown: 981 filtered ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+88/tcp   open  kerberos-sec
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+389/tcp  open  ldap
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+464/tcp  open  kpasswd5
+515/tcp  open  printer
+593/tcp  open  http-rpc-epmap
+636/tcp  open  ldapssl
+1801/tcp open  msmq
+2103/tcp open  zephyr-clt
+2105/tcp open  eklogin
+2107/tcp open  msmq-mgmt
+3268/tcp open  globalcatLDAP
+3269/tcp open  globalcatLDAPssl
+5357/tcp open  wsdapi
+
+Nmap scan report for 172.16.99.41
+Host is up (0.040s latency).
+Not shown: 984 filtered ports
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+49154/tcp open  unknown
+49155/tcp open  unknown
+49157/tcp open  unknown
+49158/tcp open  unknown
+49159/tcp open  unknown
+
+Nmap scan report for 172.16.99.42
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.16.99.42 are filtered
+
+Nmap scan report for 172.16.99.43
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.43 are filtered
+
+Nmap scan report for 172.16.99.44
+Host is up (0.025s latency).
+All 1000 scanned ports on 172.16.99.44 are filtered
+
+Nmap scan report for 172.16.99.45
+Host is up (0.028s latency).
+All 1000 scanned ports on 172.16.99.45 are filtered
+
+Nmap scan report for 172.16.99.46
+Host is up (0.028s latency).
+All 1000 scanned ports on 172.16.99.46 are filtered
+
+Nmap scan report for 172.16.99.47
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.47 are filtered
+
+Nmap scan report for 172.16.99.48
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.48 are filtered
+
+Nmap scan report for 172.16.99.49
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.16.99.49 are filtered
+
+Nmap scan report for 172.16.99.50
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.16.99.50 are filtered
+
+Nmap scan report for 172.16.99.51
+Host is up.
+All 1000 scanned ports on 172.16.99.51 are filtered
+
+Nmap scan report for 172.16.99.52
+Host is up (0.029s latency).
+All 1000 scanned ports on 172.16.99.52 are filtered
+
+Nmap scan report for 172.16.99.53
+Host is up (0.028s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.99.54
+Host is up.
+All 1000 scanned ports on 172.16.99.54 are filtered
+
+Nmap scan report for 172.16.99.55
+Host is up (0.026s latency).
+All 1000 scanned ports on 172.16.99.55 are filtered
+
+Nmap scan report for 172.16.99.56
+Host is up (0.027s latency).
+All 1000 scanned ports on 172.16.99.56 are filtered
+
+Nmap scan report for 172.16.99.57
+Host is up (0.030s latency).
+Not shown: 988 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+53/tcp   open  domain
+80/tcp   open  http
+110/tcp  open  pop3
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+143/tcp  open  imap
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+993/tcp  open  imaps
+995/tcp  open  pop3s
+2049/tcp open  nfs
+
+Nmap scan report for 172.16.99.58
+Host is up (0.027s latency).
+Not shown: 987 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+25/tcp   open  smtp
+80/tcp   open  http
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+143/tcp  open  imap
+445/tcp  open  microsoft-ds
+631/tcp  open  ipp
+2049/tcp open  nfs
+6667/tcp open  irc
+6668/tcp open  irc
+6669/tcp open  irc
+
+Nmap scan report for 172.16.99.59
+Host is up (0.029s latency).
+Not shown: 988 closed ports
+PORT    STATE SERVICE
+21/tcp  open  ftp
+22/tcp  open  ssh
+25/tcp  open  smtp
+80/tcp  open  http
+110/tcp open  pop3
+139/tcp open  netbios-ssn
+143/tcp open  imap
+445/tcp open  microsoft-ds
+465/tcp open  smtps
+587/tcp open  submission
+993/tcp open  imaps
+995/tcp open  pop3s
+
+Nmap scan report for 172.16.99.60
+Host is up (0.032s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+111/tcp  open  rpcbind
+443/tcp  open  https
+631/tcp  open  ipp
+3306/tcp open  mysql
+
+Nmap scan report for 172.16.99.61
+Host is up (0.022s latency).
+Not shown: 566 closed ports, 430 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Nmap scan report for 172.16.99.62
+Host is up (0.029s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Nmap scan report for 172.16.99.63
+Host is up (0.035s latency).
+Not shown: 977 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+23/tcp   open  telnet
+25/tcp   open  smtp
+53/tcp   open  domain
+80/tcp   open  http
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+512/tcp  open  exec
+513/tcp  open  login
+514/tcp  open  shell
+1099/tcp open  rmiregistry
+1524/tcp open  ingreslock
+2049/tcp open  nfs
+2121/tcp open  ccproxy-ftp
+3306/tcp open  mysql
+5432/tcp open  postgresql
+5900/tcp open  vnc
+6000/tcp open  X11
+6667/tcp open  irc
+8009/tcp open  ajp13
+8180/tcp open  unknown
+
+Nmap scan report for 172.16.99.64
+Host is up.
+All 1000 scanned ports on 172.16.99.64 are filtered
+
+Nmap scan report for 172.16.99.65
+Host is up (0.037s latency).
+All 1000 scanned ports on 172.16.99.65 are filtered
+
+Nmap scan report for 172.16.99.66
+Host is up (0.039s latency).
+All 1000 scanned ports on 172.16.99.66 are filtered
+
+Nmap scan report for 172.16.99.67
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.67 are filtered
+
+Nmap scan report for 172.16.99.68
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.68 are filtered
+
+Nmap scan report for 172.16.99.69
+Host is up (0.055s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+8000/tcp open  http-alt
+
+Nmap scan report for 172.16.99.70
+Host is up (0.039s latency).
+All 1000 scanned ports on 172.16.99.70 are filtered
+
+Nmap scan report for 172.16.99.71
+Host is up (0.042s latency).
+All 1000 scanned ports on 172.16.99.71 are filtered
+
+Nmap scan report for 172.16.99.72
+Host is up (0.042s latency).
+All 1000 scanned ports on 172.16.99.72 are filtered
+
+Nmap scan report for 172.16.99.73
+Host is up (0.042s latency).
+All 1000 scanned ports on 172.16.99.73 are filtered
+
+Nmap scan report for 172.16.99.74
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.74 are filtered
+
+Nmap scan report for 172.16.99.75
+Host is up (0.040s latency).
+All 1000 scanned ports on 172.16.99.75 are filtered
+
+Nmap scan report for 172.16.99.76
+Host is up (0.039s latency).
+All 1000 scanned ports on 172.16.99.76 are filtered
+
+Nmap scan report for 172.16.99.77
+Host is up (0.040s latency).
+All 1000 scanned ports on 172.16.99.77 are filtered
+
+Nmap scan report for 172.16.99.78
+Host is up (0.040s latency).
+All 1000 scanned ports on 172.16.99.78 are filtered
+
+Nmap scan report for 172.16.99.79
+Host is up (0.043s latency).
+All 1000 scanned ports on 172.16.99.79 are filtered
+
+Nmap scan report for 172.16.99.80
+Host is up (0.035s latency).
+All 1000 scanned ports on 172.16.99.80 are filtered
+
+Nmap scan report for 172.16.99.81
+Host is up (0.035s latency).
+All 1000 scanned ports on 172.16.99.81 are filtered
+
+Nmap scan report for 172.16.99.82
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.82 are filtered
+
+Nmap scan report for 172.16.99.83
+Host is up (0.042s latency).
+All 1000 scanned ports on 172.16.99.83 are filtered
+
+Nmap scan report for 172.16.99.84
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.84 are filtered
+
+Nmap scan report for 172.16.99.85
+Host is up (0.051s latency).
+All 1000 scanned ports on 172.16.99.85 are closed
+
+Nmap scan report for 172.16.99.86
+Host is up (0.040s latency).
+All 1000 scanned ports on 172.16.99.86 are filtered
+
+Nmap scan report for 172.16.99.87
+Host is up (0.039s latency).
+All 1000 scanned ports on 172.16.99.87 are filtered
+
+Nmap scan report for 172.16.99.88
+Host is up (0.037s latency).
+All 1000 scanned ports on 172.16.99.88 are filtered
+
+Nmap scan report for 172.16.99.89
+Host is up (0.035s latency).
+All 1000 scanned ports on 172.16.99.89 are filtered
+
+Nmap scan report for 172.16.99.90
+Host is up (0.042s latency).
+All 1000 scanned ports on 172.16.99.90 are filtered
+
+Nmap scan report for 172.16.99.91
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.91 are filtered
+
+Nmap scan report for 172.16.99.92
+Host is up (0.040s latency).
+All 1000 scanned ports on 172.16.99.92 are filtered
+
+Nmap scan report for 172.16.99.93
+Host is up (0.036s latency).
+All 1000 scanned ports on 172.16.99.93 are filtered
+
+Nmap scan report for 172.16.99.94
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.94 are filtered
+
+Nmap scan report for 172.16.99.95
+Host is up (0.040s latency).
+All 1000 scanned ports on 172.16.99.95 are filtered
+
+Nmap scan report for 172.16.99.96
+Host is up (0.040s latency).
+All 1000 scanned ports on 172.16.99.96 are filtered
+
+Nmap scan report for 172.16.99.97
+Host is up (0.038s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.99.98
+Host is up (0.042s latency).
+All 1000 scanned ports on 172.16.99.98 are filtered
+
+Nmap scan report for 172.16.99.99
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.99 are filtered
+
+Nmap scan report for 172.16.99.100
+Host is up (0.034s latency).
+All 1000 scanned ports on 172.16.99.100 are filtered
+
+Nmap scan report for 172.16.99.101
+Host is up (0.044s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.99.102
+Host is up (0.050s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Nmap scan report for 172.16.99.103
+Host is up (0.053s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.99.104
+Host is up (0.030s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.99.105
+Host is up (0.031s latency).
+All 1000 scanned ports on 172.16.99.105 are closed
+
+Nmap scan report for 172.16.99.106
+Host is up (0.040s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.99.107
+Host is up (0.038s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.99.108
+Host is up (0.037s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for 172.16.99.109
+Host is up (0.042s latency).
+All 1000 scanned ports on 172.16.99.109 are filtered
+
+Nmap scan report for 172.16.99.110
+Host is up (0.042s latency).
+All 1000 scanned ports on 172.16.99.110 are filtered
+
+Nmap scan report for 172.16.99.111
+Host is up (0.038s latency).
+All 1000 scanned ports on 172.16.99.111 are filtered
+
+Nmap scan report for 172.16.99.112
+Host is up (0.045s latency).
+All 1000 scanned ports on 172.16.99.112 are filtered
+
+Nmap scan report for 172.16.99.113
+Host is up (0.045s latency).
+All 1000 scanned ports on 172.16.99.113 are filtered
+
+Nmap scan report for 172.16.99.114
+Host is up (0.037s latency).
+All 1000 scanned ports on 172.16.99.114 are filtered
+
+Nmap scan report for 172.16.99.115
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.115 are filtered
+
+Nmap scan report for 172.16.99.116
+Host is up (0.040s latency).
+All 1000 scanned ports on 172.16.99.116 are filtered
+
+Nmap scan report for 172.16.99.117
+Host is up (0.039s latency).
+All 1000 scanned ports on 172.16.99.117 are filtered
+
+Nmap scan report for 172.16.99.118
+Host is up (0.043s latency).
+All 1000 scanned ports on 172.16.99.118 are filtered
+
+Nmap scan report for 172.16.99.119
+Host is up (0.036s latency).
+All 1000 scanned ports on 172.16.99.119 are filtered
+
+Nmap scan report for 172.16.99.120
+Host is up (0.040s latency).
+All 1000 scanned ports on 172.16.99.120 are filtered
+
+Nmap scan report for 172.16.99.121
+Host is up (0.039s latency).
+All 1000 scanned ports on 172.16.99.121 are filtered
+
+Nmap scan report for 172.16.99.122
+Host is up (0.042s latency).
+All 1000 scanned ports on 172.16.99.122 are filtered
+
+Nmap scan report for 172.16.99.123
+Host is up (0.042s latency).
+All 1000 scanned ports on 172.16.99.123 are filtered
+
+Nmap scan report for 172.16.99.124
+Host is up (0.039s latency).
+All 1000 scanned ports on 172.16.99.124 are filtered
+
+Nmap scan report for 172.16.99.125
+Host is up (0.044s latency).
+All 1000 scanned ports on 172.16.99.125 are filtered
+
+Nmap scan report for 172.16.99.126
+Host is up (0.044s latency).
+All 1000 scanned ports on 172.16.99.126 are filtered
+
+Nmap scan report for 172.16.99.127
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.127 are filtered
+
+Nmap scan report for 172.16.99.128
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.128 are filtered
+
+Nmap scan report for 172.16.99.129
+Host is up (0.078s latency).
+All 1000 scanned ports on 172.16.99.129 are filtered
+
+Nmap scan report for 172.16.99.130
+Host is up (0.033s latency).
+All 1000 scanned ports on 172.16.99.130 are filtered
+
+Nmap scan report for 172.16.99.131
+Host is up (0.035s latency).
+All 1000 scanned ports on 172.16.99.131 are filtered
+
+Nmap scan report for 172.16.99.132
+Host is up (0.18s latency).
+All 1000 scanned ports on 172.16.99.132 are filtered
+
+Nmap scan report for 172.16.99.133
+Host is up (0.084s latency).
+All 1000 scanned ports on 172.16.99.133 are filtered
+
+Nmap scan report for 172.16.99.134
+Host is up (0.100s latency).
+All 1000 scanned ports on 172.16.99.134 are filtered
+
+Nmap scan report for 172.16.99.135
+Host is up (0.14s latency).
+All 1000 scanned ports on 172.16.99.135 are filtered
+
+Nmap scan report for 172.16.99.136
+Host is up (0.053s latency).
+All 1000 scanned ports on 172.16.99.136 are filtered
+
+Nmap scan report for 172.16.99.137
+Host is up (0.14s latency).
+All 1000 scanned ports on 172.16.99.137 are filtered
+
+Nmap scan report for 172.16.99.138
+Host is up (0.25s latency).
+All 1000 scanned ports on 172.16.99.138 are filtered
+
+Nmap scan report for 172.16.99.139
+Host is up (0.060s latency).
+All 1000 scanned ports on 172.16.99.139 are filtered
+
+Nmap scan report for 172.16.99.140
+Host is up (0.070s latency).
+All 1000 scanned ports on 172.16.99.140 are filtered
+
+Nmap scan report for 172.16.99.141
+Host is up (0.25s latency).
+All 1000 scanned ports on 172.16.99.141 are filtered
+
+Nmap scan report for 172.16.99.142
+Host is up (0.037s latency).
+All 1000 scanned ports on 172.16.99.142 are filtered
+
+Nmap scan report for 172.16.99.143
+Host is up (0.033s latency).
+All 1000 scanned ports on 172.16.99.143 are filtered
+
+Nmap scan report for 172.16.99.144
+Host is up (0.071s latency).
+All 1000 scanned ports on 172.16.99.144 are filtered
+
+Nmap scan report for 172.16.99.145
+Host is up (0.052s latency).
+All 1000 scanned ports on 172.16.99.145 are filtered
+
+Nmap scan report for 172.16.99.146
+Host is up (0.057s latency).
+All 1000 scanned ports on 172.16.99.146 are filtered
+
+Nmap scan report for 172.16.99.147
+Host is up (0.044s latency).
+All 1000 scanned ports on 172.16.99.147 are filtered
+
+Nmap scan report for 172.16.99.148
+Host is up (0.063s latency).
+All 1000 scanned ports on 172.16.99.148 are filtered
+
+Nmap scan report for 172.16.99.149
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.149 are filtered
+
+Nmap scan report for 172.16.99.150
+Host is up (0.13s latency).
+All 1000 scanned ports on 172.16.99.150 are filtered
+
+Nmap scan report for 172.16.99.151
+Host is up (0.12s latency).
+All 1000 scanned ports on 172.16.99.151 are filtered
+
+Nmap scan report for 172.16.99.152
+Host is up (0.037s latency).
+All 1000 scanned ports on 172.16.99.152 are filtered
+
+Nmap scan report for 172.16.99.153
+Host is up (0.062s latency).
+All 1000 scanned ports on 172.16.99.153 are filtered
+
+Nmap scan report for 172.16.99.154
+Host is up (0.12s latency).
+All 1000 scanned ports on 172.16.99.154 are filtered
+
+Nmap scan report for 172.16.99.155
+Host is up (0.048s latency).
+All 1000 scanned ports on 172.16.99.155 are filtered
+
+Nmap scan report for 172.16.99.156
+Host is up (0.052s latency).
+All 1000 scanned ports on 172.16.99.156 are filtered
+
+Nmap scan report for 172.16.99.157
+Host is up (0.034s latency).
+All 1000 scanned ports on 172.16.99.157 are filtered
+
+Nmap scan report for 172.16.99.158
+Host is up (0.035s latency).
+All 1000 scanned ports on 172.16.99.158 are filtered
+
+Nmap scan report for 172.16.99.159
+Host is up (0.039s latency).
+All 1000 scanned ports on 172.16.99.159 are filtered
+
+Nmap scan report for 172.16.99.160
+Host is up (0.040s latency).
+All 1000 scanned ports on 172.16.99.160 are filtered
+
+Nmap scan report for 172.16.99.161
+Host is up (0.074s latency).
+All 1000 scanned ports on 172.16.99.161 are filtered
+
+Nmap scan report for 172.16.99.162
+Host is up (0.13s latency).
+All 1000 scanned ports on 172.16.99.162 are filtered
+
+Nmap scan report for 172.16.99.163
+Host is up (0.14s latency).
+All 1000 scanned ports on 172.16.99.163 are filtered
+
+Nmap scan report for 172.16.99.164
+Host is up (0.14s latency).
+All 1000 scanned ports on 172.16.99.164 are filtered
+
+Nmap scan report for 172.16.99.165
+Host is up (0.046s latency).
+All 1000 scanned ports on 172.16.99.165 are filtered
+
+Nmap scan report for 172.16.99.166
+Host is up (0.036s latency).
+All 1000 scanned ports on 172.16.99.166 are filtered
+
+Nmap scan report for 172.16.99.167
+Host is up (0.049s latency).
+All 1000 scanned ports on 172.16.99.167 are filtered
+
+Nmap scan report for 172.16.99.168
+Host is up (0.12s latency).
+All 1000 scanned ports on 172.16.99.168 are filtered
+
+Nmap scan report for 172.16.99.169
+Host is up (0.39s latency).
+All 1000 scanned ports on 172.16.99.169 are filtered
+
+Nmap scan report for 172.16.99.170
+Host is up (0.40s latency).
+All 1000 scanned ports on 172.16.99.170 are filtered
+
+Nmap scan report for 172.16.99.171
+Host is up (0.12s latency).
+All 1000 scanned ports on 172.16.99.171 are filtered
+
+Nmap scan report for 172.16.99.172
+Host is up (0.083s latency).
+All 1000 scanned ports on 172.16.99.172 are filtered
+
+Nmap scan report for 172.16.99.173
+Host is up (0.21s latency).
+All 1000 scanned ports on 172.16.99.173 are filtered
+
+Nmap scan report for 172.16.99.174
+Host is up (0.15s latency).
+All 1000 scanned ports on 172.16.99.174 are filtered
+
+Nmap scan report for 172.16.99.175
+Host is up (0.053s latency).
+All 1000 scanned ports on 172.16.99.175 are filtered
+
+Nmap scan report for 172.16.99.176
+Host is up (0.15s latency).
+All 1000 scanned ports on 172.16.99.176 are filtered
+
+Nmap scan report for 172.16.99.177
+Host is up (0.087s latency).
+All 1000 scanned ports on 172.16.99.177 are filtered
+
+Nmap scan report for 172.16.99.178
+Host is up (0.035s latency).
+All 1000 scanned ports on 172.16.99.178 are filtered
+
+Nmap scan report for 172.16.99.179
+Host is up (0.069s latency).
+All 1000 scanned ports on 172.16.99.179 are filtered
+
+Nmap scan report for 172.16.99.180
+Host is up (0.038s latency).
+All 1000 scanned ports on 172.16.99.180 are filtered
+
+Nmap scan report for 172.16.99.181
+Host is up (0.037s latency).
+All 1000 scanned ports on 172.16.99.181 are filtered
+
+Nmap scan report for 172.16.99.182
+Host is up (0.050s latency).
+All 1000 scanned ports on 172.16.99.182 are filtered
+
+Nmap scan report for 172.16.99.183
+Host is up (0.036s latency).
+All 1000 scanned ports on 172.16.99.183 are filtered
+
+Nmap scan report for 172.16.99.184
+Host is up (0.076s latency).
+All 1000 scanned ports on 172.16.99.184 are filtered
+
+Nmap scan report for 172.16.99.185
+Host is up (0.14s latency).
+All 1000 scanned ports on 172.16.99.185 are filtered
+
+Nmap scan report for 172.16.99.186
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.186 are filtered
+
+Nmap scan report for 172.16.99.187
+Host is up (0.041s latency).
+All 1000 scanned ports on 172.16.99.187 are filtered
+
+Nmap scan report for 172.16.99.188
+Host is up (0.059s latency).
+All 1000 scanned ports on 172.16.99.188 are filtered
+
+Nmap scan report for 172.16.99.189
+Host is up (0.13s latency).
+All 1000 scanned ports on 172.16.99.189 are filtered
+
+Nmap scan report for 172.16.99.190
+Host is up (0.17s latency).
+All 1000 scanned ports on 172.16.99.190 are filtered
+
+Nmap scan report for 172.16.99.191
+Host is up (0.13s latency).
+All 1000 scanned ports on 172.16.99.191 are filtered
+
+Nmap scan report for 172.16.99.192
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.192 are filtered
+
+Nmap scan report for 172.16.99.193
+Host is up (0.087s latency).
+All 1000 scanned ports on 172.16.99.193 are filtered
+
+Nmap scan report for 172.16.99.194
+Host is up (0.100s latency).
+All 1000 scanned ports on 172.16.99.194 are filtered
+
+Nmap scan report for 172.16.99.195
+Host is up (0.096s latency).
+All 1000 scanned ports on 172.16.99.195 are filtered
+
+Nmap scan report for 172.16.99.196
+Host is up (0.098s latency).
+All 1000 scanned ports on 172.16.99.196 are filtered
+
+Nmap scan report for 172.16.99.197
+Host is up (0.090s latency).
+All 1000 scanned ports on 172.16.99.197 are filtered
+
+Nmap scan report for 172.16.99.198
+Host is up (0.093s latency).
+All 1000 scanned ports on 172.16.99.198 are filtered
+
+Nmap scan report for 172.16.99.199
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.199 are filtered
+
+Nmap scan report for 172.16.99.200
+Host is up (0.094s latency).
+All 1000 scanned ports on 172.16.99.200 are filtered
+
+Nmap scan report for 172.16.99.201
+Host is up (0.093s latency).
+All 1000 scanned ports on 172.16.99.201 are filtered
+
+Nmap scan report for 172.16.99.202
+Host is up (0.097s latency).
+All 1000 scanned ports on 172.16.99.202 are filtered
+
+Nmap scan report for 172.16.99.203
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.203 are filtered
+
+Nmap scan report for 172.16.99.204
+Host is up (0.088s latency).
+All 1000 scanned ports on 172.16.99.204 are filtered
+
+Nmap scan report for 172.16.99.205
+Host is up (0.079s latency).
+All 1000 scanned ports on 172.16.99.205 are filtered
+
+Nmap scan report for 172.16.99.206
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.206 are filtered
+
+Nmap scan report for 172.16.99.207
+Host is up (0.099s latency).
+All 1000 scanned ports on 172.16.99.207 are filtered
+
+Nmap scan report for 172.16.99.208
+Host is up (0.087s latency).
+All 1000 scanned ports on 172.16.99.208 are filtered
+
+Nmap scan report for 172.16.99.209
+Host is up (0.093s latency).
+All 1000 scanned ports on 172.16.99.209 are filtered
+
+Nmap scan report for 172.16.99.210
+Host is up (0.093s latency).
+All 1000 scanned ports on 172.16.99.210 are filtered
+
+Nmap scan report for 172.16.99.211
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.211 are filtered
+
+Nmap scan report for 172.16.99.212
+Host is up (0.089s latency).
+All 1000 scanned ports on 172.16.99.212 are filtered
+
+Nmap scan report for 172.16.99.213
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.213 are filtered
+
+Nmap scan report for 172.16.99.214
+Host is up (0.090s latency).
+All 1000 scanned ports on 172.16.99.214 are filtered
+
+Nmap scan report for 172.16.99.215
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.215 are filtered
+
+Nmap scan report for 172.16.99.216
+Host is up (0.088s latency).
+All 1000 scanned ports on 172.16.99.216 are filtered
+
+Nmap scan report for 172.16.99.217
+Host is up (0.092s latency).
+All 1000 scanned ports on 172.16.99.217 are filtered
+
+Nmap scan report for 172.16.99.218
+Host is up (0.089s latency).
+All 1000 scanned ports on 172.16.99.218 are filtered
+
+Nmap scan report for 172.16.99.219
+Host is up (0.081s latency).
+All 1000 scanned ports on 172.16.99.219 are filtered
+
+Nmap scan report for 172.16.99.220
+Host is up (0.081s latency).
+All 1000 scanned ports on 172.16.99.220 are filtered
+
+Nmap scan report for 172.16.99.221
+Host is up (0.10s latency).
+All 1000 scanned ports on 172.16.99.221 are filtered
+
+Nmap scan report for 172.16.99.222
+Host is up (0.081s latency).
+All 1000 scanned ports on 172.16.99.222 are filtered
+
+Nmap scan report for 172.16.99.223
+Host is up (0.079s latency).
+All 1000 scanned ports on 172.16.99.223 are filtered
+
+Nmap scan report for 172.16.99.224
+Host is up (0.10s latency).
+All 1000 scanned ports on 172.16.99.224 are filtered
+
+Nmap scan report for 172.16.99.225
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.225 are filtered
+
+Nmap scan report for 172.16.99.226
+Host is up (0.090s latency).
+All 1000 scanned ports on 172.16.99.226 are filtered
+
+Nmap scan report for 172.16.99.227
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.227 are filtered
+
+Nmap scan report for 172.16.99.228
+Host is up (0.090s latency).
+All 1000 scanned ports on 172.16.99.228 are filtered
+
+Nmap scan report for 172.16.99.229
+Host is up (0.089s latency).
+All 1000 scanned ports on 172.16.99.229 are filtered
+
+Nmap scan report for 172.16.99.230
+Host is up (0.087s latency).
+All 1000 scanned ports on 172.16.99.230 are filtered
+
+Nmap scan report for 172.16.99.231
+Host is up (0.082s latency).
+All 1000 scanned ports on 172.16.99.231 are filtered
+
+Nmap scan report for 172.16.99.232
+Host is up (0.087s latency).
+All 1000 scanned ports on 172.16.99.232 are filtered
+
+Nmap scan report for 172.16.99.233
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.233 are filtered
+
+Nmap scan report for 172.16.99.234
+Host is up (0.091s latency).
+All 1000 scanned ports on 172.16.99.234 are filtered
+
+Nmap scan report for 172.16.99.235
+Host is up (0.091s latency).
+All 1000 scanned ports on 172.16.99.235 are filtered
+
+Nmap scan report for 172.16.99.236
+Host is up (0.094s latency).
+All 1000 scanned ports on 172.16.99.236 are filtered
+
+Nmap scan report for 172.16.99.237
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.237 are filtered
+
+Nmap scan report for 172.16.99.238
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.238 are filtered
+
+Nmap scan report for 172.16.99.239
+Host is up (0.090s latency).
+All 1000 scanned ports on 172.16.99.239 are filtered
+
+Nmap scan report for 172.16.99.240
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.240 are filtered
+
+Nmap scan report for 172.16.99.241
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.241 are filtered
+
+Nmap scan report for 172.16.99.242
+Host is up (0.090s latency).
+All 1000 scanned ports on 172.16.99.242 are filtered
+
+Nmap scan report for 172.16.99.243
+Host is up (0.12s latency).
+All 1000 scanned ports on 172.16.99.243 are filtered
+
+Nmap scan report for 172.16.99.244
+Host is up (0.082s latency).
+All 1000 scanned ports on 172.16.99.244 are filtered
+
+Nmap scan report for 172.16.99.245
+Host is up (0.089s latency).
+All 1000 scanned ports on 172.16.99.245 are filtered
+
+Nmap scan report for 172.16.99.246
+Host is up (0.095s latency).
+All 1000 scanned ports on 172.16.99.246 are filtered
+
+Nmap scan report for 172.16.99.247
+Host is up (0.10s latency).
+All 1000 scanned ports on 172.16.99.247 are filtered
+
+Nmap scan report for 172.16.99.248
+Host is up (0.11s latency).
+All 1000 scanned ports on 172.16.99.248 are filtered
+
+Nmap scan report for 172.16.99.249
+Host is up (0.092s latency).
+All 1000 scanned ports on 172.16.99.249 are filtered
+
+Nmap scan report for 172.16.99.250
+Host is up (0.12s latency).
+All 1000 scanned ports on 172.16.99.250 are filtered
+
+Nmap scan report for 172.16.99.251
+Host is up (0.10s latency).
+All 1000 scanned ports on 172.16.99.251 are filtered
+
+Nmap scan report for 172.16.99.252
+Host is up (0.090s latency).
+All 1000 scanned ports on 172.16.99.252 are filtered
+
+Nmap scan report for 172.16.99.253
+Host is up (0.089s latency).
+All 1000 scanned ports on 172.16.99.253 are filtered
+
+Nmap scan report for 172.16.99.254
+Host is up (0.084s latency).
+All 1000 scanned ports on 172.16.99.254 are filtered
+
+Nmap scan report for 172.16.99.255
+Host is up.
+All 1000 scanned ports on 172.16.99.255 are filtered
+
+# Nmap done at Fri Jul 17 15:56:17 2020 -- 256 IP addresses (256 hosts up) scanned in 182.33 seconds

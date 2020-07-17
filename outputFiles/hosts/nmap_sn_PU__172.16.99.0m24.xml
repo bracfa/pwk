@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Jul 17 15:58:14 2020 as: nmap -sn -PU -oA /home/kali/gitWorkspace/pwk/outputFiles/hosts/nmap_sn_PU__172.16.99.0m24 172.16.99.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sn -PU -oA /home/kali/gitWorkspace/pwk/outputFiles/hosts/nmap_sn_PU__172.16.99.0m24 172.16.99.0/24" start="1595015894" startstr="Fri Jul 17 15:58:14 2020" version="7.80" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="port-unreach" reason_ttl="127"/>
+<address addr="172.16.99.53" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="86099" rttvar="86099" to="430495"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.57" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="66507" rttvar="66507" to="332535"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.58" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="66607" rttvar="66607" to="333035"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.59" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="66528" rttvar="66528" to="332640"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.60" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="71553" rttvar="71553" to="357765"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.61" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="66653" rttvar="66653" to="333265"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.62" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="66815" rttvar="66815" to="334075"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.63" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="66724" rttvar="66724" to="333620"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.64" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="64228" rttvar="64228" to="321140"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.85" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="75239" rttvar="75239" to="376195"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.102" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="80076" rttvar="80076" to="400380"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.103" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="80072" rttvar="80072" to="400360"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.104" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="80028" rttvar="80028" to="400140"/>
+</host>
+<host><status state="up" reason="port-unreach" reason_ttl="63"/>
+<address addr="172.16.99.105" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="80028" rttvar="80028" to="400140"/>
+</host>
+<runstats><finished time="1595015906" timestr="Fri Jul 17 15:58:26 2020" elapsed="11.46" summary="Nmap done at Fri Jul 17 15:58:26 2020; 256 IP addresses (14 hosts up) scanned in 11.46 seconds" exit="success"/><hosts up="14" down="242" total="256"/>
+</runstats>
+</nmaprun>

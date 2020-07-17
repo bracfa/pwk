@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Jul 17 16:02:30 2020 as: nmap -sn -PO -oA /home/kali/gitWorkspace/pwk/outputFiles/hosts/nmap_sn_PO__172.16.100.0m24 172.16.100.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sn -PO -oA /home/kali/gitWorkspace/pwk/outputFiles/hosts/nmap_sn_PO__172.16.100.0m24 172.16.100.0/24" start="1595016150" startstr="Fri Jul 17 16:02:30 2020" version="7.80" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="proto-response" reason_ttl="64"/>
+<address addr="172.16.100.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="26453" rttvar="26453" to="132265"/>
+</host>
+<host><status state="up" reason="proto-response" reason_ttl="63"/>
+<address addr="172.16.100.53" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="23822" rttvar="23822" to="119110"/>
+</host>
+<host><status state="up" reason="proto-response" reason_ttl="63"/>
+<address addr="172.16.100.54" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="23674" rttvar="23674" to="118370"/>
+</host>
+<host><status state="up" reason="proto-response" reason_ttl="63"/>
+<address addr="172.16.100.55" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="23830" rttvar="23830" to="119150"/>
+</host>
+<host><status state="up" reason="proto-response" reason_ttl="63"/>
+<address addr="172.16.100.57" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="43224" rttvar="33649" to="177820"/>
+</host>
+<host><status state="up" reason="proto-response" reason_ttl="63"/>
+<address addr="172.16.100.59" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="21422" rttvar="21422" to="107110"/>
+</host>
+<host><status state="up" reason="proto-response" reason_ttl="63"/>
+<address addr="172.16.100.65" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="21448" rttvar="21448" to="107240"/>
+</host>
+<host><status state="up" reason="proto-response" reason_ttl="63"/>
+<address addr="172.16.100.66" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="26575" rttvar="26575" to="132875"/>
+</host>
+<runstats><finished time="1595016158" timestr="Fri Jul 17 16:02:38 2020" elapsed="7.56" summary="Nmap done at Fri Jul 17 16:02:38 2020; 256 IP addresses (8 hosts up) scanned in 7.56 seconds" exit="success"/><hosts up="8" down="248" total="256"/>
+</runstats>
+</nmaprun>

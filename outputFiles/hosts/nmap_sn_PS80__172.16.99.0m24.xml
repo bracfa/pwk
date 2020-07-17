@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Jul 17 15:57:18 2020 as: nmap -sn -PS80 -oA /home/kali/gitWorkspace/pwk/outputFiles/hosts/nmap_sn_PS80__172.16.99.0m24 172.16.99.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sn -PS80 -oA /home/kali/gitWorkspace/pwk/outputFiles/hosts/nmap_sn_PS80__172.16.99.0m24 172.16.99.0/24" start="1595015838" startstr="Fri Jul 17 15:57:18 2020" version="7.80" xmloutputversion="1.04">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="syn-ack" reason_ttl="64"/>
+<address addr="172.16.99.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="29844" rttvar="29844" to="149220"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="127"/>
+<address addr="172.16.99.40" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="34307" rttvar="34307" to="171535"/>
+</host>
+<host><status state="up" reason="reset" reason_ttl="127"/>
+<address addr="172.16.99.53" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="34618" rttvar="34618" to="173090"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="63"/>
+<address addr="172.16.99.57" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="34330" rttvar="34330" to="171650"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="63"/>
+<address addr="172.16.99.58" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="34206" rttvar="34206" to="171030"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="63"/>
+<address addr="172.16.99.59" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="34039" rttvar="34039" to="170195"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="63"/>
+<address addr="172.16.99.60" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="34498" rttvar="34498" to="172490"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="63"/>
+<address addr="172.16.99.61" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="34397" rttvar="34397" to="171985"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="63"/>
+<address addr="172.16.99.62" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="34443" rttvar="34443" to="172215"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="63"/>
+<address addr="172.16.99.63" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="23869" rttvar="23869" to="119345"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="63"/>
+<address addr="172.16.99.64" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="23593" rttvar="23593" to="117965"/>
+</host>
+<host><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="172.16.99.85" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="24018" rttvar="24018" to="120090"/>
+</host>
+<host><status state="up" reason="syn-ack" reason_ttl="63"/>
+<address addr="172.16.99.102" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="26734" rttvar="26734" to="133670"/>
+</host>
+<host><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="172.16.99.103" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="26747" rttvar="26747" to="133735"/>
+</host>
+<host><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="172.16.99.104" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="26559" rttvar="26559" to="132795"/>
+</host>
+<host><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="172.16.99.105" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="26025" rttvar="26025" to="130125"/>
+</host>
+<runstats><finished time="1595015842" timestr="Fri Jul 17 15:57:22 2020" elapsed="4.47" summary="Nmap done at Fri Jul 17 15:57:22 2020; 256 IP addresses (16 hosts up) scanned in 4.47 seconds" exit="success"/><hosts up="16" down="240" total="256"/>
+</runstats>
+</nmaprun>
