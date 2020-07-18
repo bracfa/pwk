@@ -31,7 +31,8 @@ try:
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    s.connect(("192.168.0.20",80))
+    #s.connect(("192.168.0.20",80))
+    s.connect(("192.168.0.30",80))
     s.send(buffer)
 
     s.close()
