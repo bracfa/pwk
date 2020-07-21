@@ -51,9 +51,9 @@ echo "$PASS" | sudo -S nmap -v -p 139,445 --script=smb-os-discovery "$IP" -oG "$
 # Scanning if the hosts have portmapper or rpcbind running
 echo "$PASS" | sudo -S nmap -v -p 111 "$IP" -oG "$OFD""nmap_nfsEnum_portmapper_rpcbind__""$IP"
 # Scanning for services registed with rpcbind
-echo "$PASS" | sudo -S nmap -sV -p_111 --script=rpcinfo "$IP" -oG "$OFD""nmap_nfsEnum_nse_rpcinfo__""$IP"
+echo "$PASS" | sudo -S nmap -sV -p 111 --script=rpcinfo "$IP" -oG "$OFD""nmap_nfsEnum_nse_rpcinfo__""$IP"
 # If NFS is running, run NFS Scripts
-#echo "$PASS" | sudo -S nmap -p_111 --script nfs* "$IP" -oG "$OFD""nmap_scripts_enumerate_all__""$IP"
+#echo "$PASS" | sudo -S nmap -p 111 --script nfs* "$IP" -oG "$OFD""nmap_scripts_enumerate_all__""$IP"
 
 #-SMTP Enumeration-#
 # Verify if any existing using on a mail server using netcat

