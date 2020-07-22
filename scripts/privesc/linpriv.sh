@@ -19,10 +19,11 @@ cat /etc/passwd
 hostname
 
 #-Enumerating the OS version and Architecture-#
-# View the /etc/issue, /etc/*-release, and uname -a output
+# View the /etc/issue, /etc/*-release, uname -a, and arch
 cat /etc/issue
 cat /etc/*-release
 uname -a
+arch
 
 #-Enumerating Running Processes and Services"
 # List system processes including those run by privileged users
@@ -53,6 +54,8 @@ grep -iRl "iptables" /
 ls -lah /etc/cron*
 # Check if an admin added their own tasks to /etc/crontab
 cat /etc/crontab
+# Check the cron logfile
+grep "CRON" /var/log/cron.log
 
 #-Enumerating Installed Applications and Patch Levels-#
 # Depending on the distribution, use rpm, yum or dpkg
