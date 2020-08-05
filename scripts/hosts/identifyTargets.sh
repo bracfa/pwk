@@ -9,19 +9,22 @@ cd "$OUTDIR"
 
 # Identify all XML files. This not yet an array!
 FNAMES=$(ls *.xml)
-echo "FNAMES= $FNAMES"
-sleep 10
-SAVEIFS=$IFS
+echo "$FNAMES"
+sleep 2
+SAVEIFS="$IFS"
 IFS=$'\n'
 FARRAY=($FNAMES)
-IFS=$SAVEIFS
+IFS="$SAVEIFS"
 
 
 # Create a file for each xml file which shows all the hosts
 for file in "${FARRAY[@]}"
 do
     echo "FILENAME: $file"
-    parse-nmap "$file"
+    temp=$(echo $file | awk -F'.xml' '{ print $1 }')
+    echo "$temp"
+    sleep 2
+    parse-nmap "$file" --list-file "$RESDIR""$temp""_targetlist.res" 
 done
 
 # Add all the hosts to one file and make sure every target is unique
