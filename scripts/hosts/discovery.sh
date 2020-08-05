@@ -7,7 +7,7 @@ Would be nice to know which hosts came from which scan, priot to
 sorting or finding unique hosts
 COMMENT
 
-# Excluded targets fileEXCLUDED="/home/kali/gitWorkspace/pwk/outputFiles/hosts/pwk/exclude-hosts"
+# Excluded targets file
 XH="/home/kali/gitWorkspace/pwk/outputFiles/hosts/pwk/exclude-hosts"
 SM="$1"
 # Attack machine password
@@ -23,96 +23,98 @@ SNET_FN="$SNET""m""$MSK"
 
 
 #-- HOST DISCOVERY --#
+#TODO: Grep through the results to find which hosts are up. Just want a list of alive IPs from each scan
 
-#-LIST SCAN-#
-#-list each host in network, without sending packets.
-#-nmap still does reverse-DNS to learn their names.
-echo "$PASS" | sudo -S nmap -sL "$SM" -oA "$OFD""nmap_sL__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sL__$SNET_FN".txt 2>&1
-echo "Completed: list scan"
+echo "STARTED: No scan. List targets only"
+echo "$PASS" | sudo -S nmap -sL "$SM" -oA "$OFD""nmap_listScan__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: No scan. List targets only"
 
-#-NETWORK SWEEP-#
-#-ping scan with disabled port scanning with dns brute force
-echo "$PASS" | sudo -S nmap -sn --script dns-brute "$SM" -oA "$OFD""nmap_sn_dnsbrute__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sn_dnsbrute__$SNET_FN".txt 2>&1
-echo "Completed: ping scan with disabled port scanning with dns brute force"
+echo "STARTED: Disabled port scanning. Host discovery only"
+echo "$PASS" | sudo -S nmap -sn "$SM" -oA "$OFD""nmap_noPortScan_yesHostDiscovery__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Disabled port scanning. Host discovery only"
 
-#-broadcast ping with disabled port scanning
-echo "$PASS" | sudo -S nmap -sn --script broadcast-ping "$SM" -oA "$OFD""nmap_sn_broadcastping__$SNET_FN" > "$OFD""nmap_sn_broadcastping__$SNET_FN".txt 2>&1
-echo "Completed: broadcast ping with disabled port scanning"
+echo "STARTED: Disabled port scanning. Host discovery only. Source Port 53"
+echo "$PASS" | sudo -S nmap -sn -g 53 "$SM" -oA "$OFD""nmap_noPortScan_sourcPort53__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Disabled port scanning. Host discovery only. Source Port 53"
 
-# Resolve each host name
-#cat test.gnmap | grep -v Status | awk -F' ' '{ print $2 }' | grep -v Nmap
+echo "STARTED: Disabled port scanning. Host discovery only. Source Port 88"
+echo "$PASS" | sudo -S nmap -sn -g 88 "$SM" -oA "$OFD""nmap_noPortScan_sourcPort88__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Disabled port scanning. Host discovery only. Source Port 88"
 
-#-DEFAULT SCAN-#
-#-the default nmap scan for port 80 only
-echo "$PASS" | sudo -S nmap -p 80 "$SM" -oA "$OFD""nmap_p_80__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_p_80__$SNET_FN".txt 2>&1 
-echo "Completed: default nmap scan for port 80 only"
-#-the default nmap scan uses -PE 443 -PA80 -PP
-echo "$PASS" | sudo -S nmap "$SM" -oA "$OFD""nmap__$SNET_FN" --excludefile "$XH" > "$OFD""nmap__$SNET_FN".txt 2>&1
-echo "Completed: default nmap scan uses -PE 443 -PA80 -PP"
+echo "STARTED: Disable host discovery. Port scan only with fingerprinting"
+echo "$PASS" | sudo -S nmap -v -Pn -O "$SM" -oA "$OFD""nmap_yesPortScan_noHostDiscovery_fingerPrint__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Disable host discovery. Port scan only with fingerprinting"
 
-#-SCAN TOP TCP PORTS-#
-#-this uses a TCP connect scan for top 20 TCP ports
-echo "$PASS" | sudo -S nmap -sT -A --top-ports=20 "$SM" -oA "$OFD""nmap_sT_A_topPorts20__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sT_A_topPorts20__$SNET_FN".txt 2>&1
-echo "Completed: TCP connect scan for top 20 TCP ports"
+echo "STARTED: Default scan port 80 only"
+echo "$PASS" | sudo -S nmap -p 80 "$SM" -oA "$OFD""nmap_default_syn80__$SNET_FN" --excludefile "$XH" 
+echo "COMPLETED: Default scan port 80 only"
 
-#-NO PING-#
-#-skips discovery stage. Performs each scan as if each target is up.
-echo "$PASS" | sudo -S nmap -Pn "$SM" -oA "$OFD""nmap_Pn__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_Pn__$SNET_FN".txt 2>&1
-echo "Completed: skips discovery stage. Performs each scan as if each target is up"
+echo "STARTED: Default scan uses -PE 443 -PA80 -PP"
+echo "$PASS" | sudo -S nmap "$SM" -oA "$OFD""nmap_default_icmpEcho443_ack80_timeStamp__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Default nmap scan uses -PE 443 -PA80 -PP"
 
-#-ICMP PING TYPES-#
-#-use disabled port scan (-sn). Sends ICMP echo, TCP SYN to port 443, TCP ACK port 80
-#-use ICMP requests (-PE, -PP, -PM)
-#-still need to decide what type of output file will be used
-# ICMP echo
-echo "$PASS" | sudo -S nmap -sP -PE "$SM" -oA "$OFD""nmap_sP_PE__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sP_PE__$SNET_FN".txt 2>&1
-echo "Completed: ICMP echo"
-# ICMP timestamp
-echo "$PASS" | sudo -S nmap -sP -PP "$SM" -oA "$OFD""nmap_sP_PP__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sP_PP__$SNET_FN".txt 2>&1
-echo "Completed: ICMP timestamp"
-# ICMP netmask
-echo "$PASS" | sudo -S nmap -sP -PM "$SM" -oA "$OFD""nmap_sP_PM__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sP_PM__$SNET_FN".txt 2>&1
-echo "Completed: ICMP netmask"
+echo "STARTED: TCP SYN ports 22-25,80 only"
+echo "$PASS" | sudo -S nmap -PS22-25,80 "$SM" -oA "$OFD""nmap_noPortScan_syn_22-25_80__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: TCP SYN ports 22-25,80 only"
 
+echo "STARTED: Disabled port scanning. Host discovery only. TCP SYN ports 22-25. Source Port 53"
+echo "$PASS" | sudo -S nmap -sn -PS22-25 -g 53 "$SM" -oA "$OFD""nmap_noPortScan_syn22-25_sourcePort53__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Disabled port scanning. Host discovery only. TCP SYN ports 22-25. Source Port 53"
 
-#-TCP PING TYPES-#
-#-in case ICMP traffic is blocked, and gives a better chance of
-#bypassing firewalls
+echo "STARTED: Fast UDP Scan"
+echo "$PASS" | sudo -S nmap -p- -sU --defeat-icmp-ratelimit "$SM" -oA "$OFD""nmap_defeatIcmp__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Fast UDP scan"
 
-#-TCP SYN probe to port 80 (HTTP) without port scanning.
-#-the PS options sends an empty TCP packet with the SYN flag set, the 
-#target responds with SYN/ACK TCP if open or RST is closed. If open,
-#attack machine sends RST instead of completing 3-way with ACK.
-echo "$PASS" | sudo -S nmap -sn 80 "$SM" -oA "$OFD""nmap_sn_PS80__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sn_PS80__$SNET_FN".txt 2>&1
-echo "Completed: TCP SYN probe to port 80 without port scanning"
+echo "STARTED: Broadcast ping with disabled port scanning"
+echo "$PASS" | sudo -S nmap -sn --script broadcast-ping "$SM" -oA "$OFD""nmap_noPortScan_bcastPing__$SNET_FN"
+echo "COMPLETED: broadcast ping with disabled port scanning"
 
-# Custom ping. Send ping to port 25 instead
-echo "$PASS" | sudo -S nmap -sP -PS25 "$SM" -oA "$OFD""nmap_sP_PS25__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sP_PS25__$SNET_FN".txt 2>&1
-echo "Completed: Custom ping to port 25"
-
-# For closed ports, try using the source-port option, eg. (-g 53)
-echo "$PASS" | sudo -S nmap -sP -g 53 "$SM" -oA "$OFD""nmap_sP_g53__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sP_g53__$SNET_FN".txt 2>&1
-echo "Completed: Custom ping using source-port 53"
-
-# For closed ports, try using the source-port option, eg. (-g 88)
-echo "$PASS" | sudo -S nmap -sP -g 88 "$SM" -oA "$OFD""nmap_sP_g88__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sP_g88__$SNET_FN".txt 2>&1
-echo "Completed: Custom ping using source-port 88"
-
-# Custom ping. Send ping to port 25 with source port 53
-echo "$PASS" | sudo -S nmap -sP -PS25 -g 53 "$SM" -oA "$OFD""nmap_sP_PS25_g53__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sP_PS25_g53__$SNET_FN".txt 2>&1
-echo "Completed: Custom ping to port 25 using source-port 53"
+echo "STARTED: TCP connect scan for top 200 TCP ports"
+echo "$PASS" | sudo -S nmap -sT -A --top-ports=200 "$SM" -oA "$OFD""nmap_tcpConnect_aggressive_topPorts200__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: TCP connect scan for top 200 TCP ports"
 
 
-# TCP ACK default is port 80
-echo "$PASS" | sudo -S nmap -sn -PA "$SM" -oA "$OFD""nmap_sn_PA__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sn_PA__$SNET_FN".txt 2>&1
-echo "Completed: TCP ACK default"
+echo "STARTED: ICMP echo"
+echo "$PASS" | sudo -S nmap -sn -PE "$SM" -oA "$OFD""nmap_noPortScan_icmpEcho__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: ICMP echo"
 
-# UDP PING defaults to port 40 and 125
-echo "$PASS" | sudo -S nmap -sn -PU "$SM" -oA "$OFD""nmap_sn_PU__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sn_PU__$SNET_FN".txt 2>&1
-echo "Completed: UDP Ping defaults port 40 and 125"
+echo "STARTED: ICMP timestamp"
+echo "$PASS" | sudo -S nmap -sn -PP "$SM" -oA "$OFD""nmap_noPortScan_icmpTimestamp__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: ICMP timestamp"
 
-#-IP PROTOCOL PING-#
-#-default is to send multiple packets for ICMP (protocol 1), IGMP
-#(protocol 2), and IP-in-IP (protocol 4)
-echo "$PASS" | sudo -S nmap -sn -PO "$SM" -oA "$OFD""nmap_sn_PO__$SNET_FN" --excludefile "$XH" > "$OFD""nmap_sn_PO__$SNET_FN".txt 2>&1
-echo "Completed: IP Protocol Ping"
+echo "STARTED: ICMP netmask"
+echo "$PASS" | sudo -S nmap -sn -PM "$SM" -oA "$OFD""nmap_noPortScan_icmpNetmask__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: ICMP netmask"
+
+echo "STARTED: TCP ACK port scan"
+echo "$PASS" | sudo -S nmap -PA "$SM" -oA "$OFD""nmap_ack80__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: TCP ACK port scan"
+
+echo "STARTED: UDP discovery defaults port 40 and 125"
+echo "$PASS" | sudo -S nmap -PU "$SM" -oA "$OFD""nmap_udp40_125__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: UDP discovery defaults port 40 and 125"
+
+echo "STARTED: IP Protocol Ping"
+echo "$PASS" | sudo -S nmap -sn -PO "$SM" -oA "$OFD""nmap_noPortScan_ipProtocolPing__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: IP Protocol Ping"
+
+
+echo "STARTED: Syn Stealth Scan"
+echo "$PASS" | sudo -S nmap -sS -p- "$SM" -oA "$OFD""nmap_syn_stealth__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Syn Stealth Scan"
+
+echo "STARTED: Syn Ack Scan - this may indicate host is behind firewall"
+echo "$PASS" | sudo -S nmap -sA -p- "$SM" -oA "$OFD""nmap_ack__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Syn Ack Scan - this may indicate host is behind firewall"
+
+echo "STARTED: SCTP scan"
+echo "$PASS" | sudo -S nmap -sZ -p- "$SM" -oA "$OFD""nmap_sctp__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: SCTP scan"
+
+echo "STARTED: XMAS scan"
+echo "$PASS" | sudo -S nmap -sX -p- "$SM" -oA "$OFD""nmap_xmas__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: XMAS scan"
+
+echo "STARTED: SQL Injection scan"
+echo "$PASS" | sudo -S nmap -p80 --script http-sql-injection "$SM" -oA "$OFD""nmap_sqli__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: SQL Injection scan"
