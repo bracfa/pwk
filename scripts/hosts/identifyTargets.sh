@@ -2,17 +2,19 @@
 
 # Command for yesPortScan
 #parse-nmap -t 1-65535 -u 1-65535 nmap_yesPortScan_noHostDiscovery_fingerPrint__10.11.1.0m24.xml
-# Enumerate the targets from all the scripts
+# Results directory
 RESDIR="/home/kali/gitWorkspace/pwk/results/pwk/"
+# Output files (scans) directory
 OUTDIR="/home/kali/gitWorkspace/pwk/outputFiles/hosts/pwk/"
-
+# File that will contain all IPs from each output file, will need to be sorted
+TARGETS_TO_SORT="targetsToSort"
+# File that contain unique targets, already sorted
+SORTED_TARGETS="sortedTargets"
 # Go to the outputfile directory
 cd "$OUTDIR"
 
 # Identify all XML files. This not yet an array!
 FNAMES=$(ls *.xml)
-echo "$FNAMES"
-sleep 2
 SAVEIFS="$IFS"
 IFS=$'\n'
 FARRAY=($FNAMES)
@@ -21,6 +23,12 @@ IFS="$SAVEIFS"
 
 # Create a file for each xml file which shows all the hosts
 SUBSTR="yesPortScan"
+
+# Print the number of files
+echo "Number of files: ${#FARRAY[@]}"
+
+# Use parse-nmap to get the "alive" hosts for each scan and store each in 
+# its own .res file
 for file in "${FARRAY[@]}"
 do
     echo -e "\nFILENAME: $file"
@@ -33,15 +41,30 @@ do
     fi
 done
 
-# Go to the results directory
+# Change to the results directory 
 cd "$RESDIR"
-touch targs
+
+# Remove any target list to sort
+if [ -f "$TARGETS_TO_SORT" ]; then
+  rm "$TARGETS_TO_SORT"
+  echo "Removed $TARGETS_TO_SORT"
+else
+  touch "$TARGETS_TO_SORT"
+fi
+# Remove any already sorted target list
+if [ -f "$SORTED_TARGETS" ]; then
+  rm "$SORTED_TARGETS"
+  echo "Removed $SORTED_TARGETS"
+else
+  touch "$SORTED_TARGETS"
+fi
+
+# Dump all the targets from the .res files into a file for sorting
 for f in *.res
 do
   echo "$f"
-  cat "$f" >> targs
-  echo -e "\n" >> targs
+  cat "$f" >> "$TARGETS_TO_SORT"
+  echo -e "\n" >> "$TARGETS_TO_SORT"
 done
-
-touch targetList
-sort -V targs | uniq | tee -a targetList 
+# Create a unique sorted target list
+sort -V "$TARGETS_TO_SORT" | uniq | tee -a "$SORTED_TARGETS"
