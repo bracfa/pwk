@@ -5,6 +5,9 @@ source /home/kali/Desktop/pass
 <<COMMENT
 Would be nice to know which hosts came from which scan, priot to
 sorting or finding unique hosts
+
+-If you find a closed port, try using it as a source port
+-lookup idle zombie scan using metasploit auxiliary/scanner/ipidseq
 COMMENT
 
 # Excluded targets file
@@ -34,41 +37,45 @@ echo "$PASS" | sudo -S nmap -sn "$SM" -oA "$OFD""nmap_noPortScan_yesHostDiscover
 echo "COMPLETED: Disabled port scanning. Host discovery only"
 
 echo -e "\nSTARTED: Disabled port scanning. Host discovery only. Source Port 53"
-echo "$PASS" | sudo -S nmap -sn -g 53 "$SM" -oA "$OFD""nmap_noPortScan_sourcPort53__$SNET_FN" --excludefile "$XH"
+echo "$PASS" | sudo -S nmap -sn -g 53 "$SM" -oA "$OFD""nmap_noPortScan_sourcePort53__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Disabled port scanning. Host discovery only. Source Port 53"
 
 echo -e "\nSTARTED: Disabled port scanning. Host discovery only. Source Port 88"
-echo "$PASS" | sudo -S nmap -sn -g 88 "$SM" -oA "$OFD""nmap_noPortScan_sourcPort88__$SNET_FN" --excludefile "$XH"
+echo "$PASS" | sudo -S nmap -sn -g 88 "$SM" -oA "$OFD""nmap_noPortScan_sourcePort88__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Disabled port scanning. Host discovery only. Source Port 88"
 
-echo -e "\nSTARTED: Disable host discovery. Port scan only with fingerprinting"
-echo "$PASS" | sudo -S nmap -v -Pn -O "$SM" -oA "$OFD""nmap_yesPortScan_noHostDiscovery_fingerPrint__$SNET_FN" --excludefile "$XH"
-echo "COMPLETED: Disable host discovery. Port scan only with fingerprinting"
+echo -e "\nSTARTED: Disable host discovery. Port scan only with fingerprinting. Top 3500 ports"
+echo "$PASS" | sudo -S nmap -v -Pn -O --top-ports=3500 "$SM" -oA "$OFD""nmap_yesPortScan_noHostDiscovery_fingerPrint_topPorts3500__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Disable host discovery. Port scan only with fingerprinting. Top 3500 ports"
 
 echo -e "\nSTARTED: Default scan port 80 only"
-echo "$PASS" | sudo -S nmap -p 80 "$SM" -oA "$OFD""nmap_default_syn80__$SNET_FN" --excludefile "$XH" 
+echo "$PASS" | sudo -S nmap -p 80 "$SM" -oA "$OFD""nmap_default_SYN80__$SNET_FN" --excludefile "$XH" 
 echo "COMPLETED: Default scan port 80 only"
 
 echo -e "\nSTARTED: Default scan uses -PE 443 -PA80 -PP"
-echo "$PASS" | sudo -S nmap "$SM" -oA "$OFD""nmap_default_icmpEcho443_ack80_timeStamp__$SNET_FN" --excludefile "$XH"
+echo "$PASS" | sudo -S nmap --top-ports=3500 "$SM" -oA "$OFD""nmap_default_topPorts3500__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Default nmap scan uses -PE 443 -PA80 -PP"
 
-echo -e "\nSTARTED: TCP SYN ports 22-25,80 only"
-echo "$PASS" | sudo -S nmap -PS22-25,80 "$SM" -oA "$OFD""nmap_noPortScan_syn_22-25_80__$SNET_FN" --excludefile "$XH"
-echo "COMPLETED: TCP SYN ports 22-25,80 only"
+echo -e "\nSTARTED: TCP SYN ports 21-25, t5, max retries 4"
+echo "$PASS" | sudo -S nmap -T5 -PS21-25 "$SM" --max-retries 4 -oA "$OFD""nmap_noPortScan_t5_SYN21-25_maxRetries4__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: TCP SYN ports 21-25, t5, max retries 4"
+
+echo -e "\nSTARTED: TCP SYN ports 21-25, t1"
+echo "$PASS" | sudo -S nmap -T1 -PS21-25 "$SM" -oA "$OFD""nmap_noPortScan_t1_SYN21-25__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: TCP SYN ports 21-25, t1"
+
+echo -e "\nSTARTED: TCP SYN ports 21-25, t0"
+echo "$PASS" | sudo -S nmap -T0 -PS21-25 "$SM" -oA "$OFD""nmap_noPortScan_t0_SYN21-25__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: TCP SYN ports 21-25, t0"
 
 echo -e "\nSTARTED: Disabled port scanning. Host discovery only. TCP SYN ports 22-25. Source Port 53"
-echo "$PASS" | sudo -S nmap -sn -PS22-25 -g 53 "$SM" -oA "$OFD""nmap_noPortScan_syn22-25_sourcePort53__$SNET_FN" --excludefile "$XH"
+echo "$PASS" | sudo -S nmap -sn -PS22-25 -g 53 "$SM" -oA "$OFD""nmap_noPortScan_SYN22-25_sourcePort53__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Disabled port scanning. Host discovery only. TCP SYN ports 22-25. Source Port 53"
 
 
-echo -e "\nSTARTED: Broadcast ping with disabled port scanning"
-echo "$PASS" | sudo -S nmap -sn --script broadcast-ping "$SM" -oA "$OFD""nmap_noPortScan_bcastPing__$SNET_FN"
-echo "COMPLETED: broadcast ping with disabled port scanning"
-
-echo -e "\nSTARTED: TCP connect scan for top 200 TCP ports"
-echo "$PASS" | sudo -S nmap -sT -A --top-ports=200 "$SM" -oA "$OFD""nmap_tcpConnect_aggressive_topPorts200__$SNET_FN" --excludefile "$XH"
-echo "COMPLETED: TCP connect scan for top 200 TCP ports"
+echo -e "\nSTARTED: TCP connect scan for top 3500 TCP ports"
+echo "$PASS" | sudo -S nmap -sT -sn --top-ports=3500 "$SM" -oA "$OFD""nmap_tcpConnect_topPorts3500__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: TCP connect scan for top 3500 TCP ports"
 
 
 echo -e "\nSTARTED: ICMP echo"
@@ -84,39 +91,147 @@ echo "$PASS" | sudo -S nmap -sn -PM "$SM" -oA "$OFD""nmap_noPortScan_icmpNetmask
 echo "COMPLETED: ICMP netmask"
 
 echo -e "\nSTARTED: TCP ACK port scan"
-echo "$PASS" | sudo -S nmap -PA "$SM" -oA "$OFD""nmap_ack80__$SNET_FN" --excludefile "$XH"
+echo "$PASS" | sudo -S nmap -PA --top-ports=3500 "$SM" -oA "$OFD""nmap_ACK80_topPorts3500__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: TCP ACK port scan"
 
-echo -e "\nSTARTED: UDP discovery defaults port 40 and 125"
-echo "$PASS" | sudo -S nmap -PU "$SM" -oA "$OFD""nmap_udp40_125__$SNET_FN" --excludefile "$XH"
-echo "COMPLETED: UDP discovery defaults port 40 and 125"
+echo -e "\nSTARTED: UDP discovery defaults port 40, 53, 67, 88, 125 and 5353"
+echo "$PASS" | sudo -S nmap -PU -p40,53,67,88,125,5353 "$SM" -oA "$OFD""nmap_UDP40_53_67_88_125_5353__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: UDP discovery defaults port 40, 53, 67, 88, 125 and 5353"
+
+echo -e "\nSTARTED: Disabled port scanning. Host discovery only. TCP SYN ports 22-25. Source Port 53"
+echo "$PASS" | sudo -S nmap -sn -PS22-25 -g 53 "$SM" -oA "$OFD""nmap_noPortScan_SYN22-25_sourcePort53__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Disabled port scanning. Host discovery only. TCP SYN ports 22-25. Source Port 53"
+
+
+echo -e "\nSTARTED: TCP connect scan for top 3500 TCP ports"
+echo "$PASS" | sudo -S nmap -sT -sn --top-ports=3500 "$SM" -oA "$OFD""nmap_tcpConnect_topPorts3500__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: TCP connect scan for top 3500 TCP ports"
+
+
+echo -e "\nSTARTED: ICMP echo"
+echo "$PASS" | sudo -S nmap -sn -PE "$SM" -oA "$OFD""nmap_noPortScan_icmpEcho__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: ICMP echo"
+
+echo -e "\nSTARTED: ICMP timestamp"
+echo "$PASS" | sudo -S nmap -sn -PP "$SM" -oA "$OFD""nmap_noPortScan_icmpTimestamp__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: ICMP timestamp"
+
+echo -e "\nSTARTED: ICMP netmask"
+echo "$PASS" | sudo -S nmap -sn -PM "$SM" -oA "$OFD""nmap_noPortScan_icmpNetmask__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: ICMP netmask"
+
+echo -e "\nSTARTED: TCP ACK port scan"
+echo "$PASS" | sudo -S nmap -PA --top-ports=3500 "$SM" -oA "$OFD""nmap_ACK80_topPorts3500__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: TCP ACK port scan"
+
+echo -e "\nSTARTED: UDP discovery defaults port 40, 53, 67, 88, 125 and 5353"
+echo "$PASS" | sudo -S nmap -PU -p40,53,67,88,125,5353 "$SM" -oA "$OFD""nmap_UDP40_53_67_88_125_5353__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: UDP discovery defaults port 40, 53, 67, 88, 125 and 5353"
 
 echo -e "\nSTARTED: IP Protocol Ping"
 echo "$PASS" | sudo -S nmap -sn -PO "$SM" -oA "$OFD""nmap_noPortScan_ipProtocolPing__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: IP Protocol Ping"
 
-echo -e "\nSTARTED: Syn Stealth Scan"
-echo "$PASS" | sudo -S nmap -sS -p- "$SM" -oA "$OFD""nmap_syn_stealth__$SNET_FN" --excludefile "$XH"
-echo "COMPLETED: Syn Stealth Scan"
-
+echo -e "\nSTARTED: Syn Stealth Scan, portscan, t4, reason"
+echo "$PASS" | sudo -S nmap -sS -T4 -Pn -p- --reason "$SM" -oA "$OFD""nmap_yesPortScan_SYN_stealth_t4_reason__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Syn Stealth Scan, portscan, t4, reason"
 
 echo -e "\nSTARTED: SCTP scan"
-echo "$PASS" | sudo -S nmap -sZ -p- "$SM" -oA "$OFD""nmap_sctp__$SNET_FN" --excludefile "$XH"
+echo "$PASS" | sudo -S nmap -sZ -p- --reason "$SM" -oA "$OFD""nmap_sctp__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: SCTP scan"
 
+# This also took too long
 echo -e "\nSTARTED: XMAS scan"
 echo "$PASS" | sudo -S nmap -sX -p- "$SM" -oA "$OFD""nmap_xmas__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: XMAS scan"
 
 echo -e "\nSTARTED: SQL Injection scan"
-echo "$PASS" | sudo -S nmap -p80 --script http-sql-injection "$SM" -oA "$OFD""nmap_sqli__$SNET_FN" --excludefile "$XH"
+#echo "$PASS" | sudo -S nmap -p80 --script http-sql-injection "$SM" -oA "$OFD""nmap_sqli__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: SQL Injection scan"
 
 echo -e "\nSTARTED: Fast UDP Scan"
-echo "$PASS" | sudo -S nmap -p- -sU --defeat-icmp-ratelimit "$SM" -oA "$OFD""nmap_udp_defeatIcmp__$SNET_FN" --excludefile "$XH"
+echo "$PASS" | sudo -S nmap -sU --top-ports=16000 --defeat-icmp-ratelimit "$SM" -oA "$OFD""nmap_UDP_topPorts16000_defeatIcmp__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Fast UDP scan"
 
 # Scanning all ports took too long
 echo -e "\nSTARTED: Syn Ack Scan - this may indicate host is behind firewall"
-echo "$PASS" | sudo -S nmap -sA "$SM" -oA "$OFD""nmap_ack__$SNET_FN" --excludefile "$XH"
+echo "$PASS" | sudo -S nmap -sA --top-ports=3500 "$SM" -oA "$OFD""nmap_ACK_topPorts3500__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Syn Ack Scan - this may indicate host is behind firewall"
+
+echo -e "\nSTARTED: Fragmented packets"
+echo "$PASS" | sudo -S nmap -f "$SM" -oA "$OFD""nmap_fragmented__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Fragmented packets"
+
+echo -e "\nSTARTED: MTU 16"
+echo "$PASS" | sudo -S nmap --mtu 16 "$SM" -oA "$OFD""nmap_mtu16__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: MTU 16"
+
+echo -e "\nSTARTED: MTU 8"
+echo "$PASS" | sudo -S nmap --mtu 8 "$SM" -oA "$OFD""nmap_mtu8__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: MTU 8"
+
+echo -e "\nSTARTED: Badsum"
+echo "$PASS" | sudo -S nmap --badsum "$SM" -oA "$OFD""nmap_badsum__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Badsum"
+
+echo -e "\nSTARTED: Vulnerability in Netfilter and other firewalls that use helpers to dynamically open ports"
+echo "$PASS" | sudo -S nmap -sV -T4 -F "$SM" --script vuln -oA "$OFD""nmap_scriptVuln__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Vulnerability in Netfilter and other firewalls that use helpers to dynamically open ports"
+
+echo -e "\nSTARTED: FIN scan against stateless firewall"
+echo "$PASS" | sudo -S nmap -sF -p1-100 -T4 "$SM" -oA "$OFD""nmap_FIN_p1-100_t4__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: FIN scan against stateless firewall"
+
+echo -e "\nSTARTED: Disabled port scanning. Host discovery only. TCP SYN ports 22-25. Source Port 53"
+echo "$PASS" | sudo -S nmap -sn -PS22-25 -g 53 "$SM" -oA "$OFD""nmap_noPortScan_SYN22-25_sourcePort53__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Disabled port scanning. Host discovery only. TCP SYN ports 22-25. Source Port 53"
+
+echo -e "\nSTARTED: TCP connect scan for top 3500 TCP ports"
+echo "$PASS" | sudo -S nmap -sT -sn --top-ports=3500 "$SM" -oA "$OFD""nmap_tcpConnect_topPorts3500__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: TCP connect scan for top 3500 TCP ports"
+
+echo -e "\nSTARTED: ICMP echo"
+echo "$PASS" | sudo -S nmap -sn -PE "$SM" -oA "$OFD""nmap_noPortScan_icmpEcho__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: ICMP echo"
+
+echo -e "\nSTARTED: ICMP timestamp"
+echo "$PASS" | sudo -S nmap -sn -PP "$SM" -oA "$OFD""nmap_noPortScan_icmpTimestamp__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: ICMP timestamp"
+
+echo -e "\nSTARTED: ICMP netmask"
+echo "$PASS" | sudo -S nmap -sn -PM "$SM" -oA "$OFD""nmap_noPortScan_icmpNetmask__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: ICMP netmask"
+
+echo -e "\nSTARTED: TCP ACK port scan"
+echo "$PASS" | sudo -S nmap -PA --top-ports=3500 "$SM" -oA "$OFD""nmap_ACK80_topPorts3500__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: TCP ACK port scan"
+
+echo -e "\nSTARTED: UDP discovery defaults port 40, 53, 67, 88, 125 and 5353"
+echo "$PASS" | sudo -S nmap -PU -p40,53,67,88,125,5353 "$SM" -oA "$OFD""nmap_UDP40_53_67_88_125_5353__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: UDP discovery defaults port 40, 53, 67, 88, 125 and 5353"
+
+echo -e "\nSTARTED: Raw IP ping scan of an offline target"
+echo "$PASS" | sudo -S nmap -sn --send-ip "$SM" -oA "$OFD""nmap_noPortScan_sendIp__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Raw IP ping scan of an offline target"
+
+echo -e "\nSTARTED: ARP ping scan of an offline target"
+echo "$PASS" | sudo -S nmap -sn -PR --packet-trace --send-eth "$SM" -oA "$OFD""nmap_noPortScan_ARP_packetTrace_sendEth__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Raw IP ping scan of an offline target"
+
+echo -e "\nSTARTED: Append random data"
+echo "$PASS" | sudo -S nmap --data-length 25 "$SM" -oA "$OFD""nmap_dataLength25__$SNET_FN" --excludefile "$XH"
+echo "\nCOMPLETED: Append random data"
+
+echo -e "\nSTARTED: Append random data"
+echo "$PASS" | sudo -S nmap --data-length 25 "$SM" -oA "$OFD""nmap_dataLength25__$SNET_FN" --excludefile "$XH"
+echo "\nCOMPLETED: Append random data"
+
+echo -e "\nSTARTED: Randomize hosts"
+echo "$PASS" | sudo -S nmap --randomize-hosts "$SM" -oA "$OFD""nmap_randomizeHosts__$SNET_FN" --excludefile "$XH"
+echo "\nCOMPLETED: Randomize hosts"
+
+echo -e "\nSTARTED: Generate random MAC"
+echo "$PASS" | sudo -S nmap --spoof-mac 0 "$SM" -oA "$OFD""nmap_spoofMac0__$SNET_FN" --excludefile "$XH"
+echo "\nCOMPLETED: Generate random MAC"
+
+# Install metasploit, and try the idle scan as mentioned at the comments on top
