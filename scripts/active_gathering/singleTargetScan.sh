@@ -35,11 +35,10 @@ cd "$IP_DIR"
 #-PORT SCANNING NMAP-#
 # NMAP TCP SYN (Stealth)
 echo "$PASS" | sudo -S nmap -sS -p- "$IP" -oA "$TS""nmap_SYN_stealth_allPorts__""$IP"
-exit
 # NMAP TCP CONNECT Banner Grabbing / Service Enumeration
 echo "$PASS" | sudo -S nmap -sV -sT -p- "$IP" -oA "nmap_CONNECT_allPorts_serviceDetection__""$IP"
 # NMAP TCP SYN (Stealth)
-echo "$PASS" | sudo -S nmap -sS -A -p- --script default,safe,auth,vuln --min-hostgroup 45 --max-retries 4 "$IP" -oA "nmap_SYN_stealth_aggressive_allPorts_scriptDefaultSafeAuthVuln_minHostGroup45_maxRetries4__""$IP"
+echo "$PASS" | sudo -S nmap -sS -A -p- -sV --script default,safe,auth,vuln --max-retries 4 "$IP" -oA "nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__""$IP"
 # NMAP SYN ACK (could be firewall detection)
 echo "$PASS" | sudo -S nmap -sA "$IP" -oA "nmap_ACK__""$IP"
 # NMAP no ping. Port scan with fingerprinting only
