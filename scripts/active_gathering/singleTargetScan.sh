@@ -59,7 +59,7 @@ do
     echo "Starting: $arg scan"
     #-PORT SCANNING NMAP-#
     # NMAP TCP SYN (Stealth)
-    echo "$PASS" | sudo -S nmap -sS -p- "$IP" -oA "$TS""nmap_SYN_stealth_allPorts__""$IP"
+    echo "$PASS" | sudo -S nmap -sS -p- -O "$IP" -oA "$TS""nmap_SYN_stealth_allPorts_osFingerprint__""$IP"
     # NMAP TCP CONNECT Banner Grabbing / Service Enumeration
     echo "$PASS" | sudo -S nmap -sV -sT -p- "$IP" -oA "$TS""nmap_CONNECT_allPorts_serviceDetection__""$IP"
     # NMAP TCP SYN (Stealth)
@@ -68,14 +68,13 @@ do
     echo "$PASS" | sudo -S nmap -sA "$IP" -oA "$TS""nmap_ACK__""$IP"
     # NMAP no ping. Port scan with fingerprinting only
     sudo -S nmap -v -Pn -O "$IP" -oA "$TS""nmap_SYN_noPing_fingerprint__""$IP"
-    # TCP Connect Scanning
-    echo "$PASS" | sudo -S nmap -sT -p- -T4 "$IP" -oA "$TS""nmap_tcpConnect_allPorts_T4__""$IP"
-    # OS Fingerprinting 
-    echo "$PASS" | sudo -S nmap -O "$IP" -oA "$TS""nmap_portScan_osFingerprint__""$IP"
+    # Find all listed ports of all statuses by running parse-nmap. Here or through script?
+    # Take screenshots of all listed tcp ports with cutycapt
     
     #-- UDP SCANS --#
     # NMAP Fast UDP scan all ports
     echo "$PASS" | sudo -S nmap -sU -p- --defeat-icmp-ratelimit "$IP" -oA "$TS""nmap_fastUDP_allPorts__""$IP"
+    # Take screenshots of all listed udp ports with cutycapt
   fi
 done
 
