@@ -61,6 +61,14 @@ echo -e "\nSTARTED: Disabled port scanning. Host discovery only. Source Port 88"
 echo "$PASS" | sudo -S nmap -sn -g 88 "$SM" -oA "$TS""nmap_noPortScan_sourcePort88__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Disabled port scanning. Host discovery only. Source Port 88"
 
+echo -e "\nSTARTED: Disabled port scanning. Host discovery only. Source Port 67"
+echo "$PASS" | sudo -S nmap -sn -g 67 "$SM" -oA "$TS""nmap_noPortScan_sourcePort67__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Disabled port scanning. Host discovery only. Source Port 67"
+
+echo -e "\nSTARTED: Disabled port scanning. Host discovery only. Source Port 5353"
+echo "$PASS" | sudo -S nmap -sn -g 5353 "$SM" -oA "$TS""nmap_noPortScan_sourcePort5353__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Disabled port scanning. Host discovery only. Source Port 5353"
+
 echo -e "\nSTARTED: Disable host discovery. Port scan only with fingerprinting. Top 3500 ports"
 echo "$PASS" | sudo -S nmap -v -Pn -O --top-ports=3500 "$SM" -oA "$TS""nmap_yesPortScan_noHostDiscovery_fingerPrint_topPorts3500__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Disable host discovery. Port scan only with fingerprinting. Top 3500 ports"
@@ -70,11 +78,11 @@ echo "$PASS" | sudo -S nmap -p 80 "$SM" -oA "$TS""nmap_default_SYN80__$SNET_FN" 
 echo "COMPLETED: Default scan port 80 only"
 
 echo -e "\nSTARTED: Default scan uses -PE 443 -PA80 -PP"
-echo "$PASS" | sudo -S nmap --top-ports=3500 "$SM" -oA "$TS""nmap_default_topPorts3500__$SNET_FN" --excludefile "$XH"
+echo "$PASS" | sudo -S nmap --top-ports=3500 "$SM" -oA "$TS""nmap___$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Default scan uses -PE 443 -PA80 -PP"
 
 echo -e "\nSTARTED: TCP SYN ports 21-25, T5, max retries 4"
-echo "$PASS" | sudo -S nmap -T5 -PS21-25 "$SM" --max-retries 4 -oA "$TS""nmap_noPortScan_T5_SYN21-25_maxRetries4__$SNET_FN" --excludefile "$XH"
+echo "$PASS" | sudo -S nmap -T5 -PS21-25 --max-retries 4 "$SM" -oA "$TS""nmap_noPortScan_T5_SYN21-25_maxRetries4__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: TCP SYN ports 21-25, T5, max retries 4"
 
 echo -e "\nSTARTED: Disabled port scanning. Host discovery only. TCP SYN ports 22-25. Source Port 53"
@@ -128,7 +136,6 @@ echo "COMPLETED: Fast UDP scan"
 echo -e "\nSTARTED: Fragmented packets"
 echo "$PASS" | sudo -S nmap -f "$SM" -oA "$TS""nmap_fragmented__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Fragmented packets"
-COMMENT
 
 echo -e "\nSTARTED: MTU 16"
 echo "$PASS" | sudo -S nmap --mtu 16 "$SM" -oA "$TS""nmap_mtu16__$SNET_FN" --excludefile "$XH"
@@ -143,7 +150,7 @@ echo "$PASS" | sudo -S nmap --badsum "$SM" -oA "$TS""nmap_badsum__$SNET_FN" --ex
 echo "COMPLETED: Badsum"
 
 echo -e "\nSTARTED: Vulnerability in Netfilter and other firewalls that use helpers to dynamically open ports"
-echo "$PASS" | sudo -S nmap -sV -T4 -F "$SM" --script vuln -oA "$TS""nmap_scriptVuln__$SNET_FN" --excludefile "$XH"
+echo "$PASS" | sudo -S nmap -sV -T4 -F --script vuln "$SM" -oA "$TS""nmap_serviceDetection_scriptVuln_T4__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Vulnerability in Netfilter and other firewalls that use helpers to dynamically open ports"
 
 echo -e "\nSTARTED: FIN scan against stateless firewall, p1-100"
@@ -174,21 +181,25 @@ echo -e "\nSTARTED: Randomize hosts, T4"
 echo "$PASS" | sudo -S nmap --randomize-hosts -T4 "$SM" -oA "$TS""nmap_randomizeHosts_T4__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Randomize hosts, T4"
 
-echo -e "\nSTARTED: Generate random MAC"
+echo -e "\nSTARTED: Spoof random MAC"
 echo "$PASS" | sudo -S nmap --spoof-mac 0 "$SM" -oA "$TS""nmap_spoofMac0__$SNET_FN" --excludefile "$XH"
-echo "COMPLETED: Generate random MAC"
+echo "COMPLETED: Spoof random MAC"
+
+echo -e "\nSTARTED: Spoof MAC - Cisco"
+echo "$PASS" | sudo -S nmap --spoof-mac Cisco "$SM" -oA "$TS""nmap_spoofMac_Cisco__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Generate random - Cisco"
 
 echo -e "\nSTARTED: Syn Ack Scan, topPorts3500 - this may indicate host is behind firewall"
 echo "$PASS" | sudo -S nmap -sA --top-ports=3500 "$SM" -oA "$TS""nmap_ACK_topPorts3500__$SNET_FN" --excludefile "$XH"
 echo "COMPLETED: Syn Ack Scan, topPorts3500 - this may indicate host is behind firewall"
 
-echo -e "\nSTARTED: XMAS scan topPorts=3500, T4"
-echo "$PASS" | sudo -S nmap -sX --top-ports=3500 -T4 "$SM" -oA "$TS""nmap_xmas_topPorts3500__$SNET_FN" --excludefile "$XH"
-echo "COMPLETED: XMAS scan topPorts=3500, T4"
+echo -e "\nSTARTED: Windows scan topPorts=3500, T4"
+echo "$PASS" | sudo -S nmap -sW --top-ports=3500 -T4 "$SM" -oA "$TS""nmap_windows_topPorts3500__$SNET_FN" --excludefile "$XH"
+echo "COMPLETED: Windows scan topPorts=3500, T4"
 
-echo -e "\nSTARTED: TCP SYN ports 21-25, T1"
-echo "$PASS" | sudo -S nmap -T1 -PS21-25 "$SM" -oA "$TS""nmap_noPortScan_T1_SYN21-25__$SNET_FN" --excludefile "$XH"
-echo "COMPLETED: TCP SYN ports 21-25, T1"
+#echo -e "\nSTARTED: TCP SYN ports 21-25, T1"
+#echo "$PASS" | sudo -S nmap -T1 -PS21-25 "$SM" -oA "$TS""nmap_noPortScan_T1_SYN21-25__$SNET_FN" --excludefile "$XH"
+#echo "COMPLETED: TCP SYN ports 21-25, T1"
 
 # Probably take long
 #echo -e "\nSTARTED: TCP SYN ports 21-25, T0"
