@@ -1,0 +1,47 @@
+#-- VPN --#
+# Print my pass for PWK vpn
+alias ppwk='cat /home/kali/vpnCreds/pass/pwk/cbpass'
+# Print PWK VPN password, then log into PWK lab
+alias vpwk='ppwk; cd /home/kali/vpnCreds/cfgFiles/pwk && sudo openvpn --config OS-80374-PWK.ovpn'
+# Print my pass for CSJ vpn
+alias pcsj='cat /home/kali/vpnCreds/pass/csj/cbpass'
+# Print VPN password, then log into the CSJ lab
+alias vcsj='pcsj; cd /home/kali/vpnCreds/cfgFiles/csj && sudo openvpn --config CSJ-PfSense-01-UDP4-5050-Christine-config.ovpn' 
+
+#-- CHANGE DIRECTORIES --#
+# Go to linux buffer overflow
+alias l='cd /home/kali/gitWorkspace/pwk/oscpExercises/bufferOverflow/lin'
+# Go to windows buffer overflow
+alias w='cd /home/kali/gitWorkspace/pwk/oscpExercises/bufferOverflow/win'
+# Go to scripts directory
+alias scr='cd /home/kali/gitWorkspace/pwk/scripts/'
+# Go to config directory
+alias cfg='cd /home/kali/gitWorkspace/pwk/configs/'
+# Go to outputFiles directory
+alias out='cd /home/kali/gitWorkspace/pwk/outputFiles/'
+# Go to results directory
+alias res='cd /home/kali/gitWorkspace/pwk/results/'
+# Go to methodology directory
+alias m='cd /home/kali/gitWorkspace/pwk/methodology/'
+# Go to my PWK repo
+alias p='cd /home/kali/gitWorkspace/pwk'
+# Change to the parent directory
+alias ..='cd ../'
+
+#-- OS COMMANDS --#
+# Print out bashrc aliases
+alias a='cat $HOME/.bash_aliases | grep "^alias " | cut -f1 -d" " --complement'
+# Reboot
+alias r='sudo shutdown -r now'
+# Shutdown
+alias s='sudo shutdown -h now'
+
+# PWK labs
+# Debian client
+alias ds='rdesktop 192.168.214.44 -u student -p lab'
+alias dr='rdesktop 192.168.214.44 -u root -p lab'
+# Windows 10 Client
+alias ws='rdesktop 192.168.214.10 -u student -p lab'
+alias wo='rdesktop 192.168.214.10 -u offsec -p lab'
+alias wa='rdesktop 192.168.214.10 -u admin -p lab'
+alias wadm='rdesktop 192.168.214.10 -u administrator -p lab'
