@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Aug 10 14:51:14 2020 as: nmap -sV -sT -p- -oA 2020-08-10_144920_nmap_CONNECT_allPorts_serviceDetection__10.11.1.79 10.11.1.79
+Host: 10.11.1.79 ()	Status: Up
+Host: 10.11.1.79 ()	Ports: 2233/open/tcp//infocrypt?///, 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/	Ignored State: filtered (65533)
+# Nmap done at Mon Aug 10 14:55:37 2020 -- 1 IP address (1 host up) scanned in 263.04 seconds

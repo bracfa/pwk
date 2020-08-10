@@ -1,0 +1,2 @@
+# Nmap 7.80 scan initiated Fri Aug  7 17:31:25 2020 as: nmap -sU --top-ports=16000 --defeat-icmp-ratelimit -oA 2020-08-07_173124_nmap_UDP_topPorts16000_defeatIcmp__10.11.1.0m --excludefile /home/kali/gitWorkspace/pwk/outputFiles/targets/pwk/exclude-hosts 10.11.1.0
+# Nmap done at Fri Aug  7 17:31:25 2020 -- 0 IP addresses (0 hosts up) scanned in 0.05 seconds

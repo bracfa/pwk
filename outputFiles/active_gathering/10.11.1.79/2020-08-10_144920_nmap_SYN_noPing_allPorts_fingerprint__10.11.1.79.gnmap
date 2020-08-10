@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Mon Aug 10 14:59:05 2020 as: nmap -v -Pn -p- -O -oA 2020-08-10_144920_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.79 10.11.1.79
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.11.1.79 ()	Status: Up
+Host: 10.11.1.79 ()	Ports: 3389/open/tcp//ms-wbt-server///	Ignored State: filtered (65534)	Seq Index: 252	IP ID Seq: Incremental
+# Nmap done at Mon Aug 10 15:00:54 2020 -- 1 IP address (1 host up) scanned in 109.13 seconds

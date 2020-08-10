@@ -1,0 +1,2 @@
+# Nmap 7.80 scan initiated Fri Aug  7 17:31:24 2020 as: nmap -sZ -p- --reason -oA 2020-08-07_173124_nmap_sctp__10.11.1.0m --excludefile /home/kali/gitWorkspace/pwk/outputFiles/targets/pwk/exclude-hosts 10.11.1.0
+# Nmap done at Fri Aug  7 17:31:24 2020 -- 0 IP addresses (0 hosts up) scanned in 0.04 seconds

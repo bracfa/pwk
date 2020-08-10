@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Mon Aug 10 15:02:41 2020 as: nmap -v -Pn -p- -O -oA 2020-08-10_144048_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.8 10.11.1.8
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.11.1.8 ()	Status: Up
+Host: 10.11.1.8 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 25/closed/tcp//smtp///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 139/open/tcp//netbios-ssn///, 443/open/tcp//https///, 445/open/tcp//microsoft-ds///, 631/open/tcp//ipp///, 868/closed/tcp//unknown///, 3306/open/tcp//mysql///	Ignored State: filtered (65524)	Seq Index: 199	IP ID Seq: All zeros
+# Nmap done at Mon Aug 10 15:05:13 2020 -- 1 IP address (1 host up) scanned in 152.40 seconds

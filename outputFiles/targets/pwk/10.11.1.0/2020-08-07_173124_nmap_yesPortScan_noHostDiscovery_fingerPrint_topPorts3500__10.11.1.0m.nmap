@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Aug  7 17:31:24 2020 as: nmap -v -Pn -O --top-ports=3500 -oA 2020-08-07_173124_nmap_yesPortScan_noHostDiscovery_fingerPrint_topPorts3500__10.11.1.0m --excludefile /home/kali/gitWorkspace/pwk/outputFiles/targets/pwk/exclude-hosts 10.11.1.0
+Read data files from: /usr/bin/../share/nmap
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Fri Aug  7 17:31:24 2020 -- 0 IP addresses (0 hosts up) scanned in 0.26 seconds

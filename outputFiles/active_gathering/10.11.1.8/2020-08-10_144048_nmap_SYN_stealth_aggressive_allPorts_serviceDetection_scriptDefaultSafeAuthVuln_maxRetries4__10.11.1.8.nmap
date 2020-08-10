@@ -1,0 +1,440 @@
+# Nmap 7.80 scan initiated Mon Aug 10 14:48:28 2020 as: nmap -sS -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-10_144048_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.8 10.11.1.8
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 192.168.0.23
+|     Server Identifier: 192.168.0.1
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.0.1
+|_    Domain Name Server: 75.75.75.75, 75.75.76.76
+| broadcast-igmp-discovery: 
+|   192.168.0.29
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.34
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.254
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+| broadcast-listener: 
+|   ether
+|       EIGRP Hello
+|         
+|   udp
+|       DHCP
+|         srv ip       cli ip        mask           gw           dns                       vendor
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.26  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|_        192.168.0.1  192.168.0.26  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Linux 2.6 DLNADOC/1.50 UPnP/1.0 ReadyDLNA/1.1.0
+|_      Location: http://192.168.0.254:8200/rootDesc.xml
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+Nmap scan report for 10.11.1.8
+Host is up (0.021s latency).
+Not shown: 65524 filtered ports
+PORT     STATE  SERVICE     VERSION
+21/tcp   open   ftp         vsftpd 2.0.1
+|_banner: 220 (vsFTPd 2.0.1)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: ERROR
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.119.214
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 2.0.1 - secure, fast, stable
+|_End of status
+|_sslv2-drown: 
+22/tcp   open   ssh         OpenSSH 3.9p1 (protocol 1.99)
+|_banner: SSH-1.99-OpenSSH_3.9p1
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|     gssapi-with-mic
+|_    password
+| ssh-hostkey: 
+|   1024 89:94:af:2e:5d:c1:da:84:25:11:2c:12:45:c6:70:ac (RSA1)
+|   1024 c1:c5:d1:83:0f:4d:d8:9e:8f:82:4c:be:53:4b:6e:14 (DSA)
+|_  1024 bc:e1:e6:dd:ab:5e:fd:d1:21:2e:11:7c:d5:b2:03:52 (RSA)
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+| ssh2-enum-algos: 
+|   kex_algorithms: (3)
+|   server_host_key_algorithms: (2)
+|   encryption_algorithms: (11)
+|   mac_algorithms: (6)
+|_  compression_algorithms: (2)
+|_sshv1: Server supports SSHv1
+25/tcp   closed smtp
+80/tcp   open   http        Apache httpd 2.0.52 ((CentOS))
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-comments-displayer: Couldn't find any comments.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-date: Mon, 10 Aug 2020 22:54:57 GMT; +4h00m37s from local time.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /robots.txt: Robots file
+|   /icons/: Potentially interesting directory w/ listing on 'apache/2.0.52 (centos)'
+|   /internal/: Potentially interesting folder
+|_  /manual/: Potentially interesting folder
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-headers: 
+|   Date: Mon, 10 Aug 2020 22:54:55 GMT
+|   Server: Apache/2.0.52 (CentOS)
+|   Last-Modified: Thu, 17 Sep 2009 07:36:10 GMT
+|   ETag: "4ed0-da-11b80e80"
+|   Accept-Ranges: bytes
+|   Content-Length: 218
+|   Connection: close
+|   Content-Type: text/html; charset=UTF-8
+|   
+|_  (Request type: HEAD)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-mobileversion-checker: No mobile version detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-robots.txt: 2 disallowed entries 
+|_/internal/  /tmp/ 
+|_http-security-headers: 
+|_http-server-header: Apache/2.0.52 (CentOS)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_http-trace: TRACE is enabled
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2011-3192  BID:49303
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://www.securityfocus.com/bid/49303
+|       https://seclists.org/fulldisclosure/2011/Aug/175
+|       https://www.tenable.com/plugins/nessus/55976
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+|_http-xssed: No previously reported XSS vuln.
+111/tcp  open   rpcbind     2 (RPC #100000)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+139/tcp  open   netbios-ssn Samba smbd 3.X - 4.X (workgroup: MYGROUP)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+443/tcp  open   ssl/https?
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-comments-displayer: Couldn't find any comments.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-mobileversion-checker: No mobile version detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|_    HSTS not configured in HTTPS Server
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-useragent-tester: 
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-xssed: No previously reported XSS vuln.
+| ssl-ccs-injection: 
+|   VULNERABLE:
+|   SSL/TLS MITM vulnerability (CCS Injection)
+|     State: VULNERABLE
+|     Risk factor: High
+|       OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h
+|       does not properly restrict processing of ChangeCipherSpec messages,
+|       which allows man-in-the-middle attackers to trigger use of a zero
+|       length master key in certain OpenSSL-to-OpenSSL communications, and
+|       consequently hijack sessions or obtain sensitive information, via
+|       a crafted TLS handshake, aka the "CCS Injection" vulnerability.
+|           
+|     References:
+|       http://www.openssl.org/news/secadv_20140605.txt
+|       http://www.cvedetails.com/cve/2014-0224
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+|_ssl-date: 2020-08-10T23:01:58+00:00; +4h00m37s from scanner time.
+| ssl-dh-params: 
+|   VULNERABLE:
+|   Transport Layer Security (TLS) Protocol DHE_EXPORT Ciphers Downgrade MitM (Logjam)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2015-4000  BID:74733
+|       The Transport Layer Security (TLS) protocol contains a flaw that is
+|       triggered when handling Diffie-Hellman key exchanges defined with
+|       the DHE_EXPORT cipher. This may allow a man-in-the-middle attacker
+|       to downgrade the security of a TLS session to 512-bit export-grade
+|       cryptography, which is significantly weaker, allowing the attacker
+|       to more easily break the encryption and monitor or tamper with
+|       the encrypted stream.
+|     Disclosure date: 2015-5-19
+|     Check results:
+|       EXPORT-GRADE DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: mod_ssl 2.0.x/512-bit MODP group with safe prime modulus
+|             Modulus Length: 512
+|             Generator Length: 8
+|             Public Key Length: 512
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4000
+|       https://www.securityfocus.com/bid/74733
+|       https://weakdh.org
+|   
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     State: VULNERABLE
+|       Transport Layer Security (TLS) services that use Diffie-Hellman groups
+|       of insufficient strength, especially those using one of a few commonly
+|       shared groups, may be susceptible to passive eavesdropping attacks.
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: mod_ssl 2.0.x/1024-bit MODP group with safe prime modulus
+|             Modulus Length: 1024
+|             Generator Length: 8
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+| ssl-poodle: 
+|   VULNERABLE:
+|   SSL POODLE information leak
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2014-3566  BID:70574
+|           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+|           products, uses nondeterministic CBC padding, which makes it easier
+|           for man-in-the-middle attackers to obtain cleartext data via a
+|           padding-oracle attack, aka the "POODLE" issue.
+|     Disclosure date: 2014-10-14
+|     Check results:
+|       TLS_RSA_WITH_AES_128_CBC_SHA
+|     References:
+|       https://www.imperialviolet.org/2014/10/14/poodle.html
+|       https://www.securityfocus.com/bid/70574
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+|_      https://www.openssl.org/~bodo/ssl-poodle.pdf
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC4_64_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|_    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|_sslv2-drown: ERROR: Script execution failed (use -d to debug)
+445/tcp  open   netbios-ssn Samba smbd 3.0.33-0.17.el4 (workgroup: MYGROUP)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+631/tcp  open   ipp         CUPS 1.1
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_cups-info: ERROR: Script execution failed (use -d to debug)
+|_cups-queue-info: ERROR: Script execution failed (use -d to debug)
+|_http-date: Mon, 10 Aug 2020 22:54:58 GMT; +4h00m37s from local time.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-headers: 
+|   Date: Mon, 10 Aug 2020 22:55:17 GMT
+|   Server: CUPS/1.1
+|   Content-Language: en_US
+|   Upgrade: TLS/1.0,HTTP/1.1
+|   Connection: close
+|   Content-Type: text/html
+|   Content-Length: 150
+|   
+|_  (Request type: GET)
+| http-methods: 
+|_  Potentially risky methods: PUT
+|_http-server-header: CUPS/1.1
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-title: 403 Forbidden
+| vulners: 
+|   CUPS 1.1: 
+|     	SECURITYVULNS:VULN:8724	10.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:8724
+|     	OSVDB:6064	10.0	https://vulners.com/osvdb/OSVDB:6064
+|     	SECURITYVULNS:VULN:10333	9.3	https://vulners.com/securityvulns/SECURITYVULNS:VULN:10333
+|     	SECURITYVULNS:VULN:9962	5.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:9962
+|     	SECURITYVULNS:VULN:5184	0.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:5184
+|     	SECURITYVULNS:VULN:4277	0.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:4277
+|     	SECURITYVULNS:VULN:4109	0.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:4109
+|     	SECURITYVULNS:VULN:4010	0.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:4010
+|     	SECURITYVULNS:VULN:293	0.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:293
+|     	SECURITYVULNS:VULN:2888	0.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:2888
+|_    	SECURITYVULNS:VULN:2490	0.0	https://vulners.com/securityvulns/SECURITYVULNS:VULN:2490
+868/tcp  closed unknown
+3306/tcp open   mysql?
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_mysql-empty-password: ERROR: Script execution failed (use -d to debug)
+|_mysql-info: ERROR: Script execution failed (use -d to debug)
+|_mysql-vuln-cve2012-2122: ERROR: Script execution failed (use -d to debug)
+Device type: firewall|general purpose|proxy server|WAP|PBX|media device|storage-misc
+Running (JUST GUESSING): Linux 2.6.X (93%), Cisco embedded (93%), Riverbed embedded (93%), Ruckus embedded (93%), FreeBSD 6.X (89%), Sony embedded (89%), Dell embedded (88%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/h:cisco:sa520 cpe:/o:linux:linux_kernel:2.6.28 cpe:/h:riverbed:steelhead_200 cpe:/h:ruckus:7363 cpe:/h:cisco:uc320w cpe:/o:freebsd:freebsd:6.2 cpe:/h:dell:dr4100
+Aggressive OS guesses: Cisco SA520 firewall (Linux 2.6) (93%), Linux 2.6.28 (93%), Linux 2.6.9 (CentOS 4.4) (93%), Linux 2.6.9 - 2.6.27 (93%), Riverbed Steelhead 200 proxy server (93%), Ruckus 7363 WAP (93%), Linux 2.6.9 (93%), Linux 2.6.30 (92%), Linux 2.6.11 (90%), Linux 2.6.18 (90%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Unix
+
+Host script results:
+|_clock-skew: mean: 4h48m44s, deviation: 1h47m37s, median: 4h00m36s
+|_fcrdns: FAIL (No PTR record)
+| firewalk: 
+| HOP  HOST           PROTOCOL  BLOCKED PORTS
+|_1    192.168.119.1  tcp       1-10
+|_ipidseq: All zeros
+|_msrpc-enum: NT_STATUS_OBJECT_NAME_NOT_FOUND
+|_path-mtu: PMTU == 1500
+| qscan: 
+| PORT  FAMILY  MEAN (us)  STDDEV    LOSS (%)
+| 21    0       19472.00   7559.01   0.0%
+| 22    0       20233.40   6057.82   0.0%
+| 25    0       22742.50   10378.44  0.0%
+| 80    0       20223.90   4984.74   0.0%
+| 111   0       22339.00   5252.41   10.0%
+| 139   0       20607.10   4278.20   0.0%
+| 443   0       19753.60   2784.38   0.0%
+| 445   0       19622.90   2830.95   0.0%
+|_631   0       18027.50   1211.87   0.0%
+|_smb-enum-users: ERROR: Script execution failed (use -d to debug)
+| smb-mbenum: 
+|   DFS Root
+|     PHOENIX  0.0  Samba Server Version 3.0.33-0.17.el4
+|   Master Browser
+|     PHOENIX  0.0  Samba Server Version 3.0.33-0.17.el4
+|   Print server
+|     PHOENIX  0.0  Samba Server Version 3.0.33-0.17.el4
+|   Server
+|     PHOENIX  0.0  Samba Server Version 3.0.33-0.17.el4
+|   Server service
+|     PHOENIX  0.0  Samba Server Version 3.0.33-0.17.el4
+|   Unix server
+|     PHOENIX  0.0  Samba Server Version 3.0.33-0.17.el4
+|   Windows NT/2000/XP/2003 server
+|     PHOENIX  0.0  Samba Server Version 3.0.33-0.17.el4
+|   Workstation
+|_    PHOENIX  0.0  Samba Server Version 3.0.33-0.17.el4
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.33-0.17.el4)
+|   Computer name: phoenix
+|   NetBIOS computer name: 
+|   Domain name: 
+|   FQDN: phoenix
+|_  System time: 2020-08-10T18:55:30-04:00
+| smb-protocols: 
+|   dialects: 
+|_    NT LM 0.12 (SMBv1) [dangerous, but default]
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+|_smb-vuln-regsvc-dos: ERROR: Script execution failed (use -d to debug)
+|_smb2-time: Protocol negotiation failed (SMB2)
+| traceroute-geolocation: 
+|   HOP  RTT    ADDRESS        GEOLOCATION
+|   1    23.98  192.168.119.1  - ,- 
+|_  2    24.29  10.11.1.8      - ,- 
+
+TRACEROUTE (using port 868/tcp)
+HOP RTT      ADDRESS
+1   23.98 ms 192.168.119.1
+2   24.29 ms 10.11.1.8
+
+Post-scan script results:
+| reverse-index: 
+|   21/tcp: 10.11.1.8
+|   22/tcp: 10.11.1.8
+|   80/tcp: 10.11.1.8
+|   111/tcp: 10.11.1.8
+|   139/tcp: 10.11.1.8
+|   443/tcp: 10.11.1.8
+|   445/tcp: 10.11.1.8
+|   631/tcp: 10.11.1.8
+|_  3306/tcp: 10.11.1.8
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug 10 15:02:19 2020 -- 1 IP address (1 host up) scanned in 831.96 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Aug 10 15:31:47 2020 as: nmap -sV --script=http-sql-injection -oA httpSqlInjection 10.11.1.8
+Host: 10.11.1.8 ()	Status: Up
+Host: 10.11.1.8 ()	Ports: 21/open/tcp//ftp//vsftpd 2.0.1/, 22/open/tcp//ssh//OpenSSH 3.9p1 (protocol 1.99)/, 25/closed/tcp//smtp///, 80/open/tcp//http//Apache httpd 2.0.52 ((CentOS))/, 111/open/tcp//rpcbind//2 (RPC #100000)/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: MYGROUP)/, 443/open/tcp//ssl|https?///, 445/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: MYGROUP)/, 631/open/tcp//ipp//CUPS 1.1/, 3306/open/tcp//mysql?///	Ignored State: filtered (990)
+# Nmap done at Mon Aug 10 15:34:42 2020 -- 1 IP address (1 host up) scanned in 175.47 seconds

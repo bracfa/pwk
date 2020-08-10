@@ -1,0 +1,24 @@
+# Nmap 7.80 scan initiated Mon Aug 10 14:40:49 2020 as: nmap -sS -p- -O -oA 2020-08-10_144048_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.8 10.11.1.8
+Nmap scan report for 10.11.1.8
+Host is up (0.019s latency).
+Not shown: 65524 filtered ports
+PORT     STATE  SERVICE
+21/tcp   open   ftp
+22/tcp   open   ssh
+25/tcp   closed smtp
+80/tcp   open   http
+111/tcp  open   rpcbind
+139/tcp  open   netbios-ssn
+443/tcp  open   https
+445/tcp  open   microsoft-ds
+631/tcp  open   ipp
+868/tcp  closed unknown
+3306/tcp open   mysql
+Device type: general purpose|firewall|proxy server|WAP|PBX|broadband router
+Running (JUST GUESSING): Linux 2.6.X (94%), Cisco embedded (93%), Riverbed embedded (92%), Ruckus embedded (91%), FreeBSD 6.X (89%), Zhone embedded (88%), AVM embedded (88%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6.9 cpe:/o:linux:linux_kernel:2.6 cpe:/h:cisco:sa520 cpe:/h:riverbed:steelhead_200 cpe:/h:ruckus:7363 cpe:/h:cisco:uc320w cpe:/o:freebsd:freebsd:6.2 cpe:/h:avm:fritz%21box_fon_wlan_7170
+Aggressive OS guesses: Linux 2.6.9 (94%), Cisco SA520 firewall (Linux 2.6) (93%), Linux 2.6.28 (93%), Linux 2.6.9 - 2.6.27 (93%), Linux 2.6.18 (92%), Linux 2.6.9 (CentOS 4.4) (92%), Riverbed Steelhead 200 proxy server (92%), Ruckus 7363 WAP (91%), Linux 2.6.11 (90%), Linux 2.6.30 (90%)
+No exact OS matches for host (test conditions non-ideal).
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug 10 14:43:21 2020 -- 1 IP address (1 host up) scanned in 152.87 seconds

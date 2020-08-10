@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Aug 10 14:51:14 2020 as: nmap -sV -sT -p- -oA 2020-08-10_144920_nmap_CONNECT_allPorts_serviceDetection__10.11.1.79 10.11.1.79 -->
+<nmaprun scanner="nmap" args="nmap -sV -sT -p- -oA 2020-08-10_144920_nmap_CONNECT_allPorts_serviceDetection__10.11.1.79 10.11.1.79" start="1597085474" startstr="Mon Aug 10 14:51:14 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597085474" endtime="1597085737"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.11.1.79" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="2233"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="infocrypt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<times srtt="21277" rttvar="3909" to="100000"/>
+</host>
+<runstats><finished time="1597085737" timestr="Mon Aug 10 14:55:37 2020" elapsed="263.04" summary="Nmap done at Mon Aug 10 14:55:37 2020; 1 IP address (1 host up) scanned in 263.04 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug  7 17:31:24 2020 as: nmap -PU -p40,53,67,88,125,5353 -oA 2020-08-07_173124_nmap_UDP40_53_67_88_125_5353__10.11.1.0m -&#45;excludefile /home/kali/gitWorkspace/pwk/outputFiles/targets/pwk/exclude-hosts 10.11.1.0 -->
+<nmaprun scanner="nmap" args="nmap -PU -p40,53,67,88,125,5353 -oA 2020-08-07_173124_nmap_UDP40_53_67_88_125_5353__10.11.1.0m -&#45;excludefile /home/kali/gitWorkspace/pwk/outputFiles/targets/pwk/exclude-hosts 10.11.1.0" start="1596835884" startstr="Fri Aug  7 17:31:24 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="6" services="40,53,67,88,125,5353"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<runstats><finished time="1596835884" timestr="Fri Aug  7 17:31:24 2020" elapsed="0.04" summary="Nmap done at Fri Aug  7 17:31:24 2020; 0 IP addresses (0 hosts up) scanned in 0.04 seconds" exit="success"/><hosts up="0" down="0" total="0"/>
+</runstats>
+</nmaprun>

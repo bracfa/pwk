@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Mon Aug 10 15:22:51 2020 as: nmap -Pn --script=http-enum -oA 2020-08-10_144920_nmap_scripts_httpEnum__10.11.1.79 10.11.1.79
+Nmap scan report for 10.11.1.79
+Host is up (0.027s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+
+# Nmap done at Mon Aug 10 15:22:59 2020 -- 1 IP address (1 host up) scanned in 7.85 seconds

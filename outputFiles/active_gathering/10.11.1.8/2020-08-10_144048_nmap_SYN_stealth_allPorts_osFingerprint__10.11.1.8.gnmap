@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Aug 10 14:40:49 2020 as: nmap -sS -p- -O -oA 2020-08-10_144048_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.8 10.11.1.8
+Host: 10.11.1.8 ()	Status: Up
+Host: 10.11.1.8 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 25/closed/tcp//smtp///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 139/open/tcp//netbios-ssn///, 443/open/tcp//https///, 445/open/tcp//microsoft-ds///, 631/open/tcp//ipp///, 868/closed/tcp//unknown///, 3306/open/tcp//mysql///	Ignored State: filtered (65524)	Seq Index: 195	IP ID Seq: All zeros
+# Nmap done at Mon Aug 10 14:43:21 2020 -- 1 IP address (1 host up) scanned in 152.87 seconds

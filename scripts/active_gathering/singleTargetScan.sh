@@ -20,14 +20,12 @@ PASS="$pass"
 OFD="/home/kali/gitWorkspace/pwk/outputFiles/active_gathering/"
 # The IP specific directory to where we will put all output files
 IP_DIR="$OFD""$IP"
-
 # Timestamp
 TS=$(date "+%F_%H%M%S_")
 
-for s in "${SCAN_ARR[@]}";
-do
-  echo -e "Scan Type: $s"
-done
+echo "####################################"
+echo "RUNNING $0 on $IP"
+echo "SCAN TYPES AVAILABLE:  ${SCAN_ARR[@]}"
 
 # Check if command line arguments are part of the scan type
 echo "----------------------"
@@ -35,7 +33,7 @@ for arg in "$@"
 do
   if [[ ${SCAN_ARR[*]} =~ "$arg" ]]
   then
-    echo "User input: $arg"
+    echo "USER INPUT: $arg"
   fi
 done
 echo "----------------------"
@@ -43,8 +41,9 @@ echo "----------------------"
 # Change to the output file active gathering directory
 cd "$OFD"
 # Create/verify the target IP directory exists
+echo "Checking if $IP_DIR exists..."
 if [ ! -d "$IP_DIR" ]; then
-  mkdir -p "$IP_DIR"
+  mkdir "$IP_DIR"
   echo "Created $IP_DIR"
 fi
 
@@ -57,7 +56,6 @@ do
   if [[ "$arg" =~ "def" ]]
   then
     echo "Starting: $arg scan"
-    #-PORT SCANNING NMAP-#
     # NMAP TCP SYN (Stealth)
     echo "$PASS" | sudo -S nmap -sS -p- -O "$IP" -oA "$TS""nmap_SYN_stealth_allPorts_osFingerprint__""$IP"
     # NMAP TCP CONNECT Banner Grabbing / Service Enumeration
@@ -67,7 +65,7 @@ do
     # NMAP SYN ACK (could be firewall detection)
     echo "$PASS" | sudo -S nmap -sA "$IP" -oA "$TS""nmap_ACK__""$IP"
     # NMAP no ping. Port scan with fingerprinting only
-    sudo -S nmap -v -Pn -O "$IP" -oA "$TS""nmap_SYN_noPing_fingerprint__""$IP"
+    echo "$PASS" | sudo -S nmap -v -Pn -p- -O "$IP" -oA "$TS""nmap_SYN_noPing_allPorts_fingerprint__""$IP"
     # Find all listed ports of all statuses by running parse-nmap. Here or through script?
     # Take screenshots of all listed tcp ports with cutycapt
     
@@ -75,6 +73,35 @@ do
     # NMAP Fast UDP scan all ports
     echo "$PASS" | sudo -S nmap -sU -p- --defeat-icmp-ratelimit "$IP" -oA "$TS""nmap_fastUDP_allPorts__""$IP"
     # Take screenshots of all listed udp ports with cutycapt
+
+    #--HTTP ENUM--#
+    # NMAP Http Enum Script
+    echo "$PASS" | sudo -S nmap -Pn --script="http-enum" "$IP" -oA "$TS""nmap_scripts_httpEnum__""$IP"
+    # NMAP Http Comments
+    echo "$PASS" | sudo -S nmap -Pn --script="http-comments-displayer" "$IP" -oA "$TS""nmap_scripts_httpCommentsDisplayer__""$IP"
+    # NMAP Http Sitemap generator
+    echo "$PASS" | sudo -S nmap -Pn --script="http-sitemap-generator" "$IP" -oA "$TS""nmap_scripts_httpSitemapGenerator__""$IP"
+    # NMAP Http Sitemap generator
+    echo "$PASS" | sudo -S nmap -Pn --script="http-userdir-enum" "$IP" -oA "$TS""nmap_scripts_httpUserdirEnum__""$IP"
+    
+    # SQL injection
+    echo "$PASS" | sudo -S nmap -sV -p80 --script="http-sql-injection" "$IP" -oA "$TS""nmap_scripts_httpSqlInjection__""$IP"
+    
+    #-- SSL --#
+    # NMAP SSL script
+    echo "$PASS" | sudo -S nmap -Pn --script="ssl-*" "$IP" -oA "$TS""nmap_scripts_SSL__""$IP"
+
+    #-- dirb --#
+    # dirb index page non recursive... should later add different ports
+    dirb "http://""$IP" -r -o "$TS""dirb_nonRecursive_index__""$IP"".txt"
+    # dirb index page... should later add different ports
+    #dirb "http://""$IP" -o  "$TS""dirb_recursive_index__""$IP"".txt"
+
+    #-- NIKTO --#
+    nikto -Display V -host "$IP" -o "$TS""nikto_displayV__""$IP"".txt"
+    #-- cutycapt --#
+    #cutycapt --url="http://""$IP" --out="$TS""cutycapt_index__""$IP"".png"
+
   fi
 done
 
@@ -140,6 +167,7 @@ do
   fi
 done
 
+<<COMMENT
 # More default scans... these ones take long
 for arg in "$@"
 do
@@ -147,13 +175,12 @@ do
   then
     echo "Continuing: $arg scan"
     # TCP scanning
-    #nc -nvv -w 1 -z "$IP" 1-65535 > "$TS""nc_TCP_allPorts__""$IP"".txt" 2>&1
+    nc -nvv -w 1 -z "$IP" 1-65535 > "$TS""nc_TCP_allPorts__""$IP"".txt" 2>&1
     # NC Slow UDP scan all ports
-    #nc -nv -u -z -w 1 "$IP" 1-65535 > "$TS""nc_UDP_allPorts__""$IP"".txt" 2>&1
-    # Default scans do at the end
+    nc -nv -u -z -w 1 "$IP" 1-65535 > "$TS""nc_UDP_allPorts__""$IP"".txt" 2>&1
     # NMAP UDP Scanning
-    #echo "$PASS" | sudo -S nmap -sU -p- "$IP" -oA "$TS""nmap_UDP_allPorts__""$IP"
+    echo "$PASS" | sudo -S nmap -sU -p- "$IP" -oA "$TS""nmap_UDP_allPorts__""$IP"
   fi
 done
-
+COMMENT
 # Need to do screenshots of all the ports

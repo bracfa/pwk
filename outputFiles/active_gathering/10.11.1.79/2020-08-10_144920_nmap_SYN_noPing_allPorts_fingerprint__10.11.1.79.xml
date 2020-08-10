@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Aug 10 14:59:05 2020 as: nmap -v -Pn -p- -O -oA 2020-08-10_144920_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.79 10.11.1.79 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -O -oA 2020-08-10_144920_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.79 10.11.1.79" start="1597085945" startstr="Mon Aug 10 14:59:05 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597085945"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597085945"/>
+<taskbegin task="SYN Stealth Scan" time="1597085945"/>
+<taskprogress task="SYN Stealth Scan" time="1597085976" percent="19.78" remaining="126" etc="1597086102"/>
+<taskprogress task="SYN Stealth Scan" time="1597086006" percent="47.85" remaining="67" etc="1597086072"/>
+<taskend task="SYN Stealth Scan" time="1597086050" extrainfo="65535 total ports"/>
+<host starttime="1597085945" endtime="1597086054"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.79" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="3389"/>
+</os>
+<tcpsequence index="252" difficulty="Good luck!" values="843FEE77,7E736E07,B4185016,A3F2C620,8CBA5099,70F05429"/>
+<ipidsequence class="Incremental" values="CF5F,CF60,CF61,CF62,CF63,CF64"/>
+<tcptssequence class="none returned (unsupported)"/>
+<times srtt="20927" rttvar="3522" to="100000"/>
+</host>
+<runstats><finished time="1597086054" timestr="Mon Aug 10 15:00:54 2020" elapsed="109.13" summary="Nmap done at Mon Aug 10 15:00:54 2020; 1 IP address (1 host up) scanned in 109.13 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

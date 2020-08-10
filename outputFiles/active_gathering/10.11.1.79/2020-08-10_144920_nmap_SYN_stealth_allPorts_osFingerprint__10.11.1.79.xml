@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Aug 10 14:49:20 2020 as: nmap -sS -p- -O -oA 2020-08-10_144920_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.79 10.11.1.79 -->
+<nmaprun scanner="nmap" args="nmap -sS -p- -O -oA 2020-08-10_144920_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.79 10.11.1.79" start="1597085360" startstr="Mon Aug 10 14:49:20 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597085360" endtime="1597085474"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.11.1.79" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="2233"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="infocrypt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="2233"/>
+</os>
+<tcpsequence index="257" difficulty="Good luck!" values="758A8E4D,87AF0E2,CCB14DF1,19F086CA,F4DF18DF,51811D4D"/>
+<ipidsequence class="Incremental" values="CD01,CD02,CD03,CD04,CD05,CD06"/>
+<tcptssequence class="none returned (unsupported)"/>
+<times srtt="22481" rttvar="3549" to="100000"/>
+</host>
+<runstats><finished time="1597085474" timestr="Mon Aug 10 14:51:14 2020" elapsed="113.77" summary="Nmap done at Mon Aug 10 14:51:14 2020; 1 IP address (1 host up) scanned in 113.77 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

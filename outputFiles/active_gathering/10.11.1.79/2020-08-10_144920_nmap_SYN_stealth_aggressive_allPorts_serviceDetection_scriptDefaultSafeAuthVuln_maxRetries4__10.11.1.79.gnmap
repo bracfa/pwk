@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Aug 10 14:55:37 2020 as: nmap -sS -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-10_144920_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.79 10.11.1.79
+Host: 10.11.1.79 ()	Status: Up
+Host: 10.11.1.79 ()	Ports: 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/	Ignored State: filtered (65534)	Seq Index: 253	IP ID Seq: Incremental
+# Nmap done at Mon Aug 10 14:58:44 2020 -- 1 IP address (1 host up) scanned in 187.00 seconds
