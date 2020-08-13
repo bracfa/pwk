@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Tue Aug 11 21:23:02 2020 as: nmap -v -Pn -p- -O -oA 2020-08-11_211801_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.7 10.11.1.7
+Nmap scan report for 10.11.1.7
+Host is up (0.023s latency).
+Not shown: 65534 filtered ports
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized|general purpose
+Running (JUST GUESSING): AVtech embedded (87%), FreeBSD 6.X (85%)
+OS CPE: cpe:/o:freebsd:freebsd:6.2
+Aggressive OS guesses: AVtech Room Alert 26W environmental monitor (87%), FreeBSD 6.2-RELEASE (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 11 21:25:37 2020 -- 1 IP address (1 host up) scanned in 156.03 seconds

@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Tue Aug 11 21:25:45 2020 as: nmap -Pn --script=http-comments-displayer -oA 2020-08-11_211801_nmap_scripts_httpCommentsDisplayer__10.11.1.7 10.11.1.7
+Nmap scan report for 10.11.1.7
+Host is up (0.018s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+
+# Nmap done at Tue Aug 11 21:25:50 2020 -- 1 IP address (1 host up) scanned in 4.60 seconds

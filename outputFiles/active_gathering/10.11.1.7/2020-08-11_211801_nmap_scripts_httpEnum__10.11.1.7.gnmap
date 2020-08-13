@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Aug 11 21:25:41 2020 as: nmap -Pn --script=http-enum -oA 2020-08-11_211801_nmap_scripts_httpEnum__10.11.1.7 10.11.1.7
+Host: 10.11.1.7 ()	Status: Up
+Host: 10.11.1.7 ()	Ports: 3389/open/tcp//ms-wbt-server///	Ignored State: filtered (999)
+# Nmap done at Tue Aug 11 21:25:45 2020 -- 1 IP address (1 host up) scanned in 4.68 seconds
