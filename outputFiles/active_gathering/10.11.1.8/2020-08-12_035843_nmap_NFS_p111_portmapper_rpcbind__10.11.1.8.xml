@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 12 03:58:50 2020 as: nmap -v -p 111 -oA 2020-08-12_035843_nmap_NFS_p111_portmapper_rpcbind__10.11.1.8 10.11.1.8 -->
+<nmaprun scanner="nmap" args="nmap -v -p 111 -oA 2020-08-12_035843_nmap_NFS_p111_portmapper_rpcbind__10.11.1.8 10.11.1.8" start="1597219130" startstr="Wed Aug 12 03:58:50 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="111"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1597219130"/>
+<taskend task="Ping Scan" time="1597219132" extrainfo="1 total hosts"/>
+<host><status state="down" reason="host-unreach" reason_ttl="64"/>
+<address addr="10.11.1.8" addrtype="ipv4"/>
+</host>
+<runstats><finished time="1597219132" timestr="Wed Aug 12 03:58:52 2020" elapsed="2.24" summary="Nmap done at Wed Aug 12 03:58:52 2020; 1 IP address (0 hosts up) scanned in 2.24 seconds" exit="success"/><hosts up="0" down="1" total="1"/>
+</runstats>
+</nmaprun>

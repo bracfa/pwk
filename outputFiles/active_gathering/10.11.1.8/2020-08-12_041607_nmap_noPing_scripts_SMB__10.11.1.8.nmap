@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Wed Aug 12 04:16:08 2020 as: nmap -Pn -v -p 139,445 --script *smb* -oA 2020-08-12_041607_nmap_noPing_scripts_SMB__10.11.1.8 10.11.1.8
+Nmap scan report for 10.11.1.8
+Host is up (0.018s latency).
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+445/tcp filtered microsoft-ds
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Aug 12 04:16:08 2020 -- 1 IP address (1 host up) scanned in 0.36 seconds

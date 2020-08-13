@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Aug 12 04:26:09 2020 as: nmap -Pn --script=http-comments-displayer -oA 2020-08-12_042044_nmap_scripts_httpCommentsDisplayer__10.11.1.8 10.11.1.8
+Host: 10.11.1.8 ()	Status: Up
+Host: 10.11.1.8 ()	Status: Up
+# Nmap done at Wed Aug 12 04:26:10 2020 -- 1 IP address (1 host up) scanned in 0.83 seconds

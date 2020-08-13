@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Wed Aug 12 06:39:08 2020 as: nmap -p 21 --script ftp-vsftpd-backdoor -oA nmap_script_vsftpd_backdoor_10.11.1.8 10.11.1.8
+Nmap scan report for 10.11.1.8
+Host is up (0.020s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+
+# Nmap done at Wed Aug 12 06:39:09 2020 -- 1 IP address (1 host up) scanned in 1.50 seconds

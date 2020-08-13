@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 12 04:26:12 2020 as: nmap -Pn -sV -p80 -&#45;script=http-sql-injection -oA 2020-08-12_042044_nmap_scripts_httpSqlInjection__10.11.1.8 10.11.1.8 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sV -p80 -&#45;script=http-sql-injection -oA 2020-08-12_042044_nmap_scripts_httpSqlInjection__10.11.1.8 10.11.1.8" start="1597220772" startstr="Wed Aug 12 04:26:12 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597220772" endtime="1597220772"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="192.168.119.1"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="31636" rttvar="31636" to="158180"/>
+</host>
+<runstats><finished time="1597220772" timestr="Wed Aug 12 04:26:12 2020" elapsed="0.52" summary="Nmap done at Wed Aug 12 04:26:12 2020; 1 IP address (1 host up) scanned in 0.52 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 12 04:25:27 2020 as: nmap -v -Pn -p- -O -oA 2020-08-12_042044_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.8 10.11.1.8 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -O -oA 2020-08-12_042044_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.8 10.11.1.8" start="1597220727" startstr="Wed Aug 12 04:25:27 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597220727"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597220727"/>
+<taskbegin task="SYN Stealth Scan" time="1597220727"/>
+<taskend task="SYN Stealth Scan" time="1597220763" extrainfo="65535 total ports"/>
+<host starttime="1597220727" endtime="1597220767"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65535">
+<extrareasons reason="host-unreaches" count="65429"/>
+<extrareasons reason="no-responses" count="106"/>
+</extraports>
+</ports>
+<os></os>
+<times srtt="52720" rttvar="43982" to="228648"/>
+</host>
+<runstats><finished time="1597220767" timestr="Wed Aug 12 04:26:07 2020" elapsed="40.03" summary="Nmap done at Wed Aug 12 04:26:07 2020; 1 IP address (1 host up) scanned in 40.03 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

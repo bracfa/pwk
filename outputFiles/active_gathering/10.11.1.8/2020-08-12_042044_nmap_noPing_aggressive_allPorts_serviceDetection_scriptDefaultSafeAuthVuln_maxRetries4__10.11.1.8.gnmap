@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Aug 12 04:20:47 2020 as: nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-12_042044_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.8 10.11.1.8
+Host: 10.11.1.8 ()	Status: Up
+Host: 10.11.1.8 ()	Status: Up
+# Nmap done at Wed Aug 12 04:25:25 2020 -- 1 IP address (1 host up) scanned in 278.45 seconds

@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Wed Aug 12 04:16:09 2020 as: nmap -Pn -sV -p 111 --script=rpcinfo,rpc-grind -oA 2020-08-12_041607_nmap_noPing_NFS_services_rpcinfo_rpc-grind__10.11.1.8 10.11.1.8
+Nmap scan report for 10.11.1.8
+Host is up (0.017s latency).
+
+PORT    STATE    SERVICE VERSION
+111/tcp filtered rpcbind
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 12 04:16:09 2020 -- 1 IP address (1 host up) scanned in 0.48 seconds

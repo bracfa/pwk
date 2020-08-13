@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Aug 12 06:39:08 2020 as: nmap -p 21 --script ftp-vsftpd-backdoor -oA nmap_script_vsftpd_backdoor_10.11.1.8 10.11.1.8
+Host: 10.11.1.8 ()	Status: Up
+Host: 10.11.1.8 ()	Ports: 21/open/tcp//ftp///
+# Nmap done at Wed Aug 12 06:39:09 2020 -- 1 IP address (1 host up) scanned in 1.50 seconds

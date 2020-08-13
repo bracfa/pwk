@@ -1,0 +1,19 @@
+- Nikto v2.1.6/2.1.5
++ Target Host: 10.11.1.8
++ Target Port: 80
++ GET Server may leak inodes via ETags, header found with file /, inode: 20176, size: 218, mtime: Sun Jun  3 12:23:28 1979
++ GET The anti-clickjacking X-Frame-Options header is not present.
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ GET Retrieved x-powered-by header: PHP/4.3.9
++ GET Entry '/internal/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ GET "robots.txt" contains 2 entries which should be manually viewed.
++ HEAD Apache/2.0.52 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
++ OPTIONS Allowed HTTP Methods: GET, HEAD, POST, OPTIONS, TRACE 
++ OSVDB-877: TRACE HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ OSVDB-3092: GET /internal/: This might be interesting...
++ GET Uncommon header 'tcn' found, with contents: choice
++ OSVDB-3092: GET /manual/: Web server manual found.
++ OSVDB-3268: GET /icons/: Directory indexing found.
++ OSVDB-3268: GET /manual/images/: Directory indexing found.
++ OSVDB-3233: GET /icons/README: Apache default file found.

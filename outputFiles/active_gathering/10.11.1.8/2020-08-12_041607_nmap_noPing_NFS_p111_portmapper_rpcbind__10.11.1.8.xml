@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 12 04:16:08 2020 as: nmap -Pn -v -p 111 -oA 2020-08-12_041607_nmap_noPing_NFS_p111_portmapper_rpcbind__10.11.1.8 10.11.1.8 -->
+<nmaprun scanner="nmap" args="nmap -Pn -v -p 111 -oA 2020-08-12_041607_nmap_noPing_NFS_p111_portmapper_rpcbind__10.11.1.8 10.11.1.8" start="1597220168" startstr="Wed Aug 12 04:16:08 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="111"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1597220168"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1597220168"/>
+<taskbegin task="SYN Stealth Scan" time="1597220168"/>
+<taskend task="SYN Stealth Scan" time="1597220168" extrainfo="1 total ports"/>
+<host starttime="1597220168" endtime="1597220168"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="111"><state state="filtered" reason="host-unreach" reason_ttl="64" reason_ip="192.168.119.1"/><service name="rpcbind" method="table" conf="3"/></port>
+</ports>
+<times srtt="15715" rttvar="15715" to="100000"/>
+</host>
+<runstats><finished time="1597220168" timestr="Wed Aug 12 04:16:08 2020" elapsed="0.15" summary="Nmap done at Wed Aug 12 04:16:08 2020; 1 IP address (1 host up) scanned in 0.15 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

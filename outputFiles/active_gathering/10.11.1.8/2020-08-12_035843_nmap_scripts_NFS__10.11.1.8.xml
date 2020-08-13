@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 12 03:58:54 2020 as: nmap -p 111 -&#45;script *nfs* -oA 2020-08-12_035843_nmap_scripts_NFS__10.11.1.8 10.11.1.8 -->
+<nmaprun scanner="nmap" args="nmap -p 111 -&#45;script *nfs* -oA 2020-08-12_035843_nmap_scripts_NFS__10.11.1.8 10.11.1.8" start="1597219134" startstr="Wed Aug 12 03:58:54 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="111"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<runstats><finished time="1597219136" timestr="Wed Aug 12 03:58:56 2020" elapsed="1.65" summary="Nmap done at Wed Aug 12 03:58:56 2020; 1 IP address (0 hosts up) scanned in 1.65 seconds" exit="success"/><hosts up="0" down="1" total="1"/>
+</runstats>
+</nmaprun>

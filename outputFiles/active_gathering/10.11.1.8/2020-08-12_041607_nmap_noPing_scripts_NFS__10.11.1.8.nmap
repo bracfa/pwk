@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Wed Aug 12 04:16:09 2020 as: nmap -Pn -p 111 --script *nfs* -oA 2020-08-12_041607_nmap_noPing_scripts_NFS__10.11.1.8 10.11.1.8
+Nmap scan report for 10.11.1.8
+Host is up (0.014s latency).
+
+PORT    STATE    SERVICE
+111/tcp filtered rpcbind
+
+# Nmap done at Wed Aug 12 04:16:09 2020 -- 1 IP address (1 host up) scanned in 0.33 seconds

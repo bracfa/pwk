@@ -1,0 +1,121 @@
+# Nmap 7.80 scan initiated Wed Aug 12 04:20:47 2020 as: nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-12_042044_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.8 10.11.1.8
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 192.168.0.23
+|     Server Identifier: 192.168.0.1
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.0.1
+|_    Domain Name Server: 75.75.75.75, 75.75.76.76
+| broadcast-igmp-discovery: 
+|   192.168.0.20
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|   192.168.0.254
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+| broadcast-listener: 
+|   ether
+|   udp
+|       DHCP
+|         srv ip       cli ip        mask           gw           dns                       vendor
+|         192.168.0.1  192.168.0.22  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.22  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|_        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Unspecified, UPnP/1.0, Unspecified
+|_      Location: http://192.168.0.254:49152/wps_device.xml
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+Nmap scan report for 10.11.1.8
+Host is up (0.063s latency).
+All 65535 scanned ports on 10.11.1.8 are filtered
+Too many fingerprints match this host to give specific OS details
+
+Host script results:
+|_fcrdns: FAIL (No PTR record)
+| firewalk: 
+| HOP  HOST           PROTOCOL  BLOCKED PORTS
+|_1    192.168.119.1  tcp       9597
+| traceroute-geolocation: 
+|   HOP  RTT    ADDRESS        GEOLOCATION
+|   1    22.70  192.168.119.1  - ,- 
+|   2    22.67  192.168.119.1  - ,- 
+|   3    22.65  192.168.119.1  - ,- 
+|   4    22.63  192.168.119.1  - ,- 
+|   5    22.61  192.168.119.1  - ,- 
+|   6    22.52  192.168.119.1  - ,- 
+|   7    19.53  192.168.119.1  - ,- 
+|   8    19.50  192.168.119.1  - ,- 
+|   9    19.47  192.168.119.1  - ,- 
+|   10   19.45  192.168.119.1  - ,- 
+|   11   27.17  192.168.119.1  - ,- 
+|   12   27.17  192.168.119.1  - ,- 
+|   13   27.18  192.168.119.1  - ,- 
+|   14   27.21  192.168.119.1  - ,- 
+|   15   21.31  192.168.119.1  - ,- 
+|   16   21.23  192.168.119.1  - ,- 
+|   17   21.26  192.168.119.1  - ,- 
+|   18   25.46  192.168.119.1  - ,- 
+|   19   25.59  192.168.119.1  - ,- 
+|   20   25.63  192.168.119.1  - ,- 
+|   21   18.20  192.168.119.1  - ,- 
+|   22   18.29  192.168.119.1  - ,- 
+|   23   18.32  192.168.119.1  - ,- 
+|   24   18.35  192.168.119.1  - ,- 
+|   25   17.61  192.168.119.1  - ,- 
+|   26   17.61  192.168.119.1  - ,- 
+|   27   17.64  192.168.119.1  - ,- 
+|   28   17.66  192.168.119.1  - ,- 
+|   29   17.72  192.168.119.1  - ,- 
+|_  30   17.78  192.168.119.1  - ,- 
+| unusual-port: 
+|_  WARNING: this script depends on Nmap's service/version detection (-sV)
+
+TRACEROUTE (using proto 1/icmp)
+HOP RTT      ADDRESS
+1   22.70 ms 192.168.119.1
+2   22.67 ms 192.168.119.1
+3   22.65 ms 192.168.119.1
+4   22.63 ms 192.168.119.1
+5   22.61 ms 192.168.119.1
+6   22.52 ms 192.168.119.1
+7   19.53 ms 192.168.119.1
+8   19.50 ms 192.168.119.1
+9   19.47 ms 192.168.119.1
+10  19.45 ms 192.168.119.1
+11  27.17 ms 192.168.119.1
+12  27.17 ms 192.168.119.1
+13  27.18 ms 192.168.119.1
+14  27.21 ms 192.168.119.1
+15  21.31 ms 192.168.119.1
+16  21.23 ms 192.168.119.1
+17  21.26 ms 192.168.119.1
+18  25.46 ms 192.168.119.1
+19  25.59 ms 192.168.119.1
+20  25.63 ms 192.168.119.1
+21  18.20 ms 192.168.119.1
+22  18.29 ms 192.168.119.1
+23  18.32 ms 192.168.119.1
+24  18.35 ms 192.168.119.1
+25  17.61 ms 192.168.119.1
+26  17.61 ms 192.168.119.1
+27  17.64 ms 192.168.119.1
+28  17.66 ms 192.168.119.1
+29  17.72 ms 192.168.119.1
+30  17.78 ms 192.168.119.1
+
+Post-scan script results:
+|_reverse-index: 
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 12 04:25:25 2020 -- 1 IP address (1 host up) scanned in 278.45 seconds
