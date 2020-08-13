@@ -1,0 +1,11 @@
+kali@kali:~/gitWorkspace/pwk/outputFiles/active_gathering/10.11.1.71/privesc$ sudo john --wordlist=/usr/share/wordlists/rockyou.txt passwords.txt 
+Using default input encoding: UTF-8
+Loaded 2 password hashes with 2 different salts (sha512crypt, crypt(3) $6$ [SHA512 128/128 AVX 2x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+
+  zaq1xsw2cde3     (gibson)
+1g 0:01:34:00 DONE (2020-08-13 12:50) 0.000177g/s 2542p/s 2675c/s 2675C/s  naptown410..*7¡Vamos!                                                        
+Use the "--show" option to display all of the cracked passwords reliably                                                                               
+Session completed 

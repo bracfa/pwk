@@ -1,0 +1,53 @@
+kali@kali:~/gitWorkspace/pwk/outputFiles/active_gathering/10.11.1.71/privesc$ hashcat -O -m 400 -a 0 -o cracked.txt hashes.txt /usr/share/wordlists/rockyou.txt --force
+hashcat (v5.1.0) starting...
+
+OpenCL Platform #1: The pocl project
+====================================
+* Device #1: pthread-Intel(R) Core(TM) i7-3840QM CPU @ 2.80GHz, 512/1488 MB allocatable, 4MCU
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Optimized-Kernel
+* Zero-Byte
+* Single-Hash
+* Single-Salt
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 55
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+* Device #1: build_opts '-cl-std=CL1.2 -I OpenCL -I /usr/share/hashcat/OpenCL -D LOCAL_MEM_TYPE=2 -D VENDOR_ID=64 -D CUDA_ARCH=0 -D AMD_ROCM=0 -D VECT_SIZE=8 -D DEVICE_TYPE=2 -D DGST_R0=0 -D DGST_R1=1 -D DGST_R2=2 -D DGST_R3=3 -D DGST_ELEM=4 -D KERN_TYPE=400 -D _unroll'                                                                        
+* Device #1: Kernel m00400-optimized.c4c747d8.kernel not found in cache! Building may take a while...
+* Device #1: Kernel amp_a0.8dbfb87c.kernel not found in cache! Building may take a while...
+Dictionary cache built:
+* Filename..: /usr/share/wordlists/rockyou.txt
+* Passwords.: 14344392
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+* Runtime...: 2 secs
+
+                                                 
+Session..........: hashcat
+Status...........: Cracked
+Hash.Type........: phpass, WordPress (MD5), phpBB3 (MD5), Joomla (MD5)
+Hash.Target......: $P$BR2C9zC2Aau72.4cNZfJPC.iV8Ppj41
+Time.Started.....: Thu Aug 13 10:32:58 2020 (58 secs)
+Time.Estimated...: Thu Aug 13 10:33:56 2020 (0 secs)
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    12917 H/s (2.50ms) @ Accel:1024 Loops:64 Thr:1 Vec:8
+Recovered........: 1/1 (100.00%) Digests, 1/1 (100.00%) Salts
+Progress.........: 749569/14344385 (5.23%)
+Rejected.........: 1/749569 (0.00%)
+Restore.Point....: 745473/14344385 (5.20%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:8128-8192
+Candidates.#1....: 007373 -> yomamma11
+
+Started: Thu Aug 13 10:32:40 2020
+Stopped: Thu Aug 13 10:33:58 2020
+
