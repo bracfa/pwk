@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Thu Aug 13 14:56:59 2020 as: nmap -Pn --script=http-userdir-enum -oA 2020-08-13_144330_nmap_scripts_httpUserdirEnum__10.11.1.251 10.11.1.251
+Nmap scan report for 10.11.1.251
+Host is up (0.022s latency).
+Not shown: 995 filtered ports
+PORT      STATE  SERVICE
+20/tcp    closed ftp-data
+21/tcp    open   ftp
+22/tcp    open   ssh
+80/tcp    open   http
+10180/tcp closed unknown
+
+# Nmap done at Thu Aug 13 14:57:04 2020 -- 1 IP address (1 host up) scanned in 4.95 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Aug 13 14:48:05 2020 as: nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-13_144330_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.251 10.11.1.251
+Host: 10.11.1.251 ()	Status: Up
+Host: 10.11.1.251 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/	Seq Index: 250	IP ID Seq: All zeros
+# Nmap done at Thu Aug 13 14:51:32 2020 -- 1 IP address (1 host up) scanned in 207.71 seconds

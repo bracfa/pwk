@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Aug 13 15:45:42 2020 as: nmap -sS -p- -&#45;script *wordpress* -oA 2020-08-13_154542_nmap_SYN_scripts_WordPress__10.11.1.251 10.11.1.251 -->
+<nmaprun scanner="nmap" args="nmap -sS -p- -&#45;script *wordpress* -oA 2020-08-13_154542_nmap_SYN_scripts_WordPress__10.11.1.251 10.11.1.251" start="1597347942" startstr="Thu Aug 13 15:45:42 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597347943" endtime="1597348113"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.11.1.251" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65431">
+<extrareasons reason="no-responses" count="65431"/>
+</extraports>
+<extraports state="closed" count="101">
+<extrareasons reason="resets" count="101"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="36336" rttvar="14113" to="100000"/>
+</host>
+<runstats><finished time="1597348113" timestr="Thu Aug 13 15:48:33 2020" elapsed="170.80" summary="Nmap done at Thu Aug 13 15:48:33 2020; 1 IP address (1 host up) scanned in 170.80 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

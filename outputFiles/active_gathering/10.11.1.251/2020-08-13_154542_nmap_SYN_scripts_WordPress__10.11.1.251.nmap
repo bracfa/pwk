@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Thu Aug 13 15:45:42 2020 as: nmap -sS -p- --script *wordpress* -oA 2020-08-13_154542_nmap_SYN_scripts_WordPress__10.11.1.251 10.11.1.251
+Nmap scan report for 10.11.1.251
+Host is up (0.036s latency).
+Not shown: 65431 filtered ports, 101 closed ports
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+
+# Nmap done at Thu Aug 13 15:48:33 2020 -- 1 IP address (1 host up) scanned in 170.80 seconds

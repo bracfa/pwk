@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Aug 13 15:45:42 2020 as: nmap -sS -p- --script *wordpress* -oA 2020-08-13_154542_nmap_SYN_scripts_WordPress__10.11.1.251 10.11.1.251
+Host: 10.11.1.251 ()	Status: Up
+Host: 10.11.1.251 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///
+# Nmap done at Thu Aug 13 15:48:33 2020 -- 1 IP address (1 host up) scanned in 170.80 seconds
