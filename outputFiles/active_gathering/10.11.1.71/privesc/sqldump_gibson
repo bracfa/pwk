@@ -1,0 +1,5 @@
+10.11.1.71> echo zaq1xsw2cde3 | mysqldump -u root -p wingnut --extended=FALSE | grep gibson | less -S
+Warning: 
+10.11.1.71> 
+Using unique option prefix extended instead of extended-insert is deprecated and will be removed in a future release. Please use the full name instead.
+Enter password: INSERT INTO `bigtree_users` VALUES (1,'gibson@nobrains.com','$P$BR2C9zC2Aau72.4cNZfJPC.iV8Ppj41','Developer','',2,'','','','');

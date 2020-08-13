@@ -1,0 +1,340 @@
+-- MySQL dump 10.13  Distrib 5.5.38, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: wingnut
+-- ------------------------------------------------------
+-- Server version       5.5.38-0ubuntu0.14.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `bigtree_404s`
+--
+
+DROP TABLE IF EXISTS `bigtree_404s`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bigtree_404s` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `broken_url` varchar(255) NOT NULL DEFAULT '',
+  `redirect_url` varchar(255) NOT NULL DEFAULT '',
+  `requests` int(11) unsigned NOT NULL DEFAULT '0',
+  `ignored` char(2) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  KEY `broken_url` (`broken_url`),
+  KEY `requests` (`requests`),
+  KEY `ignored` (`ignored`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bigtree_404s`
+--
+
+LOCK TABLES `bigtree_404s` WRITE;
+/*!40000 ALTER TABLE `bigtree_404s` DISABLE KEYS */;
+INSERT INTO `bigtree_404s` VALUES (1,'tree-blog/category','',2,''),(2,'tree-blog/tag','',1,''),(3,'tree-blog/author','',1,'');
+/*!40000 ALTER TABLE `bigtree_404s` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `bigtree_audit_trail`
+--
+
+DROP TABLE IF EXISTS `bigtree_audit_trail`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bigtree_audit_trail` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user` int(11) unsigned NOT NULL,
+  `table` varchar(255) NOT NULL,
+  `entry` varchar(255) NOT NULL DEFAULT '',
+  `type` varchar(255) NOT NULL,
+  `date` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user` (`user`),
+  KEY `table` (`table`),
+  KEY `entry` (`entry`),
+  KEY `date` (`date`),
+  CONSTRAINT `bigtree_audit_trail_ibfk_1` FOREIGN KEY (`user`) REFERENCES `bigtree_users` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bigtree_audit_trail`
+--
+
+LOCK TABLES `bigtree_audit_trail` WRITE;
+/*!40000 ALTER TABLE `bigtree_audit_trail` DISABLE KEYS */;
+INSERT INTO `bigtree_audit_trail` VALUES (1,1,'bigtree_settings','bigtree-internal-revision','updated-value','2014-10-11 17:33:06');
+/*!40000 ALTER TABLE `bigtree_audit_trail` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `bigtree_caches`
+--
+
+DROP TABLE IF EXISTS `bigtree_caches`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bigtree_caches` (
+  `identifier` varchar(255) NOT NULL DEFAULT '',
+  `key` varchar(255) NOT NULL DEFAULT '',
+  `value` longtext,
+  `timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  KEY `identifier` (`identifier`),
+  KEY `key` (`key`),
+  KEY `timestamp` (`timestamp`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bigtree_caches`
+--
+
+LOCK TABLES `bigtree_caches` WRITE;
+/*!40000 ALTER TABLE `bigtree_caches` DISABLE KEYS */;
+INSERT INTO `bigtree_caches` VALUES ('org.bigtreecms.geocoding','2026 East Lombard Street <br />Baltimore, MD 21231','{\"latitude\":39.286139,\"longitude\":-76.6476626}','2014-10-09 15:07:44');
+/*!40000 ALTER TABLE `bigtree_caches` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `bigtree_callouts`
+--
+
+DROP TABLE IF EXISTS `bigtree_callouts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bigtree_callouts` (
+  `id` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `description` text NOT NULL,
+  `display_default` varchar(255) NOT NULL,
+  `display_field` varchar(255) NOT NULL,
+  `resources` text NOT NULL,
+  `level` int(11) unsigned NOT NULL,
+  `position` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bigtree_callouts`
+--
+
+LOCK TABLES `bigtree_callouts` WRITE;
+/*!40000 ALTER TABLE `bigtree_callouts` DISABLE KEYS */;
+INSERT INTO `bigtree_callouts` VALUES ('flexible-callout','Flexible Callout','','Flexible','title','[{\"id\":\"title\",\"title\":\"Title\",\"subtitle\":\"\",\"type\":\"text\"},{\"id\":\"image\",\"title\":\"Image\",\"subtitle\":\"(minimum width of 475px)\",\"type\":\"upload\",\"image\":\"on\",\"min_width\":\"475\",\"min_height\":\"\",\"preview_prefix\":\"\",\"retina\":\"on\",\"thumbs\":{\"1\":{\"prefix\":\"\",\"width\":\"475\",\"height\":\"\",\"grayscale\":\"\"}}},{\"id\":\"caption\",\"title\":\"Image Caption\",\"subtitle\":\"\",\"type\":\"text\"},{\"id\":\"description\",\"title\":\"Description\",\"subtitle\":\"\",\"type\":\"html\",\"simple\":\"on\"},{\"id\":\"link\",\"title\":\"Link\",\"subtitle\":\"(include http:\\/\\/)\",\"type\":\"text\",\"validation\":\"\",\"sub_type\":\"website\"},{\"id\":\"link_title\",\"title\":\"Link Title\",\"subtitle\":\"(defaults to &quot;Read More&quot;)\",\"type\":\"text\"}]',0,0);
+/*!40000 ALTER TABLE `bigtree_callouts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `bigtree_feeds`
+--
+
+DROP TABLE IF EXISTS `bigtree_feeds`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bigtree_feeds` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `route` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `table` varchar(255) NOT NULL,
+  `fields` text NOT NULL,
+  `options` text NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `route` (`route`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bigtree_feeds`
+--
+
+LOCK TABLES `bigtree_feeds` WRITE;
+/*!40000 ALTER TABLE `bigtree_feeds` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bigtree_feeds` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `bigtree_field_types`
+--
+
+DROP TABLE IF EXISTS `bigtree_field_types`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bigtree_field_types` (
+  `id` varchar(255) NOT NULL DEFAULT '',
+  `name` varchar(255) NOT NULL,
+  `pages` char(2) NOT NULL,
+  `modules` char(2) NOT NULL,
+  `callouts` char(2) NOT NULL DEFAULT '',
+  `settings` char(2) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bigtree_field_types`
+--
+
+LOCK TABLES `bigtree_field_types` WRITE;
+/*!40000 ALTER TABLE `bigtree_field_types` DISABLE KEYS */;
+INSERT INTO `bigtree_field_types` VALUES ('image-color-sample','Image Color Sample','','on','','');
+/*!40000 ALTER TABLE `bigtree_field_types` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `bigtree_locks`
+--
+
+DROP TABLE IF EXISTS `bigtree_locks`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bigtree_locks` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user` int(11) unsigned NOT NULL,
+  `table` varchar(255) NOT NULL,
+  `item_id` varchar(255) NOT NULL,
+  `last_accessed` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `title` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user` (`user`),
+  KEY `table` (`table`),
+  KEY `item_id` (`item_id`),
+  CONSTRAINT `bigtree_locks_ibfk_1` FOREIGN KEY (`user`) REFERENCES `bigtree_users` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bigtree_locks`
+--
+
+LOCK TABLES `bigtree_locks` WRITE;
+/*!40000 ALTER TABLE `bigtree_locks` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bigtree_locks` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `bigtree_messages`
+--
+
+DROP TABLE IF EXISTS `bigtree_messages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bigtree_messages` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `sender` int(11) unsigned NOT NULL,
+  `recipients` text NOT NULL,
+  `read_by` text NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `message` text NOT NULL,
+  `response_to` int(11) unsigned NOT NULL,
+  `date` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `sender` (`sender`),
+  CONSTRAINT `bigtree_messages_ibfk_1` FOREIGN KEY (`sender`) REFERENCES `bigtree_users` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bigtree_messages`
+--
+
+LOCK TABLES `bigtree_messages` WRITE;
+/*!40000 ALTER TABLE `bigtree_messages` DISABLE KEYS */;
+/*!40000 ALTER TABLE `bigtree_messages` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `bigtree_module_actions`
+--
+
+DROP TABLE IF EXISTS `bigtree_module_actions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bigtree_module_actions` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `module` int(11) unsigned NOT NULL DEFAULT '0',
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `route` varchar(255) NOT NULL DEFAULT '',
+  `in_nav` char(2) NOT NULL DEFAULT '',
+  `form` int(11) unsigned DEFAULT NULL,
+  `view` int(11) unsigned DEFAULT NULL,
+  `class` varchar(255) NOT NULL,
+  `level` int(11) NOT NULL,
+  `position` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `module` (`module`),
+  KEY `route` (`route`),
+  KEY `in_nav` (`in_nav`),
+  KEY `position` (`position`),
+  CONSTRAINT `bigtree_module_actions_ibfk_1` FOREIGN KEY (`module`) REFERENCES `bigtree_modules` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bigtree_module_actions`
+--
+
+LOCK TABLES `bigtree_module_actions` WRITE;
+/*!40000 ALTER TABLE `bigtree_module_actions` DISABLE KEYS */;
+INSERT INTO `bigtree_module_actions` VALUES (4,1,'View Features','','on',0,1,'list',0,0),(5,1,'Add Feature','add','on',1,0,'add',0,0),(6,1,'Edit Feature','edit','',1,0,'edit',0,0),(7,7,'View Posts','','on',0,3,'list',0,0),(8,7,'Add Post','add','on',3,0,'add',0,0),(9,7,'Edit Post','edit','',3,0,'edit',0,0),(10,7,'Settings','settings','on',0,0,'setup',0,0),(11,8,'View Authors','','on',0,4,'list',0,0),(12,8,'Add Author','add','on',5,0,'add',0,0),(13,8,'Edit Author','edit','',5,0,'edit',0,0),(14,9,'View Categories','','on',0,5,'list',0,0),(15,9,'Add Category','add','on',7,0,'add',0,0),(16,9,'Edit Category','edit','',7,0,'edit',0,0),(17,10,'View Terms','','on',0,6,'list',0,0),(18,10,'Add Term','add','on',8,0,'add',0,0),(19,10,'Edit Term','edit','',8,0,'edit',0,0);
+/*!40000 ALTER TABLE `bigtree_module_actions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `bigtree_module_forms`
+--
+
+DROP TABLE IF EXISTS `bigtree_module_forms`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bigtree_module_forms` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `preprocess` varchar(255) NOT NULL,
+  `callback` varchar(255) NOT NULL,
+  `table` varchar(255) NOT NULL,
+  `fields` text NOT NULL,
+  `positioning` text NOT NULL,
+  `default_position` varchar(255) NOT NULL,
+  `return_view` int(11) unsigned DEFAULT NULL,
+  `return_url` varchar(255) NOT NULL,
+  `tagging` char(2) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `return_view` (`return_view`),
+  CONSTRAINT `bigtree_module_forms_ibfk_1` FOREIGN KEY (`return_view`) REFERENCES `bigtree_module_views` (`id`) ON DELETE SET NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bigtree_module_forms`
+--
+
+LOCK TABLES `bigtree_module_forms` WRITE;
+/*!40000 ALTER TABLE `bigtree_module_forms` DISABLE KEYS */;
+INSERT INTO `bigtree_module_forms` VALUES (1,'Feature','','','sample_features','{\"image\":{\"directory\":\"images\\/features\\/\",\"image\":\"on\",\"min_width\":\"1400\",\"min_height\":\"625\",\"preview_prefix\":\"t_\",\"crops\":[{\"prefix\":\"xlrg_\",\"width\":\"1400\",\"height\":\"625\",\"grayscale\":\"\",\"thumbs\":{\"1\":{\"prefix\":\"t_\",\"width\":\"200\",\"height\":\"\",\"grayscale\":\"\"}}}],\"type\":\"upload\",\"title\":\"Image\",\"subtitle\":\"(minimum size of 1400x625)\"},\"background\":{\"source\":\"image\",\"type\":\"image-color-sample\",\"title\":\"Background\",\"subtitle\":\"\"},\"title\":{\"tw`),
+  CONSTRAINT `bigtree_module_forms_ibfk_1` FOREIGN KEY (`return_view`) REFERENCES `bigtree_module_views` (`id`) ON DELETE SET NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bigtree_module_forms`
+--
+
+LOCK TABLES `bigtree_module_forms` WRITE;
+/*!40000 ALTER TABLE `bigtree_module_forms` DISABLE KEYS */;
+INSERT INTO `bigtree_module_forms` VALUES (1,'Feature','','','sample_features','{\"image\":{\"directory\":\"images\\/features\\/\",\"image\":\"on\",\"min_width\":\"1400\",\"min_height\":\"625\",\"preview_prefix\":\"t_\",\"crops\":[{\"prefix\":\"xlrg_\",\"width\":\"1400\",\"height\":\"625\",\"grayscale\":\"\",\"thumbs\":{\"1\":{\"prefix\":\"t_\",\"width\":\"200\",\"height\":\"\",\"grayscale\":\"\"}}}],\"type\":\"upload\",\"title\":\"Image\",\"subtitle\":\"(minimum size of 1400x625)\"},\"background\":{\"source\":\"image\",\"type\":\"image-color-sample\",\"title\":\"Background\",\"subtitle\":\"\"},\"title\":{\"t
+10.11.1.71> 
+ype\":\"text\",\"title\":\"Title\",\"subtitle\":\"\"},\"description\":{\"type\":\"textarea\",\"title\":\"Description\",\"subtitle\":\"\"},\"link\":{\"type\":\"text\",\"title\":\"Link\",\"subtitle\":\"Including \'http:\\/\\/\'\"},\"image_credit\":{\"type\":\"textarea\",\"title\":\"Image Credit\",\"subtitle\":\"\"},\"image_link\":{\"type\":\"text\",\"title\":\"Image Link\",\"subtitle\":\"Including \'http:\\/\\/\'\"}}','','Bottom',NULL,'',''),(3,'Post','BTXDogwood::updatePost','','btx_dogwood_posts','{\"author\":{\"list_type\":\"db\",\"allow-empty\":\"No\",\"list\":[{\"value\":\"\",\"description\":\"\"},{\"value\":\"\",\"description\":\"\"}],\"pop-table\":\"btx_dogwood_authors\",\"pop-description\":\"name\",\"pop-sort\":\"name ASC\",\"type\":\"list\",\"title\":\"Author\",\"subtitle\":\"\"},\"date\":{\"default_today\":\"on\",\"type\":\"date\",\"title\":\"Date\",\"subtitle\":\"\"},\"title\":{\"title\":\"Title\",\"subtitle\":\"\",\"type\":\"text\"},\"blurb\":{\"title\":\"Blurb\",\"subtitle\":\"\",\"type\":\"html\"}
