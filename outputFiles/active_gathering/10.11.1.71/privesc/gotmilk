@@ -1,21 +1,10 @@
 
 ### OPERATING SYSTEM ###
-
 10.11.1.71> pwd
 /usr/lib/cgi-bin
 
-10.11.1.71> whoami
-www-data
-
-10.11.1.71> hostname
-alpha
-
-10.11.1.71> uname -a
-Linux alpha 3.13.0-141-generic #190-Ubuntu SMP Fri Jan 19 12:52:38 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
-
 10.11.1.71> less /etc/issue
 Ubuntu 14.04.1 LTS \n \l
-
 
 10.11.1.71> less /etc/*-release
 DISTRIB_ID=Ubuntu
@@ -33,14 +22,33 @@ VERSION_ID="14.04"
 HOME_URL="http://www.ubuntu.com/"
 SUPPORT_URL="http://help.ubuntu.com/"
 BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
-
-10.11.1.71> cat /proc/version
 Linux version 3.13.0-141-generic (buildd@lgw01-amd64-018) (gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ) #190-Ubuntu SMP Fri Jan 19 12:52:38 UTC 2018
+
+10.11.1.71> whoami
+www-data
+
+10.11.1.71> hostname
+alpha
+
+10.11.1.71> uname -a
+Linux alpha 3.13.0-141-generic #190-Ubuntu SMP Fri Jan 19 12:52:38 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+
+10.11.1.71> uname -mrs
+Linux 3.13.0-141-generic x86_64
+
+10.11.1.71> rpm -q kernel
+/bin/bash: line 162: rpm: command not found
+
+10.11.1.71> dmesg | grep Linux
+[    0.000000] Linux version 3.13.0-141-generic (buildd@lgw01-amd64-018) (gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ) #190-Ubuntu SMP Fri Jan 19 12:52:38 UTC 2018 (Ubuntu 3.13.0-141.190-generic 3.13.11-ckt39)
+[    0.109841] [Firmware Bug]: ACPI: BIOS _OSI(Linux) query ignored
+[    0.634046] Linux agpgart interface v0.103
+
+10.11.1.71> ls /boot | grep vmlinuz-
+vmlinuz-3.13.0-141-generic
+vmlinuz-3.13.0-32-generic
 
 10.11.1.71> cat /etc/profile
-Linux version 3.13.0-141-generic (buildd@lgw01-amd64-018) (gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ) #190-Ubuntu SMP Fri Jan 19 12:52:38 UTC 2018
-
-10.11.1.71> cat /etc/bashrc
 # /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
 # and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
 
@@ -72,22 +80,23 @@ if [ -d /etc/profile.d ]; then
   unset i
 fi
 
-10.11.1.71> less ~/.bash_profile
-total 20
-drwxr-xr-x  2 root     root     4096 Oct  9  2014 .
-drwxr-xr-x 60 root     root     4096 Jan 17  2018 ..
--rwxr-xr-x  1 www-data www-data  911 Oct  9  2014 admin.cgi
--rwxr-xr-x  1 www-data www-data  272 Oct  9  2014 load.sh
--rwxr-xr-x  1 www-data www-data  160 Oct  9  2014 test.cgi
+10.11.1.71> less /etc/bashrc
+/etc/bashrc: No such file or directory
 
 10.11.1.71> less ~/.bashrc
 /var/www/.bash_profile: No such file or directory
 
-10.11.1.71> less ~/.bash_logout
-/var/www/.bash.rc: No such file or directory
+10.11.1.71> less ~/.bash_profile
+/var/www/.bash_profile: No such file or directory
 
-10.11.1.71> 
+10.11.1.71> less ~/.bashrc
+/var/www/.bashrc: No such file or directory
+
+10.11.1.71> less ~/.bash_logout
 /var/www/.bash_logout: No such file or directory
+
+10.11.1.71> less ~/.bash_aliases
+/var/www/.bash_aliases: No such file or directory
 
 10.11.1.71> env
 HTTP_HOST=10.11.1.71
@@ -97,6 +106,7 @@ HTTP_ACCEPT_ENCODING=identity
 HTTP_REFERER=() {  :
 }
 _=/usr/bin/env
+OLDPWD=/var/www/html
 
 10.11.1.71> set
 BASH=/bin/bash
@@ -140,3 +150,1956 @@ HTTP_REFERER ()
 }
 
 ### APPLICATION AND SERVICES ###
+10.11.1.71> ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  33612   336 ?        Ss   Aug12   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    Aug12   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    Aug12   0:01 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    Aug12   0:04 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    Aug12   0:02 [rcuos/0]
+root         9  0.0  0.0      0     0 ?        S    Aug12   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    Aug12   0:00 [rcuob/0]
+root        11  0.0  0.0      0     0 ?        S    Aug12   0:00 [migration/0]
+root        12  0.0  0.0      0     0 ?        S    Aug12   0:00 [watchdog/0]
+root        13  0.0  0.0      0     0 ?        S<   Aug12   0:00 [khelper]
+root        14  0.0  0.0      0     0 ?        S    Aug12   0:00 [kdevtmpfs]
+root        15  0.0  0.0      0     0 ?        S<   Aug12   0:00 [netns]
+root        16  0.0  0.0      0     0 ?        S<   Aug12   0:00 [writeback]
+root        17  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kintegrityd]
+root        18  0.0  0.0      0     0 ?        S<   Aug12   0:00 [bioset]
+root        19  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kworker/u3:0]
+root        20  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kblockd]
+root        21  0.0  0.0      0     0 ?        S<   Aug12   0:00 [ata_sff]
+root        22  0.0  0.0      0     0 ?        S    Aug12   0:00 [khubd]
+root        23  0.0  0.0      0     0 ?        S<   Aug12   0:00 [md]
+root        24  0.0  0.0      0     0 ?        S<   Aug12   0:00 [devfreq_wq]
+root        25  0.0  0.0      0     0 ?        S    Aug12   0:13 [kworker/0:1]
+root        27  0.0  0.0      0     0 ?        S    Aug12   0:00 [khungtaskd]
+root        28  0.0  0.0      0     0 ?        S    Aug12   0:10 [kswapd0]
+root        29  0.0  0.0      0     0 ?        S<   Aug12   0:00 [vmstat]
+root        31  0.0  0.0      0     0 ?        SN   Aug12   0:00 [khugepaged]
+root        32  0.0  0.0      0     0 ?        S    Aug12   0:00 [fsnotify_mark]
+root        33  0.0  0.0      0     0 ?        S    Aug12   0:00 [ecryptfs-kthrea]
+root        34  0.0  0.0      0     0 ?        S<   Aug12   0:00 [crypto]
+root        46  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kthrotld]
+root        48  0.0  0.0      0     0 ?        S    Aug12   0:00 [scsi_eh_0]
+root        49  0.0  0.0      0     0 ?        S    Aug12   0:00 [scsi_eh_1]
+root        70  0.0  0.0      0     0 ?        S<   Aug12   0:00 [deferwq]
+root        71  0.0  0.0      0     0 ?        S<   Aug12   0:00 [charger_manager]
+root       117  0.0  0.0      0     0 ?        S    Aug12   0:00 [scsi_eh_2]
+root       118  0.0  0.0      0     0 ?        S<   Aug12   0:00 [vmw_pvscsi_wq_2]
+root       126  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kpsmoused]
+root       136  0.0  0.0      0     0 ?        S    Aug12   0:00 [jbd2/sda1-8]
+root       137  0.0  0.0      0     0 ?        S<   Aug12   0:00 [ext4-rsv-conver]
+root       151  0.0  0.0      0     0 ?        S    Aug12   0:00 [kworker/0:2]
+root       271  0.0  0.0  19472    52 ?        S    Aug12   0:00 upstart-udev-bridge --daemon
+root       275  0.0  0.0  51344   344 ?        Ss   Aug12   0:00 /lib/systemd/systemd-udevd --daemon
+root       375  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kworker/u3:1]
+root       401  0.0  0.0      0     0 ?        S<   Aug12   0:00 [ttm_swap]
+root       487  0.0  0.0  15256    80 ?        S    Aug12   0:00 upstart-socket-bridge --daemon
+www-data   565  0.0  0.1  15564  1128 ?        R    03:12   0:00 ps aux
+message+   595  0.0  0.0  39112   260 ?        Ss   Aug12   0:00 dbus-daemon --system --fork
+root       724  0.0  0.0  43448   372 ?        Ss   Aug12   0:00 /lib/systemd/systemd-logind
+syslog     730  0.0  0.0 255840   384 ?        Ssl  Aug12   0:00 rsyslogd
+root       764  0.0  0.0  15404     0 ?        S    Aug12   0:00 upstart-file-bridge --daemon
+root       812  0.0  0.0  14536   272 tty4     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty4
+root       815  0.0  0.0  14536   272 tty5     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty5    
+root       820  0.0  0.0  14536   272 tty2     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty2            
+root       821  0.0  0.0  14536   272 tty3     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty3
+root       824  0.0  0.0  14536   272 tty6     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty6
+root       853  0.0  0.0   4364   268 ?        Ss   Aug12   0:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+root       854  0.0  0.0  23652   400 ?        Ss   Aug12   0:00 cron
+daemon     855  0.0  0.0  19136   148 ?        Ss   Aug12   0:00 atd
+mysql      911  0.1  4.1 747196 31440 ?        Ssl  Aug12   1:18 /usr/sbin/mysqld
+root      1054  0.0  0.2 158260  2148 ?        Sl   Aug12   0:38 /usr/sbin/vmtoolsd
+root      1079  0.0  0.0  58208   436 ?        S    Aug12   0:00 /usr/lib/vmware-vgauth/VGAuthService -s
+root      1244  0.0  0.0 204852   752 ?        Sl   Aug12   0:11 /usr/lib/vmware-caf/pme/bin/ManagementAgentHost
+root      1264  0.0  0.3 388664  2460 ?        Ss   Aug12   0:04 /usr/sbin/apache2 -k start
+root      1396  0.0  0.0  12836   216 ?        S    Aug12   0:00 /var/ossec-hids2.8/bin/ossec-execd
+ossec     1400  0.0  0.3  15436  2744 ?        S    Aug12   0:03 /var/ossec-hids2.8/bin/ossec-analysisd
+root      1403  0.0  0.0   4576   368 ?        S    Aug12   0:02 /var/ossec-hids2.8/bin/ossec-logcollector
+ossecr    1408  0.0  0.0  31644   292 ?        Sl   Aug12   0:00 /var/ossec-hids2.8/bin/ossec-remoted
+root      1415  0.0  0.0   5364   284 ?        S    Aug12   0:10 /var/ossec-hids2.8/bin/ossec-syscheckd
+ossec     1418  0.0  0.0  13104   200 ?        S    Aug12   0:00 /var/ossec-hids2.8/bin/ossec-monitord
+root      1422  0.0  0.0  14536   272 tty1     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty1
+root      1444  0.0  0.0      0     0 ?        S    Aug12   0:00 [kauditd]
+root      1603  0.0  0.0  61360   376 ?        Ss   Aug12   0:00 /usr/sbin/sshd -D
+root      1670  0.0  0.0      0     0 ?        S    Aug12   0:03 [kworker/u2:0]
+www-data  3228  0.0  0.0  17948   208 ?        S    Aug12   0:00 /bin/bash
+www-data  3229  0.0  0.1  17952   836 ?        S    Aug12   0:00 /bin/bash
+www-data  3656  0.0  0.8 391388  6592 ?        S    00:05   0:01 /usr/sbin/apache2 -k start
+www-data  3700  0.0  0.8 391388  6596 ?        S    00:05   0:01 /usr/sbin/apache2 -k start
+root      3725  0.0  0.0      0     0 ?        S    00:05   0:00 [kworker/u2:1]
+www-data  3738  0.0  0.8 391392  6596 ?        S    00:05   0:01 /usr/sbin/apache2 -k start
+www-data  3954  0.0  0.8 391136  6652 ?        S    00:05   0:01 /usr/sbin/apache2 -k start
+www-data 32583  0.0  1.0 391316  8268 ?        S    00:14   0:00 /usr/sbin/apache2 -k start
+www-data 32584  0.0  1.0 391308  8232 ?        S    00:14   0:00 /usr/sbin/apache2 -k start
+www-data 32585  0.0  1.1 391120  8392 ?        S    00:14   0:00 /usr/sbin/apache2 -k start
+www-data 32606  0.0  1.0 391052  8172 ?        S    00:14   0:00 /usr/sbin/apache2 -k start
+www-data 32607  0.0  1.0 391308  8216 ?        S    00:14   0:00 /usr/sbin/apache2 -k start
+www-data 32608  0.0  1.0 391308  8208 ?        S    00:14   0:00 /usr/sbin/apache2 -k start
+
+10.11.1.71> ps -ef
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Aug12 ?        00:00:01 /sbin/init
+root         2     0  0 Aug12 ?        00:00:00 [kthreadd]
+root         3     2  0 Aug12 ?        00:00:01 [ksoftirqd/0]
+root         5     2  0 Aug12 ?        00:00:00 [kworker/0:0H]
+root         7     2  0 Aug12 ?        00:00:04 [rcu_sched]
+root         8     2  0 Aug12 ?        00:00:02 [rcuos/0]
+root         9     2  0 Aug12 ?        00:00:00 [rcu_bh]
+root        10     2  0 Aug12 ?        00:00:00 [rcuob/0]
+root        11     2  0 Aug12 ?        00:00:00 [migration/0]
+root        12     2  0 Aug12 ?        00:00:00 [watchdog/0]
+root        13     2  0 Aug12 ?        00:00:00 [khelper]
+root        14     2  0 Aug12 ?        00:00:00 [kdevtmpfs]
+root        15     2  0 Aug12 ?        00:00:00 [netns]
+root        16     2  0 Aug12 ?        00:00:00 [writeback]
+root        17     2  0 Aug12 ?        00:00:00 [kintegrityd]
+root        18     2  0 Aug12 ?        00:00:00 [bioset]
+root        19     2  0 Aug12 ?        00:00:00 [kworker/u3:0]
+root        20     2  0 Aug12 ?        00:00:00 [kblockd]
+root        21     2  0 Aug12 ?        00:00:00 [ata_sff]
+root        22     2  0 Aug12 ?        00:00:00 [khubd]
+root        23     2  0 Aug12 ?        00:00:00 [md]
+root        24     2  0 Aug12 ?        00:00:00 [devfreq_wq]
+root        25     2  0 Aug12 ?        00:00:13 [kworker/0:1]
+root        27     2  0 Aug12 ?        00:00:00 [khungtaskd]
+root        28     2  0 Aug12 ?        00:00:10 [kswapd0]
+root        29     2  0 Aug12 ?        00:00:00 [vmstat]
+root        30     2  0 Aug12 ?        00:00:00 [ksmd]
+root        31     2  0 Aug12 ?        00:00:00 [khugepaged]
+root        32     2  0 Aug12 ?        00:00:00 [fsnotify_mark]
+root        33     2  0 Aug12 ?        00:00:00 [ecryptfs-kthrea]
+root        34     2  0 Aug12 ?        00:00:00 [crypto]
+root        46     2  0 Aug12 ?        00:00:00 [kthrotld]
+root        48     2  0 Aug12 ?        00:00:00 [scsi_eh_0]
+root        49     2  0 Aug12 ?        00:00:00 [scsi_eh_1]
+root        70     2  0 Aug12 ?        00:00:00 [deferwq]
+root        71     2  0 Aug12 ?        00:00:00 [charger_manager]
+root       117     2  0 Aug12 ?        00:00:00 [scsi_eh_2]
+root       118     2  0 Aug12 ?        00:00:00 [vmw_pvscsi_wq_2]
+root       126     2  0 Aug12 ?        00:00:00 [kpsmoused]
+root       136     2  0 Aug12 ?        00:00:00 [jbd2/sda1-8]
+root       137     2  0 Aug12 ?        00:00:00 [ext4-rsv-conver]
+root       151     2  0 Aug12 ?        00:00:00 [kworker/0:2]
+root       271     1  0 Aug12 ?        00:00:00 upstart-udev-bridge --daemon
+root       275     1  0 Aug12 ?        00:00:00 /lib/systemd/systemd-udevd --daemon
+root       375     2  0 Aug12 ?        00:00:00 [kworker/u3:1]
+root       401     2  0 Aug12 ?        00:00:00 [ttm_swap]
+root       487     1  0 Aug12 ?        00:00:00 upstart-socket-bridge --daemon
+www-data   589  3229  0 03:19 ?        00:00:00 ps -ef
+message+   595     1  0 Aug12 ?        00:00:00 dbus-daemon --system --fork
+root       724     1  0 Aug12 ?        00:00:00 /lib/systemd/systemd-logind
+syslog     730     1  0 Aug12 ?        00:00:00 rsyslogd
+root       764     1  0 Aug12 ?        00:00:00 upstart-file-bridge --daemon
+root       812     1  0 Aug12 tty4     00:00:00 /sbin/getty -8 38400 tty4
+root       815     1  0 Aug12 tty5     00:00:00 /sbin/getty -8 38400 tty5
+root       820     1  0 Aug12 tty2     00:00:00 /sbin/getty -8 38400 tty2
+root       821     1  0 Aug12 tty3     00:00:00 /sbin/getty -8 38400 tty3
+root       824     1  0 Aug12 tty6     00:00:00 /sbin/getty -8 38400 tty6
+root       853     1  0 Aug12 ?        00:00:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+root       854     1  0 Aug12 ?        00:00:00 cron
+daemon     855     1  0 Aug12 ?        00:00:00 atd
+mysql      911     1  0 Aug12 ?        00:01:18 /usr/sbin/mysqld
+root      1054     1  0 Aug12 ?        00:00:38 /usr/sbin/vmtoolsd
+root      1079     1  0 Aug12 ?        00:00:00 /usr/lib/vmware-vgauth/VGAuthService -s
+root      1244     1  0 Aug12 ?        00:00:11 /usr/lib/vmware-caf/pme/bin/ManagementAgentHost
+root      1264     1  0 Aug12 ?        00:00:04 /usr/sbin/apache2 -k start
+root      1396     1  0 Aug12 ?        00:00:00 /var/ossec-hids2.8/bin/ossec-execd
+ossec     1400     1  0 Aug12 ?        00:00:03 /var/ossec-hids2.8/bin/ossec-analysisd
+root      1403     1  0 Aug12 ?        00:00:02 /var/ossec-hids2.8/bin/ossec-logcollector
+ossecr    1408     1  0 Aug12 ?        00:00:00 /var/ossec-hids2.8/bin/ossec-remoted
+root      1415     1  0 Aug12 ?        00:00:10 /var/ossec-hids2.8/bin/ossec-syscheckd
+ossec     1418     1  0 Aug12 ?        00:00:00 /var/ossec-hids2.8/bin/ossec-monitord
+root      1422     1  0 Aug12 tty1     00:00:00 /sbin/getty -8 38400 tty1
+root      1444     2  0 Aug12 ?        00:00:00 [kauditd]
+root      1603     1  0 Aug12 ?        00:00:00 /usr/sbin/sshd -D
+root      1670     2  0 Aug12 ?        00:00:03 [kworker/u2:0]
+www-data  3228     1  0 Aug12 ?        00:00:00 /bin/bash
+www-data  3229     1  0 Aug12 ?        00:00:00 /bin/bash
+www-data  3656  1264  0 00:05 ?        00:00:01 /usr/sbin/apache2 -k start
+www-data  3700  1264  0 00:05 ?        00:00:01 /usr/sbin/apache2 -k start
+root      3725     2  0 00:05 ?        00:00:00 [kworker/u2:1]
+www-data  3738  1264  0 00:05 ?        00:00:01 /usr/sbin/apache2 -k start
+www-data  3954  1264  0 00:05 ?        00:00:01 /usr/sbin/apache2 -k start
+www-data 32583  1264  0 00:14 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data 32584  1264  0 00:14 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data 32585  1264  0 00:14 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data 32606  1264  0 00:14 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data 32607  1264  0 00:14 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data 32608  1264  0 00:14 ?        00:00:00 /usr/sbin/apache2 -k start
+
+10.11.1.71> top
+TERM environment variable not set.
+
+10.11.1.71> cat /etc/services
+# Network services, Internet style
+#
+# Note that it is presently the policy of IANA to assign a single well-known
+# port number for both TCP and UDP; hence, officially ports have two entries
+# even if the protocol doesn't support UDP operations.
+#
+# Updated from http://www.iana.org/assignments/port-numbers and other
+# sources like http://www.freebsd.org/cgi/cvsweb.cgi/src/etc/services .
+# New ports will be added on request if they have been officially assigned
+# by IANA and used in the real-world or are needed by a debian package.
+# If you need a huge list of used numbers please install the nmap package.
+
+tcpmux          1/tcp                           # TCP port service multiplexer
+echo            7/tcp
+echo            7/udp
+discard         9/tcp           sink null
+discard         9/udp           sink null
+systat          11/tcp          users
+daytime         13/tcp
+daytime         13/udp
+netstat         15/tcp
+qotd            17/tcp          quote
+msp             18/tcp                          # message send protocol
+msp             18/udp
+chargen         19/tcp          ttytst source
+chargen         19/udp          ttytst source
+ftp-data        20/tcp
+ftp             21/tcp
+fsp             21/udp          fspd
+ssh             22/tcp                          # SSH Remote Login Protocol
+ssh             22/udp
+telnet          23/tcp
+smtp            25/tcp          mail
+time            37/tcp          timserver
+time            37/udp          timserver
+rlp             39/udp          resource        # resource location
+nameserver      42/tcp          name            # IEN 116
+whois           43/tcp          nicname
+tacacs          49/tcp                          # Login Host Protocol (TACACS)
+tacacs          49/udp
+re-mail-ck      50/tcp                          # Remote Mail Checking Protocol
+re-mail-ck      50/udp
+domain          53/tcp                          # Domain Name Server
+domain          53/udp
+mtp             57/tcp                          # deprecated
+tacacs-ds       65/tcp                          # TACACS-Database Service
+tacacs-ds       65/udp
+bootps          67/tcp                          # BOOTP server
+bootps          67/udp
+bootpc          68/tcp                          # BOOTP client
+bootpc          68/udp
+tftp            69/udp
+gopher          70/tcp                          # Internet Gopher
+gopher          70/udp
+rje             77/tcp          netrjs
+finger          79/tcp
+http            80/tcp          www             # WorldWideWeb HTTP
+http            80/udp                          # HyperText Transfer Protocol
+link            87/tcp          ttylink
+kerberos        88/tcp          kerberos5 krb5 kerberos-sec     # Kerberos v5
+kerberos        88/udp          kerberos5 krb5 kerberos-sec     # Kerberos v5
+supdup          95/tcp
+hostnames       101/tcp         hostname        # usually from sri-nic
+iso-tsap        102/tcp         tsap            # part of ISODE
+acr-nema        104/tcp         dicom            # Digital Imag. & Comm. 300
+acr-nema        104/udp         dicom
+csnet-ns        105/tcp         cso-ns          # also used by CSO name server
+csnet-ns        105/udp         cso-ns
+rtelnet         107/tcp                         # Remote Telnet
+rtelnet         107/udp
+pop2            109/tcp         postoffice pop-2 # POP version 2
+pop2            109/udp         pop-2
+pop3            110/tcp         pop-3           # POP version 3
+pop3            110/udp         pop-3
+sunrpc          111/tcp         portmapper      # RPC 4.0 portmapper
+sunrpc          111/udp         portmapper
+auth            113/tcp         authentication tap ident
+sftp            115/tcp
+uucp-path       117/tcp
+nntp            119/tcp         readnews untp   # USENET News Transfer Protocol
+ntp             123/tcp
+ntp             123/udp                         # Network Time Protocol
+pwdgen          129/tcp                         # PWDGEN service
+pwdgen          129/udp
+loc-srv         135/tcp         epmap           # Location Service
+loc-srv         135/udp         epmap
+netbios-ns      137/tcp                         # NETBIOS Name Service
+netbios-ns      137/udp
+netbios-dgm     138/tcp                         # NETBIOS Datagram Service
+netbios-dgm     138/udp
+netbios-ssn     139/tcp                         # NETBIOS session service
+netbios-ssn     139/udp
+imap2           143/tcp         imap            # Interim Mail Access P 2 and 4
+imap2           143/udp         imap
+snmp            161/tcp                         # Simple Net Mgmt Protocol
+snmp            161/udp
+snmp-trap       162/tcp         snmptrap        # Traps for SNMP
+snmp-trap       162/udp         snmptrap
+cmip-man        163/tcp                         # ISO mgmt over IP (CMOT)
+cmip-man        163/udp
+cmip-agent      164/tcp
+cmip-agent      164/udp
+mailq           174/tcp                 # Mailer transport queue for Zmailer
+mailq           174/udp
+xdmcp           177/tcp                         # X Display Mgr. Control Proto
+xdmcp           177/udp
+nextstep        178/tcp         NeXTStep NextStep       # NeXTStep window
+nextstep        178/udp         NeXTStep NextStep       #  server
+bgp             179/tcp                         # Border Gateway Protocol
+bgp             179/udp
+prospero        191/tcp                         # Cliff Neuman's Prospero
+prospero        191/udp
+irc             194/tcp                         # Internet Relay Chat
+irc             194/udp
+smux            199/tcp                         # SNMP Unix Multiplexer
+smux            199/udp
+at-rtmp         201/tcp                         # AppleTalk routing
+at-rtmp         201/udp
+at-nbp          202/tcp                         # AppleTalk name binding
+at-nbp          202/udp
+at-echo         204/tcp                         # AppleTalk echo
+at-echo         204/udp
+at-zis          206/tcp                         # AppleTalk zone information
+at-zis          206/udp
+qmtp            209/tcp                         # Quick Mail Transfer Protocol
+qmtp            209/udp
+z3950           210/tcp         wais            # NISO Z39.50 database
+z3950           210/udp         wais
+ipx             213/tcp                # IPX
+ipx             213/udp
+imap3           220/tcp                         # Interactive Mail Access
+imap3           220/udp                         # Protocol v3
+pawserv         345/tcp                         # Perf Analysis Workbench
+pawserv         345/udp
+zserv           346/tcp                         # Zebra server
+zserv           346/udp
+fatserv         347/tcp                         # Fatmen Server
+fatserv         347/udp
+rpc2portmap     369/tcp
+rpc2portmap     369/udp                         # Coda portmapper
+codaauth2       370/tcp
+codaauth2       370/udp                         # Coda authentication server
+clearcase       371/tcp         Clearcase
+clearcase       371/udp         Clearcase
+ulistserv       372/tcp                         # UNIX Listserv
+ulistserv       372/udp
+ldap            389/tcp                 # Lightweight Directory Access Protocol
+ldap            389/udp
+imsp            406/tcp                 # Interactive Mail Support Protocol
+imsp            406/udp
+svrloc          427/tcp                         # Server Location
+svrloc          427/udp
+https           443/tcp                         # http protocol over TLS/SSL
+https           443/udp
+snpp            444/tcp                         # Simple Network Paging Protocol
+snpp            444/udp
+microsoft-ds    445/tcp                         # Microsoft Naked CIFS
+microsoft-ds    445/udp
+kpasswd         464/tcp
+kpasswd         464/udp
+urd             465/tcp         ssmtp smtps  # URL Rendesvous Directory for SSM
+saft            487/tcp                 # Simple Asynchronous File
+ Transfer
+saft            487/udp
+isakmp          500/tcp                 # IPsec - Internet Security Association
+isakmp          500/udp                 #  and Key Management Protocol
+rtsp            554/tcp                 # Real Time Stream Control Protocol
+rtsp            554/udp
+nqs             607/tcp                         # Network Queuing system
+nqs             607/udp
+npmp-local      610/tcp         dqs313_qmaster          # npmp-local / DQS
+npmp-local      610/udp         dqs313_qmaster
+npmp-gui        611/tcp         dqs313_execd            # npmp-gui / DQS
+npmp-gui        611/udp         dqs313_execd
+hmmp-ind        612/tcp         dqs313_intercell        # HMMP Indication / DQS
+hmmp-ind        612/udp         dqs313_intercell
+asf-rmcp        623/udp         # ASF Remote Management and Control Protocol
+qmqp            628/tcp
+qmqp            628/udp
+ipp             631/tcp                         # Internet Printing Protocol
+ipp             631/udp
+#
+# UNIX specific services
+#
+exec            512/tcp
+biff            512/udp         comsat
+login           513/tcp
+who             513/udp         whod
+shell           514/tcp         cmd             # no passwords used
+syslog          514/udp
+printer         515/tcp         spooler         # line printer spooler
+talk            517/udp
+ntalk           518/udp
+route           520/udp         router routed   # RIP
+timed           525/udp         timeserver
+tempo           526/tcp         newdate
+courier         530/tcp         rpc
+conference      531/tcp              chat
+netnews         532/tcp         readnews
+netwall         533/udp                         # for emergency broadcasts
+gdomap          538/tcp                         # GNUstep distributed objects
+gdomap          538/udp
+uucp            540/tcp         uucpd           # uucp daemon
+klogin          543/tcp                         # Kerberized `rlogin' (v5)
+kshell          544/tcp         krcmd           # Kerberized `rsh' (v5)
+dhcpv6-client   546/tcp
+dhcpv6-client   546/udp
+dhcpv6-server   547/tcp
+dhcpv6-server   547/udp
+afpovertcp      548/tcp                         # AFP over TCP
+afpovertcp      548/udp
+idfp            549/tcp
+idfp            549/udp
+remotefs        556/tcp         rfs_server rfs  # Brunhoff remote filesystem
+nntps           563/tcp         snntp           # NNTP over SSL
+nntps           563/udp         snntp
+submission      587/tcp                         # Submission [RFC4409]
+submission      587/udp
+ldaps           636/tcp                         # LDAP over SSL
+ldaps           636/udp
+tinc            655/tcp                         # tinc control port
+tinc            655/udp
+silc            706/tcp
+silc            706/udp
+kerberos-adm    749/tcp                         # Kerberos `kadmin' (v5)
+#
+webster         765/tcp                         # Network dictionary
+webster         765/udp
+rsync           873/tcp
+rsync           873/udp
+ftps-data       989/tcp                         # FTP over SSL (data)
+ftps            990/tcp
+telnets         992/tcp                         # Telnet over SSL
+telnets         992/udp
+imaps           993/tcp                          # IMAP over SSL
+imaps           993/udp
+ircs            994/tcp                         # IRC over SSL
+ircs            994/udp
+pop3s           995/tcp                         # POP-3 over SSL
+pop3s           995/udp
+#
+# From ``Assigned Numbers'':
+#
+#> The Registered Ports are not controlled by the IANA and on most systems
+#> can be used by ordinary user processes or programs executed by ordinary
+#> users.
+#
+#> Ports are used in the TCP [45,106] to name the ends of logical
+#> connections which carry long term conversations.  For the purpose of
+#> providing services to unknown callers, a service contact port is
+#> defined.  This list specifies the port used by the server process as its
+#> contact port.  While the IANA can not control uses of these ports it
+#> does register or list uses of these ports as a convienence to the
+#> community.
+#
+socks           1080/tcp                        # socks proxy server
+socks           1080/udp
+proofd          1093/tcp
+proofd          1093/udp
+rootd           1094/tcp
+rootd           1094/udp
+openvpn         1194/tcp
+openvpn         1194/udp
+rmiregistry     1099/tcp                        # Java RMI Registry
+rmiregistry     1099/udp
+kazaa           1214/tcp
+kazaa           1214/udp        
+nessus          1241/tcp                        # Nessus vulnerability
+nessus          1241/udp                        #  assessment scanner
+lotusnote       1352/tcp        lotusnotes      # Lotus Note
+lotusnote       1352/udp        lotusnotes
+ms-sql-s        1433/tcp                        # Microsoft SQL Server
+ms-sql-s        1433/udp
+ms-sql-m        1434/tcp                        # Microsoft SQL Monitor
+ms-sql-m        1434/udp
+ingreslock      1524/tcp
+ingreslock      1524/udp
+prospero-np     1525/tcp                        # Prospero non-privileged
+prospero-np     1525/udp
+datametrics     1645/tcp        old-radius
+datametrics     1645/udp        old-radius
+sa-msg-port     1646/tcp        old-radacct
+sa-msg-port     1646/udp        old-radacct
+kermit          1649/tcp
+kermit          1649/udp
+groupwise       1677/tcp
+groupwise       1677/udp
+l2f             1701/tcp        l2tp
+l2f             1701/udp        l2tp
+radius          1812/tcp
+radius          1812/udp
+radius-acct     1813/tcp        radacct         # Radius Accounting
+radius-acct     1813/udp        radacct
+msnp            1863/tcp                        # MSN Messenger
+msnp            1863/udp
+unix-status     1957/tcp                        # remstats unix-status server
+log-server      1958/tcp                        # remstats log server
+remoteping      1959/tcp                        # remstats remoteping server
+cisco-sccp      2000/tcp                        # Cisco SCCP
+cisco-sccp      2000/udp
+search          2010/tcp        ndtp
+pipe-server      2010/tcp        pipe_server
+nfs             2049/tcp                        # Network File System
+nfs             2049/udp                        # Network File System
+gnunet          2086/tcp
+gnunet          2086/udp
+rtcm-sc104      2101/tcp                        # RTCM SC-104 IANA 1/29/99
+rtcm-sc104      2101/udp
+gsigatekeeper   2119/tcp
+gsigatekeeper   2119/udp
+gris            2135/tcp                # Grid Resource Information Server
+gris            2135/udp
+cvspserver      2401/tcp                        # CVS client/server operations
+cvspserver      2401/udp
+venus           2430/tcp                        # codacon port
+venus           2430/udp                        # Venus callback/wbc interface
+venus-se        2431/tcp                        # tcp side effects
+venus-se        2431/udp                        # udp sftp side effect
+codasrv         2432/tcp                        # not used
+codasrv         2432/udp                        # server port
+codasrv-se      2433/tcp                        # tcp side effects
+codasrv-se      2433/udp                        # udp sftp side effect
+mon             2583/tcp                        # MON traps
+mon             2583/udp
+dict            2628/tcp                        # Dictionary server
+dict            2628/udp
+f5-globalsite   2792/tcp
+f5-globalsite   2792/udp
+gsiftp          2811/tcp
+gsiftp          2811/udp
+gpsd            2947/tcp
+gpsd            2947/udp
+gds-db          3050/tcp        gds_db          # InterBase server
+gds-db          3050/udp        gds_db
+icpv2           3130/tcp        icp             # Internet Cache Protocol
+icpv2             3130/udp        icp                                                                       
+iscsi-target    3260/tcp                                                                                  
+mysql           3306/tcp                                                                                  
+mysql           3306/udp                                                                                  
+nut             3493/tcp                        # Network UPS Tools                                       
+nut             3493/udp
+distcc          3632/tcp                        # distributed compiler
+distcc          3632/udp
+daap            3689/tcp                        # Digital Audio Access Protocol
+daap            3689/udp
+svn             3690/tcp        subversion      # Subversion protocol
+svn             3690/udp        subversion
+suucp           4031/tcp                        # UUCP over SSL
+suucp           4031/udp
+sysrqd          4094/tcp                        # sysrq daemon
+sysrqd          4094/udp
+sieve           4190/tcp                        # ManageSieve Protocol
+epmd            4369/tcp                        # Erlang Port Mapper Daemon
+epmd            4369/udp
+remctl          4373/tcp                # Remote Authenticated Command Service
+remctl          4373/udp
+f5-iquery       4353/tcp                        # F5 iQuery
+f5-iquery       4353/udp
+ipsec-nat-t     4500/udp                        # IPsec NAT-Traversal [RFC3947]
+iax             4569/tcp                        # Inter-Asterisk eXchange
+iax             4569/udp
+mtn             4691/tcp                        # monotone Netsync Protocol
+mtn             4691/udp
+radmin-port     4899/tcp                        # RAdmin Port
+radmin-port     4899/udp
+rfe             5002/udp                        # Radio Free Ethernet
+rfe             5002/tcp
+mmcc            5050/tcp        # multimedia conference control tool (Yahoo IM)
+mmcc            5050/udp
+sip             5060/tcp                        # Session Initiation Protocol
+sip             5060/udp
+sip-tls         5061/tcp
+sip-tls         5061/udp
+aol             5190/tcp                        # AIM
+aol             5190/udp
+xmpp-client     5222/tcp        jabber-client   # Jabber Client Connection
+xmpp-client     5222/udp        jabber-client
+xmpp-server     5269/tcp        jabber-server   # Jabber Server Connection
+xmpp-server     5269/udp        jabber-server
+cfengine        5308/tcp
+cfengine        5308/udp
+mdns            5353/tcp                        # Multicast DNS
+mdns            5353/udp
+postgresql      5432/tcp        postgres        # PostgreSQL Database
+postgresql      5432/udp        postgres
+freeciv         5556/tcp        rptp            # Freeciv gameplay
+freeciv         5556/udp
+amqp            5672/tcp
+amqp            5672/udp
+amqp            5672/sctp
+ggz             5688/tcp                        # GGZ Gaming Zone
+ggz             5688/udp
+x11             6000/tcp        x11-0           # X Window System
+x11             6000/udp        x11-0
+x11-1           6001/tcp
+x11-1           6001/udp
+x11-2           6002/tcp
+x11-2           6002/udp
+x11-3           6003/tcp
+x11-3           6003/udp
+x11-4           6004/tcp
+x11-4           6004/udp
+x11-5           6005/tcp
+x11-5           6005/udp
+x11-6           6006/tcp
+x11-6           6006/udp
+x11-7           6007/tcp
+x11-7           6007/udp
+gnutella-svc    6346/tcp                        # gnutella
+gnutella-svc    6346/udp
+gnutella-rtr    6347/tcp                        # gnutella
+gnutella-rtr    6347/udp
+sge-qmaster 6444/tcp        sge_qmaster     # Grid Engine Qmaster Service
+sge-qmaster     6444/udp        sge_qmaster
+sge-execd       6445/tcp        sge_execd       # Grid Engine Execution Service
+sge-execd       6445/udp        sge_execd
+mysql-proxy     6446/tcp                        # MySQL Proxy
+mysql-proxy     6446/udp
+afs3-fileserver 7000/tcp        bbs             # file server itself
+afs3-fileserver 7000/udp        bbs
+afs3-callback   7001/tcp                        # callbacks to cache managers
+afs3-callback   7001/udp
+afs3-prserver   7002/tcp                        # users & groups database
+afs3-prserver   7002/udp
+afs3-vlserver   7003/tcp                        # volume location database
+afs3-vlserver   7003/udp
+afs3-kaserver   7004/tcp                        # AFS/Kerberos authentication
+afs3-kaserver   7004/udp
+afs3-volser     7005/tcp                        # volume managment server
+afs3-volser     7005/udp
+afs3-errors     7006/tcp                        # error interpretation service
+afs3-errors     7006/udp
+afs3-bos        7007/tcp                        # basic overseer process
+afs3-bos        7007/udp
+afs3-update     7008/tcp                        # server-to-server updater
+afs3-update     7008/udp
+afs3-rmtsys     7009/tcp                        # remote cache manager service
+afs3-rmtsys     7009/udp
+font-service    7100/tcp        xfs             # X Font Service
+font-service     7100/udp        xfs
+http-alt        8080/tcp        webcache        # WWW caching service
+http-alt        8080/udp
+bacula-dir      9101/tcp                        # Bacula Director
+bacula-dir      9101/udp
+bacula-fd       9102/tcp                        # Bacula File Daemon
+bacula-fd       9102/udp
+bacula-sd       9103/tcp                        # Bacula Storage Daemon
+bacula-sd       9103/udp
+xmms2           9667/tcp        # Cross-platform Music Multiplexing System
+xmms2           9667/udp
+nbd             10809/tcp                       # Linux Network Block Device
+zabbix-agent    10050/tcp                       # Zabbix Agent
+zabbix-agent    10050/udp
+zabbix-trapper  10051/tcp                       # Zabbix Trapper
+zabbix-trapper  10051/udp
+amanda          10080/tcp                       # amanda backup services
+amanda          10080/udp
+dicom           11112/tcp
+hkp             11371/tcp                       # OpenPGP HTTP Keyserver
+hkp             11371/udp
+bprd            13720/tcp                       # VERITAS NetBackup
+bprd            13720/udp
+bpdbm           13721/tcp                       # VERITAS NetBackup
+bpdbm           13721/udp
+bpjava-msvc     13722/tcp                       # BP Java MSVC Protocol
+bpjava-msvc     13722/udp
+vnetd           13724/tcp                       # Veritas Network Utility
+vnetd           13724/udp
+bpcd            13782/tcp                       # VERITAS NetBackup
+bpcd            13782/udp
+vopied          13783/tcp                       # VERITAS NetBackup
+vopied          13783/udp
+db-lsp             17500/tcp                       # Dropbox LanSync Protocol
+dcap            22125/tcp                       # dCache Access Protocol
+gsidcap         22128/tcp                       # GSI dCache Access Protocol
+wnn6            22273/tcp                       # wnn6
+wnn6            22273/udp
+
+#
+# Datagram Delivery Protocol services
+#
+rtmp            1/ddp                   # Routing Table Maintenance Protocol
+nbp             2/ddp                   # Name Binding Protocol
+echo            4/ddp                   # AppleTalk Echo Protocol
+zip             6/ddp                   # Zone Information Protocol
+
+#=========================================================================
+# The remaining port numbers are not as allocated by IANA.
+#=========================================================================
+
+# Kerberos (Project Athena/MIT) services
+# Note that these are for Kerberos v4, and are unofficial.  Sites running
+# v4 should uncomment these and comment out the v5 entries above.
+#
+kerberos4       750/udp         kerberos-iv kdc # Kerberos (server)
+kerberos4       750/tcp         kerberos-iv kdc
+kerberos-master 751/udp         kerberos_master # Kerberos authentication
+kerberos-master 751/tcp
+passwd-server   752/udp         passwd_server   # Kerberos passwd server
+krb-prop        754/tcp         krb_prop krb5_prop hprop # Kerberos slave propagation
+krbupdate       760/tcp         kreg            # Kerberos registration
+swat            901/tcp                         # swat
+kpop            1109/tcp                        # Pop with Kerberos
+knetd           2053/tcp                        # Kerberos de-multiplexor
+zephyr-srv      2102/udp                        # Zephyr server
+zephyr-clt      2103/udp                        # Zephyr serv-hm connection
+zephyr-hm       2104/udp                        # Zephyr hostmanager
+eklogin         2105/tcp                        # Kerberos encrypted rlogin
+# Hmmm. Are we using Kv4 or Kv5 now? Worrying.
+# The following is probably Kerberos v5  --- ajt@debian.org (11/02/2000)
+kx              2111/tcp                        # X over Kerberos
+iprop           2121/tcp                        # incremental propagation
+#
+# Unofficial but necessary (for NetBSD) services
+#
+supfilesrv      871/tcp                         # SUP server
+supfiledbg      1127/tcp                        # SUP debugging
+
+#
+# Services added for the Debian GNU/Linux distribution
+#
+linuxconf       98/tcp                          # LinuxConf
+poppassd        106/tcp                         # Eudora
+poppassd        106/udp
+moira-db        775/tcp         moira_db        # Moira database
+moira-update    777/tcp         moira_update    # Moira update protocol
+moira-ureg      779/udp         moira_ureg      # Moira user registration
+spamd           783/tcp                         # spamassassin daemon
+omirr           808/tcp         omirrd          # online mirror
+omirr           808/udp         omirrd
+customs         1001/tcp                        # pmake customs server
+customs         1001/udp
+skkserv         1178/tcp                        # skk jisho server port
+predict         1210/udp                        # predict -- satellite tracking
+rmtcfg          1236/tcp                        # Gracilis Packeten remote config server
+wipld           1300/tcp                        # Wipl network monitor
+xtel            1313/tcp                        # french minitel
+xtelw           1314/tcp                        # french minitel
+support         1529/tcp                        # GNATS
+cfinger         2003/tcp                        # GNU Finger
+frox            2121/tcp                        # frox: caching ftp proxy
+ninstall        2150/tcp                        # ninstall service
+ninstall        2150/udp
+zebrasrv        2600/tcp                        # zebra service
+zebra           2601/tcp                        # zebra vty
+ripd            2602/tcp                        # ripd vty (zebra)
+ripngd          2603/tcp                        # ripngd vty (zebra)
+ospfd           2604/tcp                        # ospfd vty (zebra)
+bgpd            2605/tcp                        # bgpd vty (zebra)
+ospf6d          2606/tcp                        # ospf6d vty (zebra)
+ospfapi         2607/tcp                        # OSPF-API
+isisd           2608/tcp                        # ISISd vty (zebra)
+afbackup        2988/tcp                        # Afbackup system
+afbackup        2988/udp
+afmbackup       2989/tcp                        # Afmbackup system
+afmbackup       2989/udp
+xtell           4224/tcp                        # xtell server
+fax             4557/tcp                        # FAX transmission service (old)
+hylafax         4559/tcp                        # HylaFAX client-server protocol (new)
+distmp3         4600/tcp                        # distmp3host daemon
+munin           4949/tcp        lrrd            # Munin
+enbd-cstatd     5051/tcp                        # ENBD client statd
+enbd-sstatd     5052/tcp                        # ENBD server statd
+pcrd            5151/tcp                        # PCR-1000 Daemon
+noclog          5354/tcp                        # noclogd with TCP (nocol)
+noclog          5354/udp                        # noclogd with UDP (nocol)
+hostmon         5355/tcp                        # hostmon uses TCP (nocol)
+hostmon         5355/udp                        # hostmon uses UDP (nocol)
+rplay           5555/udp                        # RPlay audio service
+nrpe            5666/tcp                        # Nagios Remote Plugin Executor
+nsca            5667/tcp                        # Nagios Agent - NSCA
+mrtd            5674/tcp                        # MRT Routing Daemon
+bgpsim          5675/tcp                        # MRT Routing Simulator
+canna           5680/tcp                        # cannaserver
+syslog-tls      6514/tcp                        # Syslog over TLS [RFC5425]
+sane-port       6566/tcp        sane saned      # SANE network scanner daemon
+ircd            6667/tcp                        # Internet Relay Chat
+zope-ftp        8021/tcp                        # zope management by ftp
+tproxy          8081/tcp                        # Transparent Proxy
+omniorb         8088/tcp                        # OmniORB
+omniorb         8088/udp
+clc-build-daemon 8990/tcp                       # Common lisp build daemon
+xinetd          9098/tcp
+mandelspawn     9359/udp        mandelbrot      # network mandelbrot
+git             9418/tcp                        # Git Version Control System
+zope            9673/tcp                        # zope server
+webmin          10000/tcp
+kamanda         10081/tcp                       # amanda backup services (Kerberos)
+kamanda         10081/udp
+amandaidx       10082/tcp                       # amanda backup services
+amidxtape       10083/tcp                       # amanda backup services
+smsqp           11201/tcp                       # Alamin SMS gateway
+smsqp           11201/udp
+xpilot          15345/tcp                       # XPilot Contact Port
+xpilot          15345/udp
+sgi-cmsd        17001/udp               # Cluster membership services daemon
+sgi-crsd        17002/udp
+sgi-gcd         17003/udp                       # SGI Group membership daemon
+sgi-cad         17004/tcp                       # Cluster Admin daemon
+isdnlog         20011/tcp                       # isdn logging system
+isdnlog         20011/udp
+vboxd           20012/tcp                       # voice box system
+vboxd           20012/udp
+binkp           24554/tcp                       # binkp fidonet protocol
+asp             27374/tcp                       # Address Search Protocol
+asp             27374/udp
+csync2          30865/tcp                       # cluster synchronization tool
+dircproxy       57000/tcp                       # Detachable IRC Proxy
+tfido           60177/tcp                       # fidonet EMSI over telnet
+fido            60179/tcp                       # fidonet EMSI over TCP
+
+10.11.1.71> ps uax | grep root
+root         1  0.0  0.0  33612   340 ?        Ss   Aug12   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    Aug12   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    Aug12   0:01 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    Aug12   0:04 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    Aug12   0:02 [rcuos/0]
+root         9  0.0  0.0      0     0 ?        S    Aug12   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    Aug12   0:00 [rcuob/0]
+root        11  0.0  0.0      0     0 ?        S    Aug12   0:00 [migration/0]
+root        12  0.0  0.0      0     0 ?        S    Aug12   0:00 [watchdog/0]
+root        13  0.0  0.0      0     0 ?        S<   Aug12   0:00 [khelper]
+root        14  0.0  0.0      0     0 ?        S    Aug12   0:00 [kdevtmpfs]
+root        15  0.0  0.0      0     0 ?        S<   Aug12   0:00 [netns]
+root        16  0.0  0.0      0     0 ?        S<   Aug12   0:00 [writeback]
+root        17  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kintegrityd]
+root        18  0.0  0.0      0     0 ?        S<   Aug12   0:00 [bioset]
+root        19  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kworker/u3:0]
+root        20  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kblockd]
+root        21  0.0  0.0      0     0 ?        S<   Aug12   0:00 [ata_sff]
+root        22  0.0  0.0      0     0 ?        S    Aug12   0:00 [khubd]
+root        23  0.0  0.0      0     0 ?        S<   Aug12   0:00 [md]
+root        24  0.0  0.0      0     0 ?        S<   Aug12   0:00 [devfreq_wq]
+root        25  0.0  0.0      0     0 ?        S    Aug12   0:13 [kworker/0:1]
+root        27  0.0  0.0      0     0 ?        S    Aug12   0:00 [khungtaskd]
+root        28  0.0  0.0      0     0 ?        S    Aug12   0:10 [kswapd0]
+root        29  0.0  0.0      0     0 ?        S<   Aug12   0:00 [vmstat]
+root        30  0.0  0.0      0     0 ?        SN   Aug12   0:00 [ksmd]
+root        31  0.0  0.0      0     0 ?        SN   Aug12   0:00 [khugepaged]
+root        32  0.0  0.0      0     0 ?        S    Aug12   0:00 [fsnotify_mark]
+root        33  0.0  0.0      0     0 ?        S    Aug12   0:00 [ecryptfs-kthrea]
+root        34  0.0  0.0      0     0 ?        S<   Aug12   0:00 [crypto]
+root        46  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kthrotld]
+root        48  0.0  0.0      0     0 ?        S    Aug12   0:00 [scsi_eh_0]
+root        49  0.0  0.0      0     0 ?        S    Aug12   0:00 [scsi_eh_1]
+root        70  0.0  0.0      0     0 ?        S<   Aug12   0:00 [deferwq]
+root        71  0.0  0.0      0     0 ?        S<   Aug12   0:00 [charger_manager]
+root       117  0.0  0.0      0     0 ?        S    Aug12   0:00 [scsi_eh_2]
+root       118  0.0  0.0      0     0 ?        S<   Aug12   0:00 [vmw_pvscsi_wq_2]
+root       126  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kpsmoused]
+root       136  0.0  0.0      0     0 ?        S    Aug12   0:00 [jbd2/sda1-8]
+root       137  0.0  0.0      0     0 ?        S<   Aug12   0:00 [ext4-rsv-conver]
+root       151  0.0  0.0      0     0 ?        S    Aug12   0:00 [kworker/0:2]
+root       271  0.0  0.0  19472    52 ?        S    Aug12   0:00 upstart-udev-bridge --daemon
+root       275  0.0  0.0  51344   344 ?        Ss   Aug12   0:00 /lib/systemd/systemd-udevd --daemon
+root       375  0.0  0.0      0     0 ?        S<   Aug12   0:00 [kworker/u3:1]
+root       401  0.0  0.0      0     0 ?        S<   Aug12   0:00 [ttm_swap]
+root       487  0.0  0.0  15256    80 ?        S    Aug12   0:00 upstart-socket-bridge --daemon
+www-data   616  0.0  0.0   8860   648 ?        S    03:36   0:00 grep root
+root       724  0.0  0.0  43448   376 ?        Ss   Aug12   0:00 /lib/systemd/systemd-logind
+root       764  0.0  0.0  15404     0 ?        S    Aug12   0:00 upstart-file-bridge --daemon
+root       812  0.0  0.0  14536   276 tty4     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty4
+root       815  0.0  0.0  14536   276 tty5     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty5
+root       820  0.0  0.0  14536   276 tty2     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty2
+root       821  0.0  0.0  14536   276 tty3     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty3
+root       824  0.0  0.0  14536   276 tty6     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty6
+root       853  0.0  0.0   4364   272 ?        Ss   Aug12   0:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+root       854  0.0  0.0  23652   400 ?        Ss   Aug12   0:00 cron
+root      1054  0.0  0.2 158260  2152 ?        Sl   Aug12   0:39 /usr/sbin/vmtoolsd
+root      1079  0.0  0.0  58208   440 ?        S    Aug12   0:00 /usr/lib/vmware-vgauth/VGAuthService -s
+root      1244  0.0  0.0 204852   752 ?        Sl   Aug12   0:12 /usr/lib/vmware-caf/pme/bin/ManagementAgentHost
+root      1264  0.0  0.3 388664  2460 ?        Ss   Aug12   0:04 /usr/sbin/apache2 -k start
+root      1396  0.0  0.0  12836   220 ?        S    Aug12   0:00 /var/ossec-hids2.8/bin/ossec-execd
+root      1403  0.0  0.0   4576   368 ?      S    Aug12   0:02 /var/ossec-hids2.8/bin/ossec-logcollector
+root      1415  0.0  0.0   5364   288 ?        S    Aug12   0:10 /var/ossec-hids2.8/bin/ossec-syscheckd
+root      1422  0.0  0.0  14536   276 tty1     Ss+  Aug12   0:00 /sbin/getty -8 38400 tty1
+root      1444  0.0  0.0      0     0 ?        S    Aug12   0:00 [kauditd]
+root      1603  0.0  0.0  61360   380 ?        Ss   Aug12   0:00 /usr/sbin/sshd -D
+root      1670  0.0  0.0      0     0 ?        S    Aug12   0:03 [kworker/u2:0]
+root      3725  0.0  0.0      0     0 ?        S    00:05   0:00 [kworker/u2:1]
+
+10.11.1.71> ps -ef | grep root
+root         1     0  0 Aug12 ?        00:00:01 /sbin/init
+root         2     0  0 Aug12 ?        00:00:00 [kthreadd]
+root         3     2  0 Aug12 ?        00:00:01 [ksoftirqd/0]
+root         5     2  0 Aug12 ?        00:00:00 [kworker/0:0H]
+root         7     2  0 Aug12 ?        00:00:04 [rcu_sched]
+root         8     2  0 Aug12 ?        00:00:02 [rcuos/0]
+root         9     2  0 Aug12 ?        00:00:00 [rcu_bh]
+root        10     2  0 Aug12 ?        00:00:00 [rcuob/0]
+root        11     2  0 Aug12 ?        00:00:00 [migration/0]
+root        12     2  0 Aug12 ?        00:00:00 [watchdog/0]
+root        13     2  0 Aug12 ?        00:00:00 [khelper]
+root        14     2  0 Aug12 ?        00:00:00 [kdevtmpfs]
+root        15     2  0 Aug12 ?        00:00:00 [netns]
+root        16     2  0 Aug12 ?        00:00:00 [writeback]
+root        17     2  0 Aug12 ?        00:00:00 [kintegrityd]
+root        18     2  0 Aug12 ?        00:00:00 [bioset]
+root        19     2  0 Aug12 ?        00:00:00 [kworker/u3:0]
+root        20     2  0 Aug12 ?        00:00:00 [kblockd]
+root        21     2  0 Aug12 ?        00:00:00 [ata_sff]
+root        22     2  0 Aug12 ?        00:00:00 [khubd]
+root        23     2  0 Aug12 ?        00:00:00 [md]
+root        24     2  0 Aug12 ?        00:00:00 [devfreq_wq]
+root        25     2  0 Aug12 ?        00:00:13 [kworker/0:1]
+root        27     2  0 Aug12 ?        00:00:00 [khungtaskd]
+root        28     2  0 Aug12 ?        00:00:10 [kswapd0]
+root        29     2  0 Aug12 ?        00:00:00 [vmstat]
+root        30     2  0 Aug12 ?        00:00:00 [ksmd]
+root        31     2  0 Aug12 ?        00:00:00 [khugepaged]
+root        32     2  0 Aug12 ?        00:00:00 [fsnotify_mark]
+root        33     2  0 Aug12 ?        00:00:00 [ecryptfs-kthrea]
+root        34     2  0 Aug12 ?        00:00:00 [crypto]
+root        46     2  0 Aug12 ?        00:00:00 [kthrotld]
+root        48     2  0 Aug12 ?        00:00:00 [scsi_eh_0]
+root        49     2  0 Aug12 ?        00:00:00 [scsi_eh_1]
+root        70     2  0 Aug12 ?        00:00:00 [deferwq]
+root        71     2  0 Aug12 ?        00:00:00 [charger_manager]
+root       117     2  0 Aug12 ?        00:00:00 [scsi_eh_2]
+root       118     2  0 Aug12 ?        00:00:00 [vmw_pvscsi_wq_2]
+root       126     2  0 Aug12 ?        00:00:00 [kpsmoused]
+root       136     2  0 Aug12 ?        00:00:00 [jbd2/sda1-8]
+root       137     2  0 Aug12 ?        00:00:00 [ext4-rsv-conver]
+root       151     2  0 Aug12 ?        00:00:00 [kworker/0:2]
+root       271     1  0 Aug12 ?        00:00:00 upstart-udev-bridge --daemon
+root       275     1  0 Aug12 ?        00:00:00 /lib/systemd/systemd-udevd --daemon
+root       375     2  0 Aug12 ?        00:00:00 [kworker/u3:1]
+root       401     2  0 Aug12 ?        00:00:00 [ttm_swap]
+root       487     1  0 Aug12 ?        00:00:00 upstart-socket-bridge --daemon
+www-data   627  3229  0 03:38 ?        00:00:00 grep root
+root       724     1  0 Aug12 ?        00:00:00 /lib/systemd/systemd-logind
+root       764     1  0 Aug12 ?        00:00:00 upstart
+root       812     1  0 Aug12 tty4     00:00:00 /sbin/getty -8 38400 tty4
+root       815     1  0 Aug12 tty5     00:00:00 /sbin/getty -8 38400 tty5
+root       820     1  0 Aug12 tty2     00:00:00 /sbin/getty -8 38400 tty2
+root       821     1  0 Aug12 tty3     00:00:00 /sbin/getty -8 38400 tty3
+root       824     1  0 Aug12 tty6     00:00:00 /sbin/getty -8 38400 tty6
+root       853     1  0 Aug12 ?        00:00:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+root       854     1  0 Aug12 ?        00:00:00 cron
+root      1054     1  0 Aug12 ?        00:00:39 /usr/sbin/vmtoolsd
+root      1079     1  0 Aug12 ?        00:00:00 /usr/lib/vmware-vgauth/VGAuthService -s
+root      1244     1  0 Aug12 ?        00:00:12 /usr/lib/vmware-caf/pme/bin/ManagementAgentHost
+root      1264     1  0 Aug12 ?        00:00:04 /usr/sbin/apache2 -k start
+root      1396     1  0 Aug12 ?        00:00:00 /var/ossec-hids2.8/bin/ossec-execd
+root      1403     1  0 Aug12 ?        00:00:02 /var/ossec-hids2.8/bin/ossec-logcollector
+root      1415     1  0 Aug12 ?        00:00:10 /var/ossec-hids2.8/bin/ossec-syscheckd
+root      1422     1  0 Aug12 tty1     00:00:00 /sbin/getty -8 38400 tty1
+root      1444     2  0 Aug12 ?        00:00:00 [kauditd]
+root      1603     1  0 Aug12 ?        00:00:00 /usr/sbin/sshd -D
+root      1670     2  0 Aug12 ?        00:00:03 [kworker/u2:0]
+root      3725     2  0 00:05 ?        00:00:00 [kworker/u2:1]
+
+10.11.1.71> ls -lah /usr/bin/
+total 143M
+drwxr-xr-x  2 root   root     24K Jan 17  2018 .
+drwxr-xr-x 10 root   root    4.0K Oct  9  2014 ..
+lrwxrwxrwx  1 root   root       8 Dec 21  2013 2to3 -> 2to3-2.7
+-rwxr-xr-x  1 root   root      96 Mar 22  2014 2to3-2.7
+-rwxr-xr-x  1 root   root      96 Apr 11  2014 2to3-3.4
+lrwxrwxrwx  1 root   root      11 Nov 30  2013 GET -> lwp-request
+lrwxrwxrwx  1 root   root      11 Nov 30  2013 HEAD -> lwp-request
+lrwxrwxrwx  1 root   root      11 Nov 30  2013 POST -> lwp-request
+-rwxr-xr-x  1 root   root     39K Mar 24  2014 [
+-rwxr-xr-x  1 root   root    104K Mar 27  2014 a2p
+-rwxr-xr-x  1 root   root     15K Apr  3  2014 acpi_listen
+-rwxr-xr-x  1 root   root    6.0K Apr 30  2014 add-apt-repository
+-rwxr-xr-x  1 root   root    6.2K Jun  3  2014 addpart
+-rwxr-xr-x  1 root   root     28K Apr 15  2014 addr2line
+lrwxrwxrwx  1 root   root       6 Apr 10  2014 apropos -> whatis
+-rwxr-xr-x  1 root   root     15K Jun 13  2014 apt
+lrwxrwxrwx  1 root   root      18 Apr 30  2014 apt-add-repository -> add-apt-repository
+-rwxr-xr-x  1 root   root    112K Jun 13  2014 apt-cache
+-rwxr-xr-x  1 root   root     27K Jun 13  2014 apt-cdrom
+-rwxr-xr-x  1 root   root     19K Jun 13  2014 apt-config
+-rwxr-xr-x  1 root   root     23K Jun 13  2014 apt-extracttemplates
+-rwxr-xr-x  1 root   root    208K Jun 13  2014 apt-ftparchive
+-rwxr-xr-x  1 root   root    132K Jun 13  2014 apt-get
+-rwxr-xr-x  1 root   root     12K Jun 13  2014 apt-key
+-rwxr-xr-x  1 root   root     47K Jun 13  2014 apt-mark
+-rwxr-xr-x  1 root   root     31K Jun 13  2014 apt-sortpkgs
+lrwxrwxrwx  1 root   root      26 Oct  9  2014 aptitude -> /etc/alternatives/aptitude
+-rwxr-xr-x  1 root   root    1.9K Feb 17  2014 aptitude-create-state-bundle
+-rwxr-xr-x  1 root   root    4.2M Feb 17  2014 aptitude-curses
+-rwxr-xr-x  1 root   root    2.8K Feb 17  2014 aptitude-run-state-bundle
+-rwxr-xr-x  1 root   root     60K Apr 15  2014 ar
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 arch
+-rwxr-xr-x  1 root   root    345K Apr 15  2014 as
+-rwsr-sr-x  1 daemon daemon   51K Oct 21  2013 at
+lrwxrwxrwx  1 root   root       2 Oct 21  2013 atq -> at
+lrwxrwxrwx  1 root   root       2 Oct 21  2013 atrm -> at
+lrwxrwxrwx  1 root   root      21 Oct  9  2014 awk -> /etc/alternatives/awk
+-rwxr-xr-x  1 root   root     33K Feb 23  2014 axi-cache
+-rwxr-xr-x  1 root   root     35K Mar 24  2014 base64
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 basename
+-rwxr-xr-x  1 root   root    6.9K Apr 23  2014 bashbug
+-rwxr-xr-x  1 root   root     152 Oct 21  2013 batch
+-rwxr-xr-x  1 root   root     84K Mar 19  2014 bc
+-rwxr-xr-x  1 root   root     11K Jun  4  2013 bsd-from
+-rwxr-sr-x  1 root   tty      15K Jun  4  2013 bsd-write
+-rwxr-xr-x  1 root   root    6.7K Mar 31  2014 byobu
+-rwxr-xr-x  1 root   root     995 Mar 31  2014 byobu-config
+-rwxr-xr-x  1 root   root    4.7K Mar 31  2014 byobu-ctrl-a
+-rwxr-xr-x  1 root   root    1.3K Mar 31  2014 byobu-disable
+-rwxr-xr-x  1 root   root    1.3K Mar 31  2014 byobu-disable-prompt
+-rwxr-xr-x  1 root   root    1.3K Mar 31  2014 byobu-enable
+-rwxr-xr-x  1 root   root    1.5K Mar 31  2014 byobu-enable-prompt
+-rwxr-xr-x  1 root   root    1.3K Mar 31  2014 byobu-export
+-rwxr-xr-x  1 root   root    6.0K Mar 31  2014 byobu-janitor
+-rwxr-xr-x  1 root   root    1.5K Mar 31  2014 byobu-keybindings
+-rwxr-xr-x  1 root   root    3.3K Mar 31  2014 byobu-launch
+-rwxr-xr-x  1 root   root    1.6K Mar 31  2014 byobu-launcher
+-rwxr-xr-x  1 root   root    2.4K Mar 31  2014 byobu-launcher-install
+-rwxr-xr-x  1 root   root    1.6K Mar 31  2014 byobu-launcher-uninstall
+-rwxr-xr-x  1 root   root    3.3K Mar 31  2014 byobu-layout
+-rwxr-xr-x  1 root   root    1.2K Mar 31  2014 byobu-prompt
+-rwxr-xr-x  1 root   root    1.4K Mar 31  2014 byobu-quiet
+-rwxr-xr-x  1 root   root    3.2K Mar 31  2014 byobu-reconnect-sockets
+lrwxrwxrwx  1 root   root       5 Mar 31  2014 byobu-screen -> byobu
+-rwxr-xr-x  1 root   root    1.5K Mar 31  2014 byobu-select-backend
+-rwxr-xr-x  1 root   root    6.2K Mar 31  2014 byobu-select-profile
+-rwxr-xr-x  1 root   root    1006 Mar 31  2014 byobu-select-session
+-rwxr-xr-x  1 root   root    1.5K Mar 31  2014 byobu-shell
+-rwxr-xr-x  1 root   root    1.3K Mar 31  2014 byobu-silent
+-rwxr-xr-x  1 root   root    4.7K Mar 31  2014 byobu-status
+-rwxr-xr-x  1 root   root    1.2K Mar 31  2014 byobu-status-detail
+lrwxrwxrwx  1 root   root       5 Mar 31  2014 byobu-tmux -> byobu
+-rwxr-xr-x  1 root   root    4.6K Mar 31  2014 byobu-ugraph
+-rwxr-xr-x  1 root   root     12K Mar 31  2014 byobu-ulevel
+lrwxrwxrwx  1 root   root      21 Oct  9  2014 c++ -> /etc/alternatives/c++
+-rwxr-xr-x  1 root   root     27K Apr 15  2014 c++filt
+-rwxr-xr-x  2 root   root     36K Mar 27  2014 c2ph
+lrwxrwxrwx  1 root   root      21 Oct  9  2014 c89 -> /etc/alternatives/c89
+-rwxr-xr-x  1 root   root     428 May  7  2006 c89-gcc
+lrwxrwxrwx  1 root   root      21 Oct  9  2014 c99 -> /etc/alternatives/c99
+-rwxr-xr-x  1 root   root     454 Apr 11  2011 c99-gcc
+-rwxr-xr-x  1 root   root    4.6K Jun 20  2014 c_rehash
+lrwxrwxrwx  1 root   root       4 Jun  4  2013 cal -> ncal
+-rwxr-xr-x  1 root   root     28K Jun  4  2013 calendar
+lrwxrwxrwx  1 root   root       3 Oct  9  2014 captoinfo -> tic
+-rwxr-xr-x  1 root   root    3.3K Apr 12  2014 catchsegv
+-rwxr-xr-x  1 root   root     39K Apr 10  2014 catman
+-rwxr-xr-x  1 root   root     853 May 13  2013 cautious-launcher
+lrwxrwxrwx  1 root   root      20 Oct  9  2014 cc -> /etc/alternatives/cc
+-rwxr-sr-x  1 root   shadow   54K Feb 16  2014 chage
+-rwxr-xr-x  1 root   root    4.4K Feb 23  2014 chardet
+-rwxr-xr-x  1 root   root     11K Feb 19  2014 chattr
+-rwxr-xr-x  1 root   root     59K Mar 24  2014 chcon
+-rwxr-xr-x  1 root   root    2.8K Jul 17  2014 check-language-support
+-rwsr-xr-x  1 root   root     46K Feb 16  2014 chfn
+-rwxr-xr-x  1 root   root    3.6K Jun  3  2014 chkdupexe
+-rwxr-xr-x  1 root   root     19K Jun  3  2014 chrt
+-rwsr-xr-x  1 root   root     41K Feb 16  2014 chsh
+-rwxr-xr-x  1 root   root    116K Jan 29  2014 ckbcomp
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 cksum
+-rwxr-xr-x  1 root   root    6.2K Mar 22  2014 clear
+-rwxr-xr-x  1 root   root     11K Apr 23  2014 clear_console
+-rwxr-xr-x  1 root   root     43K Oct 21  2013 cmp
+-rwxr-xr-x  1 root   root     11K Feb 18  2013 codepage
+-rwxr-xr-x  1 root   root     11K Jun  4  2013 col
+-rwxr-xr-x  1 root   root     11K Jun  4  2013 colcrt
+-rwxr-xr-x  1 root   root     11K Jun  4  2013 colrm
+-rwxr-xr-x  1 root   root     15K Jun  4  2013 column
+-rwxr-xr-x  1 root   root     35K Mar 24  2014 comm
+lrwxrwxrwx  1 root   root      11 Oct  9  2014 compose -> run-mailcap
+-rwxr-xr-x  1 root   root    7.1K Mar 27  2014 config_data
+-rwxr-xr-x  1 root   root     13K Mar 27  2014 corelist
+-rwxr-xr-x  1 root   root    5.8K Mar 27  2014 cpan
+-rwxr-xr-x  1 root   root     22K Mar 27  2014 cpan2dist
+-rwxr-xr-x  1 root   root    3.4K Mar 27  2014 cpanp
+-rwxr-xr-x  1 root   root     545 Mar 27  2014 cpanp-run-perl
+lrwxrwxrwx  1 root   root       7 Apr  7  2014 cpp -> cpp-4.8
+-rwxr-xr-x  1 root   root    758K Apr  5  2014 cpp-4.8
+-rwxr-sr-x  1 root   crontab  36K Feb  9  2013 crontab
+-rwxr-xr-x  1 root   root     517 Sep  8  2003 crypt
+-rwxr-xr-x  1 root   root     47K Mar 24  2014 csplit
+lrwxrwxrwx  1 root   root       6 Oct  9  2014 ctstat -> lnstat
+-rwxr-xr-x  1 root   root    151K Apr  1  2014 curl
+-rwxr-xr-x  1 root   root     43K Mar 24  2014 cut
+-rwxr-xr-x  1 root   root    1.5K Nov  5  2013 dbilogstrip
+-rwxr-xr-x  1 root   root    6.2K Nov  5  2013 dbiprof
+-rwxr-xr-x  1 root   root    5.4K Nov  5  2013 dbiproxy
+-rwxr-xr-x  1 root   root     15K Jul  3  2014 dbus-monitor
+-rwxr-xr-x  1 root   root     19K Jul  3  2014 dbus-send
+-rwxr-xr-x  1 root   root     11K Jun  3  2014 ddate
+-rwxr-xr-x  1 root   root     11K Feb 18  2013 deallocvt
+-rwxr-xr-x  1 root   root     18K Dec 25  2013 deb-systemd-helper
+-rwxr-xr-x  1 root   root    3.0K Dec 25  2013 deb-systemd-invoke
+-rwxr-xr-x  1 root   root    2.8K Feb 23  2014 debconf
+-rwxr-xr-x  1 root   root     12K Feb 23  2014 debconf-apt-progress
+-rwxr-xr-x  1 root   root     608 Feb 23  2014 debconf-communicate
+-rwxr-xr-x  1 root   root    1.7K Feb 23  2014 debconf-copydb
+-rwxr-xr-x  1 root   root     647 Feb 23  2014 debconf-escape
+-rwxr-xr-x  1 root   root    2.9K Feb 23  2014 debconf-set-selections
+-rwxr-xr-x  1 root   root    1.8K Feb 23  2014 debconf-show
+-rwxr-xr-x  1 root   root    6.2K Jun  3  2014 delpart
+-rwxr-xr-x  1 root   root    526K Jul  2  2013 dgawk
+-rwxr-xr-x  1 root   root    2.5K Mar 22  2014 dh_bash-completion
+-rwxr-xr-x  1 root   root    9.5K Nov  7  2012 dh_installxmlcatalogs
+-rwxr-xr-x  1 root   root    1.1K Nov  5  2013 dh_perl_dbi
+lrwxrwxrwx  1 root   root      26 Oct  9  2014 dh_pypy -> ../share/dh-python/dh_pypy
+-rwxr-xr-x  1 root   root    1.1K Dec 21  2013 dh_python2
+lrwxrwxrwx  1 root   root      29 Oct  9  2014 dh_python3 -> ../share/dh-python/dh_python3
+-rwxr-xr-x  1 root   root    124K Oct 21  2013 diff
+-rwxr-xr-x  1 root   root     55K Oct 21  2013 diff3
+-rwxr-xr-x  1 root   root    123K Mar 24  2014 dig
+-rwxr-xr-x  1 root   root     39K Mar 24  2014 dircolors
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 dirname
+-rwxr-xr-x  1 root   root    5.9K Apr 12  2014 do-release-upgrade
+-rwxr-sr-x  1 root   mail     15K Dec  6  2013 dotlockfile
+-rwxr-xr-x  1 root   root    256K Jun  9  2014 dpkg
+-rwxr-xr-x  1 root   root    8.8K Jun  9  2014 dpkg-architecture
+-rwxr-xr-x  1 root   root    6.1K Jun  9  2014 dpkg-buildflags
+-rwxr-xr-x  1 root   root     18K Jun  9  2014 dpkg-buildpackage
+-rwxr-xr-x  1 root   root    7.1K Jun  9  2014 dpkg-checkbuilddeps
+-rwxr-xr-x  1 root   root    124K Jun  9  2014 dpkg-deb
+-rwxr-xr-x  1 root   root    3.2K Jun  9  2014 dpkg-distaddfile
+-rwxr-xr-x  1 root   root    128K Jun  9  2014 dpkg-divert
+-rwxr-xr-x  1 root   root     17K Jun  9  2014 dpkg-genchanges
+-rwxr-xr-x  1 root   root     14K Jun  9  2014 dpkg-gencontrol
+-rwxr-xr-x  1 root   root     11K Jun  9  2014 dpkg-gensymbols
+-rwxr-xr-x  1 root   root     17K Jun  9  2014 dpkg-maintscript-helper
+-rwxr-xr-x  1 root   root    8.3K Jun  9  2014 dpkg-mergechangelogs
+-rwxr-xr-x  1 root   root    6.6K Jun  9  2014 dpkg-name
+-rwxr-xr-x  1 root   root    4.1K Jun  9  2014 dpkg-parsechangelog
+-rwxr-xr-x  1 root   root    132K Jun  9  2014 dpkg-query
+-rwxr-xr-x  1 root   root    7.8K Jun  9  2014 dpkg-scanpackages
+-rwxr-xr-x  1 root   root    9.6K Jun  9  2014 dpkg-scansources
+-rwxr-xr-x  1 root   root     30K Jun  9  2014 dpkg-shlibdeps
+-rwxr-xr-x  1 root   root     18K Jun  9  2014 dpkg-source
+-rwxr-xr-x  1 root   root     59K Jun  9  2014 dpkg-split
+-rwxr-xr-x  1 root   root     55K Jun  9  2014 dpkg-statoverride
+-rwxr-xr-x  1 root   root     67K Jun  9  2014 dpkg-trigger
+-rwxr-xr-x  1 root   root    3.2K Jun  9  2014 dpkg-vendor
+-rwxr-xr-x  1 root   root    107K Mar 24  2014 du
+lrwxrwxrwx  1 root   root      13 Oct  9  2014 dumpkeys -> /bin/dumpkeys
+-rwxr-xr-x  1 root   root    2.3M Apr 15  2014 dwp
+lrwxrwxrwx  1 root   root      11 Oct  9  2014 edit -> run-mailcap
+lrwxrwxrwx  1 root   root      24 Oct  9  2014 editor -> /etc/alternatives/editor
+-rwxr-xr-x  1 root   root     31K Feb 25  2014 eject
+-rwxr-xr-x  1 root   root     31K Apr 15  2014 elfedit
+-rwxr-xr-x  1 root   root     39K Mar 27  2014 enc2xs
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 env
+-rwxr-xr-x  1 root   root     35K Apr 28  2014 envsubst
+-rwxr-xr-x  1 root   root    138K Jan 22  2014 eqn
+lrwxrwxrwx  1 root   root      20 Oct  9  2014 ex -> /etc/alternatives/ex
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 expand
+-rwxr-sr-x  1 root   shadow   23K Feb 16  2014 expiry
+-rwxr-xr-x  1 root   root     39K Mar 24  2014 expr
+-rwxr-xr-x  1 root   root     87K Mar 24  2014 factor
+-rwxr-xr-x  1 root   root     19K Feb 16  2014 faillog
+-rwxr-xr-x  1 root   root     23K Mar 24  2014 faked-sysv
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 faked-tcp
+lrwxrwxrwx  1 root   root      26 Oct  9  2014 fakeroot -> /etc/alternatives/fakeroot
+-rwxr-xr-x  1 root   root    3.9K Mar 24  2014 fakeroot-sysv
+-rwxr-xr-x  1 root   root    3.8K Mar 24  2014 fakeroot-tcp
+-rwxr-xr-x  1 root   root     15K Jun  3  2014 fallocate
+-rwxr-xr-x  1 root   root     19K Jul 10  2014 file
+-rwxr-xr-x  1 root   root    225K Jan  6  2014 find
+-rwxr-xr-x  1 root   root     24K Mar 27  2014 find2perl
+-rwxr-xr-x  1 root   root     15K Jun  3  2014 flock
+-rwxr-xr-x  1 root   root     35K Mar 24  2014 fmt
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 fold
+-rwxr-xr-x  1 root   root     15K Jan  6  2014 free
+lrwxrwxrwx  1 root   root      22 Oct  9  2014 from -> /etc/alternatives/from
+lrwxrwxrwx  1 root   root      21 Oct  9  2014 ftp -> /etc/alternatives/ftp
+-rwxr-xr-x  1 root   root     23K May 13  2013 funzip
+lrwxrwxrwx  1 root   root       7 Apr  7  2014 g++ -> g++-4.8
+-rwxr-xr-x  1 root   root    758K Apr  5  2014 g++-4.8
+-rwxr-xr-x  1 root   root    432K Jul  2  2013 gawk
+lrwxrwxrwx  1 root   root       7 Apr  7  2014 gcc -> gcc-4.8
+-rwxr-xr-x  1 root   root    758K Apr  5  2014 gcc-4.8
+lrwxrwxrwx  1 root   root      10 Apr  7  2014 gcc-ar -> gcc-ar-4.8
+-rwxr-xr-x  1 root   root     27K Apr  5  2014 gcc-ar-4.8
+lrwxrwxrwx  1 root   root      10 Apr  7  2014 gcc-nm -> gcc-nm-4.8
+-rwxr-xr-x  1 root   root     27K Apr  5  2014 gcc-nm-4.8
+lrwxrwxrwx  1 root   root      14 Apr  7  2014 gcc-ranlib -> gcc-ranlib-4.8
+-rwxr-xr-x  1 root   root     27K Apr  5  2014 gcc-ranlib-4.8
+lrwxrwxrwx  1 root   root       8 Apr  7  2014 gcov -> gcov-4.8
+-rwxr-xr-x  1 root   root    311K Apr  5  2014 gcov-4.8
+-rwxr-xr-x  1 root   root    2.6K Dec 11  2013 gen-preseed
+-rwxr-xr-x  1 root   root     23K Apr 12  2014 gencat
+lrwxrwxrwx  1 root   root       3 Jan 22  2014 geqn -> eqn
+-rwxr-xr-x  1 root   root     23K Apr 12  2014 getconf
+-rwxr-xr-x  1 root   root     28K Apr 12  2014 getent
+-rwxr-xr-x  1 root   root     11K Feb 18  2013 getkeycodes
+-rwxr-xr-x  1 root   root     15K Jun  3  2014 getopt
+-rwxr-xr-x  1 root   root     35K Apr 28  2014 gettext
+-rwxr-xr-x  1 root   root    4.6K Apr 28  2014 gettext.sh
+-rwxr-xr-x  1 root   root     44K Dec 11  2013 ginstall-info
+lrwxrwxrwx  1 root   root       7 Apr 15  2014 gold -> ld.gold
+-rwsr-xr-x  1 root   root     67K Feb 16  2014 gpasswd
+-rwxr-xr-x  1 root   root    973K Jun 26  2014 gpg
+-rwxr-xr-x  1 root   root    3.3K Jun 26  2014 gpg-zip
+-rwxr-xr-x  1 root   root     55K Jun 26  2014 gpgsplit
+-rwxr-xr-x  1 root   root    356K Jun 26  2014 gpgv
+lrwxrwxrwx  1 root   root       3 Jan 22  2014 gpic -> pic
+-rwxr-xr-x  1 root   root     97K Apr 15  2014 gprof
+-rwxr-xr-x  1 root   root     78K Jan 22  2014 groff
+-rwxr-xr-x  1 root   root    9.7K Jan 22  2014 grog
+-rwxr-xr-x  1 root   root    135K Jan 22  2014 grops
+-rwxr-xr-x  1 root   root     94K Jan 22  2014 grotty
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 groups
+-rwxr-xr-x  1 root   root    225K May 15  2014 grub-editenv
+-rwxr-xr-x  1 root   root    621K May 15  2014 grub-file
+-rwxr-xr-x  1 root   root    751K May 15  2014 grub-fstest
+-rwxr-xr-x  1 root   root    221K May 15  2014 grub-glue-efi
+-rwxr-xr-x  1 root   root    1.7K May 15  2014 grub-kbdcomp
+-rwxr-xr-x  1 root   root    201K May 15  2014 grub-menulst2cfg
+-rwxr-xr-x  1 root   root    246K May 15  2014 grub-mkfont
+-rwxr-xr-x  1 root   root    306K May 15  2014 grub-mkimage
+-rwxr-xr-x  1 root   root    225K May 15  2014 grub-mklayout
+-rwxr-xr-x  1 root   root    343K May 15  2014 grub-mknetdir
+-rwxr-xr-x  1 root   root    225K May 15  2014 grub-mkpasswd-pbkdf2
+-rwxr-xr-x  1 root   root    221K May 15  2014 grub-mkrelpath
+-rwxr-xr-x  1 root   root    768K May 15  2014 grub-mkrescue
+-rwxr-xr-x  1 root   root    419K May 15  2014 grub-mkstandalone
+-rwxr-xr-x  1 root   root    574K May 15  2014 grub-mount
+lrwxrwxrwx  1 root   root      34 May 15  2014 grub-ntldr-img -> ../lib/grub/i386-pc/grub-ntldr-img
+-rwxr-xr-x  1 root   root    638K May 15  2014 grub-render-label
+-rwxr-xr-x  1 root   root    245K May 15  2014 grub-script-check
+-rwxr-xr-x  1 root   root    590K May 15  2014 grub-syslinux2cfg
+lrwxrwxrwx  1 root   root       3 Jan 22  2014 gtbl -> tbl
+-rwxr-xr-x  1 root   root     28K Mar 27  2014 h2ph
+-rwxr-xr-x  1 root   root     60K Mar 27  2014 h2xs
+lrwxrwxrwx  1 root   root       7 Jun  4  2013 hd -> hexdump
+-rwxr-xr-x  1 root   root     39K Mar 24  2014 head
+-rwxr-xr-x  1 root   root    2.5K Feb 21  2013 helpztags
+-rwxr-xr-x  1 root   root     27K Jun  4  2013 hexdump
+-rwxr-xr-x  1 root   root    111K Mar 24  2014 host
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 hostid
+-rwxr-xr-x  1 root   root     55K Jun 20  2014 hostnamectl
+lrwxrwxrwx  1 root   root       7 Oct  9  2014 i386 -> setarch
+-rwxr-xr-x  1 root   root     59K Apr 12  2014 iconv
+-rwxr-xr-x  1 root   root     35K Mar 24  2014 id
+-rwxr-xr-x  1 root   root    3.2K Jul  2  2013 igawk
+-rwxr-xr-x  1 root   root    203K Dec 11  2013 info
+lrwxrwxrwx  1 root   root      29 Oct  9  2014 infobrowser -> /etc/alternatives/infobrowser
+-rwxr-xr-x  1 root   root     55K Mar 22  2014 infocmp
+-rwxr-xr-x  1 root   root     21K Dec 11  2013 infokey
+lrwxrwxrwx  1 root   root       3 Oct  9  2014 infotocap -> tic
+-rwxr-xr-x  1 root   root    6.8K Jul 18  2014 init-checkconf
+-rwxr-xr-x  1 root   root     19K Jul 18  2014 initctl2dot
+-rwxr-xr-x  1 root   root     14K Jul 16  2014 innochecksum
+-rwxr-xr-x  1 root   root    391K Jul 16  2014 innotop
+-rwxr-xr-x  1 root   root    116K Mar 24  2014 install
+-rwxr-xr-x  1 root   root    1.2K Dec 11  2013 install-info
+-rwxr-xr-x  1 root   root    4.3K Mar 27  2014 instmodsh
+-rwxr-xr-x  1 root   root     19K Jun  3  2014 ionice
+-rwxr-xr-x  1 root   root     11K Jun  3  2014 ipcmk
+-rwxr-xr-x  1 root   root     11K Jun  3  2014 ipcrm
+-rwxr-xr-x  1 root   root     23K Jun  3  2014 ipcs
+lrwxrwxrwx  1 root   root      19 Jan  8  2014 iptables-xml -> /sbin/xtables-multi
+-rwxr-xr-x  1 root   root     11K Aug 28  2013 ischroot
+-rwxr-xr-x  1 root   root     43K Mar 24  2014 join
+-rwxr-xr-x  1 root   root    3.9K Mar 27  2014 json_pp
+-rwxr-xr-x  1 root   root     11K Feb 18  2013 kbdinfo
+lrwxrwxrwx  1 root   root       7 Jan 15  2014 keep-one-running -> run-one
+-rwxr-xr-x  1 root   root     24K Nov 29  2012 killall
+-rwxr-xr-x  1 root   root     624 Mar 28  2014 landscape-sysinfo
+-rwxr-xr-x  1 root   root     19K Mar 12  2014 last
+lrwxrwxrwx  1 root   root       4 Oct  9  2014 lastb -> last
+-rwxr-xr-x  1 root   root     15K Feb 16  2014 lastlog
+-rwxr-xr-x  1 root   root    7.7K Jun 30  2013 lcf
+lrwxrwxrwx  1 root   root       6 Apr 15  2014 ld -> ld.bfd
+-rwxr-xr-x  1 root   root    1.1M Apr 15  2014 ld.bfd
+-rwxr-xr-x  1 root   root    2.4M Apr 15  2014 ld.gold
+-rwxr-xr-x  1 root   root    5.3K Apr 12  2014 ldd
+lrwxrwxrwx  1 root   root       9 Oct  9  2014 less -> /bin/less
+lrwxrwxrwx  1 root   root      13 Oct  9  2014 lessecho -> /bin/lessecho
+lrwxrwxrwx  1 root   root      13 Oct  9  2014 lessfile -> /bin/lesspipe
+lrwxrwxrwx  1 root   root      12 Oct  9  2014 lesskey -> /bin/lesskey
+lrwxrwxrwx  1 root   root      13 Oct  9  2014 lesspipe -> /bin/lesspipe
+-rwxr-xr-x  1 root   root     91K Apr 10  2014 lexgrog
+-rwxr-xr-x  1 root   root     16K Mar 27  2014 libnetcfg
+-rwxr-xr-x  1 root   root    6.1K Jun  3  2014 line
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 link
+-rwxr-xr-x  1 root   root    1.6K Jan 20  2011 linux-boot-prober
+lrwxrwxrwx  1 root   root       7 Oct  9  2014 linux32 -> setarch
+lrwxrwxrwx  1 root   root       7 Oct  9  2014 linux64 -> setarch
+-rwxr-xr-x  1 root   root    15K Feb 17  2014 lnstat
+lrwxrwxrwx  1 root   root      13 Oct  9  2014 loadkeys -> /bin/loadkeys
+-rwxr-xr-x  1 root   root     23K Feb 18  2013 loadunimap
+-rwxr-xr-x  1 root   root     38K Apr 12  2014 locale
+-rwxr-xr-x  1 root   root     59K Jun 20  2014 localectl
+-rwxr-xr-x  1 root   root    312K Apr 12  2014 localedef
+lrwxrwxrwx  1 root   root      24 Oct  9  2014 locate -> /etc/alternatives/locate
+-rwxr-xr-x  4 root   root     15K Dec  3  2012 lockfile-check
+-rwxr-xr-x  4 root   root     15K Dec  3  2012 lockfile-create
+-rwxr-xr-x  4 root   root     15K Dec  3  2012 lockfile-remove
+-rwxr-xr-x  4 root   root     15K Dec  3  2012 lockfile-touch
+-rwxr-xr-x  1 root   root     20K Jun  3  2014 logger
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 logname
+-rwxr-xr-x  1 root   root     11K Jun  4  2013 look
+-rwxr-xr-x  1 root   root    2.7K Jun  4  2013 lorder
+-rwxr-xr-x  1 root   root     11K Feb 19  2014 lsattr
+-rwxr-xr-x  1 root   root    3.7K Feb 23  2014 lsb_release
+-rwxr-xr-x  1 root   root     31K Jun  3  2014 lscpu
+-rwxr-xr-x  1 root   root    705K Mar 10  2014 lshw
+-rwxr-xr-x  1 root   root     767 May 31  2012 lsinitramfs
+-rwxr-xr-x  1 root   root    160K Dec  1  2012 lsof
+-rwxr-xr-x  1 root   root     69K Mar 24  2014 lspci
+-rwxr-xr-x  1 root   root    1.1K Mar 15  2013 lspgpot
+-rwxr-xr-x  1 root   root    103K Apr  8  2014 lsusb
+-rwxr-xr-x  1 root   root    271K May  9  2014 ltrace
+-rwxr-xr-x  1 root   root    8.5K Nov 30  2013 lwp-download
+-rwxr-xr-x  1 root   root    2.8K Nov 30  2013 lwp-dump
+-rwxr-xr-x  1 root   root    2.5K Nov 30  2013 lwp-mirror
+-rwxr-xr-x  1 root   root     15K Nov 30  2013 lwp-request
+lrwxrwxrwx  1 root   root      23 Oct  9  2014 lzcat -> /etc/alternatives/lzcat
+lrwxrwxrwx  1 root   root      23 Oct  9  2014 lzcmp -> /etc/alternatives/lzcmp
+lrwxrwxrwx  1 root   root      24 Oct  9  2014 lzdiff -> /etc/alternatives/lzdiff
+lrwxrwxrwx  1 root   root      25 Oct  9  2014 lzegrep -> /etc/alternatives/lzegrep
+lrwxrwxrwx  1 root   root      25 Oct  9  2014 lzfgrep -> /etc/alternatives/lzfgrep
+lrwxrwxrwx  1 root   root      24 Oct  9  2014 lzgrep -> /etc/alternatives/lzgrep
+lrwxrwxrwx  1 root   root      24 Oct  9  2014 lzless -> /etc/alternatives/lzless
+lrwxrwxrwx  1 root   root      22 Oct  9  2014 lzma -> /etc/alternatives/lzma
+-rwxr-xr-x  1 root   root     11K Feb 12  2014 lzmainfo
+lrwxrwxrwx  1 root   root      24 Oct  9  2014 lzmore -> /etc/alternatives/lzmore
+-rwxr-sr-x  3 root   mail     15K Dec  3  2012 mail-lock
+-rwxr-sr-x  3 root   mail     15K Dec  3  2012 mail-touchlock
+-rwxr-sr-x  3 root   mail     15K Dec  3  2012 mail-unlock
+-rwxr-xr-x  1 root   root    167K Jun  8  2013 make
+-rwxr-xr-x  1 root   root    105K Apr 10  2014 man
+-rwxr-xr-x  1 root   root    127K Apr 10  2014 mandb
+-rwxr-xr-x  1 root   root     287 Jan  7  2014 manhole
+-rwxr-xr-x  1 root   root     31K Apr 10  2014 manpath
+-rwxr-xr-x  1 root   root     19K Feb 18  2013 mapscrn
+-rwxr-xr-x  1 root   root    116K Mar 24  2014 mawk
+-rwxr-xr-x  1 root   root     15K Jun  3  2014 mcookie
+-rwxr-xr-x  1 root   root     84K Nov  3  2012 mcrypt
+-rwxr-xr-x  1 root   root     39K Mar 24  2014 md5sum
+lrwxrwxrwx  1 root   root       6 Oct  9  2014 md5sum.textutils -> md5sum
+lrwxrwxrwx  1 root   root       6 Nov  3  2012 mdecrypt -> mcrypt
+-rwxr-xr-x  1 root   root     11K Mar 12  2014 mesg
+-rwxr-xr-x  1 root   root     26K Feb 23  2014 miniterm.py
+-rwxr-xr-x  1 root   root     16K Feb 18  2013 mk_modmap
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 mkfifo
+-rwxr-sr-x  1 root   mlocate  39K Jun 20  2013 mlocate
+-rwxr-xr-x  1 root   root    1.5K Jul 16  2014 msql2mysql
+-rwsr-xr-x  1 root   root     74K Oct 21  2013 mtr
+-rwxr-xr-x  1 root   root    6.4K Apr 12  2014 mtrace
+-rwxr-xr-x  1 root   root    2.8M Jul 16  2014 my_print_defaults
+-rwxr-xr-x  1 root   root    3.1M Jul 16  2014 myisam_ftdump
+-rwxr-xr-x  1 root   root    3.2M Jul 16  2014 myisamchk
+-rwxr-xr-x  1 root   root    3.1M Jul 16  2014 myisamlog
+-rwxr-xr-x  1 root   root    3.1M Jul 16  2014 myisampack
+-rwxr-xr-x  1 root   root    3.4M Jul 16  2014 mysql
+-rwxr-xr-x  1 root   root    3.6M Jul 16  2014 mysql_client_test
+-rwxr-xr-x  1 root   root    4.2K Jul 16  2014 mysql_convert_table_format
+-rwxr-xr-x  1 root   root    3.3K Jul 16  2014 mysql_find_rows
+-rwxr-xr-x  1 root   root    1.3K Jul 16  2014 mysql_fix_extensions
+-rwxr-xr-x  1 root   root     15K Jul 16  2014 mysql_install_db
+-rwxr-xr-x  1 root   root    2.8M Jul 16  2014 mysql_plugin
+-rwxr-xr-x  1 root   root    8.1K Jul 16  2014 mysql_secure_installation
+-rwxr-xr-x  1 root   root     18K Jul 16  2014 mysql_setpermission
+-rwxr-xr-x  1 root   root    2.8M Jul 16  2014 mysql_tzinfo_to_sql
+-rwxr-xr-x  1 root   root    2.9M Jul 16  2014 mysql_upgrade
+-rwxr-xr-x  1 root   root    2.8M Jul 16  2014 mysql_waitpid
+-rwxr-xr-x  1 root   root    3.8K Jul 16  2014 mysql_zap
+-rwxr-xr-x  1 root   root    109K Jul 16  2014 mysqlaccess
+-rwxr-xr-x  1 root   root    3.2M Jul 16  2014 mysqladmin
+lrwxrwxrwx  1 root   root      10 Jul 16  2014 mysqlanalyze -> mysqlcheck
+-rwxr-xr-x  1 root   root    3.3M Jul 16  2014 mysqlbinlog
+-rwxr-xr-x  1 root   root     11K Jul 16  2014 mysqlbug
+-rwxr-xr-x  1 root   root    3.2M Jul 16  2014 mysqlcheck
+-rwxr-xr-x  1 root   root     24K Jul 16  2014 mysqld_multi
+-rwxr-xr-x  1 root   root     25K Jul 16  2014 mysqld_safe
+-rwxr-xr-x  1 root   root    3.3M Jul 16  2014 mysqldump
+-rwxr-xr-x  1 root   root    7.3K Jul 16  2014 mysqldumpslow
+-rwxr-xr-x  1 root   root     35K Jul 16  2014 mysqlhotcopy
+-rwxr-xr-x  1 root   root    3.2M Jul 16  2014 mysqlimport
+lrwxrwxrwx  1 root   root      10 Jul 16  2014 mysqloptimize -> mysqlcheck
+lrwxrwxrwx  1 root   root      10 Jul 16  2014 mysqlrepair -> mysqlcheck
+-rwxr-xr-x  1 root   root     39K Jul 16  2014 mysqlreport
+-rwxr-xr-x  1 root   root    3.2M Jul 16  2014 mysqlshow
+-rwxr-xr-x  1 root   root    3.2M Jul 16  2014 mysqlslap
+-rwxr-xr-x  1 root   root    3.5M Jul 16  2014 mysqltest
+-rwxr-xr-x  1 root   root     19K Jun  3  2014 namei
+lrwxrwxrwx  1 root   root       9 Oct  1  2012 nano -> /bin/nano
+lrwxrwxrwx  1 root   root      22 Oct  9  2014 nawk -> /etc/alternatives/nawk
+-rwxr-xr-x  1 root   root     26K Jun  4  2013 ncal
+-rwxr-xr-x  1 root   root    5.9K Mar 22  2014 ncurses5-config
+-rwxr-xr-x  1 root   root    5.9K Mar 22  2014 ncursesw5-config
+-rwxr-xr-x  1 root   root     271 Jan 22  2014 neqn
+-rwxr-xr-x  1 root   root     84K Dec  3  2012 netkit-ftp
+-rwsr-xr-x  1 root   root     32K Feb 16  2014 newgrp
+-rwxr-xr-x  1 root   root     35K Apr 28  2014 ngettext
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 nice
+-rwxr-xr-x  1 root   root     39K Mar 24  2014 nl
+-rwxr-xr-x  1 root   root     40K Apr 15  2014 nm
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 nohup
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 nproc
+-rwxr-xr-x  1 root   root    3.4K Jan 22  2014 nroff
+-rwxr-xr-x  1 root   root    111K Mar 24  2014 nslookup
+-rwxr-xr-x  1 root   root     19K Feb 17  2014 nstat
+-rwxr-xr-x  1 root   root     62K Mar 24  2014 nsupdate
+-rwxr-xr-x  1 root   root     43K Dec 18  2013 ntfsdecrypt
+-rwxr-xr-x  1 root   root     63K Mar 24  2014 numfmt
+-rwxr-xr-x  1 root   root    215K Apr 15  2014 objcopy
+-rwxr-xr-x  1 root   root    332K Apr 15  2014 objdump
+-rwxr-xr-x  1 root   root     63K Mar 24  2014 od
+-rwxr-xr-x  1 root   root    225K Jan  6  2014 oldfind
+-rwxr-xr-x  1 root   root    1.6M Apr  7  2014 omshell
+lrwxrwxrwx  1 root   root      17 Oct  2  2012 on_ac_power -> /sbin/on_ac_power
+-rwxr-xr-x  1 root   root    502K Jun 20  2014 openssl
+-rwxr-xr-x  1 root   root    4.2K Jul 13  2013 os-prober
+lrwxrwxrwx  1 root   root      23 Oct  9  2014 pager -> /etc/alternatives/pager
+-rwxr-xr-x  1 root   root    8.5K May  7  2011 parsechangelog
+-rwxr-xr-x  1 root   root     44K Jun  3  2014 partx
+-rwsr-xr-x  1 root   root     46K Feb 16  2014 passwd
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 paste
+-rwxr-xr-x  1 root   root    140K May  5  2014 patch
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 pathchk
+-rwxr-xr-x  1 root   root     15K Mar 24  2014 pcimodules
+lrwxrwxrwx  1 root   root       6 Dec 21  2013 pdb -> pdb2.7
+lrwxrwxrwx  1 root   root      23 Mar 22  2014 pdb2.7 -> ../lib/python2.7/pdb.py
+lrwxrwxrwx  1 root   root       6 Oct  9  2014 pdb3 -> pdb3.4
+lrwxrwxrwx  1 root   root      23 Oct  9  2014 pdb3.4 -> ../lib/python3.4/pdb.py
+-rwxr-xr-x  1 root   root     11K Nov 29  2012 peekfd
+-rwxr-xr-x  2 root   root     11K Mar 27  2014 perl
+-rwxr-xr-x  2 root   root     11K Mar 27  2014 perl5.18.2
+-rwxr-xr-x  2 root   root     41K Mar 27  2014 perlbug
+-rwxr-xr-x  1 root   root     125 Mar 27  2014 perldoc
+-rwxr-xr-x  1 root   root     11K Mar 27  2014 perlivp
+-rwxr-xr-x  2 root   root     41K Mar 27  2014 perlthanks
+-rwxr-xr-x  1 root   root    2.9M Jul 16  2014 perror
+lrwxrwxrwx  1 root   root      10 Dec  3  2012 pftp -> netkit-ftp
+-rwxr-xr-x  1 root   root     31K Jun  3  2014 pg
+-rwxr-xr-x  1 root   root    436K Jul  2  2013 pgawk
+-rwxr-xr-x  1 root   root     27K Jan  6  2014 pgrep
+lrwxrwxrwx  1 root   root      21 Oct  9  2014 php -> /etc/alternatives/php
+-rwxr-xr-x  1 root   root    8.7M Sep  4  2014 php5
+-rwxr-xr-x  1 root   root    169K Jan 22  2014 pic
+lrwxrwxrwx  1 root   root      22 Oct  9  2014 pico -> /etc/alternatives/pico
+-rwxr-xr-x  1 root   root    7.2K Mar 27  2014 piconv
+-rwxr-xr-x  1 root   root     35K Mar 24  2014 pinky
+-rwxr-xr-x  1 root   root     11K Feb 11  2014 pkaction
+-rwxr-xr-x  1 root   root     19K Feb 11  2014 pkcheck
+-rwsr-xr-x  1 root   root     23K Feb 11  2014 pkexec
+lrwxrwxrwx  1 root   root       5 Oct  9  2014 pkill -> pgrep
+-rwxr-xr-x  1 root   root     11K Feb 11  2014 pkttyagent
+-rwxr-xr-x  1 root   root    4.5K Mar 27  2014 pl2pm
+-rwxr-xr-x  1 root   root     15K Apr 12  2014 pldd
+-rwxr-xr-x  1 root   root     146 Jan 22  2013 plog
+-rwxr-xr-x  1 root   root     27K Jan  6  2014 pmap
+-rwxr-xr-x  1 root   root    2.0K Mar 27  2014 pod2html
+-rwxr-xr-x  1 root   root     11K May 31  2013 pod2latex
+-rwxr-xr-x  1 root   root     11K Mar 27  2014 pod2latex.bundled
+-rwxr-xr-x  1 root   root     14K Mar 27  2014 pod2man
+-rwxr-xr-x  1 root   root     11K Mar 27  2014 pod2text
+-rwxr-xr-x  1 root   root    3.7K Mar 27  2014 pod2usage
+-rwxr-xr-x  1 root   root    3.7K Mar 27  2014 podchecker
+-rwxr-xr-x  1 root   root    2.6K Mar 27  2014 podselect
+-rwxr-xr-x  1 root   root    2.8K Jan 22  2013 poff
+-rwxr-xr-x  1 root   root    1.6K Jan 22  2013 pon
+-rwxr-xr-x  1 root   root     63K Mar 24  2014 pr
+-rwxr-xr-x  1 root   root     39K Jan 22  2014 preconv
+-rwxr-xr-x  1 root   root    3.0K Mar 27  2014 prename
+lrwxrwxrwx  1 root   root      11 Oct  9  2014 print -> run-mailcap
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 printenv
+-rwxr-xr-x  1 root   root     19K Jun  4  2013 printerbanner
+-rwxr-xr-x  1 root   root     51K Mar 24  2014 printf
+-rwxr-xr-x  1 root   root     11K Mar 27  2014 prove
+-rwxr-xr-x  1 root   root     15K Nov 29  2012 prtstat
+-rwxr-xr-x  2 root   root     53K Mar 27  2014 psed
+lrwxrwxrwx  1 root   root       9 Oct  9  2014 psfaddtable -> psfxtable
+lrwxrwxrwx  1 root   root       9 Oct  9  2014 psfgettable -> psfxtable
+lrwxrwxrwx  1 root   root       9 Oct  9  2014 psfstriptable -> psfxtable
+-rwxr-xr-x  1 root   root     19K Feb 18  2013 psfxtable
+-rwxr-xr-x  1 root   root     23K Nov 29  2012 pstree
+lrwxrwxrwx  1 root   root       6 Nov 29  2012 pstree.x11 -> pstree
+-rwxr-xr-x  2 root   root     36K Mar 27  2014 pstruct
+-rwxr-xr-x  1 root   root    3.5K Mar 27  2014 ptar
+-rwxr-xr-x  1 root   root    2.5K Mar 27  2014 ptardiff
+-rwxr-xr-x  1 root   root    4.2K Mar 27  2014 ptargrep
+-rwxr-xr-x  1 root   root     63K Mar 24  2014 ptx
+-rwxr-xr-x  1 root   root     11K Jan  6  2014 pwdx
+-rwxr-xr-x  1 root   root    7.1K Mar 23  2014 py3clean
+-rwxr-xr-x  1 root   root     12K Mar 23  2014 py3compile
+lrwxrwxrwx  1 root   root      31 Oct  9  2014 py3versions -> ../share/python3/py3versions.py
+lrwxrwxrwx  1 root   root      26 Oct  9  2014 pybuild -> ../share/dh-python/pybuild
+-rwxr-xr-x  1 root   root    4.1K Dec 21  2013 pyclean
+-rwxr-xr-x  1 root   root     12K Dec 21  2013 pycompile
+lrwxrwxrwx  1 root   root       8 Dec 21  2013 pydoc -> pydoc2.7
+-rwxr-xr-x  1 root   root      79 Mar 22  2014 pydoc2.7
+lrwxrwxrwx  1 root   root       8 Oct  9  2014 pydoc3 -> pydoc3.4
+-rwxr-xr-x  1 root   root      79 Apr 11  2014 pydoc3.4
+lrwxrwxrwx  1 root   root      12 Dec 21  2013 pygettext -> pygettext2.7
+-rwxr-xr-x  1 root   root     22K Mar 22  2014 pygettext2.7
+lrwxrwxrwx  1 root   root      12 Oct  9  2014 pygettext3 -> pygettext3.4
+-rwxr-xr-x  1 root   root     22K Apr 11  2014 pygettext3.4
+-rwxr-xr-x  1 root   root     217 Jan  7  2014 pyhtmlizer
+lrwxrwxrwx  1 root   root       9 Dec 21  2013 python -> python2.7
+lrwxrwxrwx  1 root   root       9 Dec 21  2013 python2 -> python2.7
+-rwxr-xr-x  1 root   root    3.2M Mar 22  2014 python2.7
+lrwxrwxrwx  1 root   root       9 Oct  9  2014 python3 -> python3.4
+-rwxr-xr-x  2 root   root    3.9M Apr 11  2014 python3.4
+-rwxr-xr-x  2 root   root    3.9M Apr 11  2014 python3.4m
+lrwxrwxrwx  1 root   root      10 Oct  9  2014 python3m -> python3.4m
+-rwxr-xr-x  1 root   root     231 Apr 11  2014 pyvenv-3.4
+lrwxrwxrwx  1 root   root      29 Dec 21  2013 pyversions -> ../share/python/pyversions.py
+-rwxr-xr-x  1 root   root     60K Apr 15  2014 ranlib
+lrwxrwxrwx  1 root   root      21 Oct  9  2014 rcp -> /etc/alternatives/rcp
+-rwxr-xr-x  1 root   root    417K Apr 15  2014 readelf
+lrwxrwxrwx  1 root   root      24 Oct  9  2014 rename -> /etc/alternatives/rename
+-rwxr-xr-x  1 root   root     11K Jun  3  2014 rename.ul
+-rwxr-xr-x  1 root   root     11K Jun  3  2014 renice
+-rwxr-xr-x  1 root   root    2.8M Jul 16  2014 replace
+-rwxr-xr-x  1 root   root    2.2K Dec 11  2013 report-hw
+lrwxrwxrwx  1 root   root       4 Oct  9  2014 reset -> tset
+-rwxr-xr-x  1 root   root     19K Feb 18  2013 resizecons
+-rwxr-xr-x  1 root   root     31K Jun  3  2014 resizepart
+-rwxr-xr-x  1 root   root    2.8M Jul 16  2014 resolve_stack_dump
+-rwxr-xr-x  1 root   root    2.8M Jul 16  2014 resolveip
+-rwxr-xr-x  1 root   root     11K Jun  3  2014 rev
+-rwxr-xr-x  1 root   root      30 Jan 18  2014 rgrep
+lrwxrwxrwx  1 root   root      24 Oct  9  2014 rlogin -> /etc/alternatives/rlogin
+-rwxr-xr-x  1 root   root     173 Nov 22  2013 routef
+-rwxr-xr-x  1 root   root    1.3K Nov 22  2013 routel
+-rwxr-xr-x  1 root   root     91K Apr 12  2014 rpcgen
+lrwxrwxrwx  1 root   root      21 Oct  9  2014 rsh -> /etc/alternatives/rsh
+-rwxr-xr-x  1 root   root    382K Apr 17  2014 rsync
+lrwxrwxrwx  1 root   root       6 Oct  9  2014 rtstat -> lnstat
+-rwxr-xr-x  1 root   root     17K May 13  2013 run-mailcap
+-rwxr-xr-x  1 root   root    3.6K Jan 15  2014 run-one
+lrwxrwxrwx  1 root   root       7 Jan 15  2014 run-one-constantly -> run-one
+lrwxrwxrwx  1 root   root       7 Jan 15  2014 run-one-until-failure -> run-one
+lrwxrwxrwx  1 root   root       7 Jan 15  2014 run-one-until-success -> run-one
+lrwxrwxrwx  1 root   root       7 Jan 15  2014 run-this-one -> run-one
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 runcon
+lrwxrwxrwx  1 root   root      23 Oct  9  2014 rview -> /etc/alternatives/rview
+lrwxrwxrwx  1 root   root      22 Oct  9  2014 rvim -> /etc/alternatives/rvim
+-rwxr-xr-x  2 root   root     53K Mar 27  2014 s2p
+-rwxr-xr-x  1 root   root     11K Aug 28  2013 savelog
+-rwxr-xr-x  1 root   root     67K May 12  2014 scp
+-rwxr-sr-x  1 root   utmp    412K Nov  7  2013 screen
+-rwxr-xr-x  1 root   root     11K Feb 18  2013 screendump
+-rwxr-xr-x  1 root   root     15K Jun  3  2014 script
+-rwxr-xr-x  1 root   root     11K Jun  3  2014 scriptreplay
+-rwxr-xr-x  1 root   root     47K Oct 21  2013 sdiff
+lrwxrwxrwx  1 root   root      11 Oct  9  2014 see -> run-mailcap
+-rwxr-xr-x  1 root   root    1.2K Jun 17  2013 select-editor
+-rwxr-xr-x  1 root   root    1.5K Jun 17  2013 sensible-browser
+-rwxr-xr-x  1 root   root    1.1K Jun 17  2013 sensible-editor
+-rwxr-xr-x  1 root   root     288 Jun 17  2013 sensible-pager
+-rwxr-xr-x  1 root   root     47K Mar 24  2014 seq
+lrwxrwxrwx  1 root   root      15 Oct  9  2014 service -> ../sbin/service
+-rwxr-xr-x  1 root   root     15K Jun  3  2014 setarch
+-rwxr-xr-x  1 root   root     11K Feb 18  2013 setkeycodes
+-rwxr-xr-x  1 root   root     11K Feb 18  2013 setleds
+-rwxr-xr-x  1 root   root     11K Feb 18  2013 setlogcons
+-rwxr-xr-x  1 root   root     11K Feb 18  2013 setmetamode
+-rwxr-xr-x  1 root   root     23K Mar 24  2014 setpci
+-rwxr-xr-x  1 root   root    6.2K Jun  3  2014 setsid
+-rwxr-xr-x  1 root   root     27K Jun  3  2014 setterm
+-rwxr-xr-x  1 root   root    119K May 12  2014 sftp
+lrwxrwxrwx  1 root   root       6 Oct  9  2014 sg -> newgrp
+-rwxr-xr-x  1 root   root     43K Mar 24  2014 sha1sum
+-rwxr-xr-x  1 root   root     47K Mar 24  2014 sha224sum
+-rwxr-xr-x  1 root   root     47K Mar 24  2014 sha256sum
+-rwxr-xr-x  1 root   root     51K Mar 24  2014 sha384sum
+-rwxr-xr-x  1 root   root     51K Mar 24  2014 sha512sum
+-rwxr-xr-x  1 root   root    8.4K Mar 27  2014 shasum
+-rwxr-xr-x  1 root   root     19K Feb 18  2013 showconsolefont
+-rwxr-xr-x  1 root   root     15K Feb 18  2013 showkey
+-rwxr-xr-x  1 root   root     51K Mar 24  2014 shred
+-rwxr-xr-x  1 root   root     47K Mar 24  2014 shuf
+-rwxr-xr-x  1 root   root     27K Apr 15  2014 size
+-rwxr-xr-x  1 root   root     23K Jan  6  2014 skill
+-rwxr-xr-x  1 root   root     19K Jan  6  2014slabtop
+lrwxrwxrwx  1 root   root       3 May 12  2014 slogin -> ssh
+lrwxrwxrwx  1 root   root       5 Oct  9  2014 snice -> skill
+-rwxr-xr-x  1 root   root     31K Jan 22  2014 soelim
+-rwxr-xr-x  1 root   root    100K Mar 24  2014 sort
+-rwxr-xr-x  1 root   root    4.3K Apr 12  2014 sotruss
+-rwxr-xr-x  1 root   root     19K Mar 27  2014 splain
+-rwxr-xr-x  1 root   root     64K Mar 24  2014 split
+-rwxr-xr-x  1 root   root     11K Feb 18  2013 splitfont
+-rwxr-xr-x  1 root   root     23K Apr 12  2014 sprof
+-rwxr-xr-x  1 root   root    627K May 12  2014 ssh
+-rwxr-xr-x  1 root   root    319K May 12  2014 ssh-add
+-rwxr-sr-x  1 root   ssh     279K May 12  2014 ssh-agent
+-rwxr-xr-x  1 root   root    1.5K May  2  2014 ssh-argv0
+-rwxr-xr-x  1 root   root    9.2K Jun  5  2013 ssh-copy-id
+-rwxr-xr-x  1 root   root    7.6K Feb 27  2014 ssh-import-id
+-rwxr-xr-x  1 root   root    2.1K Feb 27  2014 ssh-import-id-gh
+-rwxr-xr-x  1 root   root    2.5K Feb 27  2014 ssh-import-id-lp
+-rwxr-xr-x  1 root   root    395K May 12  2014 ssh-keygen
+-rwxr-xr-x  1 root   root    407K May 12  2014 ssh-keyscan
+-rwxr-xr-x  1 root   root     71K Mar 24  2014 stat
+-rwxr-xr-x  1 root   root     63K Mar 24  2014 stdbuf
+-rwxr-xr-x  1 root   root    423K Mar 13  2014 strace
+-rwxr-xr-x  1 root   root     27K Apr 15  2014 strings
+-rwxr-xr-x  1 root   root    215K Apr 15  2014 strip
+-rwsr-xr-x  1 root   root    152K Feb 10  2014 sudo
+lrwxrwxrwx  1 root   root       4 Oct  9  2014 sudoedit -> sudo
+-rwxr-xr-x  1 root   root     80K Feb 10  2014 sudoreplay
+-rwxr-xr-x  1 root   root     35K Mar 24  2014 sum
+-rwxr-xr-x  1 root   root     15K Mar 22  2014 tabs
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 tac
+-rwxr-xr-x  1 root   root     63K Mar 24  2014 tail
+-rwxr-xr-x  1 root   root     237 Jan  7  2014 tap2deb
+-rwxr-xr-x  1 root   root     325 Jan  7  2014 tap2rpm
+-rwxr-xr-x  1 root   root     219 Jan  7  2014 tapconvert
+-rwxr-xr-x  1 root   root     23K Apr  4  2014 tasksel
+-rwxr-xr-x  1 root   root     19K Jun  3  2014 taskset
+-rwxr-xr-x  1 root   root    107K Jan 22  2014 tbl
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 tee
+lrwxrwxrwx  1 root   root      24 Oct  9  2014 telnet -> /etc/alternatives/telnet
+-rwxr-xr-x  1 root   root     94K Oct  2  2012 telnet.netkit
+-rwxr-xr-x  1 root   root     35K Mar 24  2014 test
+-rwxr-xr-x  1 root   root     63K Mar 22  2014 tic
+-rwxr-xr-x  1 root   root     15K Jun 29  2012 time
+-rwxr-xr-x  1 root   root     59K Jun 20  2014 timedatectl
+-rwxr-xr-x  1 root   root     52K Mar 24  2014 timeout
+-rwxr-xr-x  1 root   root     15K Jan  6  2014 tload
+-rwxr-xr-x  1 root   root    457K Oct 21  2013 tmux
+-rwxr-xr-x  1 root   root     15K Mar 22  2014 toe
+-rwxr-xr-x  1 root   root     99K Jan  6  2014 top
+lrwxrwxrwx  1 root   root      10 Oct  9  2014 touch -> /bin/touch
+-rwxr-xr-x  1 root   root     15K Mar 22  2014 tput
+-rwxr-xr-x  1 root   root     43K Mar 24  2014 tr
+-rwxr-xr-x  1 root   root     15K May  7  2014 tracepath
+-rwxr-xr-x  1 root   root     15K May  7  2014 tracepath6
+lrwxrwxrwx  1 root   root      29 Oct  9  2014 traceroute6 -> /etc/alternatives/traceroute6
+-rwsr-xr-x  1 root   root     23K May  7  2014 traceroute6.iputils
+-rwxr-xr-x  1 root   root     352 Jan  7  2014 trial
+-rwxr-xr-x  1 root   root    484K Jan 22  2014 troff
+-rwxr-xr-x  1 root   root     51K Mar 24  2014 truncate
+-rwxr-xr-x  1 root   root     19K Mar 22  2014 tset
+-rwxr-xr-x  1 root   root     35K Mar 24  2014 tsort
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 tty
+-rwxr-xr-x  1 root   root     269 Jan  7  2014 twistd
+-rwxr-xr-x  1 root   root     13K Apr 12  2014 tzselect
+-rwxr-xr-x  1 root   root    7.0K Apr 28  2014 ubuntu-support-status
+-rwxr-xr-x  1 root   root     38K Jun 30  2013 ucf
+-rwxr-xr-x  1 root   root     19K Jun 30  2013 ucfq
+-rwxr-xr-x  1 root   root     11K Jun 30  2013 ucfr
+-rwxr-xr-x  1 root   root     15K Jun  4  2013 ul
+-rwxr-xr-x  1 root   root     45K Apr  2  2014 unattended-upgrade
+lrwxrwxrwx  1 root   root      18 Apr  2  2014 unattended-upgrades -> unattended-upgrade
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 unexpand
+-rwxr-xr-x  1 root   root     530 Feb 18  2013 unicode_stop
+-rwxr-xr-x  1 root   root     39K Mar 24  2014 uniq
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 unlink
+lrwxrwxrwx  1 root   root      24 Oct  9  2014 unlzma -> /etc/alternatives/unlzma
+-rwxr-xr-x  1 root   root     11K Jun  3  2014 unshare
+lrwxrwxrwx  1 root   root       2 Feb 12  2014 unxz -> xz
+-rwxr-xr-x  2 root   root    155K May 13  2013 unzip
+-rwxr-xr-x  1 root   root     75K May 13  2013 unzipsfx
+-rwxr-xr-x  1 root   root     43K Jun  9  2014 update-alternatives
+-rwxr-xr-x  1 root   root     672 Apr 11  2014 update-mime-database
+-rwxr-xr-x  1 root   root     48K Apr 11  2014 update-mime-database.real
+lrwxrwxrwx  1 root   root      26 Oct  9  2014 updatedb -> /etc/alternatives/updatedb
+-rwxr-xr-x  1 root   root     43K Jun 20  2013 updatedb.mlocate
+-rwxr-xr-x  1 root   root     11K Jan  6  2014 uptime
+-rwxr-xr-x  1 root   root    4.2K Apr  8  2014 usb-devices
+-rwxr-xr-x  1 root   root     23K Apr  8  2014 usbhid-dump
+-rwxr-xr-x  1 root   root     31K Mar 24  2014 users
+-rwxr-xr-x  1 root   root     11K Jun  3  2014 uuidgen
+lrwxrwxrwx  1 root   root      20 Oct  9  2014 vi -> /etc/alternatives/vi
+lrwxrwxrwx  1 root   root      22 Oct  9  2014 view -> /etc/alternatives/view
+lrwxrwxrwx  1 root   root      21 Oct  9  2014 vim -> /etc/alternatives/vim
+-rwxr-xr-x  1 root   root    2.1M Jan  2  2014 vim.basic
+-rwxr-xr-x  1 root   root    864K Jan  2  2014 vim.tiny
+lrwxrwxrwx  1 root   root      25 Oct  9  2014 vimdiff -> /etc/alternatives/vimdiff
+-rwxr-xr-x  1 root   root    2.1K Jan  2  2014 vimtutor
+-rwxr-xr-x  1 root   root    9.0K Jan 17  2018 vm-support
+lrwxrwxrwx  1 root   root      37 Jan 17  2018 vmhgfs-fuse -> /usr/lib/vmware-tools/bin64/appLoader
+-rwxr-xr-x  1 root   root     31K Jan  6  2014 vmstat
+-rwxr-xr-x  1 root   root    410K Jan 17  2018 vmware-config-tools.pl
+lrwxrwxrwx  1 root   root      37 Jan 17  2018 vmware-guestproxycerttool -> /usr/lib/vmware-tools/bin64/appLoader
+lrwxrwxrwx  1 root   root      37 Jan 17  2018 vmware-hgfsclient -> /usr/lib/vmware-tools/bin64/appLoader
+lrwxrwxrwx  1 root   root      37 Jan 17  2018 vmware-toolbox-cmd -> /usr/lib/vmware-tools/bin64/appLoader
+-rwxr-xr-x  1 root   root    201K Jan 17  2018 vmware-uninstall-tools.pl
+lrwxrwxrwx  1 root   root      52 Jan 17  2018 vmware-user -> /usr/lib/vmware-tools/bin64/vmware-user-suid-wrapper
+lrwxrwxrwx  1 root   root      48 Jan 17  2018 vmware-xdg-detect-de -> /usr/lib/vmware-tools/bin32/vmware-xdg-detect-de
+lrwxrwxrwx  1 root   root      43 Jan 17  2018 vmware-xferlogs -> /usr/lib/vmware-tools/bin64/vmware-xferlogs
+-rwxr-xr-x  1 root   root     10K Feb 25  2014 volname
+lrwxrwxrwx  1 root   root      19 Oct  9  2014 w -> /etc/alternatives/w
+-rwxr-xr-x  1 root   root     19K Jan  6  2014 w.procps
+-rwxr-xr-x  1 root   root    1.4M Jan  4  2014 w3m
+-rwxr-xr-x  1 root   root    1.2K Jan  4  2014 w3mman
+-rwxr-sr-x  1 root   tty      19K Jun  3  2014 wall
+-rwxr-xr-x  1 root   root     24K Jan  6  2014 watch
+-rwxr-xr-x  1 root   root     39K Mar 24  2014 wc
+-rwxr-xr-x  1 root   root    399K Feb  7  2014 wget
+-rwxr-xr-x  1 root   root     47K Apr 10  2014 whatis
+-rwxr-xr-x  1 root   root     15K Jun  3  2014 whereis
+lrwxrwxrwx  1 root   root      10 Oct  9  2014 which -> /bin/which
+-rwxr-xr-x  1 root   root     51K Mar 24  2014 who
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 whoami
+-rwxr-xr-x  1 root   root     47K Mar  5  2014 wpa_passphrase
+lrwxrwxrwx  1 root   root      23 Oct  9  2014 write -> /etc/alternatives/write
+lrwxrwxrwx  1 root   root      29 Oct  9  2014 www-browser -> /etc/alternatives/www-browser
+lrwxrwxrwx  1 root   root       7 Oct  9  2014 x86_64 -> setarch
+lrwxrwxrwx  1 root   root       9 Apr 15  2014 x86_64-linux-gnu-addr2line -> addr2line
+lrwxrwxrwx  1 root   root       2 Apr 15  2014 x86_64-linux-gnu-ar -> ar
+lrwxrwxrwx  1 root   root       2 Apr 15  2014 x86_64-linux-gnu-as -> as
+lrwxrwxrwx  1 root   root       7 Apr 15  2014 x86_64-linux-gnu-c++filt -> c++filt
+lrwxrwxrwx  1 root   root       7 Apr  7  2014 x86_64-linux-gnu-cpp -> cpp-4.8
+lrwxrwxrwx  1 root   root       7 Apr  5  2014 x86_64-linux-gnu-cpp-4.8 -> cpp-4.8
+lrwxrwxrwx  1 root   root       3 Apr 15  2014 x86_64-linux-gnu-dwp -> dwp
+lrwxrwxrwx  1 root   root       7 Apr 15  2014 x86_64-linux-gnu-elfedit -> elfedit
+lrwxrwxrwx  1 root   root       7 Apr  7  2014 x86_64-linux-gnu-g++ -> g++-4.8
+lrwxrwxrwx  1 root   root       7 Apr  5  2014 x86_64-linux-gnu-g++-4.8 -> g++-4.8
+lrwxrwxrwx  1 root   root       7 Apr  7  2014 x86_64-linux-gnu-gcc -> gcc-4.8
+lrwxrwxrwx  1 root   root       7 Apr  5  2014 x86_64-linux-gnu-gcc-4.8 -> gcc-4.8
+lrwxrwxrwx  1 root   root      10 Apr  7  2014 x86_64-linux-gnu-gcc-ar -> gcc-ar-4.8
+lrwxrwxrwx  1 root   root      10 Apr  5  2014 x86_64-linux-gnu-gcc-ar-4.8 -> gcc-ar-4.8
+lrwxrwxrwx  1 root   root      10 Apr  7  2014 x86_64-linux-gnu-gcc-nm -> gcc-nm-4.8
+lrwxrwxrwx  1 root   root      10 Apr  5  2014 x86_64-linux-gnu-gcc-nm-4.8 -> gcc-nm-4.8
+lrwxrwxrwx  1 root   root      14 Apr  7  2014 x86_64-linux-gnu-gcc-ranlib -> gcc-ranlib-4.8
+lrwxrwxrwx  1 root   root      14 Apr  5  2014 x86_64-linux-gnu-gcc-ranlib-4.8 -> gcc-ranlib-4.8
+lrwxrwxrwx  1 root   root       8 Apr  7  2014 x86_64-linux-gnu-gcov -> gcov-4.8
+lrwxrwxrwx  1 root   root       8 Apr  5  2014 x86_64-linux-gnu-gcov-4.8 -> gcov-4.8
+lrwxrwxrwx  1 root   root       5 Apr 15  2014 x86_64-linux-gnu-gprof -> gprof
+lrwxrwxrwx  1 root   root       2 Apr 15  2014 x86_64-linux-gnu-ld -> ld
+lrwxrwxrwx  1 root   root       6 Apr 15  2014 x86_64-linux-gnu-ld.bfd -> ld.bfd
+lrwxrwxrwx  1 root   root       7 Apr 15  2014 x86_64-linux-gnu-ld.gold -> ld.gold
+lrwxrwxrwx  1 root   root       2 Apr 15  2014 x86_64-linux-gnu-nm -> nm
+lrwxrwxrwx  1 root   root       7 Apr 15  2014 x86_64-linux-gnu-objcopy -> objcopy
+lrwxrwxrwx  1 root   root       7 Apr 15  2014 x86_64-linux-gnu-objdump -> objdump
+lrwxrwxrwx  1 root   root       6 Apr 15  2014 x86_64-linux-gnu-ranlib -> ranlib
+lrwxrwxrwx  1 root   root       7 Apr 15  2014 x86_64-linux-gnu-readelf -> readelf
+lrwxrwxrwx  1 root   root       4 Apr 15  2014 x86_64-linux-gnu-size -> size
+lrwxrwxrwx  1 root   root       7 Apr 15  2014 x86_64-linux-gnu-strings -> strings
+lrwxrwxrwx  1 root   root       5 Apr 15  2014 x86_64-linux-gnu-strip -> strip
+-rwxr-xr-x  1 root   root     43K Jan  6  2014 xargs
+-rwxr-xr-x  1 root   root     40K Dec  3  2012 xauth
+-rwxr-xr-x  1 root   root    4.5K Mar 27  2014 xsubpp
+-rwxr-xr-x  1 root   root     15K Jan  2  2014 xxd
+-rwxr-xr-x  1 root   root     68K Feb 12  2014 xz
+lrwxrwxrwx  1 root   root       2 Feb 12  2014 xzcat -> xz
+lrwxrwxrwx  1 root   root       6 Feb 12  2014 xzcmp -> xzdiff
+-rwxr-xr-x  1 root   root    5.4K Feb 12  2014 xzdiff
+lrwxrwxrwx  1 root   root       6 Feb 12  2014 xzegrep -> xzgrep
+lrwxrwxrwx  1 root   root       6 Feb 12  2014 xzfgrep -> xzgrep
+-rwxr-xr-x  1 root   root    5.3K Feb 12  2014 xzgrep
+-rwxr-xr-x  1 root   root    1.8K Feb 12  2014 xzless
+-rwxr-xr-x  1 root   root    2.2K Feb 12  2014 xzmore
+-rwxr-xr-x  1 root   root     27K Mar 24  2014 yes
+-rwxr-xr-x  1 root   root     15K Apr 12  2014 zdump
+-rwxr-xr-x  1 root   root     47K Mar 27  2014 zipdetails
+-rwxr-xr-x  1 root   root    2.9K May 13  2013 zipgrep
+-rwxr-xr-x  2 root   root    155K May 13  2013 zipinfo
+-rwxr-xr-x  1 root   root     47K Apr 10  2014 zsoelim
+
+### CONFIDENTIAL INFORMATION & USERS ###
+10.11.1.71> id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+
+10.11.1.71> whoami
+www-data
+
+10.11.1.71> who
+
+10.11.1.71> w
+ 04:34:53 up 13:52,  0 users,  load average: 0.00, 0.01, 0.05
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+
+10.11.1.71> last
+reboot   system boot  3.13.0-141-gener Wed Jan 22 21:22 - 04:36 (203+06:13)
+root     tty1                          Tue Nov 26 12:01 - down   (00:01)
+reboot   system boot  3.13.0-141-gener Tue Nov 26 12:01 - 12:02  (00:01)
+root     tty1                          Thu Aug 22 12:24 - down   (00:01)
+reboot   system boot  3.13.0-141-gener Thu Aug 22 12:21 - 12:25  (00:03)
+
+wtmp begins Thu Feb  8 10:35:29 2018
+
+10.11.1.71> cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+libuuid:x:100:101::/var/lib/libuuid:
+syslog:x:101:104::/home/syslog:/bin/false
+mysql:x:102:106:MySQL Server,,,:/nonexistent:/bin/false
+messagebus:x:103:107::/var/run/dbus:/bin/false
+landscape:x:104:110::/var/lib/landscape:/bin/false
+sshd:x:105:65534::/var/run/sshd:/usr/sbin/nologin
+gibson:x:1000:1000:gibson,,,:/home/gibson:/bin/bash
+ossec:x:1001:1001::/var/ossec-hids2.8:/bin/false
+ossecm:x:1002:1001::/var/ossec-hids2.8:/bin/false
+ossecr:x:1003:1001::/var/ossec-hids2.8:/bin/false
+
+# List of users
+10.11.1.71> cat /etc/passwd | cut -d: -f1
+root
+daemon
+bin
+sys
+sync
+games
+man
+lp
+mail
+news
+uucp
+proxy
+www-data
+backup
+list
+irc
+gnats
+nobody
+libuuid
+syslog
+mysql
+messagebus
+landscape
+sshd
+gibson
+ossec
+ossecm
+ossecr
+
+# List of super users
+10.11.1.71> grep -v -E "^#" /etc/passwd | awk -F: '$3 == 0 { print $1 }'
+root
+
+10.11.1.71> awk -F: '($3 == "0") { print }' /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+
+10.11.1.71> less /etc/sudoers
+/etc/sudoers: Permission denied
+
+10.11.1.71> sudo -l
+sudo: no tty present and no askpass program specified
+
+10.11.1.71> less /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,gibson
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:gibson
+floppy:x:25:
+tape:x:26:
+sudo:x:27:gibson
+audio:x:29:
+dip:x:30:gibson
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:gibson
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+libuuid:x:101:
+netdev:x:102:
+crontab:x:103:
+syslog:x:104:
+fuse:x:105:
+mysql:x:106:
+messagebus:x:107:
+mlocate:x:108:
+ssh:x:109:
+landscape:x:110:
+ssl-cert:x:111:
+gibson:x:1000:
+lpadmin:x:112:gibson
+sambashare:x:113:gibson
+ossec:x:1001:
+
+10.11.1.71> less /etc/shadow
+/etc/shadow: Permission denied
+
+10.11.1.71> less /etc/gshadow
+/etc/gshadow: Permission denied
+
+10.11.1.71> ls -lah /var/mail/
+total 8.0K
+drwxrwsr-x  2 root mail 4.0K Jul 22  2014 .
+drwxr-xr-x 14 root root 4.0K Oct  9  2014 ..
+
+10.11.1.71> ls -lahR /root/
+ls: cannot open directory /root/: Permission denied
+
+10.11.1.71> ls -lahR /home/
+/home/:
+total 12K
+drwxr-xr-x  3 root   root   4.0K Oct  9  2014 .
+drwxr-xr-x 22 root   root   4.0K Aug 12 14:50 ..
+drwxr-xr-x  3 gibson gibson 4.0K Oct 28  2014 gibson
+
+/home/gibson:
+total 28K
+drwxr-xr-x 3 gibson gibson 4.0K Oct 28  2014 .
+drwxr-xr-x 3 root   root   4.0K Oct  9  2014 ..
+-rw------- 1 gibson gibson   58 Aug 12 15:08 .bash_history
+-rw-r--r-- 1 gibson gibson  220 Oct  9  2014 .bash_logout
+-rw-r--r-- 1 gibson gibson 3.6K Oct  9  2014 .bashrc
+drwx------ 2 gibson gibson 4.0K Oct  9  2014 .cache
+-rw-r--r-- 1 gibson gibson  675 Oct  9  2014 .profile
+
+10.11.1.71> less /var/apache2/config.inc
+/var/apache2/config.inc: No such file or directory
+
+10.11.1.71> less /var/lib/mysql/mysql/user.MYD
+/var/lib/mysql/mysql/user.MYD: Permission denied
+
+10.11.1.71> less /root/anaconda-ks.cfg
+/root/anaconda-ks.cfg: Permission denied
+
+10.11.1.71> less ~/.bash_history
+/var/www/.bash_history: No such file or directory
+
+10.11.1.71> less ~/.nano_history
+/var/www/.nano_history: No such file or directory
+
+10.11.1.71> less ~/.atftp_history
+/var/www/.atftp_history: No such file or directory
+
+10.11.1.71> less ~/.mysql_history
+/var/www/.mysql_history: No such file or directory
+
+10.11.1.71> less ~/.php_history
+/var/www/.php_history: No such file or directory
+
+10.11.1.71> less ~/.bashrc
+/var/www/.bashrc: No such file or directory
+
+10.11.1.71> less ~/.profile
+/var/www/.profile: No such file or directory
+
+10.11.1.71> less /var/mail/root
+/var/mail/root: No such file or directory
+
+10.11.1.71> less /var/spool/mail/root
+/var/spool/mail/root: No such file or directory
+
