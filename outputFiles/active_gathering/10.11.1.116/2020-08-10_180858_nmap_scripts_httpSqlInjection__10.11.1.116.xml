@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Aug 10 18:23:12 2020 as: nmap -sV -p80 -&#45;script=http-sql-injection -oA 2020-08-10_180858_nmap_scripts_httpSqlInjection__10.11.1.116 10.11.1.116 -->
+<nmaprun scanner="nmap" args="nmap -sV -p80 -&#45;script=http-sql-injection -oA 2020-08-10_180858_nmap_scripts_httpSqlInjection__10.11.1.116 10.11.1.116" start="1597098192" startstr="Mon Aug 10 18:23:12 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597098193" endtime="1597098199"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.11.1.116" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script></port>
+</ports>
+<times srtt="19654" rttvar="16868" to="100000"/>
+</host>
+<runstats><finished time="1597098199" timestr="Mon Aug 10 18:23:19 2020" elapsed="6.85" summary="Nmap done at Mon Aug 10 18:23:19 2020; 1 IP address (1 host up) scanned in 6.85 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,72 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_recursive_administrator_10.11.1.116.txt
+START_TIME: Tue Aug 11 18:37:46 2020
+URL_BASE: http://10.11.1.116/administrator/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.116/administrator/ ----
+==> DIRECTORY: http://10.11.1.116/administrator/alerts/
+==> DIRECTORY: http://10.11.1.116/administrator/classes/
+==> DIRECTORY: http://10.11.1.116/administrator/components/
++ http://10.11.1.116/administrator/index.php (CODE:200|SIZE:4945)
+==> DIRECTORY: http://10.11.1.116/administrator/js/
+==> DIRECTORY: http://10.11.1.116/administrator/media/
+==> DIRECTORY: http://10.11.1.116/administrator/templates/
+
+---- Entering directory: http://10.11.1.116/administrator/alerts/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.116/administrator/classes/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.116/administrator/components/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.116/administrator/js/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.116/administrator/media/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.116/administrator/templates/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+-----------------
+END_TIME: Tue Aug 11 18:39:23 2020
+DOWNLOADED: 4612 - FOUND: 1
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_recursive_administrator_10.11.1.116.txt
+START_TIME: Tue Aug 11 18:40:05 2020
+URL_BASE: http://10.11.1.116/administrator/alerts/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.116/administrator/alerts/ ----
+
+-----------------
+END_TIME: Tue Aug 11 18:41:40 2020
+DOWNLOADED: 4612 - FOUND: 0

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Aug 10 18:12:02 2020 as: nmap -sS -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-10_180858_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.116 10.11.1.116
+Host: 10.11.1.116 ()	Status: Up
+Host: 10.11.1.116 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/, 110/open/tcp//tcpwrapped///, 143/open/tcp//tcpwrapped///	Ignored State: closed (65530)	Seq Index: 262	IP ID Seq: All zeros
+# Nmap done at Mon Aug 10 18:19:04 2020 -- 1 IP address (1 host up) scanned in 422.29 seconds

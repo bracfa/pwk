@@ -1,0 +1,38 @@
+# Nmap 7.80 scan initiated Wed Aug 12 13:40:32 2020 as: nmap -Pn --script=http-sitemap-generator -oA 2020-08-12_132845_nmap_scripts_httpSitemapGenerator__10.11.1.71 10.11.1.71
+Nmap scan report for 10.11.1.71
+Host is up (0.028s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1
+|     /site/css/
+|       css: 2
+|     /site/files/pages/
+|       jpg: 1; png: 1
+|     /site/images/features/
+|       jpg: 3
+|     /site/index.php/
+|       Other: 1
+|     /site/index.php/about/
+|       Other: 1
+|     /site/index.php/css/
+|       css: 1
+|     /site/index.php/glossary/acid/
+|       Other: 1
+|     /site/index.php/js/
+|       js: 1
+|     /site/index.php/tree-blog/
+|       Other: 1
+|     /site/js/
+|       js: 1
+|   Longest directory structure:
+|     Depth: 4
+|     Dir: /site/index.php/glossary/acid/
+|   Total files found (by extension):
+|_    Other: 5; css: 3; jpg: 4; js: 2; png: 1
+
+# Nmap done at Wed Aug 12 13:40:35 2020 -- 1 IP address (1 host up) scanned in 3.01 seconds

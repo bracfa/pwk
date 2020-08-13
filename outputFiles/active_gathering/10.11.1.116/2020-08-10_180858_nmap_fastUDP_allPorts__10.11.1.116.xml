@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Aug 10 18:20:30 2020 as: nmap -sU -p- -&#45;defeat-icmp-ratelimit -oA 2020-08-10_180858_nmap_fastUDP_allPorts__10.11.1.116 10.11.1.116 -->
+<nmaprun scanner="nmap" args="nmap -sU -p- -&#45;defeat-icmp-ratelimit -oA 2020-08-10_180858_nmap_fastUDP_allPorts__10.11.1.116 10.11.1.116" start="1597098030" startstr="Mon Aug 10 18:20:30 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597098030" endtime="1597098183"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.11.1.116" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed|filtered" count="65377">
+<extrareasons reason="no-responses" count="65377"/>
+</extraports>
+<extraports state="closed" count="158">
+<extrareasons reason="port-unreaches" count="158"/>
+</extraports>
+</ports>
+<times srtt="27979" rttvar="7729" to="100000"/>
+</host>
+<runstats><finished time="1597098183" timestr="Mon Aug 10 18:23:03 2020" elapsed="153.31" summary="Nmap done at Mon Aug 10 18:23:03 2020; 1 IP address (1 host up) scanned in 153.31 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

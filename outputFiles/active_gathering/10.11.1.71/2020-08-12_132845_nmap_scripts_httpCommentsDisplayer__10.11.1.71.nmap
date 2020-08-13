@@ -1,0 +1,263 @@
+# Nmap 7.80 scan initiated Wed Aug 12 13:40:31 2020 as: nmap -Pn --script=http-comments-displayer -oA 2020-08-12_132845_nmap_scripts_httpCommentsDisplayer__10.11.1.71 10.11.1.71
+Nmap scan report for 10.11.1.71
+Host is up (0.037s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.71
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 350
+|     Comment: 
+|         /* Sub Page Styles */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 52
+|     Comment: 
+|         /* Push Cells */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 13
+|     Comment: 
+|         /* !Defaults */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 68
+|     Comment: 
+|         /* !Generic, fractions */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 500
+|     Comment: 
+|         /* Hide some BigTree Bar Elements */
+|     
+|     Path: http://10.11.1.71:80/site/css/print.css
+|     Line number: 1
+|     Comment: 
+|         /*---------------------------
+|           Print Specific
+|         ---------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 333
+|     Comment: 
+|         /* Flexible Callout */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 226
+|     Comment: 
+|         /* Webkit Text Wrap Fix */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 10
+|     Comment: 
+|         /* !Reset Box-sizing */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 249
+|     Comment: 
+|         /*-------------------------------------------
+|           Global
+|         -------------------------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 421
+|     Comment: 
+|         /* Responsive Styles */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 105
+|     Comment: 
+|         /* !Tablet, 6 column, 720 (min 739) */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/glossary/acid/
+|     Line number: 16
+|     Comment: 
+|         <!--[if LTE IE 8]>
+|         			<script src="http://10.11.1.71/site/js/html5.js"></script>
+|         			<link rel="stylesheet" href="http://10.11.1.71/site/css/ie.css" type="text/css" media="all" />
+|         		<![endif]-->
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 2
+|     Comment: 
+|         /*$0*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 5
+|     Comment: 
+|         /*
+|          * jQuery doTimeout: Like setTimeout, but better! - v1.0 - 3/3/2010
+|          * http://benalman.com/projects/jquery-dotimeout-plugin/
+|          * 
+|          * Copyright (c) 2010 "Cowboy" Ben Alman
+|          * Dual licensed under the MIT and GPL licenses.
+|          * http://benalman.com/about/license/
+|          */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 14
+|     Comment: 
+|         /* Fallback */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 173
+|     Comment: 
+|         /*---------------------------
+|           Fonts
+|         ---------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 65
+|     Comment: 
+|         /* Center Cells */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 380
+|     Comment: 
+|         /* Blog Styles */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 76
+|     Comment: 
+|         /* !Desktop - Max, 12 column, 1200 (min 1221) */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 78
+|     Comment: 
+|         
+|         // IE HTML5 DOM Fix | http://jdbartlett.github.com/innershiv | WTFPL License
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 158
+|     Comment: 
+|         /*-----------------------------------------------------------------------------------
+|           Global Reset <http://meyerweb.com/eric/tools/css/reset/> v2.0 | 20110126
+|         -----------------------------------------------------------------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 79
+|     Comment: 
+|         /*@cc_on d.style.display = 'none'@*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 108
+|     Comment: 
+|          // only on enter
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 102
+|     Comment: 
+|          // exitBreakpoint
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 139
+|     Comment: 
+|         
+|         // HOME FEATURE
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 79
+|     Comment: 
+|         /*@cc_on document.body.removeChild(e);@*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 217
+|     Comment: 
+|         /*---------------------------
+|           Transitions
+|         ---------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 79
+|     Comment: 
+|         /*@cc_on document.body.appendChild(e);@*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 14
+|     Comment: 
+|         /*
+|         	
+|         */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 292
+|     Comment: 
+|         /* Homepage Styles */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 1
+|     Comment: 
+|         /*! jQuery v1.7.1 jquery.com | jquery.org/license */
+|     
+|     Path: http://10.11.1.71:80/site/js/html5.js
+|     Line number: 1
+|     Comment: 
+|         /* Pre-Define HTML5 Elements in IE */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 534
+|     Comment: 
+|         /* Hi-Res Display Assets */
+|     
+|     Path: http://10.11.1.71:80/site/css/ie.css
+|     Line number: 1
+|     Comment: 
+|         /*---------------------------
+|           IE Specific
+|         ---------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 38
+|     Comment: 
+|         /* !Desktop - Default, 12 column, 1220 + 960 (min 980), IE Standard */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 21
+|     Comment: 
+|         /* !Rows, Widest to Thinest */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 264
+|     Comment: 
+|         /*-------------------------------------------
+|           Structure
+|         -------------------------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 1
+|     Comment: 
+|         /*
+|          * Gridlock - A CSS responsive grid system [12 column standard]
+|          * @author Ben Plum
+|          * @version 0.1.9
+|          *
+|          * Copyright \xC2\xA9 2013 Ben Plum <mr@benplum.com>
+|          * Released under the MIT License <http://www.opensource.org/licenses/mitablet-license.php>
+|          */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 154
+|     Comment: 
+|         /* !Mobile - Min, 300 (max 500) */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 222
+|     Comment: 
+|         /*---------------------------
+|           Elements
+|         ---------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 162
+|     Comment: 
+|         /* HTML5 display-role reset for older browsers */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 132
+|     Comment: 
+|_        /* !Mobile, 3 column, 300 + 480 (max 740) */
+
+# Nmap done at Wed Aug 12 13:40:32 2020 -- 1 IP address (1 host up) scanned in 1.68 seconds

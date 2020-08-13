@@ -1,0 +1,142 @@
+
+### OPERATING SYSTEM ###
+
+10.11.1.71> pwd
+/usr/lib/cgi-bin
+
+10.11.1.71> whoami
+www-data
+
+10.11.1.71> hostname
+alpha
+
+10.11.1.71> uname -a
+Linux alpha 3.13.0-141-generic #190-Ubuntu SMP Fri Jan 19 12:52:38 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+
+10.11.1.71> less /etc/issue
+Ubuntu 14.04.1 LTS \n \l
+
+
+10.11.1.71> less /etc/*-release
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=14.04
+DISTRIB_CODENAME=trusty
+DISTRIB_DESCRIPTION="Ubuntu 14.04.1 LTS"
+
+10.11.1.71> cat /proc/version
+NAME="Ubuntu"
+VERSION="14.04.1 LTS, Trusty Tahr"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 14.04.1 LTS"
+VERSION_ID="14.04"
+HOME_URL="http://www.ubuntu.com/"
+SUPPORT_URL="http://help.ubuntu.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+
+10.11.1.71> cat /proc/version
+Linux version 3.13.0-141-generic (buildd@lgw01-amd64-018) (gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ) #190-Ubuntu SMP Fri Jan 19 12:52:38 UTC 2018
+
+10.11.1.71> cat /etc/profile
+Linux version 3.13.0-141-generic (buildd@lgw01-amd64-018) (gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ) #190-Ubuntu SMP Fri Jan 19 12:52:38 UTC 2018
+
+10.11.1.71> cat /etc/bashrc
+# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "$PS1" ]; then
+  if [ "$BASH" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then
+      . /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; then
+      PS1='# '
+    else
+      PS1='$ '
+    fi
+  fi
+fi
+
+# The default umask is now handled by pam_umask.
+# See pam_umask(8) and /etc/login.defs.
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+fi
+
+10.11.1.71> less ~/.bash_profile
+total 20
+drwxr-xr-x  2 root     root     4096 Oct  9  2014 .
+drwxr-xr-x 60 root     root     4096 Jan 17  2018 ..
+-rwxr-xr-x  1 www-data www-data  911 Oct  9  2014 admin.cgi
+-rwxr-xr-x  1 www-data www-data  272 Oct  9  2014 load.sh
+-rwxr-xr-x  1 www-data www-data  160 Oct  9  2014 test.cgi
+
+10.11.1.71> less ~/.bashrc
+/var/www/.bash_profile: No such file or directory
+
+10.11.1.71> less ~/.bash_logout
+/var/www/.bash.rc: No such file or directory
+
+10.11.1.71> 
+/var/www/.bash_logout: No such file or directory
+
+10.11.1.71> env
+HTTP_HOST=10.11.1.71
+PWD=/usr/lib/cgi-bin
+SHLVL=2
+HTTP_ACCEPT_ENCODING=identity
+HTTP_REFERER=() {  :
+}
+_=/usr/bin/env
+
+10.11.1.71> set
+BASH=/bin/bash
+
+10.11.1.71> lpstat -a
+BASHOPTS=cmdhist:complete_fullquote:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="3" [2]="11" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='4.3.11(1)-release'
+DIRSTACK=()
+EUID=33
+GROUPS=()
+HOSTNAME=alpha
+HOSTTYPE=x86_64
+HTTP_ACCEPT_ENCODING=identity
+HTTP_HOST=10.11.1.71
+IFS=$' \t\n'
+MACHTYPE=x86_64-pc-linux-gnu
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:.
+PIPESTATUS=([0]="0")
+PPID=3048
+PS4='+ '
+PWD=/usr/lib/cgi-bin
+SHELL=/usr/sbin/nologin
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=2
+TERM=dumb
+UID=33
+_=env
+HTTP_REFERER ()
+{
+    :
+}
+
+### APPLICATION AND SERVICES ###

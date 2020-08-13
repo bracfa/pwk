@@ -1,0 +1,456 @@
+# Nmap 7.80 scan initiated Wed Aug 12 13:31:58 2020 as: nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-12_132845_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.71 10.11.1.71
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 192.168.0.23
+|     Server Identifier: 192.168.0.1
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.0.1
+|_    Domain Name Server: 75.75.75.75, 75.75.76.76
+| broadcast-igmp-discovery: 
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.34
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|   192.168.0.254
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+| broadcast-listener: 
+|   udp
+|       DHCP
+|         srv ip       cli ip        mask           gw           dns                       vendor
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.22  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|_        192.168.0.1  192.168.0.22  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Unspecified, UPnP/1.0, Unspecified
+|_      Location: http://192.168.0.254:49152/wps_device.xml
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+Nmap scan report for 10.11.1.71
+Host is up (0.047s latency).
+Not shown: 65533 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_ssh-auth-methods: ERROR: Script execution failed (use -d to debug)
+| ssh-hostkey: 
+|   2048 1a:f6:a7:0d:ed:c2:73:a1:6f:a3:08:68:28:b5:3b:bb (RSA)
+|   256 e6:43:89:59:f9:85:d8:e2:bb:e3:d7:ed:28:5c:c5:65 (ECDSA)
+|_  256 3b:0b:f3:84:3c:7d:6e:2b:2c:81:11:94:16:9b:71:7d (ED25519)
+|_ssh-publickey-acceptance: ERROR: Script execution failed (use -d to debug)
+80/tcp open  http    Apache/2.4.7 (Ubuntu)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+| http-backup-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.71
+|   http://10.11.1.71:80/site/index.php/tree-blog/index.bak
+|   http://10.11.1.71:80/site/index.php/tree-blog/index.php/tree-blog/~
+|   http://10.11.1.71:80/site/index.php/tree-blog/index copy.php/tree-blog/
+|   http://10.11.1.71:80/site/index.php/tree-blog/Copy of index.php/tree-blog/
+|   http://10.11.1.71:80/site/index.php/tree-blog/Copy (2) of index.php/tree-blog/
+|   http://10.11.1.71:80/site/index.php/tree-blog/index.php/tree-blog/.1
+|   http://10.11.1.71:80/site/index.php/tree-blog/index.php/tree-blog/.~1~
+|   http://10.11.1.71:80/site/index.php/index.bak
+|   http://10.11.1.71:80/site/index.php/index.php/~
+|   http://10.11.1.71:80/site/index.php/index copy.php/
+|   http://10.11.1.71:80/site/index.php/Copy of index.php/
+|   http://10.11.1.71:80/site/index.php/Copy (2) of index.php/
+|   http://10.11.1.71:80/site/index.php/index.php/.1
+|   http://10.11.1.71:80/site/index.php/index.php/.~1~
+|   http://10.11.1.71:80/site/index.php/glossary/acid/index.bak
+|   http://10.11.1.71:80/site/index.php/glossary/acid/index.php/glossary/acid/~
+|   http://10.11.1.71:80/site/index.php/glossary/acid/index copy.php/glossary/acid/
+|   http://10.11.1.71:80/site/index.php/glossary/acid/Copy of index.php/glossary/acid/
+|   http://10.11.1.71:80/site/index.php/glossary/acid/Copy (2) of index.php/glossary/acid/
+|   http://10.11.1.71:80/site/index.php/glossary/acid/index.php/glossary/acid/.1
+|   http://10.11.1.71:80/site/index.php/glossary/acid/index.php/glossary/acid/.~1~
+|   http://10.11.1.71:80/site/index.php/about/index.bak
+|   http://10.11.1.71:80/site/index.php/about/index.php/about/~
+|   http://10.11.1.71:80/site/index.php/about/index copy.php/about/
+|   http://10.11.1.71:80/site/index.php/about/Copy of index.php/about/
+|   http://10.11.1.71:80/site/index.php/about/Copy (2) of index.php/about/
+|   http://10.11.1.71:80/site/index.php/about/index.php/about/.1
+|_  http://10.11.1.71:80/site/index.php/about/index.php/about/.~1~
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.71
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 79
+|     Comment: 
+|         /*@cc_on document.body.removeChild(e);@*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 154
+|     Comment: 
+|         /* !Mobile - Min, 300 (max 500) */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 534
+|     Comment: 
+|         /* Hi-Res Display Assets */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 108
+|     Comment: 
+|          // only on enter
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 139
+|     Comment: 
+|         
+|         // HOME FEATURE
+|     
+|     Path: http://10.11.1.71:80/site/index.php/about/
+|     Line number: 16
+|     Comment: 
+|         <!--[if LTE IE 8]>
+|         			<script src="http://10.11.1.71/site/js/html5.js"></script>
+|         			<link rel="stylesheet" href="http://10.11.1.71/site/css/ie.css" type="text/css" media="all" />
+|         		<![endif]-->
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 14
+|     Comment: 
+|         /* Fallback */
+|     
+|     Path: http://10.11.1.71:80/site/css/ie.css
+|     Line number: 1
+|     Comment: 
+|         /*---------------------------
+|           IE Specific
+|         ---------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 132
+|     Comment: 
+|         /* !Mobile, 3 column, 300 + 480 (max 740) */
+|     
+|     Path: http://10.11.1.71:80/site/js/html5.js
+|     Line number: 1
+|     Comment: 
+|         /* Pre-Define HTML5 Elements in IE */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 68
+|     Comment: 
+|         /* !Generic, fractions */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 222
+|     Comment: 
+|         /*---------------------------
+|           Elements
+|         ---------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 79
+|     Comment: 
+|         /*@cc_on d.style.display = 'none'@*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 13
+|     Comment: 
+|         /* !Defaults */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 10
+|     Comment: 
+|         /* !Reset Box-sizing */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 79
+|     Comment: 
+|         /*@cc_on document.body.appendChild(e);@*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 158
+|     Comment: 
+|         /*-----------------------------------------------------------------------------------
+|           Global Reset <http://meyerweb.com/eric/tools/css/reset/> v2.0 | 20110126
+|         -----------------------------------------------------------------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 14
+|     Comment: 
+|         /*
+|         	
+|         */
+|     
+|     Path: http://10.11.1.71:80/site/css/print.css
+|     Line number: 1
+|     Comment: 
+|         /*---------------------------
+|           Print Specific
+|         ---------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 2
+|     Comment: 
+|         /*$0*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 264
+|     Comment: 
+|         /*-------------------------------------------
+|           Structure
+|         -------------------------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 500
+|     Comment: 
+|         /* Hide some BigTree Bar Elements */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 102
+|     Comment: 
+|          // exitBreakpoint
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 421
+|     Comment: 
+|         /* Responsive Styles */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 380
+|     Comment: 
+|         /* Blog Styles */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 350
+|     Comment: 
+|         /* Sub Page Styles */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 333
+|     Comment: 
+|         /* Flexible Callout */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 105
+|     Comment: 
+|         /* !Tablet, 6 column, 720 (min 739) */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 76
+|     Comment: 
+|         /* !Desktop - Max, 12 column, 1200 (min 1221) */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 5
+|     Comment: 
+|         /*
+|          * jQuery doTimeout: Like setTimeout, but better! - v1.0 - 3/3/2010
+|          * http://benalman.com/projects/jquery-dotimeout-plugin/
+|          * 
+|          * Copyright (c) 2010 "Cowboy" Ben Alman
+|          * Dual licensed under the MIT and GPL licenses.
+|          * http://benalman.com/about/license/
+|          */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 292
+|     Comment: 
+|         /* Homepage Styles */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 78
+|     Comment: 
+|         
+|         // IE HTML5 DOM Fix | http://jdbartlett.github.com/innershiv | WTFPL License
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 52
+|     Comment: 
+|         /* Push Cells */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 249
+|     Comment: 
+|         /*-------------------------------------------
+|           Global
+|         -------------------------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 1
+|     Comment: 
+|         /*
+|          * Gridlock - A CSS responsive grid system [12 column standard]
+|          * @author Ben Plum
+|          * @version 0.1.9
+|          *
+|          * Copyright \xC2\xA9 2013 Ben Plum <mr@benplum.com>
+|          * Released under the MIT License <http://www.opensource.org/licenses/mitablet-license.php>
+|          */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 226
+|     Comment: 
+|         /* Webkit Text Wrap Fix */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 173
+|     Comment: 
+|         /*---------------------------
+|           Fonts
+|         ---------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/js/site.js
+|     Line number: 1
+|     Comment: 
+|         /*! jQuery v1.7.1 jquery.com | jquery.org/license */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 217
+|     Comment: 
+|         /*---------------------------
+|           Transitions
+|         ---------------------------*/
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 38
+|     Comment: 
+|         /* !Desktop - Default, 12 column, 1220 + 960 (min 980), IE Standard */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 162
+|     Comment: 
+|         /* HTML5 display-role reset for older browsers */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 21
+|     Comment: 
+|         /* !Rows, Widest to Thinest */
+|     
+|     Path: http://10.11.1.71:80/site/index.php/css/site.css
+|     Line number: 65
+|     Comment: 
+|_        /* Center Cells */
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.71
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.11.1.71:80/site/index.php/tree-blog/
+|     Form id: 
+|_    Form action: http://10.11.1.71/site/index.php/tree-blog/search/
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-grep: 
+|   (1) http://10.11.1.71:80/: 
+|     (1) email: 
+|       + support@bigtreecms.org
+|   (1) http://10.11.1.71:80/site/index.php/css/site.css: 
+|     (1) email: 
+|_      + mr@benplum.com
+| http-headers: 
+|   Date: Wed, 12 Aug 2020 17:34:50 GMT
+|   Server: Apache/2.4.7 (Ubuntu)
+|   X-Powered-By: PHP/5.5.9-1ubuntu4.4
+|   Set-Cookie: PHPSESSID=gdfpie5sc2s3vkejdtmmj9fdv2; path=/
+|   Expires: Thu, 19 Nov 1981 08:52:00 GMT
+|   Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+|   Pragma: no-cache
+|   Vary: Accept-Encoding
+|   Content-Length: 6845
+|   Connection: close
+|   Content-Type: text/html
+|   
+|_  (Request type: GET)
+|_http-mobileversion-checker: No mobile version detected.
+|_http-phpself-xss: ERROR: Script execution failed (use -d to debug)
+| http-referer-checker: 
+| Spidering limited to: maxpagecount=30
+|_  http://s7.addthis.com:80/js/250/addthis_widget.js
+|_http-security-headers: 
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-traceroute: ERROR: Script execution failed (use -d to debug)
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Redirected To: site/index.php/
+|   Change in Status Code: 
+|_    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html): false
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-xssed: No previously reported XSS vuln.
+Device type: firewall
+Running (JUST GUESSING): Fortinet embedded (87%)
+OS CPE: cpe:/h:fortinet:fortigate_100d
+Aggressive OS guesses: Fortinet FortiGate 100D firewall (87%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_fcrdns: FAIL (No PTR record)
+|_ipidseq: Unknown
+| qscan: 
+| PORT  FAMILY  MEAN (us)  STDDEV  LOSS (%)
+| 1     0       0.00       -0.00   100.0%
+| 22    1       0.00       -0.00   100.0%
+|_80    2       0.00       -0.00   100.0%
+| traceroute-geolocation: 
+|   HOP  RTT    ADDRESS        GEOLOCATION
+|   1    31.24  192.168.119.1  - ,- 
+|   2    ...
+|   3    ...
+|   4    ...
+|   5    ...
+|   6    ...
+|   7    ...
+|   8    ...
+|   9    ...
+|   10   ...
+|   11   ...
+|   12   ...
+|   13   ...
+|   14   ...
+|   15   ...
+|   16   ...
+|   17   ...
+|   18   ...
+|   19   ...
+|   20   ...
+|   21   ...
+|   22   ...
+|   23   ...
+|   24   ...
+|   25   ...
+|   26   ...
+|   27   ...
+|   28   ...
+|   29   ...
+|_  30   ...
+
+TRACEROUTE (using port 587/tcp)
+HOP RTT      ADDRESS
+1   31.24 ms 192.168.119.1
+2   ... 30
+
+Post-scan script results:
+| reverse-index: 
+|   22/tcp: 10.11.1.71
+|_  80/tcp: 10.11.1.71
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 12 13:36:49 2020 -- 1 IP address (1 host up) scanned in 290.81 seconds

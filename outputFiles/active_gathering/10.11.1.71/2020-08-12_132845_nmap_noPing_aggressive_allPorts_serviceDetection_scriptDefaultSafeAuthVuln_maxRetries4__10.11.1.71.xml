@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 12 13:31:58 2020 as: nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-12_132845_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.71 10.11.1.71 -->
+<nmaprun scanner="nmap" args="nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-12_132845_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.71 10.11.1.71" start="1597253518" startstr="Wed Aug 12 13:31:58 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<prescript><script id="broadcast-dhcp-discover" output="&#xa;  Response 1 of 1: &#xa;    IP Offered: 192.168.0.23&#xa;    Server Identifier: 192.168.0.1&#xa;    Subnet Mask: 255.255.255.0&#xa;    Router: 192.168.0.1&#xa;    Domain Name Server: 75.75.75.75, 75.75.76.76"><table key="Response 1 of 1">
+<elem key="IP Offered">192.168.0.23</elem>
+<elem key="Server Identifier">192.168.0.1</elem>
+<elem key="Subnet Mask">255.255.255.0</elem>
+<elem key="Router">192.168.0.1</elem>
+<table key="Domain Name Server">
+<elem>75.75.75.75</elem>
+<elem>75.75.76.76</elem>
+</table>
+</table>
+</script><script id="broadcast-igmp-discovery" output="&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.34&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  192.168.0.254&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  Use the newtargets script-arg to add the results as targets&#xa;"/><script id="broadcast-listener" output="&#xa;  udp&#xa;      DHCP&#xa;        srv ip       cli ip        mask           gw           dns                       vendor&#xa;        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.22  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.22  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;"/><script id="broadcast-netbios-master-browser" output="&#xa;ip  server  domain&#xa;"/><script id="broadcast-upnp-info" output="&#xa;  239.255.255.250&#xa;      Server: Unspecified, UPnP/1.0, Unspecified&#xa;      Location: http://192.168.0.254:49152/wps_device.xml&#xa;"/><script id="eap-info" output="please specify an interface with -e"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/></prescript><host starttime="1597253559" endtime="1597253809"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.71" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="resets" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="6.6.1p1 Ubuntu 2ubuntu2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.1p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="ssh-auth-methods" output="ERROR: Script execution failed (use -d to debug)"/><script id="ssh-hostkey" output="&#xa;  2048 1a:f6:a7:0d:ed:c2:73:a1:6f:a3:08:68:28:b5:3b:bb (RSA)&#xa;  256 e6:43:89:59:f9:85:d8:e2:bb:e3:d7:ed:28:5c:c5:65 (ECDSA)&#xa;  256 3b:0b:f3:84:3c:7d:6e:2b:2c:81:11:94:16:9b:71:7d (ED25519)"><table>
+<elem key="fingerprint">1af6a70dedc273a16fa3086828b53bbb</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDSZYpYor7ahn/cRF6dX6qxqoI+c+/N+TQSuSqto6S38bCWRIjv8eGQCOFScThYM6yLdxLBno0xRQ8GJY0DgHs9rIfU//3KpO4YqVvVF0iG+NVlhNrksDGFams55lbOdku55VUpU1rX4UJ7GVHHwF2wDBLZ+E1iZktuMVs7yZ4FKXpfnLOWIJ6lsqIqwLCLaeEhwcp1/jt/ZvOI4fj1PmOP5HMMf2A2F7pb+/ypsAlhQxst2jLNlXVLy8M2x6+jnke8KpSgQa0+0ptl3y7IYWPKkg93WBowSFfTsetIHH9LB/P6UnMfHphr3gA7PtNoAJdIe1TNXU76sW6U5PMeOdAT</elem>
+</table>
+<table>
+<elem key="fingerprint">e6438959f985d8e2bbe3d7ed285cc565</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKPA2Hze5sMxed/a1Mlp4J5Cwlc+bcknkXE3iJLITxrSwAsuuJq/7eEXA+vA80qyLh8tlTDQrt0gUaW7v15PhD8=</elem>
+</table>
+<table>
+<elem key="fingerprint">3b0bf3843c7d6e2b2c811194169b717d</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIDvb5Nu4EkoIe1euGgqiXD2j0kxmqct0LB0R8G350t16</elem>
+</table>
+</script><script id="ssh-publickey-acceptance" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache/2.4.7 (Ubuntu)" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-aspnet-debug" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-backup-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.71&#xa;  http://10.11.1.71:80/site/index.php/tree-blog/index.bak&#xa;  http://10.11.1.71:80/site/index.php/tree-blog/index.php/tree-blog/~&#xa;  http://10.11.1.71:80/site/index.php/tree-blog/index copy.php/tree-blog/&#xa;  http://10.11.1.71:80/site/index.php/tree-blog/Copy of index.php/tree-blog/&#xa;  http://10.11.1.71:80/site/index.php/tree-blog/Copy (2) of index.php/tree-blog/&#xa;  http://10.11.1.71:80/site/index.php/tree-blog/index.php/tree-blog/.1&#xa;  http://10.11.1.71:80/site/index.php/tree-blog/index.php/tree-blog/.~1~&#xa;  http://10.11.1.71:80/site/index.php/index.bak&#xa;  http://10.11.1.71:80/site/index.php/index.php/~&#xa;  http://10.11.1.71:80/site/index.php/index copy.php/&#xa;  http://10.11.1.71:80/site/index.php/Copy of index.php/&#xa;  http://10.11.1.71:80/site/index.php/Copy (2) of index.php/&#xa;  http://10.11.1.71:80/site/index.php/index.php/.1&#xa;  http://10.11.1.71:80/site/index.php/index.php/.~1~&#xa;  http://10.11.1.71:80/site/index.php/glossary/acid/index.bak&#xa;  http://10.11.1.71:80/site/index.php/glossary/acid/index.php/glossary/acid/~&#xa;  http://10.11.1.71:80/site/index.php/glossary/acid/index copy.php/glossary/acid/&#xa;  http://10.11.1.71:80/site/index.php/glossary/acid/Copy of index.php/glossary/acid/&#xa;  http://10.11.1.71:80/site/index.php/glossary/acid/Copy (2) of index.php/glossary/acid/&#xa;  http://10.11.1.71:80/site/index.php/glossary/acid/index.php/glossary/acid/.1&#xa;  http://10.11.1.71:80/site/index.php/glossary/acid/index.php/glossary/acid/.~1~&#xa;  http://10.11.1.71:80/site/index.php/about/index.bak&#xa;  http://10.11.1.71:80/site/index.php/about/index.php/about/~&#xa;  http://10.11.1.71:80/site/index.php/about/index copy.php/about/&#xa;  http://10.11.1.71:80/site/index.php/about/Copy of index.php/about/&#xa;  http://10.11.1.71:80/site/index.php/about/Copy (2) of index.php/about/&#xa;  http://10.11.1.71:80/site/index.php/about/index.php/about/.1&#xa;  http://10.11.1.71:80/site/index.php/about/index.php/about/.~1~&#xa;"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.71&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/js/site.js&#xa;    Line number: 79&#xa;    Comment: &#xa;        /*@cc_on document.body.removeChild(e);@*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 154&#xa;    Comment: &#xa;        /* !Mobile - Min, 300 (max 500) */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 534&#xa;    Comment: &#xa;        /* Hi-Res Display Assets */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/js/site.js&#xa;    Line number: 108&#xa;    Comment: &#xa;         // only on enter&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/js/site.js&#xa;    Line number: 139&#xa;    Comment: &#xa;        &#xa;        // HOME FEATURE&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/about/&#xa;    Line number: 16&#xa;    Comment: &#xa;        &lt;!-&#45;[if LTE IE 8]&gt;&#xa;        &#x9;&#x9;&#x9;&lt;script src=&quot;http://10.11.1.71/site/js/html5.js&quot;&gt;&lt;/script&gt;&#xa;        &#x9;&#x9;&#x9;&lt;link rel=&quot;stylesheet&quot; href=&quot;http://10.11.1.71/site/css/ie.css&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;&#xa;        &#x9;&#x9;&lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 14&#xa;    Comment: &#xa;        /* Fallback */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/css/ie.css&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#xa;          IE Specific&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 132&#xa;    Comment: &#xa;        /* !Mobile, 3 column, 300 + 480 (max 740) */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/js/html5.js&#xa;    Line number: 1&#xa;    Comment: &#xa;        /* Pre-Define HTML5 Elements in IE */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 68&#xa;    Comment: &#xa;        /* !Generic, fractions */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 222&#xa;    Comment: &#xa;        /*-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#xa;          Elements&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/js/site.js&#xa;    Line number: 79&#xa;    Comment: &#xa;        /*@cc_on d.style.display = &apos;none&apos;@*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 13&#xa;    Comment: &#xa;        /* !Defaults */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 10&#xa;    Comment: &#xa;        /* !Reset Box-sizing */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/js/site.js&#xa;    Line number: 79&#xa;    Comment: &#xa;        /*@cc_on document.body.appendChild(e);@*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 158&#xa;    Comment: &#xa;        /*-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#xa;          Global Reset &lt;http://meyerweb.com/eric/tools/css/reset/&gt; v2.0 | 20110126&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/js/site.js&#xa;    Line number: 14&#xa;    Comment: &#xa;        /*&#xa;        &#x9;&#xa;        */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/css/print.css&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#xa;          Print Specific&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/js/site.js&#xa;    Line number: 2&#xa;    Comment: &#xa;        /*$0*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 264&#xa;    Comment: &#xa;        /*-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#xa;          Structure&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 500&#xa;    Comment: &#xa;        /* Hide some BigTree Bar Elements */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/js/site.js&#xa;    Line number: 102&#xa;    Comment: &#xa;         // exitBreakpoint&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 421&#xa;    Comment: &#xa;        /* Responsive Styles */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 380&#xa;    Comment: &#xa;        /* Blog Styles */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 350&#xa;    Comment: &#xa;        /* Sub Page Styles */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 333&#xa;    Comment: &#xa;        /* Flexible Callout */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 105&#xa;    Comment: &#xa;        /* !Tablet, 6 column, 720 (min 739) */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 76&#xa;    Comment: &#xa;        /* !Desktop - Max, 12 column, 1200 (min 1221) */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/js/site.js&#xa;    Line number: 5&#xa;    Comment: &#xa;        /*&#xa;         * jQuery doTimeout: Like setTimeout, but better! - v1.0 - 3/3/2010&#xa;         * http://benalman.com/projects/jquery-dotimeout-plugin/&#xa;         * &#xa;         * Copyright (c) 2010 &quot;Cowboy&quot; Ben Alman&#xa;         * Dual licensed under the MIT and GPL licenses.&#xa;         * http://benalman.com/about/license/&#xa;         */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 292&#xa;    Comment: &#xa;        /* Homepage Styles */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/js/site.js&#xa;    Line number: 78&#xa;    Comment: &#xa;        &#xa;        // IE HTML5 DOM Fix | http://jdbartlett.github.com/innershiv | WTFPL License&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 52&#xa;    Comment: &#xa;        /* Push Cells */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 249&#xa;    Comment: &#xa;        /*-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#xa;          Global&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*&#xa;         * Gridlock - A CSS responsive grid system [12 column standard]&#xa;         * @author Ben Plum&#xa;         * @version 0.1.9&#xa;         *&#xa;         * Copyright \xC2\xA9 2013 Ben Plum &lt;mr@benplum.com&gt;&#xa;         * Released under the MIT License &lt;http://www.opensource.org/licenses/mitablet-license.php&gt;&#xa;         */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 226&#xa;    Comment: &#xa;        /* Webkit Text Wrap Fix */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 173&#xa;    Comment: &#xa;        /*-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#xa;          Fonts&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/js/site.js&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*! jQuery v1.7.1 jquery.com | jquery.org/license */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 217&#xa;    Comment: &#xa;        /*-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#xa;          Transitions&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 38&#xa;    Comment: &#xa;        /* !Desktop - Default, 12 column, 1220 + 960 (min 980), IE Standard */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 162&#xa;    Comment: &#xa;        /* HTML5 display-role reset for older browsers */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 21&#xa;    Comment: &#xa;        /* !Rows, Widest to Thinest */&#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/css/site.css&#xa;    Line number: 65&#xa;    Comment: &#xa;        /* Center Cells */&#xa;"/><script id="http-cookie-flags" output="&#xa;  /: &#xa;    PHPSESSID: &#xa;      httponly flag not set"><table key="/">
+<table key="PHPSESSID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.71&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://10.11.1.71:80/site/index.php/tree-blog/&#xa;    Form id: &#xa;    Form action: http://10.11.1.71/site/index.php/tree-blog/search/&#xa;"/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-grep" output="&#xa;  (1) http://10.11.1.71:80/: &#xa;    (1) email: &#xa;      + support@bigtreecms.org&#xa;  (1) http://10.11.1.71:80/site/index.php/css/site.css: &#xa;    (1) email: &#xa;      + mr@benplum.com"><table key="(1) http://10.11.1.71:80/">
+<table key="(1) email">
+<elem>+ support@bigtreecms.org</elem>
+</table>
+</table>
+<table key="(1) http://10.11.1.71:80/site/index.php/css/site.css">
+<table key="(1) email">
+<elem>+ mr@benplum.com</elem>
+</table>
+</table>
+</script><script id="http-headers" output="&#xa;  Date: Wed, 12 Aug 2020 17:34:50 GMT&#xa;  Server: Apache/2.4.7 (Ubuntu)&#xa;  X-Powered-By: PHP/5.5.9-1ubuntu4.4&#xa;  Set-Cookie: PHPSESSID=gdfpie5sc2s3vkejdtmmj9fdv2; path=/&#xa;  Expires: Thu, 19 Nov 1981 08:52:00 GMT&#xa;  Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0&#xa;  Pragma: no-cache&#xa;  Vary: Accept-Encoding&#xa;  Content-Length: 6845&#xa;  Connection: close&#xa;  Content-Type: text/html&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-phpself-xss" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-referer-checker" output="&#xa;Spidering limited to: maxpagecount=30&#xa;  http://s7.addthis.com:80/js/250/addthis_widget.js&#xa;"/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="Apache/2.4.7 (Ubuntu)"><elem>Apache/2.4.7 (Ubuntu)</elem>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-traceroute" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Redirected To: site/index.php/&#xa;  Change in Status Code: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html): false"><elem key="Status for browser useragent">200</elem>
+<elem key="Redirected To">site/index.php/</elem>
+<table key="Change in Status Code">
+<elem key="Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)">false</elem>
+</table>
+</script><script id="http-vuln-cve2014-3704" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-xssed" output="No previously reported XSS vuln."/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<osmatch name="Fortinet FortiGate 100D firewall" accuracy="87" line="25595">
+<osclass type="firewall" vendor="Fortinet" osfamily="embedded" accuracy="87"><cpe>cpe:/h:fortinet:fortigate_100d</cpe></osclass>
+</osmatch>
+</os>
+<hostscript><script id="fcrdns" output="FAIL (No PTR record)"><table key="&lt;none&gt;">
+<elem key="status">fail</elem>
+<elem key="reason">No PTR record</elem>
+</table>
+</script><script id="ipidseq" output="Unknown"/><script id="qscan" output="&#xa;PORT  FAMILY  MEAN (us)  STDDEV  LOSS (%)&#xa;1     0       0.00       -0.00   100.0%&#xa;22    1       0.00       -0.00   100.0%&#xa;80    2       0.00       -0.00   100.0%&#xa;"/><script id="traceroute-geolocation" output="&#xa;  HOP  RTT    ADDRESS        GEOLOCATION&#xa;  1    31.24  192.168.119.1  - ,- &#xa;  2    ...&#xa;  3    ...&#xa;  4    ...&#xa;  5    ...&#xa;  6    ...&#xa;  7    ...&#xa;  8    ...&#xa;  9    ...&#xa;  10   ...&#xa;  11   ...&#xa;  12   ...&#xa;  13   ...&#xa;  14   ...&#xa;  15   ...&#xa;  16   ...&#xa;  17   ...&#xa;  18   ...&#xa;  19   ...&#xa;  20   ...&#xa;  21   ...&#xa;  22   ...&#xa;  23   ...&#xa;  24   ...&#xa;  25   ...&#xa;  26   ...&#xa;  27   ...&#xa;  28   ...&#xa;  29   ...&#xa;  30   ...&#xa;"><table>
+<elem key="ip">192.168.119.1</elem>
+<elem key="hop">1</elem>
+<elem key="rtt">31.24</elem>
+</table>
+<table>
+<elem key="hop">2</elem>
+</table>
+<table>
+<elem key="hop">3</elem>
+</table>
+<table>
+<elem key="hop">4</elem>
+</table>
+<table>
+<elem key="hop">5</elem>
+</table>
+<table>
+<elem key="hop">6</elem>
+</table>
+<table>
+<elem key="hop">7</elem>
+</table>
+<table>
+<elem key="hop">8</elem>
+</table>
+<table>
+<elem key="hop">9</elem>
+</table>
+<table>
+<elem key="hop">10</elem>
+</table>
+<table>
+<elem key="hop">11</elem>
+</table>
+<table>
+<elem key="hop">12</elem>
+</table>
+<table>
+<elem key="hop">13</elem>
+</table>
+<table>
+<elem key="hop">14</elem>
+</table>
+<table>
+<elem key="hop">15</elem>
+</table>
+<table>
+<elem key="hop">16</elem>
+</table>
+<table>
+<elem key="hop">17</elem>
+</table>
+<table>
+<elem key="hop">18</elem>
+</table>
+<table>
+<elem key="hop">19</elem>
+</table>
+<table>
+<elem key="hop">20</elem>
+</table>
+<table>
+<elem key="hop">21</elem>
+</table>
+<table>
+<elem key="hop">22</elem>
+</table>
+<table>
+<elem key="hop">23</elem>
+</table>
+<table>
+<elem key="hop">24</elem>
+</table>
+<table>
+<elem key="hop">25</elem>
+</table>
+<table>
+<elem key="hop">26</elem>
+</table>
+<table>
+<elem key="hop">27</elem>
+</table>
+<table>
+<elem key="hop">28</elem>
+</table>
+<table>
+<elem key="hop">29</elem>
+</table>
+<table>
+<elem key="hop">30</elem>
+</table>
+</script></hostscript><trace port="587" proto="tcp">
+<hop ttl="1" ipaddr="192.168.119.1" rtt="31.24"/>
+</trace>
+<times srtt="46976" rttvar="5174" to="100000"/>
+</host>
+<postscript><script id="reverse-index" output="&#xa;  22/tcp: 10.11.1.71&#xa;  80/tcp: 10.11.1.71"><table key="22/tcp">
+<elem>10.11.1.71</elem>
+</table>
+<table key="80/tcp">
+<elem>10.11.1.71</elem>
+</table>
+</script></postscript><runstats><finished time="1597253809" timestr="Wed Aug 12 13:36:49 2020" elapsed="290.81" summary="Nmap done at Wed Aug 12 13:36:49 2020; 1 IP address (1 host up) scanned in 290.81 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

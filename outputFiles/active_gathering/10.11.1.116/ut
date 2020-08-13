@@ -1,0 +1,87 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: ut
+START_TIME: Tue Aug 11 04:25:18 2020
+URL_BASE: http://10.11.1.116/administrator/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.116/administrator/ ----
+==> DIRECTORY: http://10.11.1.116/administrator/alerts/
+==> DIRECTORY: http://10.11.1.116/administrator/classes/
+==> DIRECTORY: http://10.11.1.116/administrator/components/
++ http://10.11.1.116/administrator/index.php (CODE:200|SIZE:4945)
+==> DIRECTORY: http://10.11.1.116/administrator/js/
+==> DIRECTORY: http://10.11.1.116/administrator/media/
+==> DIRECTORY: http://10.11.1.116/administrator/templates/
+
+---- Entering directory: http://10.11.1.116/administrator/alerts/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.116/administrator/classes/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.116/administrator/components/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.116/administrator/js/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.116/administrator/media/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.116/administrator/templates/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+-----------------
+END_TIME: Tue Aug 11 04:26:47 2020
+DOWNLOADED: 4612 - FOUND: 1
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: ut
+START_TIME: Tue Aug 11 04:28:32 2020
+URL_BASE: http://10.11.1.116/db/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.116/db/ ----
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: ut
+START_TIME: Tue Aug 11 04:30:14 2020
+URL_BASE: http://10.11.1.116/db/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.116/db/ ----
+
+-----------------
+END_TIME: Tue Aug 11 04:31:41 2020
+DOWNLOADED: 4612 - FOUND: 0

@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Wed Aug 12 13:40:27 2020 as: nmap -Pn --script=http-enum -oA 2020-08-12_132845_nmap_scripts_httpEnum__10.11.1.71 10.11.1.71
+Nmap scan report for 10.11.1.71
+Host is up (0.031s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+| http-enum: 
+|   /phpmyadmin/: phpMyAdmin
+|   /cache/: Potentially interesting directory w/ listing on 'apache/2.4.7 (ubuntu)'
+|   /core/: Potentially interesting directory w/ listing on 'apache/2.4.7 (ubuntu)'
+|   /custom/: Potentially interesting directory w/ listing on 'apache/2.4.7 (ubuntu)'
+|   /site/: Potentially interesting folder
+|_  /templates/: Potentially interesting directory w/ listing on 'apache/2.4.7 (ubuntu)'
+
+# Nmap done at Wed Aug 12 13:40:31 2020 -- 1 IP address (1 host up) scanned in 3.40 seconds

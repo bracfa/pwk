@@ -62,6 +62,7 @@ do
     echo "$PASS" | sudo -S nmap -sV -sT -p- "$IP" -oA "$TS""nmap_CONNECT_allPorts_serviceDetection__""$IP"
     # NMAP TCP SYN (Stealth)
     echo "$PASS" | sudo -S nmap -sS -A -p- -sV --script default,safe,auth,vuln --max-retries 4 "$IP" -oA "$TS""nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__""$IP"
+    echo "$PASS" | sudo -S nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 "$IP" -oA "$TS""nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__""$IP"
     # NMAP SYN ACK (could be firewall detection)
     echo "$PASS" | sudo -S nmap -sA "$IP" -oA "$TS""nmap_ACK__""$IP"
     # NMAP no ping. Port scan with fingerprinting only
@@ -85,7 +86,8 @@ do
     echo "$PASS" | sudo -S nmap -Pn --script="http-userdir-enum" "$IP" -oA "$TS""nmap_scripts_httpUserdirEnum__""$IP"
     
     # SQL injection
-    echo "$PASS" | sudo -S nmap -sV -p80 --script="http-sql-injection" "$IP" -oA "$TS""nmap_scripts_httpSqlInjection__""$IP"
+    #echo "$PASS" | sudo -S nmap -sV -p80 --script="http-sql-injection" "$IP" -oA "$TS""nmap_scripts_httpSqlInjection__""$IP"
+    echo "$PASS" | sudo -S nmap -Pn -sV -p80 --script="http-sql-injection" "$IP" -oA "$TS""nmap_scripts_httpSqlInjection__""$IP"
     
     #-- SSL --#
     # NMAP SSL script
@@ -110,13 +112,16 @@ for arg in "$@"
 do
   if [[ "$arg" =~ "smb" ]]
   then
+    echo "-------------------------"
     echo "Starting: $arg scan"
     # Scan for NetBIOS using nmap
-    echo "$PASS" | sudo -S nmap -v -p 139,445 "$IP" -oA "$TS""nmap_SMB_netBIOS__""$IP"
+    #echo "$PASS" | sudo -S nmap -v -p 139,445 "$IP" -oA "$TS""nmap_SMB_netBIOS__""$IP"
+    echo "$PASS" | sudo -S nmap -Pn -v -p 139,445 "$IP" -oA "$TS""nmap_noPing_SMB_netBIOS__""$IP"
     # Scan for NETBIOS service using nbtscan
     echo "$PASS" | sudo -S nbtscan -r -s : "$IP" > "$TS""nbtscan_SMB_netBIOS__$IP"".txt" 2>&1
     # Use nmap SMB NSE scripts
-    echo "$PASS" | sudo -S nmap -v -p 139,445 --script "*smb*" "$IP" -oA "$TS""nmap_scripts_SMB__""$IP"
+    #echo "$PASS" | sudo -S nmap -v -p 139,445 --script "*smb*" "$IP" -oA "$TS""nmap_scripts_SMB__""$IP"
+    echo "$PASS" | sudo -S nmap -Pn -v -p 139,445 --script "*smb*" "$IP" -oA "$TS""nmap_noPing_scripts_SMB__""$IP"
   fi
 done
 
@@ -125,14 +130,17 @@ for arg in "$@"
 do
   if [[ "$arg" =~ "nfs" ]]
   then
+    echo "-------------------------"
     echo "Starting: $arg scan"
     # Scanning if the hosts have portmapper or rpcbind running
-    echo "$PASS" | sudo -S nmap -v -p 111 "$IP" -oA "$TS""nmap_NFS_p111_portmapper_rpcbind__""$IP"
+    #echo "$PASS" | sudo -S nmap -v -p 111 "$IP" -oA "$TS""nmap_NFS_p111_portmapper_rpcbind__""$IP"
+    echo "$PASS" | sudo -S nmap -Pn -v -p 111 "$IP" -oA "$TS""nmap_noPing_NFS_p111_portmapper_rpcbind__""$IP"
     
     # Scanning for services registered with rpcbind
-    echo "$PASS" | sudo -S nmap -sV -p 111 --script="rpcinfo,rpc-grind" "$IP" -oA "$TS""nmap_NFS_services_rpcinfo_rpc-grind__""$IP"
+    #echo "$PASS" | sudo -S nmap -sV -p 111 --script="rpcinfo,rpc-grind" "$IP" -oA "$TS""nmap_NFS_services_rpcinfo_rpc-grind__""$IP"
+    echo "$PASS" | sudo -S nmap -Pn -sV -p 111 --script="rpcinfo,rpc-grind" "$IP" -oA "$TS""nmap_noPing_NFS_services_rpcinfo_rpc-grind__""$IP"
     # If NFS is running, run NFS Scripts
-    echo "$PASS" | sudo -S nmap -p 111 --script "*nfs*" "$IP" -oA "$TS""nmap_scripts_NFS__""$IP"
+    echo "$PASS" | sudo -S nmap -Pn -p 111 --script "*nfs*" "$IP" -oA "$TS""nmap_noPing_scripts_NFS__""$IP"
   fi
 done
 
@@ -141,12 +149,14 @@ for arg in "$@"
 do
   if [[ "$arg" =~ "smtp" ]]
   then
+    echo "-------------------------"
     echo "Starting: $arg scan"
     # Verify if any existing using on a mail server using netcat
     nc -nv "$IP" 25 > "nc_SMTP_25__$IP"".txt" 2>&1
     # There is a python script in Listing 625 that verifies a username
     # Run SMTP scripts
-    echo "$PASS" | sudo -S nmap -p 25 --script "*smtp*" "$IP" -oA "$TS""nmap_scripts_SMTP_25__""$IP"
+    #echo "$PASS" | sudo -S nmap -p 25 --script "*smtp*" "$IP" -oA "$TS""nmap_scripts_SMTP_25__""$IP"
+    echo "$PASS" | sudo -S nmap -Pn -p 25 --script "*smtp*" "$IP" -oA "$TS""nmap_noPing_scripts_SMTP_25__""$IP"
   fi
 done
 
@@ -155,15 +165,19 @@ for arg in "$@"
 do
   if [[ "$arg" =~ "snmp" ]]
   then
+    echo "-------------------------"
     echo "Starting: $arg scan"
     # Scan for open SNMP ports with nmap
-    echo "$PASS" | sudo -S nmap -sU --open -p 161 "$IP" -oA "$TS""nmap_SNMP_open_161__$IP"
+    #echo "$PASS" | sudo -S nmap -sU --open -p 161 "$IP" -oA "$TS""nmap_SNMP_open_161__$IP"
+    echo "$PASS" | sudo -S nmap -Pn -sU --open -p 161 "$IP" -oA "$TS""nmap_noPing_SNMP_open_161__$IP"
     # onesixtyone -c community -i ips
     # snmpwalk -c public -v1 -t 10 "$IP"
     # Run SNMP scripts
-    echo "$PASS" | sudo -S nmap -p161,162 --script "*snmp*" "$IP" -oA "$TS""nmap_scripts_TCP_161-162_SNMP__""$IP"
+    #echo "$PASS" | sudo -S nmap -p161,162 --script "*snmp*" "$IP" -oA "$TS""nmap_scripts_TCP_161-162_SNMP__""$IP"
+    echo "$PASS" | sudo -S nmap -Pn -p161,162 --script "*snmp*" "$IP" -oA "$TS""nmap_noPing_scripts_TCP_161-162_SNMP__""$IP"
     # Run SNMP scripts
-    echo "$PASS" | sudo -S nmap -sU -p161,162 --script "*snmp*" "$IP" -oA "$TS""nmap_scripts_UDP_161-162_SNMP__""$IP"
+    #echo "$PASS" | sudo -S nmap -sU -p161,162 --script "*snmp*" "$IP" -oA "$TS""nmap_scripts_UDP_161-162_SNMP__""$IP"
+    echo "$PASS" | sudo -S nmap -Pn -sU -p161,162 --script "*snmp*" "$IP" -oA "$TS""nmap_noPing_scripts_UDP_161-162_SNMP__""$IP"
   fi
 done
 

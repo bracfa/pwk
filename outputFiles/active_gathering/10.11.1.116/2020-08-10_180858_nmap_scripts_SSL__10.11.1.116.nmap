@@ -1,0 +1,12 @@
+# Nmap 7.80 scan initiated Mon Aug 10 18:23:19 2020 as: nmap -Pn --script=ssl-* -oA 2020-08-10_180858_nmap_scripts_SSL__10.11.1.116 10.11.1.116
+Nmap scan report for 10.11.1.116
+Host is up (0.038s latency).
+Not shown: 995 closed ports
+PORT    STATE SERVICE
+21/tcp  open  ftp
+22/tcp  open  ssh
+80/tcp  open  http
+110/tcp open  pop3
+143/tcp open  imap
+
+# Nmap done at Mon Aug 10 18:23:22 2020 -- 1 IP address (1 host up) scanned in 2.63 seconds
