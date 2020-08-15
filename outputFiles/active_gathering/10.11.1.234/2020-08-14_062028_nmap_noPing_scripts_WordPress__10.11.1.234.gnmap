@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Aug 14 06:31:08 2020 as: nmap -Pn -p- --script *wordpress* -oA 2020-08-14_062028_nmap_noPing_scripts_WordPress__10.11.1.234 10.11.1.234
+Host: 10.11.1.234 ()	Status: Up
+Host: 10.11.1.234 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 10443/open/tcp//unknown///	Ignored State: closed (65532)
+# Nmap done at Fri Aug 14 06:41:48 2020 -- 1 IP address (1 host up) scanned in 639.49 seconds

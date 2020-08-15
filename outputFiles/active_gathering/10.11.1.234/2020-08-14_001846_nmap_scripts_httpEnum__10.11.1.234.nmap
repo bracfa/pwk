@@ -1,0 +1,21 @@
+# Nmap 7.80 scan initiated Fri Aug 14 00:58:37 2020 as: nmap -Pn --script=http-enum -oA 2020-08-14_001846_nmap_scripts_httpEnum__10.11.1.234 10.11.1.234
+Nmap scan report for 10.11.1.234
+Host is up (0.031s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+| http-enum: 
+|   /wp-login.php: Possible admin folder
+|   /readme.html: Wordpress version: 2 
+|   /wp-includes/images/rss.png: Wordpress version 2.2 found.
+|   /wp-includes/js/jquery/suggest.js: Wordpress version 2.5 found.
+|   /wp-includes/images/blank.gif: Wordpress version 2.6 found.
+|   /wp-includes/js/comment-reply.js: Wordpress version 2.7 found.
+|   /wp-login.php: Wordpress login page.
+|   /wp-admin/upgrade.php: Wordpress login page.
+|   /readme.html: WordPress version 3.3.1
+|   /icons/: Potentially interesting folder w/ directory listing
+|_  /index/: Potentially interesting folder
+
+# Nmap done at Fri Aug 14 00:59:06 2020 -- 1 IP address (1 host up) scanned in 29.22 seconds

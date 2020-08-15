@@ -1,0 +1,22 @@
+# Nmap 7.80 scan initiated Fri Aug 14 00:59:11 2020 as: nmap -Pn --script=http-sitemap-generator -oA 2020-08-14_001846_nmap_scripts_httpSitemapGenerator__10.11.1.234 10.11.1.234
+Nmap scan report for 10.11.1.234
+Host is up (0.12s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1; php: 1
+|     /wp-content/themes/twentytwelve/
+|       css: 1
+|     /wp-includes/
+|       xml: 1
+|   Longest directory structure:
+|     Depth: 3
+|     Dir: /wp-content/themes/twentytwelve/
+|   Total files found (by extension):
+|_    Other: 1; css: 1; php: 1; xml: 1
+
+# Nmap done at Fri Aug 14 00:59:15 2020 -- 1 IP address (1 host up) scanned in 4.25 seconds

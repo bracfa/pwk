@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 14 00:45:36 2020 as: nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-14_001846_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.234 10.11.1.234 -->
+<nmaprun scanner="nmap" args="nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-14_001846_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.234 10.11.1.234" start="1597380336" startstr="Fri Aug 14 00:45:36 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<prescript><script id="broadcast-igmp-discovery" output="&#xa;  192.168.0.34&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.254&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  Use the newtargets script-arg to add the results as targets&#xa;"/><script id="broadcast-listener" output="&#xa;  udp&#xa;      DHCP&#xa;        srv ip       cli ip        mask           gw           dns                       vendor&#xa;        192.168.0.1  192.168.0.22  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.22  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;"/><script id="broadcast-netbios-master-browser" output="&#xa;ip  server  domain&#xa;"/><script id="broadcast-upnp-info" output="&#xa;  239.255.255.250&#xa;      Server: Linux 2.6 DLNADOC/1.50 UPnP/1.0 ReadyDLNA/1.1.0&#xa;      Location: http://192.168.0.254:8200/rootDesc.xml&#xa;"/><script id="eap-info" output="please specify an interface with -e"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/></prescript><host starttime="1597380377" endtime="1597380682"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.234" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="5.3p1 Debian 3ubuntu3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:5.3p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="banner" output="SSH-2.0-OpenSSH_5.3p1 Debian-3ubuntu3"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="ssh-auth-methods" output="&#xa;  Supported authentication methods: &#xa;    publickey&#xa;    password"><table key="Supported authentication methods">
+<elem>publickey</elem>
+<elem>password</elem>
+</table>
+</script><script id="ssh-hostkey" output="&#xa;  1024 2c:83:67:02:29:20:87:99:87:55:95:92:6c:8d:a4:a3 (DSA)&#xa;  2048 6b:91:08:a8:c0:90:ac:68:bd:c9:cd:9c:be:69:2b:ac (RSA)"><table>
+<elem key="fingerprint">2c83670229208799875595926c8da4a3</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAPv8ovXDTY/R7QHpFLGB/YQdu+mlpD86PHe4yJK0zeScXNZupivlcXSqlwMsKDhVEWDXg/LZUVo2GoTzM7nRXHcVsKC2G/E5M2697F1Sa+uTF0pDgS5YeWmoRbix1lqUiv8NSE1bYADmXURWjc5riupDF2X6Z/v8/zrTPCWy4nDdAAAAFQDd9TiPzvaYQNBhMl4QYZjIBr43+QAAAIEAgUaIET0ZzY5fMmR7W4v1AcGBF8HP8u4Y6ZLnraeYaBxlslWluIDiRaHLrqDzXUogRY0Ir1xCWUlULY2MHibGxG4wp9BzXevCtGtkHTXcOQhHMgbZpZVFOOHhA4GqctEol7iV2KITROxKlEDMS6Ey1B0oIaGfQzm4fqm1VYXY3d8AAACBANiP0PegXuOKDJyk+0z/LR0BZfaH4cnAwK/9cRhDux1v3ryoZaQ73mcjtTQ3MvaA26qSmi0MDTh2iL3obwz8iifa7ab7E7z3VIb80FOaV+cXqvJ6koadkyjp8SzbtTKdXtXJGIB/lfBo1cQ7LpXIAxWBZPk50RWEtd7ltLiO2nQu</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="bits">1024</elem>
+</table>
+<table>
+<elem key="fingerprint">6b9108a8c090ac68bdc9cd9cbe692bac</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAQEA8TTX+6Zi1VEVW1btBA5wQO/eFME0CfW3BcQUHutLpDntSAe/22wuCNtk3/HQPLTq3X4DeI53cB/V93170FUmbewcKWo0BByBguMlQPI4IwHvN950prdr4FZdRNxe886CXj+TKA53OCkg5OlvSu7lb/zz7Iqwb4RxAxhMLI88MUsCZ4hDvqAhUQdQchQEL/40Sf2pI3DCHXgm+iL2Gd7Ky1aKAYdW0W2vbpZmhKJVXjaewdRUvnPfz9CJM2/ijTxvAjrLVeop4z9z6SyiW/6xtDHINWHtPdC1FsmI+p79r+KeSQ/c/+Iy3OJiaVBL/qI+OrPkR6kXZ+PMt895h1ruKQ==</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+</script><script id="ssh-publickey-acceptance" output="&#xa;  Accepted Public Keys: No public keys accepted"><elem key="Accepted Public Keys">No public keys accepted</elem>
+</script><script id="ssh2-enum-algos" output="&#xa;  kex_algorithms: (4)&#xa;  server_host_key_algorithms: (2)&#xa;  encryption_algorithms: (13)&#xa;  mac_algorithms: (7)&#xa;  compression_algorithms: (2)"><table key="kex_algorithms">
+<elem>diffie-hellman-group-exchange-sha256</elem>
+<elem>diffie-hellman-group-exchange-sha1</elem>
+<elem>diffie-hellman-group14-sha1</elem>
+<elem>diffie-hellman-group1-sha1</elem>
+</table>
+<table key="server_host_key_algorithms">
+<elem>ssh-rsa</elem>
+<elem>ssh-dss</elem>
+</table>
+<table key="encryption_algorithms">
+<elem>aes128-ctr</elem>
+<elem>aes192-ctr</elem>
+<elem>aes256-ctr</elem>
+<elem>arcfour256</elem>
+<elem>arcfour128</elem>
+<elem>aes128-cbc</elem>
+<elem>3des-cbc</elem>
+<elem>blowfish-cbc</elem>
+<elem>cast128-cbc</elem>
+<elem>aes192-cbc</elem>
+<elem>aes256-cbc</elem>
+<elem>arcfour</elem>
+<elem>rijndael-cbc@lysator.liu.se</elem>
+</table>
+<table key="mac_algorithms">
+<elem>hmac-md5</elem>
+<elem>hmac-sha1</elem>
+<elem>umac-64@openssh.com</elem>
+<elem>hmac-ripemd160</elem>
+<elem>hmac-ripemd160@openssh.com</elem>
+<elem>hmac-sha1-96</elem>
+<elem>hmac-md5-96</elem>
+</table>
+<table key="compression_algorithms">
+<elem>none</elem>
+<elem>zlib@openssh.com</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.2.14" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.14</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.234&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 5&#xa;    Comment: &#xa;        &lt;!-&#45;[if IE 8]&gt;&#xa;        &lt;html class=&quot;ie ie8&quot; lang=&quot;en-US&quot;&gt;&#xa;        &lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 363&#xa;    Comment: &#xa;        /* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 525&#xa;    Comment: &#xa;        /* Page structure */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 578&#xa;    Comment: &#xa;        /* Navigation Menu */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 324&#xa;    Comment: &#xa;        /* Make sure images with WordPress-added height and width attributes are scaled correctly */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1059&#xa;    Comment: &#xa;        /* Image posts */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 342&#xa;    Comment: &#xa;        /* Override the Twitter embed fixed width */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 315&#xa;    Comment: &#xa;        /* Responsive images */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 334&#xa;    Comment: &#xa;        /* Make sure videos and embeds fit their containers */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 10&#xa;    Comment: &#xa;        &lt;!-&#45;&lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 114&#xa;    Comment: &#xa;        &lt;!-&#45; #colophon -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 17&#xa;    Comment: &#xa;        /* =Notes&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#xa;        This stylesheet uses rem values with a pixel fallback. The rem&#xa;        values (and line heights) are calculated using two variables:&#xa;        &#xa;        $rembase:     14;&#xa;        $line-height: 24;&#xa;        &#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Examples&#xa;        &#xa;        * Use a pixel value with a rem fallback for font-size, padding, margins, etc.&#xa;        &#x9;padding: 5px 0;&#xa;        &#x9;padding: 0.357142857rem 0; (5 / $rembase)&#xa;        &#xa;        * Set a font-size and then set a line-height based on the font-size&#xa;        &#x9;font-size: 16px&#xa;        &#x9;font-size: 1.142857143rem; (16 / $rembase)&#xa;        &#x9;line-height: 1.5; ($line-height / 16)&#xa;        &#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Vertical spacing&#xa;        &#xa;        Vertical spacing between most elements should use 24px or 48px&#xa;        to maintain vertical rhythm:&#xa;        &#xa;        .my-new-div {&#xa;        &#x9;margin: 24px 0;&#xa;        &#x9;margin: 1.714285714rem 0; ( 24 / $rembase )&#xa;        }&#xa;        &#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; Further reading&#xa;        &#xa;        http://snook.ca/archives/html_and_css/font-size-with-rem&#xa;        http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/&#xa;        &#xa;        &#xa;        /* =Reset&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 652&#xa;    Comment: &#xa;        /* define a width to avoid dropping a wider submit button */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1586&#xa;    Comment: &#xa;        /* Minimum width of 960 pixels. */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 477&#xa;    Comment: &#xa;        /* =Basic structure&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1314&#xa;    Comment: &#xa;        /* =Front page template&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 606&#xa;    Comment: &#xa;        /* Banner */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 48&#xa;    Comment: &#xa;        &lt;!-&#45; #masthead -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 2&#xa;    Comment: &#xa;        &lt;!-&#45;[if IE 7]&gt;&#xa;        &lt;html class=&quot;ie ie7&quot; lang=&quot;en-US&quot;&gt;&#xa;        &lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 59&#xa;    Comment: &#xa;        &lt;!-&#45; .entry-header -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1024&#xa;    Comment: &#xa;        /* =Aside post format&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/?author=1&#xa;    Line number: 69&#xa;    Comment: &#xa;        &lt;!-&#45; .author-info -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 109&#xa;    Comment: &#xa;        &lt;!-&#45; #main .wrapper -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 84&#xa;    Comment: &#xa;        &lt;!-&#45; #comments .comments-area -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 502&#xa;    Comment: &#xa;        /* Assistive text */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 612&#xa;    Comment: &#xa;        /* Sidebar */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1613&#xa;    Comment: &#xa;        /* =Print&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 368&#xa;    Comment: &#xa;        /* Keep wide captions from overflowing their container. */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1000&#xa;    Comment: &#xa;        /* =Single image attachment view&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 70&#xa;    Comment: &#xa;        &lt;!-&#45; #post -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 237&#xa;    Comment: &#xa;        /* Buttons */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 179&#xa;    Comment: &#xa;        /* =Repeatable patterns&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 108&#xa;    Comment: &#xa;        &lt;!-&#45; #secondary -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*&#xa;        Theme Name: Twenty Twelve&#xa;        Theme URI: http://wordpress.org/extend/themes/twentytwelve&#xa;        Author: the WordPress team&#xa;        Author URI: http://wordpress.org/&#xa;        Description: The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background.&#xa;        Version: 1.1&#xa;        License: GNU General Public License v2 or later&#xa;        License URI: http://www.gnu.org/licenses/gpl-2.0.html&#xa;        Tags: light, gray, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready&#xa;        Text Domain: twentytwelve&#xa;        &#xa;        This theme, like WordPress, is licensed under the GPL.&#xa;        Use it to make something cool, have fun, and share what you&apos;ve learned with others.&#xa;        */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 225&#xa;    Comment: &#xa;        /* Reset non-text input types */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 17&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 9]&gt;&#xa;        &lt;script src=&quot;http://10.11.1.234/wp-content/themes/twentytwelve/js/html5.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&#xa;        &lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 345&#xa;    Comment: &#xa;        /* Images */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 162&#xa;    Comment: &#xa;        /* Clearing floats */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1119&#xa;    Comment: &#xa;        /* Status posts */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 76&#xa;    Comment: &#xa;        &lt;!-&#45; .nav-single -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/?author=1&#xa;    Line number: 68&#xa;    Comment: &#xa;        &lt;!-&#45; .author-description&#x9;-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 979&#xa;    Comment: &#xa;        /* =Archives&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/?author=1&#xa;    Line number: 64&#xa;    Comment: &#xa;        &lt;!-&#45; .author-avatar -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1154&#xa;    Comment: &#xa;        /* =Comments&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/?cat=1&#xa;    Line number: 57&#xa;    Comment: &#xa;        &lt;!-&#45; .archive-header -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1710&#xa;    Comment: &#xa;        /* Comments */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 448&#xa;    Comment: &#xa;        /* Author profiles */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1420&#xa;    Comment: &#xa;        /* Minimum width of 600 pixels. */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 87&#xa;    Comment: &#xa;        &lt;!-&#45; #primary -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 69&#xa;    Comment: &#xa;        &lt;!-&#45; .entry-meta -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 182&#xa;    Comment: &#xa;        /* Small headers */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 66&#xa;    Comment: &#xa;        &lt;!-&#45; .entry-content -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 480&#xa;    Comment: &#xa;        /* Body, links, basics */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1258&#xa;    Comment: &#xa;        /* Comment form */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 115&#xa;    Comment: &#xa;        &lt;!-&#45; #page -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 522&#xa;    Comment: &#xa;        /* Above WP toolbar */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 113&#xa;    Comment: &#xa;        &lt;!-&#45; .site-info -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1056&#xa;    Comment: &#xa;        /* =Post formats&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1407&#xa;    Comment: &#xa;        /* =Plugins&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1417&#xa;    Comment: &#xa;        /* =Media queries&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1355&#xa;    Comment: &#xa;        /* =Widgets&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 25&#xa;    Comment: &#xa;        &lt;!-&#45;[if lt IE 9]&gt;&#xa;        &lt;link rel=&apos;stylesheet&apos; id=&apos;twentytwelve-ie-css&apos;  href=&apos;http://10.11.1.234/wp-content/themes/twentytwelve/css/ie.css?ver=20121010&apos; type=&apos;text/css&apos; media=&apos;all&apos; /&gt;&#xa;        &lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 540&#xa;    Comment: &#xa;        /* Header */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 8&#xa;    Comment: &#xa;        &lt;!-&#45;[if !(IE 7) | !(IE 8)  ]&gt;&lt;!-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1101&#xa;    Comment: &#xa;        /* Quote posts */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1075&#xa;    Comment: &#xa;        /* Link posts */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 205&#xa;    Comment: &#xa;        /* Form fields, general styles first */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 46&#xa;    Comment: &#xa;        &lt;!-&#45; #site-navigation -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 679&#xa;    Comment: &#xa;        /* =Main content and comment content&#xa;        -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 1624&#xa;    Comment: &#xa;        /* Show URLs */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 415&#xa;    Comment: &#xa;        /* Navigation */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 196&#xa;    Comment: &#xa;        /* Shared Post Format styling */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 319&#xa;    Comment: &#xa;        /* Fluid images for posts, comments, and widgets */&#xa;    &#xa;    Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1&#xa;    Line number: 655&#xa;    Comment: &#xa;        /* Footer */&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Line number: 86&#xa;    Comment: &#xa;        &lt;!-&#45; #content -&#45;&gt;&#xa;"/><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.234&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://10.11.1.234:80/&#xa;    Form id: searchform&#xa;    Form action: http://10.11.1.234/&#xa;    &#xa;    Path: http://10.11.1.234:80/?m=201512&#xa;    Form id: searchform&#xa;    Form action: http://10.11.1.234/&#xa;    &#xa;    Path: http://10.11.1.234:80/?author=1&#xa;    Form id: searchform&#xa;    Form action: http://10.11.1.234/&#xa;    &#xa;    Path: http://10.11.1.234:80/?cat=1&#xa;    Form id: searchform&#xa;    Form action: http://10.11.1.234/&#xa;    &#xa;    Path: http://10.11.1.234:80/?p=1&#xa;    Form id: searchform&#xa;    Form action: http://10.11.1.234/&#xa;"/><script id="http-date" output="Fri, 14 Aug 2020 08:48:49 GMT; +3h59m59s from local time."><elem key="date">2020-08-14T08:48:49+00:00</elem>
+<elem key="delta">14399.0</elem>
+</script><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /wp-login.php: Possible admin folder&#xa;  /readme.html: Wordpress version: 2 &#xa;  /wp-includes/images/rss.png: Wordpress version 2.2 found.&#xa;  /wp-includes/js/jquery/suggest.js: Wordpress version 2.5 found.&#xa;  /wp-includes/images/blank.gif: Wordpress version 2.6 found.&#xa;  /wp-includes/js/comment-reply.js: Wordpress version 2.7 found.&#xa;  /wp-login.php: Wordpress login page.&#xa;  /wp-admin/upgrade.php: Wordpress login page.&#xa;  /readme.html: WordPress version 3.3.1&#xa;  /icons/: Potentially interesting folder w/ directory listing&#xa;  /index/: Potentially interesting folder&#xa;"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-headers" output="&#xa;  Date: Fri, 14 Aug 2020 08:48:43 GMT&#xa;  Server: Apache/2.2.14 (Ubuntu)&#xa;  X-Powered-By: PHP/5.3.2-1ubuntu4&#xa;  X-Pingback: http://10.11.1.234/xmlrpc.php&#xa;  Vary: Accept-Encoding&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=UTF-8&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-php-version" output="Versions from logo query (less accurate): 5.3.0 - 5.3.29, 5.4.0 - 5.4.45&#xa;Versions from credits query (more accurate): 5.3.1 - 5.3.2&#xa;Version from header x-powered-by: PHP/5.3.2-1ubuntu4"/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="Apache/2.2.14 (Ubuntu)"><elem>Apache/2.2.14 (Ubuntu)</elem>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="200 OK"><elem key="title">200 OK</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-xssed" output="No previously reported XSS vuln."/><script id="vulners" output="&#xa;  cpe:/a:apache:http_server:2.2.14: &#xa;    &#x9;CVE-2010-0425&#x9;10.0&#x9;https://vulners.com/cve/CVE-2010-0425&#xa;    &#x9;CVE-2011-3192&#x9;7.8&#x9;https://vulners.com/cve/CVE-2011-3192&#xa;    &#x9;CVE-2017-7679&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-7679&#xa;    &#x9;CVE-2017-7668&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-7668&#xa;    &#x9;CVE-2017-3169&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-3169&#xa;    &#x9;CVE-2017-3167&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-3167&#xa;    &#x9;CVE-2013-2249&#x9;7.5&#x9;https://vulners.com/cve/CVE-2013-2249&#xa;    &#x9;CVE-2012-0883&#x9;6.9&#x9;https://vulners.com/cve/CVE-2012-0883&#xa;    &#x9;CVE-2018-1312&#x9;6.8&#x9;https://vulners.com/cve/CVE-2018-1312&#xa;    &#x9;CVE-2013-1862&#x9;5.1&#x9;https://vulners.com/cve/CVE-2013-1862&#xa;    &#x9;CVE-2014-0231&#x9;5.0&#x9;https://vulners.com/cve/CVE-2014-0231&#xa;    &#x9;CVE-2014-0098&#x9;5.0&#x9;https://vulners.com/cve/CVE-2014-0098&#xa;    &#x9;CVE-2013-6438&#x9;5.0&#x9;https://vulners.com/cve/CVE-2013-6438&#xa;    &#x9;CVE-2012-4557&#x9;5.0&#x9;https://vulners.com/cve/CVE-2012-4557&#xa;    &#x9;CVE-2011-3368&#x9;5.0&#x9;https://vulners.com/cve/CVE-2011-3368&#xa;    &#x9;CVE-2010-2068&#x9;5.0&#x9;https://vulners.com/cve/CVE-2010-2068&#xa;    &#x9;CVE-2010-1452&#x9;5.0&#x9;https://vulners.com/cve/CVE-2010-1452&#xa;    &#x9;CVE-2010-0408&#x9;5.0&#x9;https://vulners.com/cve/CVE-2010-0408&#xa;    &#x9;CVE-2012-0031&#x9;4.6&#x9;https://vulners.com/cve/CVE-2012-0031&#xa;    &#x9;CVE-2011-3607&#x9;4.4&#x9;https://vulners.com/cve/CVE-2011-3607&#xa;    &#x9;CVE-2016-4975&#x9;4.3&#x9;https://vulners.com/cve/CVE-2016-4975&#xa;    &#x9;CVE-2013-1896&#x9;4.3&#x9;https://vulners.com/cve/CVE-2013-1896&#xa;    &#x9;CVE-2012-4558&#x9;4.3&#x9;https://vulners.com/cve/CVE-2012-4558&#xa;    &#x9;CVE-2012-3499&#x9;4.3&#x9;https://vulners.com/cve/CVE-2012-3499&#xa;    &#x9;CVE-2012-0053&#x9;4.3&#x9;https://vulners.com/cve/CVE-2012-0053&#xa;    &#x9;CVE-2011-4317&#x9;4.3&#x9;https://vulners.com/cve/CVE-2011-4317&#xa;    &#x9;CVE-2011-3639&#x9;4.3&#x9;https://vulners.com/cve/CVE-2011-3639&#xa;    &#x9;CVE-2011-3348&#x9;4.3&#x9;https://vulners.com/cve/CVE-2011-3348&#xa;    &#x9;CVE-2011-0419&#x9;4.3&#x9;https://vulners.com/cve/CVE-2011-0419&#xa;    &#x9;CVE-2010-0434&#x9;4.3&#x9;https://vulners.com/cve/CVE-2010-0434&#xa;    &#x9;CVE-2016-8612&#x9;3.3&#x9;https://vulners.com/cve/CVE-2016-8612&#xa;    &#x9;CVE-2012-2687&#x9;2.6&#x9;https://vulners.com/cve/CVE-2012-2687&#xa;    &#x9;CVE-2011-4415&#x9;1.2&#x9;https://vulners.com/cve/CVE-2011-4415"><table key="cpe:/a:apache:http_server:2.2.14">
+<table>
+<elem key="cvss">10.0</elem>
+<elem key="id">CVE-2010-0425</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">7.8</elem>
+<elem key="id">CVE-2011-3192</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">CVE-2017-7679</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">CVE-2017-7668</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">CVE-2017-3169</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">CVE-2017-3167</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">7.5</elem>
+<elem key="id">CVE-2013-2249</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">6.9</elem>
+<elem key="id">CVE-2012-0883</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">6.8</elem>
+<elem key="id">CVE-2018-1312</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.1</elem>
+<elem key="id">CVE-2013-1862</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2014-0231</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2014-0098</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2013-6438</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2012-4557</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2011-3368</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2010-2068</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2010-1452</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2010-0408</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.6</elem>
+<elem key="id">CVE-2012-0031</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.4</elem>
+<elem key="id">CVE-2011-3607</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2016-4975</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2013-1896</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2012-4558</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2012-3499</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2012-0053</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2011-4317</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2011-3639</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2011-3348</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2011-0419</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2010-0434</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">3.3</elem>
+<elem key="id">CVE-2016-8612</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">2.6</elem>
+<elem key="id">CVE-2012-2687</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+<table>
+<elem key="cvss">1.2</elem>
+<elem key="id">CVE-2011-4415</elem>
+<elem key="type">cve</elem>
+<elem key="is_exploit">false</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="10443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="CoreHTTP httpd" version="0.5.3.1" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.234&#xa;    &#xa;    Path: http://10.11.1.234:10443/&#xa;    Line number: 26&#xa;    Comment: &#xa;        &lt;!-&#45;(The CEO had a cow and fired a lot of people. Make sure to check your emails folks!)-&#45;&gt;&#xa;"/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /dev/: Potentially interesting folder w/ directory listing&#xa;"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-headers" output="&#xa;  Server: corehttp-0.5.3.1&#xa;  Content-Type: text/html&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="corehttp-0.5.3.1"><elem>corehttp-0.5.3.1</elem>
+</script><script id="http-slowloris-check" output="&#xa;  VULNERABLE:&#xa;  Slowloris DOS attack&#xa;    State: LIKELY VULNERABLE&#xa;    IDs:  CVE:CVE-2007-6750&#xa;      Slowloris tries to keep many connections to the target web server open and hold&#xa;      them open as long as possible.  It accomplishes this by opening connections to&#xa;      the target web server and sending a partial request. By doing so, it starves&#xa;      the http server&apos;s resources causing Denial Of Service.&#xa;      &#xa;    Disclosure date: 2009-09-17&#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750&#xa;      http://ha.ckers.org/slowloris/&#xa;"><table key="CVE-2007-6750">
+<elem key="title">Slowloris DOS attack</elem>
+<elem key="state">LIKELY VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2007-6750</elem>
+</table>
+<table key="description">
+<elem>Slowloris tries to keep many connections to the target web server open and hold&#xa;them open as long as possible.  It accomplishes this by opening connections to&#xa;the target web server and sending a partial request. By doing so, it starves&#xa;the http server&apos;s resources causing Denial Of Service.&#xa;</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="day">17</elem>
+<elem key="year">2009</elem>
+<elem key="month">09</elem>
+</table>
+</table>
+<elem key="disclosure">2009-09-17</elem>
+<table key="exploit_results">
+</table>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750</elem>
+<elem>http://ha.ckers.org/slowloris/</elem>
+</table>
+</table>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="Stats! Stats! Stats!"><elem key="title">Stats! Stats! Stats!</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-xssed" output="No previously reported XSS vuln."/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="36947"/>
+<osmatch name="Linux 2.6.32" accuracy="95" line="54182">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="IGEL UD3 thin client (Linux 2.6)" accuracy="95" line="60573">
+<osclass type="terminal" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="terminal" vendor="IGEL" osfamily="embedded" accuracy="95"><cpe>cpe:/h:igel:ud3</cpe></osclass>
+</osmatch>
+<osmatch name="HP MSM410 WAP" accuracy="94" line="35480">
+<osclass type="WAP" vendor="HP" osfamily="embedded" accuracy="94"><cpe>cpe:/h:hp:msm410</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.35" accuracy="94" line="57033">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.35</cpe></osclass>
+</osmatch>
+<osmatch name="IPFire 2.11 firewall (Linux 2.6.32)" accuracy="93" line="47187">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="firewall" vendor="IPFire" osfamily="IPFire" osgen="2.X" accuracy="93"><cpe>cpe:/o:ipfire:ipfire:2.11</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v24-sp1 (Linux 2.4)" accuracy="92" line="46296">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.4</cpe></osclass>
+</osmatch>
+<osmatch name="Fortinet FortiOS 5.0.6" accuracy="92" line="25705">
+<osclass type="security-misc" vendor="Fortinet" osfamily="FortiOS" osgen="5.X" accuracy="92"><cpe>cpe:/o:fortinet:fortios:5.0.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.31 - 2.6.32" accuracy="92" line="53882">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Check Point UTM-1 Edge X firewall" accuracy="91" line="13157">
+<osclass type="firewall" vendor="Check Point" osfamily="embedded" accuracy="91"/>
+</osmatch>
+<osmatch name="Extreme Networks ExtremeXOS 12.5.4" accuracy="91" line="25018">
+<osclass type="switch" vendor="Extreme Networks" osfamily="ExtremeXOS" osgen="12.X" accuracy="91"><cpe>cpe:/o:extremenetworks:extremexos:12.5.4</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=8/14%OT=22%CT=1%CU=36947%PV=Y%DS=2%DC=T%G=Y%TM=5F36184&#xa;OS:A%P=x86_64-pc-linux-gnu)SEQ(SP=CB%GCD=1%ISR=CE%TI=Z%II=I%TS=8)SEQ(SP=CB%&#xa;OS:GCD=1%ISR=D0%TI=Z%TS=8)OPS(O1=M54DST11NW6%O2=M54DST11NW6%O3=M54DNNT11NW6&#xa;OS:%O4=M54DST11NW6%O5=M54DST11NW6%O6=M54DST11)WIN(W1=16A0%W2=16A0%W3=16A0%W&#xa;OS:4=16A0%W5=16A0%W6=16A0)ECN(R=Y%DF=Y%T=40%W=16D0%O=M54DNNSNW6%CC=Y%Q=)T1(&#xa;OS:R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=4&#xa;OS:0%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN&#xa;OS:=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="1583" lastboot="Fri Aug 14 00:24:59 2020"/>
+<distance value="2"/>
+<tcpsequence index="204" difficulty="Good luck!" values="E143C8CE,E19C81B1,E19E77B0,E0D658B2,E145CD8B,E11D60CE"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="66777,667AF,667AF,667C2,667DB,6680B"/>
+<hostscript><script id="clock-skew" output="3h59m58s"><elem key="stddev">0</elem>
+<elem key="median">14398</elem>
+<elem key="mean">14398</elem>
+<elem key="count">1</elem>
+</script><script id="fcrdns" output="FAIL (No PTR record)"><table key="&lt;none&gt;">
+<elem key="status">fail</elem>
+<elem key="reason">No PTR record</elem>
+</table>
+</script><script id="ipidseq" output="All zeros"/><script id="path-mtu" output="PMTU == 1500"/><script id="qscan" output="&#xa;PORT   FAMILY  MEAN (us)  STDDEV    LOSS (%)&#xa;1      0       36379.60   56745.77  0.0%&#xa;22     0       18858.80   3020.60   0.0%&#xa;80     0       19125.20   7734.66   0.0%&#xa;10443  0       17972.00   4406.40   0.0%&#xa;"/><script id="traceroute-geolocation" output="&#xa;  HOP  RTT     ADDRESS        GEOLOCATION&#xa;  1    22.27   192.168.119.1  - ,- &#xa;  2    163.66  10.11.1.234    - ,- &#xa;"><table>
+<elem key="rtt">22.27</elem>
+<elem key="hop">1</elem>
+<elem key="ip">192.168.119.1</elem>
+</table>
+<table>
+<elem key="rtt">163.66</elem>
+<elem key="hop">2</elem>
+<elem key="ip">10.11.1.234</elem>
+</table>
+</script></hostscript><trace port="1723" proto="tcp">
+<hop ttl="1" ipaddr="192.168.119.1" rtt="22.27"/>
+<hop ttl="2" ipaddr="10.11.1.234" rtt="163.66"/>
+</trace>
+<times srtt="48650" rttvar="43292" to="221818"/>
+</host>
+<postscript><script id="reverse-index" output="&#xa;  22/tcp: 10.11.1.234&#xa;  80/tcp: 10.11.1.234&#xa;  10443/tcp: 10.11.1.234"><table key="22/tcp">
+<elem>10.11.1.234</elem>
+</table>
+<table key="80/tcp">
+<elem>10.11.1.234</elem>
+</table>
+<table key="10443/tcp">
+<elem>10.11.1.234</elem>
+</table>
+</script></postscript><runstats><finished time="1597380682" timestr="Fri Aug 14 00:51:22 2020" elapsed="346.69" summary="Nmap done at Fri Aug 14 00:51:22 2020; 1 IP address (1 host up) scanned in 346.69 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

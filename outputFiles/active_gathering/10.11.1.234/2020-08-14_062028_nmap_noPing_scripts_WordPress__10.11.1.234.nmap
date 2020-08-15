@@ -1,0 +1,19 @@
+# Nmap 7.80 scan initiated Fri Aug 14 06:31:08 2020 as: nmap -Pn -p- --script *wordpress* -oA 2020-08-14_062028_nmap_noPing_scripts_WordPress__10.11.1.234 10.11.1.234
+Nmap scan report for 10.11.1.234
+Host is up (0.022s latency).
+Not shown: 65532 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+| http-wordpress-brute: 
+|   Accounts: 
+|     admin:princess - Valid credentials
+|_  Statistics: Performed 3224 guesses in 599 seconds, average tps: 5.2
+| http-wordpress-enum: 
+| Search limited to top 100 themes/plugins
+|   themes
+|     twentyeleven 1.5
+|_    twentytwelve 1.1
+10443/tcp open  unknown
+
+# Nmap done at Fri Aug 14 06:41:48 2020 -- 1 IP address (1 host up) scanned in 639.49 seconds

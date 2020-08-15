@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 14 00:18:46 2020 as: nmap -sS -p- -O -oA 2020-08-14_001846_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.234 10.11.1.234 -->
+<nmaprun scanner="nmap" args="nmap -sS -p- -O -oA 2020-08-14_001846_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.234 10.11.1.234" start="1597378726" startstr="Fri Aug 14 00:18:46 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597378726" endtime="1597378792"><status state="up" reason="timestamp-reply" reason_ttl="63"/>
+<address addr="10.11.1.234" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="42756"/>
+<osmatch name="Linux 2.6.32" accuracy="95" line="54182">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="HP MSM410 WAP" accuracy="94" line="35480">
+<osclass type="WAP" vendor="HP" osfamily="embedded" accuracy="94"><cpe>cpe:/h:hp:msm410</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.35" accuracy="94" line="57033">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.35</cpe></osclass>
+</osmatch>
+<osmatch name="IGEL UD3 thin client (Linux 2.6)" accuracy="93" line="60573">
+<osclass type="terminal" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="terminal" vendor="IGEL" osfamily="embedded" accuracy="93"><cpe>cpe:/h:igel:ud3</cpe></osclass>
+</osmatch>
+<osmatch name="IPFire 2.11 firewall (Linux 2.6.32)" accuracy="93" line="47187">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="firewall" vendor="IPFire" osfamily="IPFire" osgen="2.X" accuracy="93"><cpe>cpe:/o:ipfire:ipfire:2.11</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v24-sp1 (Linux 2.4)" accuracy="92" line="46296">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.31 - 2.6.32" accuracy="92" line="53882">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Check Point UTM-1 Edge X firewall" accuracy="91" line="13157">
+<osclass type="firewall" vendor="Check Point" osfamily="embedded" accuracy="91"/>
+</osmatch>
+<osmatch name="Extreme Networks ExtremeXOS 12.5.4" accuracy="91" line="25018">
+<osclass type="switch" vendor="Extreme Networks" osfamily="ExtremeXOS" osgen="12.X" accuracy="91"><cpe>cpe:/o:extremenetworks:extremexos:12.5.4</cpe></osclass>
+</osmatch>
+<osmatch name="DD-WRT v23 (Linux 2.4.34)" accuracy="91" line="46182">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.4.34</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=8/14%OT=22%CT=1%CU=42756%PV=Y%DS=2%DC=I%G=Y%TM=5F3610E&#xa;OS:8%P=x86_64-pc-linux-gnu)SEQ(SP=CE%GCD=1%ISR=CB%TI=Z%II=I%TS=8)OPS(O1=M54&#xa;OS:DST11NW6%O2=M54DST11NW6%O3=M54DNNT11NW6%O4=M54DST11NW6%O5=M54DST11NW6%O6&#xa;OS:=M54DST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R=Y%DF&#xa;OS:=Y%T=40%W=16D0%O=M54DNNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%&#xa;OS:Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6&#xa;OS:(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RU&#xa;OS:D=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="16025955" lastboot="Mon Feb 10 11:40:37 2020"/>
+<distance value="2"/>
+<tcpsequence index="205" difficulty="Good luck!" values="935DFD87,9431125B,944784BB,94609061,943F0677,93FA80C2"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFFD227,FFFFD240,FFFFD259,FFFFD2AD,FFFFD2AD,FFFFD2AD"/>
+<times srtt="21562" rttvar="6110" to="100000"/>
+</host>
+<runstats><finished time="1597378792" timestr="Fri Aug 14 00:19:52 2020" elapsed="65.93" summary="Nmap done at Fri Aug 14 00:19:52 2020; 1 IP address (1 host up) scanned in 65.93 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

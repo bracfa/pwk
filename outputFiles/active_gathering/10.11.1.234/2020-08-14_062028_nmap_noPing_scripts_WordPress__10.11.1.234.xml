@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 14 06:31:08 2020 as: nmap -Pn -p- -&#45;script *wordpress* -oA 2020-08-14_062028_nmap_noPing_scripts_WordPress__10.11.1.234 10.11.1.234 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p- -&#45;script *wordpress* -oA 2020-08-14_062028_nmap_noPing_scripts_WordPress__10.11.1.234 10.11.1.234" start="1597401068" startstr="Fri Aug 14 06:31:08 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597401069" endtime="1597401708"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.234" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/><script id="http-wordpress-brute" output="&#xa;  Accounts: &#xa;    admin:princess - Valid credentials&#xa;  Statistics: Performed 3224 guesses in 599 seconds, average tps: 5.2"><table key="Accounts">
+<table>
+<elem key="state">Valid credentials</elem>
+<elem key="username">admin</elem>
+<elem key="password">princess</elem>
+</table>
+</table>
+<elem key="Statistics">Performed 3224 guesses in 599 seconds, average tps: 5.2</elem>
+</script><script id="http-wordpress-enum" output="&#xa;Search limited to top 100 themes/plugins&#xa;  themes&#xa;    twentyeleven 1.5&#xa;    twentytwelve 1.1&#xa;"><table key="twentyeleven">
+<elem key="installation_version">1.5</elem>
+<elem key="category">themes</elem>
+<elem key="name">twentyeleven</elem>
+<elem key="path">/wp-content/themes/twentyeleven/</elem>
+</table>
+<table key="twentytwelve">
+<elem key="installation_version">1.1</elem>
+<elem key="category">themes</elem>
+<elem key="name">twentytwelve</elem>
+<elem key="path">/wp-content/themes/twentytwelve/</elem>
+</table>
+<elem key="title">Search limited to top 100 themes/plugins</elem>
+</script></port>
+<port protocol="tcp" portid="10443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="22471" rttvar="2236" to="100000"/>
+</host>
+<runstats><finished time="1597401708" timestr="Fri Aug 14 06:41:48 2020" elapsed="639.49" summary="Nmap done at Fri Aug 14 06:41:48 2020; 1 IP address (1 host up) scanned in 639.49 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

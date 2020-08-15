@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Aug 14 00:45:36 2020 as: nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-14_001846_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.234 10.11.1.234
+Host: 10.11.1.234 ()	Status: Up
+Host: 10.11.1.234 ()	Ports: 22/open/tcp//ssh//OpenSSH 5.3p1 Debian 3ubuntu3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.2.14 ((Ubuntu))/, 10443/open/tcp//http//CoreHTTP httpd 0.5.3.1/	Ignored State: closed (65532)	Seq Index: 204	IP ID Seq: All zeros
+# Nmap done at Fri Aug 14 00:51:22 2020 -- 1 IP address (1 host up) scanned in 346.69 seconds

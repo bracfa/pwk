@@ -1,0 +1,457 @@
+# Nmap 7.80 scan initiated Fri Aug 14 00:59:06 2020 as: nmap -Pn --script=http-comments-displayer -oA 2020-08-14_001846_nmap_scripts_httpCommentsDisplayer__10.11.1.234 10.11.1.234
+Nmap scan report for 10.11.1.234
+Host is up (0.044s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.234
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 90
+|     Comment: 
+|         <!-- #content -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 606
+|     Comment: 
+|         /* Banner */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 502
+|     Comment: 
+|         /* Assistive text */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 196
+|     Comment: 
+|         /* Shared Post Format styling */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 345
+|     Comment: 
+|         /* Images */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 205
+|     Comment: 
+|         /* Form fields, general styles first */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1056
+|     Comment: 
+|         /* =Post formats
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1258
+|     Comment: 
+|         /* Comment form */
+|     
+|     Path: http://10.11.1.234:80/?p=1
+|     Line number: 84
+|     Comment: 
+|         <!-- #comments .comments-area -->
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 8
+|     Comment: 
+|         <!--[if !(IE 7) | !(IE 8)  ]><!-->
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 91
+|     Comment: 
+|         <!-- #primary -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 612
+|     Comment: 
+|         /* Sidebar */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 315
+|     Comment: 
+|         /* Responsive images */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 368
+|     Comment: 
+|         /* Keep wide captions from overflowing their container. */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 82
+|     Comment: 
+|         <!-- .entry-content -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 334
+|     Comment: 
+|         /* Make sure videos and embeds fit their containers */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1586
+|     Comment: 
+|         /* Minimum width of 960 pixels. */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1613
+|     Comment: 
+|         /* =Print
+|         ----------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 69
+|     Comment: 
+|         <!-- .author-info -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 17
+|     Comment: 
+|         /* =Notes
+|         --------------------------------------------------------------
+|         This stylesheet uses rem values with a pixel fallback. The rem
+|         values (and line heights) are calculated using two variables:
+|         
+|         $rembase:     14;
+|         $line-height: 24;
+|         
+|         ---------- Examples
+|         
+|         * Use a pixel value with a rem fallback for font-size, padding, margins, etc.
+|         	padding: 5px 0;
+|         	padding: 0.357142857rem 0; (5 / $rembase)
+|         
+|         * Set a font-size and then set a line-height based on the font-size
+|         	font-size: 16px
+|         	font-size: 1.142857143rem; (16 / $rembase)
+|         	line-height: 1.5; ($line-height / 16)
+|         
+|         ---------- Vertical spacing
+|         
+|         Vertical spacing between most elements should use 24px or 48px
+|         to maintain vertical rhythm:
+|         
+|         .my-new-div {
+|         	margin: 24px 0;
+|         	margin: 1.714285714rem 0; ( 24 / $rembase )
+|         }
+|         
+|         ---------- Further reading
+|         
+|         http://snook.ca/archives/html_and_css/font-size-with-rem
+|         http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
+|         
+|         
+|         /* =Reset
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 480
+|     Comment: 
+|         /* Body, links, basics */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 48
+|     Comment: 
+|         <!-- #masthead -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 979
+|     Comment: 
+|         /* =Archives
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1355
+|     Comment: 
+|         /* =Widgets
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 119
+|     Comment: 
+|         <!-- #page -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1
+|     Comment: 
+|         /*
+|         Theme Name: Twenty Twelve
+|         Theme URI: http://wordpress.org/extend/themes/twentytwelve
+|         Author: the WordPress team
+|         Author URI: http://wordpress.org/
+|         Description: The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background.
+|         Version: 1.1
+|         License: GNU General Public License v2 or later
+|         License URI: http://www.gnu.org/licenses/gpl-2.0.html
+|         Tags: light, gray, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+|         Text Domain: twentytwelve
+|         
+|         This theme, like WordPress, is licensed under the GPL.
+|         Use it to make something cool, have fun, and share what you've learned with others.
+|         */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 118
+|     Comment: 
+|         <!-- #colophon -->
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 17
+|     Comment: 
+|         <!--[if lt IE 9]>
+|         <script src="http://10.11.1.234/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+|         <![endif]-->
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 85
+|     Comment: 
+|         <!-- .entry-meta -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 179
+|     Comment: 
+|         /* =Repeatable patterns
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 540
+|     Comment: 
+|         /* Header */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 46
+|     Comment: 
+|         <!-- #site-navigation -->
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 26
+|     Comment: 
+|         <!--[if lt IE 9]>
+|         <link rel='stylesheet' id='twentytwelve-ie-css'  href='http://10.11.1.234/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+|         <![endif]-->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 342
+|     Comment: 
+|         /* Override the Twitter embed fixed width */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 2
+|     Comment: 
+|         <!--[if IE 7]>
+|         <html class="ie ie7" lang="en-US">
+|         <![endif]-->
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 10
+|     Comment: 
+|         <!--<![endif]-->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 162
+|     Comment: 
+|         /* Clearing floats */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 655
+|     Comment: 
+|         /* Footer */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 225
+|     Comment: 
+|         /* Reset non-text input types */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1059
+|     Comment: 
+|         /* Image posts */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 86
+|     Comment: 
+|         <!-- #post -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 652
+|     Comment: 
+|         /* define a width to avoid dropping a wider submit button */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1710
+|     Comment: 
+|         /* Comments */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1314
+|     Comment: 
+|         /* =Front page template
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1075
+|     Comment: 
+|         /* Link posts */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 77
+|     Comment: 
+|         <!-- .entry-header -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 522
+|     Comment: 
+|         /* Above WP toolbar */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 237
+|     Comment: 
+|         /* Buttons */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1417
+|     Comment: 
+|         /* =Media queries
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 319
+|     Comment: 
+|         /* Fluid images for posts, comments, and widgets */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 578
+|     Comment: 
+|         /* Navigation Menu */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1024
+|     Comment: 
+|         /* =Aside post format
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 324
+|     Comment: 
+|         /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 448
+|     Comment: 
+|         /* Author profiles */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1000
+|     Comment: 
+|         /* =Single image attachment view
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 112
+|     Comment: 
+|         <!-- #secondary -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1154
+|     Comment: 
+|         /* =Comments
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1119
+|     Comment: 
+|         /* Status posts */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1101
+|     Comment: 
+|         /* Quote posts */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1624
+|     Comment: 
+|         /* Show URLs */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 182
+|     Comment: 
+|         /* Small headers */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 68
+|     Comment: 
+|         <!-- .author-description	-->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 477
+|     Comment: 
+|         /* =Basic structure
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1407
+|     Comment: 
+|         /* =Plugins
+|         ----------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 113
+|     Comment: 
+|         <!-- #main .wrapper -->
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 5
+|     Comment: 
+|         <!--[if IE 8]>
+|         <html class="ie ie8" lang="en-US">
+|         <![endif]-->
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 117
+|     Comment: 
+|         <!-- .site-info -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 525
+|     Comment: 
+|         /* Page structure */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 415
+|     Comment: 
+|         /* Navigation */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 58
+|     Comment: 
+|         <!-- .archive-header -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 679
+|     Comment: 
+|         /* =Main content and comment content
+|         -------------------------------------------------------------- */
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 363
+|     Comment: 
+|         /* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
+|     
+|     Path: http://10.11.1.234:80/?p=1
+|     Line number: 76
+|     Comment: 
+|         <!-- .nav-single -->
+|     
+|     Path: http://10.11.1.234:80/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+|     Line number: 1420
+|     Comment: 
+|         /* Minimum width of 600 pixels. */
+|     
+|     Path: http://10.11.1.234:80/?author=1
+|     Line number: 64
+|     Comment: 
+|_        <!-- .author-avatar -->
+
+# Nmap done at Fri Aug 14 00:59:11 2020 -- 1 IP address (1 host up) scanned in 4.71 seconds
