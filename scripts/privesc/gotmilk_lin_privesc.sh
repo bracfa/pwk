@@ -227,55 +227,77 @@ echo "------------------------------------" >> "$FN"
 
 echo "### Communications & Networking ###" >> "$FN"
 echo "# What NIC(s) does the system have? Is it connected to another network?" >> "$FN"
+echo '/sbin/ifconfig -a' >> "$FN"
 /sbin/ifconfig -a >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'cat /etc/network/interfaces' >> "$FN"
 cat /etc/network/interfaces >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'cat /etc/sysconfig/network' >> "$FN"
 cat /etc/sysconfig/network >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-# What are the network configuration settings? What can you find out about this network? DHCP server? DNS server? Gateway?
+echo "# What are the network configuration settings? What can you find out about this network? DHCP server? DNS server? Gateway?" >> "$FN"
+echo 'cat /etc/resolv.conf' >> "$FN"
 cat /etc/resolv.conf >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'cat /etc/sysconfig/network' >> "$FN"
 cat /etc/sysconfig/network >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'cat /etc/networks' >> "$FN"
 cat /etc/networks >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'iptables -L' >> "$FN"
 iptables -L >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'hostname' >> "$FN"
 hostname >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'dnsdomainname' >> "$FN"
 dnsdomainname >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-# What other users & hosts are communicating with the system?
+echo "# What other users & hosts are communicating with the system?" >> "$FN"
+echo 'lsof -i' >> "$FN"
 lsof -i >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'lsof -i :80' >> "$FN"
 lsof -i :80 >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'grep 80 /etc/services' >> "$FN"
 grep 80 /etc/services >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'netstat -antup' >> "$FN"
 netstat -antup >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'netstat -antpx' >> "$FN"
 netstat -antpx >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'netstat -tulpn' >> "$FN"
 netstat -tulpn >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'chkconfig --list' >> "$FN"
 chkconfig --list >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'chkconfig --list | grep 3:on' >> "$FN"
 chkconfig --list | grep 3:on >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'last' >> "$FN"
 last >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
+echo 'w' >> "$FN"
 w >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-# Whats cached? IP and/or MAC addresses
-arp -e
+echo "# Whats cached? IP and/or MAC addresses" >> "$FN"
+echo 'arp -e' >> "$FN"
+arp -e >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-route
+echo 'route' >> "$FN"
+route >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-/sbin/route -nee
+echo '/sbin/route -nee' >> "$FN"
+/sbin/route -nee >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
 # Is packet sniffing possible? What can be seen? Listen to live traffic
