@@ -49,172 +49,225 @@ cat /etc/redhat-release >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
 exit
-# What's the kernel version? Is it 64-bit?
-cat /proc/version
+echo "# What's the kernel version? Is it 64-bit?" >> "$FN"
+echo 'cat /proc/version' >> "$FN"
+cat /proc/version >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-uname -a
+echo 'uname -a' >> "$FN"
+uname -a >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-uname -mrs
+echo 'uname -mrs' >> "$FN"
+uname -mrs >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-rpm -q kernel
+echo 'rpm -q kernel' >> "$FN"
+rpm -q kernel >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-dmesg | grep Linux
+echo 'dmesg | grep Linux' >> "$FN"
+dmesg | grep Linux >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-ls /boot | grep vmlinuz-
-echo "------------------------------------" >> "$FN"
-
-# What can be learnt from the environmental variables?
-cat /etc/profile
-echo "------------------------------------" >> "$FN"
-cat /etc/bashrc
-echo "------------------------------------" >> "$FN"
-cat ~/.bash_profile
-echo "------------------------------------" >> "$FN"
-cat ~/.bashrc
-echo "------------------------------------" >> "$FN"
-cat ~/.bash_logout
-echo "------------------------------------" >> "$FN"
-env
-echo "------------------------------------" >> "$FN"
-set
+echo 'ls /boot | grep vmlinuz-' >> "$FN"
+ls /boot | grep vmlinuz- >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-# Is there a printer?
-lpstat -a
+echo "# What can be learnt from the environmental variables?" >> "$FN"
+echo 'cat /etc/profile' >> "$FN"
+cat /etc/profile >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/bashrc' >> "$FN"
+cat /etc/bashrc >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat ~/.bash_profile' >> "$FN"
+cat ~/.bash_profile >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat ~/.bashrc' >> "$FN"
+cat ~/.bashrc >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat ~/.bash_logout' >> "$FN"
+cat ~/.bash_logout >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'env' >> "$FN"
+env >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'set' >> "$FN"
+set >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-### Applications & Services ###
-# What services are running? Which service has which user privilege?
-ps aux
-echo "------------------------------------" >> "$FN"
-ps -ef
-echo "------------------------------------" >> "$FN"
-top
-echo "------------------------------------" >> "$FN"
-cat /etc/services
+echo "# Is there a printer?" >> "$FN"
+echo 'lpstat -a' >> "$FN"
+lpstat -a >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-# Which service(s) are been running by root? Of these services, which are vulnerable - it's worth a double check!
-ps aux | grep root
+echo "### Applications & Services ###" >> "$FN"
+echo "# What services are running? Which service has which user privilege?" >> "$FN"
+echo 'ps aux' >> "$FN"
+ps aux >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-ps -ef | grep root
+echo 'ps -ef' >> "$FN"
+ps -ef >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-
-# What applications are installed? What version are they? Are they currently running?
-ls -alh /usr/bin/
+echo 'top' >> "$FN"
+top >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-ls -alh /sbin/
-echo "------------------------------------" >> "$FN"
-dpkg -l
-echo "------------------------------------" >> "$FN"
-rpm -qa
-echo "------------------------------------" >> "$FN"
-ls -alh /var/cache/apt/archivesO
-echo "------------------------------------" >> "$FN"
-ls -alh /var/cache/yum/
+echo 'cat /etc/services' >> "$FN"
+cat /etc/services >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-# Any of the service(s) settings misconfigured? Are any (vulnerable) plugins attached?
-cat /etc/syslog.conf
+echo "# Which service(s) are been running by root? Of these services, which are vulnerable" >> "$FN"
+echo 'ps aux | grep root' >> "$FN"
+ps aux | grep root >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-cat /etc/chttp.conf
-echo "------------------------------------" >> "$FN"
-cat /etc/lighttpd.conf
-echo "------------------------------------" >> "$FN"
-cat /etc/cups/cupsd.conf
-echo "------------------------------------" >> "$FN"
-cat /etc/inetd.conf
-echo "------------------------------------" >> "$FN"
-cat /etc/apache2/apache2.conf
-echo "------------------------------------" >> "$FN"
-cat /etc/my.conf
-echo "------------------------------------" >> "$FN"
-cat /etc/httpd/conf/httpd.conf
-echo "------------------------------------" >> "$FN"
-cat /opt/lampp/etc/httpd.conf
-echo "------------------------------------" >> "$FN"
-#ls -aRl /etc/ | awk '$1 ~ /^.*r.*/
+echo 'ps -ef | grep root' >> "$FN"
+ps -ef | grep root >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-# What jobs are scheduled?
-crontab -l
+echo "# What applications are installed? What version are they? Are they currently running?" >> "$FN"
+echo 'ls -alh /usr/bin/' >> "$FN"
+ls -alh /usr/bin/ >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-ls -alh /var/spool/cron
+echo 'ls -alh /sbin/' >> "$FN"
+ls -alh /sbin/ >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-ls -al /etc/ | grep cron
+echo 'dpkg -l' >> "$FN"
+dpkg -l >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-ls -al /etc/cron*
+echo 'rpm -qa' >> "$FN"
+rpm -qa >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-cat /etc/cron*
+echo 'ls -alh /var/cache/apt/archivesO' >> "$FN"
+ls -alh /var/cache/apt/archivesO >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-cat /etc/at.allow
-echo "------------------------------------" >> "$FN"
-cat /etc/at.deny
-echo "------------------------------------" >> "$FN"
-cat /etc/cron.allow
-echo "------------------------------------" >> "$FN"
-cat /etc/cron.deny
-echo "------------------------------------" >> "$FN"
-cat /etc/crontab
-echo "------------------------------------" >> "$FN"
-cat /etc/anacrontab
-echo "------------------------------------" >> "$FN"
-cat /var/spool/cron/crontabs/root
+echo 'ls -alh /var/cache/yum/' >> "$FN"
+ls -alh /var/cache/yum/ >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-# Any plain text usernames and/or passwords?
-grep -i user [filename]
+echo "# Any of the service(s) settings misconfigured? Are any (vulnerable) plugins attached?" >> "$FN"
+echo 'cat /etc/syslog.conf' >> "$FN"
+cat /etc/syslog.conf >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-grep -i pass [filename]
+echo 'cat /etc/chttp.conf' >> "$FN"
+cat /etc/chttp.conf >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-grep -C 5 "password" [filename]
+echo 'cat /etc/lighttpd.conf' >> "$FN"
+cat /etc/lighttpd.conf >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-find . -name "*.php" -print0 | xargs -0 grep -i -n "var $password"   # Joomla
+echo 'cat /etc/cups/cupsd.conf' >> "$FN"
+cat /etc/cups/cupsd.conf >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/inetd.conf' >> "$FN"
+cat /etc/inetd.conf >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/apache2/apache2.conf' >> "$FN"
+cat /etc/apache2/apache2.conf >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/my.conf' >> "$FN"
+cat /etc/my.conf >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/httpd/conf/httpd.conf' >> "$FN"
+cat /etc/httpd/conf/httpd.conf >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /opt/lampp/etc/httpd.conf' >> "$FN"
+cat /opt/lampp/etc/httpd.conf >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+#echo 'ls -aRl /etc/ | awk '$1 ~ /^.*r.*/' >> "$FN"
+#ls -aRl /etc/ | awk '$1 ~ /^.*r.*/ >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-### Communications & Networking ###
-# What NIC(s) does the system have? Is it connected to another network?
-/sbin/ifconfig -a
+echo "# What jobs are scheduled?" >> "$FN"
+echo 'crontab -l' >> "$FN"
+crontab -l >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-cat /etc/network/interfaces
+echo 'ls -alh /var/spool/cron' >> "$FN"
+ls -alh /var/spool/cron >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-cat /etc/sysconfig/network
+echo 'ls -al /etc/ | grep cron' >> "$FN"
+ls -al /etc/ | grep cron >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'ls -al /etc/cron*' >> "$FN"
+ls -al /etc/cron* >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/cron*' >> "$FN"
+cat /etc/cron* >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/at.allow' >> "$FN"
+cat /etc/at.allow >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/at.deny' >> "$FN"
+cat /etc/at.deny >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/cron.allow' >> "$FN"
+cat /etc/cron.allow >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/cron.deny' >> "$FN"
+cat /etc/cron.deny >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/crontab' >> "$FN"
+cat /etc/crontab >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /etc/anacrontab' >> "$FN"
+cat /etc/anacrontab >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'cat /var/spool/cron/crontabs/root' >> "$FN"
+cat /var/spool/cron/crontabs/root >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+
+echo "# Any plain text usernames and/or passwords?" >> "$FN"
+echo 'grep -i user [filename]' >> "$FN"
+grep -i user [filename] >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'grep -i pass [filename]' >> "$FN"
+grep -i pass [filename] >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo 'grep -C 5 "password" [filename]' >> "$FN"
+grep -C 5 "password" [filename] >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+echo "# Joomla" >> "$FN"
+echo 'find . -name "*.php" -print0 | xargs -0 grep -i -n "var $password"' >> "$FN"
+find . -name "*.php" -print0 | xargs -0 grep -i -n "var $password" >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+
+echo "### Communications & Networking ###" >> "$FN"
+echo "# What NIC(s) does the system have? Is it connected to another network?" >> "$FN"
+/sbin/ifconfig -a >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+cat /etc/network/interfaces >> "$FN" 2>&1
+echo "------------------------------------" >> "$FN"
+cat /etc/sysconfig/network >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
 # What are the network configuration settings? What can you find out about this network? DHCP server? DNS server? Gateway?
-cat /etc/resolv.conf
+cat /etc/resolv.conf >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-cat /etc/sysconfig/network
+cat /etc/sysconfig/network >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-cat /etc/networks
+cat /etc/networks >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-iptables -L
+iptables -L >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-hostname
+hostname >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-dnsdomainname
+dnsdomainname >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
 # What other users & hosts are communicating with the system?
-lsof -i
+lsof -i >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-lsof -i :80
+lsof -i :80 >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-grep 80 /etc/services
+grep 80 /etc/services >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-netstat -antup
+netstat -antup >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-netstat -antpx
+netstat -antpx >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-netstat -tulpn
+netstat -tulpn >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-chkconfig --list
+chkconfig --list >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-chkconfig --list | grep 3:on
+chkconfig --list | grep 3:on >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-last
+last >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
-w
+w >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
 # Whats cached? IP and/or MAC addresses
