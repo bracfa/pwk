@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Aug 13 17:35:04 2020 as: nmap -Pn -g 53 -p 10180 -oA nmap_sourcePort10180_port10180_10.11.1.251 10.11.1.251 -->
+<nmaprun scanner="nmap" args="nmap -Pn -g 53 -p 10180 -oA nmap_sourcePort10180_port10180_10.11.1.251 10.11.1.251" start="1597354504" startstr="Thu Aug 13 17:35:04 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="10180"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597354504" endtime="1597354504"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.251" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="10180"><state state="closed" reason="reset" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="17042" rttvar="17042" to="100000"/>
+</host>
+<runstats><finished time="1597354504" timestr="Thu Aug 13 17:35:04 2020" elapsed="0.14" summary="Nmap done at Thu Aug 13 17:35:04 2020; 1 IP address (1 host up) scanned in 0.14 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

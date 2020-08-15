@@ -1,0 +1,89 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_recursive_index__10.11.1.251.txt
+START_TIME: Thu Aug 13 16:58:06 2020
+URL_BASE: http://10.11.1.251/wp/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.251/wp/ ----
++ http://10.11.1.251/wp/index.php (CODE:301|SIZE:0)
+==> DIRECTORY: http://10.11.1.251/wp/wp-admin/
+==> DIRECTORY: http://10.11.1.251/wp/wp-content/
+==> DIRECTORY: http://10.11.1.251/wp/wp-includes/
++ http://10.11.1.251/wp/xmlrpc.php (CODE:405|SIZE:42)
+
+---- Entering directory: http://10.11.1.251/wp/wp-admin/ ----
++ http://10.11.1.251/wp/wp-admin/admin.php (CODE:302|SIZE:0)
+==> DIRECTORY: http://10.11.1.251/wp/wp-admin/css/
+==> DIRECTORY: http://10.11.1.251/wp/wp-admin/images/
+==> DIRECTORY: http://10.11.1.251/wp/wp-admin/includes/
++ http://10.11.1.251/wp/wp-admin/index.php (CODE:302|SIZE:0)
+==> DIRECTORY: http://10.11.1.251/wp/wp-admin/js/
+==> DIRECTORY: http://10.11.1.251/wp/wp-admin/maint/
+==> DIRECTORY: http://10.11.1.251/wp/wp-admin/network/
+==> DIRECTORY: http://10.11.1.251/wp/wp-admin/user/
+
+---- Entering directory: http://10.11.1.251/wp/wp-content/ ----
++ http://10.11.1.251/wp/wp-content/index.php (CODE:200|SIZE:0)
+==> DIRECTORY: http://10.11.1.251/wp/wp-content/plugins/
+==> DIRECTORY: http://10.11.1.251/wp/wp-content/themes/
+==> DIRECTORY: http://10.11.1.251/wp/wp-content/upgrade/
+==> DIRECTORY: http://10.11.1.251/wp/wp-content/uploads/
+
+---- Entering directory: http://10.11.1.251/wp/wp-includes/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.251/wp/wp-admin/css/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.251/wp/wp-admin/images/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.251/wp/wp-admin/includes/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.251/wp/wp-admin/js/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.251/wp/wp-admin/maint/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.251/wp/wp-admin/network/ ----
++ http://10.11.1.251/wp/wp-admin/network/admin.php (CODE:302|SIZE:0)
++ http://10.11.1.251/wp/wp-admin/network/index.php (CODE:302|SIZE:0)
+
+---- Entering directory: http://10.11.1.251/wp/wp-admin/user/ ----
++ http://10.11.1.251/wp/wp-admin/user/admin.php (CODE:302|SIZE:0)
++ http://10.11.1.251/wp/wp-admin/user/index.php (CODE:302|SIZE:0)
+
+---- Entering directory: http://10.11.1.251/wp/wp-content/plugins/ ----
++ http://10.11.1.251/wp/wp-content/plugins/index.php (CODE:200|SIZE:0)
+
+---- Entering directory: http://10.11.1.251/wp/wp-content/themes/ ----
++ http://10.11.1.251/wp/wp-content/themes/index.php (CODE:200|SIZE:0)
+
+---- Entering directory: http://10.11.1.251/wp/wp-content/upgrade/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.251/wp/wp-content/uploads/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+-----------------
+END_TIME: Thu Aug 13 17:10:03 2020
+DOWNLOADED: 32284 - FOUND: 11

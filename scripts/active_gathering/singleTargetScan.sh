@@ -9,7 +9,7 @@ sorting or finding unique hosts
 # Enter single IP without mask, then the type of scans
 COMMENT
 # Array for type of scans
-SCAN_ARR=(def smb nfs smtp snmp)
+SCAN_ARR=(def smb nfs smtp snmp wp udp)
 # Command line arguments
 CLI_ARGS="$@"
 # The Target IP address
@@ -181,20 +181,32 @@ do
   fi
 done
 
-<<COMMENT
+#-Wordpress Enumeration-#
+for arg in "$@"
+do
+  if [[ "$arg" =~ "wp" ]]
+  then
+    echo "-------------------------"
+    echo "Starting: $arg scan"
+    echo "$PASS" | sudo -S nmap -sS -p- --script "*wordpress*" "$IP" -oA "$TS""nmap_SYN_scripts_WordPress__""$IP"
+    echo "$PASS" | sudo -S nmap -Pn -p- --script "*wordpress*" "$IP" -oA "$TS""nmap_noPing_scripts_WordPress__""$IP"
+    wpscan --url "http://$IP/wp" -e u,vp,tt,vt -o "$TS""wpscan_users_vulnPlugins_timThumb_vulnThemes__""$IP"".txt"
+  fi
+done
+
 # More default scans... these ones take long
 for arg in "$@"
 do
-  if [[ "$arg" =~ "def" ]]
+  if [[ "$arg" =~ "udp" ]]
   then
     echo "Continuing: $arg scan"
     # TCP scanning
-    nc -nvv -w 1 -z "$IP" 1-65535 > "$TS""nc_TCP_allPorts__""$IP"".txt" 2>&1
+    #nc -nvv -w 1 -z "$IP" 1-65535 > "$TS""nc_TCP_allPorts__""$IP"".txt" 2>&1
     # NC Slow UDP scan all ports
     nc -nv -u -z -w 1 "$IP" 1-65535 > "$TS""nc_UDP_allPorts__""$IP"".txt" 2>&1
     # NMAP UDP Scanning
-    echo "$PASS" | sudo -S nmap -sU -p- "$IP" -oA "$TS""nmap_UDP_allPorts__""$IP"
+    #echo "$PASS" | sudo -S nmap -sU -p- "$IP" -oA "$TS""nmap_UDP_allPorts__""$IP"
+    #echo "$PASS" | sudo -S nmap -Pn -sU -p- "$IP" -oA "$TS""nmap_UDP_allPorts__""$IP"
   fi
 done
-COMMENT
 # Need to do screenshots of all the ports

