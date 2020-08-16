@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sat Aug 15 18:15:42 2020 as: nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-15_180520_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.35 10.11.1.35
+Host: 10.11.1.35 ()	Status: Up
+Host: 10.11.1.35 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.4 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.6 ((CentOS) PHP|5.4.16)/	Ignored State: closed (65533)	Seq Index: 260	IP ID Seq: All zeros
+# Nmap done at Sat Aug 15 18:23:44 2020 -- 1 IP address (1 host up) scanned in 482.56 seconds

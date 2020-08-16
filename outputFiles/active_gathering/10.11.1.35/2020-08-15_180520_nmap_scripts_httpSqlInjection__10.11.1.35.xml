@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Aug 15 18:27:49 2020 as: nmap -Pn -sV -p80 -&#45;script=http-sql-injection -oA 2020-08-15_180520_nmap_scripts_httpSqlInjection__10.11.1.35 10.11.1.35 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sV -p80 -&#45;script=http-sql-injection -oA 2020-08-15_180520_nmap_scripts_httpSqlInjection__10.11.1.35 10.11.1.35" start="1597530469" startstr="Sat Aug 15 18:27:49 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597530469" endtime="1597530476"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.35" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.6" extrainfo="(CentOS) PHP/5.4.16" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.6</cpe></service><script id="http-server-header" output="Apache/2.4.6 (CentOS) PHP/5.4.16"><elem>Apache/2.4.6 (CentOS) PHP/5.4.16</elem>
+</script></port>
+</ports>
+<times srtt="14366" rttvar="14366" to="100000"/>
+</host>
+<runstats><finished time="1597530476" timestr="Sat Aug 15 18:27:56 2020" elapsed="7.09" summary="Nmap done at Sat Aug 15 18:27:56 2020; 1 IP address (1 host up) scanned in 7.09 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

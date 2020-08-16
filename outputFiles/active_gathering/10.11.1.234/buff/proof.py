@@ -74,7 +74,7 @@ def main(argv):
 
     # Check output of different payloads
     #payload = inputBuffer + "/index.html HTTP/1.1\r\n\r\n"
-    #payload = content + buff + "\r\n\r\n"
+    payload = content + buff + "\r\n\r\n"
     #payload = buff + content + "\r\n\r\n"
      
     print "[*] payload: %s" % (payload)

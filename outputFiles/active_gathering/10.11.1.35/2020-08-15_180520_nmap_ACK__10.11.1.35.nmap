@@ -1,0 +1,6 @@
+# Nmap 7.80 scan initiated Sat Aug 15 18:23:44 2020 as: nmap -sA -oA 2020-08-15_180520_nmap_ACK__10.11.1.35 10.11.1.35
+Nmap scan report for 10.11.1.35
+Host is up (0.019s latency).
+All 1000 scanned ports on 10.11.1.35 are filtered
+
+# Nmap done at Sat Aug 15 18:24:05 2020 -- 1 IP address (1 host up) scanned in 21.33 seconds

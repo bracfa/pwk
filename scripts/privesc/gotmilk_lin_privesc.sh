@@ -300,8 +300,9 @@ echo '/sbin/route -nee' >> "$FN"
 /sbin/route -nee >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-# Is packet sniffing possible? What can be seen? Listen to live traffic
-tcpdump tcp dst 192.168.1.7 80 and tcp dst 10.5.5.252 21
+echo "# Is packet sniffing possible? What can be seen? Listen to live traffic" >> "$FN"
+echo 'tcpdump tcp dst 192.168.1.7 80 and tcp dst 10.5.5.252 21' >> "$FN"
+tcpdump tcp dst 192.168.1.7 80 and tcp dst 10.5.5.252 21 >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
 # Note: tcpdump tcp dst [ip] [port] and tcp dst [ip] [port]
@@ -343,9 +344,10 @@ echo "------------------------------------" >> "$FN"
 proxychains ifconfig
 echo "------------------------------------" >> "$FN"
 
-### Confidential Information & Users ###
-# Who are you? Who is logged in? Who has been logged in? Who else is there? Who can do what?
-id
+echo "### Confidential Information & Users ###" >> "$FN"
+echo "# Who are you? Who is logged in? Who has been logged in? Who else is there? Who can do what?" >> "$FN"
+echo 'id' >> "$FN"
+id >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 who
 echo "------------------------------------" >> "$FN"

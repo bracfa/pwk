@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sat Aug 15 18:12:01 2020 as: nmap -sV -sT -p- -oA 2020-08-15_180520_nmap_CONNECT_allPorts_serviceDetection__10.11.1.35 10.11.1.35
+Host: 10.11.1.35 ()	Status: Up
+Host: 10.11.1.35 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.4 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.6 ((CentOS) PHP|5.4.16)/	Ignored State: closed (65533)
+# Nmap done at Sat Aug 15 18:13:04 2020 -- 1 IP address (1 host up) scanned in 62.97 seconds
