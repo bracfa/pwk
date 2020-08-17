@@ -301,12 +301,13 @@ echo '/sbin/route -nee' >> "$FN"
 echo "------------------------------------" >> "$FN"
 
 echo "# Is packet sniffing possible? What can be seen? Listen to live traffic" >> "$FN"
-echo 'tcpdump tcp dst 192.168.1.7 80 and tcp dst 10.5.5.252 21' >> "$FN"
-tcpdump tcp dst 192.168.1.7 80 and tcp dst 10.5.5.252 21 >> "$FN" 2>&1
+echo "tcpdump tcp dst 192.168.1.7 80 and tcp dst 10.5.5.252 21" >> "$FN"
+#tcpdump tcp dst 192.168.1.7 80 and tcp dst 10.5.5.252 21 >> "$FN" 2>&1
 echo "------------------------------------" >> "$FN"
 
-# Note: tcpdump tcp dst [ip] [port] and tcp dst [ip] [port]
-# Have you got a shell? Can you interact with the system?
+echo "# Note: tcpdump tcp dst [ip] [port] and tcp dst [ip] [port]" >> "$FN"
+echo "# Have you got a shell? Can you interact with the system?" >> "$FN"
+echo 'nc -lvp 4444' >> "$FN"  # Attacker. Input (Commands)
 nc -lvp 4444    # Attacker. Input (Commands)
 echo "------------------------------------" >> "$FN"
 nc -lvp 4445    # Attacker. Ouput (Results)
