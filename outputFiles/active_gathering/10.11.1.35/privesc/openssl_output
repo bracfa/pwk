@@ -1,0 +1,3 @@
+openssl passwd -1 -salt ignite pass123
+$1$ignite$3eTbJm98O9Hz.k1NTdNxe1
+
