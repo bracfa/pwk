@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Aug 16 22:50:11 2020 as: nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-16_224919_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.10 10.11.1.10 -->
+<nmaprun scanner="nmap" args="nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-16_224919_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.10 10.11.1.10" start="1597632611" startstr="Sun Aug 16 22:50:11 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<prescript><script id="broadcast-dhcp-discover" output="&#xa;  Response 1 of 1: &#xa;    IP Offered: 192.168.0.25&#xa;    Server Identifier: 192.168.0.1&#xa;    Subnet Mask: 255.255.255.0&#xa;    Router: 192.168.0.1&#xa;    Domain Name Server: 75.75.75.75, 75.75.76.76"><table key="Response 1 of 1">
+<elem key="IP Offered">192.168.0.25</elem>
+<elem key="Server Identifier">192.168.0.1</elem>
+<elem key="Subnet Mask">255.255.255.0</elem>
+<elem key="Router">192.168.0.1</elem>
+<table key="Domain Name Server">
+<elem>75.75.75.75</elem>
+<elem>75.75.76.76</elem>
+</table>
+</table>
+</script><script id="broadcast-igmp-discovery" output="&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.2&#xa;    Description: All Routers on this Subnet&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.22&#xa;    Description: IGMP&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  192.168.0.254&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  Use the newtargets script-arg to add the results as targets&#xa;"/><script id="broadcast-listener" output="&#xa;  udp&#xa;      DHCP&#xa;        srv ip       cli ip        mask           gw           dns                       vendor&#xa;        192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.26  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.26  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;"/><script id="broadcast-netbios-master-browser" output="&#xa;ip  server  domain&#xa;"/><script id="broadcast-upnp-info" output="&#xa;  239.255.255.250&#xa;      Server: Linux 2.6 DLNADOC/1.50 UPnP/1.0 ReadyDLNA/1.1.0&#xa;      Location: http://192.168.0.254:8200/rootDesc.xml&#xa;"/><script id="eap-info" output="please specify an interface with -e"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/></prescript><taskprogress task="SYN Stealth Scan" time="1597632743" percent="77.89" remaining="26" etc="1597632769"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="78.48" remaining="26" etc="1597632769"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="78.56" remaining="26" etc="1597632769"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="78.60" remaining="26" etc="1597632769"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="78.69" remaining="25" etc="1597632769"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="78.73" remaining="25" etc="1597632769"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="78.81" remaining="25" etc="1597632769"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="78.85" remaining="25" etc="1597632769"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="78.93" remaining="25" etc="1597632769"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="78.97" remaining="25" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="79.06" remaining="25" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="79.10" remaining="25" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="79.18" remaining="25" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632744" percent="79.31" remaining="25" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632746" percent="80.91" remaining="23" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632746" percent="81.52" remaining="22" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632746" percent="81.55" remaining="22" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632746" percent="81.64" remaining="22" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632746" percent="81.68" remaining="22" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="81.77" remaining="22" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="81.80" remaining="22" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="81.89" remaining="22" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="81.93" remaining="21" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.01" remaining="21" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.05" remaining="21" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.14" remaining="21" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.18" remaining="21" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.26" remaining="21" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.30" remaining="21" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.39" remaining="21" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.42" remaining="21" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.51" remaining="21" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.55" remaining="21" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.64" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.67" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.76" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.80" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.88" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632747" percent="82.92" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.01" remaining="20" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.04" remaining="20" etc="1597632768"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.13" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.17" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.25" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.29" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.37" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.42" remaining="20" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.50" remaining="19" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.54" remaining="19" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.62" remaining="19" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.66" remaining="19" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.75" remaining="19" etc="1597632767"/>
+<taskprogress task="SYN Stealth Scan" time="1597632748" percent="83.79" remaining="19" etc="1597632767"/>
+<taskprogress task="NSE" time="1597632966" percent="94.44" remaining="0" etc="1597632966"/>
+<host starttime="1597632652" endtime="1597632966"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.10" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="6.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:6.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.10&#xa;    &#xa;    Path: http://10.11.1.10:80/&#xa;    Line number: 18&#xa;    Comment: &#xa;        &lt;!-&#45;Problem-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.10:80/&#xa;    Line number: 20&#xa;    Comment: &#xa;        &lt;!-&#45;Probable causes:&lt;-&#45;&gt;&#xa;"/><script id="http-cookie-flags" output="&#xa;  /CFIDE/administrator/enter.cfm: &#xa;    CFID: &#xa;      httponly flag not set&#xa;    CFTOKEN: &#xa;      httponly flag not set&#xa;  /CFIDE/administrator/entman/index.cfm: &#xa;    CFID: &#xa;      httponly flag not set&#xa;    CFTOKEN: &#xa;      httponly flag not set&#xa;  /CFIDE/administrator/archives/index.cfm: &#xa;    CFID: &#xa;      httponly flag not set&#xa;    CFTOKEN: &#xa;      httponly flag not set"><table key="/CFIDE/administrator/enter.cfm">
+<table key="CFID">
+<elem>httponly flag not set</elem>
+</table>
+<table key="CFTOKEN">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/CFIDE/administrator/entman/index.cfm">
+<table key="CFID">
+<elem>httponly flag not set</elem>
+</table>
+<table key="CFTOKEN">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+<table key="/CFIDE/administrator/archives/index.cfm">
+<table key="CFID">
+<elem>httponly flag not set</elem>
+</table>
+<table key="CFTOKEN">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-date" output="Mon, 17 Aug 2020 02:52:54 GMT; 0s from local time."><elem key="date">2020-08-17T02:52:54+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /CFIDE/administrator/enter.cfm: ColdFusion Admin Console&#xa;  /CFIDE/administrator/entman/index.cfm: ColdFusion Admin Console&#xa;  /cfide/install.cfm: ColdFusion Admin Console&#xa;  /CFIDE/administrator/archives/index.cfm: ColdFusion Admin Console&#xa;  /CFIDE/wizards/common/_logintowizard.cfm: ColdFusion Admin Console&#xa;  /CFIDE/componentutils/login.cfm: ColdFusion Admin Console&#xa;"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-headers" output="&#xa;  Content-Length: 1433&#xa;  Content-Type: text/html&#xa;  Content-Location: http://10.11.1.10/iisstart.htm&#xa;  Last-Modified: Sat, 22 Feb 2003 01:48:30 GMT&#xa;  Accept-Ranges: bytes&#xa;  ETag: &quot;06be97f14dac21:3d2&quot;&#xa;  Server: Microsoft-IIS/6.0&#xa;  Date: Mon, 17 Aug 2020 02:52:55 GMT&#xa;  Connection: close&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-methods" output="&#xa;  Potentially risky methods: TRACE"><table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="Microsoft-IIS/6.0"><elem>Microsoft-IIS/6.0</elem>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="Under Construction"><elem key="title">Under Construction</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-vuln-cve2010-2861" output="&#xa;  VULNERABLE:&#xa;  Adobe ColdFusion Directory Traversal Vulnerability&#xa;    State: VULNERABLE (Exploitable)&#xa;    IDs:  BID:42342  CVE:CVE-2010-2861&#xa;      Multiple directory traversal vulnerabilities in the administrator console&#xa;      in Adobe ColdFusion 9.0.1 and earlier allow remote attackers to read arbitrary files via the&#xa;      locale parameter&#xa;    Disclosure date: 2010-08-10&#xa;    Extra information:&#xa;      &#xa;    ColdFusion8&#xa;      HMAC: 59297006FCBCAC505C69EBBA6D0506F27C1CA8EF&#xa;      Salt: 1597632774864&#xa;      Hash: AAFDC23870ECBCD3D557B6423A8982134E17927E&#xa;  &#xa;    References:&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2861&#xa;      http://www.blackhatacademy.org/security101/Cold_Fusion_Hacking&#xa;      https://www.securityfocus.com/bid/42342&#xa;      https://nvd.nist.gov/vuln/detail/CVE-2010-2861&#xa;      https://www.tenable.com/plugins/nessus/48340&#xa;"><table key="CVE-2010-2861">
+<elem key="title">Adobe ColdFusion Directory Traversal Vulnerability</elem>
+<elem key="state">VULNERABLE (Exploitable)</elem>
+<table key="ids">
+<elem>BID:42342</elem>
+<elem>CVE:CVE-2010-2861</elem>
+</table>
+<table key="description">
+<elem>Multiple directory traversal vulnerabilities in the administrator console&#xa;in Adobe ColdFusion 9.0.1 and earlier allow remote attackers to read arbitrary files via the&#xa;locale parameter</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="month">08</elem>
+<elem key="year">2010</elem>
+<elem key="day">10</elem>
+</table>
+</table>
+<elem key="disclosure">2010-08-10</elem>
+<table key="extra_info">
+<elem>&#xa;  ColdFusion8&#xa;    HMAC: 59297006FCBCAC505C69EBBA6D0506F27C1CA8EF&#xa;    Salt: 1597632774864&#xa;    Hash: AAFDC23870ECBCD3D557B6423A8982134E17927E&#xa;</elem>
+</table>
+<table key="refs">
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2861</elem>
+<elem>http://www.blackhatacademy.org/security101/Cold_Fusion_Hacking</elem>
+<elem>https://www.securityfocus.com/bid/42342</elem>
+<elem>https://nvd.nist.gov/vuln/detail/CVE-2010-2861</elem>
+<elem>https://www.tenable.com/plugins/nessus/48340</elem>
+</table>
+</table>
+</script><script id="http-xssed" output="No previously reported XSS vuln."/><script id="vulners" output="&#xa;  cpe:/a:microsoft:iis:6.0: &#xa;    &#x9;IIS_PHP_AUTH_BYPASS.NASL&#x9;7.5&#x9;https://vulners.com/nessus/IIS_PHP_AUTH_BYPASS.NASL"><table key="cpe:/a:microsoft:iis:6.0">
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">7.5</elem>
+<elem key="id">IIS_PHP_AUTH_BYPASS.NASL</elem>
+<elem key="type">nessus</elem>
+</table>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Microsoft Windows Server 2003 SP2" accuracy="89" line="72922">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003" accuracy="88" line="71802">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="88"><cpe>cpe:/o:microsoft:windows_server_2003</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 2000 SP4" accuracy="87" line="71132">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2000" accuracy="87"><cpe>cpe:/o:microsoft:windows_2000::sp4</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP3" accuracy="86" line="84080">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="86"><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="Apple AirPort Extreme WAP" accuracy="86" line="3532">
+<osclass type="WAP" vendor="Apple" osfamily="embedded" accuracy="86"><cpe>cpe:/h:apple:airport_extreme</cpe></osclass>
+</osmatch>
+</os>
+<distance value="2"/>
+<tcpsequence index="256" difficulty="Good luck!" values="1ECF1CB5,27142D2D,FCD91866,C63D8C63,A77D31F1,F2A2A0CD"/>
+<ipidsequence class="Incremental" values="2A0,2A1,2A2,2A3,2A4,2A5"/>
+<tcptssequence class="zero timestamp" values="0,0,0,0,0,0"/>
+<hostscript><script id="fcrdns" output="FAIL (No PTR record)"><table key="&lt;none&gt;">
+<elem key="status">fail</elem>
+<elem key="reason">No PTR record</elem>
+</table>
+</script><script id="firewalk" output="&#xa;HOP  HOST           PROTOCOL  BLOCKED PORTS&#xa;1    192.168.119.1  tcp       1-10&#xa;"/><script id="ipidseq" output="Random Positive Increments"/><script id="path-mtu" output="PMTU == 1500"/><script id="traceroute-geolocation" output="&#xa;  HOP  RTT    ADDRESS        GEOLOCATION&#xa;  1    39.87  192.168.119.1  - ,- &#xa;  2    39.79  10.11.1.10     - ,- &#xa;"><table>
+<elem key="rtt">39.87</elem>
+<elem key="ip">192.168.119.1</elem>
+<elem key="hop">1</elem>
+</table>
+<table>
+<elem key="rtt">39.79</elem>
+<elem key="ip">10.11.1.10</elem>
+<elem key="hop">2</elem>
+</table>
+</script></hostscript><trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="192.168.119.1" rtt="39.87"/>
+<hop ttl="2" ipaddr="10.11.1.10" rtt="39.79"/>
+</trace>
+<times srtt="35421" rttvar="6957" to="100000"/>
+</host>
+<postscript><script id="reverse-index" output="&#xa;  80/tcp: 10.11.1.10"><table key="80/tcp">
+<elem>10.11.1.10</elem>
+</table>
+</script></postscript><runstats><finished time="1597632966" timestr="Sun Aug 16 22:56:06 2020" elapsed="355.62" summary="Nmap done at Sun Aug 16 22:56:06 2020; 1 IP address (1 host up) scanned in 355.62 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,2 @@
+# Nmap 7.80 scan initiated Sun Aug 16 22:56:06 2020 as: nmap -sA -oA 2020-08-16_224919_nmap_ACK__10.11.1.10 10.11.1.10
+# Nmap done at Sun Aug 16 22:56:09 2020 -- 1 IP address (0 hosts up) scanned in 3.11 seconds

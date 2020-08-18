@@ -1,0 +1,18 @@
+- Nikto v2.1.6/2.1.5
++ Target Host: 10.11.1.10
++ Target Port: 80
++ GET The anti-clickjacking X-Frame-Options header is not present.
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ OPTIONS Allowed HTTP Methods: OPTIONS, TRACE, GET, HEAD, POST 
++ OPTIONS Public HTTP Methods: OPTIONS, TRACE, GET, HEAD, POST 
++ GET Uncommon header 'server-error' found, with contents: true
++ GET Cookie CFID created without the httponly flag
++ GET Cookie CFTOKEN created without the httponly flag
++ GET Cookie CFAUTHORIZATION_cfadmin created without the httponly flag
++ OSVDB-3399: GET /CFIDE/administrator/index.cfm: ColdFusion Administrator found. ColdFusion 4.5.1 and earlier may have an overflow by submitting a 40k character password. CVE-2000-0538. BID-1314.
++ GET Cookie CFAUTHORIZATION_componentutils created without the httponly flag
++ GET /CFIDE/componentutils/cfcexplorer.cfc: ColdFusion Component Browser. Default password may be 'admin'.
++ GET Cookie JSESSIONID created without the httponly flag
++ GET /flex2gateway/http: Adobe BlazeDS identified.
++ GET /servlet/AxisServlet: Apache Axis web services reveals information about all installed web services. See http://ws.apache.org/axis/java/security.html to secure Axis.

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Aug 16 22:50:11 2020 as: nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-16_224919_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.10 10.11.1.10
+Host: 10.11.1.10 ()	Status: Up
+Host: 10.11.1.10 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 6.0/	Ignored State: filtered (65534)	Seq Index: 256	IP ID Seq: Incremental
+# Nmap done at Sun Aug 16 22:56:06 2020 -- 1 IP address (1 host up) scanned in 355.62 seconds

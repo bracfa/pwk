@@ -1,0 +1,1 @@
+# Nmap 7.80 scan initiated Sun Aug 16 22:56:10 2020 as: nmap -v -Pn -p- -O -oA 2020-08-16_224919_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.10 10.11.1.10

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Aug 16 22:49:27 2020 as: nmap -sS -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-16_224919_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.10 10.11.1.10 -->
+<nmaprun scanner="nmap" args="nmap -sS -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-16_224919_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.10 10.11.1.10" start="1597632567" startstr="Sun Aug 16 22:49:27 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<prescript><script id="broadcast-dhcp-discover" output="&#xa;  Response 1 of 1: &#xa;    IP Offered: 192.168.0.25&#xa;    Server Identifier: 192.168.0.1&#xa;    Subnet Mask: 255.255.255.0&#xa;    Router: 192.168.0.1&#xa;    Domain Name Server: 75.75.75.75, 75.75.76.76"><table key="Response 1 of 1">
+<elem key="IP Offered">192.168.0.25</elem>
+<elem key="Server Identifier">192.168.0.1</elem>
+<elem key="Subnet Mask">255.255.255.0</elem>
+<elem key="Router">192.168.0.1</elem>
+<table key="Domain Name Server">
+<elem>75.75.75.75</elem>
+<elem>75.75.76.76</elem>
+</table>
+</table>
+</script><script id="broadcast-igmp-discovery" output="&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.2&#xa;    Description: All Routers on this Subnet&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.22&#xa;    Description: IGMP&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  192.168.0.254&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  Use the newtargets script-arg to add the results as targets&#xa;"/><script id="broadcast-listener" output="&#xa;  ether&#xa;      ARP Request&#xa;        sender ip    sender mac         target ip&#xa;        192.168.0.1  6c:b0:ce:d4:82:43  192.168.0.25&#xa;  udp&#xa;      DHCP&#xa;        srv ip       cli ip        mask           gw           dns                       vendor&#xa;        192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.26  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.26  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;"/><script id="broadcast-netbios-master-browser" output="&#xa;ip  server  domain&#xa;"/><script id="broadcast-upnp-info" output="&#xa;  239.255.255.250&#xa;      Server: Unspecified, UPnP/1.0, Unspecified&#xa;      Location: http://192.168.0.254:49152/wps_device.xml&#xa;"/><script id="eap-info" output="please specify an interface with -e"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/></prescript><runstats><finished time="1597632611" timestr="Sun Aug 16 22:50:11 2020" elapsed="44.24" summary="Nmap done at Sun Aug 16 22:50:11 2020; 1 IP address (0 hosts up) scanned in 44.24 seconds" exit="success"/><hosts up="0" down="1" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,45 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_10.11.1.10.txt
+START_TIME: Sun Aug 16 23:27:03 2020
+URL_BASE: http://10.11.1.10/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.10/ ----
+==> DIRECTORY: http://10.11.1.10/cfdocs/
+==> DIRECTORY: http://10.11.1.10/cfide/
+
+---- Entering directory: http://10.11.1.10/cfdocs/ ----
+==> DIRECTORY: http://10.11.1.10/cfdocs/images/
+==> DIRECTORY: http://10.11.1.10/cfdocs/Images/
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_10.11.1.10.txt
+START_TIME: Sun Aug 16 23:29:49 2020
+URL_BASE: http://10.11.1.10/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Recursive
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.10/ ----
+==> DIRECTORY: http://10.11.1.10/cfdocs/
+==> DIRECTORY: http://10.11.1.10/cfide/
+
+-----------------
+END_TIME: Sun Aug 16 23:31:28 2020
+DOWNLOADED: 4612 - FOUND: 0

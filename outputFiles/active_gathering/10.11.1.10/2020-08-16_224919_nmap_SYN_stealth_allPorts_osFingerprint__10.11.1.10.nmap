@@ -1,0 +1,2 @@
+# Nmap 7.80 scan initiated Sun Aug 16 22:49:20 2020 as: nmap -sS -p- -O -oA 2020-08-16_224919_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.10 10.11.1.10
+# Nmap done at Sun Aug 16 22:49:23 2020 -- 1 IP address (0 hosts up) scanned in 3.35 seconds
