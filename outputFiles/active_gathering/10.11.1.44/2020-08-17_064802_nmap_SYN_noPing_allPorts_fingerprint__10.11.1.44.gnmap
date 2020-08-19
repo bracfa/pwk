@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Mon Aug 17 07:01:34 2020 as: nmap -v -Pn -p- -O -oA 2020-08-17_064802_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.44 10.11.1.44
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.11.1.44 ()	Status: Up
+Host: 10.11.1.44 ()	Ports: 22/open/tcp//ssh///, 8000/open/tcp//http-alt///	Ignored State: closed (65533)	Seq Index: 255	IP ID Seq: All zeros
+# Nmap done at Mon Aug 17 07:02:18 2020 -- 1 IP address (1 host up) scanned in 43.99 seconds

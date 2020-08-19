@@ -1,0 +1,15 @@
+- Nikto v2.1.6/2.1.5
++ Target Host: 10.11.1.39
++ Target Port: 80
++ GET The anti-clickjacking X-Frame-Options header is not present.
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ GET Cookie OTRSBrowserHasCookie created without the httponly flag
++ GET Retrieved x-powered-by header: OTRS 5.0.2 - Open Ticket Request System (http://www.otrs.com/)
++ GET Uncommon header 'x-otrs-login' found, with contents: /otrs/index.pl?
++ GET Entry '/otrs/index.pl' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ GET "robots.txt" contains 1 entry which should be manually viewed.
++ OPTIONS Allowed HTTP Methods: GET, HEAD, POST, OPTIONS, TRACE 
++ OSVDB-3268: GET /icons/: Directory indexing found.
++ OSVDB-3233: GET /icons/README: Apache default file found.
++ GET Uncommon header 'content-disposition' found, with contents: filename="Installer.html"

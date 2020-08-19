@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Mon Aug 17 07:04:40 2020 as: nmap -Pn --script=http-enum -oA 2020-08-17_064802_nmap_scripts_httpEnum__10.11.1.44 10.11.1.44
+Nmap scan report for 10.11.1.44
+Host is up (0.028s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+8000/tcp open  http-alt
+
+# Nmap done at Mon Aug 17 07:06:18 2020 -- 1 IP address (1 host up) scanned in 97.90 seconds

@@ -1,0 +1,21 @@
+# Nmap 7.80 scan initiated Sun Aug 16 23:50:14 2020 as: nmap -v -Pn -p- -O -oA 2020-08-16_233424_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.39 10.11.1.39
+Nmap scan report for 10.11.1.39
+Host is up (0.020s latency).
+Not shown: 65532 filtered ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+3306/tcp open  mysql
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Linux 4.X|3.X|2.6.X (91%)
+OS CPE: cpe:/o:linux:linux_kernel:4.4 cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:2.6
+Aggressive OS guesses: Linux 4.4 (91%), Linux 3.10 - 3.12 (89%), Linux 4.9 (88%), Linux 2.6.18 - 2.6.22 (86%), Linux 3.10 - 3.16 (86%), Linux 4.0 (86%), Linux 3.10 - 4.11 (85%), Linux 3.11 - 4.1 (85%), Linux 3.2 - 4.9 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.011 days (since Sun Aug 16 23:36:24 2020)
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug 16 23:52:47 2020 -- 1 IP address (1 host up) scanned in 153.53 seconds

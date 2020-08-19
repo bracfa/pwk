@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Sun Aug 16 23:50:14 2020 as: nmap -v -Pn -p- -O -oA 2020-08-16_233424_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.39 10.11.1.39
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.11.1.39 ()	Status: Up
+Host: 10.11.1.39 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 3306/open/tcp//mysql///	Ignored State: filtered (65532)	Seq Index: 262	IP ID Seq: All zeros
+# Nmap done at Sun Aug 16 23:52:47 2020 -- 1 IP address (1 host up) scanned in 153.53 seconds

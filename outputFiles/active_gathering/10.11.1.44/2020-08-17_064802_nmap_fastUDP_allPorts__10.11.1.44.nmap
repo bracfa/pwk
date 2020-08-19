@@ -1,0 +1,7 @@
+# Nmap 7.80 scan initiated Mon Aug 17 07:02:18 2020 as: nmap -sU -p- --defeat-icmp-ratelimit -oA 2020-08-17_064802_nmap_fastUDP_allPorts__10.11.1.44 10.11.1.44
+Nmap scan report for 10.11.1.44
+Host is up (0.022s latency).
+All 65535 scanned ports on 10.11.1.44 are closed|filtered (65383) or closed (152)
+
+WARNING: Some ports marked closed|filtered may actually be open. For more accurate results, do not use --defeat-icmp-ratelimit .
+# Nmap done at Mon Aug 17 07:04:40 2020 -- 1 IP address (1 host up) scanned in 141.71 seconds

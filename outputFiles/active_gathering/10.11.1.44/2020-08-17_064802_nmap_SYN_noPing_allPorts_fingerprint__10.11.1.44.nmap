@@ -1,0 +1,26 @@
+# Nmap 7.80 scan initiated Mon Aug 17 07:01:34 2020 as: nmap -v -Pn -p- -O -oA 2020-08-17_064802_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.44 10.11.1.44
+Nmap scan report for 10.11.1.44
+Host is up (0.019s latency).
+Not shown: 65533 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+8000/tcp open  http-alt
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=8/17%OT=22%CT=1%CU=33956%PV=Y%DS=2%DC=I%G=Y%TM=5F3A63B
+OS:A%P=x86_64-pc-linux-gnu)SEQ(SP=FF%GCD=1%ISR=10F%TI=Z%II=I%TS=8)OPS(O1=M5
+OS:4DST11NW5%O2=M54DST11NW5%O3=M54DNNT11NW5%O4=M54DST11NW5%O5=M54DST11NW5%O
+OS:6=M54DST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R=Y%D
+OS:F=Y%T=40%W=16D0%O=M54DNNSNW5%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0
+OS:%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T
+OS:6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%R
+OS:UD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.019 days (since Mon Aug 17 06:34:39 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug 17 07:02:18 2020 -- 1 IP address (1 host up) scanned in 43.99 seconds

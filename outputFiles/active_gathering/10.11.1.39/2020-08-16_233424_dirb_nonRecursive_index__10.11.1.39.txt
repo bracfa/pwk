@@ -1,0 +1,23 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: 2020-08-16_233424_dirb_nonRecursive_index__10.11.1.39.txt
+START_TIME: Sun Aug 16 23:56:57 2020
+URL_BASE: http://10.11.1.39/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Recursive
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.39/ ----
++ http://10.11.1.39/cgi-bin/ (CODE:403|SIZE:210)
++ http://10.11.1.39/robots.txt (CODE:301|SIZE:184)
+
+-----------------
+END_TIME: Sun Aug 16 23:58:34 2020
+DOWNLOADED: 4612 - FOUND: 2

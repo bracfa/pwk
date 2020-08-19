@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Aug 17 06:48:54 2020 as: nmap -sV -sT -p- -oA 2020-08-17_064802_nmap_CONNECT_allPorts_serviceDetection__10.11.1.44 10.11.1.44
+Host: 10.11.1.44 ()	Status: Up
+Host: 10.11.1.44 ()	Ports: 22/open/tcp//ssh//OpenSSH 5.3p1 Debian 3ubuntu7 (Ubuntu Linux; protocol 2.0)/, 8000/open/tcp//ssl|http-alt///	Ignored State: closed (65533)
+# Nmap done at Mon Aug 17 06:50:43 2020 -- 1 IP address (1 host up) scanned in 109.56 seconds

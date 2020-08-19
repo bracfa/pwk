@@ -1,0 +1,266 @@
+# Nmap 7.80 scan initiated Sun Aug 16 19:36:17 2020 as: nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-16_193250_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.5 10.11.1.5
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 192.168.0.24
+|     Server Identifier: 192.168.0.1
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.0.1
+|_    Domain Name Server: 75.75.75.75, 75.75.76.76
+| broadcast-igmp-discovery: 
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.2
+|     Description: All Routers on this Subnet
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+| broadcast-listener: 
+|   udp
+|       DHCP
+|         srv ip       cli ip        mask           gw           dns                       vendor
+|         192.168.0.1  192.168.0.24  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|_        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Linux 2.6 DLNADOC/1.50 UPnP/1.0 ReadyDLNA/1.1.0
+|_      Location: http://192.168.0.254:8200/rootDesc.xml
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+Nmap scan report for 10.11.1.5
+Host is up (0.019s latency).
+Not shown: 65531 closed ports
+PORT     STATE SERVICE      VERSION
+135/tcp  open  msrpc        Microsoft Windows RPC
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+445/tcp  open  microsoft-ds Windows XP microsoft-ds
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+1025/tcp open  msrpc        Microsoft Windows RPC
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=8/16%OT=135%CT=1%CU=38652%PV=Y%DS=2%DC=T%G=Y%TM=5F39C3
+OS:67%P=x86_64-pc-linux-gnu)SEQ(SP=89%GCD=2%ISR=9A%TI=I%II=I%SS=S%TS=0)OPS(
+OS:O1=M54DNW0NNT00NNS%O2=M54DNW0NNT00NNS%O3=M54DNW0NNT00%O4=M54DNW0NNT00NNS
+OS:%O5=M54DNW0NNT00NNS%O6=M54DNNT00NNS)WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%
+OS:W5=FAF0%W6=FAF0)ECN(R=Y%DF=Y%T=80%W=FAF0%O=M54DNW0NNS%CC=N%Q=)T1(R=Y%DF=
+OS:Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=N%T=80%W=0%S
+OS:=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=80%IPL=38%UN=0%RIPL=
+OS:G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=S%T=80%CD=Z)
+
+Network Distance: 2 hops
+Service Info: OSs: Windows, Windows XP; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_xp
+
+Host script results:
+|_clock-skew: mean: -29m59s, deviation: 42m24s, median: -59m59s
+|_fcrdns: FAIL (No PTR record)
+|_ipidseq: Incremental!
+| msrpc-enum: 
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     udp_port: 1028
+|     exe: messenger msgsvcsend interface (Messenger service)
+|     ip_addr: 0.0.0.0
+|   
+|     ncalrpc: OLE3
+|     uuid: 1ff70682-0a51-30e8-076d-740be8cee98b
+|     exe: mstask.exe atsvc interface (Scheduler service)
+|   
+|     uuid: 1ff70682-0a51-30e8-076d-740be8cee98b
+|     exe: mstask.exe atsvc interface (Scheduler service)
+|     ip_addr: 0.0.0.0
+|     tcp_port: 1025
+|   
+|     uuid: 1ff70682-0a51-30e8-076d-740be8cee98b
+|     netbios: \\ALICE
+|     ncacn_np: \PIPE\atsvc
+|     exe: mstask.exe atsvc interface (Scheduler service)
+|   
+|     ncalrpc: OLE3
+|     uuid: 378e52b0-c0a9-11cf-822d-00aa0051e40f
+|   
+|     uuid: 378e52b0-c0a9-11cf-822d-00aa0051e40f
+|     tcp_port: 1025
+|     ip_addr: 0.0.0.0
+|   
+|     uuid: 378e52b0-c0a9-11cf-822d-00aa0051e40f
+|     netbios: \\ALICE
+|     ncacn_np: \PIPE\atsvc
+|   
+|     ncalrpc: OLE3
+|     uuid: 0a74ef1c-41a4-4e06-83ae-dc74fb1cdd53
+|   
+|     uuid: 0a74ef1c-41a4-4e06-83ae-dc74fb1cdd53
+|     tcp_port: 1025
+|     ip_addr: 0.0.0.0
+|   
+|     uuid: 0a74ef1c-41a4-4e06-83ae-dc74fb1cdd53
+|     netbios: \\ALICE
+|     ncacn_np: \PIPE\atsvc
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     exe: messenger msgsvcsend interface (Messenger service)
+|     ncalrpc: OLE3
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     exe: messenger msgsvcsend interface (Messenger service)
+|     ip_addr: 0.0.0.0
+|     tcp_port: 1025
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     netbios: \\ALICE
+|     ncacn_np: \PIPE\atsvc
+|     exe: messenger msgsvcsend interface (Messenger service)
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     exe: messenger msgsvcsend interface (Messenger service)
+|     ncalrpc: AudioSrv
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     netbios: \\ALICE
+|     ncacn_np: \PIPE\wkssvc
+|     exe: messenger msgsvcsend interface (Messenger service)
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     netbios: \\ALICE
+|     ncacn_np: \PIPE\SECLOGON
+|     exe: messenger msgsvcsend interface (Messenger service)
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     netbios: \\ALICE
+|     ncacn_np: \pipe\trkwks
+|     exe: messenger msgsvcsend interface (Messenger service)
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     exe: messenger msgsvcsend interface (Messenger service)
+|     ncalrpc: trkwks
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     netbios: \\ALICE
+|     ncacn_np: \pipe\keysvc
+|     exe: messenger msgsvcsend interface (Messenger service)
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     exe: messenger msgsvcsend interface (Messenger service)
+|     ncalrpc: keysvc
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     exe: messenger msgsvcsend interface (Messenger service)
+|     ncalrpc: senssvc
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     netbios: \\ALICE
+|     ncacn_np: \PIPE\srvsvc
+|     exe: messenger msgsvcsend interface (Messenger service)
+|   
+|     annotation: Messenger Service
+|     uuid: 5a7b91f8-ff00-11d0-a9b2-00c04fb6e6fc
+|     netbios: \\ALICE
+|     ncacn_np: \PIPE\msgsvc
+|_    exe: messenger msgsvcsend interface (Messenger service)
+|_nbstat: NetBIOS name: ALICE, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:8a:75:ee (VMware)
+|_path-mtu: PMTU == 1500
+| qscan: 
+| PORT  FAMILY  MEAN (us)  STDDEV   LOSS (%)
+| 1     0       19687.20   1705.06  0.0%
+| 135   0       20131.80   4174.74  0.0%
+| 139   0       19659.00   1303.84  0.0%
+| 445   0       19520.80   1990.69  0.0%
+|_1025  0       19329.60   1190.46  0.0%
+|_samba-vuln-cve-2012-1182: SMB: Failed to receive bytes: TIMEOUT
+|_smb-mbenum: ERROR: Script execution failed (use -d to debug)
+| smb-os-discovery: 
+|   OS: Windows XP (Windows 2000 LAN Manager)
+|   OS CPE: cpe:/o:microsoft:windows_xp::-
+|   Computer name: alice
+|   NetBIOS computer name: ALICE\x00
+|   Domain name: thinc.local
+|   Forest name: thinc.local
+|   FQDN: alice.thinc.local
+|_  System time: 2020-08-17T00:37:48+01:00
+| smb-protocols: 
+|   dialects: 
+|_    NT LM 0.12 (SMBv1) [dangerous, but default]
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb-vuln-ms08-067: 
+|   VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2008-4250
+|           The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,
+|           Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary
+|           code via a crafted RPC request that triggers the overflow during path canonicalization.
+|           
+|     Disclosure date: 2008-10-23
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250
+|_      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: NT_STATUS_OBJECT_NAME_NOT_FOUND
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|       https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+|_      https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_smb2-time: Protocol negotiation failed (SMB2)
+| traceroute-geolocation: 
+|   HOP  RTT    ADDRESS        GEOLOCATION
+|   1    20.54  192.168.119.1  - ,- 
+|_  2    20.90  10.11.1.5      - ,- 
+
+TRACEROUTE (using port 22/tcp)
+HOP RTT      ADDRESS
+1   20.54 ms 192.168.119.1
+2   20.90 ms 10.11.1.5
+
+Post-scan script results:
+| reverse-index: 
+|   135/tcp: 10.11.1.5
+|   139/tcp: 10.11.1.5
+|   445/tcp: 10.11.1.5
+|_  1025/tcp: 10.11.1.5
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug 16 19:38:15 2020 -- 1 IP address (1 host up) scanned in 118.47 seconds

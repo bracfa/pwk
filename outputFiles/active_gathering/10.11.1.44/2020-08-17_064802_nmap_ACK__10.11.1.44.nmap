@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Mon Aug 17 07:01:20 2020 as: nmap -sA -oA 2020-08-17_064802_nmap_ACK__10.11.1.44 10.11.1.44
+Nmap scan report for 10.11.1.44
+Host is up (0.020s latency).
+Not shown: 999 filtered ports
+PORT     STATE      SERVICE
+8000/tcp unfiltered http-alt
+
+# Nmap done at Mon Aug 17 07:01:34 2020 -- 1 IP address (1 host up) scanned in 14.17 seconds

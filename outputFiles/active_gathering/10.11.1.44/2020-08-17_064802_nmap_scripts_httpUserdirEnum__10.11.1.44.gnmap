@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Aug 17 07:06:21 2020 as: nmap -Pn --script=http-userdir-enum -oA 2020-08-17_064802_nmap_scripts_httpUserdirEnum__10.11.1.44 10.11.1.44
+Host: 10.11.1.44 ()	Status: Up
+Host: 10.11.1.44 ()	Ports: 22/open/tcp//ssh///, 8000/open/tcp//http-alt///	Ignored State: closed (998)
+# Nmap done at Mon Aug 17 07:06:22 2020 -- 1 IP address (1 host up) scanned in 1.39 seconds

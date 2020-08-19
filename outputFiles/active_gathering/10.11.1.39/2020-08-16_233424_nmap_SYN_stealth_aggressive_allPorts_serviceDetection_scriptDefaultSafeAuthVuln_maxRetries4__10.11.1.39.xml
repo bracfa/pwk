@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Aug 16 23:39:39 2020 as: nmap -sS -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-16_233424_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.39 10.11.1.39 -->
+<nmaprun scanner="nmap" args="nmap -sS -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-16_233424_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.39 10.11.1.39" start="1597635579" startstr="Sun Aug 16 23:39:39 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<prescript><script id="broadcast-dhcp-discover" output="&#xa;  Response 1 of 1: &#xa;    IP Offered: 192.168.0.25&#xa;    Server Identifier: 192.168.0.1&#xa;    Subnet Mask: 255.255.255.0&#xa;    Router: 192.168.0.1&#xa;    Domain Name Server: 75.75.75.75, 75.75.76.76"><table key="Response 1 of 1">
+<elem key="IP Offered">192.168.0.25</elem>
+<elem key="Server Identifier">192.168.0.1</elem>
+<elem key="Subnet Mask">255.255.255.0</elem>
+<elem key="Router">192.168.0.1</elem>
+<table key="Domain Name Server">
+<elem>75.75.75.75</elem>
+<elem>75.75.76.76</elem>
+</table>
+</table>
+</script><script id="broadcast-igmp-discovery" output="&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.2&#xa;    Description: All Routers on this Subnet&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.22&#xa;    Description: IGMP&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.34&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  Use the newtargets script-arg to add the results as targets&#xa;"/><script id="broadcast-listener" output="&#xa;  ether&#xa;  udp&#xa;      DHCP&#xa;        srv ip       cli ip        mask           gw           dns                       vendor&#xa;        192.168.0.1  192.168.0.26  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.26  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;"/><script id="broadcast-netbios-master-browser" output="&#xa;ip  server  domain&#xa;"/><script id="broadcast-upnp-info" output="&#xa;  239.255.255.250&#xa;      Server: Unspecified, UPnP/1.0, Unspecified&#xa;      Location: http://192.168.0.254:49152/wps_device.xml&#xa;"/><script id="eap-info" output="please specify an interface with -e"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/></prescript><taskprogress task="NSE" time="1597635845" percent="99.51" remaining="1" etc="1597635845"/>
+<taskprogress task="NSE" time="1597635845" percent="99.51" remaining="1" etc="1597635845"/>
+<taskprogress task="NSE" time="1597635845" percent="99.51" remaining="1" etc="1597635845"/>
+<taskprogress task="NSE" time="1597635846" percent="99.51" remaining="1" etc="1597635846"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635847" percent="99.51" remaining="1" etc="1597635847"/>
+<taskprogress task="NSE" time="1597635866" percent="99.80" remaining="1" etc="1597635866"/>
+<host starttime="1597635620" endtime="1597635892"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.11.1.39" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65369"/>
+<extrareasons reason="host-prohibiteds" count="163"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="6.6.1" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.1</cpe></service><script id="banner" output="SSH-2.0-OpenSSH_6.6.1"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="ssh-auth-methods" output="&#xa;  Supported authentication methods: &#xa;    publickey&#xa;    gssapi-keyex&#xa;    gssapi-with-mic&#xa;    password"><table key="Supported authentication methods">
+<elem>publickey</elem>
+<elem>gssapi-keyex</elem>
+<elem>gssapi-with-mic</elem>
+<elem>password</elem>
+</table>
+</script><script id="ssh-hostkey" output="&#xa;  2048 5e:c1:7e:d2:f9:20:f9:11:ea:4b:02:68:07:3f:54:f2 (RSA)&#xa;  256 36:ef:27:31:a2:fd:4a:e3:d2:4e:12:58:1f:7a:03:58 (ECDSA)&#xa;  256 2c:70:9c:c9:4c:50:61:d2:51:43:d5:67:d1:d0:39:de (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCgrAeio5MX8ee/JR6rhcr8MTqM5SZga8iPjfwjFHc492aKCgXqFxE8Kprutz0NQDvXt0096pft0tiGPJBxZ6WiJvLxIzTSDe261Ly4ZUywtf3Akt/oCtOKwWV76B2gPoGG0jSpnhVgEcBW028QXk8+qDrQI5XLKyczKOdbnD/D76rOfPkJwMGTXPQmB4SSGqflnAF7Gem3Ay1dS7H+LVGgmfLHtNV9zlyx5dSRWihX6hnofYylHeSi7rLVWs5qDLeBqDID32joNqrhKzUUe8idgmU5lNCrGUcAGb+aUF7q5V0eWDD0mRXLay6OIHbXmvY/ylHyqs1jpQWhpXt9ZKTz</elem>
+<elem key="fingerprint">5ec17ed2f920f911ea4b0268073f54f2</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJaLYCLt5BQwdt158R4quRiBubM4IKNB2d3kHn6jSZwpB0o/j9kQmwg5L5ek6dDc0qd9lOjzWKKSec8n4ULzWU0=</elem>
+<elem key="fingerprint">36ef2731a2fd4ae3d24e12581f7a0358</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIK/4iJuHgKovQDwFWS6ZxgjJYnNu0qqorL0dmHw2ZMJ0</elem>
+<elem key="fingerprint">2c709cc94c5061d25143d567d1d039de</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script><script id="ssh-publickey-acceptance" output="&#xa;  Accepted Public Keys: No public keys accepted"><elem key="Accepted Public Keys">No public keys accepted</elem>
+</script><script id="ssh2-enum-algos" output="&#xa;  kex_algorithms: (8)&#xa;  server_host_key_algorithms: (3)&#xa;  encryption_algorithms: (16)&#xa;  mac_algorithms: (19)&#xa;  compression_algorithms: (2)"><table key="kex_algorithms">
+<elem>curve25519-sha256@libssh.org</elem>
+<elem>ecdh-sha2-nistp256</elem>
+<elem>ecdh-sha2-nistp384</elem>
+<elem>ecdh-sha2-nistp521</elem>
+<elem>diffie-hellman-group-exchange-sha256</elem>
+<elem>diffie-hellman-group-exchange-sha1</elem>
+<elem>diffie-hellman-group14-sha1</elem>
+<elem>diffie-hellman-group1-sha1</elem>
+</table>
+<table key="server_host_key_algorithms">
+<elem>ssh-rsa</elem>
+<elem>ecdsa-sha2-nistp256</elem>
+<elem>ssh-ed25519</elem>
+</table>
+<table key="encryption_algorithms">
+<elem>aes128-ctr</elem>
+<elem>aes192-ctr</elem>
+<elem>aes256-ctr</elem>
+<elem>arcfour256</elem>
+<elem>arcfour128</elem>
+<elem>aes128-gcm@openssh.com</elem>
+<elem>aes256-gcm@openssh.com</elem>
+<elem>chacha20-poly1305@openssh.com</elem>
+<elem>aes128-cbc</elem>
+<elem>3des-cbc</elem>
+<elem>blowfish-cbc</elem>
+<elem>cast128-cbc</elem>
+<elem>aes192-cbc</elem>
+<elem>aes256-cbc</elem>
+<elem>arcfour</elem>
+<elem>rijndael-cbc@lysator.liu.se</elem>
+</table>
+<table key="mac_algorithms">
+<elem>hmac-md5-etm@openssh.com</elem>
+<elem>hmac-sha1-etm@openssh.com</elem>
+<elem>umac-64-etm@openssh.com</elem>
+<elem>umac-128-etm@openssh.com</elem>
+<elem>hmac-sha2-256-etm@openssh.com</elem>
+<elem>hmac-sha2-512-etm@openssh.com</elem>
+<elem>hmac-ripemd160-etm@openssh.com</elem>
+<elem>hmac-sha1-96-etm@openssh.com</elem>
+<elem>hmac-md5-96-etm@openssh.com</elem>
+<elem>hmac-md5</elem>
+<elem>hmac-sha1</elem>
+<elem>umac-64@openssh.com</elem>
+<elem>umac-128@openssh.com</elem>
+<elem>hmac-sha2-256</elem>
+<elem>hmac-sha2-512</elem>
+<elem>hmac-ripemd160</elem>
+<elem>hmac-ripemd160@openssh.com</elem>
+<elem>hmac-sha1-96</elem>
+<elem>hmac-md5-96</elem>
+</table>
+<table key="compression_algorithms">
+<elem>none</elem>
+<elem>zlib@openssh.com</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="nginx" version="1.6.3" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.6.3</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.39&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 108&#xa;    Comment: &#xa;        /* BEGIN Extrabold */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 54&#xa;    Comment: &#xa;        /* END Italic */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 67&#xa;    Comment: &#xa;        /* END Semibold */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 121&#xa;    Comment: &#xa;        /* BEGIN Extrabold Italic */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 119&#xa;    Comment: &#xa;        /* END Extrabold */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 93&#xa;    Comment: &#xa;        /* END Bold */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/bootstrap.min.css&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*!&#xa;         * Bootstrap v3.1.1 (http://getbootstrap.com)&#xa;         * Copyright 2011-2014 Twitter, Inc.&#xa;         * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)&#xa;         */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 1&#xa;    Comment: &#xa;        /* Open Sans @font-face kit */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 95&#xa;    Comment: &#xa;        /* BEGIN Bold Italic */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 106&#xa;    Comment: &#xa;        /* END Bold Italic */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 17&#xa;    Comment: &#xa;        /* BEGIN Light Italic */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 82&#xa;    Comment: &#xa;        /* BEGIN Bold */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 80&#xa;    Comment: &#xa;        /* END Semibold Italic */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 43&#xa;    Comment: &#xa;        /* BEGIN Italic */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 69&#xa;    Comment: &#xa;        /* BEGIN Semibold Italic */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 132&#xa;    Comment: &#xa;        /* END Extrabold Italic */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 2&#xa;    Comment: &#xa;        /* https://github.com/FontFaceKit/open-sans */&#xa;    &#xa;    Path: http://10.11.1.39:80/&#xa;    Line number: 32&#xa;    Comment: &#xa;        /* W3C */&#xa;    &#xa;    Path: http://10.11.1.39:80/&#xa;    Line number: 6&#xa;    Comment: &#xa;        &lt;!-&#45; Bootstrap -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 4&#xa;    Comment: &#xa;        /* BEGIN Light */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 41&#xa;    Comment: &#xa;        /* END Regular */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 56&#xa;    Comment: &#xa;        /* BEGIN Semibold */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 28&#xa;    Comment: &#xa;        /* END Light Italic */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/bootstrap.min.css&#xa;    Line number: 7&#xa;    Comment: &#xa;        /*! normalize.css v3.0.0 | MIT License | git.io/normalize */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 30&#xa;    Comment: &#xa;        /* BEGIN Regular */&#xa;    &#xa;    Path: http://10.11.1.39:80/noindex/css/open-sans.css&#xa;    Line number: 15&#xa;    Comment: &#xa;        /* END Light */&#xa;    &#xa;    Path: http://10.11.1.39:80/&#xa;    Line number: 10&#xa;    Comment: &#xa;        &lt;!-&#45;&#x9;&#x9; &#xa;        &#xa;        body {&#xa;          font-family: &quot;Open Sans&quot;, Helvetica, sans-serif;&#xa;          font-weight: 100;&#xa;          color: #ccc;&#xa;          background: rgba(10, 24, 55, 1);&#xa;          font-size: 16px;&#xa;        }&#xa;        &#xa;        h2, h3, h4 {&#xa;          font-weight: 200;&#xa;        }&#xa;        &#xa;        h2 {&#xa;          font-size: 28px;&#xa;        }&#xa;        &#xa;        .jumbotron {&#xa;          margin-bottom: 0;&#xa;          color: #333;&#xa;          background: rgb(212,212,221); /* Old browsers */&#xa;          background: radial-gradient(ellipse at center top, rgba(255,255,255,1) 0%,rgba(174,174,183,1) 100%); /* W3C */&#xa;        }&#xa;        &#xa;        .jumbotron h1 {&#xa;          font-size: 128px;&#xa;          font-weight: 700;&#xa;          color: white;&#xa;          text-shadow: 0px 2px 0px #abc,&#xa;                       0px 4px 10px rgba(0,0,0,0.15),&#xa;                       0px 5px 2px rgba(0,0,0,0.1),&#xa;                       0px 6px 30px rgba(0,0,0,0.1);&#xa;        }&#xa;        &#xa;        .jumbotron p {&#xa;          font-size: 28px;&#xa;          font-weight: 100;&#xa;        }&#xa;        &#xa;        .main {&#xa;           background: white;&#xa;           color: #234;&#xa;           border-top: 1px solid rgba(0,0,0,0.12);&#xa;           padding-top: 30px;&#xa;           padding-bottom: 40px;&#xa;        }&#xa;        &#xa;        .footer {&#xa;           border-top: 1px solid rgba(255,255,255,0.2);&#xa;           padding-top: 30px;&#xa;        }&#xa;        &#xa;            -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.39:80/&#xa;    Line number: 31&#xa;    Comment: &#xa;        /* Old browsers */&#xa;"/><script id="http-csrf" output="Couldn&apos;t find any CSRF vulnerabilities."/><script id="http-date" output="Mon, 17 Aug 2020 03:43:12 GMT; 0s from local time."><elem key="date">2020-08-17T03:43:12+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /icons/: Potentially interesting folder w/ directory listing&#xa;"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-grep" output="&#xa;  (1) http://10.11.1.39:80/: &#xa;    (1) email: &#xa;      + webmaster@example.com"><table key="(1) http://10.11.1.39:80/">
+<table key="(1) email">
+<elem>+ webmaster@example.com</elem>
+</table>
+</table>
+</script><script id="http-headers" output="&#xa;  Server: nginx/1.6.3&#xa;  Date: Mon, 17 Aug 2020 03:43:13 GMT&#xa;  Content-Type: text/html; charset=UTF-8&#xa;  Content-Length: 4897&#xa;  Connection: close&#xa;  Last-Modified: Thu, 16 Oct 2014 13:20:58 GMT&#xa;  ETag: &quot;1321-5058a1e728280&quot;&#xa;  Accept-Ranges: bytes&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="http-methods" output="&#xa;  Potentially risky methods: TRACE"><table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="nginx/1.6.3"><elem>nginx/1.6.3</elem>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="Apache HTTP Server Test Page powered by CentOS"><elem key="title">Apache HTTP Server Test Page powered by CentOS</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 403&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">403</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-xssed" output="No previously reported XSS vuln."/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="mysql" product="MariaDB" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mariadb:mariadb</cpe></service><script id="banner" output="J\x00\x00\x00\xFFj\x04Host &apos;192.168.119.214&apos; is not allowed ...&#xa;"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="mysql-empty-password" output="Host &apos;192.168.119.214&apos; is not allowed to connect to this MariaDB server"/><script id="mysql-vuln-cve2012-2122" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<osmatch name="Linux 4.4" accuracy="91" line="67202">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 3.12" accuracy="89" line="63130">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.9" accuracy="89" line="67695">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:4.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.22" accuracy="86" line="49721">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 3.16" accuracy="86" line="63168">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.0" accuracy="86" line="66814">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:4.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 4.11" accuracy="85" line="63230">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.11 - 4.1" accuracy="85" line="63416">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="85" line="64256">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="85" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="508" lastboot="Sun Aug 16 23:36:24 2020"/>
+<distance value="2"/>
+<tcpsequence index="261" difficulty="Good luck!" values="7AE65723,DA3356EF,CEB3B539,6E5DA953,4C7DFC10,388188AD"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="62904,62966,629CB,62A2F,62A93,62AF9"/>
+<hostscript><script id="fcrdns" output="FAIL (No PTR record)"><table key="&lt;none&gt;">
+<elem key="status">fail</elem>
+<elem key="reason">No PTR record</elem>
+</table>
+</script><script id="firewalk" output="&#xa;HOP  HOST           PROTOCOL  BLOCKED PORTS&#xa;1    192.168.119.1  tcp       1-10&#xa;"/><script id="ipidseq" output="All zeros"/><script id="path-mtu" output="PMTU == 1500"/><script id="qscan" output="&#xa;PORT  FAMILY  MEAN (us)  STDDEV    LOSS (%)&#xa;22    0       19560.20   3180.23   0.0%&#xa;80    0       21108.20   5884.56   0.0%&#xa;3306  0       22929.20   10098.18  0.0%&#xa;"/><script id="traceroute-geolocation" output="&#xa;  HOP  RTT    ADDRESS        GEOLOCATION&#xa;  1    24.11  192.168.119.1  - ,- &#xa;  2    24.28  10.11.1.39     - ,- &#xa;"><table>
+<elem key="rtt">24.11</elem>
+<elem key="ip">192.168.119.1</elem>
+<elem key="hop">1</elem>
+</table>
+<table>
+<elem key="rtt">24.28</elem>
+<elem key="ip">10.11.1.39</elem>
+<elem key="hop">2</elem>
+</table>
+</script></hostscript><trace port="22" proto="tcp">
+<hop ttl="1" ipaddr="192.168.119.1" rtt="24.11"/>
+<hop ttl="2" ipaddr="10.11.1.39" rtt="24.28"/>
+</trace>
+<times srtt="21388" rttvar="2595" to="100000"/>
+</host>
+<postscript><script id="reverse-index" output="&#xa;  22/tcp: 10.11.1.39&#xa;  80/tcp: 10.11.1.39&#xa;  3306/tcp: 10.11.1.39"><table key="22/tcp">
+<elem>10.11.1.39</elem>
+</table>
+<table key="80/tcp">
+<elem>10.11.1.39</elem>
+</table>
+<table key="3306/tcp">
+<elem>10.11.1.39</elem>
+</table>
+</script></postscript><runstats><finished time="1597635892" timestr="Sun Aug 16 23:44:52 2020" elapsed="313.66" summary="Nmap done at Sun Aug 16 23:44:52 2020; 1 IP address (1 host up) scanned in 313.66 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

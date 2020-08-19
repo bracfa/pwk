@@ -1,0 +1,24 @@
+# Nmap 7.80 scan initiated Sun Aug 16 19:32:50 2020 as: nmap -sS -p- -O -oA 2020-08-16_193250_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.5 10.11.1.5
+Nmap scan report for 10.11.1.5
+Host is up (0.020s latency).
+Not shown: 65531 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1025/tcp open  NFS-or-IIS
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=8/16%OT=135%CT=1%CU=43894%PV=Y%DS=2%DC=I%G=Y%TM=5F39C2
+OS:52%P=x86_64-pc-linux-gnu)SEQ(SP=8D%GCD=1%ISR=9B%TI=I%II=I%SS=S%TS=0)OPS(
+OS:O1=M54DNW0NNT00NNS%O2=M54DNW0NNT00NNS%O3=M54DNW0NNT00%O4=M54DNW0NNT00NNS
+OS:%O5=M54DNW0NNT00NNS%O6=M54DNNT00NNS)WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%
+OS:W5=FAF0%W6=FAF0)ECN(R=Y%DF=Y%T=80%W=FAF0%O=M54DNW0NNS%CC=N%Q=)T1(R=Y%DF=
+OS:Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=N%T=80%W=0%S
+OS:=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=80%IPL=38%UN=0%RIPL=
+OS:G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=S%T=80%CD=Z)
+
+Network Distance: 2 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug 16 19:33:38 2020 -- 1 IP address (1 host up) scanned in 47.99 seconds

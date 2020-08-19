@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Sun Aug 16 23:56:50 2020 as: nmap -Pn --script=ssl-* -oA 2020-08-16_233424_nmap_scripts_SSL__10.11.1.39 10.11.1.39
+Nmap scan report for 10.11.1.39
+Host is up (0.021s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+3306/tcp open  mysql
+
+# Nmap done at Sun Aug 16 23:56:57 2020 -- 1 IP address (1 host up) scanned in 7.45 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Aug 16 19:45:13 2020 as: nmap -sU -p- --defeat-icmp-ratelimit -oA 2020-08-16_193250_nmap_fastUDP_allPorts__10.11.1.5 10.11.1.5
+Host: 10.11.1.5 ()	Status: Up
+Host: 10.11.1.5 ()	Ports: 135/open/udp//msrpc///, 137/open/udp//netbios-ns///, 138/closed|filtered/udp//netbios-dgm///, 445/closed|filtered/udp//microsoft-ds///, 1026/closed|filtered/udp//win-rpc///, 1027/closed|filtered/udp//unknown///, 1028/open/udp//ms-lsa///, 1029/closed|filtered/udp//solid-mux///	Ignored State: closed (65527)
+# Nmap done at Sun Aug 16 19:45:43 2020 -- 1 IP address (1 host up) scanned in 29.29 seconds
