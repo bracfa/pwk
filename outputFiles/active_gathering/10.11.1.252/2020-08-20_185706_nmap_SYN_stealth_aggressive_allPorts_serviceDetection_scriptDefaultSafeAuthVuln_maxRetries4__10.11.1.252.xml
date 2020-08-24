@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Aug 20 19:02:51 2020 as: nmap -sS -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-20_185706_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.252 10.11.1.252 -->
+<nmaprun scanner="nmap" args="nmap -sS -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-20_185706_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.252 10.11.1.252" start="1597964571" startstr="Thu Aug 20 19:02:51 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<prescript><script id="broadcast-dhcp-discover" output="&#xa;  Response 1 of 1: &#xa;    IP Offered: 192.168.0.25&#xa;    Server Identifier: 192.168.0.1&#xa;    Subnet Mask: 255.255.255.0&#xa;    Router: 192.168.0.1&#xa;    Domain Name Server: 75.75.75.75, 75.75.76.76"><table key="Response 1 of 1">
+<elem key="IP Offered">192.168.0.25</elem>
+<elem key="Server Identifier">192.168.0.1</elem>
+<elem key="Subnet Mask">255.255.255.0</elem>
+<elem key="Router">192.168.0.1</elem>
+<table key="Domain Name Server">
+<elem>75.75.75.75</elem>
+<elem>75.75.76.76</elem>
+</table>
+</table>
+</script><script id="broadcast-igmp-discovery" output="&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.2&#xa;    Description: All Routers on this Subnet&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.22&#xa;    Description: IGMP&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.34&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  Use the newtargets script-arg to add the results as targets&#xa;"/><script id="broadcast-listener" output="&#xa;  udp&#xa;      DHCP&#xa;        srv ip       cli ip        mask           gw           dns                       vendor&#xa;        192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;"/><script id="broadcast-netbios-master-browser" output="&#xa;ip  server  domain&#xa;"/><script id="broadcast-upnp-info" output="&#xa;  239.255.255.250&#xa;      Server: Linux 2.6 DLNADOC/1.50 UPnP/1.0 ReadyDLNA/1.1.0&#xa;      Location: http://192.168.0.254:8200/rootDesc.xml&#xa;"/><script id="eap-info" output="please specify an interface with -e"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/></prescript><host starttime="1597964613" endtime="1597965267"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.11.1.252" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="http" product="Apache httpd" version="2.2.3" extrainfo="(CentOS)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.3</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-auth-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.252&#xa;  url                                method&#xa;  http://10.11.1.252:8000/           FORM&#xa;  http://10.11.1.252:8000/index.php  FORM&#xa;"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.252&#xa;    &#xa;    Path: http://10.11.1.252:8000/timeapp.css&#xa;    Line number: 1&#xa;    Comment: &#xa;        /* Body */&#xa;    &#xa;    Path: http://10.11.1.252:8000/timeapp.css&#xa;    Line number: 17&#xa;    Comment: &#xa;        /* Links */&#xa;    &#xa;    Path: http://10.11.1.252:8000/timeapp.css&#xa;    Line number: 57&#xa;    Comment: &#xa;        /*&#x9;width: 600px; */&#xa;    &#xa;    Path: http://10.11.1.252:8000/timeapp.css&#xa;    Line number: 24&#xa;    Comment: &#xa;        /*font-size : 12px;*/&#xa;"/><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.252&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://10.11.1.252:8000/&#xa;    Form id: box-table-a&#xa;    Form action: index.php&#xa;    &#xa;    Path: http://10.11.1.252:8000/index.php&#xa;    Form id: box-table-a&#xa;    Form action: index.php&#xa;"/><script id="http-date" output="Thu, 20 Aug 2020 23:08:34 GMT; -1s from local time."><elem key="date">2020-08-20T23:08:34+00:00</elem>
+<elem key="delta">-1.0</elem>
+</script><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /login.php: Possible admin folder&#xa;  /icons/: Potentially interesting directory w/ listing on &apos;apache/2.2.3 (centos)&apos;&#xa;  /manual/: Potentially interesting folder&#xa;"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-headers" output="&#xa;  Date: Thu, 20 Aug 2020 23:08:36 GMT&#xa;  Server: Apache/2.2.3 (CentOS)&#xa;  X-Powered-By: PHP/5.1.6&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=UTF-8&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-open-proxy" output="Proxy might be redirecting requests"/><script id="http-php-version" output="Versions from credits query (more accurate): 5.1.3 - 5.1.6&#xa;Version from header x-powered-by: PHP/5.1.6"/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="Apache/2.2.3 (CentOS)"><elem>Apache/2.2.3 (CentOS)</elem>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="TimeClock Software :: Dev. Dpt. Thinc.local :: Log In&#xa;Requested resource was login.php"><elem key="title">TimeClock Software :: Dev. Dpt. Thinc.local :: Log In</elem>
+<elem key="redirect_url">login.php</elem>
+</script><script id="http-trace" output="TRACE is enabled"/><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Redirected To: login.php&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<elem key="Redirected To">login.php</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-xssed" output="No previously reported XSS vuln."/><script id="vulners" output="&#xa;  cpe:/a:apache:http_server:2.2.3: &#xa;    &#x9;CVE-2010-0425&#x9;10.0&#x9;https://vulners.com/cve/CVE-2010-0425&#xa;    &#x9;CVE-2011-3192&#x9;7.8&#x9;https://vulners.com/cve/CVE-2011-3192&#xa;    &#x9;CVE-2007-6423&#x9;7.8&#x9;https://vulners.com/cve/CVE-2007-6423&#xa;    &#x9;CVE-2017-7668&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-7668&#xa;    &#x9;CVE-2013-2249&#x9;7.5&#x9;https://vulners.com/cve/CVE-2013-2249&#xa;    &#x9;CVE-2009-1891&#x9;7.1&#x9;https://vulners.com/cve/CVE-2009-1891&#xa;    &#x9;CVE-2009-1890&#x9;7.1&#x9;https://vulners.com/cve/CVE-2009-1890&#xa;    &#x9;CVE-2012-0883&#x9;6.9&#x9;https://vulners.com/cve/CVE-2012-0883&#xa;    &#x9;CVE-2018-1312&#x9;6.8&#x9;https://vulners.com/cve/CVE-2018-1312&#xa;    &#x9;CVE-2006-4154&#x9;6.8&#x9;https://vulners.com/cve/CVE-2006-4154&#xa;    &#x9;CVE-2007-1741&#x9;6.2&#x9;https://vulners.com/cve/CVE-2007-1741&#xa;    &#x9;CVE-2013-1862&#x9;5.1&#x9;https://vulners.com/cve/CVE-2013-1862&#xa;    &#x9;CVE-2014-0231&#x9;5.0&#x9;https://vulners.com/cve/CVE-2014-0231&#xa;    &#x9;CVE-2014-0098&#x9;5.0&#x9;https://vulners.com/cve/CVE-2014-0098&#xa;    &#x9;CVE-2013-6438&#x9;5.0&#x9;https://vulners.com/cve/CVE-2013-6438&#xa;    &#x9;CVE-2011-3368&#x9;5.0&#x9;https://vulners.com/cve/CVE-2011-3368&#xa;    &#x9;CVE-2010-1452&#x9;5.0&#x9;https://vulners.com/cve/CVE-2010-1452&#xa;    &#x9;CVE-2010-0408&#x9;5.0&#x9;https://vulners.com/cve/CVE-2010-0408&#xa;    &#x9;CVE-2009-2699&#x9;5.0&#x9;https://vulners.com/cve/CVE-2009-2699&#xa;    &#x9;CVE-2007-6750&#x9;5.0&#x9;https://vulners.com/cve/CVE-2007-6750&#xa;    &#x9;CVE-2009-1195&#x9;4.9&#x9;https://vulners.com/cve/CVE-2009-1195&#xa;    &#x9;CVE-2012-0031&#x9;4.6&#x9;https://vulners.com/cve/CVE-2012-0031&#xa;    &#x9;CVE-2011-3607&#x9;4.4&#x9;https://vulners.com/cve/CVE-2011-3607&#xa;    &#x9;CVE-2007-1743&#x9;4.4&#x9;https://vulners.com/cve/CVE-2007-1743&#xa;    &#x9;CVE-2016-4975&#x9;4.3&#x9;https://vulners.com/cve/CVE-2016-4975&#xa;    &#x9;CVE-2013-1896&#x9;4.3&#x9;https://vulners.com/cve/CVE-2013-1896&#xa;    &#x9;CVE-2012-4558&#x9;4.3&#x9;https://vulners.com/cve/CVE-2012-4558&#xa;    &#x9;CVE-2012-3499&#x9;4.3&#x9;https://vulners.com/cve/CVE-2012-3499&#xa;    &#x9;CVE-2012-0053&#x9;4.3&#x9;https://vulners.com/cve/CVE-2012-0053&#xa;    &#x9;CVE-2011-4317&#x9;4.3&#x9;https://vulners.com/cve/CVE-2011-4317&#xa;    &#x9;CVE-2011-3639&#x9;4.3&#x9;https://vulners.com/cve/CVE-2011-3639&#xa;    &#x9;CVE-2011-3348&#x9;4.3&#x9;https://vulners.com/cve/CVE-2011-3348&#xa;    &#x9;CVE-2011-0419&#x9;4.3&#x9;https://vulners.com/cve/CVE-2011-0419&#xa;    &#x9;CVE-2010-0434&#x9;4.3&#x9;https://vulners.com/cve/CVE-2010-0434&#xa;    &#x9;CVE-2008-2939&#x9;4.3&#x9;https://vulners.com/cve/CVE-2008-2939&#xa;    &#x9;CVE-2008-2168&#x9;4.3&#x9;https://vulners.com/cve/CVE-2008-2168&#xa;    &#x9;CVE-2008-0455&#x9;4.3&#x9;https://vulners.com/cve/CVE-2008-0455&#xa;    &#x9;CVE-2007-6420&#x9;4.3&#x9;https://vulners.com/cve/CVE-2007-6420&#xa;    &#x9;CVE-2007-6388&#x9;4.3&#x9;https://vulners.com/cve/CVE-2007-6388&#xa;    &#x9;CVE-2007-6203&#x9;4.3&#x9;https://vulners.com/cve/CVE-2007-6203&#xa;    &#x9;CVE-2007-5000&#x9;4.3&#x9;https://vulners.com/cve/CVE-2007-5000&#xa;    &#x9;CVE-2007-4465&#x9;4.3&#x9;https://vulners.com/cve/CVE-2007-4465&#xa;    &#x9;CVE-2006-5752&#x9;4.3&#x9;https://vulners.com/cve/CVE-2006-5752&#xa;    &#x9;CVE-2006-4110&#x9;4.3&#x9;https://vulners.com/cve/CVE-2006-4110&#xa;    &#x9;CVE-2007-6422&#x9;4.0&#x9;https://vulners.com/cve/CVE-2007-6422&#xa;    &#x9;CVE-2007-1742&#x9;3.7&#x9;https://vulners.com/cve/CVE-2007-1742&#xa;    &#x9;CVE-2007-6421&#x9;3.5&#x9;https://vulners.com/cve/CVE-2007-6421&#xa;    &#x9;CVE-2016-8612&#x9;3.3&#x9;https://vulners.com/cve/CVE-2016-8612&#xa;    &#x9;CVE-2012-2687&#x9;2.6&#x9;https://vulners.com/cve/CVE-2012-2687&#xa;    &#x9;CVE-2008-0456&#x9;2.6&#x9;https://vulners.com/cve/CVE-2008-0456&#xa;    &#x9;CVE-2011-4415&#x9;1.2&#x9;https://vulners.com/cve/CVE-2011-4415"><table key="cpe:/a:apache:http_server:2.2.3">
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-0425</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">10.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-3192</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.8</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-6423</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.8</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-7668</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-2249</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-1891</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.1</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-1890</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.1</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0883</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">6.9</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2018-1312</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2006-4154</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-1741</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">6.2</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1862</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.1</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0231</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2014-0098</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-6438</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-3368</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-1452</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-0408</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-2699</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-6750</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-1195</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.9</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0031</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.6</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-3607</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.4</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-1743</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.4</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-4975</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2013-1896</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-4558</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-3499</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0053</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-4317</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-3639</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-3348</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-0419</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-0434</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-2939</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-2168</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-0455</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-6420</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-6388</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-6203</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-5000</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-4465</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2006-5752</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2006-4110</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-6422</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-1742</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">3.7</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-6421</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-8612</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">3.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-2687</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">2.6</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-0456</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">2.6</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-4415</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">1.2</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="8888"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="http-proxy" product="Squid http proxy" version="4.6" method="probed" conf="10"><cpe>cpe:/a:squid-cache:squid:4.6</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-date" output="Thu, 20 Aug 2020 23:09:29 GMT; +56s from local time."><elem key="date">2020-08-20T23:09:29+00:00</elem>
+<elem key="delta">56.0</elem>
+</script><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-headers" output="&#xa;  Server: squid/4.6&#xa;  Mime-Version: 1.0&#xa;  Date: Thu, 20 Aug 2020 23:09:34 GMT&#xa;  Content-Type: text/html;charset=utf-8&#xa;  Content-Length: 3507&#xa;  X-Squid-Error: ERR_INVALID_URL 0&#xa;  Vary: Accept-Language&#xa;  Content-Language: en&#xa;  X-Cache: MISS from dev-proxy&#xa;  X-Cache-Lookup: NONE from dev-proxy:8080&#xa;  Via: 1.1 dev-proxy (squid/4.6)&#xa;  Connection: close&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="http-server-header" output="squid/4.6"><elem>squid/4.6</elem>
+</script><script id="http-title" output="ERROR: The requested URL could not be retrieved"><elem key="title">ERROR: The requested URL could not be retrieved</elem>
+</script><script id="unusual-port" output="http-proxy unexpected on port tcp/8888"/><script id="vulners" output="&#xa;  cpe:/a:squid-cache:squid:4.6: &#xa;    &#x9;CVE-2019-12522&#x9;10.0&#x9;https://vulners.com/cve/CVE-2019-12522&#xa;    &#x9;CVE-2020-8450&#x9;7.5&#x9;https://vulners.com/cve/CVE-2020-8450&#xa;    &#x9;CVE-2020-11945&#x9;7.5&#x9;https://vulners.com/cve/CVE-2020-11945&#xa;    &#x9;CVE-2019-12526&#x9;7.5&#x9;https://vulners.com/cve/CVE-2019-12526&#xa;    &#x9;CVE-2019-12525&#x9;7.5&#x9;https://vulners.com/cve/CVE-2019-12525&#xa;    &#x9;CVE-2019-12524&#x9;7.5&#x9;https://vulners.com/cve/CVE-2019-12524&#xa;    &#x9;CVE-2019-12519&#x9;7.5&#x9;https://vulners.com/cve/CVE-2019-12519&#xa;    &#x9;CVE-2019-12527&#x9;6.8&#x9;https://vulners.com/cve/CVE-2019-12527&#xa;    &#x9;CVE-2020-15049&#x9;6.5&#x9;https://vulners.com/cve/CVE-2020-15049&#xa;    &#x9;CVE-2019-12523&#x9;6.4&#x9;https://vulners.com/cve/CVE-2019-12523&#xa;    &#x9;CVE-2019-18677&#x9;5.8&#x9;https://vulners.com/cve/CVE-2019-18677&#xa;    &#x9;CVE-2020-8517&#x9;5.0&#x9;https://vulners.com/cve/CVE-2020-8517&#xa;    &#x9;CVE-2020-8449&#x9;5.0&#x9;https://vulners.com/cve/CVE-2020-8449&#xa;    &#x9;CVE-2020-14058&#x9;5.0&#x9;https://vulners.com/cve/CVE-2020-14058&#xa;    &#x9;CVE-2019-18679&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-18679&#xa;    &#x9;CVE-2019-18678&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-18678&#xa;    &#x9;CVE-2019-18676&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-18676&#xa;    &#x9;CVE-2019-12854&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-12854&#xa;    &#x9;CVE-2019-12528&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-12528&#xa;    &#x9;CVE-2019-12520&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-12520&#xa;    &#x9;CVE-2019-18860&#x9;4.3&#x9;https://vulners.com/cve/CVE-2019-18860&#xa;    &#x9;CVE-2019-12529&#x9;4.3&#x9;https://vulners.com/cve/CVE-2019-12529&#xa;    &#x9;CVE-2019-12521&#x9;4.3&#x9;https://vulners.com/cve/CVE-2019-12521"><table key="cpe:/a:squid-cache:squid:4.6">
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12522</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">10.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-8450</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-11945</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12526</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12525</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12524</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12519</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12527</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-15049</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">6.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12523</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">6.4</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-18677</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.8</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-8517</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-8449</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-14058</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-18679</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-18678</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-18676</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12854</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12528</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12520</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-18860</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12529</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2019-12521</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.3</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="22000"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" product="OpenSSH" version="4.3" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.3</cpe></service><script id="banner" output="SSH-2.0-OpenSSH_4.3"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="ssh-auth-methods" output="&#xa;  Supported authentication methods: &#xa;    publickey&#xa;    gssapi-with-mic&#xa;    password"><table key="Supported authentication methods">
+<elem>publickey</elem>
+<elem>gssapi-with-mic</elem>
+<elem>password</elem>
+</table>
+</script><script id="ssh-hostkey" output="&#xa;  1024 ab:a7:86:a8:a0:39:c6:0a:81:0b:f9:ae:6f:4b:51:79 (DSA)&#xa;  2048 8b:a5:11:b8:ca:75:9e:8c:a7:17:2c:a3:c9:90:1e:87 (RSA)"><table>
+<elem key="bits">1024</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAIIzAJUM+3RuUNtxkHHcS6rXq8iPKoBv4VVc4nBq4B0d98jswO+Sk5S+u553nqho9sbMSzQyBTWs39k2MGsDz0lUQM57iO0ZqJVOuyooh4/ad1o688nmeLgFmnGOz6QjDBfYV6ABRTWkg7H6kAypHh1mn1H80rS0TWuuCRY3o5EVAAAAFQCbY10HyybZRgjKScHL8cGfeDJegwAAAIAtzlzY4NoQFXkD7s7yKV8uycp7qYLWzzymDbrBKBYvRGu8EKH/wvquRG8C1PfZu2HtWvVwRjiBBIaBJRVY8BT3c/iGpENW49zX0oVJ/AFfGwfb0xvmL5k/mEm9YsuMyxp9MP8KY+6QBFG0i6B9DAHSbEAzXAVXbP7lk4Ttt0MJvQAAAIB0TdXHd2DTnYGYDNK4Mrin5DVwFu2mnKXMrM+UXFBAdFlRK1M3gCJGINSaL/N/zCkwHlTWpk7I5eJqGA6X0l/fejNn/LYFpNoZ6TD3U2Yy5PIN8wayijSQRFNgTD2NUmG+Vm1SaII+qwYcmZJlZr/10nz3hOQPYzu7DCCb1YWOWg==</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="fingerprint">aba786a8a039c60a810bf9ae6f4b5179</elem>
+</table>
+<table>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAQEAyjxjmvZVP9H18SAGDc/hMku0RzVqt6AQsTHjgxIm3EJosBzPPUK0jIdBKaT7wGy6FA+8ZJTGsHiu/+fZ2h02V6YMw3wxHH3FR9ZDwL0carHKovHLLg/4xbx/IF4ML6Wcyx5/oAqhk6BjV8CAmA+qItqcljM0m092GaZLSMz3CifBLHwNzRerfm9UJeK8QOviIu0n3NOmRb0Hdfy7BelJzfeIMlCTFXuQDdJ6vqJOJhxhlrQddu6+bMpFka1wN6Gd6/fI/5IxLX4FyIsr007NYI4jgbiY7uGCiQxv8FFGR1FcLBJEsFwtdf2grmx4XjpKsdoi00R2wAmMnuu6UPDPBQ==</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">8ba511b8ca759e8ca7172ca3c9901e87</elem>
+</table>
+</script><script id="ssh-publickey-acceptance" output="&#xa;  Accepted Public Keys: No public keys accepted"><elem key="Accepted Public Keys">No public keys accepted</elem>
+</script><script id="ssh2-enum-algos" output="&#xa;  kex_algorithms: (3)&#xa;  server_host_key_algorithms: (2)&#xa;  encryption_algorithms: (13)&#xa;  mac_algorithms: (6)&#xa;  compression_algorithms: (2)"><table key="kex_algorithms">
+<elem>diffie-hellman-group-exchange-sha1</elem>
+<elem>diffie-hellman-group14-sha1</elem>
+<elem>diffie-hellman-group1-sha1</elem>
+</table>
+<table key="server_host_key_algorithms">
+<elem>ssh-rsa</elem>
+<elem>ssh-dss</elem>
+</table>
+<table key="encryption_algorithms">
+<elem>aes128-cbc</elem>
+<elem>3des-cbc</elem>
+<elem>blowfish-cbc</elem>
+<elem>cast128-cbc</elem>
+<elem>arcfour128</elem>
+<elem>arcfour256</elem>
+<elem>arcfour</elem>
+<elem>aes192-cbc</elem>
+<elem>aes256-cbc</elem>
+<elem>rijndael-cbc@lysator.liu.se</elem>
+<elem>aes128-ctr</elem>
+<elem>aes192-ctr</elem>
+<elem>aes256-ctr</elem>
+</table>
+<table key="mac_algorithms">
+<elem>hmac-md5</elem>
+<elem>hmac-sha1</elem>
+<elem>hmac-ripemd160</elem>
+<elem>hmac-ripemd160@openssh.com</elem>
+<elem>hmac-sha1-96</elem>
+<elem>hmac-md5-96</elem>
+</table>
+<table key="compression_algorithms">
+<elem>none</elem>
+<elem>zlib@openssh.com</elem>
+</table>
+</script><script id="unusual-port" output="ssh unexpected on port tcp/22000"/><script id="vulners" output="&#xa;  cpe:/a:openbsd:openssh:4.3: &#xa;    &#x9;CVE-2006-5051&#x9;9.3&#x9;https://vulners.com/cve/CVE-2006-5051&#xa;    &#x9;CVE-2006-4924&#x9;7.8&#x9;https://vulners.com/cve/CVE-2006-4924&#xa;    &#x9;CVE-2010-4478&#x9;7.5&#x9;https://vulners.com/cve/CVE-2010-4478&#xa;    &#x9;CVE-2007-4752&#x9;7.5&#x9;https://vulners.com/cve/CVE-2007-4752&#xa;    &#x9;CVE-2009-2904&#x9;6.9&#x9;https://vulners.com/cve/CVE-2009-2904&#xa;    &#x9;CVE-2020-15778&#x9;6.8&#x9;https://vulners.com/cve/CVE-2020-15778&#xa;    &#x9;CVE-2017-15906&#x9;5.0&#x9;https://vulners.com/cve/CVE-2017-15906&#xa;    &#x9;CVE-2016-10708&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-10708&#xa;    &#x9;CVE-2010-5107&#x9;5.0&#x9;https://vulners.com/cve/CVE-2010-5107&#xa;    &#x9;CVE-2007-2243&#x9;5.0&#x9;https://vulners.com/cve/CVE-2007-2243&#xa;    &#x9;CVE-2006-5052&#x9;5.0&#x9;https://vulners.com/cve/CVE-2006-5052&#xa;    &#x9;CVE-2010-4755&#x9;4.0&#x9;https://vulners.com/cve/CVE-2010-4755&#xa;    &#x9;CVE-2012-0814&#x9;3.5&#x9;https://vulners.com/cve/CVE-2012-0814&#xa;    &#x9;CVE-2011-5000&#x9;3.5&#x9;https://vulners.com/cve/CVE-2011-5000&#xa;    &#x9;CVE-2011-4327&#x9;2.1&#x9;https://vulners.com/cve/CVE-2011-4327&#xa;    &#x9;CVE-2008-3259&#x9;1.2&#x9;https://vulners.com/cve/CVE-2008-3259"><table key="cpe:/a:openbsd:openssh:4.3">
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2006-5051</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">9.3</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2006-4924</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.8</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-4478</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-4752</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">7.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2009-2904</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">6.9</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2020-15778</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">6.8</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2017-15906</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2016-10708</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-5107</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2007-2243</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2006-5052</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">5.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2010-4755</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">4.0</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2012-0814</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-5000</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">3.5</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2011-4327</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">2.1</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="id">CVE-2008-3259</elem>
+<elem key="type">cve</elem>
+<elem key="cvss">1.2</elem>
+</table>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="8000"/>
+<osmatch name="Cisco SA520 firewall (Linux 2.6)" accuracy="91" line="47072">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="firewall" vendor="Cisco" osfamily="embedded" accuracy="91"><cpe>cpe:/h:cisco:sa520</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.28" accuracy="91" line="53316">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.28</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 (CentOS 4.4)" accuracy="91" line="58726">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="91" line="59009">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Riverbed Steelhead 200 proxy server" accuracy="91" line="94857">
+<osclass type="proxy server" vendor="Riverbed" osfamily="embedded" accuracy="91"><cpe>cpe:/h:riverbed:steelhead_200</cpe></osclass>
+</osmatch>
+<osmatch name="ZoneAlarm Z100G WAP" accuracy="91" line="106747">
+<osclass type="WAP" vendor="ZoneAlarm" osfamily="embedded" accuracy="91"><cpe>cpe:/h:zonealarm:z100g</cpe></osclass>
+</osmatch>
+<osmatch name="Ruckus 7363 WAP" accuracy="91" line="95125">
+<osclass type="WAP" vendor="Ruckus" osfamily="embedded" accuracy="91"><cpe>cpe:/h:ruckus:7363</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9" accuracy="91" line="58508">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.30" accuracy="89" line="53536">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6.30</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.11" accuracy="88" line="47207">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.6.11</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="977" lastboot="Thu Aug 20 18:58:10 2020"/>
+<distance value="2"/>
+<tcpsequence index="203" difficulty="Good luck!" values="35D9E217,36A3E9D0,362D5CDC,365EE2C0,362F9B1E,3666D258"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="97763,977C3,97826,97884,978F5,97950"/>
+<hostscript><script id="clock-skew" output="mean: 27s, deviation: 40s, median: -1s"><elem key="count">2</elem>
+<elem key="median">-1</elem>
+<elem key="stddev">40</elem>
+<elem key="mean">27</elem>
+</script><script id="fcrdns" output="FAIL (No PTR record)"><table key="&lt;none&gt;">
+<elem key="status">fail</elem>
+<elem key="reason">No PTR record</elem>
+</table>
+</script><script id="firewalk" output="&#xa;HOP  HOST           PROTOCOL  BLOCKED PORTS&#xa;1    192.168.119.1  tcp       1-10&#xa;"/><script id="ipidseq" output="All zeros"/><script id="path-mtu" output="PMTU == 1500"/><script id="qscan" output="&#xa;PORT   FAMILY  MEAN (us)  STDDEV   LOSS (%)&#xa;8000   0       18126.00   1994.62  0.0%&#xa;8888   0       22883.80   8886.73  0.0%&#xa;22000  0       19311.50   3287.58  0.0%&#xa;"/><script id="traceroute-geolocation" output="&#xa;  HOP  RTT    ADDRESS        GEOLOCATION&#xa;  1    26.27  192.168.119.1  - ,- &#xa;  2    26.59  10.11.1.252    - ,- &#xa;"><table>
+<elem key="rtt">26.27</elem>
+<elem key="ip">192.168.119.1</elem>
+<elem key="hop">1</elem>
+</table>
+<table>
+<elem key="rtt">26.59</elem>
+<elem key="ip">10.11.1.252</elem>
+<elem key="hop">2</elem>
+</table>
+</script></hostscript><trace port="8888" proto="tcp">
+<hop ttl="1" ipaddr="192.168.119.1" rtt="26.27"/>
+<hop ttl="2" ipaddr="10.11.1.252" rtt="26.59"/>
+</trace>
+<times srtt="24948" rttvar="3699" to="100000"/>
+</host>
+<postscript><script id="reverse-index" output="&#xa;  8000/tcp: 10.11.1.252&#xa;  8888/tcp: 10.11.1.252&#xa;  22000/tcp: 10.11.1.252"><table key="8000/tcp">
+<elem>10.11.1.252</elem>
+</table>
+<table key="8888/tcp">
+<elem>10.11.1.252</elem>
+</table>
+<table key="22000/tcp">
+<elem>10.11.1.252</elem>
+</table>
+</script></postscript><runstats><finished time="1597965267" timestr="Thu Aug 20 19:14:27 2020" elapsed="701.26" summary="Nmap done at Thu Aug 20 19:14:27 2020; 1 IP address (1 host up) scanned in 701.26 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

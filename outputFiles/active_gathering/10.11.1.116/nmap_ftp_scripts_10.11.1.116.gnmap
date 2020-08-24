@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Aug 23 03:28:07 2020 as: nmap --script=*ftp* -oA ../nmap_ftp_scripts_10.11.1.116 10.11.1.116
+Host: 10.11.1.116 ()	Status: Up
+Host: 10.11.1.116 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 110/open/tcp//pop3///, 143/open/tcp//imap///	Ignored State: closed (995)
+# Nmap done at Sun Aug 23 03:38:12 2020 -- 1 IP address (1 host up) scanned in 604.72 seconds

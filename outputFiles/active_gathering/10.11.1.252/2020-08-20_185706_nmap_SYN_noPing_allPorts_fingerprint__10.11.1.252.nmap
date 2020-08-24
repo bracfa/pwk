@@ -1,0 +1,21 @@
+# Nmap 7.80 scan initiated Thu Aug 20 19:26:01 2020 as: nmap -v -Pn -p- -O -oA 2020-08-20_185706_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.252 10.11.1.252
+Nmap scan report for 10.11.1.252
+Host is up (0.022s latency).
+Not shown: 65532 filtered ports
+PORT      STATE SERVICE
+8000/tcp  open  http-alt
+8888/tcp  open  sun-answerbook
+22000/tcp open  snapenetio
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: firewall|general purpose|proxy server|WAP|PBX
+Running (JUST GUESSING): Linux 2.6.X|2.4.X (91%), Cisco embedded (91%), Riverbed embedded (91%), ZoneAlarm embedded (91%), Ruckus embedded (89%), ISS embedded (86%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/h:cisco:sa520 cpe:/h:riverbed:steelhead_200 cpe:/h:zonealarm:z100g cpe:/h:ruckus:7363 cpe:/h:cisco:uc320w cpe:/o:linux:linux_kernel:2.4.18 cpe:/h:iss:proventia_gx3002
+Aggressive OS guesses: Cisco SA520 firewall (Linux 2.6) (91%), Linux 2.6.9 - 2.6.27 (91%), Riverbed Steelhead 200 proxy server (91%), ZoneAlarm Z100G WAP (91%), Linux 2.6.9 (91%), Linux 2.6.18 (89%), Linux 2.6.30 (89%), Linux 2.6.9 (CentOS 4.4) (89%), Ruckus 7363 WAP (89%), Linux 2.6.11 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.022 days (since Thu Aug 20 18:58:29 2020)
+TCP Sequence Prediction: Difficulty=205 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 20 19:29:36 2020 -- 1 IP address (1 host up) scanned in 216.16 seconds

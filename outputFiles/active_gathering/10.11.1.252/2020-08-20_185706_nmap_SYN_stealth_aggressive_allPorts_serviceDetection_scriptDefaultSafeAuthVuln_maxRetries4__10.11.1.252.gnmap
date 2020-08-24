@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Aug 20 19:02:51 2020 as: nmap -sS -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-20_185706_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.252 10.11.1.252
+Host: 10.11.1.252 ()	Status: Up
+Host: 10.11.1.252 ()	Ports: 8000/open/tcp//http//Apache httpd 2.2.3 ((CentOS))/, 8888/open/tcp//http-proxy//Squid http proxy 4.6/, 22000/open/tcp//ssh//OpenSSH 4.3 (protocol 2.0)/	Ignored State: filtered (65532)	Seq Index: 203	IP ID Seq: All zeros
+# Nmap done at Thu Aug 20 19:14:27 2020 -- 1 IP address (1 host up) scanned in 701.26 seconds

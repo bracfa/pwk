@@ -1,0 +1,24 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: 2020-08-20_185706_dirb_nonRecursive_index__10.11.1.252.txt
+START_TIME: Thu Aug 20 19:35:44 2020
+URL_BASE: http://10.11.1.252/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Recursive
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.252/ ----
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: OPERATION TIMEOUT)
+
+-----------------
+END_TIME: Thu Aug 20 19:38:14 2020
+DOWNLOADED: 0 - FOUND: 0

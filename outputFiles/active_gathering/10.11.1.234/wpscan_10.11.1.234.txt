@@ -1,0 +1,106 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.1
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://10.11.1.234/ [10.11.1.234]
+[32m[+][0m Started: Sun Aug 16 07:48:49 2020
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - Server: Apache/2.2.14 (Ubuntu)
+ |  - X-Powered-By: PHP/5.3.2-1ubuntu4
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://10.11.1.234/xmlrpc.php
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+ | Confirmed By:
+ |  - Link Tag (Passive Detection), 30% confidence
+ |  - Direct Access (Aggressive Detection), 100% confidence
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m http://10.11.1.234/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://10.11.1.234/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 3.5.1 identified (Insecure, released on 2013-01-24).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://10.11.1.234/?feed=rss2, <generator>http://wordpress.org/?v=3.5.1</generator>
+ |  - http://10.11.1.234/?feed=comments-rss2, <generator>http://wordpress.org/?v=3.5.1</generator>
+
+[32m[+][0m WordPress theme in use: twentytwelve
+ | Location: http://10.11.1.234/wp-content/themes/twentytwelve/
+ | Last Updated: 2020-08-11T00:00:00.000Z
+ | [33m[!][0m The version is out of date, the latest version is 3.2
+ | Style URL: http://10.11.1.234/wp-content/themes/twentytwelve/style.css?ver=3.5.1
+ | Style Name: Twenty Twelve
+ | Style URI: http://wordpress.org/extend/themes/twentytwelve
+ | Description: The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features in...
+ | Author: the WordPress team
+ | Author URI: http://wordpress.org/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 1.1 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://10.11.1.234/wp-content/themes/twentytwelve/style.css?ver=3.5.1, Match: 'Version: 1.1'
+
+
+[34m[i][0m No plugins Found.
+
+
+[34m[i][0m No themes Found.
+
+
+[34m[i][0m No Timthumbs Found.
+
+
+[34m[i][0m User(s) Identified:
+
+[32m[+][0m Core
+ | Found By: Author Posts - Display Name (Passive Detection)
+ | Confirmed By: Rss Generator (Passive Detection)
+
+[32m[+][0m admin
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[32m[+][0m backup
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[33m[!][0m No WPVulnDB API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 50 daily requests by registering at https://wpvulndb.com/users/sign_up
+
+[32m[+][0m Finished: Sun Aug 16 07:49:10 2020
+[32m[+][0m Requests Done: 2933
+[32m[+][0m Cached Requests: 50
+[32m[+][0m Data Sent: 729.409 KB
+[32m[+][0m Data Received: 605.614 KB
+[32m[+][0m Memory used: 228.312 MB
+[32m[+][0m Elapsed time: 00:00:21

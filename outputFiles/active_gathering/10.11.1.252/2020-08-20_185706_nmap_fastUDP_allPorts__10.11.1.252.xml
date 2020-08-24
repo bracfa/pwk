@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Aug 20 19:29:37 2020 as: nmap -sU -p- -&#45;defeat-icmp-ratelimit -oA 2020-08-20_185706_nmap_fastUDP_allPorts__10.11.1.252 10.11.1.252 -->
+<nmaprun scanner="nmap" args="nmap -sU -p- -&#45;defeat-icmp-ratelimit -oA 2020-08-20_185706_nmap_fastUDP_allPorts__10.11.1.252 10.11.1.252" start="1597966177" startstr="Thu Aug 20 19:29:37 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597966177" endtime="1597966390"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.11.1.252" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed|filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="udp" portid="8000"><state state="filtered" reason="host-prohibited" reason_ttl="62"/><service name="irdmi" method="table" conf="3"/></port>
+<port protocol="udp" portid="8888"><state state="closed" reason="port-unreach" reason_ttl="62"/><service name="ddi-udp-1" method="table" conf="3"/></port>
+<port protocol="udp" portid="22000"><state state="filtered" reason="host-prohibited" reason_ttl="62"/><service name="snapenetio" method="table" conf="3"/></port>
+</ports>
+<times srtt="18819" rttvar="8444" to="100000"/>
+</host>
+<runstats><finished time="1597966390" timestr="Thu Aug 20 19:33:10 2020" elapsed="214.00" summary="Nmap done at Thu Aug 20 19:33:10 2020; 1 IP address (1 host up) scanned in 214.00 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

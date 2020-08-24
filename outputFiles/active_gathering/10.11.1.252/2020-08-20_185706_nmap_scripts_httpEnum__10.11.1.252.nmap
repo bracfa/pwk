@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Thu Aug 20 19:33:11 2020 as: nmap -Pn --script=http-enum -oA 2020-08-20_185706_nmap_scripts_httpEnum__10.11.1.252 10.11.1.252
+Nmap scan report for 10.11.1.252
+Host is up (0.049s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+8000/tcp open  http-alt
+| http-enum: 
+|   /login.php: Possible admin folder
+|   /icons/: Potentially interesting directory w/ listing on 'apache/2.2.3 (centos)'
+|_  /manual/: Potentially interesting folder
+8888/tcp open  sun-answerbook
+
+# Nmap done at Thu Aug 20 19:35:06 2020 -- 1 IP address (1 host up) scanned in 115.26 seconds

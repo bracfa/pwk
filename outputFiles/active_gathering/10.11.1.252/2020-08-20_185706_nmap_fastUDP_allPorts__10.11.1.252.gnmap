@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Aug 20 19:29:37 2020 as: nmap -sU -p- --defeat-icmp-ratelimit -oA 2020-08-20_185706_nmap_fastUDP_allPorts__10.11.1.252 10.11.1.252
+Host: 10.11.1.252 ()	Status: Up
+Host: 10.11.1.252 ()	Ports: 8000/filtered/udp//irdmi///, 8888/closed/udp//ddi-udp-1///, 22000/filtered/udp//snapenetio///	Ignored State: closed|filtered (65532)
+# Nmap done at Thu Aug 20 19:33:10 2020 -- 1 IP address (1 host up) scanned in 214.00 seconds

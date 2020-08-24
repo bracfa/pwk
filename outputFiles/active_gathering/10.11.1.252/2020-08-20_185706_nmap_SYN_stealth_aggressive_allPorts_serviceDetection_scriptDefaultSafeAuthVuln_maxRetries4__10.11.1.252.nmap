@@ -1,0 +1,313 @@
+# Nmap 7.80 scan initiated Thu Aug 20 19:02:51 2020 as: nmap -sS -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-20_185706_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.252 10.11.1.252
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 192.168.0.25
+|     Server Identifier: 192.168.0.1
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.0.1
+|_    Domain Name Server: 75.75.75.75, 75.75.76.76
+| broadcast-igmp-discovery: 
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.2
+|     Description: All Routers on this Subnet
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.22
+|     Description: IGMP
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.34
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|_  Use the newtargets script-arg to add the results as targets
+| broadcast-listener: 
+|   udp
+|       DHCP
+|         srv ip       cli ip        mask           gw           dns                       vendor
+|         192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|_        192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Linux 2.6 DLNADOC/1.50 UPnP/1.0 ReadyDLNA/1.1.0
+|_      Location: http://192.168.0.254:8200/rootDesc.xml
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+Nmap scan report for 10.11.1.252
+Host is up (0.025s latency).
+Not shown: 65532 filtered ports
+PORT      STATE SERVICE    VERSION
+8000/tcp  open  http       Apache httpd 2.2.3 ((CentOS))
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.252
+|   url                                method
+|   http://10.11.1.252:8000/           FORM
+|_  http://10.11.1.252:8000/index.php  FORM
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.252
+|     
+|     Path: http://10.11.1.252:8000/timeapp.css
+|     Line number: 1
+|     Comment: 
+|         /* Body */
+|     
+|     Path: http://10.11.1.252:8000/timeapp.css
+|     Line number: 17
+|     Comment: 
+|         /* Links */
+|     
+|     Path: http://10.11.1.252:8000/timeapp.css
+|     Line number: 57
+|     Comment: 
+|         /*	width: 600px; */
+|     
+|     Path: http://10.11.1.252:8000/timeapp.css
+|     Line number: 24
+|     Comment: 
+|_        /*font-size : 12px;*/
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.252
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.11.1.252:8000/
+|     Form id: box-table-a
+|     Form action: index.php
+|     
+|     Path: http://10.11.1.252:8000/index.php
+|     Form id: box-table-a
+|_    Form action: index.php
+|_http-date: Thu, 20 Aug 2020 23:08:34 GMT; -1s from local time.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /login.php: Possible admin folder
+|   /icons/: Potentially interesting directory w/ listing on 'apache/2.2.3 (centos)'
+|_  /manual/: Potentially interesting folder
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-headers: 
+|   Date: Thu, 20 Aug 2020 23:08:36 GMT
+|   Server: Apache/2.2.3 (CentOS)
+|   X-Powered-By: PHP/5.1.6
+|   Connection: close
+|   Content-Type: text/html; charset=UTF-8
+|   
+|_  (Request type: HEAD)
+|_http-mobileversion-checker: No mobile version detected.
+|_http-open-proxy: Proxy might be redirecting requests
+| http-php-version: Versions from credits query (more accurate): 5.1.3 - 5.1.6
+|_Version from header x-powered-by: PHP/5.1.6
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-security-headers: 
+|_http-server-header: Apache/2.2.3 (CentOS)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-title: TimeClock Software :: Dev. Dpt. Thinc.local :: Log In
+|_Requested resource was login.php
+|_http-trace: TRACE is enabled
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Redirected To: login.php
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-xssed: No previously reported XSS vuln.
+| vulners: 
+|   cpe:/a:apache:http_server:2.2.3: 
+|     	CVE-2010-0425	10.0	https://vulners.com/cve/CVE-2010-0425
+|     	CVE-2011-3192	7.8	https://vulners.com/cve/CVE-2011-3192
+|     	CVE-2007-6423	7.8	https://vulners.com/cve/CVE-2007-6423
+|     	CVE-2017-7668	7.5	https://vulners.com/cve/CVE-2017-7668
+|     	CVE-2013-2249	7.5	https://vulners.com/cve/CVE-2013-2249
+|     	CVE-2009-1891	7.1	https://vulners.com/cve/CVE-2009-1891
+|     	CVE-2009-1890	7.1	https://vulners.com/cve/CVE-2009-1890
+|     	CVE-2012-0883	6.9	https://vulners.com/cve/CVE-2012-0883
+|     	CVE-2018-1312	6.8	https://vulners.com/cve/CVE-2018-1312
+|     	CVE-2006-4154	6.8	https://vulners.com/cve/CVE-2006-4154
+|     	CVE-2007-1741	6.2	https://vulners.com/cve/CVE-2007-1741
+|     	CVE-2013-1862	5.1	https://vulners.com/cve/CVE-2013-1862
+|     	CVE-2014-0231	5.0	https://vulners.com/cve/CVE-2014-0231
+|     	CVE-2014-0098	5.0	https://vulners.com/cve/CVE-2014-0098
+|     	CVE-2013-6438	5.0	https://vulners.com/cve/CVE-2013-6438
+|     	CVE-2011-3368	5.0	https://vulners.com/cve/CVE-2011-3368
+|     	CVE-2010-1452	5.0	https://vulners.com/cve/CVE-2010-1452
+|     	CVE-2010-0408	5.0	https://vulners.com/cve/CVE-2010-0408
+|     	CVE-2009-2699	5.0	https://vulners.com/cve/CVE-2009-2699
+|     	CVE-2007-6750	5.0	https://vulners.com/cve/CVE-2007-6750
+|     	CVE-2009-1195	4.9	https://vulners.com/cve/CVE-2009-1195
+|     	CVE-2012-0031	4.6	https://vulners.com/cve/CVE-2012-0031
+|     	CVE-2011-3607	4.4	https://vulners.com/cve/CVE-2011-3607
+|     	CVE-2007-1743	4.4	https://vulners.com/cve/CVE-2007-1743
+|     	CVE-2016-4975	4.3	https://vulners.com/cve/CVE-2016-4975
+|     	CVE-2013-1896	4.3	https://vulners.com/cve/CVE-2013-1896
+|     	CVE-2012-4558	4.3	https://vulners.com/cve/CVE-2012-4558
+|     	CVE-2012-3499	4.3	https://vulners.com/cve/CVE-2012-3499
+|     	CVE-2012-0053	4.3	https://vulners.com/cve/CVE-2012-0053
+|     	CVE-2011-4317	4.3	https://vulners.com/cve/CVE-2011-4317
+|     	CVE-2011-3639	4.3	https://vulners.com/cve/CVE-2011-3639
+|     	CVE-2011-3348	4.3	https://vulners.com/cve/CVE-2011-3348
+|     	CVE-2011-0419	4.3	https://vulners.com/cve/CVE-2011-0419
+|     	CVE-2010-0434	4.3	https://vulners.com/cve/CVE-2010-0434
+|     	CVE-2008-2939	4.3	https://vulners.com/cve/CVE-2008-2939
+|     	CVE-2008-2168	4.3	https://vulners.com/cve/CVE-2008-2168
+|     	CVE-2008-0455	4.3	https://vulners.com/cve/CVE-2008-0455
+|     	CVE-2007-6420	4.3	https://vulners.com/cve/CVE-2007-6420
+|     	CVE-2007-6388	4.3	https://vulners.com/cve/CVE-2007-6388
+|     	CVE-2007-6203	4.3	https://vulners.com/cve/CVE-2007-6203
+|     	CVE-2007-5000	4.3	https://vulners.com/cve/CVE-2007-5000
+|     	CVE-2007-4465	4.3	https://vulners.com/cve/CVE-2007-4465
+|     	CVE-2006-5752	4.3	https://vulners.com/cve/CVE-2006-5752
+|     	CVE-2006-4110	4.3	https://vulners.com/cve/CVE-2006-4110
+|     	CVE-2007-6422	4.0	https://vulners.com/cve/CVE-2007-6422
+|     	CVE-2007-1742	3.7	https://vulners.com/cve/CVE-2007-1742
+|     	CVE-2007-6421	3.5	https://vulners.com/cve/CVE-2007-6421
+|     	CVE-2016-8612	3.3	https://vulners.com/cve/CVE-2016-8612
+|     	CVE-2012-2687	2.6	https://vulners.com/cve/CVE-2012-2687
+|     	CVE-2008-0456	2.6	https://vulners.com/cve/CVE-2008-0456
+|_    	CVE-2011-4415	1.2	https://vulners.com/cve/CVE-2011-4415
+8888/tcp  open  http-proxy Squid http proxy 4.6
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-date: Thu, 20 Aug 2020 23:09:29 GMT; +56s from local time.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-headers: 
+|   Server: squid/4.6
+|   Mime-Version: 1.0
+|   Date: Thu, 20 Aug 2020 23:09:34 GMT
+|   Content-Type: text/html;charset=utf-8
+|   Content-Length: 3507
+|   X-Squid-Error: ERR_INVALID_URL 0
+|   Vary: Accept-Language
+|   Content-Language: en
+|   X-Cache: MISS from dev-proxy
+|   X-Cache-Lookup: NONE from dev-proxy:8080
+|   Via: 1.1 dev-proxy (squid/4.6)
+|   Connection: close
+|   
+|_  (Request type: GET)
+|_http-server-header: squid/4.6
+|_http-title: ERROR: The requested URL could not be retrieved
+|_unusual-port: http-proxy unexpected on port tcp/8888
+| vulners: 
+|   cpe:/a:squid-cache:squid:4.6: 
+|     	CVE-2019-12522	10.0	https://vulners.com/cve/CVE-2019-12522
+|     	CVE-2020-8450	7.5	https://vulners.com/cve/CVE-2020-8450
+|     	CVE-2020-11945	7.5	https://vulners.com/cve/CVE-2020-11945
+|     	CVE-2019-12526	7.5	https://vulners.com/cve/CVE-2019-12526
+|     	CVE-2019-12525	7.5	https://vulners.com/cve/CVE-2019-12525
+|     	CVE-2019-12524	7.5	https://vulners.com/cve/CVE-2019-12524
+|     	CVE-2019-12519	7.5	https://vulners.com/cve/CVE-2019-12519
+|     	CVE-2019-12527	6.8	https://vulners.com/cve/CVE-2019-12527
+|     	CVE-2020-15049	6.5	https://vulners.com/cve/CVE-2020-15049
+|     	CVE-2019-12523	6.4	https://vulners.com/cve/CVE-2019-12523
+|     	CVE-2019-18677	5.8	https://vulners.com/cve/CVE-2019-18677
+|     	CVE-2020-8517	5.0	https://vulners.com/cve/CVE-2020-8517
+|     	CVE-2020-8449	5.0	https://vulners.com/cve/CVE-2020-8449
+|     	CVE-2020-14058	5.0	https://vulners.com/cve/CVE-2020-14058
+|     	CVE-2019-18679	5.0	https://vulners.com/cve/CVE-2019-18679
+|     	CVE-2019-18678	5.0	https://vulners.com/cve/CVE-2019-18678
+|     	CVE-2019-18676	5.0	https://vulners.com/cve/CVE-2019-18676
+|     	CVE-2019-12854	5.0	https://vulners.com/cve/CVE-2019-12854
+|     	CVE-2019-12528	5.0	https://vulners.com/cve/CVE-2019-12528
+|     	CVE-2019-12520	5.0	https://vulners.com/cve/CVE-2019-12520
+|     	CVE-2019-18860	4.3	https://vulners.com/cve/CVE-2019-18860
+|     	CVE-2019-12529	4.3	https://vulners.com/cve/CVE-2019-12529
+|_    	CVE-2019-12521	4.3	https://vulners.com/cve/CVE-2019-12521
+22000/tcp open  ssh        OpenSSH 4.3 (protocol 2.0)
+|_banner: SSH-2.0-OpenSSH_4.3
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|     gssapi-with-mic
+|_    password
+| ssh-hostkey: 
+|   1024 ab:a7:86:a8:a0:39:c6:0a:81:0b:f9:ae:6f:4b:51:79 (DSA)
+|_  2048 8b:a5:11:b8:ca:75:9e:8c:a7:17:2c:a3:c9:90:1e:87 (RSA)
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+| ssh2-enum-algos: 
+|   kex_algorithms: (3)
+|   server_host_key_algorithms: (2)
+|   encryption_algorithms: (13)
+|   mac_algorithms: (6)
+|_  compression_algorithms: (2)
+|_unusual-port: ssh unexpected on port tcp/22000
+| vulners: 
+|   cpe:/a:openbsd:openssh:4.3: 
+|     	CVE-2006-5051	9.3	https://vulners.com/cve/CVE-2006-5051
+|     	CVE-2006-4924	7.8	https://vulners.com/cve/CVE-2006-4924
+|     	CVE-2010-4478	7.5	https://vulners.com/cve/CVE-2010-4478
+|     	CVE-2007-4752	7.5	https://vulners.com/cve/CVE-2007-4752
+|     	CVE-2009-2904	6.9	https://vulners.com/cve/CVE-2009-2904
+|     	CVE-2020-15778	6.8	https://vulners.com/cve/CVE-2020-15778
+|     	CVE-2017-15906	5.0	https://vulners.com/cve/CVE-2017-15906
+|     	CVE-2016-10708	5.0	https://vulners.com/cve/CVE-2016-10708
+|     	CVE-2010-5107	5.0	https://vulners.com/cve/CVE-2010-5107
+|     	CVE-2007-2243	5.0	https://vulners.com/cve/CVE-2007-2243
+|     	CVE-2006-5052	5.0	https://vulners.com/cve/CVE-2006-5052
+|     	CVE-2010-4755	4.0	https://vulners.com/cve/CVE-2010-4755
+|     	CVE-2012-0814	3.5	https://vulners.com/cve/CVE-2012-0814
+|     	CVE-2011-5000	3.5	https://vulners.com/cve/CVE-2011-5000
+|     	CVE-2011-4327	2.1	https://vulners.com/cve/CVE-2011-4327
+|_    	CVE-2008-3259	1.2	https://vulners.com/cve/CVE-2008-3259
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Cisco SA520 firewall (Linux 2.6) (91%), Linux 2.6.28 (91%), Linux 2.6.9 (CentOS 4.4) (91%), Linux 2.6.9 - 2.6.27 (91%), Riverbed Steelhead 200 proxy server (91%), ZoneAlarm Z100G WAP (91%), Ruckus 7363 WAP (91%), Linux 2.6.9 (91%), Linux 2.6.30 (89%), Linux 2.6.11 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+Host script results:
+|_clock-skew: mean: 27s, deviation: 40s, median: -1s
+|_fcrdns: FAIL (No PTR record)
+| firewalk: 
+| HOP  HOST           PROTOCOL  BLOCKED PORTS
+|_1    192.168.119.1  tcp       1-10
+|_ipidseq: All zeros
+|_path-mtu: PMTU == 1500
+| qscan: 
+| PORT   FAMILY  MEAN (us)  STDDEV   LOSS (%)
+| 8000   0       18126.00   1994.62  0.0%
+| 8888   0       22883.80   8886.73  0.0%
+|_22000  0       19311.50   3287.58  0.0%
+| traceroute-geolocation: 
+|   HOP  RTT    ADDRESS        GEOLOCATION
+|   1    26.27  192.168.119.1  - ,- 
+|_  2    26.59  10.11.1.252    - ,- 
+
+TRACEROUTE (using port 8888/tcp)
+HOP RTT      ADDRESS
+1   26.27 ms 192.168.119.1
+2   26.59 ms 10.11.1.252
+
+Post-scan script results:
+| reverse-index: 
+|   8000/tcp: 10.11.1.252
+|   8888/tcp: 10.11.1.252
+|_  22000/tcp: 10.11.1.252
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 20 19:14:27 2020 -- 1 IP address (1 host up) scanned in 701.26 seconds

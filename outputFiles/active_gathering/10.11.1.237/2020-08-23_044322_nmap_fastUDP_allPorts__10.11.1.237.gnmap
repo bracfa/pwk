@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Aug 23 05:02:43 2020 as: nmap -sU -p- --defeat-icmp-ratelimit -oA 2020-08-23_044322_nmap_fastUDP_allPorts__10.11.1.237 10.11.1.237
+Host: 10.11.1.237 ()	Status: Up
+Host: 10.11.1.237 ()	Ports: 111/open/udp//rpcbind///, 5353/open/udp//zeroconf///
+# Nmap done at Sun Aug 23 05:05:40 2020 -- 1 IP address (1 host up) scanned in 177.31 seconds

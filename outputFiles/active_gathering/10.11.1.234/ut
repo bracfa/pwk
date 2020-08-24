@@ -1,0 +1,42 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: ut
+START_TIME: Mon Aug 17 00:02:25 2020
+URL_BASE: http://10.11.1.234/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Recursive
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.234/ ----
++ http://10.11.1.234/cgi-bin/ (CODE:403|SIZE:287)
+==> DIRECTORY: http://10.11.1.234/index/
++ http://10.11.1.234/index.php (CODE:301|SIZE:0)
++ http://10.11.1.234/license (CODE:200|SIZE:19929)
++ http://10.11.1.234/readme (CODE:200|SIZE:9177)
++ http://10.11.1.234/server-status (CODE:403|SIZE:292)
+==> DIRECTORY: http://10.11.1.234/wp-admin/
++ http://10.11.1.234/wp-blog-header (CODE:200|SIZE:0)
++ http://10.11.1.234/wp-config (CODE:200|SIZE:0)
+==> DIRECTORY: http://10.11.1.234/wp-content/
++ http://10.11.1.234/wp-cron (CODE:200|SIZE:0)
+==> DIRECTORY: http://10.11.1.234/wp-includes/
++ http://10.11.1.234/wp-links-opml (CODE:200|SIZE:228)
++ http://10.11.1.234/wp-load (CODE:200|SIZE:0)
++ http://10.11.1.234/wp-login (CODE:200|SIZE:2246)
++ http://10.11.1.234/wp-mail (CODE:500|SIZE:4144)
++ http://10.11.1.234/wp-settings (CODE:500|SIZE:0)
++ http://10.11.1.234/wp-signup (CODE:302|SIZE:0)
++ http://10.11.1.234/wp-trackback (CODE:200|SIZE:135)
++ http://10.11.1.234/xmlrpc (CODE:200|SIZE:42)
++ http://10.11.1.234/xmlrpc.php (CODE:200|SIZE:42)
+
+-----------------
+END_TIME: Mon Aug 17 00:05:13 2020
+DOWNLOADED: 4612 - FOUND: 17

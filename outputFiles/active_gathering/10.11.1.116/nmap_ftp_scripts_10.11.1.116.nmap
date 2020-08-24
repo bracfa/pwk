@@ -1,0 +1,15 @@
+# Nmap 7.80 scan initiated Sun Aug 23 03:28:07 2020 as: nmap --script=*ftp* -oA ../nmap_ftp_scripts_10.11.1.116 10.11.1.116
+Nmap scan report for 10.11.1.116
+Host is up (0.043s latency).
+Not shown: 995 closed ports
+PORT    STATE SERVICE
+21/tcp  open  ftp
+| ftp-brute: 
+|   Accounts: No valid accounts found
+|_  Statistics: Performed 3562 guesses in 603 seconds, average tps: 5.8
+22/tcp  open  ssh
+80/tcp  open  http
+110/tcp open  pop3
+143/tcp open  imap
+
+# Nmap done at Sun Aug 23 03:38:12 2020 -- 1 IP address (1 host up) scanned in 604.72 seconds

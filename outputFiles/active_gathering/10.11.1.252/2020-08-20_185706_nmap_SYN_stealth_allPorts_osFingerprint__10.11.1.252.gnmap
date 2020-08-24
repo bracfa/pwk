@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Aug 20 18:57:06 2020 as: nmap -sS -p- -O -oA 2020-08-20_185706_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.252 10.11.1.252
+Host: 10.11.1.252 ()	Status: Up
+Host: 10.11.1.252 ()	Ports: 8000/open/tcp//http-alt///, 8888/open/tcp//sun-answerbook///, 22000/open/tcp//snapenetio///	Ignored State: filtered (65532)	Seq Index: 201	IP ID Seq: All zeros
+# Nmap done at Thu Aug 20 18:59:37 2020 -- 1 IP address (1 host up) scanned in 150.73 seconds

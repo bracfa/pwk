@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Sun Aug 23 04:44:19 2020 as: nmap -sV -sT -p- -oA 2020-08-23_044322_nmap_CONNECT_allPorts_serviceDetection__10.11.1.237 10.11.1.237
+Nmap scan report for 10.11.1.237
+Host is up (0.018s latency).
+Not shown: 65528 closed ports
+PORT      STATE    SERVICE    VERSION
+22/tcp    open     ssh        OpenSSH 6.0p1 Debian 4 (protocol 2.0)
+80/tcp    open     http       Apache httpd 2.2.22 ((Debian))
+111/tcp   open     rpcbind    2-4 (RPC #100000)
+443/tcp   open     ssl/https?
+27017/tcp filtered mongod
+28017/tcp filtered mongod
+33242/tcp open     status     1 (RPC #100024)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug 23 04:48:07 2020 -- 1 IP address (1 host up) scanned in 228.64 seconds

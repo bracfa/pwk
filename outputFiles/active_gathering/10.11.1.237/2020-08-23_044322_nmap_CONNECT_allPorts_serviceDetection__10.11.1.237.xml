@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Aug 23 04:44:19 2020 as: nmap -sV -sT -p- -oA 2020-08-23_044322_nmap_CONNECT_allPorts_serviceDetection__10.11.1.237 10.11.1.237 -->
+<nmaprun scanner="nmap" args="nmap -sV -sT -p- -oA 2020-08-23_044322_nmap_CONNECT_allPorts_serviceDetection__10.11.1.237 10.11.1.237" start="1598172259" startstr="Sun Aug 23 04:44:19 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1598172259" endtime="1598172487"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.11.1.237" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65528">
+<extrareasons reason="conn-refused" count="65528"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="6.0p1 Debian 4" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.0p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.22" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.22</cpe></service></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="27017"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="mongod" method="table" conf="3"/></port>
+<port protocol="tcp" portid="28017"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="mongod" method="table" conf="3"/></port>
+<port protocol="tcp" portid="33242"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+</ports>
+<times srtt="18409" rttvar="2538" to="100000"/>
+</host>
+<runstats><finished time="1598172487" timestr="Sun Aug 23 04:48:07 2020" elapsed="228.64" summary="Nmap done at Sun Aug 23 04:48:07 2020; 1 IP address (1 host up) scanned in 228.64 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

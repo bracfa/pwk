@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Aug 20 18:59:37 2020 as: nmap -sV -sT -p- -oA 2020-08-20_185706_nmap_CONNECT_allPorts_serviceDetection__10.11.1.252 10.11.1.252 -->
+<nmaprun scanner="nmap" args="nmap -sV -sT -p- -oA 2020-08-20_185706_nmap_CONNECT_allPorts_serviceDetection__10.11.1.252 10.11.1.252" start="1597964377" startstr="Thu Aug 20 18:59:37 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1597964377" endtime="1597964566"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="10.11.1.252" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="8000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.3" extrainfo="(CentOS)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.3</cpe></service></port>
+<port protocol="tcp" portid="8888"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" product="Squid http proxy" version="4.6" method="probed" conf="10"><cpe>cpe:/a:squid-cache:squid:4.6</cpe></service></port>
+<port protocol="tcp" portid="22000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="4.3" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.3</cpe></service></port>
+</ports>
+<times srtt="27424" rttvar="8362" to="100000"/>
+</host>
+<runstats><finished time="1597964566" timestr="Thu Aug 20 19:02:46 2020" elapsed="189.34" summary="Nmap done at Thu Aug 20 19:02:46 2020; 1 IP address (1 host up) scanned in 189.34 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

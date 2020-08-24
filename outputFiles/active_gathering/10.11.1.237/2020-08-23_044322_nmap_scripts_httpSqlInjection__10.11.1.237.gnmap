@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Aug 23 05:06:17 2020 as: nmap -Pn -sV -p80 --script=http-sql-injection -oA 2020-08-23_044322_nmap_scripts_httpSqlInjection__10.11.1.237 10.11.1.237
+Host: 10.11.1.237 ()	Status: Up
+Host: 10.11.1.237 ()	Ports: 80/open/tcp//http//Apache httpd 2.2.22 ((Debian))/
+# Nmap done at Sun Aug 23 05:06:23 2020 -- 1 IP address (1 host up) scanned in 6.78 seconds
