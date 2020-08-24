@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Aug 24 16:34:37 2020 as: nmap -Pn -A -p- -oA 2020-08-24_nmap_Pn_10.11.1.251 10.11.1.251 -->
+<nmaprun scanner="nmap" args="nmap -Pn -A -p- -oA 2020-08-24_nmap_Pn_10.11.1.251 10.11.1.251" start="1598301277" startstr="Mon Aug 24 16:34:37 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1598301278" endtime="1598301445"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.251" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65431">
+<extrareasons reason="no-responses" count="65431"/>
+</extraports>
+<extraports state="closed" count="101">
+<extrareasons reason="resets" count="101"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;Can&apos;t get directory listing: PASV IP 10.1.1.246 is not the same as 10.11.1.251"/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to 192.168.119.214&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to 192.168.119.214&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 3.0.3 - secure, fast, stable&#xa;End of status</elem>
+</script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 7a:ca:a2:4c:99:8b:6d:f4:46:78:fe:4a:69:6d:e4:94 (RSA)&#xa;  256 04:2c:70:84:84:03:43:42:a4:c3:33:d2:95:0d:5e:91 (ECDSA)&#xa;  256 11:ad:73:55:cc:e9:cb:0c:a4:23:d6:46:e8:7d:da:f0 (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">7acaa24c998b6df44678fe4a696de494</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDOtQIoHF+ozLT+P3agCVcLrFkej1b+lOWY2f2cHFqbyJKNA4sx0DOOcD48GDeUcPL1eTn3zNwNlJpySIin2YT4Q//sVgRDiwrmlPk4feKFl5UeYx1N9Ld1tgmoImdQCIRFV5eLwZcO7i4uq9XWJMt3ovo5pz1MKfy/hKjvleH86LYS+26hKE9WkIRbDKr0nfCFQPuxHqEdYZzUMDJNsobgoLVdrf3PYw09erJX3DWIGwnAsRSr79b+g+LIXNE68f5JHaR5wJi6iqwg2TPAEi2Syy837cOqprZ0DnJFnwetl9q4eBVt+Tj4yx+GeQphHwLiNoBwQ1b0iMRsOOQrZxdH</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">042c708484034342a4c333d2950d5e91</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBO3DAvXdh1kU36SBCYPAeM+rj06cDuvVLLrl8RncbpLVPuSqiCVTqgVE2Gr15dcRzRd4uitCVk6fWblgccXUn4o=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">11ad7355cce9cb0ca423d646e87ddaf0</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIMFpjhqvMXWVgNgAcxQYin97baZzNrjLcl+pvwS3Qy+M</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="20"/>
+<osmatch name="Linux 3.10 - 3.12" accuracy="92" line="63130">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="92" line="67202">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.9" accuracy="91" line="67695">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.0" accuracy="89" line="66814">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:4.0</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.11 - 4.1" accuracy="88" line="63416">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="88" line="54126">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.5" accuracy="88" line="65384">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3.5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="88" line="67020">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="WatchGuard Fireware 11.8" accuracy="88" line="104321">
+<osclass type="firewall" vendor="WatchGuard" osfamily="Fireware" osgen="11.X" accuracy="88"><cpe>cpe:/o:watchguard:fireware:11.8</cpe></osclass>
+</osmatch>
+<osmatch name="Synology DiskStation Manager 5.1" accuracy="87" line="68096">
+<osclass type="storage-misc" vendor="Linux" osfamily="Linux" accuracy="87"><cpe>cpe:/o:linux:linux_kernel</cpe></osclass>
+<osclass type="storage-misc" vendor="Synology" osfamily="DiskStation Manager" osgen="5.X" accuracy="87"><cpe>cpe:/a:synology:diskstation_manager:5.1</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="2718587" lastboot="Fri Jul 24 05:27:38 2020"/>
+<distance value="2"/>
+<tcpsequence index="261" difficulty="Good luck!" values="6A1538C3,567ABD63,730DD068,82B5C105,EF7B4E9C,DFCF16B4"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="A20A5019,A20A5092,A20A50DC,A20A513D,A20A51A1,A20A520A"/>
+<trace port="10190" proto="tcp">
+<hop ttl="1" ipaddr="192.168.119.1" rtt="23.84"/>
+<hop ttl="2" ipaddr="10.11.1.251" rtt="24.02"/>
+</trace>
+<times srtt="21723" rttvar="1969" to="100000"/>
+</host>
+<runstats><finished time="1598301445" timestr="Mon Aug 24 16:37:25 2020" elapsed="167.91" summary="Nmap done at Mon Aug 24 16:37:25 2020; 1 IP address (1 host up) scanned in 167.91 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

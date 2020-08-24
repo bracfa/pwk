@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Aug 24 16:18:20 2020 as: nmap -Pn -sC -sV -A -p- -oA 2020-08-24_nmap_10.11.1.251 10.11.1.251
+Host: 10.11.1.251 ()	Status: Up
+Host: 10.11.1.251 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/	Seq Index: 260	IP ID Seq: All zeros
+# Nmap done at Mon Aug 24 16:21:09 2020 -- 1 IP address (1 host up) scanned in 169.47 seconds

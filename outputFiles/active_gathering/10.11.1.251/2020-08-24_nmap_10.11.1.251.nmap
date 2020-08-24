@@ -1,0 +1,41 @@
+# Nmap 7.80 scan initiated Mon Aug 24 16:18:20 2020 as: nmap -Pn -sC -sV -A -p- -oA 2020-08-24_nmap_10.11.1.251 10.11.1.251
+Nmap scan report for 10.11.1.251
+Host is up (0.023s latency).
+Not shown: 65431 filtered ports, 101 closed ports
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV IP 10.1.1.246 is not the same as 10.11.1.251
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.119.214
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 3
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 7a:ca:a2:4c:99:8b:6d:f4:46:78:fe:4a:69:6d:e4:94 (RSA)
+|   256 04:2c:70:84:84:03:43:42:a4:c3:33:d2:95:0d:5e:91 (ECDSA)
+|_  256 11:ad:73:55:cc:e9:cb:0c:a4:23:d6:46:e8:7d:da:f0 (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+Aggressive OS guesses: Linux 3.10 - 3.12 (92%), Linux 4.4 (92%), Linux 4.9 (91%), Linux 4.0 (89%), Linux 3.11 - 4.1 (88%), Linux 2.6.32 (88%), Linux 2.6.32 or 3.10 (88%), Linux 3.5 (88%), Linux 4.2 (88%), WatchGuard Fireware 11.8 (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 10194/tcp)
+HOP RTT      ADDRESS
+1   23.59 ms 192.168.119.1
+2   23.82 ms 10.11.1.251
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug 24 16:21:09 2020 -- 1 IP address (1 host up) scanned in 169.47 seconds
