@@ -1,8 +1,10 @@
 Getting a Foothold
 
+Getting a Foothold
+
 # Works
 
-# Try
+# Trying
 ## Method 1
 Description
 

@@ -1,10 +1,15 @@
 Service Banners
 
+Service Banners
+
 # Operating system
 cat /etc/issue
 cat /etc/*-release
 uname -a
 cat /proc/version
+hostname
+
+# Server
 
 # Ports
 ## TCP
