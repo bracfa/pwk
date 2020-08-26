@@ -1,7 +1,5 @@
 Service Banners
 
-Service Banners
-
 # Operating system
 cat /etc/issue
 cat /etc/*-release

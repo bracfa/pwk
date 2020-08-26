@@ -1,7 +1,5 @@
 Enumeration
 
-Enumeration
-
 # NMAP
 ## TCP Ports
 ### <nmap command>

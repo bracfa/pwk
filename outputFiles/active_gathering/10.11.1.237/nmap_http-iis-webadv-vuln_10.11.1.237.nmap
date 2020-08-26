@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Tue Aug 25 10:14:54 2020 as: nmap --script http-iis-webdav-vuln -oA nmap_http-iis-webadv-vuln_10.11.1.237 10.11.1.237
+Nmap scan report for 10.11.1.237
+Host is up (0.025s latency).
+Not shown: 996 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+111/tcp open  rpcbind
+443/tcp open  https
+
+# Nmap done at Tue Aug 25 10:14:57 2020 -- 1 IP address (1 host up) scanned in 3.04 seconds

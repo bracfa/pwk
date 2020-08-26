@@ -1,7 +1,8 @@
 Getting a Foothold
 
+Getting a Foothold
 
-# Getting a Foothold
+# Works
 1. Scan TCP Ports via NMAP using no ping switch (-Pn)
 2. Scan target's port 80 via dirb non-recursive scan. Of interest is the 10.11.1.251/wp directory.
 3. Browse to 10.11.1.251/wp and discover it is a WordPress site. 

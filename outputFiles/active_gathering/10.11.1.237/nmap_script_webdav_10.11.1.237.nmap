@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Tue Aug 25 10:11:06 2020 as: nmap -v -sT --script=*webdav* -p80 -oA nmap_script_webdav_10.11.1.237 10.11.1.237
+Nmap scan report for 10.11.1.237
+Host is up (0.024s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Aug 25 10:11:07 2020 -- 1 IP address (1 host up) scanned in 0.69 seconds

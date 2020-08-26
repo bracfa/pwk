@@ -1,7 +1,5 @@
 Getting a Foothold
 
-Getting a Foothold
-
 # Works
 
 # Trying

@@ -1,9 +1,10 @@
 Credentials
 
-Credentials
 
 # Operating System
-Port, Service
-username:password
+
+
+# Port, Service
+
 
 # Apps / Services

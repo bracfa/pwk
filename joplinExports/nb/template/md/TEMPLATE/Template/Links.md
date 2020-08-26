@@ -1,7 +1,5 @@
 Links
 
-Links
-
 # Subject 1
 Description
 Link

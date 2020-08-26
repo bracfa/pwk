@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Aug 25 10:13:48 2020 as: nmap --script http-webdav-scan -oA nmap_http-webdav-scan_10.11.1.237 10.11.1.237
+Host: 10.11.1.237 ()	Status: Up
+Host: 10.11.1.237 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 443/open/tcp//https///	Ignored State: closed (996)
+# Nmap done at Tue Aug 25 10:13:51 2020 -- 1 IP address (1 host up) scanned in 3.11 seconds

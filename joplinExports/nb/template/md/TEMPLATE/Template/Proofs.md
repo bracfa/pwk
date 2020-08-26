@@ -1,7 +1,5 @@
 Proofs
 
-Proofs
-
 # proof.txt
 
 

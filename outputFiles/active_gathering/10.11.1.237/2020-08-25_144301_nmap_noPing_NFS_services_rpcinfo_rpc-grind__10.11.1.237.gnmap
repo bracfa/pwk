@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Aug 25 14:43:01 2020 as: nmap -Pn -sV -p 111 --script=rpcinfo,rpc-grind -oA 2020-08-25_144301_nmap_noPing_NFS_services_rpcinfo_rpc-grind__10.11.1.237 10.11.1.237
+Host: 10.11.1.237 ()	Status: Up
+Host: 10.11.1.237 ()	Ports: 111/open/tcp//rpcbind//2-4 (RPC #100000)/
+# Nmap done at Tue Aug 25 14:43:08 2020 -- 1 IP address (1 host up) scanned in 6.72 seconds
