@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Aug 29 18:35:27 2020 as: nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-29_182642_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.101 10.11.1.101 -->
+<nmaprun scanner="nmap" args="nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-29_182642_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.101 10.11.1.101" start="1598740527" startstr="Sat Aug 29 18:35:27 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<prescript><script id="broadcast-dhcp-discover" output="&#xa;  Response 1 of 1: &#xa;    IP Offered: 192.168.0.21&#xa;    Server Identifier: 192.168.0.1&#xa;    Subnet Mask: 255.255.255.0&#xa;    Router: 192.168.0.1&#xa;    Domain Name Server: 75.75.75.75, 75.75.76.76"><table key="Response 1 of 1">
+<elem key="IP Offered">192.168.0.21</elem>
+<elem key="Server Identifier">192.168.0.1</elem>
+<elem key="Subnet Mask">255.255.255.0</elem>
+<elem key="Router">192.168.0.1</elem>
+<table key="Domain Name Server">
+<elem>75.75.75.75</elem>
+<elem>75.75.76.76</elem>
+</table>
+</table>
+</script><script id="broadcast-igmp-discovery" output="&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.2&#xa;    Description: All Routers on this Subnet&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.22&#xa;    Description: IGMP&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  192.168.0.254&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  Use the newtargets script-arg to add the results as targets&#xa;"/><script id="broadcast-listener" output="&#xa;  ether&#xa;      EIGRP Update&#xa;        &#xa;  udp&#xa;      DHCP&#xa;        srv ip       cli ip        mask           gw           dns                       vendor&#xa;        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;"/><script id="broadcast-netbios-master-browser" output="&#xa;ip  server  domain&#xa;"/><script id="broadcast-upnp-info" output="&#xa;  239.255.255.250&#xa;      Server: Unspecified, UPnP/1.0, Unspecified&#xa;      Location: http://192.168.0.254:49152/wps_device.xml&#xa;"/><script id="eap-info" output="please specify an interface with -e"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/></prescript><host starttime="1598740568" endtime="1598740950"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.101" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65529">
+<extrareasons reason="resets" count="65529"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service><script id="banner" output="220 (vsFTPd 3.0.3)"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="sslv2-drown" output="&#xa;"></script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.8" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="banner" output="SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.8"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="ssh-auth-methods" output="&#xa;  Supported authentication methods: &#xa;    publickey&#xa;    password"><table key="Supported authentication methods">
+<elem>publickey</elem>
+<elem>password</elem>
+</table>
+</script><script id="ssh-hostkey" output="&#xa;  2048 62:54:16:aa:0b:73:77:61:1b:a4:45:c0:f8:2e:5b:ed (RSA)&#xa;  256 f4:42:23:27:6e:90:fe:bc:f4:d9:32:6f:8f:6b:74:34 (ECDSA)&#xa;  256 c6:6a:fa:44:6e:31:37:da:e3:9e:dc:29:f4:48:6b:b8 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC7RQYuEvP3VkLtkJSpEG2zMSNwK2e45WnSaO+1MD8iwxYwJiD0iNR/O9AE9JD5s6j7o2Udn0juM7OWFU9FimUU1jE5qyX7Z55i76f/UU6F4ePvqyOtvHs5lez0F1vVm7TyUpny5uTiUSoB+blCjg+LlKTeBOWXLBDpBEQw0lNJJ2SWhvBmDQ9e8Nt0RkS3GlIWaqWQceMh4bMZW8oa5dz0nZjinQF8nBGv8L8fZdQ8A5e66Y8jcNrzXVV7Tkzb1bcybmi2fJ1WPnWl7rb7/B2z0Lp8dIryKx7lEa3MJr2PPAnErpX9s3FFqVlDKBecqtEyucrpRcUz4jo53oIJaI5d</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">625416aa0b7377611ba445c0f82e5bed</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBENMAwx7lTSadwadhHkhoFLqwA7a4Q5Y5LrYiINwagsEJ4DWsorPYNNNQRSiNWfDKm4oTUX9RbKmpLzqG1ISrJY=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">f44223276e90febcf4d9326f8f6b7434</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIHN+UUlB0wnxEXrhhh91CD6zbfxTFqECfd/NQcvI8N26</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">c66afa446e3137dae39edc29f4486bb8</elem>
+<elem key="bits">256</elem>
+</table>
+</script><script id="ssh-publickey-acceptance" output="&#xa;  Accepted Public Keys: No public keys accepted"><elem key="Accepted Public Keys">No public keys accepted</elem>
+</script><script id="ssh2-enum-algos" output="&#xa;  kex_algorithms: (6)&#xa;  server_host_key_algorithms: (5)&#xa;  encryption_algorithms: (6)&#xa;  mac_algorithms: (10)&#xa;  compression_algorithms: (2)"><table key="kex_algorithms">
+<elem>curve25519-sha256@libssh.org</elem>
+<elem>ecdh-sha2-nistp256</elem>
+<elem>ecdh-sha2-nistp384</elem>
+<elem>ecdh-sha2-nistp521</elem>
+<elem>diffie-hellman-group-exchange-sha256</elem>
+<elem>diffie-hellman-group14-sha1</elem>
+</table>
+<table key="server_host_key_algorithms">
+<elem>ssh-rsa</elem>
+<elem>rsa-sha2-512</elem>
+<elem>rsa-sha2-256</elem>
+<elem>ecdsa-sha2-nistp256</elem>
+<elem>ssh-ed25519</elem>
+</table>
+<table key="encryption_algorithms">
+<elem>chacha20-poly1305@openssh.com</elem>
+<elem>aes128-ctr</elem>
+<elem>aes192-ctr</elem>
+<elem>aes256-ctr</elem>
+<elem>aes128-gcm@openssh.com</elem>
+<elem>aes256-gcm@openssh.com</elem>
+</table>
+<table key="mac_algorithms">
+<elem>umac-64-etm@openssh.com</elem>
+<elem>umac-128-etm@openssh.com</elem>
+<elem>hmac-sha2-256-etm@openssh.com</elem>
+<elem>hmac-sha2-512-etm@openssh.com</elem>
+<elem>hmac-sha1-etm@openssh.com</elem>
+<elem>umac-64@openssh.com</elem>
+<elem>umac-128@openssh.com</elem>
+<elem>hmac-sha2-256</elem>
+<elem>hmac-sha2-512</elem>
+<elem>hmac-sha1</elem>
+</table>
+<table key="compression_algorithms">
+<elem>none</elem>
+<elem>zlib@openssh.com</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="http-comments-displayer" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.101&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/js/util.js&#xa;    Line number: 3&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#x9; */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 1425&#xa;    Comment: &#xa;        /* Type */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 3338&#xa;    Comment: &#xa;        /* Menu */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 51&#xa;    Comment: &#xa;        /* Box Model */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 10&#xa;    Comment: &#xa;        /* Reset */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 196&#xa;    Comment: &#xa;        &lt;!-&#45; Mini Post -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 3148&#xa;    Comment: &#xa;        /* Wrapper */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 12&#xa;    Comment: &#xa;        &lt;!-&#45;[if lte IE 8]&gt;&lt;script src=&quot;assets/js/ie/html5shiv.js&quot;&gt;&lt;/script&gt;&lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 2879&#xa;    Comment: &#xa;        /* Table */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/js/skel.min.js&#xa;    Line number: 1&#xa;    Comment: &#xa;        /* skel.js v3.0.0 | (c) n33 | skel.io | MIT licensed */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 2462&#xa;    Comment: &#xa;        /* Mini Post */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 173&#xa;    Comment: &#xa;        &lt;!-&#45; Pagination -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 261&#xa;    Comment: &#xa;        &lt;!-&#45;[if lte IE 8]&gt;&lt;script src=&quot;assets/js/ie/respond.min.js&quot;&gt;&lt;/script&gt;&lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 257&#xa;    Comment: &#xa;        &lt;!-&#45; Scripts -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 49&#xa;    Comment: &#xa;        &lt;!-&#45; Search -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 74&#xa;    Comment: &#xa;        &lt;!-&#45; Actions -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 2153&#xa;    Comment: &#xa;        /* List */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 2058&#xa;    Comment: &#xa;        /* Icon */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 3323&#xa;    Comment: &#xa;        /* Footer */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 3241&#xa;    Comment: &#xa;        /* Intro */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 2863&#xa;    Comment: &#xa;        /* Section/Article */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 2083&#xa;    Comment: &#xa;        /* Image */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 1676&#xa;    Comment: &#xa;        /* Box */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 83&#xa;    Comment: &#xa;        &lt;!-&#45; Main -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 1661&#xa;    Comment: &#xa;        /* Blurb */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/js/util.js&#xa;    Line number: 37&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#x9; */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/js/util.js&#xa;    Line number: 521&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        &#x9; */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 46&#xa;    Comment: &#xa;        &lt;!-&#45; Menu -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 59&#xa;    Comment: &#xa;        /* Grid */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 86&#xa;    Comment: &#xa;        &lt;!-&#45; Post -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 181&#xa;    Comment: &#xa;        &lt;!-&#45; Sidebar -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 184&#xa;    Comment: &#xa;        &lt;!-&#45; Intro -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 1392&#xa;    Comment: &#xa;        /* Basic */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 3209&#xa;    Comment: &#xa;        /* Sidebar */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 56&#xa;    Comment: &#xa;        &lt;!-&#45; Links -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 22&#xa;    Comment: &#xa;        &lt;!-&#45; Header -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 2571&#xa;    Comment: &#xa;        /* Post */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/js/util.js&#xa;    Line number: 299&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#x9; */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/js/jquery.min.js&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 15&#xa;    Comment: &#xa;        &lt;!-&#45;[if lte IE 8]&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/ie8.css&quot; /&gt;&lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/js/ie/respond.min.js&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*! Respond.js v1.4.2: min/max-width media query polyfill&#xa;         * Copyright 2014 Scott Jehl&#xa;         * Licensed under MIT&#xa;         * http://j.mp/respondjs */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 1613&#xa;    Comment: &#xa;        /* Author */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 192&#xa;    Comment: &#xa;        &lt;!-&#45; Mini Posts -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 1833&#xa;    Comment: &#xa;        /* Form */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 1696&#xa;    Comment: &#xa;        /* Button */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/js/ie/html5shiv.js&#xa;    Line number: 1&#xa;    Comment: &#xa;        /*&#xa;         HTML5 Shiv v3.6.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed&#xa;        */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 228&#xa;    Comment: &#xa;        &lt;!-&#45; Posts List -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 2947&#xa;    Comment: &#xa;        /* Header */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 233&#xa;    Comment: &#xa;        &lt;!-&#45; About -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 2&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 3198&#xa;    Comment: &#xa;        /* Main */&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/css/main.css&#xa;    Line number: 4&#xa;    Comment: &#xa;        /*&#xa;        &#x9;Future Imperfect by HTML5 UP&#xa;        &#x9;html5up.net | @n33co&#xa;        &#x9;Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)&#xa;        */&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 242&#xa;    Comment: &#xa;        &lt;!-&#45; Footer -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 19&#xa;    Comment: &#xa;        &lt;!-&#45; Wrapper -&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Line number: 14&#xa;    Comment: &#xa;        &lt;!-&#45;[if lte IE 9]&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/ie9.css&quot; /&gt;&lt;![endif]-&#45;&gt;&#xa;    &#xa;    Path: http://10.11.1.101:80/assets/js/main.js&#xa;    Line number: 1&#xa;    Comment: &#xa;        &#xa;        &#xa;        &#xa;        &#xa;        */&#xa;"/><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.101&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://10.11.1.101:80/&#xa;    Form id: search&#xa;    Form action: #&#xa;    &#xa;    Path: http://10.11.1.101:80/&#xa;    Form id: &#xa;    Form action: #&#xa;    &#xa;    Path: http://10.11.1.101:80/contactus.html&#xa;    Form id: search&#xa;    Form action: index.html&#xa;    &#xa;    Path: http://10.11.1.101:80/contactus.html&#xa;    Form id: &#xa;    Form action: index.html&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Form id: search&#xa;    Form action: #&#xa;    &#xa;    Path: http://10.11.1.101:80/index.html&#xa;    Form id: &#xa;    Form action: #&#xa;"/><script id="http-date" output="Sat, 29 Aug 2020 22:37:03 GMT; -1s from local time."><elem key="date">2020-08-29T22:37:03+00:00</elem>
+<elem key="delta">-1.0</elem>
+</script><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /robots.txt: Robots file&#xa;  /images/: Potentially interesting directory w/ listing on &apos;apache/2.4.18 (ubuntu)&apos;&#xa;  /manual/: Potentially interesting folder&#xa;  /passwords/: Potentially interesting directory w/ listing on &apos;apache/2.4.18 (ubuntu)&apos;&#xa;"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-grep" output="&#xa;  (4) http://10.11.1.101:80/contactus.html: &#xa;    (4) email: &#xa;      + walter@oscp.thinc.loca&#xa;      + alfred@oscp.thinc.loca&#xa;      + cory@oscp.thinc.loca&#xa;      + jasmine@oscp.thinc.loca"><table key="(4) http://10.11.1.101:80/contactus.html">
+<table key="(4) email">
+<elem>+ walter@oscp.thinc.loca</elem>
+<elem>+ alfred@oscp.thinc.loca</elem>
+<elem>+ cory@oscp.thinc.loca</elem>
+<elem>+ jasmine@oscp.thinc.loca</elem>
+</table>
+</table>
+</script><script id="http-headers" output="&#xa;  Date: Sat, 29 Aug 2020 22:37:01 GMT&#xa;  Server: Apache/2.4.18 (Ubuntu)&#xa;  Last-Modified: Tue, 22 Mar 2016 10:40:41 GMT&#xa;  ETag: &quot;251b-52ea0d8467841&quot;&#xa;  Accept-Ranges: bytes&#xa;  Content-Length: 9499&#xa;  Vary: Accept-Encoding&#xa;  Connection: close&#xa;  Content-Type: text/html&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-internal-ip-disclosure" output="&#xa;  Internal IP Leaked: 127.0.1.1"><elem key="Internal IP Leaked">127.0.1.1</elem>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-robots.txt" output="1 disallowed entry &#xa;/passwords/"/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-sql-injection" output="&#xa;  Possible sqli for queries:&#xa;    http://10.11.1.101:80/assets/js/?C=N%3bO%3dD%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=D%3bO%3dD%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=S%3bO%3dD%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider&#xa;"/><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="TryHarder oscp.thinc.local"><elem key="title">TryHarder oscp.thinc.local</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-xssed" output="No previously reported XSS vuln."/><script id="vulners" output="&#xa;  cpe:/a:apache:http_server:2.4.18: &#xa;    &#x9;CVE-2017-7679&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-7679&#xa;    &#x9;CVE-2017-7668&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-7668&#xa;    &#x9;CVE-2017-3169&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-3169&#xa;    &#x9;CVE-2017-3167&#x9;7.5&#x9;https://vulners.com/cve/CVE-2017-3167&#xa;    &#x9;CVE-2019-0211&#x9;7.2&#x9;https://vulners.com/cve/CVE-2019-0211&#xa;    &#x9;CVE-2018-1312&#x9;6.8&#x9;https://vulners.com/cve/CVE-2018-1312&#xa;    &#x9;CVE-2017-15715&#x9;6.8&#x9;https://vulners.com/cve/CVE-2017-15715&#xa;    &#x9;CVE-2019-10082&#x9;6.4&#x9;https://vulners.com/cve/CVE-2019-10082&#xa;    &#x9;CVE-2017-9788&#x9;6.4&#x9;https://vulners.com/cve/CVE-2017-9788&#xa;    &#x9;CVE-2019-0217&#x9;6.0&#x9;https://vulners.com/cve/CVE-2019-0217&#xa;    &#x9;CVE-2020-1927&#x9;5.8&#x9;https://vulners.com/cve/CVE-2020-1927&#xa;    &#x9;CVE-2019-10098&#x9;5.8&#x9;https://vulners.com/cve/CVE-2019-10098&#xa;    &#x9;CVE-2020-1934&#x9;5.0&#x9;https://vulners.com/cve/CVE-2020-1934&#xa;    &#x9;CVE-2019-0220&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-0220&#xa;    &#x9;CVE-2019-0196&#x9;5.0&#x9;https://vulners.com/cve/CVE-2019-0196&#xa;    &#x9;CVE-2018-17199&#x9;5.0&#x9;https://vulners.com/cve/CVE-2018-17199&#xa;    &#x9;CVE-2018-1333&#x9;5.0&#x9;https://vulners.com/cve/CVE-2018-1333&#xa;    &#x9;CVE-2017-9798&#x9;5.0&#x9;https://vulners.com/cve/CVE-2017-9798&#xa;    &#x9;CVE-2017-15710&#x9;5.0&#x9;https://vulners.com/cve/CVE-2017-15710&#xa;    &#x9;CVE-2016-8743&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-8743&#xa;    &#x9;CVE-2016-8740&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-8740&#xa;    &#x9;CVE-2016-4979&#x9;5.0&#x9;https://vulners.com/cve/CVE-2016-4979&#xa;    &#x9;CVE-2019-0197&#x9;4.9&#x9;https://vulners.com/cve/CVE-2019-0197&#xa;    &#x9;CVE-2020-11985&#x9;4.3&#x9;https://vulners.com/cve/CVE-2020-11985&#xa;    &#x9;CVE-2019-10092&#x9;4.3&#x9;https://vulners.com/cve/CVE-2019-10092&#xa;    &#x9;CVE-2018-11763&#x9;4.3&#x9;https://vulners.com/cve/CVE-2018-11763&#xa;    &#x9;CVE-2016-4975&#x9;4.3&#x9;https://vulners.com/cve/CVE-2016-4975&#xa;    &#x9;CVE-2016-1546&#x9;4.3&#x9;https://vulners.com/cve/CVE-2016-1546&#xa;    &#x9;CVE-2018-1283&#x9;3.5&#x9;https://vulners.com/cve/CVE-2018-1283&#xa;    &#x9;CVE-2016-8612&#x9;3.3&#x9;https://vulners.com/cve/CVE-2016-8612"><table key="cpe:/a:apache:http_server:2.4.18">
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">7.5</elem>
+<elem key="id">CVE-2017-7679</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">7.5</elem>
+<elem key="id">CVE-2017-7668</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">7.5</elem>
+<elem key="id">CVE-2017-3169</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">7.5</elem>
+<elem key="id">CVE-2017-3167</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">7.2</elem>
+<elem key="id">CVE-2019-0211</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">6.8</elem>
+<elem key="id">CVE-2018-1312</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">6.8</elem>
+<elem key="id">CVE-2017-15715</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">6.4</elem>
+<elem key="id">CVE-2019-10082</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">6.4</elem>
+<elem key="id">CVE-2017-9788</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">6.0</elem>
+<elem key="id">CVE-2019-0217</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.8</elem>
+<elem key="id">CVE-2020-1927</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.8</elem>
+<elem key="id">CVE-2019-10098</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2020-1934</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2019-0220</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2019-0196</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2018-17199</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2018-1333</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2017-9798</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2017-15710</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2016-8743</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2016-8740</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">5.0</elem>
+<elem key="id">CVE-2016-4979</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.9</elem>
+<elem key="id">CVE-2019-0197</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2020-11985</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2019-10092</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2018-11763</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2016-4975</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">4.3</elem>
+<elem key="id">CVE-2016-1546</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">3.5</elem>
+<elem key="id">CVE-2018-1283</elem>
+<elem key="type">cve</elem>
+</table>
+<table>
+<elem key="is_exploit">false</elem>
+<elem key="cvss">3.3</elem>
+<elem key="id">CVE-2016-8612</elem>
+<elem key="type">cve</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="BREAK" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="4.3.11-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="BREAK" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="30719"/>
+<osmatch name="Linux 3.11 - 4.1" accuracy="95" line="63416">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="95" line="67546">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="93" line="64125">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="92" line="63571">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 3.16" accuracy="92" line="63168">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 3.12" accuracy="91" line="63130">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="91" line="55445">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 3.8" accuracy="91" line="65033">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.8" accuracy="91" line="65968">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3.8</cpe></osclass>
+</osmatch>
+<osmatch name="WatchGuard Fireware 11.8" accuracy="91" line="104321">
+<osclass type="firewall" vendor="WatchGuard" osfamily="Fireware" osgen="11.X" accuracy="91"><cpe>cpe:/o:watchguard:fireware:11.8</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=8/29%OT=21%CT=1%CU=30719%PV=Y%DS=2%DC=T%G=Y%TM=5F4AD9D&#xa;OS:6%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10C%TI=Z%II=I%TS=8)OPS(O1=M&#xa;OS:54DST11NW6%O2=M54DST11NW6%O3=M54DNNT11NW6%O4=M54DST11NW6%O5=M54DST11NW6%&#xa;OS:O6=M54DST11)WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%&#xa;OS:DF=Y%T=40%W=7210%O=M54DNNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=&#xa;OS:0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;OS:T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%&#xa;OS:RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="831" lastboot="Sat Aug 29 18:28:39 2020"/>
+<distance value="2"/>
+<tcpsequence index="261" difficulty="Good luck!" values="8EC1004C,1EC73BC8,AFB11ED1,A13B9FB4,4F8114D0,17DE3404"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="1E467,1E482,1E49A,1E4B2,1E4CC,1E4E4"/>
+<hostscript><script id="clock-skew" output="mean: 1h00m00s, deviation: 2h00m01s, median: 0s"><elem key="count">4</elem>
+<elem key="median">0</elem>
+<elem key="mean">3600</elem>
+<elem key="stddev">7201</elem>
+</script><script id="fcrdns" output="FAIL (No PTR record)"><table key="&lt;none&gt;">
+<elem key="status">fail</elem>
+<elem key="reason">No PTR record</elem>
+</table>
+</script><script id="firewalk" output="&#xa;HOP  HOST           PROTOCOL  BLOCKED PORTS&#xa;1    192.168.119.1  tcp       25&#xa;"/><script id="ipidseq" output="All zeros"/><script id="msrpc-enum" output="NT_STATUS_OBJECT_NAME_NOT_FOUND">false</script><script id="nbstat" output="NetBIOS name: BREAK, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)"/><script id="path-mtu" output="PMTU == 1500"/><script id="qscan" output="&#xa;PORT  FAMILY  MEAN (us)  STDDEV    LOSS (%)&#xa;1     0       19647.00   3859.87   0.0%&#xa;21    0       22178.50   6521.64   0.0%&#xa;22    0       25428.70   14064.22  0.0%&#xa;80    0       19375.50   2944.69   0.0%&#xa;139   0       19096.50   2163.01   0.0%&#xa;445   0       19888.33   3877.25   10.0%&#xa;"/><script id="smb-enum-users" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-mbenum" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.3.11-Ubuntu)&#xa;  Computer name: break&#xa;  NetBIOS computer name: BREAK\x00&#xa;  Domain name: \x00&#xa;  FQDN: break&#xa;  System time: 2020-08-29T18:37:00-04:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.3.11-Ubuntu</elem>
+<elem key="server">BREAK\x00</elem>
+<elem key="date">2020-08-29T18:37:00-04:00</elem>
+<elem key="fqdn">break</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb-protocols" output="&#xa;  dialects: &#xa;    NT LM 0.12 (SMBv1) [dangerous, but default]&#xa;    2.02&#xa;    2.10&#xa;    3.00&#xa;    3.02&#xa;    3.11"><table key="dialects">
+<elem>NT LM 0.12 (SMBv1) [dangerous, but default]</elem>
+<elem>2.02</elem>
+<elem>2.10</elem>
+<elem>3.00</elem>
+<elem>3.02</elem>
+<elem>3.11</elem>
+</table>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="false">false</script><script id="smb-vuln-regsvc-dos" output="&#xa;  VULNERABLE:&#xa;  Service regsvc in Microsoft Windows systems vulnerable to denial of service&#xa;    State: VULNERABLE&#xa;      The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;      pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;      while working on smb-enum-sessions.&#xa;          &#xa;"><table key="NMAP-15">
+<elem key="title">Service regsvc in Microsoft Windows systems vulnerable to denial of service</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;while working on smb-enum-sessions.&#xa;    </elem>
+</table>
+</table>
+</script><script id="smb2-capabilities" output="&#xa;  2.02: &#xa;    Distributed File System&#xa;  2.10: &#xa;    Distributed File System&#xa;    Multi-credit operations&#xa;  3.00: &#xa;    Distributed File System&#xa;    Multi-credit operations&#xa;  3.02: &#xa;    Distributed File System&#xa;    Multi-credit operations&#xa;  3.11: &#xa;    Distributed File System&#xa;    Multi-credit operations"><table key="2.02">
+<elem>Distributed File System</elem>
+</table>
+<table key="2.10">
+<elem>Distributed File System</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.00">
+<elem>Distributed File System</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.02">
+<elem>Distributed File System</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.11">
+<elem>Distributed File System</elem>
+<elem>Multi-credit operations</elem>
+</table>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2020-08-29T22:37:00&#xa;  start_date: N/A"><elem key="date">2020-08-29T22:37:00</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="traceroute-geolocation" output="&#xa;  HOP  RTT    ADDRESS        GEOLOCATION&#xa;  1    24.59  192.168.119.1  - ,- &#xa;  2    24.90  10.11.1.101    - ,- &#xa;"><table>
+<elem key="ip">192.168.119.1</elem>
+<elem key="rtt">24.59</elem>
+<elem key="hop">1</elem>
+</table>
+<table>
+<elem key="ip">10.11.1.101</elem>
+<elem key="rtt">24.90</elem>
+<elem key="hop">2</elem>
+</table>
+</script></hostscript><trace port="110" proto="tcp">
+<hop ttl="1" ipaddr="192.168.119.1" rtt="24.59"/>
+<hop ttl="2" ipaddr="10.11.1.101" rtt="24.90"/>
+</trace>
+<times srtt="20967" rttvar="4300" to="100000"/>
+</host>
+<postscript><script id="reverse-index" output="&#xa;  21/tcp: 10.11.1.101&#xa;  22/tcp: 10.11.1.101&#xa;  80/tcp: 10.11.1.101&#xa;  139/tcp: 10.11.1.101&#xa;  445/tcp: 10.11.1.101"><table key="21/tcp">
+<elem>10.11.1.101</elem>
+</table>
+<table key="22/tcp">
+<elem>10.11.1.101</elem>
+</table>
+<table key="80/tcp">
+<elem>10.11.1.101</elem>
+</table>
+<table key="139/tcp">
+<elem>10.11.1.101</elem>
+</table>
+<table key="445/tcp">
+<elem>10.11.1.101</elem>
+</table>
+</script></postscript><runstats><finished time="1598740950" timestr="Sat Aug 29 18:42:30 2020" elapsed="423.59" summary="Nmap done at Sat Aug 29 18:42:30 2020; 1 IP address (1 host up) scanned in 423.59 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

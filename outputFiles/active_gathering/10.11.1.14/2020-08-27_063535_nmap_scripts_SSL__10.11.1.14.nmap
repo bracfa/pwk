@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Thu Aug 27 07:36:05 2020 as: nmap -Pn --script=ssl-* -oA 2020-08-27_063535_nmap_scripts_SSL__10.11.1.14 10.11.1.14
+Nmap scan report for 10.11.1.14
+Host is up (0.027s latency).
+Not shown: 994 filtered ports
+PORT    STATE  SERVICE
+21/tcp  open   ftp
+23/tcp  closed telnet
+25/tcp  closed smtp
+80/tcp  open   http
+110/tcp closed pop3
+443/tcp open   https
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+
+# Nmap done at Thu Aug 27 07:37:10 2020 -- 1 IP address (1 host up) scanned in 65.52 seconds

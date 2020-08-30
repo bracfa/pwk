@@ -1,0 +1,27 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: 2020-08-26_154718_dirb_nonRecursive_index__10.11.1.8.txt
+START_TIME: Wed Aug 26 16:34:34 2020
+URL_BASE: http://10.11.1.8/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Recursive
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.8/ ----
++ http://10.11.1.8/cgi-bin/ (CODE:403|SIZE:285)
++ http://10.11.1.8/index.html (CODE:200|SIZE:218)
+==> DIRECTORY: http://10.11.1.8/internal/
+==> DIRECTORY: http://10.11.1.8/manual/
++ http://10.11.1.8/robots.txt (CODE:200|SIZE:53)
++ http://10.11.1.8/usage (CODE:403|SIZE:282)
+
+-----------------
+END_TIME: Wed Aug 26 16:38:09 2020
+DOWNLOADED: 4612 - FOUND: 4

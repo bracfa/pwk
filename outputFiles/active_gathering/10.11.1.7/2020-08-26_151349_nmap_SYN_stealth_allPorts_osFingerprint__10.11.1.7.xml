@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 26 15:13:49 2020 as: nmap -sS -p- -O -oA 2020-08-26_151349_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.7 10.11.1.7 -->
+<nmaprun scanner="nmap" args="nmap -sS -p- -O -oA 2020-08-26_151349_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.7 10.11.1.7" start="1598469229" startstr="Wed Aug 26 15:13:49 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<runstats><finished time="1598469232" timestr="Wed Aug 26 15:13:52 2020" elapsed="3.35" summary="Nmap done at Wed Aug 26 15:13:52 2020; 1 IP address (0 hosts up) scanned in 3.35 seconds" exit="success"/><hosts up="0" down="1" total="1"/>
+</runstats>
+</nmaprun>

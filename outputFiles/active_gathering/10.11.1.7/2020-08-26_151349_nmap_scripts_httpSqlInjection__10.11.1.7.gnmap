@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Aug 26 15:20:29 2020 as: nmap -Pn -sV -p80 --script=http-sql-injection -oA 2020-08-26_151349_nmap_scripts_httpSqlInjection__10.11.1.7 10.11.1.7
+Host: 10.11.1.7 ()	Status: Up
+Host: 10.11.1.7 ()	Ports: 80/filtered/tcp//http///
+# Nmap done at Wed Aug 26 15:20:31 2020 -- 1 IP address (1 host up) scanned in 2.46 seconds

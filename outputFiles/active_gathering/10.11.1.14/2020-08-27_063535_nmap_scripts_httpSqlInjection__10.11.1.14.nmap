@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Thu Aug 27 07:35:57 2020 as: nmap -Pn -sV -p80 --script=http-sql-injection -oA 2020-08-27_063535_nmap_scripts_httpSqlInjection__10.11.1.14 10.11.1.14
+Nmap scan report for 10.11.1.14
+Host is up (0.017s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 5.1
+|_http-server-header: Microsoft-IIS/5.1
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 27 07:36:05 2020 -- 1 IP address (1 host up) scanned in 7.75 seconds

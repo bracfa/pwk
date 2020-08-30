@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 26 05:32:52 2020 as: nmap -v -Pn -p- -O -oA 2020-08-26_052623_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.5 10.11.1.5 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -O -oA 2020-08-26_052623_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.5 10.11.1.5" start="1598434372" startstr="Wed Aug 26 05:32:52 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1598434372"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1598434372"/>
+<taskbegin task="SYN Stealth Scan" time="1598434372"/>
+<taskprogress task="SYN Stealth Scan" time="1598434403" percent="10.20" remaining="273" etc="1598434676"/>
+<taskprogress task="SYN Stealth Scan" time="1598434484" percent="30.41" remaining="257" etc="1598434740"/>
+<taskprogress task="SYN Stealth Scan" time="1598434514" percent="37.92" remaining="233" etc="1598434746"/>
+<taskprogress task="SYN Stealth Scan" time="1598434544" percent="45.40" remaining="207" etc="1598434751"/>
+<taskprogress task="SYN Stealth Scan" time="1598434574" percent="52.95" remaining="180" etc="1598434753"/>
+<taskprogress task="SYN Stealth Scan" time="1598434604" percent="60.46" remaining="152" etc="1598434756"/>
+<taskprogress task="SYN Stealth Scan" time="1598434634" percent="68.04" remaining="124" etc="1598434757"/>
+<taskprogress task="SYN Stealth Scan" time="1598434664" percent="75.62" remaining="95" etc="1598434758"/>
+<taskprogress task="SYN Stealth Scan" time="1598434694" percent="83.22" remaining="65" etc="1598434759"/>
+<taskprogress task="SYN Stealth Scan" time="1598434724" percent="90.74" remaining="36" etc="1598434760"/>
+<taskend task="SYN Stealth Scan" time="1598434763" extrainfo="65535 total ports"/>
+<host starttime="1598434372" endtime="1598434775"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="resets" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1025"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="NFS-or-IIS" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="135"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="41555"/>
+<osmatch name="Microsoft Windows XP" accuracy="95" line="80047">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="95"><cpe>cpe:/o:microsoft:windows_xp</cpe></osclass>
+</osmatch>
+<osmatch name="Belkin OmniView KVM switch or SMA Sunny WebBox solar panel monitor" accuracy="91" line="9578">
+<osclass type="specialized" vendor="Belkin" osfamily="embedded" accuracy="91"/>
+<osclass type="power-device" vendor="SMA" osfamily="embedded" accuracy="91"/>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="91" line="76100">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP2" accuracy="90" line="82015">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="90"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP3" accuracy="90" line="82881">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="90"><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 2000 Server SP4 or Windows XP Professional SP3" accuracy="89" line="69821">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2000" accuracy="89"><cpe>cpe:/o:microsoft:windows_2000::sp4:server</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="89"><cpe>cpe:/o:microsoft:windows_xp::sp3:professional</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 2000 SP4" accuracy="89" line="70626">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2000" accuracy="89"><cpe>cpe:/o:microsoft:windows_2000::sp4</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP2" accuracy="88" line="72922">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="88"><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows CE 6.0" accuracy="88" line="79225">
+<osclass type="specialized" vendor="Microsoft" osfamily="Windows" osgen="PocketPC/CE" accuracy="88"><cpe>cpe:/o:microsoft:windows_ce:6.0</cpe></osclass>
+</osmatch>
+<osmatch name="Motorola VIP1216 digital set top box (Windows CE 5.0)" accuracy="86" line="79069">
+<osclass type="media device" vendor="Microsoft" osfamily="Windows" osgen="PocketPC/CE" accuracy="86"><cpe>cpe:/o:microsoft:windows_ce:5.0</cpe></osclass>
+<osclass type="media device" vendor="Motorola" osfamily="embedded" accuracy="86"><cpe>cpe:/h:motorola:vip1216</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=8/26%OT=135%CT=1%CU=41555%PV=Y%DS=2%DC=I%G=Y%TM=5F462D&#xa;OS:D7%P=x86_64-pc-linux-gnu)SEQ(SP=80%GCD=1%ISR=9C%TI=I%II=I%SS=S%TS=0)OPS(&#xa;OS:O1=M54DNW0NNT00NNS%O2=M54DNW0NNT00NNS%O3=M54DNW0NNT00%O4=M54DNW0NNT00NNS&#xa;OS:%O5=M54DNW0NNT00NNS%O6=M54DNNT00NNS)WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%&#xa;OS:W5=FAF0%W6=FAF0)ECN(R=Y%DF=Y%T=80%W=FAF0%O=M54DNW0NNS%CC=N%Q=)T1(R=Y%DF=&#xa;OS:Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=N%T=80%W=0%S&#xa;OS:=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=80%IPL=38%UN=0%RIPL=&#xa;OS:G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=S%T=80%CD=Z)&#xa;"/>
+</os>
+<distance value="2"/>
+<tcpsequence index="128" difficulty="Good luck!" values="1D0AFE93,1D0C1038,1D0D437E,1D0E6818,1D0F885F,1D10DF2C"/>
+<ipidsequence class="Incremental" values="155E,155F,1560,1561,1562,1563"/>
+<tcptssequence class="zero timestamp" values="0,0,0,0,0,0"/>
+<times srtt="18497" rttvar="2582" to="100000"/>
+</host>
+<runstats><finished time="1598434775" timestr="Wed Aug 26 05:39:35 2020" elapsed="403.71" summary="Nmap done at Wed Aug 26 05:39:35 2020; 1 IP address (1 host up) scanned in 403.71 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

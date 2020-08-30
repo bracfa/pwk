@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Aug 27 07:35:37 2020 as: nmap -Pn --script=http-userdir-enum -oA 2020-08-27_063535_nmap_scripts_httpUserdirEnum__10.11.1.14 10.11.1.14
+Host: 10.11.1.14 ()	Status: Up
+Host: 10.11.1.14 ()	Ports: 21/open/tcp//ftp///, 23/closed/tcp//telnet///, 25/closed/tcp//smtp///, 80/open/tcp//http///, 110/closed/tcp//pop3///, 443/open/tcp//https///	Ignored State: filtered (994)
+# Nmap done at Thu Aug 27 07:35:57 2020 -- 1 IP address (1 host up) scanned in 19.96 seconds

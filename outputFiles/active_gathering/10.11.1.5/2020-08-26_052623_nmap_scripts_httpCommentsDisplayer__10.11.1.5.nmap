@@ -1,0 +1,11 @@
+# Nmap 7.80 scan initiated Wed Aug 26 05:40:17 2020 as: nmap -Pn --script=http-comments-displayer -oA 2020-08-26_052623_nmap_scripts_httpCommentsDisplayer__10.11.1.5 10.11.1.5
+Nmap scan report for 10.11.1.5
+Host is up (0.016s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1025/tcp open  NFS-or-IIS
+
+# Nmap done at Wed Aug 26 05:40:22 2020 -- 1 IP address (1 host up) scanned in 4.49 seconds

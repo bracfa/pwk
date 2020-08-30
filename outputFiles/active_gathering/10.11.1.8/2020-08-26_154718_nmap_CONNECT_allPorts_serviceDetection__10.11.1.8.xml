@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 26 15:50:23 2020 as: nmap -sV -sT -p- -oA 2020-08-26_154718_nmap_CONNECT_allPorts_serviceDetection__10.11.1.8 10.11.1.8 -->
+<nmaprun scanner="nmap" args="nmap -sV -sT -p- -oA 2020-08-26_154718_nmap_CONNECT_allPorts_serviceDetection__10.11.1.8 10.11.1.8" start="1598471423" startstr="Wed Aug 26 15:50:23 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1598471424" endtime="1598471741"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.11.1.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65524">
+<extrareasons reason="no-responses" count="65370"/>
+<extrareasons reason="host-unreaches" count="154"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="2.0.1" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:2.0.1</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="3.9p1" extrainfo="protocol 1.99" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:3.9p1</cpe></service></port>
+<port protocol="tcp" portid="25"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.0.52" extrainfo="(CentOS)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.0.52</cpe></service></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rpcbind" version="2" extrainfo="RPC #100000" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: MYGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: MYGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="631"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ipp" product="CUPS" version="1.1" method="probed" conf="10"><cpe>cpe:/a:apple:cups:1.1</cpe></service></port>
+<port protocol="tcp" portid="868"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" method="table" conf="3"/></port>
+</ports>
+<times srtt="36925" rttvar="20189" to="117681"/>
+</host>
+<runstats><finished time="1598471741" timestr="Wed Aug 26 15:55:41 2020" elapsed="318.01" summary="Nmap done at Wed Aug 26 15:55:41 2020; 1 IP address (1 host up) scanned in 318.01 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

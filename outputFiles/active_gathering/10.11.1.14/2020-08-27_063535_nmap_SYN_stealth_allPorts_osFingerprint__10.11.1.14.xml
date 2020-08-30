@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Aug 27 06:35:36 2020 as: nmap -sS -p- -O -oA 2020-08-27_063535_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.14 10.11.1.14 -->
+<nmaprun scanner="nmap" args="nmap -sS -p- -O -oA 2020-08-27_063535_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.14 10.11.1.14" start="1598524536" startstr="Thu Aug 27 06:35:36 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1598524536" endtime="1598524710"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.11.1.14" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65528">
+<extrareasons reason="no-responses" count="65528"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="127"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="closed" reason="reset" reason_ttl="127"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="110"><state state="closed" reason="reset" reason_ttl="127"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="220"><state state="closed" reason="reset" reason_ttl="127"/><service name="imap3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="23"/>
+<osmatch name="Microsoft Windows XP" accuracy="91" line="80047">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="91"><cpe>cpe:/o:microsoft:windows_xp</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP2" accuracy="91" line="72922">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP3" accuracy="89" line="82881">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="89"><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="Motorola VIP1216 digital set top box (Windows CE 5.0)" accuracy="88" line="79069">
+<osclass type="media device" vendor="Microsoft" osfamily="Windows" osgen="PocketPC/CE" accuracy="88"><cpe>cpe:/o:microsoft:windows_ce:5.0</cpe></osclass>
+<osclass type="media device" vendor="Motorola" osfamily="embedded" accuracy="88"><cpe>cpe:/h:motorola:vip1216</cpe></osclass>
+</osmatch>
+<osmatch name="Belkin OmniView KVM switch or SMA Sunny WebBox solar panel monitor" accuracy="86" line="9578">
+<osclass type="specialized" vendor="Belkin" osfamily="embedded" accuracy="86"/>
+<osclass type="power-device" vendor="SMA" osfamily="embedded" accuracy="86"/>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="86" line="76100">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="86"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP1" accuracy="86" line="72265">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="86"><cpe>cpe:/o:microsoft:windows_server_2003::sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP0 - SP2" accuracy="86" line="72056">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="86"><cpe>cpe:/o:microsoft:windows_server_2003::-</cpe><cpe>cpe:/o:microsoft:windows_server_2003::sp1</cpe><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP1 or SP2" accuracy="86" line="72519">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="86"><cpe>cpe:/o:microsoft:windows_server_2003::sp1</cpe><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003" accuracy="86" line="71802">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="86"><cpe>cpe:/o:microsoft:windows_server_2003</cpe></osclass>
+</osmatch>
+</os>
+<tcpsequence index="140" difficulty="Good luck!" values="C7A10FA2,C7A201F7,C7A30EBD,C7A4512B,C7A59373,C7A61F98"/>
+<ipidsequence class="Incremental" values="106,107,108,109,10A,10B"/>
+<tcptssequence class="zero timestamp" values="0,0,0,0,0,0"/>
+<times srtt="19658" rttvar="4533" to="100000"/>
+</host>
+<runstats><finished time="1598524710" timestr="Thu Aug 27 06:38:30 2020" elapsed="174.31" summary="Nmap done at Thu Aug 27 06:38:30 2020; 1 IP address (1 host up) scanned in 174.31 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

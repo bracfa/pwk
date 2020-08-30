@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 26 05:39:35 2020 as: nmap -sU -p- -&#45;defeat-icmp-ratelimit -oA 2020-08-26_052623_nmap_fastUDP_allPorts__10.11.1.5 10.11.1.5 -->
+<nmaprun scanner="nmap" args="nmap -sU -p- -&#45;defeat-icmp-ratelimit -oA 2020-08-26_052623_nmap_fastUDP_allPorts__10.11.1.5 10.11.1.5" start="1598434775" startstr="Wed Aug 26 05:39:35 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1598434775" endtime="1598434816"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.11.1.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65409">
+<extrareasons reason="port-unreaches" count="65409"/>
+</extraports>
+<extraports state="closed|filtered" count="123">
+<extrareasons reason="no-responses" count="123"/>
+</extraports>
+<port protocol="udp" portid="135"><state state="open" reason="udp-response" reason_ttl="127"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="137"><state state="open" reason="udp-response" reason_ttl="127"/><service name="netbios-ns" method="table" conf="3"/></port>
+<port protocol="udp" portid="1028"><state state="open" reason="udp-response" reason_ttl="127"/><service name="ms-lsa" method="table" conf="3"/></port>
+</ports>
+<times srtt="61590" rttvar="16242" to="126558"/>
+</host>
+<runstats><finished time="1598434816" timestr="Wed Aug 26 05:40:16 2020" elapsed="41.25" summary="Nmap done at Wed Aug 26 05:40:16 2020; 1 IP address (1 host up) scanned in 41.25 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

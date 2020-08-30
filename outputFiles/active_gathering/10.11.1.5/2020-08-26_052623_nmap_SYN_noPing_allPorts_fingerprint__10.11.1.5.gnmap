@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Wed Aug 26 05:32:52 2020 as: nmap -v -Pn -p- -O -oA 2020-08-26_052623_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.5 10.11.1.5
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.11.1.5 ()	Status: Up
+Host: 10.11.1.5 ()	Ports: 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 1025/open/tcp//NFS-or-IIS///	Ignored State: closed (65531)	Seq Index: 128	IP ID Seq: Incremental
+# Nmap done at Wed Aug 26 05:39:35 2020 -- 1 IP address (1 host up) scanned in 403.71 seconds

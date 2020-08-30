@@ -1,0 +1,637 @@
+# Nmap 7.80 scan initiated Sat Aug 29 18:28:13 2020 as: nmap -sS -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-29_182642_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.101 10.11.1.101
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 192.168.0.21
+|     Server Identifier: 192.168.0.1
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.0.1
+|_    Domain Name Server: 75.75.75.75, 75.75.76.76
+| broadcast-igmp-discovery: 
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.2
+|     Description: All Routers on this Subnet
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.22
+|     Description: IGMP
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|   192.168.0.254
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+| broadcast-listener: 
+|   udp
+|       DHCP
+|         srv ip       cli ip        mask           gw           dns                       vendor
+|         192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|_        192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Linux 2.6 DLNADOC/1.50 UPnP/1.0 ReadyDLNA/1.1.0
+|_      Location: http://192.168.0.254:8200/rootDesc.xml
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+Nmap scan report for 10.11.1.101
+Host is up (0.022s latency).
+Not shown: 65529 closed ports
+PORT    STATE    SERVICE     VERSION
+21/tcp  open     ftp         vsftpd 3.0.3
+|_banner: 220 (vsFTPd 3.0.3)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_sslv2-drown: 
+22/tcp  open     ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+|_banner: SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.8
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|_    password
+| ssh-hostkey: 
+|   2048 62:54:16:aa:0b:73:77:61:1b:a4:45:c0:f8:2e:5b:ed (RSA)
+|   256 f4:42:23:27:6e:90:fe:bc:f4:d9:32:6f:8f:6b:74:34 (ECDSA)
+|_  256 c6:6a:fa:44:6e:31:37:da:e3:9e:dc:29:f4:48:6b:b8 (ED25519)
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+| ssh2-enum-algos: 
+|   kex_algorithms: (6)
+|   server_host_key_algorithms: (5)
+|   encryption_algorithms: (6)
+|   mac_algorithms: (10)
+|_  compression_algorithms: (2)
+25/tcp  filtered smtp
+80/tcp  open     http        Apache httpd 2.4.18 ((Ubuntu))
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.101
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 19
+|     Comment: 
+|         <!-- Wrapper -->
+|     
+|     Path: http://10.11.1.101:80/assets/js/util.js
+|     Line number: 299
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 261
+|     Comment: 
+|         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 49
+|     Comment: 
+|         <!-- Search -->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 83
+|     Comment: 
+|         <!-- Main -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 38
+|     Comment: 
+|         /* Mini Post */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie9.css
+|     Line number: 7
+|     Comment: 
+|         /* List */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 17
+|     Comment: 
+|         /* Form */
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 1676
+|     Comment: 
+|         /* Box */
+|     
+|     Path: http://10.11.1.101:80/assets/js/ie/respond.min.js
+|     Line number: 1
+|     Comment: 
+|         /*! Respond.js v1.4.2: min/max-width media query polyfill
+|          * Copyright 2014 Scott Jehl
+|          * Licensed under MIT
+|          * http://j.mp/respondjs */
+|     
+|     Path: http://10.11.1.101:80/assets/js/util.js
+|     Line number: 3
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 173
+|     Comment: 
+|         <!-- Pagination -->
+|     
+|     Path: http://10.11.1.101:80/assets/js/main.js
+|     Line number: 1
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://10.11.1.101:80/assets/js/ie/html5shiv.js
+|     Line number: 1
+|     Comment: 
+|         /*
+|          HTML5 Shiv v3.6.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+|         */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 56
+|     Comment: 
+|         <!-- Links -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 28
+|     Comment: 
+|         /* Post */
+|     
+|     Path: http://10.11.1.101:80/assets/js/jquery.min.js
+|     Line number: 1
+|     Comment: 
+|         /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
+|     
+|     Path: http://10.11.1.101:80/assets/js/skel.min.js
+|     Line number: 1
+|     Comment: 
+|         /* skel.js v3.0.0 | (c) n33 | skel.io | MIT licensed */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 12
+|     Comment: 
+|         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+|     
+|     Path: http://10.11.1.101:80/assets/js/util.js
+|     Line number: 521
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 192
+|     Comment: 
+|         <!-- Mini Posts -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie9.css
+|     Line number: 26
+|     Comment: 
+|         /* Author */
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 10
+|     Comment: 
+|         /* Reset */
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 59
+|     Comment: 
+|         /* Grid */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 44
+|     Comment: 
+|         /* Header */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 64
+|     Comment: 
+|         /* Menu */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 257
+|     Comment: 
+|         <!-- Scripts -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 3323
+|     Comment: 
+|         /* Footer */
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 3241
+|     Comment: 
+|         /* Intro */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 181
+|     Comment: 
+|         <!-- Sidebar -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 1661
+|     Comment: 
+|         /* Blurb */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 58
+|     Comment: 
+|         /* Sidebar */
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 2863
+|     Comment: 
+|         /* Section/Article */
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 2879
+|     Comment: 
+|         /* Table */
+|     
+|     Path: http://10.11.1.101:80/assets/js/util.js
+|     Line number: 37
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 2
+|     Comment: 
+|         
+|         
+|         
+|         
+|         -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 1392
+|     Comment: 
+|         /* Basic */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 242
+|     Comment: 
+|         <!-- Footer -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie9.css
+|     Line number: 118
+|     Comment: 
+|         /* Main */
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 2083
+|     Comment: 
+|         /* Image */
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 2058
+|     Comment: 
+|         /* Icon */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 228
+|     Comment: 
+|         <!-- Posts List -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 51
+|     Comment: 
+|         /* Box Model */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 22
+|     Comment: 
+|         <!-- Header -->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 74
+|     Comment: 
+|         <!-- Actions -->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 184
+|     Comment: 
+|         <!-- Intro -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/main.css
+|     Line number: 1425
+|     Comment: 
+|         /* Type */
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 7
+|     Comment: 
+|         /* Button */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 196
+|     Comment: 
+|         <!-- Mini Post -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie9.css
+|     Line number: 107
+|     Comment: 
+|         /* Wrapper */
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 86
+|     Comment: 
+|         <!-- Post -->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 14
+|     Comment: 
+|         <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 15
+|     Comment: 
+|         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 46
+|     Comment: 
+|         <!-- Menu -->
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Line number: 233
+|     Comment: 
+|         <!-- About -->
+|     
+|     Path: http://10.11.1.101:80/assets/css/ie8.css
+|     Line number: 1
+|     Comment: 
+|         /*
+|         	Future Imperfect by HTML5 UP
+|         	html5up.net | @n33co
+|         	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+|_        */
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.101
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.11.1.101:80/
+|     Form id: search
+|     Form action: #
+|     
+|     Path: http://10.11.1.101:80/
+|     Form id: 
+|     Form action: #
+|     
+|     Path: http://10.11.1.101:80/contactus.html
+|     Form id: search
+|     Form action: index.html
+|     
+|     Path: http://10.11.1.101:80/contactus.html
+|     Form id: 
+|     Form action: index.html
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Form id: search
+|     Form action: #
+|     
+|     Path: http://10.11.1.101:80/index.html
+|     Form id: 
+|_    Form action: #
+|_http-date: Sat, 29 Aug 2020 22:29:55 GMT; 0s from local time.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /robots.txt: Robots file
+|   /images/: Potentially interesting directory w/ listing on 'apache/2.4.18 (ubuntu)'
+|   /manual/: Potentially interesting folder
+|_  /passwords/: Potentially interesting directory w/ listing on 'apache/2.4.18 (ubuntu)'
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-grep: 
+|   (4) http://10.11.1.101:80/contactus.html: 
+|     (4) email: 
+|       + walter@oscp.thinc.loca
+|       + alfred@oscp.thinc.loca
+|       + cory@oscp.thinc.loca
+|_      + jasmine@oscp.thinc.loca
+| http-headers: 
+|   Date: Sat, 29 Aug 2020 22:29:53 GMT
+|   Server: Apache/2.4.18 (Ubuntu)
+|   Last-Modified: Tue, 22 Mar 2016 10:40:41 GMT
+|   ETag: "251b-52ea0d8467841"
+|   Accept-Ranges: bytes
+|   Content-Length: 9499
+|   Vary: Accept-Encoding
+|   Connection: close
+|   Content-Type: text/html
+|   
+|_  (Request type: HEAD)
+| http-internal-ip-disclosure: 
+|_  Internal IP Leaked: 127.0.1.1
+|_http-mobileversion-checker: No mobile version detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-robots.txt: 1 disallowed entry 
+|_/passwords/
+|_http-security-headers: 
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=N%3bO%3dD%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/?C=N%3bO%3dD%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/?C=M%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=M%3bO%3dD%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider
+|_    http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: TryHarder oscp.thinc.local
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-xssed: No previously reported XSS vuln.
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.18: 
+|     	CVE-2017-7679	7.5	https://vulners.com/cve/CVE-2017-7679
+|     	CVE-2017-7668	7.5	https://vulners.com/cve/CVE-2017-7668
+|     	CVE-2017-3169	7.5	https://vulners.com/cve/CVE-2017-3169
+|     	CVE-2017-3167	7.5	https://vulners.com/cve/CVE-2017-3167
+|     	CVE-2019-0211	7.2	https://vulners.com/cve/CVE-2019-0211
+|     	CVE-2018-1312	6.8	https://vulners.com/cve/CVE-2018-1312
+|     	CVE-2017-15715	6.8	https://vulners.com/cve/CVE-2017-15715
+|     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2017-9788	6.4	https://vulners.com/cve/CVE-2017-9788
+|     	CVE-2019-0217	6.0	https://vulners.com/cve/CVE-2019-0217
+|     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
+|     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
+|     	CVE-2020-1934	5.0	https://vulners.com/cve/CVE-2020-1934
+|     	CVE-2019-0220	5.0	https://vulners.com/cve/CVE-2019-0220
+|     	CVE-2019-0196	5.0	https://vulners.com/cve/CVE-2019-0196
+|     	CVE-2018-17199	5.0	https://vulners.com/cve/CVE-2018-17199
+|     	CVE-2018-1333	5.0	https://vulners.com/cve/CVE-2018-1333
+|     	CVE-2017-9798	5.0	https://vulners.com/cve/CVE-2017-9798
+|     	CVE-2017-15710	5.0	https://vulners.com/cve/CVE-2017-15710
+|     	CVE-2016-8743	5.0	https://vulners.com/cve/CVE-2016-8743
+|     	CVE-2016-8740	5.0	https://vulners.com/cve/CVE-2016-8740
+|     	CVE-2016-4979	5.0	https://vulners.com/cve/CVE-2016-4979
+|     	CVE-2019-0197	4.9	https://vulners.com/cve/CVE-2019-0197
+|     	CVE-2020-11985	4.3	https://vulners.com/cve/CVE-2020-11985
+|     	CVE-2019-10092	4.3	https://vulners.com/cve/CVE-2019-10092
+|     	CVE-2018-11763	4.3	https://vulners.com/cve/CVE-2018-11763
+|     	CVE-2016-4975	4.3	https://vulners.com/cve/CVE-2016-4975
+|     	CVE-2016-1546	4.3	https://vulners.com/cve/CVE-2016-1546
+|     	CVE-2018-1283	3.5	https://vulners.com/cve/CVE-2018-1283
+|_    	CVE-2016-8612	3.3	https://vulners.com/cve/CVE-2016-8612
+139/tcp open     netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+445/tcp open     netbios-ssn Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=8/29%OT=21%CT=1%CU=38376%PV=Y%DS=2%DC=T%G=Y%TM=5F4AD82
+OS:F%P=x86_64-pc-linux-gnu)SEQ(SP=FF%GCD=1%ISR=10C%TI=Z%II=I%TS=8)OPS(O1=M5
+OS:4DST11NW6%O2=M54DST11NW6%O3=M54DNNT11NW6%O4=M54DST11NW6%O5=M54DST11NW6%O
+OS:6=M54DST11)WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%D
+OS:F=Y%T=40%W=7210%O=M54DNNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0
+OS:%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T
+OS:6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%R
+OS:UD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 2 hops
+Service Info: Host: BREAK; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 1h00m00s, deviation: 2h00m00s, median: 0s
+|_fcrdns: FAIL (No PTR record)
+| firewalk: 
+| HOP  HOST           PROTOCOL  BLOCKED PORTS
+|_1    192.168.119.1  tcp       25
+|_ipidseq: All zeros
+|_msrpc-enum: NT_STATUS_OBJECT_NAME_NOT_FOUND
+|_nbstat: NetBIOS name: BREAK, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+|_path-mtu: PMTU == 1500
+| qscan: 
+| PORT  FAMILY  MEAN (us)  STDDEV    LOSS (%)
+| 1     0       69811.90   11409.34  0.0%
+| 21    0       72210.30   33638.69  0.0%
+| 22    0       65280.70   17749.04  0.0%
+| 80    0       65154.30   26706.25  0.0%
+| 139   0       73217.50   11779.71  0.0%
+|_445   0       63313.30   14133.57  0.0%
+|_smb-enum-users: ERROR: Script execution failed (use -d to debug)
+|_smb-mbenum: ERROR: Script execution failed (use -d to debug)
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: break
+|   NetBIOS computer name: BREAK\x00
+|   Domain name: \x00
+|   FQDN: break
+|_  System time: 2020-08-29T18:29:52-04:00
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     2.02
+|     2.10
+|     3.00
+|     3.02
+|_    3.11
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+| smb-vuln-regsvc-dos: 
+|   VULNERABLE:
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+|     State: VULNERABLE
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+|       while working on smb-enum-sessions.
+|_          
+| smb2-capabilities: 
+|   2.02: 
+|     Distributed File System
+|   2.10: 
+|     Distributed File System
+|     Multi-credit operations
+|   3.00: 
+|     Distributed File System
+|     Multi-credit operations
+|   3.02: 
+|     Distributed File System
+|     Multi-credit operations
+|   3.11: 
+|     Distributed File System
+|_    Multi-credit operations
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-08-29T22:29:52
+|_  start_date: N/A
+| traceroute-geolocation: 
+|   HOP  RTT    ADDRESS        GEOLOCATION
+|   1    33.60  192.168.119.1  - ,- 
+|_  2    34.18  10.11.1.101    - ,- 
+
+TRACEROUTE (using port 256/tcp)
+HOP RTT      ADDRESS
+1   33.60 ms 192.168.119.1
+2   34.18 ms 10.11.1.101
+
+Post-scan script results:
+| reverse-index: 
+|   21/tcp: 10.11.1.101
+|   22/tcp: 10.11.1.101
+|   80/tcp: 10.11.1.101
+|   139/tcp: 10.11.1.101
+|_  445/tcp: 10.11.1.101
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 29 18:35:27 2020 -- 1 IP address (1 host up) scanned in 433.75 seconds

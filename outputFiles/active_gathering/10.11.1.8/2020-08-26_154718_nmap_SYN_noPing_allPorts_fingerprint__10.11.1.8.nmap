@@ -1,0 +1,25 @@
+# Nmap 7.80 scan initiated Wed Aug 26 16:24:18 2020 as: nmap -v -Pn -p- -O -oA 2020-08-26_154718_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.8 10.11.1.8
+Nmap scan report for 10.11.1.8
+Host is up (0.028s latency).
+Not shown: 65524 filtered ports
+PORT     STATE  SERVICE
+21/tcp   open   ftp
+22/tcp   open   ssh
+25/tcp   closed smtp
+80/tcp   open   http
+111/tcp  open   rpcbind
+139/tcp  open   netbios-ssn
+443/tcp  open   https
+445/tcp  open   microsoft-ds
+631/tcp  open   ipp
+868/tcp  closed unknown
+3306/tcp open   mysql
+Aggressive OS guesses: Linux 2.6.18 (93%), Linux 2.6.9 - 2.6.27 (93%), Linux 2.6.9 (93%), Cisco SA520 firewall (Linux 2.6) (92%), Linux 2.6.11 (92%), Linux 2.6.28 (92%), Linux 2.6.30 (92%), Ruckus 7363 WAP (91%), Linux 2.6.32 (90%), Linux 2.6.9 (CentOS 4.4) (90%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.027 days (since Wed Aug 26 15:48:44 2020)
+TCP Sequence Prediction: Difficulty=197 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 26 16:27:07 2020 -- 1 IP address (1 host up) scanned in 168.56 seconds

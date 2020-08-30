@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Aug 26 15:14:40 2020 as: nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-26_151349_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.7 10.11.1.7 -->
+<nmaprun scanner="nmap" args="nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-26_151349_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.7 10.11.1.7" start="1598469280" startstr="Wed Aug 26 15:14:40 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<prescript><script id="broadcast-dhcp-discover" output="&#xa;  Response 1 of 1: &#xa;    IP Offered: 192.168.0.25&#xa;    Server Identifier: 192.168.0.1&#xa;    Subnet Mask: 255.255.255.0&#xa;    Router: 192.168.0.1&#xa;    Domain Name Server: 75.75.75.75, 75.75.76.76"><table key="Response 1 of 1">
+<elem key="IP Offered">192.168.0.25</elem>
+<elem key="Server Identifier">192.168.0.1</elem>
+<elem key="Subnet Mask">255.255.255.0</elem>
+<elem key="Router">192.168.0.1</elem>
+<table key="Domain Name Server">
+<elem>75.75.75.75</elem>
+<elem>75.75.76.76</elem>
+</table>
+</table>
+</script><script id="broadcast-igmp-discovery" output="&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.2&#xa;    Description: All Routers on this Subnet&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.22&#xa;    Description: IGMP&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  Use the newtargets script-arg to add the results as targets&#xa;"/><script id="broadcast-listener" output="&#xa;  ether&#xa;      EIGRP Hello&#xa;        &#xa;  udp&#xa;      DHCP&#xa;        srv ip       cli ip        mask           gw           dns                       vendor&#xa;        192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;"/><script id="broadcast-netbios-master-browser" output="&#xa;ip  server  domain&#xa;"/><script id="broadcast-upnp-info" output="&#xa;  239.255.255.250&#xa;      Server: Linux 2.6 DLNADOC/1.50 UPnP/1.0 ReadyDLNA/1.1.0&#xa;      Location: http://192.168.0.254:8200/rootDesc.xml&#xa;"/><script id="eap-info" output="please specify an interface with -e"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/></prescript><host starttime="1598469321" endtime="1598469468"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="rdp-enum-encryption" output="&#xa;  Security layer&#xa;    CredSSP (NLA): SUCCESS&#xa;    CredSSP with Early User Auth: SUCCESS&#xa;    RDSTLS: SUCCESS&#xa;    SSL: SUCCESS&#xa;  RDP Protocol Version:  RDP 10.5 server&#xa;"/><script id="rdp-ntlm-info" output="&#xa;  Target_Name: PEDRO&#xa;  NetBIOS_Domain_Name: PEDRO&#xa;  NetBIOS_Computer_Name: PEDRO&#xa;  DNS_Domain_Name: pedro&#xa;  DNS_Computer_Name: pedro&#xa;  Product_Version: 10.0.17134&#xa;  System_Time: 2020-08-26T19:17:18+00:00"><elem key="Target_Name">PEDRO</elem>
+<elem key="NetBIOS_Domain_Name">PEDRO</elem>
+<elem key="NetBIOS_Computer_Name">PEDRO</elem>
+<elem key="DNS_Domain_Name">pedro</elem>
+<elem key="DNS_Computer_Name">pedro</elem>
+<elem key="Product_Version">10.0.17134</elem>
+<elem key="System_Time">2020-08-26T19:17:18+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=pedro&#xa;Not valid before: 2020-08-25T19:13:04&#xa;Not valid after:  2021-02-24T19:13:04"><table key="subject">
+<elem key="commonName">pedro</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">pedro</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="exponent">userdata: 0x55a0d79b2188</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">userdata: 0x55a0d79b22a8</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-08-25T19:13:04</elem>
+<elem key="notAfter">2021-02-24T19:13:04</elem>
+</table>
+<elem key="md5">09c3499e5156e99080f1664a70e486de</elem>
+<elem key="sha1">45237cfd1d93a22ace2545e189062fa676c3f6d0</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICzjCCAbagAwIBAgIQbj4jgkLhsa1FbAs/tCoQfzANBgkqhkiG9w0BAQsFADAQ&#xa;MQ4wDAYDVQQDEwVwZWRybzAeFw0yMDA4MjUxOTEzMDRaFw0yMTAyMjQxOTEzMDRa&#xa;MBAxDjAMBgNVBAMTBXBlZHJvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC&#xa;AQEA1VoAGFQD1hIkKovRE/buVkqr6QZyBEG1dFoBR09VPX7pp6GyFCNYdrPUf3Ox&#xa;nCVpdKIerouaQ0C9F4/XOQFMZNmJbNoVd6BAj/XZ6757Z315fVz9APQ5psYH7Ful&#xa;PMD0Po4uF7YrmrSlUCCa7UwbuYPibU4OOch27UnEWiPSHeTQ3leH3IKkXfJek19u&#xa;Dpus/BjQT0BgbRBnEw0BrBpH1obzkNMB2X3vLey8doaZh6WGGBbLwbef8YfATX5z&#xa;kLfCxan2S41HY9c6SoS/blV36Exf6AB6KJu7BdIMBS3Gth14d0yQFeZvgB7HXXRP&#xa;VTm73AsSV4Ezvl/FcoLUCqeQkQIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD&#xa;ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAJ+8TagsfwfJ+bIglrBv&#xa;1AZWQV6pqPMv9Wfyb3MYOavi1jLfn7UgfbsAVVtBkjIoBjEWlfz9FarRDssaBgh6&#xa;bmEI9miInfR03j/RRi3QBTL+bZW7vMGoNQ+JOUFcqYL60DmXQP1Dp5RqNs76ZTh3&#xa;g3L07b14MDBxi15x2HMTxNWE5tNJMiNHUrXJ33N14wiMkxDpLerIdU7BUC+Dic6+&#xa;Xu43R1tqvicTVxfzr/CSTCRcgCIty1HemRC+4DIG3cQ/KlWqtQOBXRx6i5BMB4Iz&#xa;W7WncGB7FVo5GN/7Mfp560HccQZPb6h5hsBm2ATzqcc29bEhvKyVdCX4SBRn2qhb&#xa;Nck=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2020-08-26T19:17:47+00:00; 0s from scanner time."><elem key="date">2020-08-26T19:17:47+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="sslv2-drown" output="&#xa;"></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="3389"/>
+<osmatch name="AVtech Room Alert 26W environmental monitor" accuracy="87" line="9077">
+<osclass type="specialized" vendor="AVtech" osfamily="embedded" accuracy="87"/>
+</osmatch>
+<osmatch name="FreeBSD 6.2-RELEASE" accuracy="85" line="27364">
+<osclass type="general purpose" vendor="FreeBSD" osfamily="FreeBSD" osgen="6.X" accuracy="85"><cpe>cpe:/o:freebsd:freebsd:6.2</cpe></osclass>
+</osmatch>
+</os>
+<distance value="2"/>
+<tcpsequence index="261" difficulty="Good luck!" values="F68E3E2,AF650FAB,B00ED258,61F254CF,FC093C84,4D59B8E4"/>
+<ipidsequence class="Incremental" values="E3E,E3F,E40,E41,E42,E43"/>
+<tcptssequence class="none returned (unsupported)"/>
+<hostscript><script id="fcrdns" output="FAIL (No PTR record)"><table key="&lt;none&gt;">
+<elem key="status">fail</elem>
+<elem key="reason">No PTR record</elem>
+</table>
+</script><script id="firewalk" output="&#xa;HOP  HOST           PROTOCOL  BLOCKED PORTS&#xa;1    192.168.119.1  tcp       1-10&#xa;"/><script id="ipidseq" output="Unknown"/><script id="path-mtu" output="PMTU == 1500"/><script id="traceroute-geolocation" output="&#xa;  HOP  RTT    ADDRESS        GEOLOCATION&#xa;  1    24.14  192.168.119.1  - ,- &#xa;  2    22.81  10.11.1.7      - ,- &#xa;"><table>
+<elem key="ip">192.168.119.1</elem>
+<elem key="hop">1</elem>
+<elem key="rtt">24.14</elem>
+</table>
+<table>
+<elem key="ip">10.11.1.7</elem>
+<elem key="hop">2</elem>
+<elem key="rtt">22.81</elem>
+</table>
+</script></hostscript><trace port="3389" proto="tcp">
+<hop ttl="1" ipaddr="192.168.119.1" rtt="24.14"/>
+<hop ttl="2" ipaddr="10.11.1.7" rtt="22.81"/>
+</trace>
+<times srtt="21698" rttvar="1578" to="100000"/>
+</host>
+<postscript><script id="reverse-index" output="&#xa;  3389/tcp: 10.11.1.7"><table key="3389/tcp">
+<elem>10.11.1.7</elem>
+</table>
+</script></postscript><runstats><finished time="1598469469" timestr="Wed Aug 26 15:17:49 2020" elapsed="188.63" summary="Nmap done at Wed Aug 26 15:17:49 2020; 1 IP address (1 host up) scanned in 188.63 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

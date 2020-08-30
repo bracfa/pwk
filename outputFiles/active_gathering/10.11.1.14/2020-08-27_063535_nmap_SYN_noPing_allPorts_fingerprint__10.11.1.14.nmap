@@ -1,0 +1,23 @@
+# Nmap 7.80 scan initiated Thu Aug 27 07:08:10 2020 as: nmap -v -Pn -p- -O -oA 2020-08-27_063535_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.14 10.11.1.14
+Nmap scan report for 10.11.1.14
+Host is up (0.019s latency).
+Not shown: 65528 filtered ports
+PORT    STATE  SERVICE
+21/tcp  open   ftp
+23/tcp  closed telnet
+25/tcp  closed smtp
+80/tcp  open   http
+110/tcp closed pop3
+220/tcp closed imap3
+443/tcp open   https
+Device type: general purpose|media device|specialized|power-device
+Running (JUST GUESSING): Microsoft Windows XP|2003|PocketPC/CE|7|2000 (91%), Motorola embedded (88%), Belkin embedded (86%), SMA embedded (86%)
+OS CPE: cpe:/o:microsoft:windows_xp cpe:/o:microsoft:windows_server_2003::sp2 cpe:/o:microsoft:windows_ce:5.0 cpe:/h:motorola:vip1216 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_ce:6.0 cpe:/o:microsoft:windows_2000::sp4
+Aggressive OS guesses: Microsoft Windows XP (91%), Microsoft Windows Server 2003 SP2 (91%), Microsoft Windows XP SP3 (89%), Motorola VIP1216 digital set top box (Windows CE 5.0) (88%), Belkin OmniView KVM switch or SMA Sunny WebBox solar panel monitor (86%), Microsoft Windows 7 (86%), Microsoft Windows CE 6.0 (86%), Microsoft Windows Server 2003 SP1 (86%), Microsoft Windows Server 2003 SP0 - SP2 (86%), Microsoft Windows Server 2003 SP1 or SP2 (86%)
+No exact OS matches for host (test conditions non-ideal).
+TCP Sequence Prediction: Difficulty=133 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 27 07:11:36 2020 -- 1 IP address (1 host up) scanned in 205.73 seconds

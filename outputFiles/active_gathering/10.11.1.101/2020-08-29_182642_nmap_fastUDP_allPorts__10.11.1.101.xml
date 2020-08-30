@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Aug 29 18:44:37 2020 as: nmap -sU -p- -&#45;defeat-icmp-ratelimit -oA 2020-08-29_182642_nmap_fastUDP_allPorts__10.11.1.101 10.11.1.101 -->
+<nmaprun scanner="nmap" args="nmap -sU -p- -&#45;defeat-icmp-ratelimit -oA 2020-08-29_182642_nmap_fastUDP_allPorts__10.11.1.101 10.11.1.101" start="1598741077" startstr="Sat Aug 29 18:44:37 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1598741077" endtime="1598741259"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.11.1.101" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed|filtered" count="65345">
+<extrareasons reason="no-responses" count="65345"/>
+</extraports>
+<extraports state="closed" count="188">
+<extrareasons reason="port-unreaches" count="188"/>
+</extraports>
+<port protocol="udp" portid="123"><state state="open" reason="udp-response" reason_ttl="63"/><service name="ntp" method="table" conf="3"/></port>
+<port protocol="udp" portid="137"><state state="open" reason="udp-response" reason_ttl="63"/><service name="netbios-ns" method="table" conf="3"/></port>
+</ports>
+<times srtt="31661" rttvar="11631" to="100000"/>
+</host>
+<runstats><finished time="1598741260" timestr="Sat Aug 29 18:47:40 2020" elapsed="182.56" summary="Nmap done at Sat Aug 29 18:47:40 2020; 1 IP address (1 host up) scanned in 182.56 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

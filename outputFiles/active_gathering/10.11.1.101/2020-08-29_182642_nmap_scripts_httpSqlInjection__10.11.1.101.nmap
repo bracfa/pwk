@@ -1,0 +1,28 @@
+# Nmap 7.80 scan initiated Sat Aug 29 18:47:52 2020 as: nmap -Pn -sV -p80 --script=http-sql-injection -oA 2020-08-29_182642_nmap_scripts_httpSqlInjection__10.11.1.101 10.11.1.101
+Nmap scan report for 10.11.1.101
+Host is up (0.018s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://10.11.1.101:80/assets/js/?C=N%3bO%3dD%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=D%3bO%3dD%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider
+|     http://10.11.1.101:80/assets/js/?C=M%3bO%3dD%27%20OR%20sqlspider
+|_    http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 29 18:48:00 2020 -- 1 IP address (1 host up) scanned in 8.00 seconds

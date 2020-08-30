@@ -1,0 +1,206 @@
+# Nmap 7.80 scan initiated Thu Aug 27 06:54:17 2020 as: nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-27_063535_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.14 10.11.1.14
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 192.168.0.25
+|     Server Identifier: 192.168.0.1
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.0.1
+|_    Domain Name Server: 75.75.75.75, 75.75.76.76
+| broadcast-igmp-discovery: 
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.22
+|     Description: IGMP
+|   192.168.0.31
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.184
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|   192.168.0.254
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+| broadcast-listener: 
+|   udp
+|       DHCP
+|         srv ip       cli ip        mask           gw           dns                       vendor
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|_        192.168.0.1  192.168.0.25  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Linux 2.6 DLNADOC/1.50 UPnP/1.0 ReadyDLNA/1.1.0
+|_      Location: http://192.168.0.254:8200/rootDesc.xml
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+Nmap scan report for 10.11.1.14
+Host is up (0.022s latency).
+Not shown: 65528 filtered ports
+PORT    STATE  SERVICE VERSION
+21/tcp  open   ftp     Microsoft ftpd
+|_banner: 220 Microsoft FTP Service
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 01-17-07  07:42PM       <DIR>          AdminScripts
+| 01-17-07  07:43PM       <DIR>          ftproot
+| 01-17-07  07:43PM       <DIR>          iissamples
+| 01-17-07  07:43PM       <DIR>          Scripts
+|_04-16-16  10:42AM       <DIR>          wwwroot
+| ftp-syst: 
+|_  SYST: Windows_NT
+|_sslv2-drown: 
+23/tcp  closed telnet
+25/tcp  closed smtp
+80/tcp  open   http    Microsoft IIS httpd 5.1
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-comments-displayer: Couldn't find any comments.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-date: Thu, 27 Aug 2020 10:58:42 GMT; 0s from local time.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /tsweb/: Remote Desktop Web Connection
+|   /printers/: Potentially interesting folder (401 Access Denied)
+|_  /scripts/: Potentially interesting folder
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-headers: 
+|   Server: Microsoft-IIS/5.1
+|   Connection: close
+|   Content-Location: http://10.11.1.14/index.htm
+|   Date: Thu, 27 Aug 2020 10:58:50 GMT
+|   Content-Type: text/html
+|   Accept-Ranges: bytes
+|   Last-Modified: Fri, 19 Sep 2008 18:06:06 GMT
+|   ETag: "4e2dfb62821ac91:abf"
+|   Content-Length: 7
+|   
+|_  (Request type: HEAD)
+| http-methods: 
+|_  Potentially risky methods: TRACE DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT
+|_http-mobileversion-checker: No mobile version detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-security-headers: 
+|_http-server-header: Microsoft-IIS/5.1
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: Site doesn't have a title (text/html).
+|_http-trace: TRACE is enabled
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-webdav-scan: 
+|   Allowed Methods: OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK
+|   WebDAV type: Unknown
+|   Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH
+|   Server Type: Microsoft-IIS/5.1
+|_  Server Date: Thu, 27 Aug 2020 10:58:49 GMT
+|_http-xssed: No previously reported XSS vuln.
+110/tcp closed pop3
+220/tcp closed imap3
+443/tcp open   https?
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-comments-displayer: Couldn't find any comments.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+|_http-mobileversion-checker: No mobile version detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|_    HSTS not configured in HTTPS Server
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-useragent-tester: 
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-xssed: No previously reported XSS vuln.
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+|_sslv2-drown: 
+Device type: general purpose|media device|specialized|power-device
+Running (JUST GUESSING): Microsoft Windows XP|2003|PocketPC/CE|7|2000 (91%), Motorola embedded (88%), Belkin embedded (86%), SMA embedded (86%)
+OS CPE: cpe:/o:microsoft:windows_xp cpe:/o:microsoft:windows_server_2003::sp2 cpe:/o:microsoft:windows_ce:5.0 cpe:/h:motorola:vip1216 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_ce:6.0 cpe:/o:microsoft:windows_2000::sp4
+Aggressive OS guesses: Microsoft Windows XP (91%), Microsoft Windows Server 2003 SP2 (91%), Microsoft Windows XP SP3 (89%), Motorola VIP1216 digital set top box (Windows CE 5.0) (88%), Belkin OmniView KVM switch or SMA Sunny WebBox solar panel monitor (86%), Microsoft Windows 7 (86%), Microsoft Windows Server 2003 SP1 (86%), Microsoft Windows Server 2003 SP0 - SP2 (86%), Microsoft Windows Server 2003 SP1 or SP2 (86%), Microsoft Windows Server 2003 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_fcrdns: FAIL (No PTR record)
+| firewalk: 
+| HOP  HOST           PROTOCOL  BLOCKED PORTS
+|_1    192.168.119.1  tcp       1-10
+|_ipidseq: Unknown
+|_path-mtu: PMTU == 1500
+| qscan: 
+| PORT  FAMILY  MEAN (us)  STDDEV    LOSS (%)
+| 21    0       56742.11   25197.57  10.0%
+| 23    0       52053.78   40235.35  10.0%
+| 80    0       58335.33   30162.18  10.0%
+|_443   0       50500.56   26725.08  10.0%
+| traceroute-geolocation: 
+|   HOP  RTT    ADDRESS        GEOLOCATION
+|   1    23.31  192.168.119.1  - ,- 
+|_  2    23.55  10.11.1.14     - ,- 
+
+TRACEROUTE (using port 110/tcp)
+HOP RTT      ADDRESS
+1   23.31 ms 192.168.119.1
+2   23.55 ms 10.11.1.14
+
+Post-scan script results:
+| reverse-index: 
+|   21/tcp: 10.11.1.14
+|   80/tcp: 10.11.1.14
+|_  443/tcp: 10.11.1.14
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 27 07:07:48 2020 -- 1 IP address (1 host up) scanned in 811.28 seconds

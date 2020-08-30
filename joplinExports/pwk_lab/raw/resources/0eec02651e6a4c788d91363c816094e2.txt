@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>example</title>
+                            <link type="text/css" rel="stylesheet" href="advanced_comment_system/css/style.css" />
+              <script src="advanced_comment_system/js/common.js" type="text/javascript"></script>
+              <script src="advanced_comment_system/js/mootools.js" type="text/javascript"></script>
+  </head>
+              <body onload="ACS_init();">
+    <h1>example page</h1>
+    <p><strong>To justine: this is just an example page...see if can be ok for our needs</strong></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tellus neque, luctus sit amet, posuere nec, dictum in, dolor. Cras ut nisi ut diam ultricies tempor. Pellentesque urna. Aliquam dui est, faucibus ac, ultricies sit amet, egestas at, ligula. Nullam tincidunt. Sed eget est eget elit elementum dignissim. Pellentesque ligula. Quisque libero turpis, tincidunt eget, eleifend sed, bibendum sed, nibh. Vestibulum fringilla varius est. Etiam vel arcu. Aliquam fringilla rutrum nisl. Integer at mi. Aliquam lectus arcu, vulputate id, convallis ac, blandit vitae, magna. Aenean pulvinar, diam egestas molestie iaculis, nisl nibh molestie massa, vel fermentum mauris ipsum a diam. Donec et tellus non orci eleifend pulvinar. Ut nec tellus nec nunc fermentum rutrum. Quisque faucibus tellus eget lacus.</p>
+    
+    <p>Nulla non dolor. Pellentesque ligula est, cursus in, suscipit ut, cursus nec, metus. Maecenas id lorem at felis tristique consequat. Suspendisse potenti. Pellentesque accumsan. Nullam vulputate arcu sed augue. Pellentesque eu elit eget nulla consequat auctor. In hac habitasse platea dictumst. Pellentesque et magna non nibh euismod varius. Maecenas molestie elit ac mi. Nunc semper fringilla leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam malesuada, metus et accumsan dapibus, risus est tincidunt urna, et luctus turpis metus ac dolor. Proin eget ipsum. Sed diam nibh, malesuada eu, dapibus vitae, sodales ac, dolor. Nulla molestie sollicitudin mi.</p>
+    
+              <div id="ACS_Comments_Container">
+  <h1>Comments (0)</h1>
+      <div id="ACS_Comments_Hide" style="display:none;"><a href="javascript:void(0);" onclick="ACS_hideComments();">Hide comments.</a> <a href="#ACS_Comment_LeaveAComment">Write a comment.</a></div>
+    <div id="ACS_Comments_Show" style="display:none;">Comments are hidden. <a href="javascript:void(0);" onclick="ACS_showComments();">Show comments.</a> <a href="#ACS_Comment_LeaveAComment">Write a comment.</a></div>
+    <div id="ACS_Comments" style="display:none;">
+  No comments found. Be the first to write a comment! Fill in the form below.  </div>
+  <div id="ACS_Comment_LeaveAComment">
+    <h1>Leave a comment</h1>
+        <form action="/internal/index.php#ACS_Comments_Container" method="post" onsubmit="return ACS_submitComment();">
+      <div class="ACS_Comment_FormTitle">Your name <span class="ACS_lightGrey">(required, minimum 3, maximum 255 characters) (<img src="advanced_comment_system/img/checked.gif" alt="checked.gif" title="Remember" id="ACS_newCommentRememberName" onclick="ACS_toggleRememberName(this);" /> Remember)</span></div>
+      <div><input type="text" name="ACS_newCommentName" id="ACS_newCommentName" value="" class="ACS_Comment_Form" style="background-image:url(advanced_comment_system/img/bg-input.gif);" onfocus="ACS_changeClass(this,'ACS_Comment_Form ACS_Comment_FormFocus');" onblur="ACS_changeClass(this,'ACS_Comment_Form');" maxlength="255" /></div>
+      <div class="ACS_Comment_FormTitle">Your message <span class="ACS_lightGrey">(required, minimum 3, maximum 5000 characters)</span></div>
+      <div><textarea name="ACS_newCommentMessage" id="ACS_newCommentMessage" rows="10" cols="40" class="ACS_Comment_Form" style="background-image:url(advanced_comment_system/img/bg-input.gif);" onfocus="ACS_textCounter(this,'ACS_progressbar1',5000);ACS_changeClass(this,'ACS_Comment_Form ACS_Comment_FormFocus');" onblur="ACS_changeClass(this,'ACS_Comment_Form');" onkeydown="ACS_textCounter(this,'ACS_progressbar1',5000);" onkeyup="ACS_textCounter(this,'ACS_progressbar1',5000);"></textarea></div>
+      <div class="ACS_progressContainer"><div id="ACS_progressbar1" class="ACS_progress">&nbsp;</div></div>            <div class="ACS_Comment_FormTitle">Insert these letters into the textfield below: WRIZ <span class="ACS_lightGrey">(required, case-sensitive)</span></div>
+      <div><input type="text" name="ACS_newCommentAntiSpamCode" id="ACS_newCommentAntiSpamCode" value="" class="ACS_Comment_Form" style="background-image:url(advanced_comment_system/img/bg-input.gif);" onfocus="ACS_changeClass(this,'ACS_Comment_Form ACS_Comment_FormFocus');" onblur="ACS_changeClass(this,'ACS_Comment_Form');" /><input type="hidden" name="ACS_newCommentAntiSpamCodeVerification" id="ACS_newCommentAntiSpamCodeVerification" value="WRIZ" /></div>
+                  <div class="ACS_Comment_FormTitle">Drag the slider to the right <span class="ACS_lightGrey">(required)</span></div>
+      <div id="ACS_slider" class="ACS_slider" style="background-image:url(advanced_comment_system/img/bg-input.gif);"><div class="ACS_knob" id="ACS_sliderKnob"><img src="advanced_comment_system/img/arrow-right_white.gif" alt="arrow-right_white.gif" title="Drag the slider to the right" /><input type="hidden" name="ACS_newCommentSlider" id="ACS_newCommentSlider" value="0" /></div></div>
+            <div>
+        <button type="submit" name="ACS_newCommentSubmit" style="background-image:url(advanced_comment_system/img/bg-input.gif);" id="ACS_newCommentSubmit" value="Submit"><img src="advanced_comment_system/img/submit-form.gif" alt="submit-form.gif" title="Submit" /> Submit</button>
+        <input type="hidden" name="ACS_newCommentAntiSpamCodeEnabled" id="ACS_newCommentAntiSpamCodeEnabled" value="1" />
+        <input type="hidden" name="ACS_newCommentSliderEnabled" id="ACS_newCommentSliderEnabled" value="1" />
+        <input type="hidden" name="ACS_newCommentTextCounterEnabled" id="ACS_newCommentTextCounterEnabled" value="1" />
+        <input type="hidden" name="ACS_newCommentNameMinLength" id="ACS_newCommentNameMinLength" value="3" />
+        <input type="hidden" name="ACS_newCommentNameMaxLength" id="ACS_newCommentNameMaxLength" value="255" />
+        <input type="hidden" name="ACS_newCommentMessageMinLength" id="ACS_newCommentMessageMinLength" value="3" />
+        <input type="hidden" name="ACS_newCommentMessageMaxLength" id="ACS_newCommentMessageMaxLength" value="5000" />
+        <input type="hidden" name="ACS_path" id="ACS_path" value="advanced_comment_system/" />
+      </div>
+    </form>
+  </div>
+</div>
+
+  </body>
+</html>

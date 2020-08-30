@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Aug 29 18:47:52 2020 as: nmap -Pn -sV -p80 -&#45;script=http-sql-injection -oA 2020-08-29_182642_nmap_scripts_httpSqlInjection__10.11.1.101 10.11.1.101 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sV -p80 -&#45;script=http-sql-injection -oA 2020-08-29_182642_nmap_scripts_httpSqlInjection__10.11.1.101 10.11.1.101" start="1598741272" startstr="Sat Aug 29 18:47:52 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1598741273" endtime="1598741280"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.101" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-sql-injection" output="&#xa;  Possible sqli for queries:&#xa;    http://10.11.1.101:80/assets/js/?C=N%3bO%3dD%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=M%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=D%3bO%3dD%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=N%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=S%3bO%3dA%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=M%3bO%3dD%27%20OR%20sqlspider&#xa;    http://10.11.1.101:80/assets/js/?C=D%3bO%3dA%27%20OR%20sqlspider&#xa;"/></port>
+</ports>
+<times srtt="18004" rttvar="18004" to="100000"/>
+</host>
+<runstats><finished time="1598741280" timestr="Sat Aug 29 18:48:00 2020" elapsed="8.00" summary="Nmap done at Sat Aug 29 18:48:00 2020; 1 IP address (1 host up) scanned in 8.00 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

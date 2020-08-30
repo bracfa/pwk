@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Wed Aug 26 15:20:19 2020 as: nmap -Pn --script=http-sitemap-generator -oA 2020-08-26_151349_nmap_scripts_httpSitemapGenerator__10.11.1.7 10.11.1.7
+Nmap scan report for 10.11.1.7
+Host is up (0.020s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+
+# Nmap done at Wed Aug 26 15:20:24 2020 -- 1 IP address (1 host up) scanned in 4.63 seconds

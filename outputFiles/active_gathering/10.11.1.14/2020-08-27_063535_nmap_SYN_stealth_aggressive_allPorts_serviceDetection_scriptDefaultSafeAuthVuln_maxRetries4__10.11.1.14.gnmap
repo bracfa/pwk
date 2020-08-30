@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Aug 27 06:41:29 2020 as: nmap -sS -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-08-27_063535_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.14 10.11.1.14
+Host: 10.11.1.14 ()	Status: Up
+Host: 10.11.1.14 ()	Ports: 21/open/tcp//ftp//Microsoft ftpd/, 23/closed/tcp//telnet///, 25/closed/tcp//smtp///, 80/open/tcp//http//Microsoft IIS httpd 5.1/, 110/closed/tcp//pop3///, 220/closed/tcp//imap3///, 443/open/tcp//https?///	Ignored State: filtered (65528)	Seq Index: 126	IP ID Seq: Incremental
+# Nmap done at Thu Aug 27 06:54:17 2020 -- 1 IP address (1 host up) scanned in 768.24 seconds

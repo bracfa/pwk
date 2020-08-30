@@ -1,0 +1,26 @@
+- Nikto v2.1.6/2.1.5
++ Target Host: 10.11.1.14
++ Target Port: 80
++ GET The anti-clickjacking X-Frame-Options header is not present.
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ OSVDB-397: PUT HTTP method 'PUT' allows clients to save files on the web server.
++ OSVDB-5646: DELETE HTTP method 'DELETE' allows clients to delete files on the web server.
++ OPTIONS Retrieved dasl header: <DAV:sql>
++ OPTIONS Retrieved dav header: 1, 2
++ OPTIONS Retrieved ms-author-via header: DAV
++ OPTIONS Uncommon header 'ms-author-via' found, with contents: DAV
++ OPTIONS Allowed HTTP Methods: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH 
++ OSVDB-5646: GET HTTP method ('Allow' Header): 'DELETE' may allow clients to remove files on the web server.
++ OSVDB-397: GET HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.
++ OSVDB-5647: GET HTTP method ('Allow' Header): 'MOVE' may allow clients to change file locations on the web server.
++ OPTIONS Public HTTP Methods: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH 
++ OSVDB-5646: GET HTTP method ('Public' Header): 'DELETE' may allow clients to remove files on the web server.
++ OSVDB-397: GET HTTP method ('Public' Header): 'PUT' method could allow clients to save files on the web server.
++ OSVDB-5647: GET HTTP method ('Public' Header): 'MOVE' may allow clients to change file locations on the web server.
++ OPTIONS WebDAV enabled (MKCOL COPY LOCK PROPFIND SEARCH PROPPATCH UNLOCK listed as allowed)
++ OSVDB-13431: PROPFIND PROPFIND HTTP verb may show the server's internal IP address: http://bob/scripts/
++ OSVDB-877: TRACE HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ OSVDB-877: TRACK HTTP TRACK method is active, suggesting the host is vulnerable to XST
++ GET Cookie ASPSESSIONIDQQGGQWBO created without the httponly flag
++ OSVDB-3092: GET /iishelp/iis/misc/default.asp: Default IIS page found.

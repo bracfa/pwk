@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sat Aug 29 18:47:40 2020 as: nmap -Pn --script=http-enum -oA 2020-08-29_182642_nmap_scripts_httpEnum__10.11.1.101 10.11.1.101
+Host: 10.11.1.101 ()	Status: Up
+Host: 10.11.1.101 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 25/filtered/tcp//smtp///, 80/open/tcp//http///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///	Ignored State: closed (994)
+# Nmap done at Sat Aug 29 18:47:44 2020 -- 1 IP address (1 host up) scanned in 4.65 seconds

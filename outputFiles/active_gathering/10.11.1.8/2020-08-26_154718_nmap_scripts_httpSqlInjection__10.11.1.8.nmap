@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Wed Aug 26 16:33:22 2020 as: nmap -Pn -sV -p80 --script=http-sql-injection -oA 2020-08-26_154718_nmap_scripts_httpSqlInjection__10.11.1.8 10.11.1.8
+Nmap scan report for 10.11.1.8
+Host is up (0.019s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.0.52 ((CentOS))
+|_http-server-header: Apache/2.0.52 (CentOS)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 26 16:33:28 2020 -- 1 IP address (1 host up) scanned in 6.84 seconds
