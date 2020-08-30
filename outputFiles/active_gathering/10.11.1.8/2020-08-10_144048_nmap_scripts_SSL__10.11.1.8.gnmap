@@ -1,4 +1,0 @@
-# Nmap 7.80 scan initiated Mon Aug 10 15:10:51 2020 as: nmap -Pn --script=ssl-* -oA 2020-08-10_144048_nmap_scripts_SSL__10.11.1.8 10.11.1.8
-Host: 10.11.1.8 ()	Status: Up
-Host: 10.11.1.8 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 25/closed/tcp//smtp///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 139/open/tcp//netbios-ssn///, 443/open/tcp//https///, 445/open/tcp//microsoft-ds///, 631/open/tcp//ipp///, 3306/open/tcp//mysql///	Ignored State: filtered (990)
-# Nmap done at Mon Aug 10 15:11:56 2020 -- 1 IP address (1 host up) scanned in 65.51 seconds
