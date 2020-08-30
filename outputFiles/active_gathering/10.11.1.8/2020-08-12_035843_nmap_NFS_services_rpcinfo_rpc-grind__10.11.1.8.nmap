@@ -1,2 +1,0 @@
-# Nmap 7.80 scan initiated Wed Aug 12 03:58:52 2020 as: nmap -sV -p 111 --script=rpcinfo,rpc-grind -oA 2020-08-12_035843_nmap_NFS_services_rpcinfo_rpc-grind__10.11.1.8 10.11.1.8
-# Nmap done at Wed Aug 12 03:58:54 2020 -- 1 IP address (0 hosts up) scanned in 1.57 seconds

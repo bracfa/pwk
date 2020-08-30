@@ -1,4 +1,0 @@
-# Nmap 7.80 scan initiated Wed Aug 12 03:58:47 2020 as: nmap -v -p 139,445 --script *smb* -oA 2020-08-12_035843_nmap_scripts_SMB__10.11.1.8 10.11.1.8
-Nmap scan report for 10.11.1.8 [host down]
-Read data files from: /usr/bin/../share/nmap
-# Nmap done at Wed Aug 12 03:58:50 2020 -- 1 IP address (0 hosts up) scanned in 3.33 seconds

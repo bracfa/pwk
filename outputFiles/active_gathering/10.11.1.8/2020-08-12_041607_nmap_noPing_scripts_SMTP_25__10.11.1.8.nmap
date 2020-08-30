@@ -1,8 +1,0 @@
-# Nmap 7.80 scan initiated Wed Aug 12 04:16:09 2020 as: nmap -Pn -p 25 --script *smtp* -oA 2020-08-12_041607_nmap_noPing_scripts_SMTP_25__10.11.1.8 10.11.1.8
-Nmap scan report for 10.11.1.8
-Host is up (0.016s latency).
-
-PORT   STATE    SERVICE
-25/tcp filtered smtp
-
-# Nmap done at Wed Aug 12 04:16:10 2020 -- 1 IP address (1 host up) scanned in 0.33 seconds

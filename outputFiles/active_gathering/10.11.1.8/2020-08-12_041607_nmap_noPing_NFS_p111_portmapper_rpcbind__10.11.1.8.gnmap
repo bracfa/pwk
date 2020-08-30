@@ -1,5 +1,0 @@
-# Nmap 7.80 scan initiated Wed Aug 12 04:16:08 2020 as: nmap -Pn -v -p 111 -oA 2020-08-12_041607_nmap_noPing_NFS_p111_portmapper_rpcbind__10.11.1.8 10.11.1.8
-# Ports scanned: TCP(1;111) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 10.11.1.8 ()	Status: Up
-Host: 10.11.1.8 ()	Ports: 111/filtered/tcp//rpcbind///
-# Nmap done at Wed Aug 12 04:16:08 2020 -- 1 IP address (1 host up) scanned in 0.15 seconds
