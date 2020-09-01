@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Aug 31 07:08:21 2020 as: nmap -Pn -p 80 -&#45;script *php* -oA 2020-08-31_070821_nmap_noPing_scripts_php_p80__10.11.1.133 10.11.1.133 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p 80 -&#45;script *php* -oA 2020-08-31_070821_nmap_noPing_scripts_php_p80__10.11.1.133 10.11.1.133" start="1598872101" startstr="Mon Aug 31 07:08:21 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1598872101" endtime="1598872102"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.133" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="18358" rttvar="18358" to="100000"/>
+</host>
+<runstats><finished time="1598872102" timestr="Mon Aug 31 07:08:22 2020" elapsed="0.90" summary="Nmap done at Mon Aug 31 07:08:22 2020; 1 IP address (1 host up) scanned in 0.90 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

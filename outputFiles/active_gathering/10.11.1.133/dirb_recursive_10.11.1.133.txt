@@ -1,0 +1,64 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_recursive_10.11.1.133.txt
+START_TIME: Mon Aug 31 14:03:57 2020
+URL_BASE: http://10.11.1.133/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.11.1.133/ ----
+==> DIRECTORY: http://10.11.1.133/_vti_bin/
+==> DIRECTORY: http://10.11.1.133/_vti_cnf/
+==> DIRECTORY: http://10.11.1.133/_vti_pvt/
+==> DIRECTORY: http://10.11.1.133/_vti_txt/
+==> DIRECTORY: http://10.11.1.133/bak/
++ http://10.11.1.133/cgi-bin/ (CODE:403|SIZE:99)
++ http://10.11.1.133/error (CODE:200|SIZE:99)
+==> DIRECTORY: http://10.11.1.133/iissamples/
++ http://10.11.1.133/index (CODE:200|SIZE:619)
++ http://10.11.1.133/login (CODE:200|SIZE:37)
++ http://10.11.1.133/server-status (CODE:403|SIZE:99)
+==> DIRECTORY: http://10.11.1.133/Sites/
+==> DIRECTORY: http://10.11.1.133/test/
+
+---- Entering directory: http://10.11.1.133/_vti_bin/ ----
++ http://10.11.1.133/_vti_bin/index (CODE:200|SIZE:0)
++ http://10.11.1.133/_vti_bin/index.html (CODE:200|SIZE:0)
+
+---- Entering directory: http://10.11.1.133/_vti_cnf/ ----
++ http://10.11.1.133/_vti_cnf/index (CODE:200|SIZE:0)
++ http://10.11.1.133/_vti_cnf/index.html (CODE:200|SIZE:0)
+
+---- Entering directory: http://10.11.1.133/_vti_pvt/ ----
++ http://10.11.1.133/_vti_pvt/index (CODE:200|SIZE:0)
++ http://10.11.1.133/_vti_pvt/index.html (CODE:200|SIZE:0)
+
+---- Entering directory: http://10.11.1.133/_vti_txt/ ----
++ http://10.11.1.133/_vti_txt/index (CODE:200|SIZE:0)
++ http://10.11.1.133/_vti_txt/index.html (CODE:200|SIZE:0)
+
+---- Entering directory: http://10.11.1.133/bak/ ----
++ http://10.11.1.133/bak/index (CODE:200|SIZE:36)
+
+---- Entering directory: http://10.11.1.133/iissamples/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.133/Sites/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+---- Entering directory: http://10.11.1.133/test/ ----
++ http://10.11.1.133/test/index (CODE:200|SIZE:36)
+
+-----------------
+END_TIME: Mon Aug 31 14:17:58 2020
+DOWNLOADED: 41508 - FOUND: 15

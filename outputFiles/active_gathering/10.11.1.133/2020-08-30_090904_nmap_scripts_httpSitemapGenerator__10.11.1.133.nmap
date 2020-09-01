@@ -1,0 +1,17 @@
+# Nmap 7.80 scan initiated Sun Aug 30 09:54:51 2020 as: nmap -Pn --script=http-sitemap-generator -oA 2020-08-30_090904_nmap_scripts_httpSitemapGenerator__10.11.1.133 10.11.1.133
+Nmap scan report for 10.11.1.133
+Host is up (0.018s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE
+80/tcp open  http
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1; asp: 1
+|   Longest directory structure:
+|     Depth: 0
+|     Dir: /
+|   Total files found (by extension):
+|_    Other: 1; asp: 1
+
+# Nmap done at Sun Aug 30 09:54:58 2020 -- 1 IP address (1 host up) scanned in 7.17 seconds

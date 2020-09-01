@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Aug 30 09:10:53 2020 as: nmap -sV -sT -p- -oA 2020-08-30_090904_nmap_CONNECT_allPorts_serviceDetection__10.11.1.133 10.11.1.133 -->
+<nmaprun scanner="nmap" args="nmap -sV -sT -p- -oA 2020-08-30_090904_nmap_CONNECT_allPorts_serviceDetection__10.11.1.133 10.11.1.133" start="1598793053" startstr="Sun Aug 30 09:10:53 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1598793054" endtime="1598793272"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.11.1.133" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS 5.6" servicefp="SF-Port80-TCP:V=7.80%I=7%D=8/30%Time=5F4BA5E1%P=x86_64-pc-linux-gnu%r(GetRequest,325,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Sun,\x2030\x20Aug\x202020\x2013:13:05\x20GMT\r\nServer:\x20Microsoft\x20IIS\x205\.6\r\nVary:\x20Accept-Encoding\r\nContent-Length:\x20619\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Let&apos;s\x20play\x20with\x20the\x20offsec\x20team&lt;/title&gt;\n&lt;/head&gt;\n&lt;body\x20style=\&quot;color:\x20#FFFFFF;\x20background-color:\x20#000000;font-family:\x20verdana;\&quot;&gt;\n&lt;center&gt;\n&lt;div\x20style=\&quot;width:600px;height:399px;background-image:url\(offsec-team\.jpg\);\&quot;&gt;\n&lt;form\x20method=\&quot;post\&quot;\x20action=\&quot;login\.asp\&quot;&gt;\n&lt;table\x20style=\&quot;padding-top:170px;\&quot;&gt;\n&lt;tr&gt;\n&lt;td&gt;Username:\x20&lt;/td&gt;&lt;td&gt;&lt;input\x20type=\&quot;text\&quot;\x20name=\&quot;username\&quot;\x20value=\&quot;\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Password:\x20&lt;/td&gt;&lt;td&gt;&lt;input\x20type=\&quot;password\&quot;\x20name=\&quot;password\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td\x20colspan=\&quot;2\&quot;\x20align=\&quot;right\&quot;&gt;&lt;input\x20type=\&quot;submit\&quot;\x20name=\&quot;submit\&quot;\x20value=\&quot;Enter\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/table&gt;\n&lt;/form&gt;\n&lt;/div&gt;\n&lt;/center&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(HTTPOptions,325,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Sun,\x2030\x20Aug\x202020\x2013:13:05\x20GMT\r\nServer:\x20Microsoft\x20IIS\x205\.6\r\nVary:\x20Accept-Encoding\r\nContent-Length:\x20619\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Let&apos;s\x20play\x20with\x20the\x20offsec\x20team&lt;/title&gt;\n&lt;/head&gt;\n&lt;body\x20style=\&quot;color:\x20#FFFFFF;\x20background-color:\x20#000000;font-family:\x20verdana;\&quot;&gt;\n&lt;center&gt;\n&lt;div\x20style=\&quot;width:600px;height:399px;background-image:url\(offsec-team\.jpg\);\&quot;&gt;\n&lt;form\x20method=\&quot;post\&quot;\x20action=\&quot;login\.asp\&quot;&gt;\n&lt;table\x20style=\&quot;padding-top:170px;\&quot;&gt;\n&lt;tr&gt;\n&lt;td&gt;Username:\x20&lt;/td&gt;&lt;td&gt;&lt;input\x20type=\&quot;text\&quot;\x20name=\&quot;username\&quot;\x20value=\&quot;\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Password:\x20&lt;/td&gt;&lt;td&gt;&lt;input\x20type=\&quot;password\&quot;\x20name=\&quot;password\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td\x20colspan=\&quot;2\&quot;\x20align=\&quot;right\&quot;&gt;&lt;input\x20type=\&quot;submit\&quot;\x20name=\&quot;submit\&quot;\x20value=\&quot;Enter\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/table&gt;\n&lt;/form&gt;\n&lt;/div&gt;\n&lt;/center&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;);" method="probed" conf="10"/></port>
+</ports>
+<times srtt="23903" rttvar="6907" to="100000"/>
+</host>
+<runstats><finished time="1598793272" timestr="Sun Aug 30 09:14:32 2020" elapsed="218.45" summary="Nmap done at Sun Aug 30 09:14:32 2020; 1 IP address (1 host up) scanned in 218.45 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

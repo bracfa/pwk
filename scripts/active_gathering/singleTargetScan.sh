@@ -9,7 +9,7 @@ sorting or finding unique hosts
 # Enter single IP without mask, then the type of scans
 COMMENT
 # Array for type of scans
-SCAN_ARR=(def smb nfs smtp snmp wp udp)
+SCAN_ARR=(def smb nfs smtp snmp wp udp http sql php)
 # Command line arguments
 CLI_ARGS="$@"
 # The Target IP address
@@ -106,6 +106,44 @@ do
 
   fi
 done
+
+#-PHP Enumeration-#
+for arg in "$@"
+do
+  if [[ "$arg" =~ "php" ]]
+  then
+    echo "-------------------------"
+    echo "Starting: $arg scan"
+    # Scan using any script that has http in it
+    echo "$PASS" | sudo -S nmap -Pn -p 80 --script "*php*" "$IP" -oA "$TS""nmap_noPing_scripts_php_p80__""$IP"
+  fi
+done
+
+
+#-HTTP Enumeration-#
+for arg in "$@"
+do
+  if [[ "$arg" =~ "http" ]]
+  then
+    echo "-------------------------"
+    echo "Starting: $arg scan"
+    # Scan using any script that has http in it
+    echo "$PASS" | sudo -S nmap -Pn -p 80 --script "*http*" "$IP" -oA "$TS""nmap_noPing_scripts_http_p80__""$IP"
+  fi
+done
+
+#-SQL Enumeration-#
+for arg in "$@"
+do
+  if [[ "$arg" =~ "sql" ]]
+  then
+    echo "-------------------------"
+    echo "Starting: $arg scan"
+    # Scan using any script that has http in it
+    echo "$PASS" | sudo -S nmap -Pn -p 80 --script "*sql*" "$IP" -oA "$TS""nmap_noPing_scripts_sql_p80__""$IP"
+  fi
+done
+
 
 #-SMB Enumeration-#
 for arg in "$@"

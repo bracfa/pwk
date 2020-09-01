@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Aug 30 21:44:24 2020 as: nmap -Pn -p 80 -&#45;script *http* -oA 2020-08-30_214424_nmap_noPing_scripts_http_p80__10.11.1.133 10.11.1.133 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p 80 -&#45;script *http* -oA 2020-08-30_214424_nmap_noPing_scripts_http_p80__10.11.1.133 10.11.1.133" start="1598838264" startstr="Sun Aug 30 21:44:24 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="NSE" time="1598842845" percent="99.93" remaining="4" etc="1598842848"/>
+<taskprogress task="NSE" time="1598842903" percent="99.93" remaining="4" etc="1598842906"/>
+<taskprogress task="NSE" time="1598843046" percent="99.93" remaining="4" etc="1598843050"/>
+<taskprogress task="NSE" time="1598843049" percent="99.93" remaining="4" etc="1598843053"/>
+<taskprogress task="NSE" time="1598843056" percent="99.93" remaining="4" etc="1598843060"/>
+<host starttime="1598838264" endtime="1598853448"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.133" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Microsoft IIS 5.6" method="probed" conf="10"/><script id="http-apache-negotiation" output="mod_negotiation enabled."/><script id="http-auth-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.133&#xa;  url                     method&#xa;  http://10.11.1.133:80/  FORM&#xa;"/><script id="http-brute" output="  &#xa;  Path &quot;/&quot; does not require authentication"/><script id="http-chrono" output="Request times for /; avg: 202.13ms; min: 169.55ms; max: 296.78ms"/><script id="http-comments-displayer" output="Couldn&apos;t find any comments."/><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.133&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://10.11.1.133:80/&#xa;    Form id: &#xa;    Form action: login.asp&#xa;"/><script id="http-date" output="Mon, 31 Aug 2020 01:44:25 GMT; 0s from local time."><elem key="date">2020-08-31T01:44:25+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="http-devframework" output="Couldn&apos;t determine the underlying framework or CMS. Try increasing &apos;httpspider.maxpagecount&apos; value to spider more pages."/><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /login.asp: Possible admin folder&#xa;  /bak/: Possible backup&#xa;  /iissamples/: Sample scripts w/ directory listing&#xa;  /login/: Login page&#xa;  /test.asp: Test page&#xa;  /test/: Test page&#xa;  /_vti_bin/: Frontpage file or folder&#xa;  /_vti_cnf/: Frontpage file or folder&#xa;  /_vti_pvt/: Frontpage file or folder&#xa;  /_vti_txt/: Frontpage file or folder&#xa;  /index/: Potentially interesting folder&#xa;"/><script id="http-errors" output="Couldn&apos;t find any error pages."/><script id="http-feed" output="Couldn&apos;t find any feeds."/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-form-fuzzer" output="&#xa;  Path: / Action: login.asp&#xa;    username&#xa;      string lengths that caused errors:&#xa;        309555&#xa;      integer lengths that caused errors:&#xa;        300314, 305425, 306463, 307549&#xa;"/><script id="http-headers" output="&#xa;  Date: Mon, 31 Aug 2020 02:14:30 GMT&#xa;  Server: Microsoft IIS 5.6&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=UTF-8&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-malware-host" output="Host appears to be clean"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="Microsoft IIS 5.6"><elem>Microsoft IIS 5.6</elem>
+</script><script id="http-sitemap-generator" output="&#xa;  Directory structure:&#xa;    /&#xa;      Other: 1; asp: 1&#xa;  Longest directory structure:&#xa;    Depth: 0&#xa;    Dir: /&#xa;  Total files found (by extension):&#xa;    Other: 1; asp: 1&#xa;"/><script id="http-slowloris" output="false">false</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="Let&apos;s play with the offsec team"><elem key="title">Let&apos;s play with the offsec team</elem>
+</script><script id="http-traceroute" output="&#xa;  Possible reverse proxy detected.&#xa;"/><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-vhosts" output="&#xa;127 names had status 200"/><script id="http-xssed" output="No previously reported XSS vuln."/></port>
+</ports>
+<times srtt="31327" rttvar="31327" to="156635"/>
+</host>
+<runstats><finished time="1598853448" timestr="Mon Aug 31 01:57:28 2020" elapsed="15184.30" summary="Nmap done at Mon Aug 31 01:57:28 2020; 1 IP address (1 host up) scanned in 15184.30 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

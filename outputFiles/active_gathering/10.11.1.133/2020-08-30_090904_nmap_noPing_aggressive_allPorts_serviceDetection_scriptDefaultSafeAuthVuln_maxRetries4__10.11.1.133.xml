@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Aug 30 09:21:07 2020 as: nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-30_090904_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.133 10.11.1.133 -->
+<nmaprun scanner="nmap" args="nmap -Pn -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-08-30_090904_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.133 10.11.1.133" start="1598793667" startstr="Sun Aug 30 09:21:07 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<prescript><script id="broadcast-dhcp-discover" output="&#xa;  Response 1 of 1: &#xa;    IP Offered: 192.168.0.21&#xa;    Server Identifier: 192.168.0.1&#xa;    Subnet Mask: 255.255.255.0&#xa;    Router: 192.168.0.1&#xa;    Domain Name Server: 75.75.75.75, 75.75.76.76"><table key="Response 1 of 1">
+<elem key="IP Offered">192.168.0.21</elem>
+<elem key="Server Identifier">192.168.0.1</elem>
+<elem key="Subnet Mask">255.255.255.0</elem>
+<elem key="Router">192.168.0.1</elem>
+<table key="Domain Name Server">
+<elem>75.75.75.75</elem>
+<elem>75.75.76.76</elem>
+</table>
+</table>
+</script><script id="broadcast-igmp-discovery" output="&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.2&#xa;    Description: All Routers on this Subnet&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.22&#xa;    Description: IGMP&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.184&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  192.168.0.254&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  Use the newtargets script-arg to add the results as targets&#xa;"/><script id="broadcast-listener" output="&#xa;  ether&#xa;      ARP Request&#xa;        sender ip     sender mac         target ip&#xa;        192.168.0.27  ac:e0:10:b8:75:c6  192.168.0.29&#xa;  udp&#xa;      DHCP&#xa;        srv ip       cli ip        mask           gw           dns                       vendor&#xa;        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;      Netbios&#xa;        Query&#xa;          ip            query&#xa;          192.168.0.34  &#xa;"/><script id="broadcast-netbios-master-browser" output="&#xa;ip  server  domain&#xa;"/><script id="broadcast-upnp-info" output="&#xa;  239.255.255.250&#xa;      Server: Linux 2.6 DLNADOC/1.50 UPnP/1.0 ReadyDLNA/1.1.0&#xa;      Location: http://192.168.0.254:8200/rootDesc.xml&#xa;"/><script id="eap-info" output="please specify an interface with -e"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/></prescript><host starttime="1598793708" endtime="1598793936"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.133" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Microsoft IIS 5.6" servicefp="SF-Port80-TCP:V=7.80%I=7%D=8/30%Time=5F4BA85D%P=x86_64-pc-linux-gnu%r(GetRequest,325,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Sun,\x2030\x20Aug\x202020\x2013:23:41\x20GMT\r\nServer:\x20Microsoft\x20IIS\x205\.6\r\nVary:\x20Accept-Encoding\r\nContent-Length:\x20619\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Let&apos;s\x20play\x20with\x20the\x20offsec\x20team&lt;/title&gt;\n&lt;/head&gt;\n&lt;body\x20style=\&quot;color:\x20#FFFFFF;\x20background-color:\x20#000000;font-family:\x20verdana;\&quot;&gt;\n&lt;center&gt;\n&lt;div\x20style=\&quot;width:600px;height:399px;background-image:url\(offsec-team\.jpg\);\&quot;&gt;\n&lt;form\x20method=\&quot;post\&quot;\x20action=\&quot;login\.asp\&quot;&gt;\n&lt;table\x20style=\&quot;padding-top:170px;\&quot;&gt;\n&lt;tr&gt;\n&lt;td&gt;Username:\x20&lt;/td&gt;&lt;td&gt;&lt;input\x20type=\&quot;text\&quot;\x20name=\&quot;username\&quot;\x20value=\&quot;\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Password:\x20&lt;/td&gt;&lt;td&gt;&lt;input\x20type=\&quot;password\&quot;\x20name=\&quot;password\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td\x20colspan=\&quot;2\&quot;\x20align=\&quot;right\&quot;&gt;&lt;input\x20type=\&quot;submit\&quot;\x20name=\&quot;submit\&quot;\x20value=\&quot;Enter\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/table&gt;\n&lt;/form&gt;\n&lt;/div&gt;\n&lt;/center&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;)%r(HTTPOptions,325,&quot;HTTP/1\.1\x20200\x20OK\r\nDate:\x20Sun,\x2030\x20Aug\x202020\x2013:23:41\x20GMT\r\nServer:\x20Microsoft\x20IIS\x205\.6\r\nVary:\x20Accept-Encoding\r\nContent-Length:\x20619\r\nConnection:\x20close\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\n&lt;html&gt;\n&lt;head&gt;\n&lt;title&gt;Let&apos;s\x20play\x20with\x20the\x20offsec\x20team&lt;/title&gt;\n&lt;/head&gt;\n&lt;body\x20style=\&quot;color:\x20#FFFFFF;\x20background-color:\x20#000000;font-family:\x20verdana;\&quot;&gt;\n&lt;center&gt;\n&lt;div\x20style=\&quot;width:600px;height:399px;background-image:url\(offsec-team\.jpg\);\&quot;&gt;\n&lt;form\x20method=\&quot;post\&quot;\x20action=\&quot;login\.asp\&quot;&gt;\n&lt;table\x20style=\&quot;padding-top:170px;\&quot;&gt;\n&lt;tr&gt;\n&lt;td&gt;Username:\x20&lt;/td&gt;&lt;td&gt;&lt;input\x20type=\&quot;text\&quot;\x20name=\&quot;username\&quot;\x20value=\&quot;\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Password:\x20&lt;/td&gt;&lt;td&gt;&lt;input\x20type=\&quot;password\&quot;\x20name=\&quot;password\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td\x20colspan=\&quot;2\&quot;\x20align=\&quot;right\&quot;&gt;&lt;input\x20type=\&quot;submit\&quot;\x20name=\&quot;submit\&quot;\x20value=\&quot;Enter\&quot;&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/table&gt;\n&lt;/form&gt;\n&lt;/div&gt;\n&lt;/center&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&quot;);" method="probed" conf="10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="fingerprint-strings" output="&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.1 200 OK&#xa;    Date: Sun, 30 Aug 2020 13:23:41 GMT&#xa;    Server: Microsoft IIS 5.6&#xa;    Vary: Accept-Encoding&#xa;    Content-Length: 619&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Let&apos;s play with the offsec team&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body style=&quot;color: #FFFFFF; background-color: #000000;font-family: verdana;&quot;&gt;&#xa;    &lt;center&gt;&#xa;    &lt;div style=&quot;width:600px;height:399px;background-image:url(offsec-team.jpg);&quot;&gt;&#xa;    &lt;form method=&quot;post&quot; action=&quot;login.asp&quot;&gt;&#xa;    &lt;table style=&quot;padding-top:170px;&quot;&gt;&#xa;    &lt;tr&gt;&#xa;    &lt;td&gt;Username: &lt;/td&gt;&lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;username&quot; value=&quot;&quot;&gt;&lt;/td&gt;&#xa;    &lt;/tr&gt;&#xa;    &lt;tr&gt;&#xa;    &lt;td&gt;Password: &lt;/td&gt;&lt;td&gt;&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;/td&gt;&#xa;    &lt;/tr&gt;&#xa;    &lt;tr&gt;&#xa;    colspan=&quot;2&quot; align=&quot;right&quot;&gt;&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Enter&quot;&gt;&lt;/td&gt;&#xa;    &lt;/tr&gt;&#xa;    &lt;/table&gt;&#xa;    &lt;/form&gt;&#xa;    &lt;/div&gt;&#xa;    &lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;"><elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.1 200 OK&#xa;    Date: Sun, 30 Aug 2020 13:23:41 GMT&#xa;    Server: Microsoft IIS 5.6&#xa;    Vary: Accept-Encoding&#xa;    Content-Length: 619&#xa;    Connection: close&#xa;    Content-Type: text/html; charset=UTF-8&#xa;    &lt;html&gt;&#xa;    &lt;head&gt;&#xa;    &lt;title&gt;Let&apos;s play with the offsec team&lt;/title&gt;&#xa;    &lt;/head&gt;&#xa;    &lt;body style=&quot;color: #FFFFFF; background-color: #000000;font-family: verdana;&quot;&gt;&#xa;    &lt;center&gt;&#xa;    &lt;div style=&quot;width:600px;height:399px;background-image:url(offsec-team.jpg);&quot;&gt;&#xa;    &lt;form method=&quot;post&quot; action=&quot;login.asp&quot;&gt;&#xa;    &lt;table style=&quot;padding-top:170px;&quot;&gt;&#xa;    &lt;tr&gt;&#xa;    &lt;td&gt;Username: &lt;/td&gt;&lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;username&quot; value=&quot;&quot;&gt;&lt;/td&gt;&#xa;    &lt;/tr&gt;&#xa;    &lt;tr&gt;&#xa;    &lt;td&gt;Password: &lt;/td&gt;&lt;td&gt;&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;/td&gt;&#xa;    &lt;/tr&gt;&#xa;    &lt;tr&gt;&#xa;    colspan=&quot;2&quot; align=&quot;right&quot;&gt;&lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Enter&quot;&gt;&lt;/td&gt;&#xa;    &lt;/tr&gt;&#xa;    &lt;/table&gt;&#xa;    &lt;/form&gt;&#xa;    &lt;/div&gt;&#xa;    &lt;/center&gt;&#xa;    &lt;/body&gt;&#xa;    &lt;/html&gt;</elem>
+</script><script id="http-apache-negotiation" output="mod_negotiation enabled."/><script id="http-auth-finder" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.133&#xa;  url                     method&#xa;  http://10.11.1.133:80/  FORM&#xa;"/><script id="http-comments-displayer" output="Couldn&apos;t find any comments."/><script id="http-csrf" output="&#xa;Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.133&#xa;  Found the following possible CSRF vulnerabilities: &#xa;    &#xa;    Path: http://10.11.1.133:80/&#xa;    Form id: &#xa;    Form action: login.asp&#xa;"/><script id="http-date" output="Sun, 30 Aug 2020 13:25:12 GMT; 0s from local time."><elem key="date">2020-08-30T13:25:12+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="http-dombased-xss" output="Couldn&apos;t find any DOM based XSS."/><script id="http-enum" output="&#xa;  /login.asp: Possible admin folder&#xa;  /bak/: Possible backup&#xa;  /iissamples/: Sample scripts w/ directory listing&#xa;  /login/: Login page&#xa;  /test.asp: Test page&#xa;  /test/: Test page&#xa;  /_vti_bin/: Frontpage file or folder&#xa;  /_vti_cnf/: Frontpage file or folder&#xa;  /_vti_pvt/: Frontpage file or folder&#xa;  /_vti_txt/: Frontpage file or folder&#xa;  /index/: Potentially interesting folder&#xa;"/><script id="http-fetch" output="Please enter the complete path of the directory to save data in."><elem key="ERROR">Please enter the complete path of the directory to save data in.</elem>
+</script><script id="http-headers" output="&#xa;  Date: Sun, 30 Aug 2020 13:25:19 GMT&#xa;  Server: Microsoft IIS 5.6&#xa;  Connection: close&#xa;  Content-Type: text/html; charset=UTF-8&#xa;  &#xa;  (Request type: HEAD)&#xa;"/><script id="http-mobileversion-checker" output="No mobile version detected."/><script id="http-referer-checker" output="Couldn&apos;t find any cross-domain scripts."/><script id="http-security-headers" output="&#xa;"></script><script id="http-server-header" output="Microsoft IIS 5.6"><elem>Microsoft IIS 5.6</elem>
+</script><script id="http-stored-xss" output="Couldn&apos;t find any stored XSS vulnerabilities."/><script id="http-title" output="Let&apos;s play with the offsec team"><elem key="title">Let&apos;s play with the offsec team</elem>
+</script><script id="http-useragent-tester" output="&#xa;  Status for browser useragent: 200&#xa;  Allowed User Agents: &#xa;    Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)&#xa;    libwww&#xa;    lwp-trivial&#xa;    libcurl-agent/1.0&#xa;    PHP/&#xa;    Python-urllib/2.5&#xa;    GT::WWW&#xa;    Snoopy&#xa;    MFC_Tear_Sample&#xa;    HTTP::Lite&#xa;    PHPCrawl&#xa;    URI::Fetch&#xa;    Zend_Http_Client&#xa;    http client&#xa;    PECL::HTTP&#xa;    Wget/1.13.4 (linux-gnu)&#xa;    WWW-Mechanize/1.34"><elem key="Status for browser useragent">200</elem>
+<table key="Allowed User Agents">
+<elem>Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)</elem>
+<elem>libwww</elem>
+<elem>lwp-trivial</elem>
+<elem>libcurl-agent/1.0</elem>
+<elem>PHP/</elem>
+<elem>Python-urllib/2.5</elem>
+<elem>GT::WWW</elem>
+<elem>Snoopy</elem>
+<elem>MFC_Tear_Sample</elem>
+<elem>HTTP::Lite</elem>
+<elem>PHPCrawl</elem>
+<elem>URI::Fetch</elem>
+<elem>Zend_Http_Client</elem>
+<elem>http client</elem>
+<elem>PECL::HTTP</elem>
+<elem>Wget/1.13.4 (linux-gnu)</elem>
+<elem>WWW-Mechanize/1.34</elem>
+</table>
+</script><script id="http-xssed" output="No previously reported XSS vuln."/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Linux 3.10 - 3.12" accuracy="91" line="63130">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="91" line="67202">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.9" accuracy="91" line="67695">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.22" accuracy="86" line="49721">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10" accuracy="86" line="63039">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 3.16" accuracy="86" line="63168">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 4.11" accuracy="85" line="63230">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.11 - 4.1" accuracy="85" line="63416">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="85" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="2366130" lastboot="Mon Aug  3 00:10:06 2020"/>
+<distance value="2"/>
+<tcpsequence index="261" difficulty="Good luck!" values="109E63C4,B67F5B8E,348545E,A8A6CE6B,B06B782E,44B69C2E"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="8D07E0C2,8D07E123,8D07E188,8D07E1F4,8D07E257,8D07E2B4"/>
+<hostscript><script id="fcrdns" output="FAIL (No PTR record)"><table key="&lt;none&gt;">
+<elem key="status">fail</elem>
+<elem key="reason">No PTR record</elem>
+</table>
+</script><script id="firewalk" output="&#xa;HOP  HOST           PROTOCOL  BLOCKED PORTS&#xa;1    192.168.119.1  tcp       1-10&#xa;"/><script id="ipidseq" output="All zeros"/><script id="path-mtu" output="PMTU == 1500"/><script id="traceroute-geolocation" output="&#xa;  HOP  RTT    ADDRESS        GEOLOCATION&#xa;  1    23.10  192.168.119.1  - ,- &#xa;  2    23.35  10.11.1.133    - ,- &#xa;"><table>
+<elem key="hop">1</elem>
+<elem key="rtt">23.10</elem>
+<elem key="ip">192.168.119.1</elem>
+</table>
+<table>
+<elem key="hop">2</elem>
+<elem key="rtt">23.35</elem>
+<elem key="ip">10.11.1.133</elem>
+</table>
+</script><script id="unusual-port" output="&#xa;  WARNING: this script depends on Nmap&apos;s service/version detection (-sV)&#xa;"/></hostscript><trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="192.168.119.1" rtt="23.10"/>
+<hop ttl="2" ipaddr="10.11.1.133" rtt="23.35"/>
+</trace>
+<times srtt="21870" rttvar="2140" to="100000"/>
+</host>
+<postscript><script id="reverse-index" output="&#xa;  80/tcp: 10.11.1.133"><table key="80/tcp">
+<elem>10.11.1.133</elem>
+</table>
+</script></postscript><runstats><finished time="1598793936" timestr="Sun Aug 30 09:25:36 2020" elapsed="268.73" summary="Nmap done at Sun Aug 30 09:25:36 2020; 1 IP address (1 host up) scanned in 268.73 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

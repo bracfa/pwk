@@ -1,0 +1,20 @@
+# Nmap 7.80 scan initiated Sun Aug 30 09:54:33 2020 as: nmap -Pn --script=http-enum -oA 2020-08-30_090904_nmap_scripts_httpEnum__10.11.1.133 10.11.1.133
+Nmap scan report for 10.11.1.133
+Host is up (0.029s latency).
+Not shown: 999 filtered ports
+PORT   STATE SERVICE
+80/tcp open  http
+| http-enum: 
+|   /login.asp: Possible admin folder
+|   /bak/: Possible backup
+|   /iissamples/: Sample scripts w/ directory listing
+|   /login/: Login page
+|   /test.asp: Test page
+|   /test/: Test page
+|   /_vti_bin/: Frontpage file or folder
+|   /_vti_cnf/: Frontpage file or folder
+|   /_vti_pvt/: Frontpage file or folder
+|   /_vti_txt/: Frontpage file or folder
+|_  /index/: Potentially interesting folder
+
+# Nmap done at Sun Aug 30 09:54:42 2020 -- 1 IP address (1 host up) scanned in 8.41 seconds

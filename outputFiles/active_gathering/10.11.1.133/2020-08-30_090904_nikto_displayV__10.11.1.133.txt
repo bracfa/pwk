@@ -1,0 +1,19 @@
+- Nikto v2.1.6/2.1.5
++ Target Host: 10.11.1.133
++ Target Port: 80
++ GET The anti-clickjacking X-Frame-Options header is not present.
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ GET Uncommon header 'tcn' found, with contents: list
++ GET Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. See http://www.wisec.it/sectou.php?id=4698ebdc59d15. The following alternatives for 'index' were found: index.asp
++ ZFTJWXVR Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ OSVDB-3092: GET /_vti_txt/: FrontPage directory found.
++ OSVDB-3092: GET /bak/: This might be interesting...
++ OSVDB-3092: GET /login/: This might be interesting...
++ OSVDB-3092: GET /test/: This might be interesting...
++ OSVDB-3233: GET /_vti_bin/: FrontPage directory found.
++ OSVDB-474: GET /Sites/Knowledge/Membership/Inspired/ViewCode.asp: The default ViewCode.asp can allow an attacker to read any file on the machine. CVE-1999-0737. MS99-013.
++ OSVDB-7: GET /iissamples/exair/howitworks/Code.asp: Scripts within the Exair package on IIS 4 can be used for a DoS against the server. CVE-1999-0449. BID-193.
++ OSVDB-3233: GET /icons/README: Apache default file found.
++ GET /login.asp: Admin login page/section found.
++ OSVDB-3092: GET /test.asp: This might be interesting...

@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Mon Aug 31 01:57:28 2020 as: nmap -Pn -p 80 --script *sql* -oA 2020-08-30_214424_nmap_noPing_scripts_sql_p80__10.11.1.133 10.11.1.133
+Nmap scan report for 10.11.1.133
+Host is up (0.018s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Mon Aug 31 01:57:34 2020 -- 1 IP address (1 host up) scanned in 5.65 seconds
