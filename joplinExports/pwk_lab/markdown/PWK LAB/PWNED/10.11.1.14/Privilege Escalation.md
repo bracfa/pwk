@@ -81,3 +81,8 @@ On attack machine, it is located at: `/home/kali/gitWorkspace/pwk/outputFiles/ac
 21. Run upnphost, you'll see that you have system on the netcat listener port 6789. You'll have 30 seconds to get the proof.txt
 `net start upnphost`
 ![f779a950a57533c9206a323a171f6937.png](../../../_resources/80e8faae4608439da038bf4b80724b8e.png)
+
+22. To get a shell lasting more than 30 min, follow this. **This is still a TO-DO on this box!!**
+![IMG_1859.PNG](../../../_resources/cf91c7e9e3e64c2b856ecb90d0072624.PNG)
+
+
