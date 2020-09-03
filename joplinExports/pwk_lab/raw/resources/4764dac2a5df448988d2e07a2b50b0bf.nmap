@@ -1,0 +1,100 @@
+# Nmap 7.80 scan initiated Sun Aug 30 21:44:24 2020 as: nmap -Pn -p 80 --script *http* -oA 2020-08-30_214424_nmap_noPing_scripts_http_p80__10.11.1.133 10.11.1.133
+Nmap scan report for 10.11.1.133
+Host is up (0.031s latency).
+
+PORT   STATE SERVICE
+80/tcp open  http
+|_http-apache-negotiation: mod_negotiation enabled.
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.133
+|   url                     method
+|_  http://10.11.1.133:80/  FORM
+| http-brute:   
+|_  Path "/" does not require authentication
+|_http-chrono: Request times for /; avg: 202.13ms; min: 169.55ms; max: 296.78ms
+|_http-comments-displayer: Couldn't find any comments.
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.133
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.11.1.133:80/
+|     Form id: 
+|_    Form action: login.asp
+|_http-date: Mon, 31 Aug 2020 01:44:25 GMT; 0s from local time.
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /login.asp: Possible admin folder
+|   /bak/: Possible backup
+|   /iissamples/: Sample scripts w/ directory listing
+|   /login/: Login page
+|   /test.asp: Test page
+|   /test/: Test page
+|   /_vti_bin/: Frontpage file or folder
+|   /_vti_cnf/: Frontpage file or folder
+|   /_vti_pvt/: Frontpage file or folder
+|   /_vti_txt/: Frontpage file or folder
+|_  /index/: Potentially interesting folder
+|_http-errors: Couldn't find any error pages.
+|_http-feed: Couldn't find any feeds.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-form-fuzzer: 
+|   Path: / Action: login.asp
+|     username
+|       string lengths that caused errors:
+|         309555
+|       integer lengths that caused errors:
+|_        300314, 305425, 306463, 307549
+| http-headers: 
+|   Date: Mon, 31 Aug 2020 02:14:30 GMT
+|   Server: Microsoft IIS 5.6
+|   Connection: close
+|   Content-Type: text/html; charset=UTF-8
+|   
+|_  (Request type: HEAD)
+|_http-malware-host: Host appears to be clean
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-mobileversion-checker: No mobile version detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-security-headers: 
+|_http-server-header: Microsoft IIS 5.6
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1; asp: 1
+|   Longest directory structure:
+|     Depth: 0
+|     Dir: /
+|   Total files found (by extension):
+|_    Other: 1; asp: 1
+|_http-slowloris: false
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: Let's play with the offsec team
+| http-traceroute: 
+|_  Possible reverse proxy detected.
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-vhosts: 
+|_127 names had status 200
+|_http-xssed: No previously reported XSS vuln.
+
+# Nmap done at Mon Aug 31 01:57:28 2020 -- 1 IP address (1 host up) scanned in 15184.30 seconds
