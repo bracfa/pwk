@@ -1,0 +1,34 @@
+Credentials
+
+Credentials
+
+# Operating System
+
+
+# Services
+
+
+id: 99cd3f2c5a694185bbe25fc5edbca9ce
+parent_id: 88f5357951ed4c568401aca83a12b53f
+created_time: 2020-08-30T08:07:36.438Z
+updated_time: 2020-08-30T08:07:36.438Z
+is_conflict: 0
+latitude: 0.00000000
+longitude: 0.00000000
+altitude: 0.0000
+author: 
+source_url: 
+is_todo: 0
+todo_due: 0
+todo_completed: 0
+source: joplin-desktop
+source_application: net.cozic.joplin-desktop
+application_data: 
+order: 0
+user_created_time: 2020-08-30T08:07:36.438Z
+user_updated_time: 2020-08-30T08:07:36.438Z
+encryption_cipher_text: 
+encryption_applied: 0
+markup_language: 1
+is_shared: 0
+type_: 1
