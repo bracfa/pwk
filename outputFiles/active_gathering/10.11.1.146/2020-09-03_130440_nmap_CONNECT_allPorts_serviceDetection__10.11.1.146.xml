@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Sep  3 13:06:44 2020 as: nmap -sV -sT -p- -oA 2020-09-03_130440_nmap_CONNECT_allPorts_serviceDetection__10.11.1.146 10.11.1.146 -->
+<nmaprun scanner="nmap" args="nmap -sV -sT -p- -oA 2020-09-03_130440_nmap_CONNECT_allPorts_serviceDetection__10.11.1.146 10.11.1.146" start="1599152804" startstr="Thu Sep  3 13:06:44 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1599152804" endtime="1599152920"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.11.1.146" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4p1 Ubuntu 10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="SUSIE" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="SUSIE" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+</ports>
+<times srtt="24093" rttvar="4467" to="100000"/>
+</host>
+<runstats><finished time="1599152920" timestr="Thu Sep  3 13:08:40 2020" elapsed="116.28" summary="Nmap done at Thu Sep  3 13:08:40 2020; 1 IP address (1 host up) scanned in 116.28 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

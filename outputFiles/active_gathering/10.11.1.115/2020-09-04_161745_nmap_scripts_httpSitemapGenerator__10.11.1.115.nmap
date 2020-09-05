@@ -1,0 +1,50 @@
+# Nmap 7.80 scan initiated Fri Sep  4 17:24:37 2020 as: nmap -Pn --script=http-sitemap-generator -oA 2020-09-04_161745_nmap_scripts_httpSitemapGenerator__10.11.1.115 10.11.1.115
+Nmap scan report for 10.11.1.115
+Host is up (0.072s latency).
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+25/tcp    open  smtp
+80/tcp    open  http
+| http-sitemap-generator: 
+|   Directory structure:
+|     /icons/
+|       gif: 2
+|     /manual/
+|       Other: 1; html: 7
+|     /manual/howto/
+|       html: 1
+|     /manual/images/
+|       gif: 1
+|     /manual/misc/
+|       html: 2
+|     /manual/mod/
+|       html: 2
+|     /manual/programs/
+|       Other: 1
+|     /manual/ssl/
+|       Other: 1
+|     /manual/vhosts/
+|       Other: 1
+|   Longest directory structure:
+|     Depth: 2
+|     Dir: /manual/mod/
+|   Total files found (by extension):
+|_    Other: 4; gif: 3; html: 12
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+143/tcp   open  imap
+199/tcp   open  smux
+443/tcp   open  https
+| http-sitemap-generator: 
+|   Directory structure:
+|   Longest directory structure:
+|     Depth: 0
+|     Dir: /
+|   Total files found (by extension):
+|_    
+3306/tcp  open  mysql
+32768/tcp open  filenet-tms
+
+# Nmap done at Fri Sep  4 17:24:43 2020 -- 1 IP address (1 host up) scanned in 5.39 seconds

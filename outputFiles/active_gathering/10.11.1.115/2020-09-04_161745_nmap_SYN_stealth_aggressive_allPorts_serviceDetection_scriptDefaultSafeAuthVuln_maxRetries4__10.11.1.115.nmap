@@ -1,0 +1,643 @@
+# Nmap 7.80 scan initiated Fri Sep  4 16:39:22 2020 as: nmap -sS -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-09-04_161745_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.115 10.11.1.115
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 192.168.0.21
+|     Server Identifier: 192.168.0.1
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.0.1
+|_    Domain Name Server: 75.75.75.75, 75.75.76.76
+| broadcast-igmp-discovery: 
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.2
+|     Description: All Routers on this Subnet
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.22
+|     Description: IGMP
+|   192.168.0.29
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|   192.168.0.29
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|   192.168.0.254
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+| broadcast-listener: 
+|   ether
+|       EIGRP Hello
+|         
+|   udp
+|       DHCP
+|         srv ip       cli ip        mask           gw           dns                       vendor
+|         192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|_        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Unspecified, UPnP/1.0, Unspecified
+|_      Location: http://192.168.0.254:49152/wps_device.xml
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+Nmap scan report for 10.11.1.115
+Host is up (0.020s latency).
+Not shown: 65524 closed ports
+PORT      STATE SERVICE     VERSION
+21/tcp    open  ftp         vsftpd 1.1.3
+|_banner: 220 (vsFTPd 1.1.3)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxr-xr-x    2 0        0            4096 Feb 28  2003 pub
+|_sslv2-drown: 
+22/tcp    open  ssh         OpenSSH 3.5p1 (protocol 1.99)
+|_banner: SSH-1.99-OpenSSH_3.5p1
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|     password
+|_    keyboard-interactive
+| ssh-hostkey: 
+|   1024 36:70:a4:9f:32:47:ac:57:3f:ef:a1:ec:0b:ba:44:1b (RSA1)
+|   1024 64:79:7d:c6:a2:63:32:54:f0:d9:2b:f3:5d:c7:d2:69 (DSA)
+|_  1024 48:fb:39:3d:30:82:50:de:66:69:c5:ca:45:62:c0:dc (RSA)
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|   server_host_key_algorithms: (2)
+|   encryption_algorithms: (8)
+|   mac_algorithms: (6)
+|_  compression_algorithms: (2)
+|_sshv1: Server supports SSHv1
+25/tcp    open  smtp?
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_smtp-commands: Couldn't establish connection on port 25
+| smtp-enum-users: 
+|_  Couldn't establish connection on port 25
+|_sslv2-drown: 
+80/tcp    open  http        Apache httpd 2.0.40 ((Red Hat Linux))
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.115
+|     
+|     Path: http://10.11.1.115:80/manual/howto/auth.html
+|     Line number: 44
+|     Comment: 
+|         <!-- INDEX END -->
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 67
+|     Comment: 
+|         /*; q=0.8, image/gif; q=0.6,
+|                 image/jpeg; q=0.6, image/*; q=0.5, */
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 401
+|     Comment: 
+|         /*, */
+|     
+|     Path: http://10.11.1.115:80/manual/style/manual.css
+|     Line number: 11
+|     Comment: 
+|         <!--
+|         body { color: #000000; background-color: #FFFFFF; }
+|         a:link { color: #0000CC; }
+|         -->
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 339
+|     Comment: 
+|         /*</code> media type
+|                   but not explicitly associated with a particular charset
+|                   are assumed to be in ISO-8859-1.</li>
+|         
+|                   <li>Select those variants which have associated charset
+|                   media parameters that are <em>not</em> ISO-8859-1. If
+|                   there are no such variants, select all variants
+|                   instead.</li>
+|         
+|                   <li>Select the variants with the best encoding. If there
+|                   are variants with an encoding that is acceptable to the
+|                   user-agent, select only these variants. Otherwise if
+|                   there is a mix of encoded and non-encoded variants,
+|                   select only the unencoded variants. If either all
+|                   variants are encoded or all variants are not encoded,
+|                   select all variants.</li>
+|         
+|                   <li>Select the variants with the smallest content
+|                   length.</li>
+|         
+|                   <li>Select the first variant of those remaining. This
+|                   will be either the first listed in the type-map file, or
+|                   when variants are read from the directory, the one whose
+|                   file name comes first when sorted using ASCII code
+|                   order.</li>
+|                 </ol>
+|               </li>
+|         
+|               <li>The algorithm has now selected one 'best' variant, so
+|               return it as the response. The HTTP response header Vary is
+|               set to indicate the dimensions of negotiation (browsers and
+|               caches can use this information when caching the resource).
+|               End.</li>
+|         
+|               <li>To get here means no variant was selected (because none
+|               are acceptable to the browser). Return a 406 status (meaning
+|               "No acceptable representation") with a response body
+|               consisting of an HTML document listing the available
+|               variants. Also set the HTTP Vary header to indicate the
+|               dimensions of variance.</li>
+|             </ol>
+|         
+|             <h2><a id="better" name="better">Fiddling with Quality
+|             Values</a></h2>
+|         
+|             <p>Apache sometimes changes the quality values from what would
+|             be expected by a strict interpretation of the Apache
+|             negotiation algorithm above. This is to get a better result
+|             from the algorithm for browsers which do not send full or
+|             accurate information. Some of the most popular browsers send
+|             Accept header information which would otherwise result in the
+|             selection of the wrong variant in many cases. If a browser
+|             sends full and correct information these fiddles will not be
+|             applied.</p>
+|         
+|             <h3>Media Types and Wildcards</h3>
+|         
+|             <p>The Accept: request header indicates preferences for media
+|             types. It can also include 'wildcard' media types, such as
+|             "image/*" or "*/
+|     
+|     Path: http://10.11.1.115:80/manual/mod/core.html
+|     Line number: 321
+|     Comment: 
+|         /*/public_html&gt;</code> will not match
+|             <code>/home/user/public_html</code>, but <code>&lt;Directory
+|             /home/*/
+|     
+|     Path: http://10.11.1.115:80/manual/howto/auth.html
+|     Line number: 24
+|     Comment: 
+|         <!-- INDEX BEGIN -->
+|     
+|     Path: http://10.11.1.115:80/manual/howto/auth.html
+|     Line number: 11
+|     Comment: 
+|         <!-- Background white, links blue (unvisited), navy (visited), red (active) -->
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 413
+|     Comment: 
+|         /* wildcard has exactly equal preference
+|             to all the other types, so they are not being preferred. The
+|             browser should really have sent a request with a lower quality
+|             (preference) value for *.*, such as: 
+|         <pre>
+|           Accept: text/html, text/plain, image/gif, image/jpeg, */
+|     
+|     Path: http://10.11.1.115:80/manual/index.html
+|     Line number: 77
+|     Comment: 
+|         <!--
+|                           <table cellspacing="0" cellpadding="0" border="0" width="600">
+|                           <tr>
+|                           <td align="center"><hr size="1" noshade width="100%">
+|                           </td>
+|                           </tr>
+|                           </table>
+|                           -->
+|     
+|     Path: http://10.11.1.115:80/manual/programs/apachectl.html
+|     Line number: 22
+|     Comment: 
+|         <!-- This document was autogenerated from the man page -->
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 428
+|     Comment: 
+|         /*" to 0.02 (so these are
+|             preferred over matches against "*/
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 421
+|     Comment: 
+|         /* is given a
+|             low preference of 0.01, so other types will only be returned if
+|             no variant matches an explicitly listed type. 
+|         
+|             <p>If the Accept: header contains <em>no</em> q factors at all,
+|             Apache sets the q value of "*/
+|     
+|     Path: http://10.11.1.115:80/manual/mod/mod_access.html
+|     Line number: 1
+|     Comment: 
+|         <!--
+|                 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+|                       This file is generated from xml source: DO NOT EDIT
+|                 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+|               -->
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 404
+|     Comment: 
+|         /*" is redundant).
+|             Some browsers routinely send wildcards in addition to explicit
+|             types they can handle. For example: 
+|         <pre>
+|_          Accept: text/html, text/plain, image/gif, image/jpeg, */
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.115
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://10.11.1.115:80/manual/index.html
+|     Form id: 
+|_    Form action: http://search.apache.org/
+|_http-date: Fri, 04 Sep 2020 20:44:41 GMT; +15s from local time.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /webmail/src/login.php: SquirrelMail
+|   /webmail/images/sm_logo.png: SquirrelMail
+|   /icons/: Potentially interesting directory w/ listing on 'apache/2.0.40'
+|   /manual/: Potentially interesting folder
+|_  /usage/: Potentially interesting folder
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-grep: 
+|   (1) http://10.11.1.115:80/: 
+|     (1) email: 
+|       + webmaster@example.com
+|   (3) http://10.11.1.115:80/manual/mod/core.html: 
+|     (1) ip: 
+|       + 111.22.33.44
+|     (2) email: 
+|       + www-admin@foo.bar.com
+|       + webmaster@host.foo.com
+|   (2) http://10.11.1.115:80/manual/dns-caveats.html: 
+|     (2) email: 
+|       + webgirl@abc.dom
+|       + webguy@def.dom
+|   (2) http://10.11.1.115:80/manual/howto/auth.html: 
+|     (1) ip: 
+|       + 205.252.46.165
+|     (1) email: 
+|_      + rbowen@rcbowen.com
+| http-headers: 
+|   Date: Fri, 04 Sep 2020 20:45:10 GMT
+|   Server: Apache/2.0.40 (Red Hat Linux)
+|   Accept-Ranges: bytes
+|   Content-Length: 2898
+|   Connection: close
+|   Content-Type: text/html; charset=ISO-8859-1
+|   
+|_  (Request type: GET)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-mobileversion-checker: No mobile version detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-security-headers: 
+|_http-server-header: Apache/2.0.40 (Red Hat Linux)
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: Test Page for the Apache Web Server on Red Hat Linux
+|_http-trace: TRACE is enabled
+| http-useragent-tester: 
+|   Status for browser useragent: 403
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  BID:49303  CVE:CVE-2011-3192
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://seclists.org/fulldisclosure/2011/Aug/175
+|       https://www.securityfocus.com/bid/49303
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+|_      https://www.tenable.com/plugins/nessus/55976
+|_http-xssed: No previously reported XSS vuln.
+111/tcp   open  rpcbind     2 (RPC #100000)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+139/tcp   open  netbios-ssn Samba smbd (workgroup: MYGROUP)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+143/tcp   open  imap        UW imapd 2001.315rh
+|_banner: * OK [CAPABILITY IMAP4REV1 LOGIN-REFERRALS STARTTLS AUTH=LOG...
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_sslv2-drown: 
+199/tcp   open  smux        Linux SNMP multiplexer
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+443/tcp   open  ssl/https   Apache/2.0.40 (Red Hat Linux)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.115
+|     
+|     Path: http://10.11.1.115:443/
+|     Line number: 11
+|     Comment: 
+|         <!--
+|         body { color: #000000; background-color: #FFFFFF; }
+|         a:link { color: #0000CC; }
+|_        -->
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-date: Fri, 04 Sep 2020 20:45:08 GMT; +15s from local time.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-grep: 
+|   (1) http://10.11.1.115:443/: 
+|     (1) email: 
+|_      + you@your.addr
+| http-headers: 
+|   Date: Fri, 04 Sep 2020 20:45:26 GMT
+|   Server: Apache/2.0.40 (Red Hat Linux)
+|   Vary: accept-language
+|   Accept-Ranges: bytes
+|   Content-Length: 986
+|   Connection: close
+|   Content-Type: text/html; charset=ISO-8859-1
+|   
+|_  (Request type: GET)
+|_http-mobileversion-checker: No mobile version detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     HSTS not configured in HTTPS Server
+|   Expires: 
+|_    Header: Expires: Fri, 04 Sep 2020 20:45:07 GMT
+|_http-server-header: Apache/2.0.40 (Red Hat Linux)
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: Bad request!
+| http-useragent-tester: 
+|   Status for browser useragent: 400
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+| http-vuln-cve2011-3192: 
+|   VULNERABLE:
+|   Apache byterange filter DoS
+|     State: VULNERABLE
+|     IDs:  BID:49303  CVE:CVE-2011-3192
+|       The Apache web server is vulnerable to a denial of service attack when numerous
+|       overlapping byte ranges are requested.
+|     Disclosure date: 2011-08-19
+|     References:
+|       https://seclists.org/fulldisclosure/2011/Aug/175
+|       https://www.securityfocus.com/bid/49303
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3192
+|_      https://www.tenable.com/plugins/nessus/55976
+|_http-xssed: No previously reported XSS vuln.
+| ssl-ccs-injection: 
+|   VULNERABLE:
+|   SSL/TLS MITM vulnerability (CCS Injection)
+|     State: VULNERABLE
+|     Risk factor: High
+|       OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h
+|       does not properly restrict processing of ChangeCipherSpec messages,
+|       which allows man-in-the-middle attackers to trigger use of a zero
+|       length master key in certain OpenSSL-to-OpenSSL communications, and
+|       consequently hijack sessions or obtain sensitive information, via
+|       a crafted TLS handshake, aka the "CCS Injection" vulnerability.
+|           
+|     References:
+|       http://www.cvedetails.com/cve/2014-0224
+|       http://www.openssl.org/news/secadv_20140605.txt
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0224
+|_ssl-date: 2020-09-04T20:51:14+00:00; +16s from scanner time.
+| ssl-dh-params: 
+|   VULNERABLE:
+|   Transport Layer Security (TLS) Protocol DHE_EXPORT Ciphers Downgrade MitM (Logjam)
+|     State: VULNERABLE
+|     IDs:  BID:74733  CVE:CVE-2015-4000
+|       The Transport Layer Security (TLS) protocol contains a flaw that is
+|       triggered when handling Diffie-Hellman key exchanges defined with
+|       the DHE_EXPORT cipher. This may allow a man-in-the-middle attacker
+|       to downgrade the security of a TLS session to 512-bit export-grade
+|       cryptography, which is significantly weaker, allowing the attacker
+|       to more easily break the encryption and monitor or tamper with
+|       the encrypted stream.
+|     Disclosure date: 2015-5-19
+|     Check results:
+|       EXPORT-GRADE DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: mod_ssl 2.0.x/512-bit MODP group with safe prime modulus
+|             Modulus Length: 512
+|             Generator Length: 8
+|             Public Key Length: 512
+|     References:
+|       https://www.securityfocus.com/bid/74733
+|       https://weakdh.org
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4000
+|   
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     State: VULNERABLE
+|       Transport Layer Security (TLS) services that use Diffie-Hellman groups
+|       of insufficient strength, especially those using one of a few commonly
+|       shared groups, may be susceptible to passive eavesdropping attacks.
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_DES_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: mod_ssl 2.0.x/1024-bit MODP group with safe prime modulus
+|             Modulus Length: 1024
+|             Generator Length: 8
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+| ssl-poodle: 
+|   VULNERABLE:
+|   SSL POODLE information leak
+|     State: VULNERABLE
+|     IDs:  BID:70574  CVE:CVE-2014-3566
+|           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+|           products, uses nondeterministic CBC padding, which makes it easier
+|           for man-in-the-middle attackers to obtain cleartext data via a
+|           padding-oracle attack, aka the "POODLE" issue.
+|     Disclosure date: 2014-10-14
+|     Check results:
+|       TLS_RSA_WITH_AES_128_CBC_SHA
+|     References:
+|       https://www.openssl.org/~bodo/ssl-poodle.pdf
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+|       https://www.imperialviolet.org/2014/10/14/poodle.html
+|_      https://www.securityfocus.com/bid/70574
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_RC4_64_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|_    SSL2_RC4_128_WITH_MD5
+|_sslv2-drown: ERROR: Script execution failed (use -d to debug)
+3306/tcp  open  mysql       MySQL (unauthorized)
+|_banner: H\x00\x00\x00\xFFj\x04Host '192.168.119.214' is not allowed ...
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_mysql-empty-password: Host '192.168.119.214' is not allowed to connect to this MySQL server
+|_mysql-vuln-cve2012-2122: ERROR: Script execution failed (use -d to debug)
+32768/tcp open  status      1 (RPC #100024)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_unusual-port: rpcbind unexpected on port tcp/32768
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=9/4%OT=21%CT=1%CU=37465%PV=Y%DS=2%DC=T%G=Y%TM=5F52A93C
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=CB%GCD=1%ISR=CF%TI=Z%II=I%TS=7)OPS(O1=M54D
+OS:ST11NW0%O2=M54DST11NW0%O3=M54DNNT11NW0%O4=M54DST11NW0%O5=M54DST11NW0%O6=
+OS:M54DST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R=Y%DF=
+OS:Y%T=40%W=16D0%O=M54DNNSNW0%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q
+OS:=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(
+OS:R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD
+OS:=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 2 hops
+Service Info: Host: tophat.acme.local; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 15s, deviation: 0s, median: 14s
+|_fcrdns: FAIL (No PTR record)
+|_ipidseq: All zeros
+|_msrpc-enum: Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [14]
+|_nbstat: NetBIOS name: TOPHAT, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+|_path-mtu: PMTU == 1500
+| qscan: 
+| PORT  FAMILY  MEAN (us)  STDDEV    LOSS (%)
+| 1     0       25800.00   12798.78  0.0%
+| 21    0       25272.70   15967.28  0.0%
+| 22    0       25076.30   16669.54  0.0%
+| 25    0       29627.50   19448.96  0.0%
+| 80    0       27646.44   22250.40  10.0%
+| 111   0       25781.30   17107.60  0.0%
+| 139   0       24317.20   14382.42  0.0%
+| 143   0       24699.70   16425.96  0.0%
+|_199   0       26736.50   19910.46  0.0%
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [14]
+| smb-mbenum: 
+|_  ERROR: Failed to connect to browser service: Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [14]
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [14]
+|_smb2-time: Protocol negotiation failed (SMB2)
+| traceroute-geolocation: 
+|   HOP  RTT    ADDRESS        GEOLOCATION
+|   1    21.21  192.168.119.1  - ,- 
+|_  2    21.58  10.11.1.115    - ,- 
+
+TRACEROUTE (using port 995/tcp)
+HOP RTT      ADDRESS
+1   21.21 ms 192.168.119.1
+2   21.58 ms 10.11.1.115
+
+Post-scan script results:
+| reverse-index: 
+|   21/tcp: 10.11.1.115
+|   22/tcp: 10.11.1.115
+|   25/tcp: 10.11.1.115
+|   80/tcp: 10.11.1.115
+|   111/tcp: 10.11.1.115
+|   139/tcp: 10.11.1.115
+|   143/tcp: 10.11.1.115
+|   199/tcp: 10.11.1.115
+|   443/tcp: 10.11.1.115
+|   3306/tcp: 10.11.1.115
+|_  32768/tcp: 10.11.1.115
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep  4 16:53:16 2020 -- 1 IP address (1 host up) scanned in 835.00 seconds

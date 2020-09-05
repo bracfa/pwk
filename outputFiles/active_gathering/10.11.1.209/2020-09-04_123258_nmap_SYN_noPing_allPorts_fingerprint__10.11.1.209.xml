@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Sep  4 14:34:07 2020 as: nmap -v -Pn -p- -O -oA 2020-09-04_123258_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.209 10.11.1.209 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -O -oA 2020-09-04_123258_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.209 10.11.1.209" start="1599244447" startstr="Fri Sep  4 14:34:07 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1599244447"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1599244447"/>
+<taskbegin task="SYN Stealth Scan" time="1599244447"/>
+<taskprogress task="SYN Stealth Scan" time="1599244478" percent="1.76" remaining="1735" etc="1599246212"/>
+<taskprogress task="SYN Stealth Scan" time="1599244508" percent="3.61" remaining="1628" etc="1599246136"/>
+<taskprogress task="SYN Stealth Scan" time="1599244562" percent="6.94" remaining="1542" etc="1599246103"/>
+<taskprogress task="SYN Stealth Scan" time="1599244634" percent="11.38" remaining="1456" etc="1599246090"/>
+<taskprogress task="SYN Stealth Scan" time="1599244709" percent="16.02" remaining="1374" etc="1599246082"/>
+<taskprogress task="SYN Stealth Scan" time="1599244790" percent="21.02" remaining="1289" etc="1599246079"/>
+<taskprogress task="SYN Stealth Scan" time="1599244871" percent="26.02" remaining="1206" etc="1599246076"/>
+<taskprogress task="SYN Stealth Scan" time="1599244952" percent="31.04" remaining="1122" etc="1599246074"/>
+<taskprogress task="SYN Stealth Scan" time="1599245033" percent="36.05" remaining="1040" etc="1599246072"/>
+<taskprogress task="SYN Stealth Scan" time="1599245114" percent="41.06" remaining="958" etc="1599246071"/>
+<taskprogress task="SYN Stealth Scan" time="1599245198" percent="46.24" remaining="874" etc="1599246071"/>
+<taskprogress task="SYN Stealth Scan" time="1599245279" percent="51.26" remaining="792" etc="1599246070"/>
+<taskprogress task="SYN Stealth Scan" time="1599245360" percent="56.28" remaining="710" etc="1599246069"/>
+<taskprogress task="SYN Stealth Scan" time="1599245444" percent="61.46" remaining="626" etc="1599246069"/>
+<taskprogress task="SYN Stealth Scan" time="1599245525" percent="66.48" remaining="544" etc="1599246069"/>
+<taskprogress task="SYN Stealth Scan" time="1599245606" percent="71.49" remaining="463" etc="1599246068"/>
+<taskprogress task="SYN Stealth Scan" time="1599245690" percent="76.68" remaining="379" etc="1599246068"/>
+<taskprogress task="SYN Stealth Scan" time="1599245771" percent="81.68" remaining="297" etc="1599246068"/>
+<taskprogress task="SYN Stealth Scan" time="1599245855" percent="86.86" remaining="213" etc="1599246068"/>
+<taskprogress task="SYN Stealth Scan" time="1599245936" percent="91.87" remaining="132" etc="1599246068"/>
+<taskprogress task="SYN Stealth Scan" time="1599246020" percent="97.01" remaining="49" etc="1599246068"/>
+<taskend task="SYN Stealth Scan" time="1599246116" extrainfo="65535 total ports"/>
+<host starttime="1599244447" endtime="1599246128"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.209" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65529">
+<extrareasons reason="resets" count="65529"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="515"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6787"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="smc-admin" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="ajp13" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="38786"/>
+<osmatch name="Oracle Solaris 11" accuracy="91" line="91774">
+<osclass type="general purpose" vendor="Oracle" osfamily="Solaris" osgen="11" accuracy="91"><cpe>cpe:/o:oracle:solaris:11</cpe></osclass>
+</osmatch>
+<osmatch name="Sun Solaris 9 or Oracle Solaris 10" accuracy="88" line="100768">
+<osclass type="general purpose" vendor="Sun" osfamily="Solaris" osgen="9" accuracy="88"><cpe>cpe:/o:sun:sunos:5.9</cpe></osclass>
+<osclass type="general purpose" vendor="Oracle" osfamily="Solaris" osgen="10" accuracy="88"><cpe>cpe:/o:oracle:solaris:10</cpe></osclass>
+</osmatch>
+<osmatch name="Sun Solaris 10" accuracy="88" line="99648">
+<osclass type="general purpose" vendor="Sun" osfamily="Solaris" osgen="10" accuracy="88"><cpe>cpe:/o:sun:sunos:5.10</cpe></osclass>
+</osmatch>
+<osmatch name="Sun Solaris 11" accuracy="86" line="100030">
+<osclass type="general purpose" vendor="Sun" osfamily="Solaris" osgen="11" accuracy="86"><cpe>cpe:/o:sun:sunos:5.11</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=9/4%OT=22%CT=1%CU=38786%PV=Y%DS=2%DC=I%G=Y%TM=5F528F30&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=F6%GCD=1%ISR=10F%TI=I%II=I%SS=S%TS=7)OPS(O&#xa;OS:1=ST11M54DNW2%O2=ST11M54DNW2%O3=NNT11M54DNW2%O4=ST11M54DNW2%O5=ST11M54DN&#xa;OS:W2%O6=ST11M54D)WIN(W1=FADF%W2=FADF%W3=FA38%W4=FA3B%W5=FA3B%W6=FFF7)ECN(R&#xa;OS:=Y%DF=Y%T=40%W=FA76%O=M54DNNSNW2%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%&#xa;OS:RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=N%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%&#xa;OS:Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=FF%IPL=70%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=&#xa;OS:G%RUD=G)IE(R=Y%DFI=Y%T=FF%CD=S)&#xa;"/>
+</os>
+<uptime seconds="9656" lastboot="Fri Sep  4 12:21:12 2020"/>
+<distance value="2"/>
+<tcpsequence index="246" difficulty="Good luck!" values="E7E752,6499100B,F904E34,BEFFD60E,29B5BFE4,CC72AF0E"/>
+<ipidsequence class="Incremental" values="AA28,AA29,AA2A,AA2B,AA2C,AA2D"/>
+<tcptssequence class="100HZ" values="EBBD4,EBBDE,EBBE8,EBBF2,EBBFC,EBC06"/>
+<times srtt="18361" rttvar="1628" to="100000"/>
+</host>
+<runstats><finished time="1599246128" timestr="Fri Sep  4 15:02:08 2020" elapsed="1680.96" summary="Nmap done at Fri Sep  4 15:02:08 2020; 1 IP address (1 host up) scanned in 1680.96 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

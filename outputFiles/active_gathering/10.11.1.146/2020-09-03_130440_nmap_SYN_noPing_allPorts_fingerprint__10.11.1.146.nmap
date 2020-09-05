@@ -1,0 +1,21 @@
+# Nmap 7.80 scan initiated Thu Sep  3 13:26:54 2020 as: nmap -v -Pn -p- -O -oA 2020-09-03_130440_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.146 10.11.1.146
+Nmap scan report for 10.11.1.146
+Host is up (0.021s latency).
+Not shown: 65532 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Linux 2.6.X|3.X|4.X (86%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+Aggressive OS guesses: Linux 2.6.18 - 2.6.22 (86%), Linux 3.10 - 3.12 (85%), Linux 3.11 - 4.1 (85%), Linux 4.10 (85%), Linux 4.4 (85%), Linux 4.9 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 0.000 days (since Thu Sep  3 13:28:34 2020)
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep  3 13:28:45 2020 -- 1 IP address (1 host up) scanned in 111.12 seconds

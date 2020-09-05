@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Sep  4 16:28:23 2020 as: nmap -sV -sT -p- -oA 2020-09-04_161745_nmap_CONNECT_allPorts_serviceDetection__10.11.1.115 10.11.1.115
+Host: 10.11.1.115 ()	Status: Up
+Host: 10.11.1.115 ()	Ports: 21/open/tcp//ftp//vsftpd 1.1.3/, 22/open/tcp//ssh//OpenSSH 3.5p1 (protocol 1.99)/, 25/open/tcp//smtp?///, 80/open/tcp//http//Apache httpd 2.0.40 ((Red Hat Linux))/, 111/open/tcp//rpcbind//2 (RPC #100000)/, 139/open/tcp//netbios-ssn//Samba smbd (workgroup: MYGROUP)/, 143/open/tcp//imap//UW imapd 2001.315rh/, 199/open/tcp//smux//Linux SNMP multiplexer/, 443/open/tcp//ssl|https//Apache|2.0.40 (Red Hat Linux)/, 3306/open/tcp//mysql//MySQL (unauthorized)/, 32768/open/tcp//status//1 (RPC #100024)/	Ignored State: closed (65524)
+# Nmap done at Fri Sep  4 16:39:21 2020 -- 1 IP address (1 host up) scanned in 658.45 seconds

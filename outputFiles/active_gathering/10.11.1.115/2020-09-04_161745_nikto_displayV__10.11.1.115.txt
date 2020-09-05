@@ -1,0 +1,33 @@
+- Nikto v2.1.6/2.1.5
++ Target Host: 10.11.1.115
++ Target Port: 80
++ GET The anti-clickjacking X-Frame-Options header is not present.
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ GET Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. See http://www.wisec.it/sectou.php?id=4698ebdc59d15. The following alternatives for 'index' were found: HTTP_NOT_FOUND.html.var, HTTP_NOT_FOUND.html.var, HTTP_NOT_FOUND.html.var, HTTP_NOT_FOUND.html.var, HTTP_NOT_FOUND.html.var
++ HEAD Apache/2.0.40 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
++ OPTIONS Allowed HTTP Methods: GET, HEAD, POST, OPTIONS, TRACE 
++ OSVDB-877: TRACE HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ OSVDB-2672: GET Apache/2.0.40 - "Apache 2.0 up 2.0.46 are vulnerable to multiple remote problems. CAN-2003-0192. CAN-2003-0253. CAN-2003-0254. CERT VU
++ OSVDB-15889: GET Apache/2.0.40 - Apache 2.0 up 2.0.47 are vulnerable to multiple remote problems in mod_rewrite and mod_cgi. CAN-2003-0789. CAN-2003-0542.
++ OSVDB-9994: GET Apache/2.0.40 (Red Hat Linux - Apache 2.0 to 2.0.51 contain multiple problems: overflow in apr-util (OSVDB-9994), config file variable overflow (OSVDB-9991), indirect lock refresh DoS (OSVDB-9948), SSL input filter DoS (OSVDB-9742), potential infinite loop (OSVDB-9523).
++ OSVDB-10218: GET Apache/2.0.40 (Red Hat Linux - Apache 2.0 to 2.0.52 could allow bypassing of authentication via the Satisfy directive. CAN-2004-0811. OSVDB-10218.
++ OSVDB-10637: GET Apache/2.0.40 (Red Hat Linux - Apache 2.0 to 2.0.53 allows bypassing of an SSLCipherSuite setting. CAN-2004-0885. OSVDB-10637. Also contains a memory exhaustion DoS through MIME folded requests. CAN-2004-0942. OSVDB-11391
++ OSVDB-6472: GET Apache/2.0.40 (Red Hat Linux - Apache 2.0 to 2.0.50 contain a buffer overflow in FakeBasicAuth with trusted client certificates. CAN-2004-0488. OSVDB-6472. Also a DoS with certain input data. CAN-2004-0493. OSVDB-7269.
++ GET Apache/2.0.40 - Apache versions 2.0.37 through 2.0.45 are vulnerable to a DoS in mod_dav. CAN-2003-0245.
++ GET Apache/2.0.40 (Red Hat Linux - Apache 2.0 to 2.0.49: memory leak in plain-HTTP-on-SSL-port handling (OSVDB-4182), a DoS with short-lived connections on rarely-accessed sockets (OSVDB-4383), and may allow unescaped data into logfiles (OSVDB-4382).
++ GET Apache/2.0.40 - Apache versions 2.0.40 through 2.0.45 are vulnerable to a DoS in basic authentication. CAN-2003-0189.
++ GET Retrieved x-powered-by header: PHP/4.2.2
++ OSVDB-3268: GET //: Directory indexing found.
++ GET //: Apache on Red Hat Linux release 9 reveals the root directory listing by default if there is no index page.
++ OSVDB-3268: GET ///: Directory indexing found.
++ GET Server may leak inodes via ETags, header found with file /usage/, inode: 306887, size: 4854, mtime: Sun Aug  3 00:32:00 2031
++ OSVDB-682: GET /usage/: Webalizer may be installed. Versions lower than 2.01-09 vulnerable to Cross Site Scripting (XSS).
++ GET Uncommon header 'tcn' found, with contents: choice
++ OSVDB-3092: GET /manual/: Web server manual found.
++ GET Cookie SQMSESSID created without the httponly flag
++ OSVDB-3268: GET /icons/: Directory indexing found.
++ OSVDB-3268: GET /manual/images/: Directory indexing found.
++ OSVDB-3268: GET ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Directory indexing found.
++ OSVDB-3288: GET ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////: Abyss 1.03 reveals directory listing when 	 /'s are requested.
++ OSVDB-3233: GET /icons/README: Apache default file found.

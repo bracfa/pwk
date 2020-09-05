@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Thu Sep  3 13:54:16 2020 as: nmap -Pn --script=http-sitemap-generator -oA 2020-09-03_130440_nmap_scripts_httpSitemapGenerator__10.11.1.146 10.11.1.146
+Nmap scan report for 10.11.1.146
+Host is up (0.027s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+# Nmap done at Thu Sep  3 13:54:21 2020 -- 1 IP address (1 host up) scanned in 5.27 seconds

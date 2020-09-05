@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Sep  4 13:01:07 2020 as: nmap -sV -sT -p- -oA 2020-09-04_123258_nmap_CONNECT_allPorts_serviceDetection__10.11.1.209 10.11.1.209
+Host: 10.11.1.209 ()	Status: Up
+Host: 10.11.1.209 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.5 (protocol 2.0)/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 515/open/tcp//printer?///, 6787/open/tcp//ssl|http//Apache httpd 2.4.33 ((Unix) OpenSSL|1.0.2o mod_wsgi|4.5.1 Python|2.7.14)/, 8009/open/tcp//ajp13//Apache Jserv (Protocol v1.3)/, 8080/open/tcp//http//Apache Tomcat 9.0.27/	Ignored State: closed (65529)
+# Nmap done at Fri Sep  4 13:31:35 2020 -- 1 IP address (1 host up) scanned in 1828.93 seconds

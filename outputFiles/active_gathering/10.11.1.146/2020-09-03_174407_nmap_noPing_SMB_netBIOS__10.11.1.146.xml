@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Sep  3 17:44:07 2020 as: nmap -Pn -v -p 139,445 -oA 2020-09-03_174407_nmap_noPing_SMB_netBIOS__10.11.1.146 10.11.1.146 -->
+<nmaprun scanner="nmap" args="nmap -Pn -v -p 139,445 -oA 2020-09-03_174407_nmap_noPing_SMB_netBIOS__10.11.1.146 10.11.1.146" start="1599169447" startstr="Thu Sep  3 17:44:07 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="139,445"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1599169447"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1599169448"/>
+<taskbegin task="SYN Stealth Scan" time="1599169448"/>
+<taskend task="SYN Stealth Scan" time="1599169448" extrainfo="2 total ports"/>
+<host starttime="1599169448" endtime="1599169448"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.146" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="25192" rttvar="18926" to="100896"/>
+</host>
+<runstats><finished time="1599169448" timestr="Thu Sep  3 17:44:08 2020" elapsed="0.35" summary="Nmap done at Thu Sep  3 17:44:08 2020; 1 IP address (1 host up) scanned in 0.35 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

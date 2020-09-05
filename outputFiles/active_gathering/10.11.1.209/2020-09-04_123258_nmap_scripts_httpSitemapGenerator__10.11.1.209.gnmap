@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Sep  4 15:07:10 2020 as: nmap -Pn --script=http-sitemap-generator -oA 2020-09-04_123258_nmap_scripts_httpSitemapGenerator__10.11.1.209 10.11.1.209
+Host: 10.11.1.209 ()	Status: Up
+Host: 10.11.1.209 ()	Ports: 22/open/tcp//ssh///, 111/open/tcp//rpcbind///, 515/open/tcp//printer///, 8009/open/tcp//ajp13///, 8080/open/tcp//http-proxy///	Ignored State: closed (995)
+# Nmap done at Fri Sep  4 15:07:40 2020 -- 1 IP address (1 host up) scanned in 29.14 seconds

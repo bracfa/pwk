@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Sep  3 13:08:40 2020 as: nmap -sS -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-09-03_130440_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.146 10.11.1.146 -->
+<nmaprun scanner="nmap" args="nmap -sS -A -p- -sV -&#45;script default,safe,auth,vuln -&#45;max-retries 4 -oA 2020-09-03_130440_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.146 10.11.1.146" start="1599152920" startstr="Thu Sep  3 13:08:40 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<prescript><script id="broadcast-dhcp-discover" output="&#xa;  Response 1 of 1: &#xa;    IP Offered: 192.168.0.21&#xa;    Server Identifier: 192.168.0.1&#xa;    Subnet Mask: 255.255.255.0&#xa;    Router: 192.168.0.1&#xa;    Domain Name Server: 75.75.75.75, 75.75.76.76"><table key="Response 1 of 1">
+<elem key="IP Offered">192.168.0.21</elem>
+<elem key="Server Identifier">192.168.0.1</elem>
+<elem key="Subnet Mask">255.255.255.0</elem>
+<elem key="Router">192.168.0.1</elem>
+<table key="Domain Name Server">
+<elem>75.75.75.75</elem>
+<elem>75.75.76.76</elem>
+</table>
+</table>
+</script><script id="broadcast-igmp-discovery" output="&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.2&#xa;    Description: All Routers on this Subnet&#xa;  192.168.0.1&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.22&#xa;    Description: IGMP&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.29&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.184&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 224.0.0.251&#xa;    Description: mDNS (rfc6762)&#xa;  192.168.0.27&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  192.168.0.254&#xa;    Interface: eth0&#xa;    Version: 2&#xa;    Group: 239.255.255.250&#xa;    Description: Organization-Local Scope (rfc2365)&#xa;  Use the newtargets script-arg to add the results as targets&#xa;"/><script id="broadcast-listener" output="&#xa;  ether&#xa;  udp&#xa;      DHCP&#xa;        srv ip       cli ip        mask           gw           dns                       vendor&#xa;        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;        192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -&#xa;"/><script id="broadcast-netbios-master-browser" output="&#xa;ip  server  domain&#xa;"/><script id="broadcast-upnp-info" output="&#xa;  239.255.255.250&#xa;      Server: Unspecified, UPnP/1.0, Unspecified&#xa;      Location: http://192.168.0.254:49152/wps_device.xml&#xa;"/><script id="eap-info" output="please specify an interface with -e"/><script id="targets-asn" output="&#xa;  targets-asn.asn is a mandatory parameter&#xa;"/></prescript><host starttime="1599152961" endtime="1599153451"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.11.1.146" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.4p1 Ubuntu 10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="banner" output="SSH-2.0-OpenSSH_7.4p1 Ubuntu-10"/><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/><script id="ssh-auth-methods" output="&#xa;  Supported authentication methods: &#xa;    publickey&#xa;    password"><table key="Supported authentication methods">
+<elem>publickey</elem>
+<elem>password</elem>
+</table>
+</script><script id="ssh-hostkey" output="&#xa;  2048 e3:73:a9:48:81:9d:90:bc:70:75:81:8a:3d:e8:95:6f (RSA)&#xa;  256 0e:76:22:d0:20:ca:1e:96:e9:7b:a5:9a:86:e7:f6:d4 (ECDSA)&#xa;  256 57:e1:e4:06:a3:79:6d:03:53:6c:d6:7b:67:ed:86:dc (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDlrmnbyVOMFMbqRmKO9h0Omv6odlv6tAqlZbKeiOhsYz6AqzfpGQmARw4ws8+qGGdSj0B5ICTNUoYGrpYuS0YNXZBwi1pt6K0WqYv8wyrqoQeWK+jlz9FOdzES2d8WbxVtesp96PGlHnM5nJs4COJt7WsdA1QBF2+xkmZjImSawdoAlsmtpMBxP6vPjnGBsBnNFnIKoHdWfz5TriY958//Zco/TYK3pwM4xKy4ip0zZ3T8xqKmwqhbD0vwRbV5qZMugOlgPtxUP4/UzudiuvO1COqDBNemA5S9jBy8yqqLyA0qfdg0N6Gm8X2iBNHw2D0RZ1C8PjoyGPeDvV34Frkt</elem>
+<elem key="fingerprint">e373a948819d90bc7075818a3de8956f</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBk5w06Kdjm6NPbI4k1oJG79cOii6bdCfSXlp7QjZMqyiVgtooCGdF2KmS0gtEfXaC4nt0MFhf4QQzORdxdtZjw=</elem>
+<elem key="fingerprint">0e7622d020ca1e96e97ba59a86e7f6d4</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIFCXoJ6KMRCRIT3IzvO/fDY3Z99e4CicyEerj+lO6CBM</elem>
+<elem key="fingerprint">57e1e406a3796d03536cd67b67ed86dc</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script><script id="ssh-publickey-acceptance" output="&#xa;  Accepted Public Keys: No public keys accepted"><elem key="Accepted Public Keys">No public keys accepted</elem>
+</script><script id="ssh2-enum-algos" output="&#xa;  kex_algorithms: (10)&#xa;  server_host_key_algorithms: (5)&#xa;  encryption_algorithms: (6)&#xa;  mac_algorithms: (10)&#xa;  compression_algorithms: (2)"><table key="kex_algorithms">
+<elem>curve25519-sha256</elem>
+<elem>curve25519-sha256@libssh.org</elem>
+<elem>ecdh-sha2-nistp256</elem>
+<elem>ecdh-sha2-nistp384</elem>
+<elem>ecdh-sha2-nistp521</elem>
+<elem>diffie-hellman-group-exchange-sha256</elem>
+<elem>diffie-hellman-group16-sha512</elem>
+<elem>diffie-hellman-group18-sha512</elem>
+<elem>diffie-hellman-group14-sha256</elem>
+<elem>diffie-hellman-group14-sha1</elem>
+</table>
+<table key="server_host_key_algorithms">
+<elem>ssh-rsa</elem>
+<elem>rsa-sha2-512</elem>
+<elem>rsa-sha2-256</elem>
+<elem>ecdsa-sha2-nistp256</elem>
+<elem>ssh-ed25519</elem>
+</table>
+<table key="encryption_algorithms">
+<elem>chacha20-poly1305@openssh.com</elem>
+<elem>aes128-ctr</elem>
+<elem>aes192-ctr</elem>
+<elem>aes256-ctr</elem>
+<elem>aes128-gcm@openssh.com</elem>
+<elem>aes256-gcm@openssh.com</elem>
+</table>
+<table key="mac_algorithms">
+<elem>umac-64-etm@openssh.com</elem>
+<elem>umac-128-etm@openssh.com</elem>
+<elem>hmac-sha2-256-etm@openssh.com</elem>
+<elem>hmac-sha2-512-etm@openssh.com</elem>
+<elem>hmac-sha1-etm@openssh.com</elem>
+<elem>umac-64@openssh.com</elem>
+<elem>umac-128@openssh.com</elem>
+<elem>hmac-sha2-256</elem>
+<elem>hmac-sha2-512</elem>
+<elem>hmac-sha1</elem>
+</table>
+<table key="compression_algorithms">
+<elem>none</elem>
+<elem>zlib@openssh.com</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="SUSIE" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="4.5.4-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="SUSIE" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service><script id="clamav-exec" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<osmatch name="Linux 2.6.18 - 2.6.22" accuracy="86" line="49721">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.11 - 4.1" accuracy="85" line="63416">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.10" accuracy="85" line="66948">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="85" line="67202">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.9" accuracy="85" line="67695">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4.9</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="363" lastboot="Thu Sep  3 13:11:28 2020"/>
+<distance value="2"/>
+<tcpsequence index="261" difficulty="Good luck!" values="20E5A4B8,8F336484,BE60BEDF,D1616C9,2D3E7628,1FC233CE"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="2733DF1C,5CFD2DD4,8C50F5FA,1445E87,24D9ED10,324F1AB8"/>
+<hostscript><script id="clock-skew" output="mean: 1h20m04s, deviation: 2h18m42s, median: 0s"><elem key="stddev">8322</elem>
+<elem key="count">3</elem>
+<elem key="mean">4804</elem>
+<elem key="median">0</elem>
+</script><script id="fcrdns" output="FAIL (No PTR record)"><table key="&lt;none&gt;">
+<elem key="status">fail</elem>
+<elem key="reason">No PTR record</elem>
+</table>
+</script><script id="firewalk" output="&#xa;HOP  HOST           PROTOCOL  BLOCKED PORTS&#xa;1    192.168.119.1  tcp       1-10&#xa;"/><script id="ipidseq" output="All zeros"/><script id="msrpc-enum" output="NT_STATUS_OBJECT_NAME_NOT_FOUND">false</script><script id="path-mtu" output="PMTU == 1500"/><script id="qscan" output="&#xa;PORT  FAMILY  MEAN (us)  STDDEV   LOSS (%)&#xa;22    0       21641.80   3376.02  0.0%&#xa;139   0       20677.20   4957.31  0.0%&#xa;445   0       22394.60   6551.64  0.0%&#xa;"/><script id="smb-enum-users" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-mbenum" output="&#xa;  DFS Root&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Master Browser&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Print server&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Server&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Server service&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Unix server&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Windows NT/2000/XP/2003 server&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Workstation&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;"/><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.5.4-Ubuntu)&#xa;  Computer name: \x00&#xa;  NetBIOS computer name: SUSIE\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2020-09-03T13:11:47-04:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.5.4-Ubuntu</elem>
+<elem key="server">SUSIE\x00</elem>
+<elem key="date">2020-09-03T13:11:47-04:00</elem>
+<elem key="fqdn">\x00</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb-protocols" output="&#xa;  dialects: &#xa;    NT LM 0.12 (SMBv1) [dangerous, but default]&#xa;    2.02&#xa;    2.10&#xa;    3.00&#xa;    3.02&#xa;    3.11"><table key="dialects">
+<elem>NT LM 0.12 (SMBv1) [dangerous, but default]</elem>
+<elem>2.02</elem>
+<elem>2.10</elem>
+<elem>3.00</elem>
+<elem>3.02</elem>
+<elem>3.11</elem>
+</table>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="false">false</script><script id="smb-vuln-regsvc-dos" output="&#xa;  VULNERABLE:&#xa;  Service regsvc in Microsoft Windows systems vulnerable to denial of service&#xa;    State: VULNERABLE&#xa;      The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;      pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;      while working on smb-enum-sessions.&#xa;          &#xa;"><table key="NMAP-2">
+<elem key="title">Service regsvc in Microsoft Windows systems vulnerable to denial of service</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;while working on smb-enum-sessions.&#xa;    </elem>
+</table>
+</table>
+</script><script id="smb2-capabilities" output="&#xa;  2.02: &#xa;    Distributed File System&#xa;  2.10: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.00: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.02: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  3.11: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations"><table key="2.02">
+<elem>Distributed File System</elem>
+</table>
+<table key="2.10">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.00">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.02">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="3.11">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2020-09-03T17:11:48&#xa;  start_date: N/A"><elem key="date">2020-09-03T17:11:48</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="traceroute-geolocation" output="&#xa;  HOP  RTT    ADDRESS        GEOLOCATION&#xa;  1    25.79  192.168.119.1  - ,- &#xa;  2    26.00  10.11.1.146    - ,- &#xa;"><table>
+<elem key="ip">192.168.119.1</elem>
+<elem key="hop">1</elem>
+<elem key="rtt">25.79</elem>
+</table>
+<table>
+<elem key="ip">10.11.1.146</elem>
+<elem key="hop">2</elem>
+<elem key="rtt">26.00</elem>
+</table>
+</script></hostscript><trace port="139" proto="tcp">
+<hop ttl="1" ipaddr="192.168.119.1" rtt="25.79"/>
+<hop ttl="2" ipaddr="10.11.1.146" rtt="26.00"/>
+</trace>
+<times srtt="23645" rttvar="3603" to="100000"/>
+</host>
+<postscript><script id="reverse-index" output="&#xa;  22/tcp: 10.11.1.146&#xa;  139/tcp: 10.11.1.146&#xa;  445/tcp: 10.11.1.146"><table key="22/tcp">
+<elem>10.11.1.146</elem>
+</table>
+<table key="139/tcp">
+<elem>10.11.1.146</elem>
+</table>
+<table key="445/tcp">
+<elem>10.11.1.146</elem>
+</table>
+</script></postscript><runstats><finished time="1599153451" timestr="Thu Sep  3 13:17:31 2020" elapsed="530.89" summary="Nmap done at Thu Sep  3 13:17:31 2020; 1 IP address (1 host up) scanned in 530.89 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

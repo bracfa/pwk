@@ -1,0 +1,17 @@
+# Nmap 7.80 scan initiated Fri Sep  4 15:04:57 2020 as: nmap -Pn --script=http-enum -oA 2020-09-04_123258_nmap_scripts_httpEnum__10.11.1.209 10.11.1.209
+Nmap scan report for 10.11.1.209
+Host is up (0.058s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+111/tcp  open  rpcbind
+515/tcp  open  printer
+8009/tcp open  ajp13
+8080/tcp open  http-proxy
+| http-enum: 
+|   /examples/: Sample scripts
+|   /manager/html/upload: Apache Tomcat (401 )
+|   /manager/html: Apache Tomcat (401 )
+|_  /docs/: Potentially interesting folder
+
+# Nmap done at Fri Sep  4 15:06:42 2020 -- 1 IP address (1 host up) scanned in 105.64 seconds

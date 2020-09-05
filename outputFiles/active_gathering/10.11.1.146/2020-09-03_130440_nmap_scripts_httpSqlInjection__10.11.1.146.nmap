@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Thu Sep  3 13:54:26 2020 as: nmap -Pn -sV -p80 --script=http-sql-injection -oA 2020-09-03_130440_nmap_scripts_httpSqlInjection__10.11.1.146 10.11.1.146
+Nmap scan report for 10.11.1.146
+Host is up.
+
+PORT   STATE    SERVICE VERSION
+80/tcp filtered http
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep  3 13:54:29 2020 -- 1 IP address (1 host up) scanned in 2.49 seconds

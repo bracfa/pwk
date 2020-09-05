@@ -1,0 +1,27 @@
+# Nmap 7.80 scan initiated Thu Sep  3 14:05:21 2020 as: nmap -sV -sT -p- -oA 2020-09-03_140432_nmap_CONNECT_allPorts_serviceDetection__10.11.1.13 10.11.1.13
+Nmap scan report for 10.11.1.13
+Host is up (0.043s latency).
+Not shown: 65517 closed ports
+PORT      STATE SERVICE            VERSION
+21/tcp    open  ftp                Microsoft ftpd
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp  open  ms-sql-s           Microsoft SQL Server 2012 11.00.2100; RTM
+3389/tcp  open  ssl/ms-wbt-server?
+4167/tcp  open  http               Microsoft IIS httpd 8.5
+5800/tcp  open  vnc-http           TightVNC (user: disco; VNC TCP port: 5900)
+5900/tcp  open  vnc                VNC (protocol 3.8)
+5985/tcp  open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+47001/tcp open  http               Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49156/tcp open  msrpc              Microsoft Windows RPC
+49157/tcp open  msrpc              Microsoft Windows RPC
+49158/tcp open  msrpc              Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep  3 14:07:03 2020 -- 1 IP address (1 host up) scanned in 102.17 seconds

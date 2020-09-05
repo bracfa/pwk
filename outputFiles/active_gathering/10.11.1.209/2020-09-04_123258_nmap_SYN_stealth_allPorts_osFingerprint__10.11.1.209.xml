@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Sep  4 12:32:59 2020 as: nmap -sS -p- -O -oA 2020-09-04_123258_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.209 10.11.1.209 -->
+<nmaprun scanner="nmap" args="nmap -sS -p- -O -oA 2020-09-04_123258_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.209 10.11.1.209" start="1599237179" startstr="Fri Sep  4 12:32:59 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1599237179" endtime="1599238866"><status state="up" reason="echo-reply" reason_ttl="254"/>
+<address addr="10.11.1.209" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65529">
+<extrareasons reason="resets" count="65529"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="515"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6787"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="smc-admin" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="ajp13" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="59"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="39864"/>
+<osmatch name="Oracle Solaris 11" accuracy="91" line="91774">
+<osclass type="general purpose" vendor="Oracle" osfamily="Solaris" osgen="11" accuracy="91"><cpe>cpe:/o:oracle:solaris:11</cpe></osclass>
+</osmatch>
+<osmatch name="Sun Solaris 9 or Oracle Solaris 10" accuracy="88" line="100768">
+<osclass type="general purpose" vendor="Sun" osfamily="Solaris" osgen="9" accuracy="88"><cpe>cpe:/o:sun:sunos:5.9</cpe></osclass>
+<osclass type="general purpose" vendor="Oracle" osfamily="Solaris" osgen="10" accuracy="88"><cpe>cpe:/o:oracle:solaris:10</cpe></osclass>
+</osmatch>
+<osmatch name="Sun Solaris 10" accuracy="88" line="99648">
+<osclass type="general purpose" vendor="Sun" osfamily="Solaris" osgen="10" accuracy="88"><cpe>cpe:/o:sun:sunos:5.10</cpe></osclass>
+</osmatch>
+<osmatch name="Sun Solaris 11" accuracy="86" line="100030">
+<osclass type="general purpose" vendor="Sun" osfamily="Solaris" osgen="11" accuracy="86"><cpe>cpe:/o:sun:sunos:5.11</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=9/4%OT=22%CT=1%CU=39864%PV=Y%DS=2%DC=I%G=Y%TM=5F5272D2&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=FB%GCD=1%ISR=10F%TI=I%II=I%SS=S%TS=7)OPS(O&#xa;OS:1=ST11M54DNW2%O2=ST11M54DNW2%O3=NNT11M54DNW2%O4=ST11M54DNW2%O5=ST11M54DN&#xa;OS:W2%O6=ST11M54D)WIN(W1=FADF%W2=FADF%W3=FA38%W4=FA3B%W5=FA3B%W6=FFF7)ECN(R&#xa;OS:=Y%DF=Y%T=40%W=FA76%O=M54DNNSNW2%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%&#xa;OS:RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=N%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%&#xa;OS:Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=FF%IPL=70%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=&#xa;OS:G%RUD=G)IE(R=Y%DFI=Y%T=FF%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2394" lastboot="Fri Sep  4 12:21:12 2020"/>
+<distance value="2"/>
+<tcpsequence index="251" difficulty="Good luck!" values="65EF08FD,C7331E42,5FAF6754,D4020485,1974C014,79B6C374"/>
+<ipidsequence class="Incremental" values="20D5,20D6,20D7,20D8,20D9,20DA"/>
+<tcptssequence class="100HZ" values="3A725,3A72F,3A739,3A743,3A74D,3A757"/>
+<times srtt="18867" rttvar="1190" to="100000"/>
+</host>
+<runstats><finished time="1599238866" timestr="Fri Sep  4 13:01:06 2020" elapsed="1687.95" summary="Nmap done at Fri Sep  4 13:01:06 2020; 1 IP address (1 host up) scanned in 1687.95 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

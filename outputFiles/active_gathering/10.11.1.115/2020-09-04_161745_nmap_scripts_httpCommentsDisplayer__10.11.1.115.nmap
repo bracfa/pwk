@@ -1,0 +1,249 @@
+# Nmap 7.80 scan initiated Fri Sep  4 17:24:32 2020 as: nmap -Pn --script=http-comments-displayer -oA 2020-09-04_161745_nmap_scripts_httpCommentsDisplayer__10.11.1.115 10.11.1.115
+Nmap scan report for 10.11.1.115
+Host is up (0.057s latency).
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+25/tcp    open  smtp
+80/tcp    open  http
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.115
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 428
+|     Comment: 
+|         /*" to 0.02 (so these are
+|             preferred over matches against "*/
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 67
+|     Comment: 
+|         /*; q=0.8, image/gif; q=0.6,
+|                 image/jpeg; q=0.6, image/*; q=0.5, */
+|     
+|     Path: http://10.11.1.115:80/manual/howto/ssi.html
+|     Line number: 86
+|     Comment: 
+|         <!-- INDEX END -->
+|     
+|     Path: http://10.11.1.115:80/manual/stopping.html
+|     Line number: 198
+|     Comment: 
+|         <!-- they don't have sigaction, or we're not using it -djg -->
+|     
+|     Path: http://10.11.1.115:80/manual/LICENSE
+|     Line number: 1
+|     Comment: 
+|         /* ====================================================================
+|          * The Apache Software License, Version 1.1
+|          *
+|          * Copyright (c) 2000-2002 The Apache Software Foundation.  All rights
+|          * reserved.
+|          *
+|          * Redistribution and use in source and binary forms, with or without
+|          * modification, are permitted provided that the following conditions
+|          * are met:
+|          *
+|          * 1. Redistributions of source code must retain the above copyright
+|          *    notice, this list of conditions and the following disclaimer.
+|          *
+|          * 2. Redistributions in binary form must reproduce the above copyright
+|          *    notice, this list of conditions and the following disclaimer in
+|          *    the documentation and/or other materials provided with the
+|          *    distribution.
+|          *
+|          * 3. The end-user documentation included with the redistribution,
+|          *    if any, must include the following acknowledgment:
+|          *       "This product includes software developed by the
+|          *        Apache Software Foundation (http://www.apache.org/)."
+|          *    Alternately, this acknowledgment may appear in the software itself,
+|          *    if and wherever such third-party acknowledgments normally appear.
+|          *
+|          * 4. The names "Apache" and "Apache Software Foundation" must
+|          *    not be used to endorse or promote products derived from this
+|          *    software without prior written permission. For written
+|          *    permission, please contact apache@apache.org.
+|          *
+|          * 5. Products derived from this software may not be called "Apache",
+|          *    nor may "Apache" appear in their name, without prior written
+|          *    permission of the Apache Software Foundation.
+|          *
+|          * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
+|          * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+|          * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+|          * DISCLAIMED.  IN NO EVENT SHALL THE APACHE SOFTWARE FOUNDATION OR
+|          * ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+|          * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+|          * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+|          * USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+|          * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+|          * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+|          * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+|          * SUCH DAMAGE.
+|          * ====================================================================
+|          *
+|          * This software consists of voluntary contributions made by many
+|          * individuals on behalf of the Apache Software Foundation.  For more
+|          * information on the Apache Software Foundation, please see
+|          * <http://www.apache.org/>.
+|          *
+|          * Portions of this software are based upon public domain software
+|          * originally written at the National Center for Supercomputing Applications,
+|          * University of Illinois, Urbana-Champaign.
+|          */
+|     
+|     Path: http://10.11.1.115:80/manual/howto/ssi.html
+|     Line number: 26
+|     Comment: 
+|         <!-- INDEX BEGIN -->
+|     
+|     Path: http://10.11.1.115:80/manual/env.html
+|     Line number: 1
+|     Comment: 
+|         <!--
+|                 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+|                       This file is generated from xml source: DO NOT EDIT
+|                 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+|               -->
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 413
+|     Comment: 
+|         /* wildcard has exactly equal preference
+|             to all the other types, so they are not being preferred. The
+|             browser should really have sent a request with a lower quality
+|             (preference) value for *.*, such as: 
+|         <pre>
+|           Accept: text/html, text/plain, image/gif, image/jpeg, */
+|     
+|     Path: http://10.11.1.115:80/manual/mod/core.html
+|     Line number: 321
+|     Comment: 
+|         /*/public_html&gt;</code> will not match
+|             <code>/home/user/public_html</code>, but <code>&lt;Directory
+|             /home/*/
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 421
+|     Comment: 
+|         /* is given a
+|             low preference of 0.01, so other types will only be returned if
+|             no variant matches an explicitly listed type. 
+|         
+|             <p>If the Accept: header contains <em>no</em> q factors at all,
+|             Apache sets the q value of "*/
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 401
+|     Comment: 
+|         /*, */
+|     
+|     Path: http://10.11.1.115:80/manual/index.html
+|     Line number: 77
+|     Comment: 
+|         <!--
+|                           <table cellspacing="0" cellpadding="0" border="0" width="600">
+|                           <tr>
+|                           <td align="center"><hr size="1" noshade width="100%">
+|                           </td>
+|                           </tr>
+|                           </table>
+|                           -->
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 404
+|     Comment: 
+|         /*" is redundant).
+|             Some browsers routinely send wildcards in addition to explicit
+|             types they can handle. For example: 
+|         <pre>
+|           Accept: text/html, text/plain, image/gif, image/jpeg, */
+|     
+|     Path: http://10.11.1.115:80/manual/howto/ssi.html
+|     Line number: 12
+|     Comment: 
+|         <!-- Background white, links blue (unvisited), navy (visited), red (active) -->
+|     
+|     Path: http://10.11.1.115:80/manual/content-negotiation.html
+|     Line number: 339
+|     Comment: 
+|         /*</code> media type
+|                   but not explicitly associated with a particular charset
+|                   are assumed to be in ISO-8859-1.</li>
+|         
+|                   <li>Select those variants which have associated charset
+|                   media parameters that are <em>not</em> ISO-8859-1. If
+|                   there are no such variants, select all variants
+|                   instead.</li>
+|         
+|                   <li>Select the variants with the best encoding. If there
+|                   are variants with an encoding that is acceptable to the
+|                   user-agent, select only these variants. Otherwise if
+|                   there is a mix of encoded and non-encoded variants,
+|                   select only the unencoded variants. If either all
+|                   variants are encoded or all variants are not encoded,
+|                   select all variants.</li>
+|         
+|                   <li>Select the variants with the smallest content
+|                   length.</li>
+|         
+|                   <li>Select the first variant of those remaining. This
+|                   will be either the first listed in the type-map file, or
+|                   when variants are read from the directory, the one whose
+|                   file name comes first when sorted using ASCII code
+|                   order.</li>
+|                 </ol>
+|               </li>
+|         
+|               <li>The algorithm has now selected one 'best' variant, so
+|               return it as the response. The HTTP response header Vary is
+|               set to indicate the dimensions of negotiation (browsers and
+|               caches can use this information when caching the resource).
+|               End.</li>
+|         
+|               <li>To get here means no variant was selected (because none
+|               are acceptable to the browser). Return a 406 status (meaning
+|               "No acceptable representation") with a response body
+|               consisting of an HTML document listing the available
+|               variants. Also set the HTTP Vary header to indicate the
+|               dimensions of variance.</li>
+|             </ol>
+|         
+|             <h2><a id="better" name="better">Fiddling with Quality
+|             Values</a></h2>
+|         
+|             <p>Apache sometimes changes the quality values from what would
+|             be expected by a strict interpretation of the Apache
+|             negotiation algorithm above. This is to get a better result
+|             from the algorithm for browsers which do not send full or
+|             accurate information. Some of the most popular browsers send
+|             Accept header information which would otherwise result in the
+|             selection of the wrong variant in many cases. If a browser
+|             sends full and correct information these fiddles will not be
+|             applied.</p>
+|         
+|             <h3>Media Types and Wildcards</h3>
+|         
+|             <p>The Accept: request header indicates preferences for media
+|             types. It can also include 'wildcard' media types, such as
+|_            "image/*" or "*/
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+143/tcp   open  imap
+199/tcp   open  smux
+443/tcp   open  https
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.115
+|     
+|     Path: http://10.11.1.115:443/
+|     Line number: 11
+|     Comment: 
+|         <!--
+|         body { color: #000000; background-color: #FFFFFF; }
+|         a:link { color: #0000CC; }
+|_        -->
+3306/tcp  open  mysql
+32768/tcp open  filenet-tms
+
+# Nmap done at Fri Sep  4 17:24:37 2020 -- 1 IP address (1 host up) scanned in 5.50 seconds

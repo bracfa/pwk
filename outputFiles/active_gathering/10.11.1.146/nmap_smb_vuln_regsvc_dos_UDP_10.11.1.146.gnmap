@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Sep  4 12:17:01 2020 as: nmap -sU --script smb-vuln-regsvc-dos.nse -p U:137,T:139 -oA nmap_smb_vuln_regsvc_dos_UDP_10.11.1.146 10.11.1.146
+Host: 10.11.1.146 ()	Status: Up
+Host: 10.11.1.146 ()	Ports: 137/open|filtered/udp//netbios-ns///
+# Nmap done at Fri Sep  4 12:17:02 2020 -- 1 IP address (1 host up) scanned in 0.63 seconds

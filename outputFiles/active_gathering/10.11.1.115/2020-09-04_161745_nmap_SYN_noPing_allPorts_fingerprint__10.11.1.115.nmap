@@ -1,0 +1,36 @@
+# Nmap 7.80 scan initiated Fri Sep  4 17:12:26 2020 as: nmap -v -Pn -p- -O -oA 2020-09-04_161745_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.115 10.11.1.115
+Increasing send delay for 10.11.1.115 from 0 to 5 due to 1951 out of 6502 dropped probes since last increase.
+Nmap scan report for 10.11.1.115
+Host is up (0.023s latency).
+Not shown: 65524 closed ports
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+25/tcp    open  smtp
+80/tcp    open  http
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+143/tcp   open  imap
+199/tcp   open  smux
+443/tcp   open  https
+3306/tcp  open  mysql
+32768/tcp open  filenet-tms
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=9/4%OT=21%CT=1%CU=42619%PV=Y%DS=2%DC=I%G=Y%TM=5F52AF41
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=C4%GCD=1%ISR=C7%TI=Z%II=I%TS=7)OPS(O1=M54D
+OS:ST11NW0%O2=M54DST11NW0%O3=M54DNNT11NW0%O4=M54DST11NW0%O5=M54DST11NW0%O6=
+OS:M54DST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R=Y%DF=
+OS:Y%T=40%W=16D0%O=M54DNNSNW0%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q
+OS:=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(
+OS:R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD
+OS:=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.045 days (since Fri Sep  4 16:13:54 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=196 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep  4 17:18:57 2020 -- 1 IP address (1 host up) scanned in 391.17 seconds

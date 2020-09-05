@@ -1,0 +1,202 @@
+# Nmap 7.80 scan initiated Thu Sep  3 13:08:40 2020 as: nmap -sS -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-09-03_130440_nmap_SYN_stealth_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.146 10.11.1.146
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 192.168.0.21
+|     Server Identifier: 192.168.0.1
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.0.1
+|_    Domain Name Server: 75.75.75.75, 75.75.76.76
+| broadcast-igmp-discovery: 
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.2
+|     Description: All Routers on this Subnet
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.22
+|     Description: IGMP
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.29
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.184
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|   192.168.0.254
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+| broadcast-listener: 
+|   ether
+|   udp
+|       DHCP
+|         srv ip       cli ip        mask           gw           dns                       vendor
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|_        192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Unspecified, UPnP/1.0, Unspecified
+|_      Location: http://192.168.0.254:49152/wps_device.xml
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+Nmap scan report for 10.11.1.146
+Host is up (0.024s latency).
+Not shown: 65532 filtered ports
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 7.4p1 Ubuntu 10 (Ubuntu Linux; protocol 2.0)
+|_banner: SSH-2.0-OpenSSH_7.4p1 Ubuntu-10
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|_    password
+| ssh-hostkey: 
+|   2048 e3:73:a9:48:81:9d:90:bc:70:75:81:8a:3d:e8:95:6f (RSA)
+|   256 0e:76:22:d0:20:ca:1e:96:e9:7b:a5:9a:86:e7:f6:d4 (ECDSA)
+|_  256 57:e1:e4:06:a3:79:6d:03:53:6c:d6:7b:67:ed:86:dc (ED25519)
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+| ssh2-enum-algos: 
+|   kex_algorithms: (10)
+|   server_host_key_algorithms: (5)
+|   encryption_algorithms: (6)
+|   mac_algorithms: (10)
+|_  compression_algorithms: (2)
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+445/tcp open  netbios-ssn Samba smbd 4.5.4-Ubuntu (workgroup: WORKGROUP)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Linux 2.6.X|3.X|4.X (86%)
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+Aggressive OS guesses: Linux 2.6.18 - 2.6.22 (86%), Linux 3.11 - 4.1 (85%), Linux 4.10 (85%), Linux 4.4 (85%), Linux 4.9 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: Host: SUSIE; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 1h20m04s, deviation: 2h18m42s, median: 0s
+|_fcrdns: FAIL (No PTR record)
+| firewalk: 
+| HOP  HOST           PROTOCOL  BLOCKED PORTS
+|_1    192.168.119.1  tcp       1-10
+|_ipidseq: All zeros
+|_msrpc-enum: NT_STATUS_OBJECT_NAME_NOT_FOUND
+|_path-mtu: PMTU == 1500
+| qscan: 
+| PORT  FAMILY  MEAN (us)  STDDEV   LOSS (%)
+| 22    0       21641.80   3376.02  0.0%
+| 139   0       20677.20   4957.31  0.0%
+|_445   0       22394.60   6551.64  0.0%
+|_smb-enum-users: ERROR: Script execution failed (use -d to debug)
+| smb-mbenum: 
+|   DFS Root
+|     SUSIE  0.0  susie server (Samba, Ubuntu)
+|   Master Browser
+|     SUSIE  0.0  susie server (Samba, Ubuntu)
+|   Print server
+|     SUSIE  0.0  susie server (Samba, Ubuntu)
+|   Server
+|     SUSIE  0.0  susie server (Samba, Ubuntu)
+|   Server service
+|     SUSIE  0.0  susie server (Samba, Ubuntu)
+|   Unix server
+|     SUSIE  0.0  susie server (Samba, Ubuntu)
+|   Windows NT/2000/XP/2003 server
+|     SUSIE  0.0  susie server (Samba, Ubuntu)
+|   Workstation
+|_    SUSIE  0.0  susie server (Samba, Ubuntu)
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.5.4-Ubuntu)
+|   Computer name: \x00
+|   NetBIOS computer name: SUSIE\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2020-09-03T13:11:47-04:00
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     2.02
+|     2.10
+|     3.00
+|     3.02
+|_    3.11
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+| smb-vuln-regsvc-dos: 
+|   VULNERABLE:
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+|     State: VULNERABLE
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+|       while working on smb-enum-sessions.
+|_          
+| smb2-capabilities: 
+|   2.02: 
+|     Distributed File System
+|   2.10: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.00: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.02: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.11: 
+|     Distributed File System
+|     Leasing
+|_    Multi-credit operations
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-09-03T17:11:48
+|_  start_date: N/A
+| traceroute-geolocation: 
+|   HOP  RTT    ADDRESS        GEOLOCATION
+|   1    25.79  192.168.119.1  - ,- 
+|_  2    26.00  10.11.1.146    - ,- 
+
+TRACEROUTE (using port 139/tcp)
+HOP RTT      ADDRESS
+1   25.79 ms 192.168.119.1
+2   26.00 ms 10.11.1.146
+
+Post-scan script results:
+| reverse-index: 
+|   22/tcp: 10.11.1.146
+|   139/tcp: 10.11.1.146
+|_  445/tcp: 10.11.1.146
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep  3 13:17:31 2020 -- 1 IP address (1 host up) scanned in 530.89 seconds

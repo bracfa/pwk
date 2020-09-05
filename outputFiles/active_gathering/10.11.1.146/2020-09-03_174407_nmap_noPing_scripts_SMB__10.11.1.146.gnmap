@@ -1,0 +1,2 @@
+# Nmap 7.80 scan initiated Thu Sep  3 17:44:09 2020 as: nmap -Pn -v -p 139,445 --script *smb* -oA 2020-09-03_174407_nmap_noPing_scripts_SMB__10.11.1.146 10.11.1.146
+# Ports scanned: TCP(2;139,445) UDP(0;) SCTP(0;) PROTOCOLS(0;)

@@ -1,0 +1,42 @@
+# Nmap 7.80 scan initiated Thu Sep  3 14:31:34 2020 as: nmap -v -Pn -p- -O -oA 2020-09-03_140432_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.13 10.11.1.13
+Nmap scan report for 10.11.1.13
+Host is up (0.024s latency).
+Not shown: 65517 closed ports
+PORT      STATE SERVICE
+21/tcp    open  ftp
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+1433/tcp  open  ms-sql-s
+3389/tcp  open  ms-wbt-server
+4167/tcp  open  ddgn
+5800/tcp  open  vnc-http
+5900/tcp  open  vnc
+5985/tcp  open  wsman
+47001/tcp open  winrm
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49155/tcp open  unknown
+49156/tcp open  unknown
+49157/tcp open  unknown
+49158/tcp open  unknown
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=9/3%OT=21%CT=1%CU=39607%PV=Y%DS=2%DC=I%G=Y%TM=5F5136B6
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10A%TI=I%II=I%SS=S%TS=7)OPS(
+OS:O1=M54DNW8ST11%O2=M54DNW8ST11%O3=M54DNW8NNT11%O4=M54DNW8ST11%O5=M54DNW8S
+OS:T11%O6=M54DST11)WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)ECN(
+OS:R=Y%DF=Y%T=80%W=2000%O=M54DNW8NNS%CC=Y%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0
+OS:%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUC
+OS:K=G%RUD=G)IE(R=Y%DFI=N%T=80%CD=Z)
+
+Uptime guess: 0.022 days (since Thu Sep  3 14:01:24 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep  3 14:32:22 2020 -- 1 IP address (1 host up) scanned in 48.19 seconds

@@ -1,0 +1,24 @@
+# Nmap 7.80 scan initiated Fri Sep  4 17:21:43 2020 as: nmap -Pn --script=http-enum -oA 2020-09-04_161745_nmap_scripts_httpEnum__10.11.1.115 10.11.1.115
+Nmap scan report for 10.11.1.115
+Host is up (1.2s latency).
+Not shown: 989 closed ports
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+25/tcp    open  smtp
+80/tcp    open  http
+| http-enum: 
+|   /webmail/src/login.php: SquirrelMail
+|   /webmail/images/sm_logo.png: SquirrelMail
+|   /icons/: Potentially interesting directory w/ listing on 'apache/2.0.40'
+|   /manual/: Potentially interesting folder
+|_  /usage/: Potentially interesting folder
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+143/tcp   open  imap
+199/tcp   open  smux
+443/tcp   open  https
+3306/tcp  open  mysql
+32768/tcp open  filenet-tms
+
+# Nmap done at Fri Sep  4 17:24:32 2020 -- 1 IP address (1 host up) scanned in 169.27 seconds

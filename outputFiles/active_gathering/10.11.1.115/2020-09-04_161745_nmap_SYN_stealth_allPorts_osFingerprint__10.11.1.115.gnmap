@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Sep  4 16:17:46 2020 as: nmap -sS -p- -O -oA 2020-09-04_161745_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.115 10.11.1.115
+Host: 10.11.1.115 ()	Status: Up
+Host: 10.11.1.115 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 25/open/tcp//smtp///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 139/open/tcp//netbios-ssn///, 143/open/tcp//imap///, 199/open/tcp//smux///, 443/open/tcp//https///, 3306/open/tcp//mysql///, 32768/open/tcp//filenet-tms///	Ignored State: closed (65524)	Seq Index: 192	IP ID Seq: All zeros
+# Nmap done at Fri Sep  4 16:28:23 2020 -- 1 IP address (1 host up) scanned in 637.52 seconds

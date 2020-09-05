@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Sep  4 17:12:26 2020 as: nmap -v -Pn -p- -O -oA 2020-09-04_161745_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.115 10.11.1.115 -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -p- -O -oA 2020-09-04_161745_nmap_SYN_noPing_allPorts_fingerprint__10.11.1.115 10.11.1.115" start="1599253946" startstr="Fri Sep  4 17:12:26 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1599253946"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1599253946"/>
+<taskbegin task="SYN Stealth Scan" time="1599253946"/>
+<taskprogress task="SYN Stealth Scan" time="1599253977" percent="13.29" remaining="203" etc="1599254179"/>
+<taskprogress task="SYN Stealth Scan" time="1599254007" percent="20.75" remaining="233" etc="1599254240"/>
+<taskprogress task="SYN Stealth Scan" time="1599254061" percent="34.58" remaining="218" etc="1599254279"/>
+<taskprogress task="SYN Stealth Scan" time="1599254091" percent="42.62" remaining="196" etc="1599254286"/>
+<taskprogress task="SYN Stealth Scan" time="1599254121" percent="50.31" remaining="173" etc="1599254294"/>
+<taskprogress task="SYN Stealth Scan" time="1599254151" percent="58.16" remaining="148" etc="1599254299"/>
+<taskprogress task="SYN Stealth Scan" time="1599254181" percent="65.79" remaining="123" etc="1599254303"/>
+<taskprogress task="SYN Stealth Scan" time="1599254211" percent="73.63" remaining="95" etc="1599254306"/>
+<taskprogress task="SYN Stealth Scan" time="1599254241" percent="80.24" remaining="73" etc="1599254314"/>
+<taskprogress task="SYN Stealth Scan" time="1599254271" percent="87.78" remaining="46" etc="1599254316"/>
+<taskend task="SYN Stealth Scan" time="1599254325" extrainfo="65535 total ports"/>
+<host starttime="1599253946" endtime="1599254337"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.115" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65524">
+<extrareasons reason="resets" count="65524"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="199"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smux" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="32768"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="filenet-tms" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="42619"/>
+<osmatch name="AVM FRITZ!Box FON WLAN 7170 WAP" accuracy="95" line="8806">
+<osclass type="WAP" vendor="AVM" osfamily="embedded" accuracy="95"><cpe>cpe:/h:avm:fritz%21box_fon_wlan_7170</cpe></osclass>
+</osmatch>
+<osmatch name="Dell Remote Access Controller 5/I (DRAC 5/I)" accuracy="95" line="22143">
+<osclass type="remote management" vendor="Dell" osfamily="embedded" accuracy="95"><cpe>cpe:/h:dell:remote_access_card:5</cpe></osclass>
+</osmatch>
+<osmatch name="Google Mini search appliance" accuracy="95" line="31498">
+<osclass type="specialized" vendor="Google" osfamily="embedded" accuracy="95"/>
+</osmatch>
+<osmatch name="HP 4200 PSA (Print Server Appliance) model J4117A" accuracy="95" line="32215">
+<osclass type="print server" vendor="HP" osfamily="embedded" accuracy="95"/>
+</osmatch>
+<osmatch name="HP Brocade 4Gb SAN switch or" accuracy="95" line="34887">
+<osclass type="switch" vendor="HP" osfamily="embedded" accuracy="95"/>
+<osclass type="media device" vendor="Philips" osfamily="embedded" accuracy="95"/>
+</osmatch>
+<osmatch name="Linux 2.4.21 (embedded)" accuracy="95" line="45992">
+<osclass type="specialized" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.4.21</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.15 - 2.6.26 (likely embedded)" accuracy="95" line="47879">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.29 (Gentoo)" accuracy="95" line="53498">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.29</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.20" accuracy="94" line="45043">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.4.20</cpe></osclass>
+</osmatch>
+<osmatch name="Motorola SURFboard SB6120 or SB6141 cable modem (Linux 2.6.18)" accuracy="94" line="46838">
+<osclass type="broadband router" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.18</cpe></osclass>
+<osclass type="broadband router" vendor="Motorola" osfamily="embedded" accuracy="94"><cpe>cpe:/h:motorola:surfboard_sb6120</cpe><cpe>cpe:/h:motorola:surfboard_sb6141</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=9/4%OT=21%CT=1%CU=42619%PV=Y%DS=2%DC=I%G=Y%TM=5F52AF41&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=C4%GCD=1%ISR=C7%TI=Z%II=I%TS=7)OPS(O1=M54D&#xa;OS:ST11NW0%O2=M54DST11NW0%O3=M54DNNT11NW0%O4=M54DST11NW0%O5=M54DST11NW0%O6=&#xa;OS:M54DST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R=Y%DF=&#xa;OS:Y%T=40%W=16D0%O=M54DNNSNW0%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q&#xa;OS:=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(&#xa;OS:R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD&#xa;OS:=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="3903" lastboot="Fri Sep  4 16:13:54 2020"/>
+<distance value="2"/>
+<tcpsequence index="196" difficulty="Good luck!" values="B51F964,AEAC5BF,AC47935,AF83FE4,ACAA3E2,AC88951"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="100HZ" values="5F47D,5F488,5F492,5F49C,5F4A6,5F4B0"/>
+<times srtt="23413" rttvar="6179" to="100000"/>
+</host>
+<runstats><finished time="1599254337" timestr="Fri Sep  4 17:18:57 2020" elapsed="391.17" summary="Nmap done at Fri Sep  4 17:18:57 2020; 1 IP address (1 host up) scanned in 391.17 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

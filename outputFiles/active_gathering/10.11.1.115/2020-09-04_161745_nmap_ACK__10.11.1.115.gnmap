@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Sep  4 17:12:05 2020 as: nmap -sA -oA 2020-09-04_161745_nmap_ACK__10.11.1.115 10.11.1.115
+Host: 10.11.1.115 ()	Status: Up
+Host: 10.11.1.115 ()	Status: Up
+# Nmap done at Fri Sep  4 17:12:26 2020 -- 1 IP address (1 host up) scanned in 21.35 seconds

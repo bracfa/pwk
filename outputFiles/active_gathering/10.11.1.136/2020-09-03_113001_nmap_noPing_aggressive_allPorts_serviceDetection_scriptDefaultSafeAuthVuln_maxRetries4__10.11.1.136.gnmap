@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Sep  3 11:39:28 2020 as: nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-09-03_113001_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.136 10.11.1.136
+Host: 10.11.1.136 ()	Status: Up
+Host: 10.11.1.136 ()	Ports: 22/open/tcp//ssh//OpenSSH 4.3p2 Debian 9 (protocol 2.0)/, 113/open/tcp//ident///, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: LOCAL)/, 445/open/tcp//netbios-ssn//Samba smbd 3.0.24 (workgroup: LOCAL)/	Ignored State: closed (65531)	Seq Index: 199	IP ID Seq: All zeros
+# Nmap done at Thu Sep  3 11:47:24 2020 -- 1 IP address (1 host up) scanned in 476.23 seconds

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Sep  4 12:17:01 2020 as: nmap -sU -&#45;script smb-vuln-regsvc-dos.nse -p U:137,T:139 -oA nmap_smb_vuln_regsvc_dos_UDP_10.11.1.146 10.11.1.146 -->
+<nmaprun scanner="nmap" args="nmap -sU -&#45;script smb-vuln-regsvc-dos.nse -p U:137,T:139 -oA nmap_smb_vuln_regsvc_dos_UDP_10.11.1.146 10.11.1.146" start="1599236221" startstr="Fri Sep  4 12:17:01 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="1" services="137"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1599236221" endtime="1599236222"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.11.1.146" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="udp" portid="137"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ns" method="table" conf="3"/></port>
+</ports>
+<times srtt="20751" rttvar="20751" to="103755"/>
+</host>
+<runstats><finished time="1599236222" timestr="Fri Sep  4 12:17:02 2020" elapsed="0.63" summary="Nmap done at Fri Sep  4 12:17:02 2020; 1 IP address (1 host up) scanned in 0.63 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

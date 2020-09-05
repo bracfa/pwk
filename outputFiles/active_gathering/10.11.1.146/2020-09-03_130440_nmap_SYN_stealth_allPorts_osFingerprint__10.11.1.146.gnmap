@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Sep  3 13:04:41 2020 as: nmap -sS -p- -O -oA 2020-09-03_130440_nmap_SYN_stealth_allPorts_osFingerprint__10.11.1.146 10.11.1.146
+Host: 10.11.1.146 ()	Status: Up
+Host: 10.11.1.146 ()	Ports: 22/open/tcp//ssh///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///	Ignored State: filtered (65532)	Seq Index: 255	IP ID Seq: All zeros
+# Nmap done at Thu Sep  3 13:06:44 2020 -- 1 IP address (1 host up) scanned in 123.04 seconds

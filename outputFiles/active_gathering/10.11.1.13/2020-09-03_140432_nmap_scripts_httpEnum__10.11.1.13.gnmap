@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Sep  3 14:34:58 2020 as: nmap -Pn --script=http-enum -oA 2020-09-03_140432_nmap_scripts_httpEnum__10.11.1.13 10.11.1.13
+Host: 10.11.1.13 ()	Status: Up
+Host: 10.11.1.13 ()	Ports: 21/open/tcp//ftp///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 1433/open/tcp//ms-sql-s///, 3389/open/tcp//ms-wbt-server///, 5800/open/tcp//vnc-http///, 5900/open/tcp//vnc///, 49152/open/tcp//unknown///, 49153/open/tcp//unknown///, 49154/open/tcp//unknown///, 49155/open/tcp//unknown///, 49156/open/tcp//unknown///, 49157/open/tcp//unknown///, 49158/open/tcp//unknown///	Ignored State: closed (985)
+# Nmap done at Thu Sep  3 14:35:02 2020 -- 1 IP address (1 host up) scanned in 3.57 seconds

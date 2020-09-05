@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Thu Sep  3 14:35:08 2020 as: nmap -Pn -sV -p80 --script=http-sql-injection -oA 2020-09-03_140432_nmap_scripts_httpSqlInjection__10.11.1.13 10.11.1.13
+Nmap scan report for 10.11.1.13
+Host is up (0.019s latency).
+
+PORT   STATE  SERVICE VERSION
+80/tcp closed http
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Sep  3 14:35:09 2020 -- 1 IP address (1 host up) scanned in 0.51 seconds

@@ -1,0 +1,554 @@
+# Nmap 7.80 scan initiated Fri Sep  4 14:05:21 2020 as: nmap -Pn -A -p- -sV --script default,safe,auth,vuln --max-retries 4 -oA 2020-09-04_123258_nmap_noPing_aggressive_allPorts_serviceDetection_scriptDefaultSafeAuthVuln_maxRetries4__10.11.1.209 10.11.1.209
+Pre-scan script results:
+| broadcast-dhcp-discover: 
+|   Response 1 of 1: 
+|     IP Offered: 192.168.0.21
+|     Server Identifier: 192.168.0.1
+|     Subnet Mask: 255.255.255.0
+|     Router: 192.168.0.1
+|_    Domain Name Server: 75.75.75.75, 75.75.76.76
+| broadcast-igmp-discovery: 
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.2
+|     Description: All Routers on this Subnet
+|   192.168.0.1
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.22
+|     Description: IGMP
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 224.0.0.251
+|     Description: mDNS (rfc6762)
+|   192.168.0.27
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|   192.168.0.254
+|     Interface: eth0
+|     Version: 2
+|     Group: 239.255.255.250
+|     Description: Organization-Local Scope (rfc2365)
+|_  Use the newtargets script-arg to add the results as targets
+| broadcast-listener: 
+|   ether
+|   udp
+|       DHCP
+|         srv ip       cli ip        mask           gw           dns                       vendor
+|         192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.21  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|         192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+|_        192.168.0.1  192.168.0.23  255.255.255.0  192.168.0.1  75.75.75.75, 75.75.76.76  -
+| broadcast-netbios-master-browser: 
+|_ip  server  domain
+| broadcast-upnp-info: 
+|   239.255.255.250
+|       Server: Linux 2.6 DLNADOC/1.50 UPnP/1.0 ReadyDLNA/1.1.0
+|_      Location: http://192.168.0.254:8200/rootDesc.xml
+|_eap-info: please specify an interface with -e
+| targets-asn: 
+|_  targets-asn.asn is a mandatory parameter
+Warning: 10.11.1.209 giving up on port because retransmission cap hit (4).
+Nmap scan report for 10.11.1.209
+Host is up (0.023s latency).
+Not shown: 52708 closed ports, 12821 filtered ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 7.5 (protocol 2.0)
+|_banner: SSH-2.0-OpenSSH_7.5
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|     gssapi-keyex
+|     gssapi-with-mic
+|     password
+|_    keyboard-interactive
+| ssh-hostkey: 
+|   2048 a1:33:be:71:1a:0a:48:ef:82:90:e1:9c:f4:3e:ae:0c (RSA)
+|_  256 91:d4:3c:25:ce:97:72:4b:55:3c:fe:d4:3b:23:c4:8e (ED25519)
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+| ssh2-enum-algos: 
+|   kex_algorithms: (10)
+|   server_host_key_algorithms: (4)
+|   encryption_algorithms: (6)
+|   mac_algorithms: (10)
+|_  compression_algorithms: (2)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.5: 
+|     	CVE-2020-15778	6.8	https://vulners.com/cve/CVE-2020-15778
+|     	CVE-2020-15778	6.8	https://vulners.com/cve/CVE-2020-15778
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2017-15906	5.0	https://vulners.com/cve/CVE-2017-15906
+|     	CVE-2017-15906	5.0	https://vulners.com/cve/CVE-2017-15906
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|_    	CVE-2014-9278	4.0	https://vulners.com/cve/CVE-2014-9278
+111/tcp  open  rpcbind  2-4 (RPC #100000)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+515/tcp  open  printer?
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+6787/tcp open  ssl/http Apache httpd 2.4.33 ((Unix) OpenSSL/1.0.2o mod_wsgi/4.5.1 Python/2.7.14)
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.209
+|     
+|     Path: https://10.11.1.209:6787/solaris/
+|     Line number: 1
+|     Comment: 
+|         <!--
+|             Copyright (c) 2015, 2018, Oracle and/or its affiliates. All rights reserved.
+|         -->
+|     
+|     Path: https://10.11.1.209:6787/solaris/
+|     Line number: 13
+|     Comment: 
+|         <!-- This is the main css file for the default Alta theme -->
+|     
+|     Path: https://10.11.1.209:6787/solaris/
+|     Line number: 20
+|     Comment: 
+|         <!-- RequireJS bootstrap file -->
+|     
+|     Path: https://10.11.1.209:6787/solaris/
+|     Line number: 45
+|     Comment: 
+|         /* determines size */
+|     
+|     Path: https://10.11.1.209:6787/solaris/
+|     Line number: 16
+|     Comment: 
+|         <!-- This is where you would add any app specific styling -->
+|     
+|     Path: https://10.11.1.209:6787/solaris/
+|     Line number: 65
+|     Comment: 
+|_        <!-- Provide a temporary loading message, removed later on load -->
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-headers: 
+|   Date: Fri, 04 Sep 2020 18:31:38 GMT
+|   Server: Apache/2.4.33 (Unix) OpenSSL/1.0.2o mod_wsgi/4.5.1 Python/2.7.14
+|   X-Frame-Options: SAMEORIGIN
+|   Last-Modified: Fri, 17 Aug 2018 02:07:09 GMT
+|   ETag: "f46-57398045d4d40"
+|   Accept-Ranges: bytes
+|   Content-Length: 3910
+|   Cache-Control: max-age=7200
+|   Expires: Fri, 04 Sep 2020 20:31:38 GMT
+|   Vary: Accept-Encoding
+|   Strict-Transport-Security: max-age=15768000
+|   Connection: close
+|   Content-Type: text/html
+|   
+|_  (Request type: HEAD)
+|_http-mobileversion-checker: No mobile version detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+| http-security-headers: 
+|   Strict_Transport_Security: 
+|     Header: Strict-Transport-Security: max-age=15768000
+|   X_Frame_Options: 
+|     Header: X-Frame-Options: SAMEORIGIN
+|     Description: The browser must not display this content in any frame from a page of different origin than the content itself.
+|   Cache_Control: 
+|     Header: Cache-Control: max-age=7200
+|   Expires: 
+|_    Header: Expires: Fri, 04 Sep 2020 20:31:19 GMT
+|_http-server-header: Apache/2.4.33 (Unix) OpenSSL/1.0.2o mod_wsgi/4.5.1 Python/2.7.14
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       http://ha.ckers.org/slowloris/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-title: Solaris Dashboard
+|_Requested resource was https://10.11.1.209:6787/solaris/
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Redirected To: https://10.11.1.209:6787/solaris/
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-xssed: No previously reported XSS vuln.
+| ssl-cert: Subject: commonName=kraken
+| Subject Alternative Name: DNS:kraken
+| Not valid before: 2019-11-07T18:40:00
+|_Not valid after:  2029-11-04T18:40:00
+|_ssl-date: TLS randomness does not represent time
+|_sslv2-drown: 
+| tls-alpn: 
+|_  http/1.1
+|_unusual-port: http unexpected on port tcp/6787
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.33: 
+|     	CVE-2020-11984	7.5	https://vulners.com/cve/CVE-2020-11984
+|     	CVE-2020-11984	7.5	https://vulners.com/cve/CVE-2020-11984
+|     	CVE-2019-0211	7.2	https://vulners.com/cve/CVE-2019-0211
+|     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2019-10082	6.4	https://vulners.com/cve/CVE-2019-10082
+|     	CVE-2019-10097	6.0	https://vulners.com/cve/CVE-2019-10097
+|     	CVE-2019-0217	6.0	https://vulners.com/cve/CVE-2019-0217
+|     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
+|     	CVE-2020-1927	5.8	https://vulners.com/cve/CVE-2020-1927
+|     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
+|     	CVE-2019-10098	5.8	https://vulners.com/cve/CVE-2019-10098
+|     	CVE-2020-9490	5.0	https://vulners.com/cve/CVE-2020-9490
+|     	CVE-2020-9490	5.0	https://vulners.com/cve/CVE-2020-9490
+|     	CVE-2020-1934	5.0	https://vulners.com/cve/CVE-2020-1934
+|     	CVE-2020-1934	5.0	https://vulners.com/cve/CVE-2020-1934
+|     	CVE-2019-10081	5.0	https://vulners.com/cve/CVE-2019-10081
+|     	CVE-2019-10081	5.0	https://vulners.com/cve/CVE-2019-10081
+|     	CVE-2019-0220	5.0	https://vulners.com/cve/CVE-2019-0220
+|     	CVE-2019-0220	5.0	https://vulners.com/cve/CVE-2019-0220
+|     	CVE-2019-0196	5.0	https://vulners.com/cve/CVE-2019-0196
+|     	CVE-2019-0196	5.0	https://vulners.com/cve/CVE-2019-0196
+|     	CVE-2018-8011	5.0	https://vulners.com/cve/CVE-2018-8011
+|     	CVE-2018-17199	5.0	https://vulners.com/cve/CVE-2018-17199
+|     	CVE-2018-17199	5.0	https://vulners.com/cve/CVE-2018-17199
+|     	CVE-2018-1333	5.0	https://vulners.com/cve/CVE-2018-1333
+|     	CVE-2018-1333	5.0	https://vulners.com/cve/CVE-2018-1333
+|     	CVE-2019-0197	4.9	https://vulners.com/cve/CVE-2019-0197
+|     	CVE-2020-11993	4.3	https://vulners.com/cve/CVE-2020-11993
+|     	CVE-2019-10092	4.3	https://vulners.com/cve/CVE-2019-10092
+|     	CVE-2019-10092	4.3	https://vulners.com/cve/CVE-2019-10092
+|_    	CVE-2018-11763	4.3	https://vulners.com/cve/CVE-2018-11763
+8009/tcp open  ajp13    Apache Jserv (Protocol v1.3)
+| ajp-headers: 
+|_  Content-Type: text/html;charset=UTF-8
+| ajp-methods: 
+|_  Supported methods: GET HEAD POST OPTIONS
+| ajp-request: 
+| AJP/1.3 200 200
+| Content-Type: text/html;charset=UTF-8
+| 
+| tps://tomcat.apache.org/taglibs/">Taglibs</a></li>
+|                             <li><a href="/docs/deployer-howto.html">Deployer</a></li>
+|                         </ul>
+|                     </div>
+|                 </div>
+|                 <div class="col20">
+|                     <div class="container">
+|                         <h4>Other Documentation</h4>
+|                         <ul>
+|                             <li><a href="https://tomcat.apache.org/connectors-doc/">Tomcat Connectors</a></li>
+|                             <li><a href="https://tomcat.apache.org/connectors-doc/">mod_jk Documentation</a></li>
+|                             <li><a href="https://tomcat.apache.org/native-doc/">Tomcat Native</a></li>
+|                             <li><a href="/docs/deployer-howto.html">Deployer</a></li>
+|                         </ul>
+|                     </div>
+|                 </div>
+|                 <div class="col20">
+|                     <div class="container">
+|                         <h4>Get Involved</h4>
+|                         <ul>
+|                             <li><a href="https://tomcat.apache.org/getinvolved.html">Overview</a></li>
+|                             <li><a href="https://tomcat.apache.org/source.html">Source Repositories</a></li>
+|                             <li><a href="https://tomcat.apache.org/lists.html">Mailing Lists</a></li>
+|                             <li><a href="https://wiki.apache.org/tomcat/FrontPage">Wiki</a></li>
+|                         </ul>
+|                     </div>
+|                 </div>
+|                 <div class="col20">
+|                     <div class="container">
+|                         <h4>Miscellaneous</h4>
+|                         <ul>
+|                             <li><a href="https://tomcat.apache.org/contact.html">Contact</a></li>
+|                             <li><a href="https://tomcat.apache.org/legal.html">Legal</a></li>
+|                             <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+|                             <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+|                         </ul>
+|                     </div>
+|                 </div>
+|                 <div class="col20">
+|                     <div class="container">
+|                         <h4>Apache Software Foundation</h4>
+|                         <ul>
+|                             <li><a href="https://tomcat.apache.org/whoweare.html">Who We Are</a></li>
+|                             <li><a href="https://tomcat.apache.org/heritage.html">Heritage</a></li>
+|                             <li><a href="https://www.apache.org">Apache Home</a></li>
+|                             <li><a href="https://tomcat.apache.org/resources.html">Resources</a></li>
+|                         </ul>
+|                     </div>
+|                 </div>
+|                 <br class="separator" />
+|             </div>
+|             <p class="copyright">Copyright &copy;1999-2020 Apache Software Foundation.  All Rights Reserved</p>
+|         </div>
+|     </body>
+| 
+|_</html>
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+8080/tcp open  http     Apache Tomcat 9.0.27
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| http-auth-finder: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.209
+|   url                                        method
+|   http://10.11.1.209:8080/manager/html       HTTP: Basic
+|   http://10.11.1.209:8080/manager/status     HTTP: Basic
+|_  http://10.11.1.209:8080/host-manager/html  HTTP: Basic
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=10.11.1.209
+|     
+|     Path: http://10.11.1.209:8080/docs/jndi-datasource-examples-howto.html
+|     Line number: 629
+|     Comment: 
+|          // Always make sure result sets and statements are closed,
+|     
+|     Path: http://10.11.1.209:8080/docs/jndi-datasource-examples-howto.html
+|     Line number: 630
+|     Comment: 
+|          // and the connection is returned to the pool
+|     
+|     Path: http://10.11.1.209:8080/docs/jndi-datasource-examples-howto.html
+|     Line number: 625
+|     Comment: 
+|          // Make sure we don't close it twice
+|     
+|     Path: http://10.11.1.209:8080/docs/jndi-datasource-examples-howto.html
+|     Line number: 624
+|     Comment: 
+|          // Return to connection pool
+|     
+|     Path: http://10.11.1.209:8080/host-manager/html
+|     Line number: 6
+|     Comment: 
+|         <!--
+|             BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;font-size:12px;}
+|             H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+|             PRE, TT {border: 1px dotted #525D76}
+|             A {color : black;}A.name {color : black;}
+|             -->
+|     
+|     Path: http://10.11.1.209:8080/docs/jndi-datasource-examples-howto.html
+|     Line number: 613
+|     Comment: 
+|          // Or PreparedStatement if needed
+|     
+|     Path: http://10.11.1.209:8080/tomcat.css
+|     Line number: 1
+|     Comment: 
+|         /*
+|           Licensed to the Apache Software Foundation (ASF) under one or more
+|           contributor license agreements.  See the NOTICE file distributed with
+|           this work for additional information regarding copyright ownership.
+|           The ASF licenses this file to You under the Apache License, Version 2.0
+|           (the "License"); you may not use this file except in compliance with
+|           the License.  You may obtain a copy of the License at
+|         
+|               http://www.apache.org/licenses/LICENSE-2.0
+|         
+|           Unless required by applicable law or agreed to in writing, software
+|           distributed under the License is distributed on an "AS IS" BASIS,
+|           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+|           See the License for the specific language governing permissions and
+|           limitations under the License.
+|         */
+|     
+|     Path: http://10.11.1.209:8080/docs/realm-howto.html
+|     Line number: 3
+|     Comment: 
+|          // Enable strict mode
+|     
+|     Path: http://10.11.1.209:8080/docs/api/index.html
+|     Line number: 1
+|     Comment: 
+|         <!--
+|           Licensed to the Apache Software Foundation (ASF) under one or more
+|           contributor license agreements.  See the NOTICE file distributed with
+|           this work for additional information regarding copyright ownership.
+|           The ASF licenses this file to You under the Apache License, Version 2.0
+|           (the "License"); you may not use this file except in compliance with
+|           the License.  You may obtain a copy of the License at
+|         
+|               http://www.apache.org/licenses/LICENSE-2.0
+|         
+|           Unless required by applicable law or agreed to in writing, software
+|           distributed under the License is distributed on an "AS IS" BASIS,
+|           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+|           See the License for the specific language governing permissions and
+|           limitations under the License.
+|         -->
+|     
+|     Path: http://10.11.1.209:8080/docs/jndi-datasource-examples-howto.html
+|     Line number: 398
+|     Comment: 
+|         
+|         //etc.</code></pre></div>
+|     
+|     Path: http://10.11.1.209:8080/docs/realm-howto.html
+|     Line number: 7
+|     Comment: 
+|_         // Workaround for IE <= 11
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-date: Fri, 04 Sep 2020 18:31:16 GMT; 0s from local time.
+| http-default-accounts: 
+|   [Apache Tomcat] at /manager/html/
+|_    tomcat:s3cret
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /examples/: Sample scripts
+|   /manager/html/upload: Apache Tomcat (401 )
+|   /manager/html: Apache Tomcat (401 )
+|_  /docs/: Potentially interesting folder
+|_http-favicon: Apache Tomcat
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-grep: 
+|   (1) http://10.11.1.209:8080/docs/appdev/: 
+|     (1) email: 
+|       + craigmcc@apache.org
+|   (2) http://10.11.1.209:8080/docs/realm-howto.html: 
+|     (2) email: 
+|       + j.jones@mycompany.com
+|_      + f.bloggs@mycompany.com
+| http-headers: 
+|   Content-Type: text/html;charset=UTF-8
+|   Transfer-Encoding: chunked
+|   Date: Fri, 04 Sep 2020 18:31:15 GMT
+|   Connection: close
+|   
+|_  (Request type: HEAD)
+|_http-mobileversion-checker: No mobile version detected.
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-security-headers: 
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       http://ha.ckers.org/slowloris/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-title: Apache Tomcat/9.0.27
+| http-useragent-tester: 
+|   Status for browser useragent: 200
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     libwww
+|     lwp-trivial
+|     libcurl-agent/1.0
+|     PHP/
+|     Python-urllib/2.5
+|     GT::WWW
+|     Snoopy
+|     MFC_Tear_Sample
+|     HTTP::Lite
+|     PHPCrawl
+|     URI::Fetch
+|     Zend_Http_Client
+|     http client
+|     PECL::HTTP
+|     Wget/1.13.4 (linux-gnu)
+|_    WWW-Mechanize/1.34
+|_http-xssed: No previously reported XSS vuln.
+| vulners: 
+|   cpe:/a:apache:tomcat:9.0.27: 
+|     	CVE-2020-1938	7.5	https://vulners.com/cve/CVE-2020-1938
+|     	CVE-2020-1938	7.5	https://vulners.com/cve/CVE-2020-1938
+|     	CVE-2020-8022	7.2	https://vulners.com/cve/CVE-2020-8022
+|     	CVE-2020-8022	7.2	https://vulners.com/cve/CVE-2020-8022
+|     	CVE-2020-1935	5.8	https://vulners.com/cve/CVE-2020-1935
+|     	CVE-2019-17563	5.1	https://vulners.com/cve/CVE-2019-17563
+|     	CVE-2019-17563	5.1	https://vulners.com/cve/CVE-2019-17563
+|     	CVE-2020-13935	5.0	https://vulners.com/cve/CVE-2020-13935
+|     	CVE-2020-13935	5.0	https://vulners.com/cve/CVE-2020-13935
+|     	CVE-2020-13934	5.0	https://vulners.com/cve/CVE-2020-13934
+|     	CVE-2020-13934	5.0	https://vulners.com/cve/CVE-2020-13934
+|     	CVE-2020-11996	5.0	https://vulners.com/cve/CVE-2020-11996
+|     	CVE-2020-11996	5.0	https://vulners.com/cve/CVE-2020-11996
+|     	CVE-2020-9484	4.4	https://vulners.com/cve/CVE-2020-9484
+|     	CVE-2020-9484	4.4	https://vulners.com/cve/CVE-2020-9484
+|     	CVE-2019-12418	4.4	https://vulners.com/cve/CVE-2019-12418
+|_    	CVE-2019-12418	4.4	https://vulners.com/cve/CVE-2019-12418
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port515-TCP:V=7.80%I=7%D=9/4%Time=5F528753%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,1,"\x01");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=9/4%OT=22%CT=1%CU=43738%PV=Y%DS=2%DC=T%G=Y%TM=5F52888A
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=10C%TI=I%II=I%SS=S%TS=7)OPS(
+OS:O1=ST11M54DNW2%O2=ST11M54DNW2%O3=NNT11M54DNW2%O4=ST11M54DNW2%O5=ST11M54D
+OS:NW2%O6=ST11M54D)WIN(W1=FADF%W2=FADF%W3=FA38%W4=FA3B%W5=FA3B%W6=FFF7)ECN(
+OS:R=Y%DF=Y%T=40%W=FA76%O=M54DNNSNW2%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=N%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0
+OS:%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=FF%IPL=70%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK
+OS:=G%RUD=G)IE(R=Y%DFI=Y%T=FF%CD=S)
+
+Network Distance: 2 hops
+
+Host script results:
+|_fcrdns: FAIL (No PTR record)
+| firewalk: 
+| HOP  HOST           PROTOCOL  BLOCKED PORTS
+|_1    192.168.119.1  tcp       3,11,14,16,27,30,36,41,43-44
+|_ipidseq: Unknown
+|_path-mtu: PMTU == 1500
+| qscan: 
+| PORT  FAMILY  MEAN (us)  STDDEV    LOSS (%)
+| 1     0       25831.40   12807.12  0.0%
+| 22    0       22021.80   3343.56   0.0%
+| 111   0       23379.70   11732.79  0.0%
+| 515   0       21748.20   4094.67   0.0%
+| 6787  0       20840.90   3418.80   0.0%
+| 8009  0       21335.30   5354.11   0.0%
+|_8080  0       27152.40   13983.58  0.0%
+| traceroute-geolocation: 
+|   HOP  RTT    ADDRESS        GEOLOCATION
+|   1    33.74  192.168.119.1  - ,- 
+|_  2    33.76  10.11.1.209    - ,- 
+
+TRACEROUTE (using port 587/tcp)
+HOP RTT      ADDRESS
+1   33.74 ms 192.168.119.1
+2   33.76 ms 10.11.1.209
+
+Post-scan script results:
+| creds-summary: 
+|   10.11.1.209: 
+|     8080/http: 
+|_      tomcat:s3cret - Valid credentials
+| reverse-index: 
+|   22/tcp: 10.11.1.209
+|   111/tcp: 10.11.1.209
+|   515/tcp: 10.11.1.209
+|   6787/tcp: 10.11.1.209
+|   8009/tcp: 10.11.1.209
+|_  8080/tcp: 10.11.1.209
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep  4 14:33:46 2020 -- 1 IP address (1 host up) scanned in 1705.19 seconds
