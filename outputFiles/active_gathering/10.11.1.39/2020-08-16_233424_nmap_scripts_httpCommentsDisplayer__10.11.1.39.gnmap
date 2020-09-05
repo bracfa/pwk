@@ -1,4 +1,0 @@
-# Nmap 7.80 scan initiated Sun Aug 16 23:56:18 2020 as: nmap -Pn --script=http-comments-displayer -oA 2020-08-16_233424_nmap_scripts_httpCommentsDisplayer__10.11.1.39 10.11.1.39
-Host: 10.11.1.39 ()	Status: Up
-Host: 10.11.1.39 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 3306/open/tcp//mysql///	Ignored State: filtered (997)
-# Nmap done at Sun Aug 16 23:56:24 2020 -- 1 IP address (1 host up) scanned in 5.69 seconds
