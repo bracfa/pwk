@@ -1,0 +1,15 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:29:08 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Thu, 07 Mar 2019 09:09:59 GMT
+ETag: "104-5837d787a87c0-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-181/182
+Content-Length: 182
+Keep-Alive: timeout=5, max=47
+Connection: Keep-Alive
+Content-Type: text/css
+
+body{font-family:"Noto Serif",serif;font-size:16px;line-height:1.8;color:#191e23}p{font-size:inherit;line-height:inherit}ol,ul{margin:0;padding:0}ol li,ul li{margin-bottom:0}ul{list-style-type:disc}ol{list-style-type:decimal}ol ul,ul ul{list-style-type:circle}body></html>

@@ -1,0 +1,35 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:49:16 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-615/616
+Content-Length: 616
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/theme-compat</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/theme-compat</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="comments.php">comments.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">2.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="embed-404.php">embed-404.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">971 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="embed-content.php">embed-content.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">3.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="embed.php">embed.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">481 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="footer-embed.php">footer-embed.php</a></td><td align="right">2016-05-25 12:05  </td><td align="right">438 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="footer.php">footer.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="header-embed.php">header-embed.php</a></td><td align="right">2016-05-25 12:05  </td><td align="right">704 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="header.php">header.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sidebar.php">sidebar.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">4.2K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

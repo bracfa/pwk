@@ -1,0 +1,37 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 16:16:09 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Tue, 15 Oct 2019 18:58:46 GMT
+ETag: "f5276610a0ec71c744244b05039e3b60-gzip"
+Link: <http://10.11.1.251/wp/index.php/wp-json/>; rel="https://api.w.org/"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-499/500
+Content-Length: 500
+Keep-Alive: timeout=5, max=79
+Connection: Keep-Alive
+Content-Type: application/rss+xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Search Results for &#8220;image/sfi9876&#8221; &#8211; Shakan Ltd.</title>
+	<atom:link href="http://10.11.1.251/wp/index.php/search/image/sfi9876/rss2/" rel="self" type="application/rss+xml" />
+	<link>http://10.11.1.251/wp</link>
+	<description>Shakan Ltd. Blog (development version)</description>
+	<lastBuildDate>2019-10-15 18:58:46</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+</channel>
+</rss>

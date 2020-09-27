@@ -1,0 +1,30 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:57:22 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-527/528
+Content-Length: 528
+Keep-Alive: timeout=5, max=52
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/js/tinymce/plugins/compat3x</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/js/tinymce/plugins/compat3x</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/js/tinymce/plugins/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="css/">css/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="plugin.js">plugin.js</a></td><td align="right">2018-04-25 18:35  </td><td align="right">9.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="plugin.min.js">plugin.min.js</a></td><td align="right">2018-04-25 18:35  </td><td align="right">4.0K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>
+3

@@ -1,0 +1,30 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:49:07 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-543/544
+Content-Length: 544
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/sodium_compat/lib</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/sodium_compat/lib</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/sodium_compat/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="constants.php">constants.php</a></td><td align="right">2019-03-21 00:56  </td><td align="right">4.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="namespaced.php">namespaced.php</a></td><td align="right">2019-03-21 00:56  </td><td align="right">1.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="php72compat.php">php72compat.php</a></td><td align="right">2019-05-17 13:20  </td><td align="right"> 31K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sodium_compat.php">sodium_compat.php</a></td><td align="right">2019-05-17 13:20  </td><td align="right"> 24K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

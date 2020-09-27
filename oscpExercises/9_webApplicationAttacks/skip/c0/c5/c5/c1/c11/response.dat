@@ -1,0 +1,36 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:22:37 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-655/656
+Content-Length: 656
+Keep-Alive: timeout=5, max=39
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/blocks</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/blocks</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="tag-cloud.php">tag-cloud.php</a></td><td align="right">2019-03-07 04:12  </td><td align="right">1.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="shortcode.php">shortcode.php</a></td><td align="right">2018-12-17 14:06  </td><td align="right">678 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="search.php">search.php</a></td><td align="right">2019-03-07 04:12  </td><td align="right">1.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="rss.php">rss.php</a></td><td align="right">2019-03-07 04:12  </td><td align="right">3.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="latest-posts.php">latest-posts.php</a></td><td align="right">2019-03-07 04:09  </td><td align="right">3.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="latest-comments.php">latest-comments.php</a></td><td align="right">2019-03-21 08:48  </td><td align="right">5.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="categories.php">categories.php</a></td><td align="right">2018-12-18 22:16  </td><td align="right">2.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="calendar.php">calendar.php</a></td><td align="right">2019-03-21 11:32  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="block.php">block.php</a></td><td align="right">2018-12-18 22:16  </td><td align="right">859 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="archives.php">archives.php</a></td><td align="right">2018-12-17 14:06  </td><td align="right">3.2K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

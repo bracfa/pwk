@@ -1,0 +1,37 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:59:28 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-668/669
+Content-Length: 669
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/js/tinymce</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/js/tinymce</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/js/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="langs/">langs/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="license.txt">license.txt</a></td><td align="right">2017-05-08 01:32  </td><td align="right"> 26K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="plugins/">plugins/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="skins/">skins/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="themes/">themes/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="tiny_mce_popup.js">tiny_mce_popup.js</a></td><td align="right">2017-09-26 17:15  </td><td align="right"> 16K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="tinymce.min.js">tinymce.min.js</a></td><td align="right">2019-05-17 00:49  </td><td align="right">348K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="utils/">utils/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-tinymce.js">wp-tinymce.js</a></td><td align="right">2019-05-17 00:49  </td><td align="right">639K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-tinymce.php">wp-tinymce.php</a></td><td align="right">2019-01-18 14:51  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>
+á

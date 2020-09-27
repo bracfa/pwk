@@ -1,0 +1,15 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:05:09 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Fri, 14 Dec 2018 04:11:47 GMT
+ETag: "1a1-57cf3a13426c0-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-252/253
+Content-Length: 253
+Keep-Alive: timeout=5, max=82
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+!function(e){"function"!=typeof e.matches&&(e.matches=e.msMatchesSelector||e.mozMatchesSelector||e.webkitMatchesSelector||function(e){for(var t=this,o=(t.document||t.ownerDocument).querySelectorAll(e),n=0;o[n]&&o[n]!==t;)++n;return Boolean(o[n])}),"function"!=typeof e.closest&&(e.closest=function(e){for(var t=this;t&&1===t.nodeType;){if(t.matches(e))return t;t=t.parentNode}return null})}(window.Element.prototype);

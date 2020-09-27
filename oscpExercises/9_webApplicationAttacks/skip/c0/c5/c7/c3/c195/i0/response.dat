@@ -1,0 +1,86 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:57:31 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Link: <http://10.11.1.251/wp/index.php/wp-json/>; rel="https://api.w.org/"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-3091/3092
+Content-Length: 3092
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<title>Search Results for &#8220;class-wp-meta-query&#8221; &#8211; Shakan Ltd.</title>
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Shakan Ltd. &raquo; Feed" href="http://10.11.1.251/wp/index.php/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Shakan Ltd. &raquo; Comments Feed" href="http://10.11.1.251/wp/index.php/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Shakan Ltd. &raquo; Search Results for &#8220;class-wp-meta-query&#8221; Feed" href="http://10.11.1.251/wp/index.php/search/class-wp-meta-query/feed/rss2/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/10.11.1.251\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.4"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='http://10.11.1.251/wp/wp-includes/css/dist/block-library/style.min.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='http://10.11.1.251/wp/wp-includes/css/dist/block-library/theme.min.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='twentynineteen-style-css'  href='http://10.11.1.251/wp/wp-content/themes/twentynineteen/style.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='twentynineteen-print-style-css'  href='http://10.11.1.251/wp/wp-content/themes/twentynineteen/print.css?ver=1.4' type='text/css' media='print' />
+<link rel='stylesheet' id='autosuggestCSS-css'  href='http://10.11.1.251/wp/wp-content/plugins/wp-autosuggest/css/wp_autosuggest.css?ver=1' type='text/css' media='screen' />
+<script type='text/javascript' src='http://10.11.1.251/wp/wp-content/plugins/wp-autosuggest/js/wp.autosuggest.js?ver=1'></script>
+<link rel='https://api.w.org/' href='http://10.11.1.251/wp/index.php/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://10.11.1.251/wp/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://10.11.1.251/wp/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.4" />
+</head>
+
+<body class="search search-no-results wp-embed-responsive hfeed image-filters-enabled">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header">
+
+			<div class="site-branding-container">
+				<div class="site-branding">
+
+								<p class="site-title"><a href="http://10.11.1.251/wp/" rel="home">Shakan Ltd.</a></p>
+			
+				<p class="site-description">
+				Shakan Ltd. Blog (development version)			</p>
+			</div><!-- .site-branding -->
+			</div><!-- .site-branding-container -->
+
+					</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+		
+<section class="no-results not-found">
+	<header class="page-header">
+		<h1 class="page-title">Nothing Found</h1>
+	</header><!-- .page-header -->
+
+	<div class="page-content">
+		
+			<p>Sorry, but nothing matched your search terms. Please try again with some different keywords.</p>
+			<form role="search" method="get" class="search-form" action="http://10.11.1.251/wp/"

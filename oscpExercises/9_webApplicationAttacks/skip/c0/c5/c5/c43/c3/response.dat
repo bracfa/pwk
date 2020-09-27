@@ -1,0 +1,13 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:51:00 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Fri, 18 Mar 2016 20:26:26 GMT
+ETag: "660c-52e588fac8080"
+Accept-Ranges: bytes
+Content-Length: 26124
+Content-Range: bytes 0-26123/26124
+Keep-Alive: timeout=5, max=95
+Connection: Keep-Alive
+Content-Type: application/font-woff
+
+wOFF

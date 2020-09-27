@@ -1,0 +1,13 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:51:00 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Wed, 27 Mar 2019 19:59:52 GMT
+ETag: "af44-58518e177fe00"
+Accept-Ranges: bytes
+Content-Length: 44868
+Content-Range: bytes 0-44867/44868
+Keep-Alive: timeout=5, max=91
+Connection: Keep-Alive
+Content-Type: application/vnd.ms-fontobject
+
+D¯

@@ -1,0 +1,23 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:50:43 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Mon, 03 Mar 2014 02:34:27 GMT
+ETag: "95-4f3aaa058b2c0-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-142/143
+Content-Length: 143
+Keep-Alive: timeout=5, max=69
+Connection: Keep-Alive
+Content-Type: text/plain
+
+Crystal Project Icons
+by Everaldo Coelho
+http://everaldo.com
+
+Released under LGPL
+
+Modified February 2008
+for WordPress
+https://wordpress.orgL

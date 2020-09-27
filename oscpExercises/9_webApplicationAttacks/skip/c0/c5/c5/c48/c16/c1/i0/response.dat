@@ -1,0 +1,15 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:59:47 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Thu, 21 Sep 2017 16:35:48 GMT
+ETag: "4fc-559b5af446100-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-548/549
+Content-Length: 549
+Keep-Alive: timeout=5, max=16
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+function fileDialogStart(){}function fileQueued(){}function uploadStart(){}function uploadProgress(){}function prepareMediaItem(){}function prepareMediaItemInit(){}function itemAjaxError(){}function deleteSuccess(){}function deleteError(){}function updateMediaForm(){}function uploadSuccess(){}function uploadComplete(){}function wpQueueError(){}function wpFileError(){}function fileQueueError(){}function fileDialogComplete(){}function uploadError(){}function cancelUpload(){}function switchUploader(){jQuery("#"+swfu.customSettings.swfupload_element_id).hide(),jQuery("#"+swfu.customSettings.degraded_element_id).show(),jQuery(".upload-html-bypass").hide()}function swfuploadPreLoad(){switchUploader()}function swfuploadLoadFailed(){switchUploader()}var topWin=window.dialogArguments||opener||parent||top;jQuery(document).ready(function(a){a('input[type="radio"]',"#media-items").on("click",function(){var b=a(this).closest("tr");a(b).hasClass("align")?setUserSetting("align",a(this).val()):a(b).hasClass("image-size")&&setUserSetting("imgsize",a(this).val())}),a("button.button","#media-items").on("click",function(){var b=this.className||"";b=b.match(/url([^ '"]+)/),b&&b[1]&&(setUserSetting("urlbutton",b[1]),a(this).siblings(".urlfield").val(a(this).attr("title")))})});rer: h!

@@ -1,0 +1,63 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:04:46 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-1008/1009
+Content-Length: 1009
+Keep-Alive: timeout=5, max=36
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/js/jquery/ui</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/js/jquery/ui</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/js/jquery/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="widget.min.js">widget.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">6.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="tooltip.min.js">tooltip.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">5.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="tabs.min.js">tabs.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="spinner.min.js">spinner.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">6.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sortable.min.js">sortable.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right"> 24K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="slider.min.js">slider.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right"> 11K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="selectmenu.min.js">selectmenu.min.js</a></td><td align="right">2015-11-07 07:37  </td><td align="right">8.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="selectable.min.js">selectable.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">4.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="resizable.min.js">resizable.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right"> 18K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="progressbar.min.js">progressbar.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">2.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="position.min.js">position.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">6.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="mouse.min.js">mouse.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">3.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="menu.min.js">menu.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">9.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect.min.js">effect.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right"> 13K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-transfer.min.js">effect-transfer.min.js</a></td><td align="right">2015-11-07 07:37  </td><td align="right">857 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-slide.min.js">effect-slide.min.js</a></td><td align="right">2015-11-07 07:37  </td><td align="right">962 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-size.min.js">effect-size.min.js</a></td><td align="right">2016-04-15 12:10  </td><td align="right">3.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-shake.min.js">effect-shake.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-scale.min.js">effect-scale.min.js</a></td><td align="right">2015-11-07 07:37  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-pulsate.min.js">effect-pulsate.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">798 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-puff.min.js">effect-puff.min.js</a></td><td align="right">2015-11-07 07:37  </td><td align="right">783 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-highlight.min.js">effect-highlight.min.js</a></td><td align="right">2015-11-07 07:37  </td><td align="right">789 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-fold.min.js">effect-fold.min.js</a></td><td align="right">2015-11-07 07:37  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-fade.min.js">effect-fade.min.js</a></td><td align="right">2015-11-07 07:37  </td><td align="right">515 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-explode.min.js">effect-explode.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-drop.min.js">effect-drop.min.js</a></td><td align="right">2015-11-07 07:37  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-clip.min.js">effect-clip.min.js</a></td><td align="right">2015-11-07 07:37  </td><td align="right">918 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-bounce.min.js">effect-bounce.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">1.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="effect-blind.min.js">effect-blind.min.js</a></td><td align="right">2015-11-07 07:37  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="droppable.min.js">droppable.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">6.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="draggable.min.js">draggable.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right"> 18K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="dialog.min.js">dialog.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="datepicker.min.js">datepicker.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right"> 36K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="core.min.js">core.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">3.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="button.min.js">button.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">7.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="autocomplete.min.js">autocomplete.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">8.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="accordion.min.js">accordion.min.js</a></td><td align="right">2016-11-03 01:40  </td><td align="right">8.4K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

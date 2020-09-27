@@ -1,0 +1,167 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 18:01:37 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Tue, 15 Oct 2019 21:47:32 GMT
+ETag: "9b2-594f9ee78aa80-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-677/678
+Content-Length: 678
+Keep-Alive: timeout=5, max=6
+Connection: Keep-Alive
+Content-Type: text/css
+
+/* 
+================================================
+autosuggest, inquisitor style
+================================================
+*/
+
+body
+{
+	position: relative;
+}
+
+
+div.autosuggest
+{
+	position: absolute;
+	background-image: url(../images/as_pointer.gif);
+	background-position: 35px top;
+	background-repeat: no-repeat;
+	padding: 12px 0 0 0;
+	margin-top: 12px;
+}
+
+div.autosuggest div.as_container
+{
+	position: relative;
+	padding: 6px 4px;
+	background: #333;
+	overflow: hidden;
+	border: 1px solid #333;
+	border-radius: 8px;
+	-o-border-radius: 8px;
+	-icab-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+div.autosuggest ul
+{
+	list-style: none;
+	margin: 0 0 -4px 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+div.autosuggest ul li
+{
+	color: #ccc;
+	padding: 0;
+	margin: 0 4px 4px;
+	text-align: left;
+}
+
+div.autosuggest ul li a
+{
+	color: #ccc;
+	display: block;
+	text-decoration: none;
+	background-color: transparent;
+	text-shadow: #000 0px 0px 5px;
+	position: relative;
+	padding: 0;
+	width: 100%;
+}
+div.autosuggest ul li a:hover
+{
+	background-color: #444;
+}
+div.autosuggest ul li.as_highlight a:hover
+{
+	background-color: #1B5CCD;
+}
+
+div.autosuggest ul li a span
+{
+	display: block;
+	padding: 3px 6px;
+	font-weight: bold;
+}
+
+div.autosuggest ul li a span small
+{
+	font-weight: normal;
+	color: #999;
+}
+
+div.autosuggest ul li.as_highlight a span small
+{
+	color: #ccc;
+}
+
+div.autosuggest ul li.as_highlight a
+{
+	color: #fff;
+	background-color: #1B5CCD;
+	background-image: url(../images/hl_corner_br.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+div.autosuggest ul li.as_highlight a span
+{
+	background-image: url(../images/hl_corner_bl.gif);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+
+div.autosuggest ul li a .tl,
+div.autosuggest ul li a .tr
+{
+	background: transparent;
+	background-repeat: no-repeat;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	top: 0;
+	padding: 0;
+	margin: 0;
+}
+div.autosuggest ul li a .tr
+{
+	right: 0;
+}
+
+div.autosuggest ul li.as_highlight a .tl
+{
+	left: 0;
+	background-image: url(../images/hl_corner_tl.gif);
+	background-position: bottom left;
+}
+
+div.autosuggest ul li.as_highlight a .tr
+{
+	right: 0;
+	background-image: url(../images/hl_corner_tr.gif);
+	background-position: bottom right;
+}
+
+
+
+div.autosuggest ul li.as_warning
+{
+	font-weight: bold;
+	text-align: center;
+}
+
+div.autosuggest ul em
+{
+	font-style: normal;
+	color: #6EADE7;
+}
+á

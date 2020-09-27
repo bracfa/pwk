@@ -1,0 +1,15 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:22:56 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Thu, 21 Mar 2019 12:48:00 GMT
+ETag: "2ff-5849a25f20000-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-275/276
+Content-Length: 276
+Keep-Alive: timeout=5, max=78
+Connection: Keep-Alive
+Content-Type: text/css
+
+.block-editor-format-toolbar__image-container-content{display:flex}.block-editor-format-toolbar__image-container-content .components-icon-button{height:52px;align-self:flex-end}.block-editor-format-toolbar__image-container-value{margin:7px;flex-grow:1;flex-shrink:1;white-space:nowrap;min-width:150px;max-width:500px}.block-editor-format-toolbar__image-container-value.components-base-control .components-base-control__field{margin-bottom:0}.block-editor-format-toolbar__link-container-content{display:flex}.block-editor-format-toolbar__link-container-value{margin:7px;flex-grow:1;flex-shrink:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:150px;max-width:500px}.block-editor-format-toolbar__link-container-value.has-invalid-link{color:#d94f4f}

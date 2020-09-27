@@ -1,0 +1,1 @@
+var res = {'data':'HTTP/1.1 405 Method Not Allowed\x0aDate: Sun, 20 Sep 2020 17:39:27 GMT\x0aServer: Apache/2.4.29 (Ubuntu)\x0aAllow: POST\x0aContent-Length: 42\x0aKeep-Alive: timeout=5, max=82\x0aConnection: Keep-Alive\x0aContent-Type: text/plain;charset=UTF-8\x0a\x0aXML-RPC server accepts POST requests only.O\x02'}

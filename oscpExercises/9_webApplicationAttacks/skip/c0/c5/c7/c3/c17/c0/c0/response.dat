@@ -1,0 +1,118 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 17:29:04 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Tue, 15 Oct 2019 18:58:46 GMT
+ETag: "f5276610a0ec71c744244b05039e3b60-gzip"
+Link: <http://10.11.1.251/wp/index.php/wp-json/>; rel="https://api.w.org/"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-1846/1847
+Content-Length: 1847
+Keep-Alive: timeout=5, max=52
+Connection: Keep-Alive
+Content-Type: application/rss+xml; charset=UTF-8
+
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Search Results for &#8220;ver&#8221; &#8211; Shakan Ltd.</title>
+	<atom:link href="http://10.11.1.251/wp/index.php/search/ver/feed/rss2/" rel="self" type="application/rss+xml" />
+	<link>http://10.11.1.251/wp</link>
+	<description>Shakan Ltd. Blog (development version)</description>
+	<lastBuildDate>Tue, 15 Oct 2019 18:58:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.4</generator>
+	<item>
+		<title>WordPress plugin tests</title>
+		<link>http://10.11.1.251/wp/index.php/2019/10/15/wordpress-plugin-tests/</link>
+				<comments>http://10.11.1.251/wp/index.php/2019/10/15/wordpress-plugin-tests/#respond</comments>
+				<pubDate>Tue, 15 Oct 2019 18:58:24 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://10.11.1.251/wp/?p=11</guid>
+				<description><![CDATA[Hello everyone, I&#8217;m going to start experimenting with some WordPress plugins to determine exactly what I need for the blog before it goes live in production. If anyone has any recommendations on this let me know! /Sean]]></description>
+								<content:encoded><![CDATA[
+<p>
+Hello everyone, 
+
+I&#8217;m going to start experimenting with some WordPress plugins to determine exactly what I need for the blog before it goes live in production. 
+
+If anyone has any recommendations on this let me know!
+</p>
+
+<p>/Sean</p>
+]]></content:encoded>
+							<wfw:commentRss>http://10.11.1.251/wp/index.php/2019/10/15/wordpress-plugin-tests/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Work in Progress &#8230;</title>
+		<link>http://10.11.1.251/wp/index.php/2019/10/14/hello-world/</link>
+				<comments>http://10.11.1.251/wp/index.php/2019/10/14/hello-world/#respond</comments>
+				<pubDate>Mon, 14 Oct 2019 20:02:35 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://10.11.1.251/wp/?p=1</guid>
+				<description><![CDATA[Hi guys, As you can see I’ve installed a blog on my workstation in order to configure and test all the features requested by our customer, Shakan Ltd. I’m working on creating a cool template, in the meantime please play a bit with the interface because we will have to present the product to the [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<p>Hi guys,
+
+As you can see I’ve installed a blog on my workstation in order to configure and test all the features requested by our customer, Shakan Ltd.
+
+I’m working on creating a cool template, in the meantime please play a bit with the interface because we will have to present the product to the customer in two weeks!
+
+Once ready we’ll move the product to our production server.
+
+If you need to change/add something to the test website, feel free to login to my box: username is sean and you already know the password!
+
+Keep me posted!
+</p>
+
+<p>/Sean </p>
+]]></content:encoded>
+							<wfw:commentRss>http://10.11.1.251/wp/index.php/2019/10/14/hello-world/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Sample Page</title>
+		<link>http://10.11.1.251/wp/index.php/sample-page/</link>
+				<pubDate>Mon, 14 Oct 2019 20:02:35 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		
+		<guid isPermaLink="false">http://10.11.1.251/wp/?page_id=2</guid>
+				<description><![CDATA[This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this: Hi there! I&#8217;m a bike messenger [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<p>This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>
+
+
+
+<blockquote class="wp-block-quote"><p>Hi there! I&#8217;m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin&#8217; caught in the rain.)</p></blockquote>
+
+
+
+<p>&#8230;or something like this:</p>
+
+
+
+<blockquote class="wp-block-quote"><p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p></blockquote>
+
+
+
+<p>As a new WordPress user, you should go to <a href="http://10.11.1.251/wp/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

@@ -1,0 +1,5 @@
+var child = [
+  { 'dupe': true, 'type': 16, 'name': 'inline.php', 'dir': 'c0', 'linked': 2, 'url': 'http://10.11.1.251/wp/wp-includes/Text/Diff/Renderer/inline.php', 'fetched': true, 'code': 200, 'len': 0, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'UTF-8', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xffefffff },
+  { 'dupe': false, 'type': 64, 'name': 'C=N', 'dir': 'c1', 'linked': 2, 'url': 'http://10.11.1.251/wp/wp-includes/Text/Diff/Renderer/?C=N;O=D', 'fetched': true, 'code': 200, 'len': 1020, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'UTF-8', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 1, 0, 0, 0, 0 ], 'sig': 0x28f4fa31 },
+  { 'dupe': false, 'type': 64, 'name': 'O=D', 'dir': 'c2', 'linked': 2, 'url': 'http://10.11.1.251/wp/wp-includes/Text/Diff/Renderer/?C=N;O=D', 'fetched': true, 'code': 200, 'len': 1020, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'UTF-8', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 1, 0, 0, 0, 0 ], 'sig': 0x28f4fa31 }
+];

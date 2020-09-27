@@ -1,0 +1,36 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:52:12 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-641/642
+Content-Length: 642
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/IXR</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/IXR</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-IXR-value.php">class-IXR-value.php</a></td><td align="right">2016-08-26 18:08  </td><td align="right">3.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-IXR-server.php">class-IXR-server.php</a></td><td align="right">2016-08-26 18:08  </td><td align="right">6.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-IXR-request.php">class-IXR-request.php</a></td><td align="right">2016-08-26 18:08  </td><td align="right">927 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-IXR-message.php">class-IXR-message.php</a></td><td align="right">2019-03-28 12:53  </td><td align="right">7.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-IXR-introspectionserver.php">class-IXR-introspectionserver.php</a></td><td align="right">2016-08-26 18:08  </td><td align="right">5.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-IXR-error.php">class-IXR-error.php</a></td><td align="right">2016-08-26 18:08  </td><td align="right">854 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-IXR-date.php">class-IXR-date.php</a></td><td align="right">2016-08-26 18:08  </td><td align="right">1.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-IXR-clientmulticall.php">class-IXR-clientmulticall.php</a></td><td align="right">2016-08-26 18:08  </td><td align="right">963 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-IXR-client.php">class-IXR-client.php</a></td><td align="right">2016-08-26 18:08  </td><td align="right">4.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-IXR-base64.php">class-IXR-base64.php</a></td><td align="right">2016-08-26 18:08  </td><td align="right">414 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

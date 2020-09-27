@@ -1,0 +1,54 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:50:52 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-976/977
+Content-Length: 977
+Keep-Alive: timeout=5, max=24
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/images</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/images</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="xit.gif">xit.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">181 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="xit-2x.gif">xit-2x.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">825 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="wpspin.gif">wpspin.gif</a></td><td align="right">2018-12-18 22:36  </td><td align="right">2.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="wpspin-2x.gif">wpspin-2x.gif</a></td><td align="right">2018-12-18 22:36  </td><td align="right">8.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="wpicons.png">wpicons.png</a></td><td align="right">2014-11-25 01:12  </td><td align="right">6.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="wpicons-2x.png">wpicons-2x.png</a></td><td align="right">2014-11-25 01:12  </td><td align="right"> 15K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="wlw/">wlw/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="w-logo-blue.png">w-logo-blue.png</a></td><td align="right">2016-02-23 11:55  </td><td align="right">3.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="uploader-icons.png">uploader-icons.png</a></td><td align="right">2014-02-13 03:03  </td><td align="right">1.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="uploader-icons-2x.png">uploader-icons-2x.png</a></td><td align="right">2014-10-28 18:02  </td><td align="right">3.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="toggle-arrow.png">toggle-arrow.png</a></td><td align="right">2014-10-28 18:02  </td><td align="right">289 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="toggle-arrow-2x.png">toggle-arrow-2x.png</a></td><td align="right">2012-11-07 15:54  </td><td align="right">354 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="spinner.gif">spinner.gif</a></td><td align="right">2018-12-18 22:36  </td><td align="right">3.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="spinner-2x.gif">spinner-2x.gif</a></td><td align="right">2018-12-18 22:36  </td><td align="right">7.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="smilies/">smilies/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="rss.png">rss.png</a></td><td align="right">2012-11-07 13:49  </td><td align="right">608 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="rss-2x.png">rss-2x.png</a></td><td align="right">2012-11-07 15:54  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="media/">media/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon-pointer-flag.png">icon-pointer-flag.png</a></td><td align="right">2011-12-05 16:49  </td><td align="right">783 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon-pointer-flag-2x.png">icon-pointer-flag-2x.png</a></td><td align="right">2012-09-26 22:12  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="down_arrow.gif">down_arrow.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right"> 59 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="down_arrow-2x.gif">down_arrow-2x.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right"> 84 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="crystal/">crystal/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="blank.gif">blank.gif</a></td><td align="right">2014-11-25 01:12  </td><td align="right"> 43 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="arrow-pointer-blue.png">arrow-pointer-blue.png</a></td><td align="right">2012-11-07 13:49  </td><td align="right">793 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="arrow-pointer-blue-2x.png">arrow-pointer-blue-2x.png</a></td><td align="right">2014-10-28 18:02  </td><td align="right">1.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="admin-bar-sprite.png">admin-bar-sprite.png</a></td><td align="right">2014-02-13 03:03  </td><td align="right">2.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="admin-bar-sprite-2x.png">admin-bar-sprite-2x.png</a></td><td align="right">2014-10-28 18:02  </td><td align="right">3.9K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

@@ -1,0 +1,15 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:56:24 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Wed, 25 Apr 2018 22:35:21 GMT
+ETag: "1ac-56ab3e2d73c40-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-245/246
+Content-Length: 246
+Keep-Alive: timeout=5, max=4
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+!function(){"use strict";var n=tinymce.util.Tools.resolve("tinymce.PluginManager"),t=function(n){n.addCommand("InsertHorizontalRule",function(){n.execCommand("mceInsertContent",!1,"<hr />")})},o=function(n){n.addButton("hr",{icon:"hr",tooltip:"Horizontal line",cmd:"InsertHorizontalRule"}),n.addMenuItem("hr",{icon:"hr",text:"Horizontal line",cmd:"InsertHorizontalRule",context:"insert"})};n.add("hr",function(n){t(n),o(n)})}();{var

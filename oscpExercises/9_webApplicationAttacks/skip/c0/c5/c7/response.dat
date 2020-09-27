@@ -1,0 +1,10 @@
+HTTP/1.1 301 Moved Permanently
+Date: Sun, 20 Sep 2020 14:45:14 GMT
+Server: Apache/2.4.29 (Ubuntu)
+X-Redirect-By: WordPress
+Location: http://10.11.1.251/wp/
+Content-Length: 0
+Keep-Alive: timeout=5, max=85
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+

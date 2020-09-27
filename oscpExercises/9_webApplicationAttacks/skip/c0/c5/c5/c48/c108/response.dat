@@ -1,0 +1,42 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:53:10 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Thu, 28 Jun 2018 02:30:15 GMT
+ETag: "3ca-56faa82e93bc0-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-460/461
+Content-Length: 461
+Keep-Alive: timeout=5, max=17
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+/**
+ * @output wp-includes/js/wp-list-revisions.js
+ */
+
+(function(w) {
+	var init = function() {
+		var pr = document.getElementById('post-revisions'),
+		inputs = pr ? pr.getElementsByTagName('input') : [];
+		pr.onclick = function() {
+			var i, checkCount = 0, side;
+			for ( i = 0; i < inputs.length; i++ ) {
+				checkCount += inputs[i].checked ? 1 : 0;
+				side = inputs[i].getAttribute('name');
+				if ( ! inputs[i].checked &&
+				( 'left' == side && 1 > checkCount || 'right' == side && 1 < checkCount && ( ! inputs[i-1] || ! inputs[i-1].checked ) ) &&
+				! ( inputs[i+1] && inputs[i+1].checked && 'right' == inputs[i+1].getAttribute('name') ) )
+					inputs[i].style.visibility = 'hidden';
+				else if ( 'left' == side || 'right' == side )
+					inputs[i].style.visibility = 'visible';
+			}
+		};
+		pr.onclick();
+	};
+	if ( w && w.addEventListener )
+		w.addEventListener('load', init, false);
+	else if ( w && w.attachEvent )
+		w.attachEvent('onload', init);
+})(window);

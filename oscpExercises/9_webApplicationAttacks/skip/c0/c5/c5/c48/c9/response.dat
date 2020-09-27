@@ -1,0 +1,44 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:04:15 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-887/888
+Content-Length: 888
+Keep-Alive: timeout=5, max=88
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/js/jquery</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/js/jquery</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/js/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery-migrate.js">jquery-migrate.js</a></td><td align="right">2018-05-23 06:05  </td><td align="right"> 23K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery-migrate.min.js">jquery-migrate.min.js</a></td><td align="right">2016-05-20 02:11  </td><td align="right">9.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.color.min.js">jquery.color.min.js</a></td><td align="right">2013-04-10 13:29  </td><td align="right">9.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.form.js">jquery.form.js</a></td><td align="right">2017-08-05 09:00  </td><td align="right"> 40K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.form.min.js">jquery.form.min.js</a></td><td align="right">2019-02-13 19:07  </td><td align="right"> 16K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.hotkeys.js">jquery.hotkeys.js</a></td><td align="right">2014-01-01 19:11  </td><td align="right">5.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.hotkeys.min.js">jquery.hotkeys.min.js</a></td><td align="right">2012-08-22 20:04  </td><td align="right">1.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.js">jquery.js</a></td><td align="right">2019-05-17 13:08  </td><td align="right"> 95K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.masonry.min.js">jquery.masonry.min.js</a></td><td align="right">2016-08-18 14:55  </td><td align="right">1.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.query.js">jquery.query.js</a></td><td align="right">2013-01-29 15:52  </td><td align="right">3.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.schedule.js">jquery.schedule.js</a></td><td align="right">2008-01-10 12:35  </td><td align="right">3.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.serialize-object.js">jquery.serialize-object.js</a></td><td align="right">2011-01-20 18:09  </td><td align="right">783 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.table-hotkeys.js">jquery.table-hotkeys.js</a></td><td align="right">2013-11-15 00:16  </td><td align="right">3.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.table-hotkeys.min.js">jquery.table-hotkeys.min.js</a></td><td align="right">2012-08-22 20:04  </td><td align="right">2.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="jquery.ui.touch-punch.js">jquery.ui.touch-punch.js</a></td><td align="right">2012-04-10 22:58  </td><td align="right">1.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="suggest.js">suggest.js</a></td><td align="right">2016-01-13 12:22  </td><td align="right">6.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="suggest.min.js">suggest.min.js</a></td><td align="right">2016-01-13 12:22  </td><td align="right">2.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="ui/">ui/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

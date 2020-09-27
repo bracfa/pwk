@@ -1,0 +1,1 @@
+var res = {'data':'HTTP/1.1 500 Internal Server Error\x0aDate: Sun, 20 Sep 2020 17:46:19 GMT\x0aServer: Apache/2.4.29 (Ubuntu)\x0aContent-Length: 73\x0aConnection: close\x0aContent-Type: text/html; charset=UTF-8\x0a\x0a\x0a\x09\x3c/div\x3e\x3c!-- #content --\x3e\x0a\x0a\x09\x3cfooter id=\x22colophon\x22 class=\x22site-footer\x22\x3e\x0a\x09\x09ions.php'}

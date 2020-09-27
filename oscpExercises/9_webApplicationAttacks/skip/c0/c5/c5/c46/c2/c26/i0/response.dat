@@ -1,0 +1,52 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:50:30 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-841/842
+Content-Length: 842
+Keep-Alive: timeout=5, max=63
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/images/smilies</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/images/smilies</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/images/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="frownie.png">frownie.png</a></td><td align="right">2015-04-10 02:20  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_arrow.gif">icon_arrow.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">169 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_biggrin.gif">icon_biggrin.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">173 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_confused.gif">icon_confused.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">170 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_cool.gif">icon_cool.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">172 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_cry.gif">icon_cry.gif</a></td><td align="right">2018-12-18 22:36  </td><td align="right">412 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_eek.gif">icon_eek.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">170 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_evil.gif">icon_evil.gif</a></td><td align="right">2018-12-18 22:36  </td><td align="right">193 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_exclaim.gif">icon_exclaim.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">236 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_idea.gif">icon_idea.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">174 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_lol.gif">icon_lol.gif</a></td><td align="right">2018-12-18 22:36  </td><td align="right">331 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_mad.gif">icon_mad.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">172 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_mrgreen.gif">icon_mrgreen.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">348 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_neutral.gif">icon_neutral.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">167 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_question.gif">icon_question.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">247 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_razz.gif">icon_razz.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">175 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_redface.gif">icon_redface.gif</a></td><td align="right">2018-12-18 22:36  </td><td align="right">639 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_rolleyes.gif">icon_rolleyes.gif</a></td><td align="right">2018-12-18 22:36  </td><td align="right">471 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_sad.gif">icon_sad.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">167 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_smile.gif">icon_smile.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">173 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_surprised.gif">icon_surprised.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">174 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_twisted.gif">icon_twisted.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">241 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="icon_wink.gif">icon_wink.gif</a></td><td align="right">2014-10-28 18:02  </td><td align="right">168 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="mrgreen.png">mrgreen.png</a></td><td align="right">2015-04-10 02:20  </td><td align="right">1.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="rolleyes.png">rolleyes.png</a></td><td align="right">2015-04-10 02:20  </td><td align="right">1.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td><td><a href="simple-smile.png">simple-smile.png</a></td><td align="right">2015-04-10 02:20  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

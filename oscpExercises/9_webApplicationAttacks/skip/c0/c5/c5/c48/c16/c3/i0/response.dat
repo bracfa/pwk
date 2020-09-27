@@ -1,0 +1,44 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:59:47 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Thu, 21 Sep 2017 16:35:48 GMT
+ETag: "1157-559b5af446100-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-1221/1222
+Content-Length: 1222
+Keep-Alive: timeout=5, max=26
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+/**
+ * SWFUpload fallback
+ *
+ * @since 4.9.0
+ */
+
+var SWFUpload;
+
+( function () {
+	function noop() {}
+
+	if (SWFUpload == undefined) {
+		SWFUpload = function (settings) {
+			this.initSWFUpload(settings);
+		};
+	}
+
+	SWFUpload.prototype.initSWFUpload = function ( settings ) {
+		function fallback() {
+			var $ = window.jQuery;
+			var $placeholder = settings.button_placeholder_id ? $( '#' + settings.button_placeholder_id ) : $( settings.button_placeholder );
+
+			if ( ! $placeholder.length ) {
+				return;
+			}
+
+			var $form = $placeholder.closest( 'form' );
+
+			if ( ! $form.length ) {
+				$form = $( '<form enctype="multipart/form-data" method="post"

@@ -1,0 +1,14 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 18:00:50 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-309/310
+Content-Length: 310
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/xml;charset=UTF-8
+
+<results><rs id="http://10.11.1.251/wp/index.php/2019/10/15/wordpress-plugin-tests/" info="Hello everyone, I&#8217;m going to start experimenting with some WordPress [...]">WordPress plugin tests</rs><rs id="http://10.11.1.251/wp/index.php/2019/10/14/hello-world/" info="Hi guys,
+
+As you can see I’ve installed a blog on [...]">Work in Progress &#8230;</rs><rs id="http://10.11.1.251/wp/index.php/sample-page/" info="This is an example page. It&#8217;s different from a blog [...]">Sample Page</rs></results>

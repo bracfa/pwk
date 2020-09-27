@@ -1,0 +1,44 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:12:22 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Wed, 13 Sep 2017 06:08:47 GMT
+ETag: "3d8-5590bfe2679c0-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-484/485
+Content-Length: 485
+Keep-Alive: timeout=5, max=35
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+/* global HTMLHint */
+/* eslint no-magic-numbers: ["error", { "ignore": [0, 1] }] */
+HTMLHint.addRule({
+	id: 'kses',
+	description: 'Element or attribute cannot be used.',
+	init: function( parser, reporter, options ) {
+		'use strict';
+
+		var self = this;
+		parser.addListener( 'tagstart', function( event ) {
+			var attr, col, attrName, allowedAttributes, i, len, tagName;
+
+			tagName = event.tagName.toLowerCase();
+			if ( ! options[ tagName ] ) {
+				reporter.error( 'Tag <' + event.tagName + '> is not allowed.', event.line, event.col, self, event.raw );
+				return;
+			}
+
+			allowedAttributes = options[ tagName ];
+			col = event.col + event.tagName.length + 1;
+			for ( i = 0, len = event.attrs.length; i < len; i++ ) {
+				attr = event.attrs[ i ];
+				attrName = attr.name.toLowerCase();
+				if ( ! allowedAttributes[ attrName ] ) {
+					reporter.error( 'Tag attribute [' + attr.raw + ' ] is not allowed.', event.line, col + attr.index, self, attr.raw );
+				}
+			}
+		});
+	}
+});

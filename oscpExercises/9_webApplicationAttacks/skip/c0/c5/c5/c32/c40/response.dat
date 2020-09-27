@@ -1,0 +1,65 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:20:48 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-1018/1019
+Content-Length: 1019
+Keep-Alive: timeout=5, max=3
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/css</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/css</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-pointer.min.css">wp-pointer.min.css</a></td><td align="right">2018-12-11 11:13  </td><td align="right">3.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-pointer.css">wp-pointer.css</a></td><td align="right">2019-03-04 17:02  </td><td align="right">3.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-pointer-rtl.min.css">wp-pointer-rtl.min.css</a></td><td align="right">2018-12-11 11:13  </td><td align="right">3.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-pointer-rtl.css">wp-pointer-rtl.css</a></td><td align="right">2019-03-04 17:02  </td><td align="right">3.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-embed-template.min.css">wp-embed-template.min.css</a></td><td align="right">2018-12-11 11:13  </td><td align="right">6.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-embed-template.css">wp-embed-template.css</a></td><td align="right">2019-03-04 17:02  </td><td align="right">7.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-embed-template-ie.min.css">wp-embed-template-ie.min.css</a></td><td align="right">2017-08-19 16:10  </td><td align="right">1.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-embed-template-ie.css">wp-embed-template-ie.css</a></td><td align="right">2015-10-31 00:38  </td><td align="right">1.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-auth-check.min.css">wp-auth-check.min.css</a></td><td align="right">2018-12-11 11:13  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-auth-check.css">wp-auth-check.css</a></td><td align="right">2019-03-04 17:02  </td><td align="right">2.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-auth-check-rtl.min.css">wp-auth-check-rtl.min.css</a></td><td align="right">2018-12-11 11:13  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="wp-auth-check-rtl.css">wp-auth-check-rtl.css</a></td><td align="right">2019-03-04 17:02  </td><td align="right">2.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="media-views.min.css">media-views.min.css</a></td><td align="right">2019-08-20 18:42  </td><td align="right"> 40K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="media-views.css">media-views.css</a></td><td align="right">2019-08-20 18:42  </td><td align="right"> 48K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="media-views-rtl.min.css">media-views-rtl.min.css</a></td><td align="right">2019-08-20 18:42  </td><td align="right"> 40K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="media-views-rtl.css">media-views-rtl.css</a></td><td align="right">2019-08-20 18:42  </td><td align="right"> 48K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="jquery-ui-dialog.min.css">jquery-ui-dialog.min.css</a></td><td align="right">2019-01-17 02:41  </td><td align="right">4.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="jquery-ui-dialog.css">jquery-ui-dialog.css</a></td><td align="right">2019-03-04 17:02  </td><td align="right">5.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="jquery-ui-dialog-rtl.min.css">jquery-ui-dialog-rtl.min.css</a></td><td align="right">2019-01-17 02:41  </td><td align="right">4.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="jquery-ui-dialog-rtl.css">jquery-ui-dialog-rtl.css</a></td><td align="right">2019-03-04 17:02  </td><td align="right">5.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="editor.min.css">editor.min.css</a></td><td align="right">2019-04-12 14:08  </td><td align="right"> 27K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="editor.css">editor.css</a></td><td align="right">2019-04-12 14:08  </td><td align="right"> 32K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="editor-rtl.min.css">editor-rtl.min.css</a></td><td align="right">2019-04-12 14:08  </td><td align="right"> 27K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="editor-rtl.css">editor-rtl.css</a></td><td align="right">2019-04-12 14:08  </td><td align="right"> 32K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="dist/">dist/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="dashicons.min.css">dashicons.min.css</a></td><td align="right">2019-05-15 15:47  </td><td align="right"> 46K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="dashicons.css">dashicons.css</a></td><td align="right">2019-05-15 15:47  </td><td align="right"> 49K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="customize-preview.min.css">customize-preview.min.css</a></td><td align="right">2018-05-23 06:05  </td><td align="right">2.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="customize-preview.css">customize-preview.css</a></td><td align="right">2019-03-04 17:02  </td><td align="right">3.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="customize-preview-rtl.min.css">customize-preview-rtl.min.css</a></td><td align="right">2018-05-23 06:05  </td><td align="right">2.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="customize-preview-rtl.css">customize-preview-rtl.css</a></td><td align="right">2019-03-04 17:02  </td><td align="right">3.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="buttons.min.css">buttons.min.css</a></td><td align="right">2019-08-19 00:34  </td><td align="right">6.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="buttons.css">buttons.css</a></td><td align="right">2019-08-19 00:34  </td><td align="right">9.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="buttons-rtl.min.css">buttons-rtl.min.css</a></td><td align="right">2019-08-19 00:34  </td><td align="right">6.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="buttons-rtl.css">buttons-rtl.css</a></td><td align="right">2019-08-19 00:34  </td><td align="right">9.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="admin-bar.min.css">admin-bar.min.css</a></td><td align="right">2019-08-19 00:37  </td><td align="right"> 21K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="admin-bar.css">admin-bar.css</a></td><td align="right">2019-08-19 00:37  </td><td align="right"> 25K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="admin-bar-rtl.min.css">admin-bar-rtl.min.css</a></td><td align="right">2019-08-19 00:37  </td><td align="right"> 21K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="admin-bar-rtl.css">admin-bar-rtl.css</a></td><td align="right">2019-08-19 00:37  </td><td align="right"> 25K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

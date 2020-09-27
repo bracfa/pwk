@@ -1,0 +1,46 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:52:27 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-811/812
+Content-Length: 812
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/ID3</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/ID3</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="getid3.lib.php">getid3.lib.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right"> 46K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="getid3.php">getid3.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right"> 65K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="license.commercial.txt">license.commercial.txt</a></td><td align="right">2015-06-27 20:17  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="license.txt">license.txt</a></td><td align="right">2015-06-27 20:17  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/movie.gif" alt="[VID]"></td><td><a href="module.audio-video.asf.php">module.audio-video.asf.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right">124K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/movie.gif" alt="[VID]"></td><td><a href="module.audio-video.flv.php">module.audio-video.flv.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right"> 25K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="module.audio-video.matroska.php">module.audio-video.matroska.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right">102K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="module.audio-video.quicktime.php">module.audio-video.quicktime.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right">137K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="module.audio-video.riff.php">module.audio-video.riff.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right">120K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="module.audio.ac3.php">module.audio.ac3.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right"> 37K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="module.audio.dts.php">module.audio.dts.php</a></td><td align="right">2015-06-27 20:17  </td><td align="right"> 10K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/sound2.gif" alt="[SND]"></td><td><a href="module.audio.flac.php">module.audio.flac.php</a></td><td align="right">2015-06-27 20:17  </td><td align="right"> 18K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/sound2.gif" alt="[SND]"></td><td><a href="module.audio.mp3.php">module.audio.mp3.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right"> 97K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/sound2.gif" alt="[SND]"></td><td><a href="module.audio.ogg.php">module.audio.ogg.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right"> 39K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="module.tag.apetag.php">module.tag.apetag.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right"> 18K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="module.tag.id3v1.php">module.tag.id3v1.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="module.tag.id3v2.php">module.tag.id3v2.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right">147K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="module.tag.lyrics3.php">module.tag.lyrics3.php</a></td><td align="right">2017-07-31 15:50  </td><td align="right"> 11K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="readme.txt">readme.txt</a></td><td align="right">2014-09-11 15:07  </td><td align="right"> 24K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>
+t

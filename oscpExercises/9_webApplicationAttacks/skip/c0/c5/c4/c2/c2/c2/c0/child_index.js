@@ -1,0 +1,5 @@
+var child = [
+  { 'dupe': false, 'type': 8, 'name': 'li_corner.png', 'dir': 'c0', 'linked': 2, 'url': 'http://10.11.1.251/wp/wp-content/plugins/wp-autosuggest/images/_source/li_corner.png', 'fetched': true, 'code': 200, 'len': 28442, 'decl_mime': 'image/png', 'sniff_mime': 'image/png', 'cset': '[none]', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xfff7ffff },
+  { 'dupe': false, 'type': 64, 'name': 'C=N', 'dir': 'c1', 'linked': 2, 'url': 'http://10.11.1.251/wp/wp-content/plugins/wp-autosuggest/images/_source/?C=N;O=D', 'fetched': true, 'code': 200, 'len': 1080, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'UTF-8', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 1, 0, 0, 0, 0 ], 'sig': 0x28f4fa31 },
+  { 'dupe': false, 'type': 64, 'name': 'O=D', 'dir': 'c2', 'linked': 2, 'url': 'http://10.11.1.251/wp/wp-content/plugins/wp-autosuggest/images/_source/?C=N;O=D', 'fetched': true, 'code': 200, 'len': 1080, 'decl_mime': 'text/html', 'sniff_mime': '[none]', 'cset': 'UTF-8', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 1, 0, 0, 0, 0 ], 'sig': 0x28f4fa31 }
+];

@@ -1,0 +1,15 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:53:14 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Wed, 04 Sep 2019 17:23:52 GMT
+ETag: "29a-591bd78051a00-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-391/392
+Content-Length: 392
+Keep-Alive: timeout=5, max=3
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+window.wp=window.wp||{},function(a,b){"use strict";function c(b,c){e(),b=a.sanitize.stripTagsAndEncodeText(b),h===b&&(b+="\xa0"),h=b,g&&"assertive"===c?g.text(b):f&&f.text(b)}function d(a){a=a||"polite";var c=b("<div>",{id:"wp-a11y-speak-"+a,"aria-live":a,"aria-relevant":"additions text","aria-atomic":"true","class":"screen-reader-text wp-a11y-speak-region"});return b(document.body).append(c),c}function e(){b(".wp-a11y-speak-region").text("")}var f,g,h="";b(document).ready(function(){f=b("#wp-a11y-speak-polite"),g=b("#wp-a11y-speak-assertive"),f.length||(f=d("polite")),g.length||(g=d("assertive"))}),a.a11y=a.a11y||{},a.a11y.speak=c}(window.wp,window.jQuery);®B`‚

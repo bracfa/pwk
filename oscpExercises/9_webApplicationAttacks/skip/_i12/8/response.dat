@@ -1,0 +1,74 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 17:44:58 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Fri, 14 Dec 2018 02:33:41 GMT
+ETag: "684-57cf2425eeb40-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-599/600
+Content-Length: 600
+Keep-Alive: timeout=5, max=27
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+/**
+ * File customizer.js.
+ *
+ * Theme Customizer enhancements for a better user experience.
+ *
+ * Contains handlers to make Theme Customizer preview reload changes asynchronously.
+ */
+
+(function( $ ) {
+
+	// Primary color.
+	wp.customize( 'primary_color', function( value ) {
+		value.bind( function( to ) {
+			// Update custom color CSS.
+			var style = $( '#custom-theme-colors' ),
+				hue = style.data( 'hue' ),
+				css = style.html(),
+				color;
+
+			if( 'custom' === to ){
+				// If a custom primary color is selected, use the currently set primary_color_hue
+				color = wp.customize.get().primary_color_hue;
+			} else {
+				// If the "default" option is selected, get the default primary_color_hue
+				color = 199;
+			}
+
+			// Equivalent to css.replaceAll, with hue followed by comma to prevent values with units from being changed.
+			css = css.split( hue + ',' ).join( color + ',' );
+			style.html( css ).data( 'hue', color );
+		});
+	});
+
+	// Primary color hue.
+	wp.customize( 'primary_color_hue', function( value ) {
+		value.bind( function( to ) {
+
+			// Update custom color CSS.
+			var style = $( '#custom-theme-colors' ),
+				hue = style.data( 'hue' ),
+				css = style.html();
+
+			// Equivalent to css.replaceAll, with hue followed by comma to prevent values with units from being changed.
+			css = css.split( hue + ',' ).join( to + ',' );
+			style.html( css ).data( 'hue', to );
+		});
+	});
+
+	// Image filter.
+	wp.customize( 'image_filter', function( value ) {
+		value.bind( function( to ) {
+			if ( to ) {
+				$( 'body' ).addClass( 'image-filters-enabled' );
+			} else {
+				$( 'body' ).removeClass( 'image-filters-enabled' );
+			}
+		} );
+	} );
+
+})( jQuery );

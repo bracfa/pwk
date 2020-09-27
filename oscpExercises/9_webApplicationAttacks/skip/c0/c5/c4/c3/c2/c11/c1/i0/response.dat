@@ -1,0 +1,45 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 17:44:58 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Fri, 14 Dec 2018 02:33:41 GMT
+ETag: "2c6-57cf2425eeb40-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-360/361
+Content-Length: 361
+Keep-Alive: timeout=5, max=58
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+/**
+ * File customizer.js.
+ *
+ * Theme Customizer enhancements for a better user experience.
+ *
+ * Contains handlers to make Theme Customizer preview reload changes asynchronously.
+ */
+
+(function() {
+
+	wp.customize.bind( 'ready', function() {
+
+		// Only show the color hue control when there's a custom primary color.
+		wp.customize( 'primary_color', function( setting ) {
+			wp.customize.control( 'primary_color_hue', function( control ) {
+				var visibility = function() {
+					if ( 'custom' === setting.get() ) {
+						control.container.slideDown( 180 );
+					} else {
+						control.container.slideUp( 180 );
+					}
+				};
+
+				visibility();
+				setting.bind( visibility );
+			});
+		});
+	});
+
+})( jQuery );
+Settings);

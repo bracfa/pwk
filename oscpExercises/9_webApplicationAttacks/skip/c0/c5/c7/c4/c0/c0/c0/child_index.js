@@ -1,0 +1,4 @@
+var child = [
+  { 'dupe': false, 'type': 64, 'name': 'format=xml', 'dir': 'c0', 'linked': 2, 'url': 'http://10.11.1.251/wp/index.php/wp-json/oembed/1.0/embed?url=http://10.11.1.251/wp/index.php/sample-page/&format=xml', 'fetched': true, 'code': 404, 'len': 14506, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'UTF-8', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xffbfffff },
+  { 'dupe': false, 'type': 64, 'name': 'url=http://10.11.1.251/wp/index.php/sample-page/', 'dir': 'c1', 'linked': 2, 'url': 'http://10.11.1.251/wp/index.php/wp-json/oembed/1.0/embed?url=http://10.11.1.251/wp/index.php/sample-page/', 'fetched': true, 'code': 404, 'len': 14506, 'decl_mime': 'text/html', 'sniff_mime': 'application/xhtml+xml', 'cset': 'UTF-8', 'missing': true, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xffbfffff }
+];

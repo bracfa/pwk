@@ -1,0 +1,56 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:04:16 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Wed, 25 Apr 2012 21:49:57 GMT
+ETag: "316-4be87da2bab40-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-264/265
+Content-Length: 265
+Keep-Alive: timeout=5, max=76
+Connection: Keep-Alive
+Content-Type: text/css
+
+/*
+ * imgAreaSelect animated border style
+ */
+
+.imgareaselect-border1 {
+	background: url(border-anim-v.gif) repeat-y left top;
+}
+
+.imgareaselect-border2 {
+    background: url(border-anim-h.gif) repeat-x left top;
+}
+
+.imgareaselect-border3 {
+    background: url(border-anim-v.gif) repeat-y right top;
+}
+
+.imgareaselect-border4 {
+    background: url(border-anim-h.gif) repeat-x left bottom;
+}
+
+.imgareaselect-border1, .imgareaselect-border2,
+.imgareaselect-border3, .imgareaselect-border4 {
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgareaselect-handle {
+    background-color: #fff;
+	border: solid 1px #000;
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgareaselect-outer {
+	background-color: #000;
+    filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+.imgareaselect-selection {
+}
+N

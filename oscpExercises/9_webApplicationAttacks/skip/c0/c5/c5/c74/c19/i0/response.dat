@@ -1,0 +1,45 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:48:08 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-817/818
+Content-Length: 818
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/widgets</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/widgets</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-nav-menu-widget.php">class-wp-nav-menu-widget.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">5.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-archives.php">class-wp-widget-archives.php</a></td><td align="right">2019-03-14 15:31  </td><td align="right">5.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-calendar.php">class-wp-widget-calendar.php</a></td><td align="right">2019-01-14 19:43  </td><td align="right">2.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-categories.php">class-wp-widget-categories.php</a></td><td align="right">2019-01-14 19:43  </td><td align="right">5.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-custom-html.php">class-wp-widget-custom-html.php</a></td><td align="right">2019-04-08 19:18  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-links.php">class-wp-widget-links.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">7.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-media-audio.php">class-wp-widget-media-audio.php</a></td><td align="right">2019-04-02 18:13  </td><td align="right">5.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-media-gallery.php">class-wp-widget-media-gallery.php</a></td><td align="right">2019-03-05 12:49  </td><td align="right">7.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-media-image.php">class-wp-widget-media-image.php</a></td><td align="right">2019-04-08 19:23  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-media-video.php">class-wp-widget-media-video.php</a></td><td align="right">2019-04-02 18:13  </td><td align="right">8.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-media.php">class-wp-widget-media.php</a></td><td align="right">2019-04-02 18:13  </td><td align="right"> 14K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-meta.php">class-wp-widget-meta.php</a></td><td align="right">2019-01-14 19:43  </td><td align="right">3.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-pages.php">class-wp-widget-pages.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">4.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-recent-comments.php">class-wp-widget-recent-comments.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">5.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-recent-posts.php">class-wp-widget-recent-posts.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">4.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-rss.php">class-wp-widget-rss.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">3.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-search.php">class-wp-widget-search.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">2.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-tag-cloud.php">class-wp-widget-tag-cloud.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">5.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-text.php">class-wp-widget-text.php</a></td><td align="right">2019-04-08 19:18  </td><td align="right"> 21K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

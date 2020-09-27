@@ -1,0 +1,15 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:53:05 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Wed, 29 Jan 2014 04:43:30 GMT
+ETag: "144-4f114951a2080-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-231/232
+Content-Length: 232
+Keep-Alive: timeout=5, max=49
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+(function(){var a=function(){var a,b;return b=document.createElement("script"),b.src=_zxcvbnSettings.src,b.type="text/javascript",b.async=!0,a=document.getElementsByTagName("script")[0],a.parentNode.insertBefore(b,a)};null!=window.attachEvent?window.attachEvent("onload",a):window.addEventListener("load",a,!1)}).call(this);

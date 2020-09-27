@@ -1,0 +1,58 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:12:22 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Tue, 23 Jan 2018 01:29:32 GMT
+ETag: "3ea-563677a86f700-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-518/519
+Content-Length: 519
+Keep-Alive: timeout=5, max=27
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+// JSHINT has some GPL Compatability issues, so we are faking it out and using esprima for validation
+// Based on https://github.com/jquery/esprima/blob/gh-pages/demo/validate.js which is MIT licensed
+
+var fakeJSHINT = new function() {
+	var syntax, errors;
+	var that = this;
+	this.data = [];
+	this.convertError = function( error ){
+		return {
+			line: error.lineNumber,
+			character: error.column,
+			reason: error.description,
+			code: 'E'
+		};
+	};
+	this.parse = function( code ){
+		try {
+			syntax = window.esprima.parse(code, { tolerant: true, loc: true });
+			errors = syntax.errors;
+			if ( errors.length > 0 ) {
+				for ( var i = 0; i < errors.length; i++) {
+					var error = errors[i];
+					that.data.push( that.convertError( error ) );
+				}
+			} else {
+				that.data = [];
+			}
+		} catch (e) {
+			that.data.push( that.convertError( e ) );
+		}
+	};
+};
+
+window.JSHINT = function( text ){
+	fakeJSHINT.parse( text );
+};
+window.JSHINT.data = function(){
+	return {
+		errors: fakeJSHINT.data
+	};
+};
+
+
+"

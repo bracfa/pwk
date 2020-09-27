@@ -1,0 +1,11 @@
+POST /wp/wp-comments-post.php HTTP/1.1
+Host: 10.11.1.251
+Accept-Encoding: gzip
+Connection: keep-alive
+User-Agent: Mozilla/5.0 SF/2.10b
+Range: bytes=0-399999
+Referer: http://10.11.1.251/
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 181
+
+comment=skipfish&author=1&email=skipfish@example.com&url=http://example.com/%3Fsfish_form_test&wp-comment-cookies-consent=on&submit=Post%20Comment&comment_post_ID=1&comment_parent=0

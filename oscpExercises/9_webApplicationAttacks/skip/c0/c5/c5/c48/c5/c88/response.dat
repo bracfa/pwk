@@ -1,0 +1,105 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:11:21 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-1495/1496
+Content-Length: 1496
+Keep-Alive: timeout=5, max=67
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/js/dist</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/js/dist</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/js/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wordcount.min.js">wordcount.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">2.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wordcount.js">wordcount.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 14K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="viewport.min.js">viewport.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">2.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="viewport.js">viewport.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 11K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="vendor/">vendor/</a></td><td align="right">2019-09-04 21:08  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="url.min.js">url.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="url.js">url.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 39K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="token-list.min.js">token-list.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">3.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="token-list.js">token-list.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="shortcode.min.js">shortcode.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">3.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="shortcode.js">shortcode.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 18K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="rich-text.min.js">rich-text.min.js</a></td><td align="right">2019-05-16 14:12  </td><td align="right"> 28K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="rich-text.js">rich-text.js</a></td><td align="right">2019-05-16 14:12  </td><td align="right">111K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="redux-routine.min.js">redux-routine.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">9.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="redux-routine.js">redux-routine.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 25K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="priority-queue.min.js">priority-queue.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">1.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="priority-queue.js">priority-queue.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">5.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="plugins.min.js">plugins.min.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right">6.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="plugins.js">plugins.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 23K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="nux.min.js">nux.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">7.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="nux.js">nux.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 28K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="notices.min.js">notices.min.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 11K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="notices.js">notices.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 45K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="list-reusable-blocks.min.js">list-reusable-blocks.min.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 15K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="list-reusable-blocks.js">list-reusable-blocks.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 48K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="keycodes.min.js">keycodes.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">4.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="keycodes.js">keycodes.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 17K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="is-shallow-equal.min.js">is-shallow-equal.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">1.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="is-shallow-equal.js">is-shallow-equal.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">5.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="i18n.min.js">i18n.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">8.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="i18n.js">i18n.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 33K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="html-entities.min.js">html-entities.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="html-entities.js">html-entities.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">4.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="hooks.min.js">hooks.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">4.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="hooks.js">hooks.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 21K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="format-library.min.js">format-library.min.js</a></td><td align="right">2019-05-16 14:12  </td><td align="right"> 19K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="format-library.js">format-library.js</a></td><td align="right">2019-05-16 14:12  </td><td align="right"> 51K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="escape-html.min.js">escape-html.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">1.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="escape-html.js">escape-html.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">8.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="element.min.js">element.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">8.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="element.js">element.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 35K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="editor.min.js">editor.min.js</a></td><td align="right">2019-05-30 11:48  </td><td align="right">186K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="editor.js">editor.js</a></td><td align="right">2019-05-30 11:48  </td><td align="right">554K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="edit-post.min.js">edit-post.min.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 81K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="edit-post.js">edit-post.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right">238K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="dom.min.js">dom.min.js</a></td><td align="right">2019-05-16 14:12  </td><td align="right">8.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="dom.js">dom.js</a></td><td align="right">2019-05-16 14:12  </td><td align="right"> 35K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="dom-ready.min.js">dom-ready.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="dom-ready.js">dom-ready.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">4.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="deprecated.min.js">deprecated.min.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right">1.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="deprecated.js">deprecated.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right">7.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="date.min.js">date.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">915K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="date.js">date.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">941K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="data.min.js">data.min.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 35K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="data.js">data.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right">135K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="core-data.min.js">core-data.min.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 33K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="core-data.js">core-data.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right">129K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="compose.min.js">compose.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">8.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="compose.js">compose.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 28K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="components.min.js">components.min.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right">540K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="components.js">components.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="blocks.min.js">blocks.min.js</a></td><td align="right">2019-05-16 14:12  </td><td align="right">142K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="blocks.js">blocks.js</a></td><td align="right">2019-05-16 14:12  </td><td align="right">399K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="block-serialization-default-parser.min.js">block-serialization-default-parser.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">3.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="block-serialization-default-parser.js">block-serialization-default-parser.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 17K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="block-library.min.js">block-library.min.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right">257K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="block-library.js">block-library.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right">722K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="block-editor.min.js">block-editor.min.js</a></td><td align="right">2019-05-30 11:48  </td><td align="right">246K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="block-editor.js">block-editor.js</a></td><td align="right">2019-05-30 11:48  </td><td align="right">870K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="blob.min.js">blob.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">1.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="blob.js">blob.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">5.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="autop.min.js">autop.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">6.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="autop.js">autop.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 20K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="api-fetch.min.js">api-fetch.min.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 13K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="api-fetch.js">api-fetch.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 48K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="annotations.min.js">annotations.min.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 10K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="annotations.js">annotations.js</a></td><td align="right">2019-04-22 08:40  </td><td align="right"> 41K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="a11y.min.js">a11y.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">2.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="a11y.js">a11y.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">8.7K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

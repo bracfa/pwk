@@ -1,0 +1,44 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 15:05:30 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-750/751
+Content-Length: 751
+Keep-Alive: timeout=5, max=55
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/js/dist/vendor</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/js/dist/vendor</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/js/dist/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-polyfill.min.js">wp-polyfill.min.js</a></td><td align="right">2019-02-07 01:28  </td><td align="right"> 94K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-polyfill.js">wp-polyfill.js</a></td><td align="right">2019-02-07 01:28  </td><td align="right">225K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-polyfill-node-contains.min.js">wp-polyfill-node-contains.min.js</a></td><td align="right">2018-12-13 23:11  </td><td align="right">353 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-polyfill-node-contains.js">wp-polyfill-node-contains.js</a></td><td align="right">2018-12-13 23:41  </td><td align="right">531 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-polyfill-formdata.min.js">wp-polyfill-formdata.min.js</a></td><td align="right">2019-02-07 01:28  </td><td align="right">7.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-polyfill-formdata.js">wp-polyfill-formdata.js</a></td><td align="right">2019-02-07 01:28  </td><td align="right">9.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-polyfill-fetch.min.js">wp-polyfill-fetch.min.js</a></td><td align="right">2018-12-13 23:11  </td><td align="right">7.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-polyfill-fetch.js">wp-polyfill-fetch.js</a></td><td align="right">2018-12-13 23:41  </td><td align="right"> 14K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-polyfill-element-closest.min.js">wp-polyfill-element-closest.min.js</a></td><td align="right">2018-12-13 23:11  </td><td align="right">417 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wp-polyfill-element-closest.js">wp-polyfill-element-closest.js</a></td><td align="right">2018-12-13 23:41  </td><td align="right">895 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="react.min.js">react.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right"> 12K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="react.js">react.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">100K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="react-dom.min.js">react-dom.min.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">105K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="react-dom.js">react-dom.js</a></td><td align="right">2019-03-21 08:48  </td><td align="right">771K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="moment.min.js">moment.min.js</a></td><td align="right">2018-12-13 23:11  </td><td align="right"> 50K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="moment.js">moment.js</a></td><td align="right">2018-12-13 23:41  </td><td align="right">143K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="lodash.min.js">lodash.min.js</a></td><td align="right">2018-12-13 23:11  </td><td align="right"> 72K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="lodash.js">lodash.js</a></td><td align="right">2018-12-13 23:41  </td><td align="right">527K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>

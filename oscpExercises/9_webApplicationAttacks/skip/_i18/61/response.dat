@@ -1,0 +1,62 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:51:14 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-1167/1168
+Content-Length: 1168
+Keep-Alive: timeout=5, max=94
+Connection: Keep-Alive
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /wp/wp-includes/customize</title>
+ </head>
+ <body>
+<h1>Index of /wp/wp-includes/customize</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/wp/wp-includes/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-background-image-control.php">class-wp-customize-background-image-control.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">1.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-background-image-setting.php">class-wp-customize-background-image-setting.php</a></td><td align="right">2015-10-24 14:21  </td><td align="right">508 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-background-position-control.php">class-wp-customize-background-position-control.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">2.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-code-editor-control.php">class-wp-customize-code-editor-control.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">2.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-color-control.php">class-wp-customize-color-control.php</a></td><td align="right">2018-04-13 11:10  </td><td align="right">2.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-cropped-image-control.php">class-wp-customize-cropped-image-control.php</a></td><td align="right">2017-07-26 20:41  </td><td align="right">1.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-custom-css-setting.php">class-wp-customize-custom-css-setting.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">4.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-date-time-control.php">class-wp-customize-date-time-control.php</a></td><td align="right">2019-01-08 00:24  </td><td align="right">8.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-filter-setting.php">class-wp-customize-filter-setting.php</a></td><td align="right">2017-07-26 20:41  </td><td align="right">588 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-header-image-control.php">class-wp-customize-header-image-control.php</a></td><td align="right">2019-01-15 00:54  </td><td align="right">7.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-header-image-setting.php">class-wp-customize-header-image-setting.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">1.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-image-control.php">class-wp-customize-image-control.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-media-control.php">class-wp-customize-media-control.php</a></td><td align="right">2019-03-05 12:49  </td><td align="right">8.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-nav-menu-auto-add-control.php">class-wp-customize-nav-menu-auto-add-control.php</a></td><td align="right">2017-10-04 22:22  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-nav-menu-control.php">class-wp-customize-nav-menu-control.php</a></td><td align="right">2019-02-27 21:07  </td><td align="right">2.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-nav-menu-item-control.php">class-wp-customize-nav-menu-item-control.php</a></td><td align="right">2019-02-27 21:07  </td><td align="right">6.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-nav-menu-item-setting.php">class-wp-customize-nav-menu-item-setting.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right"> 26K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-nav-menu-location-control.php">class-wp-customize-nav-menu-location-control.php</a></td><td align="right">2017-11-22 23:09  </td><td align="right">2.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-nav-menu-locations-control.php">class-wp-customize-nav-menu-locations-control.php</a></td><td align="right">2019-01-08 00:18  </td><td align="right">2.8K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-nav-menu-name-control.php">class-wp-customize-nav-menu-name-control.php</a></td><td align="right">2017-10-04 22:22  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-nav-menu-section.php">class-wp-customize-nav-menu-section.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">720 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-nav-menu-setting.php">class-wp-customize-nav-menu-setting.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right"> 18K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-nav-menus-panel.php">class-wp-customize-nav-menus-panel.php</a></td><td align="right">2018-08-16 21:51  </td><td align="right">3.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-new-menu-control.php">class-wp-customize-new-menu-control.php</a></td><td align="right">2018-12-16 22:07  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-new-menu-section.php">class-wp-customize-new-menu-section.php</a></td><td align="right">2018-12-16 22:07  </td><td align="right">1.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-partial.php">class-wp-customize-partial.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">8.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-selective-refresh.php">class-wp-customize-selective-refresh.php</a></td><td align="right">2018-03-25 15:33  </td><td align="right"> 15K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-sidebar-section.php">class-wp-customize-sidebar-section.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-site-icon-control.php">class-wp-customize-site-icon-control.php</a></td><td align="right">2019-03-05 12:49  </td><td align="right">2.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-theme-control.php">class-wp-customize-theme-control.php</a></td><td align="right">2019-06-13 11:34  </td><td align="right">4.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-themes-panel.php">class-wp-customize-themes-panel.php</a></td><td align="right">2017-10-07 02:00  </td><td align="right">3.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-themes-section.php">class-wp-customize-themes-section.php</a></td><td align="right">2018-08-30 08:36  </td><td align="right">6.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-customize-upload-control.php">class-wp-customize-upload-control.php</a></td><td align="right">2017-11-30 18:11  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-area-customize-control.php">class-wp-widget-area-customize-control.php</a></td><td align="right">2017-07-26 20:41  </td><td align="right">1.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="class-wp-widget-form-customize-control.php">class-wp-widget-form-customize-control.php</a></td><td align="right">2019-04-13 00:46  </td><td align="right">2.6K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.11.1.251 Port 80</address>
+</body></html>
+

@@ -1,0 +1,41 @@
+HTTP/1.1 200 Partial Content
+Date: Sun, 20 Sep 2020 14:53:05 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Last-Modified: Thu, 28 Jun 2018 02:30:15 GMT
+ETag: "230-56faa82e93bc0-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-349/350
+Content-Length: 350
+Keep-Alive: timeout=5, max=71
+Connection: Keep-Alive
+Content-Type: application/javascript
+
+/**
+ * @output wp-includes/js/wpdialog.js
+ */
+
+/*
+ * Wrap the jQuery UI Dialog open function remove focus from tinyMCE.
+ */
+( function($) {
+	$.widget('wp.wpdialog', $.ui.dialog, {
+		open: function() {
+			// Add beforeOpen event.
+			if ( this.isOpen() || false === this._trigger('beforeOpen') ) {
+				return;
+			}
+
+			// Open the dialog.
+			this._super();
+
+			// WebKit leaves focus in the TinyMCE editor unless we shift focus.
+			this.element.focus();
+			this._trigger('refresh');
+		}
+	});
+
+	$.wp.wpdialog.prototype.options.closeOnEscape = false;
+
+})(jQuery);
