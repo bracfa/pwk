@@ -1,7 +1,7 @@
 Exercises
 
 # 10.2.5
-## 1. Repeat the steps shown in this section to see the 12 A's copied onto the stack.
+## 10.2.5.1. Repeat the steps shown in this section to see the 12 A's copied onto the stack.
 ### Open Immunity Debugger
 ![024101da8c6bb477f467d67cd64f6a37.png](../../_resources/de4ea238a3634258af04287dbd8f7688.png)
 
@@ -58,7 +58,7 @@ Exercises
 
 
 
-## 2. Supply at least 80 A's and verify that EIP after the *strcpy* will ontain the value 41414141.
+## 10.2.5.2. Supply at least 80 A's and verify that EIP after the *strcpy* will contain the value 41414141.
 ### Supply the 80 A's as an argument
 ![270e619bd317a5e6db3eb7898bdcfc78.png](../../_resources/cd733729407a4be4932064d0efcf536f.png)
 
