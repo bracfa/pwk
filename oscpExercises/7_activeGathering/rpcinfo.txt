@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Sat Sep 19 15:50:24 2020 as: nmap -p 111 --script=rpcinfo -iL nfs_111open.txt -oG rpcinfo.txt
+Host: 10.11.1.8 ()	Status: Up
+Host: 10.11.1.8 ()	Ports: 111/open/tcp//rpcbind///
+Host: 10.11.1.72 ()	Status: Up
+Host: 10.11.1.72 ()	Ports: 111/open/tcp//rpcbind//2-4 (RPC #100000)/
+Host: 10.11.1.115 ()	Status: Up
+Host: 10.11.1.115 ()	Ports: 111/open/tcp//rpcbind///
+Host: 10.11.1.141 ()	Status: Up
+Host: 10.11.1.141 ()	Ports: 111/open/tcp//rpcbind///
+Host: 10.11.1.209 ()	Status: Up
+Host: 10.11.1.209 ()	Ports: 111/open/tcp//rpcbind///
+Host: 10.11.1.217 ()	Status: Up
+Host: 10.11.1.217 ()	Ports: 111/open/tcp//rpcbind///
+Host: 10.11.1.231 ()	Status: Up
+Host: 10.11.1.231 ()	Ports: 111/open/tcp//rpcbind//2-4 (RPC #100000)/
+Host: 10.11.1.237 ()	Status: Up
+Host: 10.11.1.237 ()	Ports: 111/open/tcp//rpcbind//2-4 (RPC #100000)/
+# Nmap done at Sat Sep 19 15:50:28 2020 -- 8 IP addresses (8 hosts up) scanned in 4.19 seconds

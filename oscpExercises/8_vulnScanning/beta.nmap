@@ -1,0 +1,43 @@
+# Nmap 7.80 scan initiated Sun Sep 20 05:56:50 2020 as: nmap -p- --script vuln -oA beta 10.11.1.72
+Nmap scan report for 10.11.1.72
+Host is up (0.025s latency).
+Not shown: 65522 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+25/tcp    open  smtp
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+| smtp-vuln-cve2010-4344: 
+|_  The SMTP server is not Exim: NOT VULNERABLE
+|_sslv2-drown: 
+80/tcp    open  http
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|_  /icons/: Potentially interesting folder w/ directory listing
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+110/tcp   open  pop3
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_sslv2-drown: 
+111/tcp   open  rpcbind
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+119/tcp   open  nntp
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_sslv2-drown: 
+2049/tcp  open  nfs
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+4555/tcp  open  rsip
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+33803/tcp open  unknown
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+40052/tcp open  unknown
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+52984/tcp open  unknown
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+57297/tcp open  unknown
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+59027/tcp open  unknown
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+
+# Nmap done at Sun Sep 20 06:03:37 2020 -- 1 IP address (1 host up) scanned in 407.58 seconds

@@ -1,0 +1,19 @@
+# Nmap 7.80 scan initiated Sun Sep 20 08:04:20 2020 as: nmap -p111 --script=nfs-ls -oA beta_ls 10.11.1.72
+Nmap scan report for 10.11.1.72
+Host is up (0.032s latency).
+
+PORT    STATE SERVICE
+111/tcp open  rpcbind
+| nfs-ls: Volume /home
+|   access: Read Lookup NoModify NoExtend NoDelete NoExecute
+| PERMISSION  UID   GID   SIZE  TIME                 FILENAME
+| drwxr-xr-x  0     0     4096  2015-09-17T13:21:59  .
+| drwxr-xr-x  0     0     4096  2015-01-07T10:56:34  ..
+| drwxr-xr-x  1013  1013  4096  2015-09-17T13:21:47  jenny
+| drwxr-xr-x  1012  1012  4096  2015-09-17T13:21:40  joe45
+| drwxr-xr-x  1011  1011  4096  2015-09-17T13:21:52  john
+| drwxr-xr-x  1014  1014  4096  2019-10-27T23:48:51  marcus
+| drwxr-x---  0     1010  4096  2015-01-08T16:01:31  ryuu
+|_
+
+# Nmap done at Sun Sep 20 08:04:21 2020 -- 1 IP address (1 host up) scanned in 0.83 seconds

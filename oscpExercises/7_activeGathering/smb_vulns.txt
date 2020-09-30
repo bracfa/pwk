@@ -1,0 +1,40 @@
+# Nmap 7.80 scan initiated Sat Sep 19 15:02:07 2020 as: nmap -p139,445 --script *smb*vuln* -iL smb_hosts.txt -oG smb_vulns.txt
+Host: 10.11.1.5 ()	Status: Up
+Host: 10.11.1.5 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.13 ()	Status: Up
+Host: 10.11.1.13 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.20 ()	Status: Up
+Host: 10.11.1.20 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.21 ()	Status: Up
+Host: 10.11.1.21 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.22 ()	Status: Up
+Host: 10.11.1.22 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.24 ()	Status: Up
+Host: 10.11.1.24 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.31 ()	Status: Up
+Host: 10.11.1.31 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.73 ()	Status: Up
+Host: 10.11.1.73 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.75 ()	Status: Up
+Host: 10.11.1.75 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.111 ()	Status: Up
+Host: 10.11.1.111 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.120 ()	Status: Up
+Host: 10.11.1.120 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.121 ()	Status: Up
+Host: 10.11.1.121 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.122 ()	Status: Up
+Host: 10.11.1.122 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.123 ()	Status: Up
+Host: 10.11.1.123 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.128 ()	Status: Up
+Host: 10.11.1.128 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.220 ()	Status: Up
+Host: 10.11.1.220 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.222 ()	Status: Up
+Host: 10.11.1.222 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.223 ()	Status: Up
+Host: 10.11.1.223 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+Host: 10.11.1.227 ()	Status: Up
+Host: 10.11.1.227 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+# Nmap done at Sat Sep 19 15:05:22 2020 -- 19 IP addresses (19 hosts up) scanned in 195.82 seconds

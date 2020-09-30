@@ -1,0 +1,88 @@
+# Nmap 7.80 scan initiated Sat Sep 19 10:14:40 2020 as: nmap -iL online_hosts -p 445 --script=smb-os-discovery -oG smb-overip-sweep.txt
+Host: 10.11.1.5 ()	Status: Up
+Host: 10.11.1.5 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.8 ()	Status: Up
+Host: 10.11.1.8 ()	Ports: 445/open/tcp//microsoft-ds//Samba smbd 3.0.33-0.17.el4/
+Host: 10.11.1.13 ()	Status: Up
+Host: 10.11.1.13 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.14 ()	Status: Up
+Host: 10.11.1.14 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 10.11.1.20 ()	Status: Up
+Host: 10.11.1.20 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.21 ()	Status: Up
+Host: 10.11.1.21 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.22 ()	Status: Up
+Host: 10.11.1.22 ()	Ports: 445/open/tcp//microsoft-ds//Windows 10 Pro N 14393 microsoft-ds/
+Host: 10.11.1.24 ()	Status: Up
+Host: 10.11.1.24 ()	Ports: 445/open/tcp//microsoft-ds//Windows 10 Pro N 14393 microsoft-ds/
+Host: 10.11.1.31 ()	Status: Up
+Host: 10.11.1.31 ()	Ports: 445/open/tcp//microsoft-ds//Windows Server 2016 Standard 14393 microsoft-ds/
+Host: 10.11.1.35 ()	Status: Up
+Host: 10.11.1.35 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.11.1.39 ()	Status: Up
+Host: 10.11.1.39 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 10.11.1.44 ()	Status: Up
+Host: 10.11.1.44 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.11.1.50 ()	Status: Up
+Host: 10.11.1.50 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 10.11.1.71 ()	Status: Up
+Host: 10.11.1.71 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.11.1.72 ()	Status: Up
+Host: 10.11.1.72 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.11.1.73 ()	Status: Up
+Host: 10.11.1.73 ()	Ports: 445/open/tcp//microsoft-ds//Windows 7 Professional 7601 Service Pack 1 microsoft-ds/
+Host: 10.11.1.75 ()	Status: Up
+Host: 10.11.1.75 ()	Ports: 445/open/tcp//microsoft-ds//Windows 8.1 Enterprise 9600 microsoft-ds/
+Host: 10.11.1.79 ()	Status: Up
+Host: 10.11.1.79 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 10.11.1.101 ()	Status: Up
+Host: 10.11.1.101 ()	Ports: 445/open/tcp//microsoft-ds//Samba smbd 4.3.11-Ubuntu/
+Host: 10.11.1.111 ()	Status: Up
+Host: 10.11.1.111 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.115 ()	Status: Up
+Host: 10.11.1.115 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.11.1.116 ()	Status: Up
+Host: 10.11.1.116 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.11.1.120 ()	Status: Up
+Host: 10.11.1.120 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.121 ()	Status: Up
+Host: 10.11.1.121 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.122 ()	Status: Up
+Host: 10.11.1.122 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.123 ()	Status: Up
+Host: 10.11.1.123 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.128 ()	Status: Up
+Host: 10.11.1.128 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.133 ()	Status: Up
+Host: 10.11.1.133 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 10.11.1.136 ()	Status: Up
+Host: 10.11.1.136 ()	Ports: 445/open/tcp//microsoft-ds//Samba smbd 3.0.24/
+Host: 10.11.1.141 ()	Status: Up
+Host: 10.11.1.141 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.11.1.146 ()	Status: Up
+Host: 10.11.1.146 ()	Ports: 445/open/tcp//microsoft-ds//Samba smbd 4.5.4-Ubuntu/
+Host: 10.11.1.209 ()	Status: Up
+Host: 10.11.1.209 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.11.1.217 ()	Status: Up
+Host: 10.11.1.217 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.11.1.220 ()	Status: Up
+Host: 10.11.1.220 ()	Ports: 445/open/tcp//microsoft-ds//Windows Server 2008 R2 Standard 7601 Service Pack 1 microsoft-ds/
+Host: 10.11.1.221 ()	Status: Up
+Host: 10.11.1.221 ()	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 10.11.1.222 ()	Status: Up
+Host: 10.11.1.222 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.223 ()	Status: Up
+Host: 10.11.1.223 ()	Ports: 445/open/tcp//microsoft-ds///
+Host: 10.11.1.227 ()	Status: Up
+Host: 10.11.1.227 ()	Ports: 445/open/tcp//microsoft-ds//Windows 2000 microsoft-ds/
+Host: 10.11.1.231 ()	Status: Up
+Host: 10.11.1.231 ()	Ports: 445/open/tcp//microsoft-ds//Samba smbd 4.2.10-Debian/
+Host: 10.11.1.234 ()	Status: Up
+Host: 10.11.1.234 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.11.1.237 ()	Status: Up
+Host: 10.11.1.237 ()	Ports: 445/closed/tcp//microsoft-ds///
+Host: 10.11.1.250 (sandbox.local)	Status: Up
+Host: 10.11.1.250 (sandbox.local)	Ports: 445/filtered/tcp//microsoft-ds///
+Host: 10.11.1.251 ()	Status: Up
+Host: 10.11.1.251 ()	Ports: 445/filtered/tcp//microsoft-ds///
+# Nmap done at Sat Sep 19 10:15:10 2020 -- 44 IP addresses (43 hosts up) scanned in 29.39 seconds

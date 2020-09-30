@@ -1,0 +1,26 @@
+# Nmap 7.80 scan initiated Sat Sep 19 18:20:57 2020 as: nmap -sU --open -p 161 -oG open-snmp.txt 10.11.1.1-254
+Host: 10.11.1.14 ()	Status: Up
+Host: 10.11.1.14 ()	Ports: 161/open|filtered/udp//snmp///
+Host: 10.11.1.31 ()	Status: Up
+Host: 10.11.1.31 ()	Ports: 161/open|filtered/udp//snmp///
+Host: 10.11.1.50 ()	Status: Up
+Host: 10.11.1.50 ()	Ports: 161/open|filtered/udp//snmp///
+Host: 10.11.1.73 ()	Status: Up
+Host: 10.11.1.73 ()	Ports: 161/open|filtered/udp//snmp///
+Host: 10.11.1.79 ()	Status: Up
+Host: 10.11.1.79 ()	Ports: 161/open|filtered/udp//snmp///
+Host: 10.11.1.115 ()	Status: Up
+Host: 10.11.1.115 ()	Ports: 161/open/udp//snmp///
+Host: 10.11.1.133 ()	Status: Up
+Host: 10.11.1.133 ()	Ports: 161/open|filtered/udp//snmp///
+Host: 10.11.1.141 ()	Status: Up
+Host: 10.11.1.141 ()	Ports: 161/open|filtered/udp//snmp///
+Host: 10.11.1.221 ()	Status: Up
+Host: 10.11.1.221 ()	Ports: 161/open|filtered/udp//snmp///
+Host: 10.11.1.227 ()	Status: Up
+Host: 10.11.1.227 ()	Ports: 161/open|filtered/udp//snmp///
+Host: 10.11.1.250 (sandbox.local)	Status: Up
+Host: 10.11.1.250 (sandbox.local)	Ports: 161/open|filtered/udp//snmp///
+Host: 10.11.1.251 ()	Status: Up
+Host: 10.11.1.251 ()	Ports: 161/open|filtered/udp//snmp///
+# Nmap done at Sat Sep 19 18:21:03 2020 -- 254 IP addresses (42 hosts up) scanned in 6.17 seconds
