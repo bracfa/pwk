@@ -100,9 +100,9 @@ Numbers with * means it's not required for lab report.
 - [x] 15.1.4.1
 - [x] 15.1.5.1
 - [x] 15.1.6.1
-- [ ] 15.1.7.1
-- [ ] 15.2.3.1
-- [ ] 15.2.4.1
+- [x] 15.1.7.1
+- [x] 15.2.3.1
+- [x] 15.2.4.1
 
 #### File Transfers
 - [ ] 16.1.3.2 *
