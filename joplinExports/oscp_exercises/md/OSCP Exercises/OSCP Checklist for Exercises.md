@@ -105,12 +105,12 @@ Numbers with * means it's not required for lab report.
 - [x] 15.2.4.1
 
 #### File Transfers
-- [ ] 16.1.3.2 *
+- [x] 16.1.3.2 *
 - [ ] 16.2.5.1 *
 
 #### Antivirus Evasion
-- [ ] 17.3.3.2
-- [ ] 17.3.3.4
+- [x] 17.3.3.2
+- [x] 17.3.3.4
 
 #### Privilege Escalation
 - [ ] 18.1.1.13
