@@ -31,5 +31,5 @@ Write-Host "---------- nslookup ----------"
 Foreach($i in $IpArray)
 {
     Write-Host "Performing nslookup for $i ...."
-    nslookup $i
+    nslookup $i.Split(":")[0]
 }
